@@ -41,11 +41,19 @@ function getMarkdownFiles(dirPath) {
 }
 
 function extractSection(content, sectionHeading) {
-  const pattern = new RegExp(
-    `^## ${sectionHeading}\\s*\\n([\\s\\S]*?)(?=^##|\\Z)`, 'm'
-  );
-  const match = content.match(pattern);
-  return match ? match[1].trim() : '';
+  const regex = new RegExp(`^## ${sectionHeading}[^\\n]*\\n`, 'm');
+  const match = regex.exec(content);
+  if (!match) return '';
+
+  const start = match.index + match[0].length;
+  const rest = content.substring(start);
+
+  // Find next ## heading; if none, take everything to end of file
+  const nextHeading = rest.match(/^## /m);
+  if (nextHeading) {
+    return rest.substring(0, nextHeading.index).trim();
+  }
+  return rest.trim();
 }
 
 function extractSingleLine(content, sectionHeading) {

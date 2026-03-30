@@ -13,7 +13,7 @@
       "Automated text similarity metrics (ROUGE, BERTScore) — methodological",
       "Coding accuracy (ICD-10, HCC capture) — insofar as it reflects documentation completeness"
     ],
-    "paperCount": 13
+    "paperCount": 37
   },
   {
     "code": "NB",
@@ -33,7 +33,7 @@
       "Coding accuracy and completeness (ICD-10, HCC, E/M)",
       "Patient volume and throughput"
     ],
-    "paperCount": 14
+    "paperCount": 47
   },
   {
     "code": "SQ",
@@ -49,7 +49,7 @@
       "LLM-as-evaluator correlation with human raters",
       "Study design rigor and methodological validity"
     ],
-    "paperCount": 9
+    "paperCount": 23
   },
   {
     "code": "SerQ",
@@ -66,7 +66,7 @@
       "Governance model and patient consent compliance",
       "Adoption barriers related to structural/support factors"
     ],
-    "paperCount": 4
+    "paperCount": 13
   },
   {
     "code": "U",
@@ -83,7 +83,7 @@
       "Long-term use intent and recommendation intention",
       "User adoption predictors (what characteristics predict use)"
     ],
-    "paperCount": 13
+    "paperCount": 43
   },
   {
     "code": "US",
@@ -92,8 +92,12 @@
     "definition": "User Satisfaction captures **how clinicians subjectively experience the ambient AI tool** — their emotional states, well-being, perceived usability, and trust. It asks: do people feel better for having used it, and do they find it trustworthy and useful?",
     "keyFinding": "",
     "belongsHere": [
-      "Clinician burnout and work exhaustion (validated scales: PFI, Mini-"
+      "Clinician burnout and work exhaustion (validated scales: PFI, Mini-Z, OLBI)",
+      "Cognitive and task load (NASA-TLX, PTL index)",
+      "Professional fulfillment and meaningfulness",
+      "Provider satisfaction and usability ratings (SUS, UTAUT, Likert)",
+      "Provider trust in AI / skepticism about AI errors"
     ],
-    "paperCount": 11
+    "paperCount": 40
   }
 ]

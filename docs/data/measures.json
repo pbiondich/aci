@@ -7,12 +7,31 @@
     "paperCount": 14,
     "definition": "Provider-reported emotional exhaustion, depersonalization, and interpersonal disengagement from clinical work — the core burnout syndrome. Measured via validated psychometric instruments. Distinct from cognitive task load (in-encounter mental effort) and professional fulfillment (positive engagement).",
     "instruments": [
-      "Stanford PFI — Work Exhaustion subscale"
+      "Stanford PFI — Work Exhaustion subscale",
+      "Mini-Z / Mini-Z 2.0",
+      "Oldenburg Burnout Inventory (OLBI)",
+      "Single-item burnout question",
+      "Reduced burnout (Likert, dichotomized)"
     ],
     "typicalFindings": "",
     "rigorRating": "",
     "concerns": "**RCT effect size caveat:** Afshar 2025b (RCT, n=66) found −0.44 PFI work exhaustion. Shah 2024 (QI, selected sample) found −1.94 on same scale. The gap is expected from selection bias in non-randomized studies. The RCT estimate is more trustworthy. Burnout is dissociable from cognitive load (CM-02) and professional fulfillment (CM-03) — see Afshar 2025b where all three moved differently.",
-    "papers": []
+    "papers": [
+      "Afshar 2025b - Pragmatic RCT Ambient AI Health Practitioner Wellbeing",
+      "Albrecht 2025 - Ambient AI Clinical Documentation QI Survey",
+      "Billings 2025a - Ambient AI Assistant Transforms Primary Care Experience",
+      "Boyter 2025 - Ambience Healthcare ROI Validations KLAS Report",
+      "Kanaparthy 2025 - Real-World Evidence Digital Scribes Rapid Review",
+      "Karavassilis 2025 - Ambient Voice Technology Same Day Emergency Care SDEC",
+      "Lukac 2025 - RCT Two Ambient AI Scribes Documentation Efficiency Burnout",
+      "Nguyen 2023 - Implementing Digital Scribes Reduce EHR Documentation Burden Cancer Care",
+      "Olson 2025 - Ambient AI Scribes Administrative Burden Burnout",
+      "Peterson Health Technology Institute 2025 - Adoption AI Healthcare Delivery Systems",
+      "Shah 2024 - Ambient AI Scribes Physician Burnout Usability Documentation Burden",
+      "Stults 2025 - Evaluation Ambient AI Documentation Platform Clinicians",
+      "Suhail 2026 - Metrics for Ambient Clinical Documentation Scoping Review",
+      "You 2025 - Ambient Documentation Technology Documentation Burden Burnout"
+    ]
   },
   {
     "id": "CM-02",
@@ -30,7 +49,19 @@
     "typicalFindings": "",
     "rigorRating": "",
     "concerns": "NASA-TLX measures cognitive effort during task performance — conceptually distinct from burnout (cumulative emotional depletion). Both may improve with ambient scribes but through different mechanisms.",
-    "papers": []
+    "papers": [
+      "Afshar 2025b - Pragmatic RCT Ambient AI Health Practitioner Wellbeing",
+      "Bracken 2025 - Ambient AI Inpatient Documentation Simulation Orthopaedic",
+      "Bundy 2024 - Administrative Loads Physicians AI Documentation Qualitative",
+      "Guo 2026 - Evaluating Ambient AI Documentation UCI Health Mixed Methods",
+      "Liu 2024 - AI Powered Clinical Documentation Clinicians EHR Experience",
+      "Lukac 2025 - RCT Two Ambient AI Scribes Documentation Efficiency Burnout",
+      "Olson 2025 - Ambient AI Scribes Administrative Burden Burnout",
+      "Omon 2025 - Generative AI Rehabilitation Clinical Documentation",
+      "Peterson Health Technology Institute 2025 - Adoption AI Healthcare Delivery Systems",
+      "Shah 2024 - Ambient AI Scribes Physician Burnout Usability Documentation Burden",
+      "Stults 2025 - Evaluation Ambient AI Documentation Platform Clinicians"
+    ]
   },
   {
     "id": "CM-03",
@@ -48,7 +79,14 @@
     "typicalFindings": "",
     "rigorRating": "",
     "concerns": "**Key null finding:** Afshar 2025b (RCT) found professional fulfillment increased at p=0.04 — which missed the pre-specified alpha of 0.025. This means ambient AI reduces exhaustion but does not significantly *increase* fulfillment. These are dissociable constructs: removing a negative ≠ adding a positive.",
-    "papers": []
+    "papers": [
+      "Afshar 2025b - Pragmatic RCT Ambient AI Health Practitioner Wellbeing",
+      "Duggan 2025 - Clinician Experiences Ambient Scribe Documentation Burden",
+      "Galloway 2024 - Impact Artificial Intelligence Based Solution Clinicians Clinical Documentation",
+      "Lukac 2025 - RCT Two Ambient AI Scribes Documentation Efficiency Burnout",
+      "Nguyen 2023 - Implementing Digital Scribes Reduce EHR Documentation Burden Cancer Care",
+      "Suhail 2026 - Metrics for Ambient Clinical Documentation Scoping Review"
+    ]
   },
   {
     "id": "CM-04",
@@ -66,7 +104,35 @@
     "typicalFindings": "",
     "rigorRating": "",
     "concerns": "**Critical heterogeneity:** Reported reductions range from −12% (EHR telemetry: Ma 2025, Guo 2026) to −72% (self-report: AAFP 2021). Self-report consistently overestimates. EHR audit-log is the most reliable method. Papers measuring per-note time vs. per-day time are not directly comparable.",
-    "papers": []
+    "papers": [
+      "AAFP 2021 - Using AI Assistant Reduce Documentation Burden Family Medicine",
+      "Afshar 2025 - Novel Playbook for Pragmatic Trial Operations",
+      "Afshar 2025b - Pragmatic RCT Ambient AI Health Practitioner Wellbeing",
+      "Baker 2023 - ChatGPT Ability Assist Clinical Documentation Orthopaedic RCT",
+      "Billings 2025a - Ambient AI Assistant Transforms Primary Care Experience",
+      "Boyter 2025 - Ambience Healthcare ROI Validations KLAS Report",
+      "Bracken 2025 - Ambient AI Inpatient Documentation Simulation Orthopaedic",
+      "Bundy 2024 - Administrative Loads Physicians AI Documentation Qualitative",
+      "Cao 2024 - Artificial Intelligence-Driven Digital Scribes Dermatology",
+      "Duggan 2025 - Clinician Experiences Ambient Scribe Documentation Burden",
+      "Guo 2025 - Ambient Listening EPIC Signal Data Physician Workload",
+      "Guo 2026 - Evaluating Ambient AI Documentation UCI Health Mixed Methods",
+      "Haberle 2024 - Impact Nuance DAX Ambient Listening AI Documentation",
+      "Kanaparthy 2025 - Real-World Evidence Digital Scribes Rapid Review",
+      "Karavassilis 2025 - Ambient Voice Technology Same Day Emergency Care SDEC",
+      "Liu 2024 - AI Powered Clinical Documentation Clinicians EHR Experience",
+      "Lukac 2025 - RCT Two Ambient AI Scribes Documentation Efficiency Burnout",
+      "Ma 2025 - Ambient AI Scribes Utilization Documentation Time Stanford",
+      "Nguyen 2023 - Implementing Digital Scribes Reduce EHR Documentation Burden Cancer Care",
+      "Omon 2025 - Generative AI Rehabilitation Clinical Documentation",
+      "Pearlman 2025 - AI Scribe EHR Efficiency",
+      "Prasad 2025 - Clinician Perceptions Virtual Scribe Use Survey",
+      "Shuaib 2021 - Scribe Program Patient Throughput Physician Productivity",
+      "Stults 2025 - Evaluation Ambient AI Documentation Platform Clinicians",
+      "Suhail 2026 - Metrics for Ambient Clinical Documentation Scoping Review",
+      "Tierney 2025 - Ambient AI Scribes Learnings 1 Year 2.5 Million Uses",
+      "van Buchem 2024 - Digital Scribe Documentation Time Quality Usability"
+    ]
   },
   {
     "id": "CM-05",
@@ -85,7 +151,25 @@
     "typicalFindings": "",
     "rigorRating": "",
     "concerns": "**Consistent null pattern in objective data:** After-hours time does NOT improve significantly in EHR telemetry across most corpus papers (Pearlman 2025, Stults 2025). Self-report shows improvement. Exceptions: Duggan 2025 (−16.9%), Boyter/KLAS 2025 (−39% UAL), Afshar 2025b (−0.50 hrs/day, but fragile — disappears after removing top 3% outliers). This self-report/objective divergence is one of the most reproducible findings in the corpus.",
-    "papers": []
+    "papers": [
+      "AAFP 2021 - Using AI Assistant Reduce Documentation Burden Family Medicine",
+      "Afshar 2025 - Novel Playbook for Pragmatic Trial Operations",
+      "Afshar 2025b - Pragmatic RCT Ambient AI Health Practitioner Wellbeing",
+      "Albrecht 2025 - Ambient AI Clinical Documentation QI Survey",
+      "Billings 2025a - Ambient AI Assistant Transforms Primary Care Experience",
+      "Boyter 2025 - Ambience Healthcare ROI Validations KLAS Report",
+      "Cao 2024 - Artificial Intelligence-Driven Digital Scribes Dermatology",
+      "Duggan 2025 - Clinician Experiences Ambient Scribe Documentation Burden",
+      "Evans 2025 - AI Scribe Allied Health Private Practice Australia",
+      "Haberle 2024 - Impact Nuance DAX Ambient Listening AI Documentation",
+      "Karavassilis 2025 - Ambient Voice Technology Same Day Emergency Care SDEC",
+      "Liu 2024 - AI Powered Clinical Documentation Clinicians EHR Experience",
+      "Ma 2025 - Ambient AI Scribes Utilization Documentation Time Stanford",
+      "Pearlman 2025 - AI Scribe EHR Efficiency",
+      "Peterson Health Technology Institute 2025 - Adoption AI Healthcare Delivery Systems",
+      "Stults 2025 - Evaluation Ambient AI Documentation Platform Clinicians",
+      "Suhail 2026 - Metrics for Ambient Clinical Documentation Scoping Review"
+    ]
   },
   {
     "id": "CM-06",
@@ -104,7 +188,16 @@
     "typicalFindings": "",
     "rigorRating": "",
     "concerns": "Chart closure is a distinct operational metric from raw documentation time — a note can be completed quickly but signed late. Boyter/KLAS 2025 found −41% in chart closure time (UAL data). Afshar 2025a used it as a real-time monitoring metric with a notable dip during template change.",
-    "papers": []
+    "papers": [
+      "Afshar 2025b - Pragmatic RCT Ambient AI Health Practitioner Wellbeing",
+      "Albrecht 2025 - Ambient AI Clinical Documentation QI Survey",
+      "Boyter 2025 - Ambience Healthcare ROI Validations KLAS Report",
+      "Duggan 2025 - Clinician Experiences Ambient Scribe Documentation Burden",
+      "Guo 2026 - Evaluating Ambient AI Documentation UCI Health Mixed Methods",
+      "Haberle 2024 - Impact Nuance DAX Ambient Listening AI Documentation",
+      "Pearlman 2025 - AI Scribe EHR Efficiency",
+      "Shuaib 2021 - Scribe Program Patient Throughput Physician Productivity"
+    ]
   },
   {
     "id": "CM-07",
@@ -120,7 +213,13 @@
     "typicalFindings": "",
     "rigorRating": "",
     "concerns": "**Emerging measure — only 5 papers measure this explicitly.** Ma 2025 found −19.95 min/day total EHR time (largest effect in corpus) while only −6.89 min/day for documentation time specifically — suggesting ambient scribes reduce EHR burden beyond just note-writing, possibly by enabling faster note closure and less revisiting.",
-    "papers": []
+    "papers": [
+      "Cao 2024 - Artificial Intelligence-Driven Digital Scribes Dermatology",
+      "Liu 2024 - AI Powered Clinical Documentation Clinicians EHR Experience",
+      "Ma 2025 - Ambient AI Scribes Utilization Documentation Time Stanford",
+      "Pearlman 2025 - AI Scribe EHR Efficiency",
+      "Tierney 2024 - Ambient Artificial Intelligence Scribes Alleviate Burden Clinical Documentation"
+    ]
   },
   {
     "id": "CM-08",
@@ -139,7 +238,19 @@
     "typicalFindings": "",
     "rigorRating": "",
     "concerns": "**Most consistent IQ finding in corpus:** Omissions are the dominant error type in ALL 5 simulation studies (71–86% of errors). More clinically dangerous than hallucinations at scale because missing information is harder to detect than wrong information. Patient doesn't complain about what's not in the note.",
-    "papers": []
+    "papers": [
+      "Anderson 2025 - Quality Safety Ambient Digital Scribe Platforms Simulation",
+      "Arko 2025 - Documenting Care AI Comparative Commercial Scribe Tools",
+      "Baker 2023 - ChatGPT Ability Assist Clinical Documentation Orthopaedic RCT",
+      "Bracken 2025 - Ambient AI Inpatient Documentation Simulation Orthopaedic",
+      "Foo 2025 - Great Scribe-Off AI vs Human Documentation Simulated GP",
+      "Karavassilis 2025 - Ambient Voice Technology Same Day Emergency Care SDEC",
+      "Moramarco 2022 - Human Evaluation Automatic Metrics Consultation Note Generation",
+      "Palm 2025 - Quality AI Generated Clinical Notes PDQI Validation",
+      "Suhail 2026 - Metrics for Ambient Clinical Documentation Scoping Review",
+      "Wang 2021 - Patient-Centered Digital Scribe Automatic Medical Documentation",
+      "Wang 2025 - Evaluation Framework Ambient Digital Scribing Tools"
+    ]
   },
   {
     "id": "CM-09",
@@ -159,7 +270,21 @@
     "typicalFindings": "",
     "rigorRating": "",
     "concerns": "**Hallucinations are less common than omissions but more dangerous per-event.** Baker 2023 (36%) and Palm 2025 (31%) found highest rates. Kernberg 2023 found only 3.2% incorrect facts but 86% omissions — different definitions matter. Bundy 2024 identified negation errors ('did not' → 'did') as a specific high-risk subtype. Reproducibility failure (Kernberg): same case, different errors each run — clinicians can't predict where to check.",
-    "papers": []
+    "papers": [
+      "Arko 2025 - Documenting Care AI Comparative Commercial Scribe Tools",
+      "Baker 2023 - ChatGPT Ability Assist Clinical Documentation Orthopaedic RCT",
+      "Biro 2025 - Simulation Testing Ambient Digital Scribes Case Report",
+      "Bundy 2024 - Administrative Loads Physicians AI Documentation Qualitative",
+      "Foo 2025 - Great Scribe-Off AI vs Human Documentation Simulated GP",
+      "Gebauer 2025 - Benchmarking Datasets Ambient Clinical Documentation Scoping Review",
+      "Kernberg 2023 - ChatGPT-4 Structured Medical Notes Audio Recordings",
+      "Lukac 2025 - RCT Two Ambient AI Scribes Documentation Efficiency Burnout",
+      "Moramarco 2022 - Human Evaluation Automatic Metrics Consultation Note Generation",
+      "Palm 2025 - Quality AI Generated Clinical Notes PDQI Validation",
+      "Suhail 2026 - Metrics for Ambient Clinical Documentation Scoping Review",
+      "Wang 2021 - Patient-Centered Digital Scribe Automatic Medical Documentation",
+      "Wang 2025 - Evaluation Framework Ambient Digital Scribing Tools"
+    ]
   },
   {
     "id": "CM-10",
@@ -178,7 +303,24 @@
     "typicalFindings": "",
     "rigorRating": "",
     "concerns": "PDQI-9 was designed for human-authored notes and has been adapted for AI assessment; the LLM-as-judge implementation (Afshar 2025b) is validated against physician ratings. Scores of 3.97–4.99/5.0 (Afshar 2025b) represent the highest in corpus. Scale interpretation: 26.2 = 'terrible or bad', 36.6 = 'good or excellent' (Kernberg 2023 mean: 29.7, closer to terrible). The PDQI is a composite — see CM-08 and CM-09 for component error types.",
-    "papers": []
+    "papers": [
+      "Afshar 2025b - Pragmatic RCT Ambient AI Health Practitioner Wellbeing",
+      "Anderson 2025 - Quality Safety Ambient Digital Scribe Platforms Simulation",
+      "Arko 2025 - Documenting Care AI Comparative Commercial Scribe Tools",
+      "Baker 2023 - ChatGPT Ability Assist Clinical Documentation Orthopaedic RCT",
+      "Bracken 2025 - Ambient AI Inpatient Documentation Simulation Orthopaedic",
+      "Duggan 2025 - Clinician Experiences Ambient Scribe Documentation Burden",
+      "Foo 2025 - Great Scribe-Off AI vs Human Documentation Simulated GP",
+      "Kernberg 2023 - ChatGPT-4 Structured Medical Notes Audio Recordings",
+      "Omon 2025 - Generative AI Rehabilitation Clinical Documentation",
+      "Palm 2025 - Quality AI Generated Clinical Notes PDQI Validation",
+      "Peterson Health Technology Institute 2025 - Adoption AI Healthcare Delivery Systems",
+      "Shah 2025 - Physician Perspectives Ambient AI Scribes",
+      "Suhail 2026 - Metrics for Ambient Clinical Documentation Scoping Review",
+      "Tierney 2024 - Ambient Artificial Intelligence Scribes Alleviate Burden Clinical Documentation",
+      "Wojda 2025 - HCI of Ambient AI Qualitative Study",
+      "van Buchem 2024 - Digital Scribe Documentation Time Quality Usability"
+    ]
   },
   {
     "id": "CM-11",
@@ -197,7 +339,18 @@
     "typicalFindings": "",
     "rigorRating": "",
     "concerns": "Note length is a secondary/proxy measure. It can indicate thoroughness (longer = more complete) or over-generation (longer = padded). Wojda 2025 and Shah 2025 flag note verbosity as a concern — physicians may need to edit down AI-generated notes, creating editing burden that offsets time savings.",
-    "papers": []
+    "papers": [
+      "Anderson 2025 - Quality Safety Ambient Digital Scribe Platforms Simulation",
+      "Arko 2025 - Documenting Care AI Comparative Commercial Scribe Tools",
+      "Baker 2023 - ChatGPT Ability Assist Clinical Documentation Orthopaedic RCT",
+      "Cao 2024 - Artificial Intelligence-Driven Digital Scribes Dermatology",
+      "Duggan 2025 - Clinician Experiences Ambient Scribe Documentation Burden",
+      "Guo 2025 - Ambient Listening EPIC Signal Data Physician Workload",
+      "Guo 2026 - Evaluating Ambient AI Documentation UCI Health Mixed Methods",
+      "Kanaparthy 2025 - Real-World Evidence Digital Scribes Rapid Review",
+      "Stults 2025 - Evaluation Ambient AI Documentation Platform Clinicians",
+      "van Buchem 2024 - Digital Scribe Documentation Time Quality Usability"
+    ]
   },
   {
     "id": "CM-12",
@@ -217,7 +370,15 @@
     "typicalFindings": "",
     "rigorRating": "",
     "concerns": "**METHODOLOGICAL CANONICAL.** These metrics do not measure clinical outcomes — they measure whether automated quality assessment agrees with human assessment. Critical finding from Moramarco 2022: Levenshtein distance performs as well as BERTScore on clinical notes. LLM-as-judge (Afshar 2025b) is validated against physician ratings. Automated metrics should be treated as research tools, not clinical quality measures.",
-    "papers": []
+    "papers": [
+      "Balloch 2024 - Ambient Artificial Intelligence Tool Improve Quality Clinical Documentation",
+      "Castro 2025 - Psychiatric Documentation Treatment Primary Care AI Scribe",
+      "Gebauer 2025 - Benchmarking Datasets Ambient Clinical Documentation Scoping Review",
+      "Moramarco 2022 - Human Evaluation Automatic Metrics Consultation Note Generation",
+      "Suhail 2026 - Metrics for Ambient Clinical Documentation Scoping Review",
+      "Wang 2021 - Patient-Centered Digital Scribe Automatic Medical Documentation",
+      "van Buchem 2024 - Digital Scribe Documentation Time Quality Usability"
+    ]
   },
   {
     "id": "CM-13",
@@ -237,7 +398,20 @@
     "typicalFindings": "",
     "rigorRating": "",
     "concerns": "**Heavy-user/light-user heterogeneity is universal.** Every large deployment reports a bimodal distribution: heavy users who use ambient AI for nearly all encounters, and light/non-users. Dose-response is consistent: heavy users benefit most (Pearlman 2025, Omon 2025, Lukac 2025). Tierney 2025 found top-third of users account for disproportionate % of 2.5M total uses.",
-    "papers": []
+    "papers": [
+      "AAFP 2021 - Using AI Assistant Reduce Documentation Burden Family Medicine",
+      "Afshar 2025 - Novel Playbook for Pragmatic Trial Operations",
+      "Albrecht 2025 - Ambient AI Clinical Documentation QI Survey",
+      "Duggan 2025 - Clinician Experiences Ambient Scribe Documentation Burden",
+      "Evans 2025 - AI Scribe Allied Health Private Practice Australia",
+      "Guo 2025 - Ambient Listening EPIC Signal Data Physician Workload",
+      "Lukac 2025 - RCT Two Ambient AI Scribes Documentation Efficiency Burnout",
+      "Ma 2025 - Ambient AI Scribes Utilization Documentation Time Stanford",
+      "Omon 2025 - Generative AI Rehabilitation Clinical Documentation",
+      "Shah 2025 - Physician Perspectives Ambient AI Scribes",
+      "Tierney 2025 - Ambient AI Scribes Learnings 1 Year 2.5 Million Uses",
+      "You 2025 - Ambient Documentation Technology Documentation Burden Burnout"
+    ]
   },
   {
     "id": "CM-14",
@@ -256,7 +430,13 @@
     "typicalFindings": "",
     "rigorRating": "",
     "concerns": "Only 5 papers explicitly measure adoption intention as a formal study measure (vs. mentioning it). Tierney 2025 found physician age and years since graduation are NOT predictive of adoption — challenging the generational adoption narrative.",
-    "papers": []
+    "papers": [
+      "Evans 2025 - AI Scribe Allied Health Private Practice Australia",
+      "Galloway 2024 - Impact Artificial Intelligence Based Solution Clinicians Clinical Documentation",
+      "Ma 2025 - Ambient AI Scribes Utilization Documentation Time Stanford",
+      "Omon 2025 - Generative AI Rehabilitation Clinical Documentation",
+      "Tierney 2025 - Ambient AI Scribes Learnings 1 Year 2.5 Million Uses"
+    ]
   },
   {
     "id": "CM-15",
@@ -275,7 +455,28 @@
     "typicalFindings": "",
     "rigorRating": "",
     "concerns": "Provider satisfaction is almost universally positive across the corpus — but most studies recruited volunteers or interested practitioners, inflating results. Prasad 2025 is the critical counter-signal: <2yr virtual scribe use was strongly negatively associated with satisfaction. Selection bias in most studies is substantial.",
-    "papers": []
+    "papers": [
+      "AAFP 2021 - Using AI Assistant Reduce Documentation Burden Family Medicine",
+      "Afshar 2025 - Novel Playbook for Pragmatic Trial Operations",
+      "Albrecht 2025 - Ambient AI Clinical Documentation QI Survey",
+      "Balloch 2024 - Ambient Artificial Intelligence Tool Improve Quality Clinical Documentation",
+      "Biro 2025 - Simulation Testing Ambient Digital Scribes Case Report",
+      "Boyter 2025 - Ambience Healthcare ROI Validations KLAS Report",
+      "Cao 2024 - Artificial Intelligence-Driven Digital Scribes Dermatology",
+      "Evans 2025 - AI Scribe Allied Health Private Practice Australia",
+      "Galloway 2024 - Impact Artificial Intelligence Based Solution Clinicians Clinical Documentation",
+      "Guo 2026 - Evaluating Ambient AI Documentation UCI Health Mixed Methods",
+      "Karavassilis 2025 - Ambient Voice Technology Same Day Emergency Care SDEC",
+      "Nguyen 2023 - Implementing Digital Scribes Reduce EHR Documentation Burden Cancer Care",
+      "Peterson Health Technology Institute 2025 - Adoption AI Healthcare Delivery Systems",
+      "Prasad 2025 - Clinician Perceptions Virtual Scribe Use Survey",
+      "Shah 2024 - Ambient AI Scribes Physician Burnout Usability Documentation Burden",
+      "Shuaib 2021 - Scribe Program Patient Throughput Physician Productivity",
+      "Tierney 2024 - Ambient Artificial Intelligence Scribes Alleviate Burden Clinical Documentation",
+      "Tierney 2025 - Ambient AI Scribes Learnings 1 Year 2.5 Million Uses",
+      "van Buchem 2021 - Digital Scribe Scoping Review Research Agenda",
+      "van Buchem 2024 - Digital Scribe Documentation Time Quality Usability"
+    ]
   },
   {
     "id": "CM-16",
@@ -293,7 +494,13 @@
     "typicalFindings": "",
     "rigorRating": "",
     "concerns": "Only 5 papers formally measure this as a study outcome, though AI trust themes appear qualitatively in many more. Bundy 2024 found 7/12 physicians feared increased patient volume from ambient scribes — a specific mistrust pattern about downstream consequences rather than tool performance.",
-    "papers": []
+    "papers": [
+      "Afshar 2025b - Pragmatic RCT Ambient AI Health Practitioner Wellbeing",
+      "Bundy 2024 - Administrative Loads Physicians AI Documentation Qualitative",
+      "Falcetta 2023 - Automatic Documentation Professional Health Interactions Systematic Review",
+      "Wojda 2025 - HCI of Ambient AI Qualitative Study",
+      "van Buchem 2021 - Digital Scribe Scoping Review Research Agenda"
+    ]
   },
   {
     "id": "CM-17",
@@ -312,7 +519,25 @@
     "typicalFindings": "",
     "rigorRating": "",
     "concerns": "**CRITICAL GAP — almost entirely unmeasured with validated instruments.** Only Owens 2024 uses a validated patient-reported instrument (PDRQ-9) — and found a null result in the masked phase (p=.31). Open-label phase was positive, suggesting patient expectation effect. All other 'patient experience' data is clinician-reported or anecdotal. No paper has measured patient-reported outcomes at scale with rigorously validated tools.",
-    "papers": []
+    "papers": [
+      "Afshar 2025 - Novel Playbook for Pragmatic Trial Operations",
+      "Billings 2025a - Ambient AI Assistant Transforms Primary Care Experience",
+      "Bundy 2024 - Administrative Loads Physicians AI Documentation Qualitative",
+      "Cao 2024 - Artificial Intelligence-Driven Digital Scribes Dermatology",
+      "Evans 2025 - AI Scribe Allied Health Private Practice Australia",
+      "Galloway 2024 - Impact Artificial Intelligence Based Solution Clinicians Clinical Documentation",
+      "Haberle 2024 - Impact Nuance DAX Ambient Listening AI Documentation",
+      "Karavassilis 2025 - Ambient Voice Technology Same Day Emergency Care SDEC",
+      "Owens 2024 - Ambient Voice Technology Patient Physician Relationship",
+      "Peterson Health Technology Institute 2025 - Adoption AI Healthcare Delivery Systems",
+      "Prasad 2025 - Clinician Perceptions Virtual Scribe Use Survey",
+      "Shah 2025 - Physician Perspectives Ambient AI Scribes",
+      "Shuaib 2021 - Scribe Program Patient Throughput Physician Productivity",
+      "Suhail 2026 - Metrics for Ambient Clinical Documentation Scoping Review",
+      "Tierney 2024 - Ambient Artificial Intelligence Scribes Alleviate Burden Clinical Documentation",
+      "Tierney 2025 - Ambient AI Scribes Learnings 1 Year 2.5 Million Uses",
+      "Wojda 2025 - HCI of Ambient AI Qualitative Study"
+    ]
   },
   {
     "id": "CM-18",
@@ -331,7 +556,16 @@
     "typicalFindings": "",
     "rigorRating": "",
     "concerns": "Shuaib 2021 (human scribe comparator) is the strongest data point: doctor-patient interaction time doubled and patients/hour increased 39%. This establishes the *potential* of documentation automation for interaction quality. Ambient AI studies primarily capture this through self-report survey items rather than direct observation.",
-    "papers": []
+    "papers": [
+      "Balloch 2024 - Ambient Artificial Intelligence Tool Improve Quality Clinical Documentation",
+      "Bundy 2024 - Administrative Loads Physicians AI Documentation Qualitative",
+      "Duggan 2025 - Clinician Experiences Ambient Scribe Documentation Burden",
+      "Guo 2026 - Evaluating Ambient AI Documentation UCI Health Mixed Methods",
+      "Karavassilis 2025 - Ambient Voice Technology Same Day Emergency Care SDEC",
+      "Prasad 2025 - Clinician Perceptions Virtual Scribe Use Survey",
+      "Shuaib 2021 - Scribe Program Patient Throughput Physician Productivity",
+      "Stults 2025 - Evaluation Ambient AI Documentation Platform Clinicians"
+    ]
   },
   {
     "id": "CM-19",
@@ -351,7 +585,17 @@
     "typicalFindings": "",
     "rigorRating": "",
     "concerns": "**Castro 2025 is the landmark paper here:** More psychiatric symptom *documentation* but significantly *less* psychiatric *intervention* (aOR 0.83) with ambient scribe use — preprint only, but the only paper measuring what happens to patients clinically. This is a potential unintended consequence with serious safety implications. Only 9 papers touch this dimension, and most use simulated or survey data rather than real patient outcomes.",
-    "papers": []
+    "papers": [
+      "Anderson 2025 - Quality Safety Ambient Digital Scribe Platforms Simulation",
+      "Bracken 2025 - Ambient AI Inpatient Documentation Simulation Orthopaedic",
+      "Castro 2025 - Psychiatric Documentation Treatment Primary Care AI Scribe",
+      "Guo 2026 - Evaluating Ambient AI Documentation UCI Health Mixed Methods",
+      "Haberle 2024 - Impact Nuance DAX Ambient Listening AI Documentation",
+      "Lukac 2025 - RCT Two Ambient AI Scribes Documentation Efficiency Burnout",
+      "Moramarco 2022 - Human Evaluation Automatic Metrics Consultation Note Generation",
+      "Suhail 2026 - Metrics for Ambient Clinical Documentation Scoping Review",
+      "Wang 2021 - Patient-Centered Digital Scribe Automatic Medical Documentation"
+    ]
   },
   {
     "id": "CM-20",
@@ -370,7 +614,15 @@
     "typicalFindings": "",
     "rigorRating": "",
     "concerns": "Three independent papers show financial productivity improvement: Holmgren 2026 (+$3,044/year RVU, UCSF, no denial increase), Boyter/KLAS 2025 (+$13,049/year mostly from HCC, Ambience). PHTI 2025 raises the population-level concern: even *accurate* higher coding increases healthcare system spending. The individual health system ROI may conflict with payer/societal interests.",
-    "papers": []
+    "papers": [
+      "Boyter 2025 - Ambience Healthcare ROI Validations KLAS Report",
+      "Cao 2024 - Artificial Intelligence-Driven Digital Scribes Dermatology",
+      "Haberle 2024 - Impact Nuance DAX Ambient Listening AI Documentation",
+      "Holmgren 2026 - Ambient AI Scribes Physician Financial Productivity",
+      "Kanaparthy 2025 - Real-World Evidence Digital Scribes Rapid Review",
+      "Shuaib 2021 - Scribe Program Patient Throughput Physician Productivity",
+      "Suhail 2026 - Metrics for Ambient Clinical Documentation Scoping Review"
+    ]
   },
   {
     "id": "CM-21",
@@ -389,7 +641,13 @@
     "typicalFindings": "",
     "rigorRating": "",
     "concerns": "**Coding improvement is one of the most consistent findings** — appearing in Afshar 2025b (RCT, p<0.001), Boyter/KLAS 2025, and Holmgren 2026. Critically, Holmgren 2026 shows NO increase in denial rate, suggesting coding improvement is legitimate (better documentation of existing complexity, not upcoding). However, PHTI 2025 flags the population-level cost concern regardless.",
-    "papers": []
+    "papers": [
+      "Afshar 2025 - Novel Playbook for Pragmatic Trial Operations",
+      "Afshar 2025b - Pragmatic RCT Ambient AI Health Practitioner Wellbeing",
+      "Boyter 2025 - Ambience Healthcare ROI Validations KLAS Report",
+      "Holmgren 2026 - Ambient AI Scribes Physician Financial Productivity",
+      "Peterson Health Technology Institute 2025 - Adoption AI Healthcare Delivery Systems"
+    ]
   },
   {
     "id": "CM-22",
@@ -408,7 +666,14 @@
     "typicalFindings": "",
     "rigorRating": "",
     "concerns": "Only 6 papers measure throughput, and the strongest data is from Shuaib 2021 (human scribe, ED) — a baseline comparator, not an ambient AI study. Holmgren 2026 found +0.80 encounters/week with ambient AI adoption (statistically significant). Note: increased patient volume may not be desirable if it increases workload without compensation.",
-    "papers": []
+    "papers": [
+      "Albrecht 2025 - Ambient AI Clinical Documentation QI Survey",
+      "Boyter 2025 - Ambience Healthcare ROI Validations KLAS Report",
+      "Bundy 2024 - Administrative Loads Physicians AI Documentation Qualitative",
+      "Haberle 2024 - Impact Nuance DAX Ambient Listening AI Documentation",
+      "Holmgren 2026 - Ambient AI Scribes Physician Financial Productivity",
+      "Shuaib 2021 - Scribe Program Patient Throughput Physician Productivity"
+    ]
   },
   {
     "id": "CM-23",
@@ -428,7 +693,16 @@
     "typicalFindings": "",
     "rigorRating": "",
     "concerns": "Universal finding: heterogeneous adoption with a cohort of heavy users, moderate users, and non-/low-users. PHTI 2025 formalizes 3 cohorts. Clinicians who benefit most: high baseline documentation burden, complex narrative notes, high patient face-time. Non-adopters cluster around: no existing burden, optimized workflow, technical incompatibility.",
-    "papers": []
+    "papers": [
+      "Kanaparthy 2025 - Real-World Evidence Digital Scribes Rapid Review",
+      "Nguyen 2023 - Implementing Digital Scribes Reduce EHR Documentation Burden Cancer Care",
+      "Olson 2025 - Ambient AI Scribes Administrative Burden Burnout",
+      "Prasad 2025 - Clinician Perceptions Virtual Scribe Use Survey",
+      "Shah 2025 - Physician Perspectives Ambient AI Scribes",
+      "Suhail 2026 - Metrics for Ambient Clinical Documentation Scoping Review",
+      "Wojda 2025 - HCI of Ambient AI Qualitative Study",
+      "van Buchem 2021 - Digital Scribe Scoping Review Research Agenda"
+    ]
   },
   {
     "id": "CM-24",
@@ -446,7 +720,11 @@
     "typicalFindings": "",
     "rigorRating": "",
     "concerns": "**Only 3 papers formally measure ASR accuracy as an outcome.** Commercial products (DAX, Abridge, Suki, Ambience) do not publish their WER or diarization accuracy — a documented pattern of industry opacity since van Buchem 2021. This is a fundamental evidence gap: the acoustic quality of commercial products is entirely unknown in the published literature.",
-    "papers": []
+    "papers": [
+      "Anderson 2025 - Quality Safety Ambient Digital Scribe Platforms Simulation",
+      "Wang 2025 - Evaluation Framework Ambient Digital Scribing Tools",
+      "van Buchem 2021 - Digital Scribe Scoping Review Research Agenda"
+    ]
   },
   {
     "id": "CM-25",
@@ -468,6 +746,21 @@
     "typicalFindings": "",
     "rigorRating": "",
     "concerns": "**META CANONICAL — assesses research quality, not clinical outcomes.** Critical for synthesizing across studies: many corpus papers have low methodological rigor (no randomization, no control group, selected samples). The hierarchy by evidence level: Afshar 2025b (RCT, stepped-wedge, 24 weeks) > Pearlman 2025 (propensity-matched observational) > most QI studies (pre-post, no controls).",
-    "papers": []
+    "papers": [
+      "Anderson 2025 - Quality Safety Ambient Digital Scribe Platforms Simulation",
+      "Baker 2023 - ChatGPT Ability Assist Clinical Documentation Orthopaedic RCT",
+      "Biro 2025 - Simulation Testing Ambient Digital Scribes Case Report",
+      "Castro 2025 - Psychiatric Documentation Treatment Primary Care AI Scribe",
+      "Falcetta 2023 - Automatic Documentation Professional Health Interactions Systematic Review",
+      "Foo 2025 - Great Scribe-Off AI vs Human Documentation Simulated GP",
+      "Gebauer 2025 - Benchmarking Datasets Ambient Clinical Documentation Scoping Review",
+      "Kernberg 2023 - ChatGPT-4 Structured Medical Notes Audio Recordings",
+      "Moramarco 2022 - Human Evaluation Automatic Metrics Consultation Note Generation",
+      "Palm 2025 - Quality AI Generated Clinical Notes PDQI Validation",
+      "Pearlman 2025 - AI Scribe EHR Efficiency",
+      "Wang 2021 - Patient-Centered Digital Scribe Automatic Medical Documentation",
+      "Wang 2025 - Evaluation Framework Ambient Digital Scribing Tools",
+      "van Buchem 2021 - Digital Scribe Scoping Review Research Agenda"
+    ]
   }
 ]
