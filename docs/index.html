@@ -731,13 +731,13 @@
           React.createElement('h2', { style: { marginTop: 0, paddingRight: 40 } }, a.title || a.id),
           React.createElement('p', { style: { color: '#666', fontSize: 14 } }, a.authors),
           a.doi && React.createElement('p', null, React.createElement('strong', null, 'DOI: '), React.createElement('a', { href: a.doi.startsWith('http') ? a.doi : `https://doi.org/${a.doi.replace(/.*?(10\.\d+)/, '$1')}`, target: '_blank' }, a.doi)),
-          React.createElement('p', null, React.createElement('strong', null, 'Journal: '), a.journal),
-          React.createElement('p', null, React.createElement('strong', null, 'Product: '), a.product),
-          React.createElement('p', null, React.createElement('strong', null, 'Setting: '), a.setting),
-          React.createElement('p', null, React.createElement('strong', null, 'Evidence Level: '), a.evidenceLevel),
-          React.createElement('p', null, React.createElement('strong', null, 'Data Sources: '), a.dataSources),
+          React.createElement('p', null, React.createElement('strong', null, 'Journal: '), React.createElement(MdText, { text: a.journal })),
+          React.createElement('p', null, React.createElement('strong', null, 'Product: '), React.createElement(MdText, { text: a.product })),
+          React.createElement('p', null, React.createElement('strong', null, 'Setting: '), React.createElement(MdText, { text: a.setting })),
+          React.createElement('p', null, React.createElement('strong', null, 'Evidence Level: '), React.createElement(MdText, { text: a.evidenceLevel })),
+          React.createElement('p', null, React.createElement('strong', null, 'Data Sources: '), React.createElement(MdText, { text: a.dataSources })),
           React.createElement('h3', null, 'Summary'),
-          React.createElement('p', null, a.summary),
+          React.createElement('div', { style: { marginBottom: 16 } }, React.createElement(MdText, { text: a.summary })),
           a.measures && a.measures.length > 0 && React.createElement(React.Fragment, null,
             React.createElement('h3', null, 'Study Measures'),
             React.createElement('table', { className: 'data-table' },
@@ -750,8 +750,8 @@
               ),
               React.createElement('tbody', null,
                 a.measures.map((m, i) => React.createElement('tr', { key: i },
-                  React.createElement('td', null, m.measure),
-                  React.createElement('td', { style: { fontSize: 13 } }, m.description),
+                  React.createElement('td', null, React.createElement(MdText, { text: m.measure })),
+                  React.createElement('td', { style: { fontSize: 13 } }, React.createElement(MdText, { text: m.description })),
                   React.createElement('td', null, (m.dimensions || '').split(/[,\/]/).map(d => dimPill(d))),
                 ))
               )
@@ -759,7 +759,7 @@
           ),
           a.keyFindings && a.keyFindings.length > 0 && React.createElement(React.Fragment, null,
             React.createElement('h3', null, 'Key Findings'),
-            a.keyFindings.map((f, i) => React.createElement('div', { key: i, className: 'finding-item' }, f))
+            a.keyFindings.map((f, i) => React.createElement('div', { key: i, className: 'finding-item' }, React.createElement(MdText, { text: f })))
           ),
         )
       );
