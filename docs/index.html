@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--
   ACI Evaluation Report — Interactive Web Application
-  25 canonical measures derived from 426 raw measure rows across 54 papers | March 2026 | v.12
+  25 canonical measures derived from 426 raw measure rows across 54 papers | March 2026 | v.13
 
   Version History:
     v.01 — Initial build (single-page React app with Recharts)
@@ -16,6 +16,7 @@
     v.10 — Added markdown rendering in Canonical Measures (mdToReact/MdText)
     v.11 — Applied markdown rendering to Article Explorer modal
     v.12 — Fixed extractSection regex bug (54/54 articles now have study measures)
+    v.13 — Responsive Article Explorer table (dynamic column widths, mobile breakpoints)
 -->
 <html lang="en">
 <head>
@@ -66,12 +67,34 @@
     .badge-dim { background: #ede7f6; color: #4527a0; padding: 2px 8px; font-size: 11px; }
 
     /* Tables */
-    .data-table { width: 100%; border-collapse: collapse; font-size: 14px; }
+    .data-table { width: 100%; border-collapse: collapse; font-size: 14px; table-layout: fixed; }
     .data-table th { background: #1F4E79; color: white; padding: 10px 14px; text-align: left; font-weight: 600; position: sticky; top: 56px; z-index: 10; }
-    .data-table td { padding: 10px 14px; border-bottom: 1px solid #eee; vertical-align: top; }
+    .data-table td { padding: 10px 14px; border-bottom: 1px solid #eee; vertical-align: top; overflow: hidden; text-overflow: ellipsis; }
     .data-table tr:hover td { background: #f0f7ff; }
     .data-table tr:nth-child(even) td { background: #fafbfc; }
     .data-table tr:nth-child(even):hover td { background: #f0f7ff; }
+    /* Article Explorer column widths */
+    .col-year { width: 6%; }
+    .col-title { width: 50%; }
+    .col-design { width: 14%; }
+    .col-product { width: 20%; }
+    .col-measures { width: 10%; text-align: center; }
+    @media (max-width: 900px) {
+      .col-year { width: 8%; }
+      .col-title { width: 44%; }
+      .col-design { width: 16%; }
+      .col-product { width: 22%; }
+      .col-measures { width: 10%; }
+      .data-table { font-size: 12px; }
+      .data-table th, .data-table td { padding: 8px 8px; }
+    }
+    @media (max-width: 600px) {
+      .col-product { display: none; }
+      .col-design { display: none; }
+      .col-title { width: 70%; }
+      .col-year { width: 15%; }
+      .col-measures { width: 15%; }
+    }
 
     /* Filters */
     .filters { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 20px; align-items: center; }
@@ -417,7 +440,7 @@
           React.createElement('div', { className: 'hero-inner' },
             React.createElement('h1', null, 'Evaluating Ambient Clinical Intelligence'),
             React.createElement('p', null, 'A methodological critique of the evidence base for ambient AI documentation tools in healthcare, mapping 54 studies to the DeLone & McLean IS Success Model.'),
-            React.createElement('p', { className: 'subtitle' }, '25 canonical measures derived from 426 raw measure rows across 54 papers | March 2026 | v.12')
+            React.createElement('p', { className: 'subtitle' }, '25 canonical measures derived from 426 raw measure rows across 54 papers | March 2026 | v.13')
           )
         ),
         React.createElement('div', { className: 'container' },
@@ -713,11 +736,11 @@
           React.createElement('table', { className: 'data-table' },
             React.createElement('thead', null,
               React.createElement('tr', null,
-                React.createElement('th', null, 'Year'),
-                React.createElement('th', null, 'Title'),
-                React.createElement('th', null, 'Design'),
-                React.createElement('th', null, 'Product'),
-                React.createElement('th', null, 'Measures'),
+                React.createElement('th', { className: 'col-year' }, 'Year'),
+                React.createElement('th', { className: 'col-title' }, 'Title'),
+                React.createElement('th', { className: 'col-design' }, 'Design'),
+                React.createElement('th', { className: 'col-product' }, 'Product'),
+                React.createElement('th', { className: 'col-measures' }, 'Measures'),
               )
             ),
             React.createElement('tbody', null,
@@ -727,11 +750,11 @@
                   key: i, style: { cursor: 'pointer' },
                   onClick: () => setSelectedArticle(a)
                 },
-                  React.createElement('td', null, a.year || '?'),
-                  React.createElement('td', null, React.createElement('strong', null, (a.title || a.id).substring(0, 70))),
-                  React.createElement('td', null, React.createElement('span', { className: 'tag' }, a.studyDesign || '?')),
-                  React.createElement('td', null, prod),
-                  React.createElement('td', null, (a.measures || []).length),
+                  React.createElement('td', { className: 'col-year' }, a.year || '?'),
+                  React.createElement('td', { className: 'col-title' }, React.createElement('strong', null, (a.title || a.id).substring(0, 70))),
+                  React.createElement('td', { className: 'col-design' }, React.createElement('span', { className: 'tag' }, a.studyDesign || '?')),
+                  React.createElement('td', { className: 'col-product' }, prod),
+                  React.createElement('td', { className: 'col-measures' }, (a.measures || []).length),
                 );
               })
             )
