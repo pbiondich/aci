@@ -6,8 +6,6 @@
   <title>Evaluating Ambient Clinical Intelligence</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.23.9/babel.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/recharts/2.12.7/Recharts.min.js"></script>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f8f9fa; color: #1a1a2e; line-height: 1.6; }
@@ -130,9 +128,64 @@
 </head>
 <body>
   <div id="root"></div>
-  <script type="text/babel">
+  <script type="text/javascript">
     const { useState, useEffect, useMemo } = React;
-    const { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, PieChart, Pie, Cell, Legend, RadarChart, Radar, PolarGrid, PolarAngleAxis, PolarRadiusAxis, Treemap } = Recharts;
+    const h = React.createElement;
+
+    // ─── Pure CSS Bar Chart Components ───
+    function HBarChart({ data, labelKey, valueKey, maxVal, colorFn }) {
+      const mx = maxVal || Math.max(...data.map(d => d[valueKey]));
+      return h('div', { style: { display: 'flex', flexDirection: 'column', gap: 6 } },
+        data.map((d, i) => h('div', { key: i, style: { display: 'flex', alignItems: 'center', gap: 8 } },
+          h('div', { style: { width: 140, fontSize: 12, color: '#555', textAlign: 'right', flexShrink: 0, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' } }, d[labelKey]),
+          h('div', { style: { flex: 1, background: '#eee', borderRadius: 4, height: 22, position: 'relative', overflow: 'hidden' } },
+            h('div', { style: { width: (d[valueKey] / mx * 100) + '%', height: '100%', background: colorFn ? colorFn(d, i) : '#1F4E79', borderRadius: 4, transition: 'width 0.5s ease' } }),
+            h('span', { style: { position: 'absolute', right: 6, top: 2, fontSize: 11, fontWeight: 600, color: d[valueKey]/mx > 0.5 ? 'white' : '#333' } }, d[valueKey])
+          )
+        ))
+      );
+    }
+
+    function VBarChart({ data, labelKey, valueKey, colorFn, height }) {
+      const mx = Math.max(...data.map(d => d[valueKey]));
+      const ht = height || 200;
+      return h('div', { style: { display: 'flex', alignItems: 'flex-end', gap: 8, height: ht, padding: '0 8px' } },
+        data.map((d, i) => h('div', { key: i, style: { flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 4 } },
+          h('span', { style: { fontSize: 11, fontWeight: 600, color: '#333' } }, d[valueKey]),
+          h('div', { style: { width: '100%', maxWidth: 48, height: (d[valueKey] / mx * (ht - 40)) + 'px', background: colorFn ? colorFn(d, i) : '#1F4E79', borderRadius: '4px 4px 0 0', transition: 'height 0.5s ease', minHeight: 2 } }),
+          h('span', { style: { fontSize: 10, color: '#666', textAlign: 'center', transform: 'rotate(-30deg)', transformOrigin: 'top center', whiteSpace: 'nowrap' } }, d[labelKey])
+        ))
+      );
+    }
+
+    function DonutChart({ data, colors, size }) {
+      const total = data.reduce((s, d) => s + d.value, 0);
+      const sz = size || 200;
+      let cumAngle = 0;
+      const paths = data.map((d, i) => {
+        const angle = (d.value / total) * 360;
+        const startAngle = cumAngle;
+        cumAngle += angle;
+        const startRad = (startAngle - 90) * Math.PI / 180;
+        const endRad = (cumAngle - 90) * Math.PI / 180;
+        const r = sz / 2 - 10;
+        const cx = sz / 2, cy = sz / 2;
+        const x1 = cx + r * Math.cos(startRad), y1 = cy + r * Math.sin(startRad);
+        const x2 = cx + r * Math.cos(endRad), y2 = cy + r * Math.sin(endRad);
+        const large = angle > 180 ? 1 : 0;
+        const path = `M ${cx} ${cy} L ${x1} ${y1} A ${r} ${r} 0 ${large} 1 ${x2} ${y2} Z`;
+        return h('path', { key: i, d: path, fill: colors[i % colors.length], stroke: 'white', strokeWidth: 2 });
+      });
+      return h('div', { style: { display: 'flex', alignItems: 'center', gap: 16, flexWrap: 'wrap' } },
+        h('svg', { width: sz, height: sz, viewBox: `0 0 ${sz} ${sz}` }, ...paths, h('circle', { cx: sz/2, cy: sz/2, r: sz/4, fill: 'white' })),
+        h('div', { style: { display: 'flex', flexDirection: 'column', gap: 4 } },
+          data.map((d, i) => h('div', { key: i, style: { display: 'flex', alignItems: 'center', gap: 6, fontSize: 12 } },
+            h('div', { style: { width: 10, height: 10, borderRadius: 2, background: colors[i % colors.length], flexShrink: 0 } }),
+            h('span', null, d.name + ' (' + d.value + ')')
+          ))
+        )
+      );
+    }
 
     const COLORS = ['#1F4E79','#2d6da3','#4a90c4','#6db3e6','#90d4f7','#ef6c00','#c62828','#2e7d32','#7b1fa2','#00838f'];
     const DIM_COLORS = { SQ: '#7b1fa2', IQ: '#1565c0', SerQ: '#00838f', U: '#2e7d32', US: '#ef6c00', NB: '#c62828' };
@@ -276,15 +329,7 @@
           React.createElement('div', { className: 'chart-grid' },
             React.createElement('div', { className: 'chart-card' },
               React.createElement('div', { className: 'chart-title' }, 'Publications by Year'),
-              React.createElement(ResponsiveContainer, { width: '100%', height: 250 },
-                React.createElement(BarChart, { data: years },
-                  React.createElement(CartesianGrid, { strokeDasharray: '3 3', stroke: '#eee' }),
-                  React.createElement(XAxis, { dataKey: 'year', fontSize: 13 }),
-                  React.createElement(YAxis, { fontSize: 13 }),
-                  React.createElement(Tooltip, null),
-                  React.createElement(Bar, { dataKey: 'count', fill: '#1F4E79', radius: [4,4,0,0] }),
-                )
-              )
+              React.createElement(VBarChart, { data: years, labelKey: 'year', valueKey: 'count', height: 220 })
             ),
             React.createElement('div', { className: 'chart-card' },
               React.createElement('div', { className: 'chart-title' }, 'Key Findings at a Glance'),
@@ -343,29 +388,11 @@
         React.createElement('div', { className: 'chart-grid' },
           React.createElement('div', { className: 'chart-card' },
             React.createElement('div', { className: 'chart-title' }, 'Study Design Distribution'),
-            React.createElement(ResponsiveContainer, { width: '100%', height: 300 },
-              React.createElement(BarChart, { data: designData, layout: 'vertical', margin: { left: 120 } },
-                React.createElement(CartesianGrid, { strokeDasharray: '3 3', stroke: '#eee' }),
-                React.createElement(XAxis, { type: 'number', fontSize: 12 }),
-                React.createElement(YAxis, { type: 'category', dataKey: 'name', fontSize: 12, width: 120 }),
-                React.createElement(Tooltip, null),
-                React.createElement(Bar, { dataKey: 'value', fill: '#1F4E79', radius: [0,4,4,0] }),
-              )
-            )
+            React.createElement(HBarChart, { data: designData, labelKey: 'name', valueKey: 'value' })
           ),
           React.createElement('div', { className: 'chart-card' },
             React.createElement('div', { className: 'chart-title' }, 'Products Evaluated'),
-            React.createElement(ResponsiveContainer, { width: '100%', height: 300 },
-              React.createElement(PieChart, null,
-                React.createElement(Pie, {
-                  data: productData.slice(0, 8), dataKey: 'value', nameKey: 'name',
-                  cx: '50%', cy: '50%', outerRadius: 100, label: ({ name, value }) => `${name} (${value})`
-                },
-                  productData.slice(0, 8).map((_, i) => React.createElement(Cell, { key: i, fill: COLORS[i % COLORS.length] }))
-                ),
-                React.createElement(Tooltip, null),
-              )
-            )
+            React.createElement(DonutChart, { data: productData.slice(0, 8), colors: COLORS, size: 200 })
           ),
         ),
 
@@ -397,27 +424,11 @@
           React.createElement('h3', { style: { marginTop: 0 } }, 'Evidence Distribution Across Dimensions'),
           React.createElement('div', { className: 'chart-grid', style: { margin: 0 } },
             React.createElement('div', null,
-              React.createElement(ResponsiveContainer, { width: '100%', height: 300 },
-                React.createElement(BarChart, { data: dimData },
-                  React.createElement(CartesianGrid, { strokeDasharray: '3 3', stroke: '#eee' }),
-                  React.createElement(XAxis, { dataKey: 'name', fontSize: 12, angle: -20, textAnchor: 'end', height: 60 }),
-                  React.createElement(YAxis, { fontSize: 12 }),
-                  React.createElement(Tooltip, null),
-                  React.createElement(Bar, { dataKey: 'papers', name: 'Papers' },
-                    dimData.map((d, i) => React.createElement(Cell, { key: i, fill: d.color }))
-                  ),
-                )
-              )
+              React.createElement(HBarChart, { data: dimData.map(function(d) { return { name: d.name, value: d.papers, color: d.color }; }), labelKey: 'name', valueKey: 'value', colorFn: function(d) { return d.color; } })
             ),
             React.createElement('div', null,
-              React.createElement(ResponsiveContainer, { width: '100%', height: 300 },
-                React.createElement(RadarChart, { data: radarData },
-                  React.createElement(PolarGrid, null),
-                  React.createElement(PolarAngleAxis, { dataKey: 'dimension', fontSize: 13 }),
-                  React.createElement(PolarRadiusAxis, { fontSize: 11 }),
-                  React.createElement(Radar, { name: 'Papers', dataKey: 'papers', stroke: '#1F4E79', fill: '#1F4E79', fillOpacity: 0.3 }),
-                )
-              )
+              React.createElement(HBarChart, { data: dimData.map(function(d) { return { name: d.name, value: d.measures, color: d.color }; }), labelKey: 'name', valueKey: 'value', colorFn: function(d) { return d.color; } }),
+              React.createElement('div', { style: { fontSize: 12, color: '#888', marginTop: 8, textAlign: 'center' } }, 'Canonical Measures per Dimension')
             ),
           )
         ),
@@ -531,17 +542,7 @@
         React.createElement('p', null, 'Each canonical measure is assessed on study design quality, instrument validation, finding convergence, and bias risk. The chart below shows rigor scores (0\u2013100) for all 25 measures.'),
 
         React.createElement('div', { className: 'card' },
-          React.createElement(ResponsiveContainer, { width: '100%', height: 500 },
-            React.createElement(BarChart, { data: rigorData, layout: 'vertical', margin: { left: 200 } },
-              React.createElement(CartesianGrid, { strokeDasharray: '3 3', stroke: '#eee' }),
-              React.createElement(XAxis, { type: 'number', domain: [0, 100], fontSize: 12 }),
-              React.createElement(YAxis, { type: 'category', dataKey: 'name', fontSize: 11, width: 200 }),
-              React.createElement(Tooltip, { formatter: (v, n, p) => [v + '/100', 'Rigor Score'], labelFormatter: (l) => { const item = rigorData.find(d => d.name === l); return item ? item.fullName : l; } }),
-              React.createElement(Bar, { dataKey: 'score', radius: [0,4,4,0] },
-                rigorData.map((d, i) => React.createElement(Cell, { key: i, fill: getRigorColor(d.score) }))
-              ),
-            )
-          )
+          React.createElement(HBarChart, { data: rigorData.map(function(d) { return { name: d.id + ': ' + d.fullName, value: d.score }; }), labelKey: 'name', valueKey: 'value', maxVal: 100, colorFn: function(d) { return getRigorColor(d.value); } })
         ),
 
         Object.entries(tiers).map(([tier, items]) => items.length > 0 &&
