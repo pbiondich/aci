@@ -1,0 +1,2010 @@
+[
+  {
+    "id": "AAFP 2021 - Using AI Assistant Reduce Documentation Burden Family Medicine",
+    "title": "Using an AI Assistant to Reduce Documentation Burden in Family Medicine",
+    "authors": "American Academy of Family Physicians (AAFP) Innovation Lab",
+    "doi": "None — grey literature (AAFP Innovation Lab report)",
+    "journal": "American Academy of Family Physicians (AAFP) Innovation Lab Report | 2021",
+    "product": "**Suki AI** — AI assistant for documentation in family medicine. Labeled \"AI Assistant for Documentation\" in this report; Suki confirmed from external sources (Chief Healthcare Executive, Suki's own reposting of report).",
+    "setting": "Family medicine / primary care — AAFP Innovation Lab Phase 2. 132 family physicians and primary care clinicians across the US; 3-practice initial Phase 1 pilot followed by national Phase 2. Voluntary trial period of 30 days.",
+    "evidenceLevel": "Grey Literature (professional association innovation lab report; not peer-reviewed)",
+    "dataSources": "Survey/self-report (n=40 qualitative survey); product telemetry / quantitative adoption data (n=132 documentation time); operational metrics (adoption/purchasing)",
+    "summary": "AAFP Innovation Lab Phase 2 report evaluating Suki AI for documentation among 132 family medicine and primary care physicians over a 30-day trial. Of 132 participants, 102 completed the trial; 61 (60%) adopted Suki as paying customers post-trial. Adopters saw a 72% reduction in median documentation time per note, translating to ~3.3 hours/week of time savings. Phase 1 (10 physicians, 3 practices) found 62% reduction in in-clinic documentation time and 76% reduction in after-hours documentation time.",
+    "hypothesis": "Not explicitly stated. Aim: assess whether AI-assisted documentation (Suki) is essential to and readily adopted by family physicians; evaluate adoption, impact, and barriers.",
+    "measures": [
+      {
+        "measure": "Adoption rate",
+        "description": "% of trial participants who purchased Suki after trial; 60% (61/102)",
+        "dimensions": "U"
+      },
+      {
+        "measure": "Documentation time reduction",
+        "description": "% reduction in median per-note documentation time among adopters; 72%",
+        "dimensions": "NB"
+      },
+      {
+        "measure": "Time savings per week",
+        "description": "Calculated hours saved per clinician per week; 3.3 hours",
+        "dimensions": "NB"
+      },
+      {
+        "measure": "In-clinic documentation time",
+        "description": "Phase 1 finding: 62% reduction in documentation time during clinic hours",
+        "dimensions": "NB"
+      },
+      {
+        "measure": "After-hours documentation time",
+        "description": "Phase 1 finding: 76% reduction in after-hours documentation",
+        "dimensions": "NB"
+      },
+      {
+        "measure": "Physician satisfaction",
+        "description": "Self-reported satisfaction with workload and practice",
+        "dimensions": "US"
+      }
+    ],
+    "keyFindings": [
+      "Phase 2 (n=102–132):",
+      "60% adoption rate — 61 of 102 trial completers purchased Suki after trial",
+      "72% reduction in median documentation time per note among adopters",
+      "3.3 hours/week time savings per adopting clinician",
+      "Participants reported improved satisfaction with workload and overall practice",
+      "Non-adopters fell into 4 categories: (1) no significant documentation burden at baseline, (2) EMR workflow already efficient, (3) EMR integration not available, (4) couldn't fully complete the trial",
+      "Phase 1 (10 physicians, 3 practices):",
+      "62% reduction in in-clinic documentation time",
+      "76% reduction in after-hours documentation time",
+      "Described as \"a breakthrough\" by some clinicians"
+    ],
+    "year": "2021",
+    "studyDesign": "Review",
+    "geography": "",
+    "sampleSize": 132
+  },
+  {
+    "id": "Afshar 2025 - Novel Playbook for Pragmatic Trial Operations",
+    "title": "A Novel Playbook for Pragmatic Trial Operations to Monitor and Evaluate Ambient Artificial Intelligence in Clinical Practice",
+    "authors": "Afshar, Majid; Resnik, Felice; Baumann, Mary Ryan; Hintzke, Josie; Lemmon, Kayla; Sullivan, Anne Gravel; Shah, Tina; Stordalen, Anthony; Oberst, Michael; Dambach, Jason; Mrotek, Leigh Ann; Quinn, Mariah; Abramson, Kirsten; Kleinschmidt, Peter; Brazelton, Tom; Twedt, Heidi; Kunstman, David; Wills, Graham; Long, John; Patterson, Brian W.; Liao, Frank J.; Rasmussen, Stacy; Burnside, Elizabeth; Goswami, Cherodeep; Gordon, Joel E.",
+    "doi": "10.1056/aidbp2401267",
+    "journal": "NEJM AI | Vol. 2, Issue 9 | Published: August 28, 2025",
+    "product": "[[Abridge]] (©Abridge AI, Inc.), integrated with [[Epic]] EHR via FHIR R4 APIs and Epic Haiku mobile application at University of Wisconsin Hospitals and Clinics.",
+    "setting": "Multi-specialty outpatient care at University of Wisconsin Hospitals and Clinics (UW Health). 66 providers enrolled across 8 specialties. Providers required to treat ≥20 patients/week and use Epic Haiku.",
+    "evidenceLevel": "Quality Improvement (implementation phase) + RCT protocol (trial design described; primary results pending)",
+    "dataSources": "Product telemetry | EHR data | Survey/self-report | Mixed",
+    "summary": "This paper presents the \"PTOps Playbook\" — a pragmatic trial operations framework for implementing and evaluating ambient AI in routine clinical care. The team ran an implementation phase at UW Health using Abridge integrated with Epic, establishing governance, technical workflows, and real-time monitoring dashboards. Key findings included a 65.4% weighted median utilization rate and a temporary drop in ICD-10 coding accuracy (79% → 35%) due to a note template change, which recovered after redesign and retraining. The paper also describes the design for a 24-week stepped-wedge RCT powered for provider well-being as the primary outcome.",
+    "hypothesis": "Integrating ambient AI into clinical workflows using a bidirectional governance model and a real-time monitoring framework will yield high adoption within a defined operational timeline and achieve acceptable documentation accuracy and workflow efficiency.",
+    "measures": [],
+    "keyFindings": [],
+    "year": "2025",
+    "studyDesign": "RCT",
+    "geography": "",
+    "sampleSize": 66
+  },
+  {
+    "id": "Afshar 2025b - Pragmatic RCT Ambient AI Health Practitioner Wellbeing",
+    "title": "A Pragmatic Randomized Controlled Trial of Ambient Artificial Intelligence to Improve Health Practitioner Well-Being",
+    "authors": "Afshar, Majid; Ryan Baumann, Mary; Resnik, Felice; Hintzke, Josie; Gravel Sullivan, Anne; Wills, Graham; Lemmon, Kayla; Dambach, Jason; Mrotek, Leigh Ann; Quinn, Mariah; Abramson, Kirsten; Kleinschmidt, Peter; Brazelton, Thomas B.; Leaf, Margaret A.; Twedt, Heidi; Kunstman, David; Patterson, Brian; Liao, Frank; Rasmussen, Stacy; Burnside, Elizabeth S.; Goswami, Cherodeep; Gordon, Joel",
+    "doi": "10.1056/AIoa2500945",
+    "journal": "NEJM AI | Vol. 2, No. 12 | Published: November 26, 2025 | Received: August 20, 2025; Accepted: September 28, 2025",
+    "product": "**Abridge AI, Inc.** — HIPAA-compliant ambient AI documentation platform integrated with Epic via private APIs and FHIR R4 APIs. EHR-embedded, documentation-only (no diagnostic/therapeutic decision support). Deployed version: generally available release as of October 10, 2024.",
+    "setting": "Ambulatory clinics — UW Health (University of Wisconsin) across Wisconsin and Illinois. Eight specialties. Academic health system. Trial period: August 21, 2024–March 27, 2025. 66 health care practitioners (attending physicians + advanced practice providers).",
+    "evidenceLevel": "RCT (stepped-wedge, individually randomized pragmatic trial — 24 weeks)",
+    "dataSources": "- EHR audit-log data (time on notes, WoW, same-day closure)",
+    "summary": "The most methodologically rigorous trial of ambient AI documentation in the corpus to date. A 24-week stepped-wedge individually randomized pragmatic RCT at UW Health (Wisconsin + Illinois), enrolling 66 health care practitioners across 8 specialties using Abridge AI integrated with Epic. 71,487 total notes authored; 27,092 (38%) generated using ambient AI. Coprimary outcomes: Stanford PFI work exhaustion/interpersonal disengagement (−0.44 points; p<0.001, **significant**) and professional fulfillment (+0.14 points; p=0.04, **nonsignificant by pre-specified alpha of 0.025**). Secondary: documentation time −0.36 hours/day (significant); WoW −0.50 hours/day (significant but sensitive to extreme outliers); billing code compliance improved (p<0.001); PDSQI-9 scores 3.97–4.99/5.0 (high quality); no software performance drift detected.",
+    "hypothesis": "Ambient AI will improve health care practitioners' well-being, yielding higher fulfillment scores and lower work exhaustion/interpersonal disengagement (burnout) scores.",
+    "measures": [
+      {
+        "measure": "Work Exhaustion / Interpersonal Disengagement (PFI)",
+        "description": "Stanford PFI 10-item composite; 1–5 scale (higher=worse). Corresponds to burnout. Collected at baseline, 6, 12, 18, 24 weeks. Coprimary outcome.",
+        "dimensions": "US, NB"
+      },
+      {
+        "measure": "Professional Fulfillment (PFI)",
+        "description": "Stanford PFI 6-item subscale; 1–5 scale (higher=better). Coprimary outcome.",
+        "dimensions": "US, NB"
+      },
+      {
+        "measure": "Time on notes (EHR audit log)",
+        "description": "Hours/day spent on notes, normalized to 8-hour workday; from EHR audit-log data.",
+        "dimensions": "NB"
+      },
+      {
+        "measure": "Work Outside Work (WoW)",
+        "description": "Hours/day documenting outside scheduled hours, normalized to 8-hour workday; EHR audit-log.",
+        "dimensions": "NB"
+      },
+      {
+        "measure": "Same-day / pre-next-visit closure",
+        "description": "Proportion of encounters closed same day or before next patient visit; EHR audit-log.",
+        "dimensions": "NB"
+      },
+      {
+        "measure": "Diagnostic billing compliance",
+        "description": "ICD-10 code alignment with documentation; reviewed by certified coders using standardized rubric. Partial credit for insufficient specificity; zero for billing-validity errors.",
+        "dimensions": "IQ, NB"
+      },
+      {
+        "measure": "PDSQI-9 note quality",
+        "description": "Provider Documentation Summarization Quality Instrument 9 (adapted); 5-point scale per domain; LLM-as-judge implementation validated against physician ratings. Unedited AI notes evaluated pre-practitioner review.",
+        "dimensions": "IQ"
+      },
+      {
+        "measure": "Task load",
+        "description": "Practitioner-reported secondary measure",
+        "dimensions": "US"
+      },
+      {
+        "measure": "Meaningfulness of work",
+        "description": "Practitioner-reported secondary measure",
+        "dimensions": "US"
+      },
+      {
+        "measure": "Trust in AI",
+        "description": "Practitioner-reported secondary measure",
+        "dimensions": "US, U"
+      }
+    ],
+    "keyFindings": [],
+    "year": "2025",
+    "studyDesign": "RCT",
+    "geography": "Illinois, USA",
+    "sampleSize": null
+  },
+  {
+    "id": "Albrecht 2025 - Ambient AI Clinical Documentation QI Survey",
+    "title": "Enhancing clinical documentation with ambient artificial intelligence: a quality improvement survey assessing clinician perspectives on work burden, burnout, and job satisfaction",
+    "authors": "Albrecht, Michael; Shanks, Denton; Shah, Tina; Hudson, Taina; Thompson, Jeffrey; Filardi, Tanya; Wright, Kelli; Ator, Gregory A.; Smith, Timothy Ryan",
+    "doi": "10.1093/jamiaopen/ooaf013",
+    "journal": "JAMIA Open | Vol. 8, No. 1 | 2025. Open Access. University of Kansas Medical Center (KUMC). Abridge-affiliated co-author (Tina Shah). Received July 11, 2024; Accepted February 7, 2025.",
+    "product": "**Abridge** (explicitly named). Ambient AI documentation platform. iPhone/Android app records conversations; generates structured notes that can be edited and inserted into Epic via dot phrases. Partial integration during study (not full Epic mobile app to note automation). 30 specialties represented; grouped into primary care, medical subspecialty, surgical subspecialty for analysis.",
+    "setting": "University of Kansas Medical Center (KUMC). 181 clinicians initially offered access; 133 \"adopters\" (completed ≥5 encounters) offered post-survey. **Pre-survey:** 93/181 (51.9% response). **Post-survey:** 99/133 (74.4% response). Pre-survey anonymous; post-survey not. Median days using Abridge before post-survey: 92 days (IQR 66-172). 87% physicians, 13% APPs. Demographics of post-survey respondents: median age 41, median years in practice 12, median years at institution 4.",
+    "evidenceLevel": "Quality Improvement (pre/post survey study)",
+    "dataSources": "Pre/post surveys (14 items total across both surveys). Pre: 8 items on baseline documentation experience. Post: 11 items on perceived impact. Several concordant questions analyzed together using proportional odds logistic regression (POLR). Covariate analysis for specialty type and days of use.",
+    "summary": "This QI study at KUMC assessed clinician perceptions before and after implementing Abridge ambient AI documentation across 30 specialties. Key quantitative findings: clinicians had **6.91 times higher odds** of reporting easier documentation workflow post-implementation (95% CI 3.90-12.56, p<.001) and **4.95 times higher odds** of agreeing they could complete notes before the next patient (95% CI 2.87-8.69, p<.001). In the post-survey, 81% agreed the tool made workflow easy, 77% reported decreased documentation burden, 73% reported decreased after-hours documentation, 67% reported reduced burnout risk, and 64% reported increased work satisfaction. 47% agreed they could add at least one more patient if needed. Specialty type and days of Abridge use did not significantly affect responses. Pre-survey showed high baseline documentation burden (83% spent time outside clinical hours, 75% at risk for burnout). The study is notable for including medical and surgical subspecialists (not just primary care) and showing consistent benefit across specialties.",
+    "hypothesis": "To evaluate the impact of Abridge ambient AI documentation on clinicians’ perceptions of documentation burden, after-hours work, burnout risk, and job satisfaction.",
+    "measures": [],
+    "keyFindings": [],
+    "year": "2025",
+    "studyDesign": "QI/Pre-Post",
+    "geography": "",
+    "sampleSize": 181
+  },
+  {
+    "id": "Anderson 2025 - Quality Safety Ambient Digital Scribe Platforms Simulation",
+    "title": "Evaluating the Quality and Safety of Ambient Digital Scribe Platforms Using Simulated Ambulatory Encounters",
+    "authors": "Anderson, Taylor N.; Mohan, Vishnu; Dorr, David A.; Ratwani, Raj M.; Biro, Joshua M.; Gold, Jeffrey A.",
+    "doi": "10.1016/j.mcpdig.2025.100292",
+    "journal": "Mayo Clinic Proceedings: Digital Health | Vol. 3, No. 4 | December 2025 | Article 100292. Open Access (CC BY 4.0). Oregon Health & Science University (OHSU) / MedStar Health National Center for Human Factors in Healthcare. Note: Joshua M. Biro and Raj M. Ratwani are also co-authors of Biro 2025 (Paper 24) — same MedStar/simulation testing group.",
+    "product": "**Five anonymized ADS platforms (A–E)** — 4 commercially available (A–D) + 1 free platform (E). Products not named. Evaluated December 2024–February 2025 using most current platform version at time of evaluation. This is a methodological/comparative study; product names deliberately withheld.",
+    "setting": "Simulation study — no real patients. 14 simulated ambulatory clinical encounters from a pre-existing medical scribe training curriculum. Audio played from MacBook Pro laptop, captured by ADS app on iPhone 14 Pro at ~1 ft distance in quiet room. Encounters cover a range of ambulatory specialties (Supplemental Table 1). Mean encounter duration: 13.4 minutes (range 7.9–22.1 min). Professional human transcription used as gold standard.",
+    "evidenceLevel": "Observational (simulation testing — technical evaluation)",
+    "dataSources": "Simulation data (ADS-generated transcripts vs. professional transcriptions) | Clinical note rubric scoring (key element accuracy) | PDQI-9 note quality assessment | AHRQ harm scale (adapted for potential risk)",
+    "summary": "This simulation study from OHSU and MedStar evaluated 5 ambient digital scribe platforms across 14 standardized clinical scenarios, assessing transcript accuracy, clinical note quality (PDQI-9), note accuracy/completeness (rubric-based), and clinical harm potential (AHRQ scale). Key findings: transcripts from platforms A–D averaged 13.9 errors/case; 19.5% of transcript errors were transmitted to the clinical note. Mean clinical note error rate across platforms was **26.3%** of key elements — more than 1 in 4 key clinical elements omitted or incorrect. **Omissions** were the dominant error type (76.3% of all errors), significantly more common than commission errors — consistent with Biro 2025 and contradicting the \"hallucination = primary concern\" assumption. Mean of **3.0 errors per case had potential for moderate-to-severe harm** (AHRQ ≥2). Platform E (free) was substantially worse than commercial platforms on all metrics. Only 35.8% of correctly reported elements were consistently correct across all platforms — highlighting intra-corpus variability. PDQI-9 mean score was 36±4, with significant variation between platforms (C and B best; E worst). Authors conclude there is urgent need for standardized, objective evaluation frameworks for ADS before widespread clinical adoption.",
+    "hypothesis": "Explicit: to evaluate and compare the quality and safety of ambient digital scribe platforms using simulated ambulatory encounters.",
+    "measures": [
+      {
+        "measure": "**Transcript Errors per Case**",
+        "description": "Errors in ASR transcript vs. professional transcription. Mean 13.9 errors/case (95% CI 6.0–17.5) across platforms A–D. Platforms C and D significantly worse than A and B (p<.0020). Platform E did not produce transcripts (edited summaries only).",
+        "dimensions": "SQ - System Quality, IQ - Information Quality"
+      },
+      {
+        "measure": "**Transcript Error Transmission Rate (%)**",
+        "description": "Proportion of transcript errors that appeared in the clinical note. Mean 19.5% (95% CI 6.6–28.8%). No significant difference between platforms A–D.",
+        "dimensions": "IQ - Information Quality, SQ - System Quality"
+      },
+      {
+        "measure": "**Clinical Note Error Rate (% key elements)**",
+        "description": "Percentage of key clinical elements omitted or captured erroneously. Mean 26.3% (95% CI 17.0–31.0%) across all platforms. Platform E significantly worse (46.1% error rate vs. 16.7–23.3% for A–D).",
+        "dimensions": "IQ - Information Quality"
+      },
+      {
+        "measure": "**Error Subtype — Omissions**",
+        "description": "Most common error type: 76.3% of all errors were omissions (95% CI 70.0–83.3%). Significantly more than commission errors (p=.022). Consistent with Biro 2025 finding. Platform E had higher commission rate than C.",
+        "dimensions": "IQ - Information Quality"
+      },
+      {
+        "measure": "**AHRQ Harm Score (moderate-to-severe errors)**",
+        "description": "Mean 3.0 errors per case (range 0–21) had potential for moderate-to-severe harm (AHRQ ≥2). Platform E significantly worse (weighted harm score higher than A–D, p<.0082 for all). Platforms A–D not significantly different from each other.",
+        "dimensions": "IQ - Information Quality, NB - Net Benefits"
+      },
+      {
+        "measure": "**Cross-Platform Consistency**",
+        "description": "Only 35.8% ± 11.3% of correctly reported elements were consistently correct across all 5 platforms. High variability means a physician can't reliably predict which elements will be accurate for any given case.",
+        "dimensions": "SQ - System Quality, IQ - Information Quality"
+      },
+      {
+        "measure": "**PDQI-9 Note Quality Score (9–45)**",
+        "description": "Mean 36±4 across all platforms. Platform C highest (39.4), B second (38.4), E lowest (32.3). C > A, D, E (p<.028); B > E (p=.001). Significant inter-platform variation.",
+        "dimensions": "IQ - Information Quality, SQ - System Quality"
+      },
+      {
+        "measure": "**Note Length (words)**",
+        "description": "Mean 444±120 words across A–D. Platform E significantly shorter (271 words) than B, C, D (p<.001). Shorter + higher error rate for E.",
+        "dimensions": "IQ - Information Quality"
+      }
+    ],
+    "keyFindings": [],
+    "year": "2025",
+    "studyDesign": "Observational",
+    "geography": "",
+    "sampleSize": null
+  },
+  {
+    "id": "Arko 2025 - Documenting Care AI Comparative Commercial Scribe Tools",
+    "title": "Documenting Care with AI: A Comparative Analysis of Commercial Scribe Tools",
+    "authors": "Arko IV, Leopold; Hudelson, Carly; Kumar, Jaya; Badlani, Sameer; Stoffel, Michelle; Markowitz, Rebecca; Melton, Genevieve B.",
+    "doi": "10.3233/SHTI250857",
+    "journal": "Studies in Health Technology and Informatics (SHTI) | MEDINFO 2025 — Healthcare Smart × Medicine Deep | pp. 337–341. Open Access (CC BY-NC 4.0). University of Minnesota / M Health Fairview Systems, Minneapolis MN.",
+    "product": "**Four anonymized commercially available AI scribe solutions** (Vendor A, B, C, D). Selected based on commercial availability at time of study. No product names disclosed. No specific prompting prior to encounters — tested \"out of the box.\"",
+    "setting": "Simulation study — no real patients. Two simulated patient scenarios: (1) new atrial fibrillation in an outpatient medical patient; (2) new headache in a neurosurgical patient. Two physician reviewers: board-certified pediatric neurosurgeon and clinical informatics fellow (L.A.); board-certified general internist with clinical documentation improvement expertise (C.H.). Same standardized audio recordings used for all 4 vendors. Checklist of expected data elements created per encounter (14–27 elements per encounter). Friedman test for between-vendor comparisons. University of Minnesota.",
+    "evidenceLevel": "Observational (simulation study — comparative note quality evaluation)",
+    "dataSources": "Error taxonomy (omission, addition, incorrect facts) vs. checklist of expected elements | PDQI-9 note quality (consensus scoring) | Note length ratio",
+    "summary": "This small simulation study from University of Minnesota/M Health Fairview compared 4 commercial AI scribe tools on 2 outpatient scenarios (internal medicine + neurosurgical). Error taxonomy and PDQI-9 used as primary metrics. Overall error rate: **18.9%** (range 12.2–24.4% across vendors). No statistically significant differences between vendors on any measure (p=0.345 for error rate; p=0.267 for PDQI-9; p=0.112 for note length ratio) — but the study was severely underpowered with only 2 encounters. Omissions dominated at 71% of errors (consistent with Biro 2025 and Anderson 2025). Vendor A had lowest error rate (12.2%) and balanced note length. Vendor B had highest addition errors (7.3%) and lowest PDQI-9 (35.5), especially poor on succinctness (mean 2/5). Vendor C had highest omission rate (24.4%) but shortest notes and highest PDQI-9 (39.5). Vendor D was the only one with incorrect fact errors (3.7%). Authors acknowledge the study is limited by only 2 cases and plan larger follow-up with harm severity scale.",
+    "hypothesis": "To evaluate quality and accuracy of notes generated by 4 commercial AI scribes using simulated encounters and create a framework for institutional vendor evaluation.",
+    "measures": [
+      {
+        "measure": "**Overall Error Rate (%)**",
+        "description": "Errors / total expected data elements. Mean 18.9%; range 12.2–24.4%. No significant difference (p=0.345). Vendor A lowest (12.2%), Vendor C highest (24.4%).",
+        "dimensions": "IQ - Information Quality"
+      },
+      {
+        "measure": "**Omission Errors (%)**",
+        "description": "Missing expected data elements. 71% of all errors. Vendor C highest omission rate (24.4%) — short notes = more omissions.",
+        "dimensions": "IQ - Information Quality"
+      },
+      {
+        "measure": "**Addition Errors (%)**",
+        "description": "Elements added but not discussed in encounter. 19.4% of errors. Vendors B and D only. Vendor B highest (7.3%).",
+        "dimensions": "IQ - Information Quality, SQ - System Quality"
+      },
+      {
+        "measure": "**Incorrect Facts (%)**",
+        "description": "Factually wrong transcriptions. Only 6.5% of errors. Only Vendor D had incorrect facts (3.7%).",
+        "dimensions": "IQ - Information Quality, SQ - System Quality"
+      },
+      {
+        "measure": "**PDQI-9 Total Score (mean, 9–45)**",
+        "description": "Vendor A: 38.5, B: 35.5, C: 39.5, D: 39.5. No significant difference (p=0.267). Vendor B lowest; Vendor C and D highest.",
+        "dimensions": "IQ - Information Quality"
+      },
+      {
+        "measure": "**PDQI-9 Succinctness**",
+        "description": "Vendor B mean 2.0/5 — below 3.5 threshold. Only individual PDQI-9 element with a notably low score. Not statistically significant (p=0.145).",
+        "dimensions": "IQ - Information Quality"
+      },
+      {
+        "measure": "**Note Length Ratio**",
+        "description": "Words per note / number of expected data elements. Range 4.6–17.7 across vendors (p=0.112). Vendor B longest (17.7), Vendor C shortest (4.6).",
+        "dimensions": "IQ - Information Quality"
+      }
+    ],
+    "keyFindings": [],
+    "year": "2025",
+    "studyDesign": "Observational",
+    "geography": "",
+    "sampleSize": null
+  },
+  {
+    "id": "Baker 2023 - ChatGPT Ability Assist Clinical Documentation Orthopaedic RCT",
+    "title": "ChatGPT’s Ability to Assist with Clinical Documentation: A Randomized Controlled Trial",
+    "authors": "Baker, Hayden P.; Dwyer, Emma; Kalidoss, Senthooran; Hynes, Kelly; Wolf, Jennifer; Strelzow, Jason A.",
+    "doi": "10.5435/JAAOS-D-23-00474",
+    "journal": "Journal of the American Academy of Orthopaedic Surgeons (JAAOS) | Vol. 32, No. 3 | February 1, 2024 | pp. 123–129. Orthopaedic-specific study. University of Chicago. Randomized controlled pilot study.",
+    "product": "**ChatGPT** (GPT-4, OpenAI) — used as a clinical documentation assistant. Not a dedicated ambient AI scribe like DAX or Abridge. Standardized prompt: “Please write a patient history of present illness including the following points:” followed by pertinent history points.",
+    "setting": "University of Chicago, Department of Orthopaedic Surgery. **11 participants**: 4 medical students, 4 orthopaedic surgery residents (2 PGY3, 2 PGY4), 3 attending surgeons. 10 standardized patient histories with common orthopaedic conditions. Blinded, randomized controlled pilot study. Participants randomized into cohorts based on documentation technique (typing, dictation, ChatGPT). Each participant completed 3 HPIs using a different method for each. Time limit: 5 minutes to ask and collect details. 33 HPIs available for review.",
+    "evidenceLevel": "RCT (blinded, randomized controlled pilot study)",
+    "dataSources": "Direct time measurement | Word count | History items included | PDQI-9 (9-item Physician Documentation Quality Instrument, 0–45) | Global rating tool (1–5) | Error/hallucination detection",
+    "summary": "This orthopaedic-specific RCT is one of the few randomized controlled studies in the corpus. 11 participants (students, residents, attendings) documented 3 HPIs each using typing, dictation, and ChatGPT. Key findings: (1) **Dictation fastest** (43s), ChatGPT intermediate (69s), typing slowest (97s); (2) **ChatGPT produced significantly longer notes** (136 words vs. 90 dictation, 68 typing); (3) **ChatGPT had highest PDQI-9 and overall rating scores** — significantly better than typing and dictation; (4) ChatGPT included **erroneous/fictitious history points in 36% of documents** (4/11); (5) Poor inter-rater agreement on PDQI-9 and global rating between reviewers (ICC 0.1–0.19). Efficiency score (PDQI-9 per minute): dictation 51.1, ChatGPT 34.9, typing 21.5. Authors conclude ChatGPT has potential to improve clinical documentation by producing more comprehensive and organized HPIs, but additional studies are needed to address privacy, bias, and accuracy concerns. Hallucination rate of 36% is a significant safety signal.",
+    "hypothesis": "To investigate ChatGPT’s ability to assist with writing a history of present illness based on standardized patient histories compared with histories generated solely by healthcare professionals.",
+    "measures": [],
+    "keyFindings": [],
+    "year": "2023",
+    "studyDesign": "RCT",
+    "geography": "",
+    "sampleSize": 11
+  },
+  {
+    "id": "Balloch 2024 - Ambient Artificial Intelligence Tool Improve Quality Clinical Documentation",
+    "title": "Use of an ambient artificial intelligence tool to improve quality of clinical documentation",
+    "authors": "Balloch, Jasmine; Sridharan, Shankar; Oldham, Geralyn; Wray, Jo; Gough, Paul; Robinson, Robert; Sebire, Neil J.; Khalil, Saleh; Asgari, Elham; Tan, Christopher; Taylor, Andrew; Pimenta, Dominic",
+    "doi": "10.1016/j.fhj.2024.100157",
+    "journal": "Future Healthcare Journal | Vol. 11, Issue 3 | September 2024 | 100157. Open Access. Future Healthcare Journal (Royal College of Physicians). Simulation study.",
+    "product": "Ambient AI tool (unnamed in abstract — likely DAX or similar). Used in simulated outpatient consultations with actors and clinicians.",
+    "setting": "Simulation study — outpatient consultations simulated with actors and clinicians. Documentation assessed using Sheffield Assessment Instrument for Letters (SAIL). Clinician experience measured through questionnaires and NASA Task Load Index. No real patients.",
+    "evidenceLevel": "Observational (simulation study)",
+    "dataSources": "Simulated consultations | SAIL for documentation quality | Questionnaires and NASA Task Load Index for clinician experience",
+    "summary": "This simulation study evaluated an ambient AI tool's impact on clinical documentation quality and clinician experience. AI-produced documentation achieved higher SAIL scores than standard EHR practices. Consultations were 26.3% shorter on average without impacting patient interaction time. Clinicians reported an enhanced experience and reduced task load. The study concludes that the AI tool significantly improved documentation quality and operational efficiency in simulated consultations. Clinicians recognized its potential to improve note-taking processes.",
+    "hypothesis": "To assess the clinical utility of an ambient AI tool in enhancing consultation experience and the completion of clinical documentation.",
+    "measures": [],
+    "keyFindings": [],
+    "year": "2024",
+    "studyDesign": "Observational",
+    "geography": "",
+    "sampleSize": null
+  },
+  {
+    "id": "Billings 2025a - Ambient AI Assistant Transforms Primary Care Experience",
+    "title": "Ambient AI Assistant Transforms the Primary Care Experience",
+    "authors": "Billings, Edmund MD; Waldren, Steven E. MD MS (Phyx Primary Care)",
+    "doi": "None — grey literature (Phyx Primary Care Innovation Lab report; not peer-reviewed)",
+    "journal": "Phyx Primary Care Report | February 2025",
+    "product": "**Suki AI** — described by Phyx as an \"AI Clinical Assistant\" (explicitly distinguished from \"Ambient AI Scribes\" which Phyx frames as simpler/less integrated products). Phyx selected Suki after assessing companies in the category; chosen for voice/AI technology, mission alignment, primary care focus, scalability, safety compliance, and EHR integration capability.",
+    "setting": "Primary care — 116 primary care physicians surveyed across 37 practice locations nationwide. Mix of small independent practices, primary care organizations, and large health systems. ~80% small/independent. All respondents had used Suki AI Assistant for **more than 30 days** prior to survey.",
+    "evidenceLevel": "Grey Literature (non-profit innovation lab report; survey-based; not peer-reviewed)",
+    "dataSources": "Survey/self-report — Phyx Primary Care Vital Signs® (proprietary validated instrument); online survey; Net Promoter Score; 3 open-ended qualitative questions",
+    "summary": "Phyx Primary Care (nonprofit innovation lab) evaluated Suki AI's impact on 116 primary care physicians across 37 locations using their proprietary Primary Care Vital Signs® survey instrument. All respondents had used Suki for >30 days. The survey assessed burnout, practice satisfaction, scheduled visit time, adequacy of patient care time, and after-hours EHR time. Key findings: 60% fewer physicians reporting burnout; 81% more reported practice satisfaction; 41% reduction in notetaking time; 27% reduction in documentation burden; 44% reported improved patient interactions \"to a great extent\"; 20% could increase patient care time during visit; 33% spent less time after-hours. Report frames Suki as an \"AI Clinical Assistant\" vs. simpler \"Ambient AI Scribes.\"",
+    "hypothesis": "Not explicitly stated. Lab aim: evaluate whether primary care physicians' use of an AI Assistant can reduce burnout by improving Primary Care Vital Signs®, and inform adoption decisions.",
+    "measures": [
+      {
+        "measure": "Burnout (Primary Care Vital Signs®)",
+        "description": "Single-item burnout question (Non-Proprietary Single Measure) psychometrically tested against the Maslach Burnout Inventory (MBI). % reporting burnout before vs. after.",
+        "dimensions": "US (CM-01)"
+      },
+      {
+        "measure": "Practice Satisfaction",
+        "description": "Likert-based satisfaction item from Primary Care Vital Signs®",
+        "dimensions": "US (CM-15)"
+      },
+      {
+        "measure": "Notetaking Time Reduction (%)",
+        "description": "% reduction in self-reported time spent on notetaking",
+        "dimensions": "NB (CM-04)"
+      },
+      {
+        "measure": "Documentation Burden Reduction (%)",
+        "description": "% reduction in overall documentation burden",
+        "dimensions": "NB (CM-04)"
+      },
+      {
+        "measure": "Patient Interaction Improvement",
+        "description": "% saying Suki improved patient interactions \"to a great extent\"",
+        "dimensions": "NB (CM-18)"
+      },
+      {
+        "measure": "Increased Patient Care Time During Visit",
+        "description": "% reporting ability to increase face-to-face patient care time",
+        "dimensions": "NB (CM-18)"
+      },
+      {
+        "measure": "After-Hours Time Reduction",
+        "description": "% spending less time documenting after hours",
+        "dimensions": "NB (CM-05)"
+      },
+      {
+        "measure": "Net Promoter Score",
+        "description": "Standard NPS — likelihood to recommend",
+        "dimensions": "US (CM-15)"
+      },
+      {
+        "measure": "Open-Ended Qualitative Responses",
+        "description": "3 questions: why adopted, how documentation changed, what they'd tell a colleague",
+        "dimensions": "US (CM-15)"
+      }
+    ],
+    "keyFindings": [
+      "60% fewer physicians reported burnout after using Suki AI (Primary Care Vital Signs® single-item burnout, validated against MBI)",
+      "81% more physicians felt satisfied with their practice",
+      "41% reduction in notetaking time (self-report)",
+      "27% reduction in documentation burden (self-report)",
+      ">50% said Suki improved note quality \"to a great extent\"",
+      "44% said Suki improved patient interactions \"to a great extent\"",
+      "33% spent less time working after hours",
+      "20% were able to increase time spent on patient care during visits"
+    ],
+    "year": "2025",
+    "studyDesign": "Review",
+    "geography": "UK",
+    "sampleSize": null
+  },
+  {
+    "id": "Billings 2025b - Practicing Value-Based Care with AI",
+    "title": "Practicing Value-Based Care with AI: AI Assistant Shown to Be Essential in Improving Risk Adjustment Accuracy and Quality Outcomes While Relieving Burden and Burnout",
+    "authors": "Billings, Edmund MD; Waldren, Steven E. MD MS — Phyx Primary Care",
+    "doi": "None — grey literature (Phyx Primary Care independent innovation lab evaluation; not peer-reviewed)",
+    "journal": "Phyx Primary Care (nonprofit innovation lab) | 2025",
+    "product": "**Navina AI Copilot** — AI assistant focused on value-based care workflows: synthesizes fragmented patient data into problem-oriented summaries, surfaces HCC coding opportunities, care gaps, and risk adjustment support at the point of care. **This is NOT primarily an ambient documentation/dictation scribe** — it is a pre-visit/during-visit AI assistant for VBC complexity management. Navina does include ambient documentation as a roadmap item but was evaluated here primarily as a VBC copilot.",
+    "setting": "Primary care — value-based care settings. 120 physicians across 19 practices, 13 US states. Mix of small independent practices, multi-site organizations, and large medical groups with varying VBC experience. VBC performance metrics drawn from 3,100+ physicians across the 19 organizations.",
+    "evidenceLevel": "Grey Literature (nonprofit innovation lab evaluation; pre-post survey + retrospective vendor-provided KPMs; no control group; not peer-reviewed)",
+    "dataSources": "1. Physician survey: Phyx \"Primary Care Vital Signs\" proprietary framework (includes single-item burnout validated against Maslach Burnout Inventory; physician satisfaction; scheduled visit time; time on direct patient care; after-hours workload; likelihood of recommendation). n=120, March 2024–January 2025.",
+    "summary": "Phyx Primary Care (nonprofit innovation lab) evaluated Navina's AI copilot in VBC-focused primary care settings. 120 physicians surveyed after ≥30 days of use; VBC performance metrics from 3,100+ physicians across 19 organizations. Key findings: 40% reduction in clinical review time for complex visits, 32% burnout reduction (validated against MBI), significant improvements in RAF scores (+0.153) and STAR quality ratings (+1.9 points), 91% HCC recommendation address rate, 92% physician trust in HCC suggestions. Study limitations: no control group, retrospective design, reliance on self-report, selection bias (willing adopters). COI concern: Navina provided the KPM data; study partially co-designed with Navina as \"Innovation Lab Partner.\"",
+    "hypothesis": "",
+    "measures": [
+      {
+        "measure": "Clinical Review Time (complex visits)",
+        "description": "",
+        "dimensions": ""
+      },
+      {
+        "measure": "Clinical Review Burden (self-report)",
+        "description": "",
+        "dimensions": ""
+      },
+      {
+        "measure": "% Visits Fully Prepared",
+        "description": "",
+        "dimensions": ""
+      },
+      {
+        "measure": "Burnout (single-item, % burned out)",
+        "description": "",
+        "dimensions": ""
+      },
+      {
+        "measure": "Dissatisfaction",
+        "description": "",
+        "dimensions": ""
+      },
+      {
+        "measure": "Care Time Rating",
+        "description": "",
+        "dimensions": ""
+      },
+      {
+        "measure": "After-Hours Time",
+        "description": "",
+        "dimensions": ""
+      },
+      {
+        "measure": "Physician usage rate",
+        "description": "",
+        "dimensions": ""
+      },
+      {
+        "measure": "Easy to access/use",
+        "description": "",
+        "dimensions": ""
+      },
+      {
+        "measure": "HCC recommendations addressed",
+        "description": "",
+        "dimensions": ""
+      },
+      {
+        "measure": "HCC recommendations accepted",
+        "description": "",
+        "dimensions": ""
+      },
+      {
+        "measure": "Trusted HCC suggestions",
+        "description": "",
+        "dimensions": ""
+      },
+      {
+        "measure": "Trusted diagnosis prompts",
+        "description": "",
+        "dimensions": ""
+      },
+      {
+        "measure": "\"Gives me hope\"",
+        "description": "",
+        "dimensions": ""
+      },
+      {
+        "measure": "Would recommend to colleague",
+        "description": "",
+        "dimensions": ""
+      },
+      {
+        "measure": "Would NOT recommend",
+        "description": "",
+        "dimensions": ""
+      },
+      {
+        "measure": "Avg HCC codes captured per patient",
+        "description": "",
+        "dimensions": ""
+      },
+      {
+        "measure": "RAF score change",
+        "description": "",
+        "dimensions": ""
+      },
+      {
+        "measure": "STAR quality score change",
+        "description": "",
+        "dimensions": ""
+      }
+    ],
+    "keyFindings": [],
+    "year": "2025",
+    "studyDesign": "QI/Pre-Post",
+    "geography": "",
+    "sampleSize": 120
+  },
+  {
+    "id": "Biro 2025 - Simulation Testing Ambient Digital Scribes Case Report",
+    "title": "The value of simulation testing for the evaluation of ambient digital scribes: a case report",
+    "authors": "Biro, Joshua M.; Handley, Jessica L.; Mickler, James; Reddy, Sahithi; Kottamasu, Varsha; Ratwani, Raj M.; Cobb, Nathan K.",
+    "doi": "10.1093/jamia/ocaf052",
+    "journal": "Journal of the American Medical Informatics Association (JAMIA) | Vol. 32, No. 5 | 2025 | pp. 928–931. Case Report. Published March 21, 2025. MedStar Health National Center for Human Factors in Healthcare / Georgetown University.",
+    "product": "**Two anonymized Ambient Digital Scribe (ADS) products** (referred to as ADS Product A and ADS Product B). The study evaluates commercial ADS products without naming vendors — deliberate anonymization for the case report. Products use LLMs to capture patient-provider conversations and generate structured clinical notes.",
+    "setting": "MedStar Health (large Mid-Atlantic healthcare system). Simulation study — not real patient encounters. 11 real outpatient encounter recordings were transcribed and edited into dialogue scripts covering 10 service lines (Otolaryngology, Cardiology, Rheumatology, Family Medicine, Pediatrics, Endocrinology, Internal Medicine, Gastroenterology, Oncology, Urgent Care). Two researcher-physician teams (2 physicians, 2 researchers) simulated reading the scripts while both ADS products listened. 44 draft notes generated (11 scripts × 2 teams × 2 products). IRB approved.",
+    "evidenceLevel": "Observational (simulation testing case report — rapid evaluation methodology)",
+    "dataSources": "Simulation data (editing time, Likert-scale ratings of editing effort, error classification)",
+    "summary": "This case report from MedStar Health demonstrates the value of **simulation testing** as a rapid method for evaluating ambient digital scribe products. Using 11 scripted outpatient encounters read by researcher-physician teams, the study compared two commercial ADS products across 44 draft notes. Key findings: ADS Product A took significantly longer to edit (80.6 seconds longer, p<.001) but had fewer omissions and more additions/irrelevant text errors than Product B. Physicians rated ADS Product A as performing better for most encounters (12/22), despite longer editing time. Error analysis: omissions were the most common error type across both products (54.1% for A, 83.3% for B). The authors argue that simulation testing is a crucial first step in evaluating AI-enabled technologies because it can identify safety and usability issues in hours rather than months, allowing healthcare systems to efficiently screen products before pilot implementation. They position simulation testing as complementary to pilot testing — simulation for underlying technology/interface issues, pilot for workflow integration.",
+    "hypothesis": "Explicit: to demonstrate the value of simulation testing for rapidly evaluating artificial intelligence products (specifically ADS).",
+    "measures": [],
+    "keyFindings": [],
+    "year": "2025",
+    "studyDesign": "Observational",
+    "geography": "",
+    "sampleSize": 2
+  },
+  {
+    "id": "Boyter 2025 - Ambience Healthcare ROI Validations KLAS Report",
+    "title": "Ambience Healthcare ROI Validations 2025: How the Pursuit of Clinician Well-Being Led to Demonstrable ROI for St. Luke's Health System",
+    "authors": "Boyter, Mac; Blauer, Tyson (KLAS Research authors)",
+    "doi": "None — grey literature (KLAS Research ROI Validations Series report)",
+    "journal": "KLAS Research | ROI Validations Series | June 2025",
+    "product": "**Ambience Healthcare** — ambient AI documentation platform deployed at St. Luke's Health System. Generates clinical documentation and associated diagnostic and billing codes (including HCC capture and E/M coding) in providers' natural Epic workflow.",
+    "setting": "Ambulatory — St. Luke's Health System. 1,005 beds, $3.2B annual patient revenue, Epic EHR. 600 total Ambience users (600 active). 41 specialties. 5-week implementation timeline, on budget. April 2023–June 2024 measurement period (E/M analysis).",
+    "evidenceLevel": "Grey Literature (KLAS Research single-site case study; not peer-reviewed)",
+    "dataSources": "- Epic User Action Log (UAL) — objective documentation time telemetry (n=371 providers)",
+    "summary": "KLAS Research ROI Validations Series case study of Ambience Healthcare at St. Luke's Health System. Uniquely rigorous for a grey literature study: uses Epic UAL telemetry data (n=371), structured longitudinal surveys (n=47), and claims/billing analysis. Key findings: 36-percentage-point decrease in near-daily burnout; 41% reduction in active documentation time; 39% decrease in after-hours documentation time; increased HCC capture worth $9,685/clinician/year; E/M complexity improvement worth $1,907/clinician/year; E/M volume increase worth $1,456/clinician/year; **total financial benefit: $13,049/clinician annually**; 41% reduction in time to chart closure.",
+    "hypothesis": "Not explicitly stated. Goal: document quantitative and qualitative ROI achieved by St. Luke's Health System following Ambience Healthcare implementation.",
+    "measures": [
+      {
+        "measure": "Burnout frequency",
+        "description": "Structured survey: % reporting near-daily burnout pre vs. post; 36-ppt reduction (n=47)",
+        "dimensions": "US, NB"
+      },
+      {
+        "measure": "Active documentation time",
+        "description": "Epic UAL: time on note-taking + patient instructions per 8 hrs scheduled; normalized",
+        "dimensions": "NB"
+      },
+      {
+        "measure": "After-hours documentation time",
+        "description": "Epic UAL: time documenting after hours; 39% decrease",
+        "dimensions": "NB"
+      },
+      {
+        "measure": "Time after appointment date",
+        "description": "Epic UAL: time spent documenting after appointment date; 17% decrease",
+        "dimensions": "NB"
+      },
+      {
+        "measure": "HCC capture per encounter",
+        "description": "ICD-10 → HCC v28 mapping; avg HCCs/encounter pre vs. post-Ambience; normalized",
+        "dimensions": "IQ, NB"
+      },
+      {
+        "measure": "E/M coding level",
+        "description": "CPT E/M levels 1–5; provider-level weighted average; normalized for case mix",
+        "dimensions": "IQ, NB"
+      },
+      {
+        "measure": "E/M visit volume",
+        "description": "Daily E/M volume change post-Ambience",
+        "dimensions": "NB"
+      },
+      {
+        "measure": "Chart closure time",
+        "description": "Epic UAL: time from appointment to chart closed; 41% reduction",
+        "dimensions": "NB"
+      },
+      {
+        "measure": "Employee satisfaction",
+        "description": "Post-survey: job satisfaction, energy at end of day, work-life balance; n=47",
+        "dimensions": "US"
+      },
+      {
+        "measure": "Financial viability (combined)",
+        "description": "HCC capture + E/M improvement combined; $13,049/clinician annually",
+        "dimensions": "NB"
+      }
+    ],
+    "keyFindings": [],
+    "year": "2025",
+    "studyDesign": "Review",
+    "geography": "UK",
+    "sampleSize": 371
+  },
+  {
+    "id": "Bracken 2025 - Ambient AI Inpatient Documentation Simulation Orthopaedic",
+    "title": "Ambient AI reduces documentation time and enhances quality in a simulated inpatient setting",
+    "authors": "Bracken, Aisling; Babu, Anita Rose; Whelehan, Seán; Merghani, Khalid; Sheehan, Eoin; Feeley, Iain",
+    "doi": "10.1016/j.surge.2025.10.008",
+    "journal": "The Surgeon | Vol. 24, Issue 2 | April 2026 | pp. 119–125. Royal College of Surgeons of Edinburgh / Royal College of Surgeons in Ireland. Published by Elsevier Ltd. Received September 15, 2025; Accepted October 28, 2025. Irish study — RCSI / Midlands Regional Hospital Tullamore / University of Limerick.",
+    "product": "**Heidi Health** (Melbourne, Australia) — a general-purpose ambient AI documentation platform compliant with GDPR, HIPAA, and NHS standards. A customized progress note and discharge summary template was configured for the orthopaedic service; orthopaedic terminology added to Heidi's \"memory bank.\" This is one of very few papers in the corpus evaluating Heidi Health specifically.",
+    "setting": "Simulation study — no real patients. Clinical skills and simulation laboratory at Midlands Regional Hospital Tullamore (Ireland). 7 postgraduate year-1 (PGY-1) junior doctors (interns) with orthopaedic ward experience. 15 mock inpatient cases simulating orthopaedic trauma, infection, and elective procedures (admission 1–7 days). Background noise deliberately introduced to replicate ward environment. 150 total clinical documents: 120 progress notes (60 manual retrospective, 60 AI real-time) + 30 discharge summaries (15 manual, 15 AI). Two independent blinded PDQI-9 reviewers; consensus resolution with third author.",
+    "evidenceLevel": "Observational (simulation study — within-subjects comparison)",
+    "dataSources": "Direct time measurement (seconds) | PDQI-9 note quality assessment (blinded) | NASA-TLX workload assessment (pre/post)",
+    "summary": "This Irish simulation study is the **only paper in the corpus focusing on inpatient ward round documentation** (all other papers examine ambulatory/outpatient settings). 7 junior doctors participated in simulated orthopaedic ward rounds using Heidi Health ambient AI, generating 150 documents across progress notes and discharge summaries. Results: ambient AI reduced progress note time by **78.9%** (median 27s vs. 128s, p<.0001; large effect r=0.87) and discharge summary time by **75%** (median 114s vs. 459s, p<.0001). Time savings scaled with complexity — the more complex the case, the greater the absolute time saving. Documentation quality improved significantly: progress notes PDQI-9 median 43.5 vs. 41 (p=.002); discharge summaries 40 vs. 33 (p<.0001). Crucially, **no significant difference in accuracy** for either document type — quality gains were in thoroughness, currency, usefulness, comprehensibility, organization, internal consistency, and synthesis rather than accuracy. 55% of AI notes required no edits at all; 40% needed minor formatting fixes; only 3% (2/60) had clinically significant errors. NASA-TLX: all 6 domains improved, with largest gains in frustration (−79%) and effort (−81%).",
+    "hypothesis": "Explicit: to examine the impact of an ambient AI scribe on documentation timing, quality, and workload in a simulated orthopaedic inpatient setting.",
+    "measures": [
+      {
+        "measure": "**Progress Note Time (seconds)**",
+        "description": "AI: median 27s (IQR 18–39.75) vs. manual: 128s (IQR 112.3–168.8). Reduction 78.9% (p<.0001, r=0.87). By complexity: simple −82s, moderate −113s, complex −158s. 96.6% of AI notes reviewed in <60s.",
+        "dimensions": "NB - Net Benefits"
+      },
+      {
+        "measure": "**Discharge Summary Time (seconds)**",
+        "description": "AI: median 113.9s (IQR 64.4–143.5) vs. manual: 458.7s (IQR 367.9–663.5). Median difference 356.6s (p<.0001, r=0.88). By complexity: simple −5min, moderate −5.5min, complex −12min.",
+        "dimensions": "NB - Net Benefits"
+      },
+      {
+        "measure": "**Progress Note PDQI-9 Overall**",
+        "description": "AI: median 43.5 (IQR 41–45) vs. manual: 41 (IQR 38.25–43). p=.002, r=0.43. Significant difference only for simple encounters; moderate and complex encounters NS.",
+        "dimensions": "IQ - Information Quality"
+      },
+      {
+        "measure": "**Progress Note PDQI-9 — Thoroughness**",
+        "description": "AI significantly better (p<.0001, r=0.62).",
+        "dimensions": "IQ - Information Quality"
+      },
+      {
+        "measure": "**Progress Note PDQI-9 — Currency (Up to Date)**",
+        "description": "AI significantly better (p=.0046, r=0.42).",
+        "dimensions": "IQ - Information Quality"
+      },
+      {
+        "measure": "**Progress Note PDQI-9 — Usefulness**",
+        "description": "AI significantly better (p=.0069, r=0.49).",
+        "dimensions": "IQ - Information Quality"
+      },
+      {
+        "measure": "**Progress Note PDQI-9 — Accuracy**",
+        "description": "**No significant difference** (p=.705, r=0.07). AI did not compromise accuracy.",
+        "dimensions": "IQ - Information Quality"
+      },
+      {
+        "measure": "**Discharge Summary PDQI-9 Overall**",
+        "description": "AI: median 40 (IQR 40–43) vs. manual: 33 (IQR 31–37). p<.0001. Larger gap than progress notes; widens with complexity.",
+        "dimensions": "IQ - Information Quality"
+      },
+      {
+        "measure": "**Discharge Summary PDQI-9 — Comprehensibility, Org, Consistency, Synthesis**",
+        "description": "All 4 domains significantly better with AI (p=.001, .0001, .0039, .0005).",
+        "dimensions": "IQ - Information Quality"
+      },
+      {
+        "measure": "**Discharge Summary PDQI-9 — Accuracy**",
+        "description": "**No significant difference** (p=.299). Consistent with progress notes.",
+        "dimensions": "IQ - Information Quality"
+      },
+      {
+        "measure": "**Clinically Significant Errors in AI Notes**",
+        "description": "2/60 progress notes (3%) had clinically significant errors. 55% required no edits. 40% minor formatting only.",
+        "dimensions": "IQ - Information Quality, SQ - System Quality"
+      },
+      {
+        "measure": "**NASA-TLX — All Domains**",
+        "description": "All 6 domains improved pre→post ambient AI. Frustration: −79%. Effort: −81%. Largest workload relief of any paper in the corpus on NASA-TLX.",
+        "dimensions": "US - User Satisfaction"
+      }
+    ],
+    "keyFindings": [],
+    "year": "2025",
+    "studyDesign": "Observational",
+    "geography": "Ireland",
+    "sampleSize": null
+  },
+  {
+    "id": "Bundy 2024 - Administrative Loads Physicians AI Documentation Qualitative",
+    "title": "Can the Administrative Loads of Physicians be Alleviated by AI-Facilitated Clinical Documentation?",
+    "authors": "Bundy, Henry; Gerhart, Jay; Baek, Sally; Connor, C.; Isler, M.; et al.",
+    "doi": "10.1007/s11606-024-08870-z",
+    "journal": "Journal of General Internal Medicine | Vol. 39 | pp. 2995–3000 | 2024. Open Access. Atrium Health / Wake Forest University Health Sciences. Published June 27, 2024.",
+    "product": "**DAX Copilot (DAXC)** — Nuance/Microsoft. GPT-4 powered generative AI clinical documentation tool. EHR-integrated version generating narrative note summaries within 30 seconds of encounter completion. Pilot at Atrium Health (multi-site academic learning health system). ClinicalTrials.gov: NCT06329427. Funded by Wake Forest University Health Sciences.",
+    "setting": "Atrium Health — multi-site academic learning health system. 116 primary care physicians recruited to pilot DAXC. Purposive sample of 12 interviewees selected for diversity (early-career, women, minority providers overrepresented due to higher burnout risk). Semi-structured interviews August–September 2023. Interviews ~30 min, conducted via Microsoft Teams. Saturation reached after 10th interview.",
+    "evidenceLevel": "Qualitative (semi-structured interviews, inductive thematic analysis)",
+    "dataSources": "Semi-structured interviews (n=12 physicians) | Qualitative thematic analysis (ATLAS.ti v.9)",
+    "summary": "This qualitative study at Atrium Health explored 12 primary care physicians' experiences with DAX Copilot in an early pilot via semi-structured interviews. Three major themes emerged: (1) **Benefits of DAXC** — reduced documentation time, cognitive burden relief (\"cognitive offloading\"), more personable patient encounters, more eye contact, reduced fear of losing clinical details; (2) **Suitable encounters** — physicians disagreed on which encounter types work best; some preferred DAXC for complex/protracted visits, others for simple acute visits, but all found edge cases where DAXC fell short; (3) **Concerns** — verbosity/inappropriately long notes (six paragraphs for a common cold), misgendering patients, hallucinations (fabricating additional patients in the room, imagined events, wrong diagnoses), negation errors (\"patient did NOT\" transcribed as \"patient did\"), verbatim/chronologically disordered narrative. A key novel concern: several physicians (n=7) worried that DAXC efficiency would be used to justify seeing more patients — framing efficiency gains as potentially threatening autonomy and work-life balance. Atrium Health subsequently expanded to 2,500 DAXC licenses.",
+    "hypothesis": "Explicit: to evaluate physicians' experiences with DAX Copilot and assess its impact on workflows, workloads, and how it could most effectively be incorporated into practice.",
+    "measures": [],
+    "keyFindings": [],
+    "year": "2024",
+    "studyDesign": "Qualitative",
+    "geography": "",
+    "sampleSize": 7
+  },
+  {
+    "id": "Cao 2024 - Artificial Intelligence-Driven Digital Scribes Dermatology",
+    "title": "Artificial intelligence-driven digital scribes in clinical documentation: Pilot study assessing the impact on dermatologist workflow and patient encounters",
+    "authors": "Cao, David Y.; Silkey, Jamie R.; Decker, Michael C.; Wanat, Karolyn A.",
+    "doi": "10.1016/j.jdin.2024.02.009",
+    "journal": "JAAD International | Vol. 15 | June 2024 | pp. 149–151. Open Access. Medical College of Wisconsin. Dermatology-specific pilot study.",
+    "product": "**Dragon Ambient eXperience (DAX)** (Nuance/Microsoft). Selected due to easy integration with Epic EHR and ability to convert encounters into specialty-specific notes. DAX is AI-driven and learns from clinician habits (language, formatting) after a virtual scribe has dictated notes.",
+    "setting": "Department of Dermatology, Medical College of Wisconsin. 12 clinicians (10 dermatologists, 2 physician assistants) onboarded between February 2021 and January 2023. 10 elected to continue using DAX. Surveys completed 30-60 days after starting. Patient surveys following visits. Productivity metrics from Epic EHR Signal (time in notes per visit/week).",
+    "evidenceLevel": "Observational (pilot study — pre/post EHR metrics + survey)",
+    "dataSources": "EHR metrics (Epic Signal — time in notes per day, time in notes per appointment, time outside 7AM-5:30PM in EHR, note length, provider note contribution %) | Clinician survey | Patient survey",
+    "summary": "This dermatology-specific pilot study at Medical College of Wisconsin evaluated DAX Copilot's impact on workflow and patient encounters. 12 clinicians onboarded; 10 continued use. EHR metrics showed significant reductions: time in notes per day from 54.6→42.2 min (p=.003); time in notes per appointment 6.5→5.1 min (p<.001); after-hours EHR time 35.5→28.1 min (p=.005). Note contribution percentage decreased by nearly half (96.7%→51.7%, p<.001), but note length increased (4412→4617 characters, p=.03). Low utilizers (<50%) and high utilizers (>70%) both saw improvements, with high utilizers having larger absolute reductions. Six clinicians completed the survey (60% response rate): 66.7% satisfied with documentation turnaround time; 83.3% would be \"very disappointed\" if DAX was unavailable; 83.3% felt it \"significantly improved\" overall quality of experience with patients. Patients reported positive perceptions of encounters during DAX use. Authors note potential cost advantage over in-person scribes ($1850/month software vs. $3050/month scribe including recruiting/training).",
+    "hypothesis": "Explicit: to explore the use of DAX as a digital scribe in an academic and community-based dermatology setting.",
+    "measures": [],
+    "keyFindings": [],
+    "year": "2024",
+    "studyDesign": "Observational",
+    "geography": "",
+    "sampleSize": 12
+  },
+  {
+    "id": "Castro 2025 - Psychiatric Documentation Treatment Primary Care AI Scribe",
+    "title": "Changes in psychiatric documentation and treatment in primary care with artificial intelligence scribe use",
+    "authors": "Castro, Victor M.; McCoy, Thomas H.; Verhaak, Pilar; Ramachandiran, Anudeepa K.; Perlis, Roy H.",
+    "doi": "10.1101/2025.05.14.25327620",
+    "journal": "medRxiv preprint (NOT peer-reviewed). Posted May 15, 2025. Center for Quantitative Health and Department of Psychiatry, Massachusetts General Hospital / Harvard Medical School. License: CC0 (Public Domain).",
+    "product": "AI-driven ambient scribes (not named by product). Deployed at Mass General and Brigham and Women's Hospital systems February 2023 onward. Same institution as Prasad 2025 (MGB), likely same deployment (DAX-Nuance or similar based on MGB rollout timing).",
+    "setting": "Massachusetts General and Brigham and Women's Hospital systems. Primary care annual visit notes, February 2023–February 2024. Case-control EHR study: **n=20,302 notes** matched 1:1 using sociodemographic and clinical features across 4 groups: (1) ambient scribe, (2) human scribe, (3) same period no scribe, (4) pre-deployment no scribe. GPT-4o (HIPAA-compliant) used to extract neuropsychiatric symptoms from notes. IRB approved with waiver of informed consent.",
+    "evidenceLevel": "Observational (case-control EHR study)",
+    "dataSources": "EHR data (clinical notes, NLP/LLM extraction of psychiatric symptoms and interventions) | Administrative data (diagnostic codes, prescriptions, referrals)",
+    "summary": "This large case-control EHR study at MGH/BWH examined whether AI ambient scribe use changes how primary care physicians document and act on psychiatric symptoms in annual wellness visits. Using GPT-4o to extract Research Domain Criteria (RDoC) symptomatology from 20,302 matched notes, the study found a striking paradox: **ambient-scribed notes documented significantly more neuropsychiatric symptoms** in all 6 RDoC domains (p<.001 for all) compared to controls, yet **likelihood of a psychiatric intervention was significantly lower** among ambient-scribed visits (aOR 0.83 [0.72–0.95], p=.005). Human-scribed visits showed no such difference from unscribed (aOR 1.01 [0.87–1.17], p=NS). The interpretation: ambient scribes may be capturing more symptom language but this additional documentation is not translating to clinical action — and may even be displacing it. Authors call for further investigation into whether this represents a documentation artifact, a cognitive load effect, or a genuine change in clinical behavior that could affect patient outcomes. This is the **only paper in the corpus examining downstream patient-care outcomes** rather than clinician experience.",
+    "hypothesis": "Explicit: to characterize differences in documentation and treatment of psychiatric symptoms in primary care outpatient notes generated using ambient scribes.",
+    "measures": [],
+    "keyFindings": [],
+    "year": "2025",
+    "studyDesign": "Observational",
+    "geography": "",
+    "sampleSize": 20
+  },
+  {
+    "id": "Duggan 2025 - Clinician Experiences Ambient Scribe Documentation Burden",
+    "title": "Clinician Experiences With Ambient Scribe Technology to Assist With Documentation Burden and Efficiency",
+    "authors": "Hanson, William; Howell, John T. III; Sheinberg, Michael; Johnson, Kevin B.; Duggan, Maeve (listed in CSV as lead author); et al.",
+    "doi": "10.1001/jamanetworkopen.2024.60637",
+    "journal": "JAMA Network Open | 2025. Open Access. University of Pennsylvania Health System / Thomas Jefferson University / Lancaster General Health / CHOP. Accompanied by invited editorial commentary: \"Ambient Listening — Legal and Ethical Issues\" (Cohen, Ritzman, Cahill — also cited in Guo 2026).",
+    "product": "**DAX Copilot** (Nuance/Microsoft). University of Pennsylvania Health System ambulatory practices.",
+    "setting": "University of Pennsylvania Health System. 46 ambulatory clinicians (40 physicians, 2 NPs, 4 PAs) across 16 specialties. Mean 11.1 years in practice, mean 36.5 visits/week. Mixed-methods study: pre/post EHR telemetry + pre/post survey + qualitative open-ended comments. Focused on EHR efficiency metrics and clinician perception. No concurrent control group.",
+    "evidenceLevel": "Observational (pre/post mixed-methods — EHR telemetry + survey + qualitative)",
+    "dataSources": "EHR telemetry (Epic Signal — 5 metrics) | Survey (pre/post — 16 targeted perception questions, 0–10 scale) | Qualitative (open-ended comments, Table 4 themes)",
+    "summary": "This mixed-methods study at Penn Medicine evaluated DAX Copilot across 46 ambulatory clinicians, using both EHR telemetry and detailed survey instruments. EHR Signal findings: time in notes per appointment −15.2% (10.3→8.2 min, p<.001); same-day encounter closure **increased** +9.1% (66.2%→72.4%, p<.001); **after-hours (\"pajama time\") decreased −16.9%** (50.6→35.4 min, p=.02) — notably, this is one of the few papers with a significant after-hours objective reduction; portion of notes manually typed decreased −20.7% (11.2%→7.9%, p<.001). Note length increased +15.5% in total characters per week (p<.001). Survey: the most dramatic finding was in documentation-during-visit cognitive burden items — all four burden questions showed ~3.4-point drop on 0–10 scale (p<.001), reflecting the largest cognitive relief signal in the corpus. Feeling able to see more patients did NOT change significantly (p=.93) — consistent with Bundy 2024's concern that this is a feared but not realized pressure. Qualitative themes (Table 4): efficiency/time savings, patient engagement, documentation burden, note quality concerns, future usability. Rich verbatim clinician quotes — including explicitly negative ones.",
+    "hypothesis": "To evaluate clinicians' experiences with clinical documentation before and after implementing an AI-powered ambient scribing tool (DAX Copilot).",
+    "measures": [],
+    "keyFindings": [],
+    "year": "2025",
+    "studyDesign": "Observational",
+    "geography": "Pennsylvania, USA",
+    "sampleSize": 40
+  },
+  {
+    "id": "Evans 2025 - AI Scribe Allied Health Private Practice Australia",
+    "title": "Impact of using an AI scribe on clinical documentation and clinician-patient interactions in allied health private practice: perspectives of clinicians and patients",
+    "authors": "Evans, Kerrie; Papinniemi, Amy; Ploderer, Bernd; Nicholson, Vaughan; Hindhaugh, Tom; Vuvan, Viana; Cowley, Nicholas; Tariq, Amina; Thomson, Hayley",
+    "doi": "10.1016/j.msksp.2025.103333",
+    "journal": "Musculoskeletal Science and Practice | Vol. 78 | August 2025 | Article 103333. Open Access (CC BY 4.0). University of Sydney / University of Queensland / Queensland University of Technology / Australian Catholic University / Healthia Limited.",
+    "product": "**Lyrebird Health** (Lyrebird) — AI scribe product. Transcribes AHP-patient conversations, then generates consultation notes, referral letters, and other clinical documentation. AHPs review and edit before transferring to practice management software. Not integrated directly with the EHR. Product had been piloted by 8 clinicians in the 6 months prior to the study.",
+    "setting": "Australian allied health private practice within **Healthia Limited** — a privately owned allied healthcare company operating on a partnership model. 876 full-time AHPs in the organization; 119 participated. Physiotherapists (76%), podiatrists (10%), occupational therapists (8%), exercise physiologists (5%). 75% metropolitan, 23% regional, 2% rural. 46% female. Study period: February–July 2024. Mixed-methods: AHP surveys at baseline, 6 weeks, 3 months; patient survey once after AI-scribed appointment; semi-structured interviews with 15 AHPs + 14 patients after 3 months.",
+    "evidenceLevel": "Observational (longitudinal mixed-methods QI study — quantitative surveys + semi-structured interviews)",
+    "dataSources": "AHP surveys (baseline, 6 weeks, 3 months) | Patient surveys (cross-sectional, one time) | Semi-structured interviews (15 AHPs, 14 patients) | Productivity data from practice management software",
+    "summary": "This is the only study in the corpus examining an AI scribe in **allied health** settings (physiotherapy, podiatry, OT, exercise physiology) and the only Australian private practice study. 119 AHPs and 157 patients participated across a large private practice network over 3 months. Quantitative results: significant reduction in time spent on notes, letters, and out-of-hours documentation between baseline and 6 weeks, and baseline and 3 months — but no further change between 6 and 3 months, suggesting benefits plateau quickly. Documentation burden significantly less at 3 months vs. baseline (Cohen's d = 0.22). Productivity increased by an average of **5.8%**. 95% of AHPs at 3 months agreed or strongly agreed they would recommend continued AI scribe use. Job satisfaction was mixed — only 29% agreed AI improved job satisfaction (23% somewhat agreed). Patient perspective: comfortable consenting to AI scribe; some noted other patients might need more information about data storage. Qualitative themes: positive impact on therapeutic alliance and administrative workload; trust facilitated uptake; AHPs valued scribe for different aspects of documentation. Notable: patient opt-outs during 3-month period totaled only 74 out of an estimated 64,099 appointments — extremely low refusal rate.",
+    "hypothesis": "Explicit: to describe perspectives and experiences of AHPs and patients regarding the use of an AI scribe for clinical documentation in Australian allied health private practice.",
+    "measures": [],
+    "keyFindings": [],
+    "year": "2025",
+    "studyDesign": "Observational",
+    "geography": "Australia",
+    "sampleSize": 157
+  },
+  {
+    "id": "Falcetta 2023 - Automatic Documentation Professional Health Interactions Systematic Review",
+    "title": "Automatic documentation of professional health interactions: A systematic review",
+    "authors": "Falcetta, Frederico Soares; de Almeida, Fernando Kude; Lemos, Janaína Conceição Sutil; Goldim, José Roberto; da Costa, Cristiano André",
+    "doi": "10.1016/j.artmed.2023.102487",
+    "journal": "Artificial Intelligence in Medicine | Vol. 137 | March 2023 | 102487. Elsevier. Systematic review. Brazilian research group (Unisinos, Hospital Fêmina, Hospital de Clínicas de Porto Alegre).",
+    "product": "N/A — systematic review. The review searched for intelligent solutions for automatic speech recognition (ASR) with simultaneous structured documentation during a medical interview. Excluded speech-to-text-only technologies. 1995 titles screened → 8 studies included. Most used neural networks, medical lexicon, and structured text output. No commercially available products at time of publication (2023). Limited real-life experience reported. None prospectively validated in large-scale clinical studies.",
+    "setting": "Systematic review — not a primary study. Included studies from multiple countries (no geographic restriction). Focused on clinical (doctor-patient) interactions, not radiology reports or other non-interactive documentation. The review highlights the complexity of medical vocabulary, context understanding, non-linear conversation flow, and room noise as major technical challenges.",
+    "evidenceLevel": "Systematic Review",
+    "dataSources": "Ovid MEDLINE, Embase, Web of Science, Cochrane, PubMed Central (2014–2022). PRISMA-like methodology. Included only original research on systems that transcribe speech in natural and structured fashion simultaneously with the doctor-patient interaction.",
+    "summary": "This Brazilian systematic review is one of the most comprehensive methodological syntheses in the corpus. 1,995 titles screened → 8 primary studies met inclusion criteria (real-time ASR + structured documentation during medical interview). Key conclusions: (1) No commercially available product existed at time of publication (2023); (2) None had large-scale prospective validation or real-world testing; (3) Intelligent models primarily consisted of ASR + NLP + medical lexicon + structured output; (4) Major technical challenges include medical vocabulary complexity, context understanding, non-linear conversation flow, room noise, and speaker variability; (5) Ethical, legal, and privacy concerns are major barriers. The review is explicitly cautious — \"clinical data on the usability and benefits of such applications is almost non-existent\" and \"future work in this area is necessary.\" This paper directly informs the Regenstrief/Suki evaluation framework by identifying the methodological gaps that must be addressed.",
+    "hypothesis": "To establish the current model and technology status for the automatic transcribing of healthcare professionals’ patient interactions.",
+    "measures": [],
+    "keyFindings": [],
+    "year": "2023",
+    "studyDesign": "Review",
+    "geography": "",
+    "sampleSize": null
+  },
+  {
+    "id": "Foo 2025 - Great Scribe-Off AI vs Human Documentation Simulated GP",
+    "title": "The Great Scribe-Off: A Comparative Analysis of AI Scribes Versus Human Documentation in Simulated General Practice Consultations",
+    "authors": "Foo, Darran; Tan, Janice; Hansra, Amandeep; Stevens, Sean; Wilcox, Helen",
+    "doi": "10.3233/SHTI251572",
+    "journal": "Studies in Health Technology and Informatics (SHTI) | Vol. 333 | pp. 34–39 | 2025. Conference proceedings: Health. Innovation. Community: Engage. Disrupt. Transform (HIC2025 — 29th Australasian Institute of Digital Health). Open Access (CC BY-NC 4.0). IOS Press.",
+    "product": "**Four anonymized commercially available AI scribes accessible in Australia** (Scribe 1, 2, 4, 5) + one human scribe (Scribe 3 = two specialist GPs). AI scribe names withheld per commercial sensitivities and ethics conditions. Tested in default \"out-of-the-box\" configurations, most up-to-date paid versions. No customization beyond default templates.",
+    "setting": "Simulation study — no real patients. Four standardised clinical scenarios from the Royal Australian College of General Practitioners (RACGP) examination repository, covering women's health, mental health, urgent care, and chronic disease. Professional or experienced amateur actors played simulated patients. Two specialist GPs (each >5 years experience) conducted 2 consultations each. AI scribes ran on dedicated laptops with omnidirectional microphones. Consultations also video recorded. 20 total clinical notes rated (4 cases × 5 scribes).",
+    "evidenceLevel": "Observational (simulation study — comparative note quality evaluation)",
+    "dataSources": "Modified PDQI-9 (10 domains, max 50 per note) rated by 3 blinded experienced GPs | ICC inter-rater reliability | Repeated measures ANOVA",
+    "summary": "This Australian simulation study compared clinical documentation quality from 4 commercial AI scribes vs. human GP documentation across 4 RACGP exam scenarios, rated by 3 blinded GPs using a modified PDQI-9 (10 domains, max 50). Key finding: AI scribes outperformed human documentation across multiple domains, with top AI scribes scoring mean **44.08/50** vs. **37.42/50** for humans. However, repeated measures ANOVA found no statistically significant difference in overall mean scores (F(4,55)=2.33, p=0.071). Significant domain differences were found in accuracy (p=.049), thoroughness (p=.008), succinctness (p=.029), and freedom from hallucination (p=.025). Humans scored lowest in accuracy, thoroughness, usefulness, comprehensibility, synthesis, and internal consistency. Top performers: Scribe 4 and Scribe 5 (tied at 44.08); Scribe 4 excelled in accuracy/thoroughness but was verbose; Scribe 5 most succinct but slightly less accurate. Scribe 2 had highest hallucination rate. Notably, human notes were not hallucination-free — clinicians extrapolating from context (inferring BMI from weight, specifying tests beyond what was mentioned) were classified as hallucination, highlighting parallels between human cognition and LLM generative behavior. Inter-rater reliability moderate overall (ICC=0.56); good for accuracy and thoroughness; poor for subjective domains like synthesis.",
+    "hypothesis": "Explicit: to compare documentation quality from commercially available AI scribes and human-generated notes using modified PDQI-9 in simulated general practice consultations.",
+    "measures": [
+      {
+        "measure": "**Overall PDQI-9 Score (max 50)**",
+        "description": "Mean scores across 4 cases: AI Scribes 1=43.50, 2=40.00, 4=44.08, 5=44.08; Human=37.42. No significant difference overall (p=0.071).",
+        "dimensions": "IQ - Information Quality"
+      },
+      {
+        "measure": "**Accuracy (PDQI domain)**",
+        "description": "Significant difference between scribes (p=.049). Scribe 4 excelled; human notes scored lowest.",
+        "dimensions": "IQ - Information Quality"
+      },
+      {
+        "measure": "**Thoroughness (PDQI domain)**",
+        "description": "Most significant domain difference (p=.008). AI scribes more thorough than humans. Good ICC (0.879). Scribe 4 top.",
+        "dimensions": "IQ - Information Quality"
+      },
+      {
+        "measure": "**Succinctness (PDQI domain)**",
+        "description": "Significant difference (p=.029). Scribe 5 most succinct; Scribe 4 least succinct. Trade-off between thoroughness and brevity.",
+        "dimensions": "IQ - Information Quality"
+      },
+      {
+        "measure": "**Freedom from Hallucination (PDQI domain)**",
+        "description": "Significant difference (p=.025). Scribe 2 highest hallucination rate. Humans not hallucination-free — extrapolations counted (e.g., inferring BMI, specifying tests beyond what was mentioned).",
+        "dimensions": "IQ - Information Quality, SQ - System Quality"
+      },
+      {
+        "measure": "**Inter-rater Reliability (ICC)**",
+        "description": "Overall ICC=0.56 (moderate, p=.023). Good for thoroughness (0.879) and accuracy (0.745). Poor for synthesis (0.082) and other subjective domains.",
+        "dimensions": "(methodological)"
+      },
+      {
+        "measure": "**Human vs. AI domains**",
+        "description": "Humans lowest in accuracy, thoroughness, usefulness, comprehensibility, synthesis, internal consistency. AI not significantly better on usefulness, organisation, comprehensibility, synthesis, internal consistency, bias.",
+        "dimensions": "IQ - Information Quality"
+      }
+    ],
+    "keyFindings": [],
+    "year": "2025",
+    "studyDesign": "Observational",
+    "geography": "Australia",
+    "sampleSize": null
+  },
+  {
+    "id": "Galloway 2024 - Impact Artificial Intelligence Based Solution Clinicians Clinical Documentation",
+    "title": "Impact of an Artificial Intelligence-Based Solution on Clinicians’ Clinical Documentation Experience: Initial Findings Using Ambient Listening Technology",
+    "authors": "Galloway, J. Luke; Munroe, Dominique; Vohra-Khullar, Pamela D.; Holland, Christopher; Solis, Mary A.; Moore, Miranda A.; Dbouk, Reema H.",
+    "doi": "10.1007/s11606-024-08924-2",
+    "journal": "Journal of General Internal Medicine | Vol. 39 | pp. 2625–2627 | 2024. Concise Research Report. Open Access. Emory University School of Medicine / Emory Healthcare / Emory Digital.",
+    "product": "**Abridge** (explicitly mentioned in the text). Ambient listening technology. Emory Healthcare pilot implementation.",
+    "setting": "Emory Healthcare — large, urban integrated academic medical institution. Convenience sample of 117 clinicians at onboarding and 55 at 60-day follow-up. 31 participants completed both surveys. 58.1% male, 64.5% white, 48.4% aged 20–39, mean tenure 8.4 years, 32.3% primary care. Voluntary web-based survey.",
+    "evidenceLevel": "Observational (pre/post survey study — nonrandomized pilot)",
+    "dataSources": "Pre/post surveys (4 core questions + additional post-survey questions)",
+    "summary": "This concise research report from Emory Healthcare evaluates the impact of Abridge ambient listening technology on clinicians' documentation experience. Pre/post surveys of 31 clinicians who completed both surveys showed significant improvements: documentation process meeting requirements (41.9% → 71%, p=0.034), ease of documentation (32.3% → 48.4%, p=0.023), documentation impact on well-being (71% negative → 38.7% negative, p=0.010), and documentation impact on patient experience (35.5% negative → 6.5% negative, p=0.005). Additional post-survey findings: 35.5% highly likely to recommend the tool, 58.1% agreed it increases productivity, 29.0% intend to use it for the majority of notes. The study is short (2 pages) and uses simple pre/post comparison without validated burnout instruments or objective EHR metrics.",
+    "hypothesis": "Explicit: to evaluate the impact of an AI-based solution on clinicians’ clinical documentation experience.",
+    "measures": [],
+    "keyFindings": [],
+    "year": "2024",
+    "studyDesign": "RCT",
+    "geography": "",
+    "sampleSize": 31
+  },
+  {
+    "id": "Gebauer 2025 - Benchmarking Datasets Ambient Clinical Documentation Scoping Review",
+    "title": "Benchmarking And Datasets For Ambient Clinical Documentation: A Scoping Review Of Existing Frameworks And Metrics For AI-Assisted Medical Note Generation",
+    "authors": "Gebauer, Sarah",
+    "doi": "10.1101/2025.01.29.25320859",
+    "journal": "medRxiv preprint (not peer-reviewed) — Posted January 29, 2025. MachineLearningForMDs.",
+    "product": "Not applicable — this is a scoping review of evaluation frameworks and datasets, not a study of a specific product.",
+    "setting": "Not applicable (secondary review study). Included studies spanned clinical ambient scribe evaluations published 2020–2025 across PubMed, IEEE Explore, Scopus, Web of Science, and Embase. Only 7 studies met inclusion criteria.",
+    "evidenceLevel": "Scoping/Systematic Review (preprint; not peer-reviewed)",
+    "dataSources": "Secondary review (no primary data collection)",
+    "summary": "This scoping review examines existing evaluation frameworks and metrics for AI-assisted clinical note generation. Of the studies reviewed, only 7 met inclusion criteria, revealing wide variation in evaluation approaches — ranging from NLP metrics (ROUGE, BERTScore) to domain-specific clinical accuracy measures. Critical gaps identified include: heterogeneous metrics that preclude cross-study comparison, limited integration of clinical relevance in automated metrics, no standardized approach for hallucination/error detection, minimal specialty diversity, and only 2 publicly available benchmark datasets. The paper calls for standardized evaluation frameworks combining automated and clinical quality metrics.",
+    "hypothesis": "Not explicitly stated. Objective is descriptive: to catalog existing frameworks and identify gaps.",
+    "measures": [],
+    "keyFindings": [],
+    "year": "2025",
+    "studyDesign": "Review",
+    "geography": "",
+    "sampleSize": null
+  },
+  {
+    "id": "Guo 2025 - Ambient Listening EPIC Signal Data Physician Workload",
+    "title": "Ambient Listening in Clinical Practice: Evaluating EPIC Signal Data Before and After Implementation and Its Impact on Physician Workload",
+    "authors": "Guo, Yawen; Hu, Di; Wang, Jiayuan;",
+    "doi": "No DOI assigned (conference proceedings). IOS Press DOI: 10.3233/SHTI250921. arXiv preprint: 10.48550/arXiv.2504.13879",
+    "journal": "MEDINFO 2025 — Proceedings of the 20th World Congress on Health and Biomedical Informatics (Healthcare Smart × Medicine Deep), pp. 653–657. IOS Press. Open Access (CC BY-NC 4.0).",
+    "product": "DAX Copilot (Nuance Communications) and Abridge — both deployed at UCI Health in the same pilot. This analysis treats them collectively (no comparative analysis between tools in this paper).",
+    "setting": "UCI Health (Orange, California) — multi-specialty outpatient settings including primary care and specialty care (gastroenterology, geriatrics, psychiatry, rheumatology, cardiology, sports medicine, etc.). 124 physicians enrolled; 68 met analysis inclusion criteria (≥4 weeks use, ≥10 notes); final analysis n=42 at 1-month, n=32 at 2-month, n=31 at 3-month post-implementation.",
+    "evidenceLevel": "Observational (pre/post implementation — quantitative Epic Signal telemetry analysis)",
+    "dataSources": "EHR data (Epic Signal telemetry — four objective documentation metrics)",
+    "summary": "This exploratory QI study at UCI Health analyzed Epic Signal data to evaluate the impact of a dual-tool ambient listening pilot (DAX Copilot + Abridge) on physician documentation workload. Using paired two-sample t-tests with a 3-month pre-implementation baseline and up to 3 months of follow-up, four Epic Signal metrics were examined. Key findings: time spent writing a note decreased significantly (6.58 → 5.45 min/note, p<0.001), and total documentation time per provider per day fell from 63.99 to 53.33 min (p<0.001). Paradoxically, note length increased significantly — average characters per note rose by ~559 (p<0.05) and characters per appointment by ~1,021 (p<0.001). The largest changes occurred in month 1, consistent with a learning curve. Authors caution that note length increases may reflect verbose tool-embedded templates rather than clinical enrichment. Only 37% of enrolled physicians met inclusion criteria for analysis — differential adoption is flagged as a key area for future research.",
+    "hypothesis": "Explicit: \"We hypothesize that the use of the tool will affect note length and reduce clinician workload in terms of time spent on note-taking.\"",
+    "measures": [],
+    "keyFindings": [],
+    "year": "2025",
+    "studyDesign": "Observational",
+    "geography": "California, USA",
+    "sampleSize": 42
+  },
+  {
+    "id": "Guo 2026 - Evaluating Ambient AI Documentation UCI Health Mixed Methods",
+    "title": "Evaluating ambient artificial intelligence documentation: effects on work efficiency, documentation burden, and patient-centered care",
+    "authors": "Guo, Yawen; Wang, Jiayuan; Hu, Di; Tam, Steven; Gilman, Charles; Chow, Emilie; Perret, Danielle; Pandita, Deepti;",
+    "doi": "10.1093/jamia/ocaf180",
+    "journal": "Journal of the American Medical Informatics Association (JAMIA) | Vol. 33, No. 2 | 2026 | pp. 273–282. Published online October 16, 2025. University of California, Irvine (UCI Health). SQUIRE reporting guidelines. QI study exempt from IRB.",
+    "product": "**DAX Copilot** (Nuance/Microsoft) and **Abridge** — both deployed at UCI Health and **pooled for analysis** (vendor-specific differences not assessed). Of 65 matched survey respondents: Abridge n=41 (63%), DAX Copilot n=24 (37%). This is the **full mixed-methods follow-up to Guo 2025** (Paper 2 in corpus, MEDINFO conference paper from the same UCI Health pilot — same team, same site, now with 167 EHR metric participants and 65 survey participants over a longer period).",
+    "setting": "UCI Health (University of California, Irvine) — major academic health system in Southern California (Irvine, Newport Beach, Orange, Fountain Valley). QI pilot launched December 2023; data analyzed December 2023 through April 2025. 319 physicians enrolled. EHR metrics: 167 met inclusion criteria (≥4 weeks tool use, ≥10 notes). Surveys: 65 completed both pre- and post-implementation surveys (~4 months apart). Clinicians from primary care and specialty care; medical trainees included. Epic Haiku mobile app or web browser integration. DAX/Abridge both integrated with Epic.",
+    "evidenceLevel": "Observational (prospective mixed-methods QI study — EHR telemetry + pre/post survey + thematic analysis)",
+    "dataSources": "EHR data (Epic Signal — 5 metrics: note length, time per note, daily documentation time, time per appointment, same-day closure rate) | Survey (KLAS Arch Collaborative instrument — Likert + 0–10 scales + open-ended) | Qualitative (thematic analysis of open-ended survey responses)",
+    "summary": "This mixed-methods QI study at UCI Health is the full follow-up to the MEDINFO conference paper (Guo 2025, Paper 2 in corpus) — significantly expanded with 167 EHR metric participants, 65 matched survey respondents, KLAS Arch Collaborative benchmarked survey, and qualitative thematic analysis. Both DAX Copilot and Abridge pooled (63% Abridge, 37% DAX). EHR metrics: note time decreased from 6.37→5.58 min/note (p<.001), daily doc time 55.97→49.13 min (p<.001), time per appointment 9.91→8.82 min (p<.001). Note length increased modestly (7522→7862 chars, p<.001). **Same-day encounter closure rate did not change significantly** (high baseline ~77%; only physicians with ≥40 encounters/week analyzed, n=26). Benefits stabilized after month 1 — no further improvement at months 2 or 3. Survey (Table 3, 23 questions): 65 matched respondents, 52% primary care, 48% specialty care. Significant improvements across patient safety/care, clinical efficiency, EHR training, and system usability domains. Key documentation burden results: mental demand 6.71→6.11 (p=.031), effort 6.75→6.02 (p=.014); temporal demand (p=.055) and chart completion timing (p=.429) NOT significant. Several significant DiD differences between primary and specialty care: primary care improved more on implementation/training support (DiD=+0.49, p=.035); specialty care improved more on system availability (DiD=−0.59, p=.047). Qualitative themes (Table 4): (1) positive perceptions — reduced burden, enhanced patient focus, improved efficiency; (2) limitations — need for specialty-specific customization, workflow disruptions, accuracy/editing burden; (3) future expectations — inbox management AI, chart summarization, billing automation.",
+    "hypothesis": "Explicit: ambient AI will improve work efficiency, reduce physician workload, and help mitigate burnout.",
+    "measures": [
+      {
+        "measure": "**Average Time per Note (min)**",
+        "description": "Epic Signal. 6.37→5.58 min (p<.001). ~12% reduction; ~14% relative decrease overall. Immediate improvement then stable.",
+        "dimensions": "NB - Net Benefits"
+      },
+      {
+        "measure": "**Total Daily Documentation Time (min/day)**",
+        "description": "Epic Signal. 55.97→49.13 min (p<.001). ~6.8 min/day saved.",
+        "dimensions": "NB - Net Benefits"
+      },
+      {
+        "measure": "**Time per Appointment (min)**",
+        "description": "Epic Signal. 9.91→8.82 min (p<.001). Includes all note types within encounter.",
+        "dimensions": "NB - Net Benefits"
+      },
+      {
+        "measure": "**Note Length (characters)**",
+        "description": "Epic Signal. 7522→7862 chars (p<.001). Modest but significant increase — consistent with Guo 2025 and other corpus papers.",
+        "dimensions": "IQ - Information Quality, NB - Net Benefits"
+      },
+      {
+        "measure": "**Same-Day Encounter Closure Rate**",
+        "description": "Epic Signal. **No significant change.** Only analyzed for providers with ≥40 notes/week; limited to 12-month dataset. Consistent null finding.",
+        "dimensions": "NB - Net Benefits"
+      },
+      {
+        "measure": "**Undivided Attention to Patients (survey)**",
+        "description": "KLAS survey: Pre 2.70 → Post 3.45 (p<.001). Physicians more focused on patients.",
+        "dimensions": "NB - Net Benefits, US - User Satisfaction"
+      },
+      {
+        "measure": "**Patient-Centered Care Delivery (survey)**",
+        "description": "Pre 3.68 → Post 4.40 (p<.001).",
+        "dimensions": "NB - Net Benefits"
+      },
+      {
+        "measure": "**High-Quality Care Perception (survey)**",
+        "description": "Pre 3.98 → Post 4.54 (p<.001).",
+        "dimensions": "NB - Net Benefits"
+      },
+      {
+        "measure": "**Patient Safety (survey)**",
+        "description": "Pre 3.72 → Post 4.03 (p=.027).",
+        "dimensions": "NB - Net Benefits"
+      },
+      {
+        "measure": "**Clinical Practice Effectiveness (survey)**",
+        "description": "Pre 3.66 → Post 4.28 (p<.001).",
+        "dimensions": "NB - Net Benefits, US - User Satisfaction"
+      },
+      {
+        "measure": "**Overall Efficiency (survey)**",
+        "description": "Pre 3.42 → Post 4.31 (p<.001). Large perceptual shift.",
+        "dimensions": "NB - Net Benefits"
+      },
+      {
+        "measure": "**Cognitive Demand (survey)**",
+        "description": "Reduced: p=.031.",
+        "dimensions": "US - User Satisfaction, NB - Net Benefits"
+      },
+      {
+        "measure": "**Documentation Effort (survey)**",
+        "description": "Reduced: p=.014.",
+        "dimensions": "US - User Satisfaction, NB - Net Benefits"
+      },
+      {
+        "measure": "**Primary vs. Specialty Care (DiD)**",
+        "description": "Most survey changes consistent across both groups. Only exception: alerts preventing care-delivery mistakes showed significant DiD (DiD=−0.70, p=.040).",
+        "dimensions": "(methodological)"
+      },
+      {
+        "measure": "**Temporal Demand (survey)**",
+        "description": "0–10 scale. 7.07→6.58, p=.055 — NOT significant. Pace of note writing did not improve significantly despite time savings.",
+        "dimensions": "US - User Satisfaction"
+      },
+      {
+        "measure": "**Chart Completion Timing (survey)**",
+        "description": "% of charts completed during or right after visits. 53.6%→55.8%, p=.429 — NOT significant. Consistent with objective same-day closure null finding.",
+        "dimensions": "NB - Net Benefits"
+      },
+      {
+        "measure": "**Specialty-Specific Workflow Support (survey)**",
+        "description": "Pre 3.75 → Post 4.23 (p=.003). Significant overall, but specialty care subgroup only trended (p=.107) while primary care significant (p=.003).",
+        "dimensions": "SerQ - Service Quality, US - User Satisfaction"
+      },
+      {
+        "measure": "**EHR Training and Implementation (survey)**",
+        "description": "Multiple items improved significantly. Initial training preparedness (p=.016), ease of learning (p<.001), ongoing training helpfulness (p=.046), org implementation support (p=.004), personal mastery (p=.005), specialty-specific training (p=.019). DiD significant for org support: primary care improved more (DiD=+0.49, p=.035).",
+        "dimensions": "SerQ - Service Quality"
+      },
+      {
+        "measure": "**System Usability (survey)**",
+        "description": "System availability improved (p=.005); internal integration (p=.002); external integration (p=.010). System availability DiD: specialty care improved more (DiD=−0.59, p=.047).",
+        "dimensions": "SQ - System Quality, SerQ - Service Quality"
+      },
+      {
+        "measure": "**Qualitative Themes (Table 4)**",
+        "description": "(1) Positive: streamlined workflow, reduced mental fatigue, enhanced patient focus. (2) Limitations: need specialty-specific customization (neurology exam, psychiatry language, surgical workflows), workflow disruptions (phone vs. workstation, app switching), accuracy/editing burden. (3) Future expectations: AI for inbox management, chart summarization, billing, problem list optimization.",
+        "dimensions": "SerQ - Service Quality, U - Use"
+      },
+      {
+        "measure": "Source: JAMIA 2026",
+        "description": "DOI: 10.1093/jamia/ocaf180",
+        "dimensions": "Template v2.0"
+      }
+    ],
+    "keyFindings": [],
+    "year": "2026",
+    "studyDesign": "Observational",
+    "geography": "California, USA",
+    "sampleSize": 26
+  },
+  {
+    "id": "Haberle 2024 - Impact Nuance DAX Ambient Listening AI Documentation",
+    "title": "The impact of nuance DAX ambient listening AI documentation: a cohort study",
+    "authors": "Haberle, Tyler; Cleveland, Courtney; Snow, Greg L.; Barber, Chris; Stookey, Nikki; Thornock, Cari; Younger, Laurie; Mullahkhel, Buzzy; Ize-Ludlow, Diego",
+    "doi": "10.1093/jamia/ocae022",
+    "journal": "Journal of the American Medical Informatics Association (JAMIA) | Vol. 31, No. 4 | 2024 | pp. 975–979. Intermountain Health. Cohort study with peer-matched controls.",
+    "product": "**Nuance Dragon Ambient eXperience (DAX)**. Ambient listening/digital scribing solution. iOS app captures ambient natural conversation; sent to Microsoft/Nuance cloud for conversational AI parsing; generative AI-derived draft note reviewed by human quality reviewers before being pasted into provider's EHR note for final edit and signature.",
+    "setting": "Intermountain Health (33-hospital integrated health system across 7 states). Study completed in subset of Intermountain Medical Group clinics in Utah using Oracle Cerner EHR. 99 providers across 12 specialties enrolled; 76 matched control group providers included for analysis. March–September 2022.",
+    "evidenceLevel": "Observational (peer-matched controlled cohort study)",
+    "dataSources": "Press Ganey Workforce Engagement surveys | Patient LTR scores | EHR metrics (after-hours EHR time, documentation time per patient) | Documentation and CPT deficiency rates | wRVU productivity | Attributed VBC panel sizes | Patient opt-out counts | Nuance daily turnaround time reports",
+    "summary": "This cohort study from Intermountain Health evaluated Nuance DAX ambient listening AI documentation across 99 providers representing 12 specialties with 76 matched controls. Median DAX utilization was 47% among active participants. Key findings: positive trends in provider engagement (higher scores in engagement, safety, resilience, and work-life balance compared to all employed adult primary care providers); no quantifiable effect on patient safety or LTR scores; small but statistically significant increase in productivity (wRVU); no meaningful change in VBC-attributed panel sizes; statistically significant worsening of after-hours EHR time; no significant impact on 24-hour documentation or CPT submission deficiency rates. Expert internal audit found no meaningful evidence of over-coding, missed risk-adjustment, or insufficient supporting documentation. Authors note this is the first published study describing the use and practical outcomes of ambient listening AI documentation in real-world outpatient clinical care at modest scale.",
+    "hypothesis": "To evaluate the impact of implementation of Nuance DAX on provider engagement, productivity, panel size, documentation (including time spent in the EHR after hours), and coding timeliness. Also measure impact to patient safety and LTR by patients.",
+    "measures": [],
+    "keyFindings": [],
+    "year": "2024",
+    "studyDesign": "Observational",
+    "geography": "",
+    "sampleSize": 99
+  },
+  {
+    "id": "Holmgren 2026 - Ambient AI Scribes Physician Financial Productivity",
+    "title": "Ambient Artificial Intelligence Scribes and Physician Financial Productivity",
+    "authors": "Holmgren, A. Jay; Fenton, S.H.; Thombley, R.; Soleimani, Hossein; Croci, Rhiannon; DeMasi, Orianna; Byron, Maria E.; Murray, Sara G.; Adler-Milstein, Julia R.; Yazdany, Jinoos",
+    "doi": "10.1001/jamanetworkopen.2025.53233",
+    "journal": "JAMA Network Open | Research Letter | Published January 9, 2026 | Accepted October 21, 2025",
+    "product": "Two unnamed commercial AI scribe tools deployed at UCSF Health. Tools offered to 2018 attending physicians starting August 7, 2023, with broad rollout from March 4, 2024. No vendor names disclosed.",
+    "setting": "Outpatient/ambulatory — all ambulatory visits completed by attending physicians at University of California San Francisco (UCSF) Health, January 2023–April 2025.",
+    "evidenceLevel": "Observational (retrospective EHR + billing metadata analysis with difference-in-differences design)",
+    "dataSources": "EHR data (UCSF); claims/billing (RVU data); product telemetry (adoption timing)",
+    "summary": "This UCSF study examined whether ambient AI scribe adoption affected physician financial productivity (RVUs, visit volume, claim denials) using EHR metadata from 1.9M ambulatory encounters (Jan 2023–Apr 2025). 44.6% of attending physicians were AI scribe adopters. Difference-in-differences models found adopters billed **0.04 more RVUs per encounter** (p=.001), **1.81 more RVUs per week** (p<.001), and **0.80 more encounters per week** (p=.04). No increase in claim denials. This translates to ~$3,044 annually per physician at 2025 Medicare rates.",
+    "hypothesis": "Not explicitly stated. Research question: Is ambient AI scribe adoption associated with changes in RVUs, ambulatory visit volume, and claim denials?",
+    "measures": [
+      {
+        "measure": "RVUs per encounter",
+        "description": "Relative value units billed per individual encounter; measure of financial productivity",
+        "dimensions": "NB"
+      },
+      {
+        "measure": "RVUs per physician per week",
+        "description": "Total RVUs per week, controlling for encounter type, payer, complexity",
+        "dimensions": "NB"
+      },
+      {
+        "measure": "Encounters per week",
+        "description": "Ambulatory visit volume per physician per week",
+        "dimensions": "NB"
+      },
+      {
+        "measure": "Claim denial rate",
+        "description": "Proportion of encounters with a payer denial; proxy for coding quality",
+        "dimensions": "NB, IQ"
+      },
+      {
+        "measure": "Adoption status",
+        "description": "Whether physician had access to and used an AI scribe at time of encounter",
+        "dimensions": "U"
+      }
+    ],
+    "keyFindings": [
+      "+0.04 RVUs per encounter (95% CI, 0.02–0.07; p=.001) — statistically significant but small per-encounter effect",
+      "+1.81 RVUs per week (95% CI, 0.86–2.75; p<.001) — larger aggregate effect; translates to ~$3,044 annually per physician at 2025 Medicare rates",
+      "+0.80 encounters per week (95% CI, 0.05–1.56; p=.04) — physicians saw slightly more patients",
+      "Claim denials: no significant change — AI scribe adoption was not associated with increased billing denials",
+      "Event study coefficients near zero in pre-adoption period — supports parallel trends assumption for causal interpretation",
+      "RVUs increased over time post-adoption, suggesting a learning curve or intensifying use effect",
+      "No explicit productivity requirements were placed on adopters (voluntary use)",
+      "Sample: 698 adopters, 867 nonadopters; 182,617 adopter encounters out of 1.2M total"
+    ],
+    "year": "2026",
+    "studyDesign": "Observational",
+    "geography": "California, USA",
+    "sampleSize": null
+  },
+  {
+    "id": "Kanaparthy 2025 - Real-World Evidence Digital Scribes Rapid Review",
+    "title": "Real-World Evidence Synthesis of Digital Scribes Using Ambient Listening and Generative Artificial Intelligence for Clinician Documentation Workflows: Rapid Review",
+    "authors": "Kanaparthy, Naga Sasidhar; Villuendas-Rey, Yenny; Bakare, Tolulope; Diao,",
+    "doi": "10.2196/76743",
+    "journal": "JMIR AI | Vol. 4 | October 10, 2025. Open access. Note: A correction statement exists (https://ai.jmir.org/2026/1/e93250) — contents of correction not reviewed. Yale School of Medicine / VA Connecticut / University of Virginia.",
+    "product": "N/A — rapid review synthesizing 6 primary real-world studies. Products in included studies include Nuance DAX (most common). Searches covered 2014–2024.",
+    "setting": "Rapid review. 1,450 studies identified across Ovid MEDLINE, Embase, Web of Science, Cochrane, PubMed Central → 6 met inclusion criteria. Included studies span academic health systems, community settings, and outpatient practices. Analyzed through QUEST human evaluation framework and SEIPS 3.0 model.",
+    "evidenceLevel": "Rapid Review (not a systematic review; focused on actionable real-world evidence synthesis)",
+    "dataSources": "Synthesis of published primary literature (6 included studies)",
+    "summary": "This Yale-led rapid review synthesized real-world evidence on ambient AI digital scribes from 2014–2024, finding only 6 studies that met rigorous inclusion criteria (real-world clinical implementation; not solely technical development or model validation). The four major themes were: (1) **self-reported documentation time decreased** with associated note length increase; (2) **physician burnout measured by validated scales was unaffected** (contrary to popular perception), but physician engagement improved; (3) **physician productivity as measured by billing metrics was unchanged**; (4) **studies fell short when benchmarked against standardized evaluation frameworks** (QUEST and SEIPS 3.0). The review is deliberately skeptical of premature adoption, drawing parallels to robotic surgery and fitness trackers as technologies widely embraced before evidence emerged. Authors conclude digital scribes \"show promise\" but that \"currently available evidence is sparse\" and that multifaceted real-world studies are needed before unequivocal recommendation. A correction statement has been issued for this paper (see above).",
+    "hypothesis": "Explicit: to synthesize evidence on clinician efficiency, user satisfaction, quality, and practical barriers associated with digital scribes using ambient listening and generative AI in real-world clinical settings.",
+    "measures": [],
+    "keyFindings": [],
+    "year": "2025",
+    "studyDesign": "Review",
+    "geography": "",
+    "sampleSize": null
+  },
+  {
+    "id": "Karavassilis 2025 - Ambient Voice Technology Same Day Emergency Care SDEC",
+    "title": "Ambient Voice Technology in Same Day Emergency Care: Enhancing Documentation Efficiency and Patient Flow",
+    "authors": "Karavassilis, Maria; Youn, Sumin; Chernov, Dmitriy; Tatla, Esh; Ahmed, Iftikhar; Youn, Suhyun; Devendra, Devasenan",
+    "doi": "10.52964/AMJA.1007",
+    "journal": "Acute Medicine | Vol. 24, No. 1 | 2025 | pp. 49–57. Service Improvement Pilot. West Hertfordshire Teaching Hospitals NHS Trust, UK. Acute Medicine Journal.",
+    "product": "**Heidi Health** Ambient Voice Technology (AVT). Same product as Bracken 2025 (Paper 27) — Heidi Health, Australian company. Used in SDEC (Same Day Emergency Care) setting. Cerner Millennium EHR system.",
+    "setting": "Same Day Emergency Care (SDEC) unit at West Hertfordshire Teaching Hospitals NHS Trust (UK). 20 clinicians across various specialties. 100 clinical case notes analyzed. 20 patients provided feedback. Clinicians had >3 years experience with Cerner Millennium EHR. Study period not specified — pilot implementation.",
+    "evidenceLevel": "Quality Improvement (observational service improvement pilot)",
+    "dataSources": "Direct time measurement (stopwatch) | Clinician survey (pre-AVT documentation practices, usability, burnout) | Patient survey (consultation experience) | Productivity data from practice management software | Word count for manual typing time estimation",
+    "summary": "This UK service improvement pilot evaluated Heidi Health Ambient Voice Technology in a Same Day Emergency Care (SDEC) setting. 20 clinicians and 100 case notes analyzed. Key findings: AVT reduced documentation time by **85.8%** — average saving of 5.27 minutes per case (368s manual vs. 52s AVT, p<0.001). Clinicians reported high usability (mean 9.1/10), reduced administrative burden, and improved consultation flow. 90% of patients reported an enhanced consultation experience. 18/20 clinicians reported reduced burnout; 18/20 reported significant time savings. Most clinicians spent 0–30 minutes on manual documentation per consultation; 10 spent additional 0–30 minutes daily outside work hours. Confidence in manual note accuracy was moderate (common score 6/10). Missing or unclear information in manual records was a daily issue for 13 respondents. AVT was perceived to improve non-verbal communication and consultation flow. Patients felt clinicians were more attentive with AVT. This is one of the few papers in the corpus focused on SDEC/acute care settings rather than outpatient clinics.",
+    "hypothesis": "To evaluate the impact of Heidi Health Ambient Voice Technology on documentation efficiency, clinician workload, and patient satisfaction in Same Day Emergency Care.",
+    "measures": [],
+    "keyFindings": [],
+    "year": "2025",
+    "studyDesign": "Observational",
+    "geography": "UK",
+    "sampleSize": 20
+  },
+  {
+    "id": "Kernberg 2023 - ChatGPT-4 Structured Medical Notes Audio Recordings",
+    "title": "Using ChatGPT-4 to Create Structured Medical Notes From Audio Recordings of Physician-Patient Encounters: Comparative Study",
+    "authors": "Kernberg, Annessa; Gold, Jeffrey A.; Mohan, Vishnu",
+    "doi": "10.2196/54419",
+    "journal": "Journal of Medical Internet Research (JMIR) | Vol. 26 | e54419 | Published: April 22, 2024 (preprint November 2023)",
+    "product": "ChatGPT-4 (OpenAI) — using transcripts of simulated encounters fed into ChatGPT-4 with a standard SOAP note prompt. Not a commercial ambient AI scribe product (proprietary tools like DAX Copilot were not tested). Explicitly notes that ChatGPT-4 is NOT HIPAA-compliant.",
+    "setting": "Simulation — 14 simulated ambulatory patient-provider encounters using professional standardized patients. Range of specialties/diagnoses (gastroenteritis, DKA, ovarian cyst, pneumonia, breast mass, heart failure, polymyalgia rheumatica, etc.). Oregon Health & Sciences University (OHSU).",
+    "evidenceLevel": "Simulation",
+    "dataSources": "Simulation",
+    "summary": "This OHSU study evaluated ChatGPT-4's ability to generate SOAP notes from professionally transcribed simulated patient-physician encounter transcripts. 14 cases × 3 replicates = 42 notes. Error categorization used a framework of omissions, incorrect facts, and additions. PDQI-9 assessed note quality. Key findings: omissions dominated errors at 86.3%; mean PDQI-9 = 29.7 (closer to \"terrible\" than \"good\"); only 53% of data elements consistently correct across all 3 replicates; accuracy inversely correlated with transcript length and information density.",
+    "hypothesis": "Not explicitly stated. Aim: assess accuracy, quality, and reproducibility of ChatGPT-4-generated SOAP notes from transcript-based encounter records.",
+    "measures": [
+      {
+        "measure": "Error rate (total, per case)",
+        "description": "Total errors per case, 5.7–64.7; mean 23.6 per case",
+        "dimensions": "IQ"
+      },
+      {
+        "measure": "Error type distribution",
+        "description": "Omissions (86.3%), additions (10.5%), incorrect facts (3.2%)",
+        "dimensions": "IQ"
+      },
+      {
+        "measure": "Cross-replicate consistency",
+        "description": "% of data elements correct in all 3, 2, 1, or 0 replicates",
+        "dimensions": "IQ, SQ"
+      },
+      {
+        "measure": "PDQI-9 score",
+        "description": "Validated 9-item note quality instrument (max 45); mean = 29.7",
+        "dimensions": "IQ"
+      },
+      {
+        "measure": "Accuracy by note section",
+        "description": "% correct in HPI, Other, Objective, A&P",
+        "dimensions": "IQ"
+      },
+      {
+        "measure": "Transcript length correlation",
+        "description": "Inverse correlation between transcript length and accuracy (p=.05)",
+        "dimensions": "SQ, IQ"
+      }
+    ],
+    "keyFindings": [
+      "Omissions dominate: 86.3% of all errors were omissions — consistent with simulation findings from Biro 2025, Anderson 2025, Arko 2025, Foo 2025 (71–76% in those papers, this is even higher)",
+      "Reproducibility failure: Only 52.9% of data elements reported correctly across all 3 replicates. Nearly 30% appeared in only 1 or 2 replicates. This is a critical reliability concern — the same model makes different errors on the same case each time.",
+      "PDQI-9 mean = 29.7: On the validated PDQI-9 scale, 26.2 = \"terrible or bad\" and 36.6 = \"good or excellent.\" A mean of 29.7 is closer to terrible.",
+      "Accuracy by section: Objective section was highest (median 86.9%). HPI was lower (63.8%) and significantly different from Objective (p<.05). Assessment & Plan was lowest (66.9%).",
+      "Information density effect: Accuracy inversely correlated with transcript length (p=.05) and number of scorable elements (p=.05). The more complex the case, the worse the model performs.",
+      "Not HIPAA-compliant: Open AI platforms cannot be used clinically due to regulatory and privacy issues — authors explicitly flag this."
+    ],
+    "year": "2023",
+    "studyDesign": "Simulation",
+    "geography": "",
+    "sampleSize": null
+  },
+  {
+    "id": "Liu 2024 - AI Powered Clinical Documentation Clinicians EHR Experience",
+    "title": "AI-Powered Clinical Documentation and Clinicians' Electronic Health Record Experience: A Nonrandomized Clinical Trial",
+    "authors": "Liu, Tsai-Ling; Hetherington, Timothy C.; Stephens, Cassidy; McWilliams, Andrew; Dharod, Ajay; Carroll, Tracey; Cleveland, Jeffrey A.",
+    "doi": "10.1001/jamanetworkopen.2024.32460",
+    "journal": "JAMA Network Open | Research Letter | September 6, 2024. Open Access (CC-BY). Atrium Health / Wake Forest University School of Medicine, Charlotte/Winston-Salem NC. TREND reporting guideline. IRB exempted.",
+    "product": "**DAX Copilot** (Nuance/Microsoft). Dragon Ambient eXperience. Atrium Health outpatient clinics in North Carolina and Georgia. Same institution as Bundy 2024 (Atrium Health) — this is the quantitative companion to Bundy's qualitative study.",
+    "setting": "Atrium Health — all outpatient clinics in North Carolina and Georgia. Nonrandomized clinical trial. **Intervention group** (n=112): family medicine, internal medicine, general pediatrics clinicians who accepted invitation; enrolled in 4 waves June–August 2023. **Control group** (n=117): clinicians who did not use DAX — assembled via service line leaders + clinicians who initially expressed interest then opted out. Power: 83 intervention + 55 control for 80% power to detect differences. Survey administered before and 5 weeks after intervention. Anonymous 7-question survey (AMA Organizational Biopsy EHR questions, 1–5 scale). n=140 respondents (85 intervention, 55 control).",
+    "evidenceLevel": "Observational (nonrandomized clinical trial — intervention vs. control group, pre/post survey)",
+    "dataSources": "Survey (7-item pre/post; AMA Organizational Biopsy EHR instrument) | χ² comparison between groups",
+    "summary": "This nonrandomized trial at Atrium Health compared DAX Copilot users (n=85 survey respondents) vs. non-users (n=55 controls) before and 5 weeks after DAX deployment. Key findings using χ² tests comparing proportions reporting improvement: Intervention group had significantly higher rates of reporting (1) decreased EHR time at home (47.1% vs. 14.5%, p<.001), (2) decreased weekly EHR time outside work hours (44.7% vs. 20.0%, p=.003), (3) decreased post-visit documentation time (43.5% vs. 18.2%, p=.002), and (4) less EHR frustration (44.7% vs. 14.5%, p<.001). However, ~55% of intervention group and ~69% of controls reported \"unchanged\" experience — the majority in both groups saw no change. Authors note approximately half of clinicians using DAX reported positive outcomes; a significant subset did not. Limitations: selection bias (opt-in intervention), recall bias, 5-week follow-up is short.",
+    "hypothesis": "To evaluate clinicians' experiences with clinical documentation before and after implementing an AI-powered clinical documentation tool, compared to a control group not using the tool.",
+    "measures": [],
+    "keyFindings": [],
+    "year": "2024",
+    "studyDesign": "RCT",
+    "geography": "Georgia, USA",
+    "sampleSize": 85
+  },
+  {
+    "id": "Lukac 2025 - RCT Two Ambient AI Scribes Documentation Efficiency Burnout",
+    "title": "A Randomized-Clinical Trial of Two Ambient Artificial Intelligence Scribes: Measuring Documentation Efficiency and Physician Burnout",
+    "authors": "Lukac, Paul J.; Turner, William; Vangala, Sitaram; Chin, Aaron T.; Khalili, Joshua; Shih, Ya-Chen Tina; Sarkisian, Catherine; Cheng, Eric M.; Mafi, John N.",
+    "doi": "10.1101/2025.07.10.25331333",
+    "journal": "medRxiv preprint (NOT peer-reviewed). Posted July 11, 2025. UCLA Health / David Geffen School of Medicine. Trial registered: ClinicalTrials.gov NCT06792890. License: CC-BY-NC-ND 4.0.",
+    "product": "**Microsoft DAX** and **Nabla** — parallel three-arm RCT comparing both against a usual-care control. DAX used in 33.5% of 24,696 visits; Nabla used in 29.5% of 23,653 visits. No industry funding or competing interests declared.",
+    "setting": "Large academic health system in California (UCLA Health). 313 outpatient physicians recruited via leadership referrals and department-wide emails; 238 qualified across 14 specialties. Randomized 1:1:1 (covariate-constrained, balancing time-in-note, baseline burnout, and clinic days/week) to DAX, Nabla, or usual-care control. Intervention period: November 4, 2024 – January 3, 2025 (2 months). IRB determined study did not constitute human subjects research (UCLA IRB-24-5425).",
+    "evidenceLevel": "**RCT** (parallel three-arm pragmatic randomized-clinical trial) — ⭐ **First RCT of ambient AI scribes in the corpus.**",
+    "dataSources": "EHR data (time-in-note from EHR telemetry) | Survey (Mini-",
+    "summary": "This is the first randomized-clinical trial of ambient AI scribes, comparing Microsoft DAX and Nabla against a usual-care control across 238 outpatient physicians at UCLA over two months. Primary outcome was change in log time-in-note per EHR telemetry. Key findings: **Nabla reduced time-in-note by 9.5%** (95% CI: −17.2%, −1.8%; p=.02) versus control and by 7.8% versus DAX (p=.05). **DAX showed no significant change** versus control (−1.7%, p=.66). However, for burnout-related outcomes, **any scribe use** was associated with improvements: Mini-",
+    "hypothesis": "Explicit: to test the effectiveness of two AI scribes (DAX and Nabla) in reducing time spent writing notes and associated burnout in a randomized-clinical trial.",
+    "measures": [
+      {
+        "measure": "**Time-in-Note (primary outcome, % change)**",
+        "description": "Log-transformed time per note from EHR telemetry. Nabla: −9.5% vs control (p=.02), −7.8% vs DAX (p=.05). DAX: −1.7% vs control (p=.66, NS). Dose-response expected but not reported by use quartile here.",
+        "dimensions": "NB - Net Benefits"
+      },
+      {
+        "measure": "**Scribe Utilization Rate**",
+        "description": "DAX used in 33.5% of 24,696 visits; Nabla in 29.5% of 23,653 visits. Both ~30% utilization. Low adoption rate context for any time-savings interpretation.",
+        "dimensions": "U - Use"
+      }
+    ],
+    "keyFindings": [],
+    "year": "2025",
+    "studyDesign": "RCT",
+    "geography": "California, USA",
+    "sampleSize": null
+  },
+  {
+    "id": "Ma 2025 - Ambient AI Scribes Utilization Documentation Time Stanford",
+    "title": "Ambient artificial intelligence scribes: utilization and impact on documentation time",
+    "authors": "Ma, Stephen P.; Liang, April S.; Shah, Shreya J.; Smith, Margaret; Jeong, Yejin; Devon-Sand, Anna; Crowell, Trevor; Delahaie, Clarissa; Hsia, Caroline; Lin, Steven; Shanafelt, Tait; Pfeffer, Michael A.; Sharp, Christopher; Garcia, Patricia",
+    "doi": "10.1093/jamia/ocae304",
+    "journal": "Journal of the American Medical Informatics Association (JAMIA) | Vol. 32, No. 2 | 2025 | pp. 381–385. Brief Communication. Published December 17, 2024. Stanford University School of Medicine / Stanford Health Care.",
+    "product": "**DAX Copilot** (Nuance Communications / Microsoft Corporation). Fully autonomous, EHR-integrated LLM-powered version (not the earlier human-reviewed iteration). Integrated with Epic via SmartSections (HPI, PE, Results, A&P). Mobile app (iPhone) records encounter; LLM generates note draft sections. Versions 10.6.4–10.7 used during study.",
+    "setting": "Stanford Health Care ambulatory settings. 50 physicians onboarded via convenience/purposive sampling; 45 included in analysis (3 relinquished license, 2 excluded for lack of encounters). 8 specialties: Primary Care (56%), Rheumatology (16%), Otolaryngology (9%), Cardiology (7%), Gastroenterology (7%), Geriatrics, Ophthalmology, Orthopedics. 62% female, majority ≥10 years post-training. Baseline period: May 28–July 29, 2023 (2 months). Pilot period: October 29, 2023–January 27, 2024 (3 months). ⭐ **This is the quantitative companion paper to Shah 2025 (JAMA Network Open)** — same Stanford DAX pilot, same institution, same time period.",
+    "evidenceLevel": "Observational (prospective QI study — before/after with EHR telemetry)",
+    "dataSources": "EHR data (Epic Signal telemetry — note time, daily documentation time, after-hours EHR time, total EHR time) | Utilization audit logs",
+    "summary": "This prospective QI study at Stanford Health Care quantified utilization and time savings for DAX Copilot across 45 physicians from 8 specialties over 3 months. Utilization was robust: DAX used in 55.25% of 17,428 encounters, with median per-physician utilization of 52.5%. Notable SmartSection usage: HPI most used (39.7%), A&P second (14.8%), while Results (2.6%) and PE (1.6%) were rarely used. Time outcomes: median time per note decreased by **−0.57 min** (4.86→3.64 min, T=−5.19, p<.001). Daily documentation time: −6.89 min/day (p<.001). **After-hours EHR time: −5.17 min/day (p=.01)** — notably, this is one of the few papers finding a significant after-hours time reduction (in contrast to Pearlman 2025 and Stults 2025 which found null results). Total EHR time: −19.95 min/day (p<.001). Significant inter-user heterogeneity noted — some physicians used DAX for nearly all encounters, others minimally. Authors explicitly caveat that EHR time measures use a 5-second inactivity timer and don't normalize after-hours/total EHR time to encounter volume, likely underestimating impact.",
+    "hypothesis": "Explicit: to quantify utilization and impact on documentation time of a large language model-powered ambient AI scribe.",
+    "measures": [],
+    "keyFindings": [],
+    "year": "2025",
+    "studyDesign": "Observational",
+    "geography": "",
+    "sampleSize": 45
+  },
+  {
+    "id": "Moramarco 2022 - Human Evaluation Automatic Metrics Consultation Note Generation",
+    "title": "Human Evaluation and Correlation with Automatic Metrics in Consultation Note Generation",
+    "authors": "Moramarco, Francesco; Papadopoulos Korfiatis, Alex; Perera, Mark; Juric, Damir; Flann, Jack; Reiter, Ehud; Belz, Anya; Savkov, Aleksandar",
+    "doi": "10.48550/arXiv.2204.00447",
+    "journal": "arXiv preprint (cs.CL) | April 1, 2022. Published in proceedings of ACL 2022. Authors: Babylon Health (commercial digital health company, UK) + University of Aberdeen. Dataset released as open source: https://github.com/babylonhealth/primock57",
+    "product": "N/A — NLP/ML evaluation methodology paper. Studies 10 fine-tuned neural summarization models (BART-based) generating the **Subjective section of SOAP notes** from consultation transcripts. Not a commercial ambient AI scribe evaluation — this is a foundational NLP research paper on how to evaluate consultation note generation systems.",
+    "setting": "Simulation / research setting. 57 mock consultations from the PriMock57 dataset — enacted consultations using clinical case cards covering common primary care topics, ~10 minutes each. Audio transcribed via Google Speech-to-text. 5 practicing UK GPs (≥3 years experience) evaluated notes over 8 weeks (~30 working hours/evaluator). Produced by Babylon Health (commercial AI health company). Consultations span common primary care topics.",
+    "evidenceLevel": "Simulation (NLP evaluation methodology study — human evaluation + automatic metric correlation)",
+    "dataSources": "Human evaluation (5 GPs): (1) listen and take notes; (2) post-edit 5 notes per consultation; (3) classify errors (incorrect statements, omissions); (4) qualitative feedback | 18 automatic NLP metrics (ROUGE variants, BertScore, Levenshtein distance, others) | Post-editing time measurement",
+    "summary": "This foundational NLP methodology paper from Babylon Health / University of Aberdeen addresses a critical gap: how to properly evaluate automatically generated clinical consultation notes. The study deployed 5 UK GPs to evaluate 285 notes (57 consultations × 5 notes each) across 4 tasks: listen/take notes, post-edit, classify errors, and qualitative feedback. Then correlated human judgments with 18 automatic quality metrics. Key findings: (1) **Omissions** are the most common and clinically significant error type — consistent with Biro 2025, Anderson 2025, Arko 2025, found independently in this earlier study; (2) **Levenshtein distance** (simple character-based edit distance) performs as well as or better than model-based metrics like BertScore for this task; (3) ROUGE and other automatic metrics correlate poorly with human clinical judgment; (4) Post-editing generated notes can be faster than writing from scratch but may be more cognitively intensive. All annotations open-sourced (PriMock57 dataset). This paper predates modern commercial ambient AI scribes but establishes the methodological foundation for how to evaluate them.",
+    "hypothesis": "Explicit: to present a human evaluation study of consultation notes and establish which automatic metrics best correlate with human clinical judgment.",
+    "measures": [],
+    "keyFindings": [],
+    "year": "2022",
+    "studyDesign": "Simulation",
+    "geography": "UK",
+    "sampleSize": null
+  },
+  {
+    "id": "Nguyen 2023 - Implementing Digital Scribes Reduce EHR Documentation Burden Cancer Care",
+    "title": "Implementing Digital Scribes to Reduce Electronic Health Record Documentation Burden Among Cancer Care Clinicians: A Mixed-Methods Pilot Study",
+    "authors": "Nguyen, Oliver T.; Turner, Kea; Charles, Dannelle; Sprowls, Christopher; et al.",
+    "doi": "10.1200/CCI.22.00166",
+    "journal": "JCO Clinical Cancer Informatics | 2023. Mixed-methods longitudinal pilot study at Moffitt Cancer Center (NCI-designated Comprehensive Cancer Center). Open Access.",
+    "product": "**Dragon Ambient eXperience (DAX)** versions 3.0.5, 3.0.6, and 3.0.7 (Nuance: Burlington, MA). Third-party DS smartphone app. Recordings not stored on smartphone — securely transmitted to vendor's servers for processing into visit notes. Vendor staff completed preliminary editing before releasing to clinician.",
+    "setting": "Moffitt Cancer Center (NCI-designated Comprehensive Cancer Center in southeastern US). 21 clinician champions participated in pilot. 10 completed baseline survey (47.6% response); 9 completed 1-month survey; 8 completed interview. Cancer care clinicians (physicians and APPs).",
+    "evidenceLevel": "Mixed-methods longitudinal pilot study (pre/post surveys + semistructured interviews)",
+    "dataSources": "Surveys (demographics, Mini-",
+    "summary": "This mixed-methods pilot at Moffitt Cancer Center assessed a digital scribe (DS) among cancer care clinicians. DS rated as marginally acceptable (16.0), appropriate (16.3), and usable (68.6). Feasibility slightly below cutoff (15.2 vs 16.0). No significant improvement in burnout (Mini-",
+    "hypothesis": "Explicit: to evaluate DS feasibility, acceptability, appropriateness, usability, and preliminary association with clinician well-being in cancer care setting.",
+    "measures": [
+      {
+        "measure": "**Feasibility**",
+        "description": "Feasibility of Intervention Measure (4-20). Mean 15.2 (slightly below cutoff of 16).",
+        "dimensions": "SerQ - Service Quality"
+      },
+      {
+        "measure": "**Acceptability**",
+        "description": "Acceptability of Intervention Measure (4-20). Mean 16.0 (marginally acceptable).",
+        "dimensions": "SerQ - Service Quality"
+      },
+      {
+        "measure": "**Appropriateness**",
+        "description": "Appropriateness of Intervention Measure (4-20). Mean 16.3 (marginally appropriate).",
+        "dimensions": "SerQ - Service Quality"
+      },
+      {
+        "measure": "**Usability**",
+        "description": "Implementation Usability Scale (0-100). Mean 68.6 (marginally usable).",
+        "dimensions": "SerQ - Service Quality"
+      }
+    ],
+    "keyFindings": [],
+    "year": "2023",
+    "studyDesign": "Mixed Methods",
+    "geography": "",
+    "sampleSize": 21
+  },
+  {
+    "id": "Olson 2025 - Ambient AI Scribes Administrative Burden Burnout",
+    "title": "Use of Ambient AI Scribes to Reduce Administrative Burden and Professional Burnout",
+    "authors": "Olson, Kristine D.; Meeker, Daniella; Troup, Matt; Barker, Timothy D.; Nguyen, Vinh H.; Manders, Jennifer B.; Stults, Cheryl D.; Jones, Veena G.; Shah, Sachin D.; Shah, Tina; Schwamm, Lee H.; et al.",
+    "doi": "10.1001/jamanetworkopen.2025.34976",
+    "journal": "JAMA Network Open | 2025. Open access. Multi-site study: Yale School of Medicine, CHRISTUS Health, MemorialCare, The Christ Hospital, Sutter Health, University of Chicago.",
+    "product": "**Abridge** (explicitly: author affiliation includes \"Abridge AI, Inc, Pittsburgh, Pennsylvania\"). Multi-site study across 6 health systems. ⚠️ One co-author is an Abridge employee (institutional affiliation listed).",
+    "setting": "6 health systems (sites 1–6): Yale New Haven Health/Yale Medicine, CHRISTUS Health (Irving TX), MemorialCare (Huntington Beach CA), The Christ Hospital (Cincinnati), Sutter Health (San Francisco), and one large academic medical center. 263 clinicians completed both pre- and post-intervention surveys. Mix: 88.2% MDs, 11% APPs; 63.9% academic, 34.2% medical group employed; all specialties including surgery (17.1%), adult specialty care (17.5%), OB/gyn (10.3%), pediatrics (14.4%), neurology/psychiatry (5.3%), primary care (35.3%). Mean years in practice 15.1.",
+    "evidenceLevel": "Observational (pre/post mixed-methods — quantitative survey + qualitative components; multi-site)",
+    "dataSources": "Survey (custom pre/post survey including validated burnout and cognitive load scales) | Qualitative (free-text responses)",
+    "summary": "This large multi-site pre/post study of 263 clinicians across 6 health systems evaluated the impact of Abridge ambient AI scribes on burnout and administrative burden. Primary outcome: self-reported burnout (10-point scale). Burnout improved significantly: mean 4.59 → 4.12 (−0.47, p<.001); multivariable model: OR 0.26 [0.13, 0.54], p<.001 — i.e., 74% reduction in odds of burnout. Note-related cognitive task load improved dramatically: 7.10 → 4.46 (−2.64, p<.001). This is one of the largest and most diverse samples in the corpus (n=263, 6 sites, full specialty mix including surgery). The inclusion of an Abridge employee as a co-author is a COI to note. Editorial commentary published simultaneously in JAMA Network Open by Shah and Johnson (\"Ambient AI Scribe Early Gains and Open Questions\") and covered in JAMA News (\"AI Scribe May Ease Administrative Burdens for Clinicians\").",
+    "hypothesis": "Explicit: to evaluate whether ambient AI scribe use reduces administrative burden and professional burnout among clinicians across health systems.",
+    "measures": [],
+    "keyFindings": [],
+    "year": "2025",
+    "studyDesign": "Observational",
+    "geography": "",
+    "sampleSize": 263
+  },
+  {
+    "id": "Omon 2025 - Generative AI Rehabilitation Clinical Documentation",
+    "title": "Effects of Introducing Generative AI in Rehabilitation Clinical Documentation",
+    "authors": "Omon, Kyohei; Sasaki, Tomohiko; Koshiro, Ryota; Fuchigami, Takeshi; Hamashima, Masahiro",
+    "doi": "10.7759/cureus.81313",
+    "journal": "Cureus | Vol. 17, No. 3 | March 27, 2025 | e81313. Open Access (CC-BY 4.0). Review period: March 21–25, 2025.",
+    "product": "**medimo** (developed by Pleap Inc., Tokyo, Japan — https://pleap.jp/). Web application that transcribes voice inputs from healthcare professionals during patient consultations and summarizes content using AI. For this study, medimo was enhanced by Pleap Inc. with a newly collected speech dataset specifically designed for rehabilitation professionals. **Not conversational ambient listening** — uses non-conversational voice memos recorded by clinicians, not live encounter capture.",
+    "setting": "Saito Rehabilitation Hospital (Osaka) and Kawanishi Rehabilitation Hospital (Hyogo), Japan. Participants: 12 rehabilitation professionals — 2 physical therapists, 2 occupational therapists, 2 speech-language-hearing therapists (from each of 2 hospitals). All had ≥6 months at institution and ≥5 years clinical experience. Mean age 33.2 ± 6.8 years; mean experience 10.1 ± 3.1 years; 4 male, 8 female. Prospective comparative AB design: Phase A = 5 days conventional documentation; Phase B = 5 days using medimo. IRB approved.",
+    "evidenceLevel": "Observational / QI (prospective comparative AB design — within-subjects, pre/post)",
+    "dataSources": "Direct time measurement (third-party observer) | Validated survey (NASA-TLX) | Blinded quality scoring (3 independent physical therapists, custom 6-item 10-point scale)",
+    "summary": "This small Japanese study (n=12) compared conventional clinical documentation (Phase A) vs. AI-assisted documentation using \"medimo\" (Phase B) among rehabilitation professionals across two hospitals. The AB design used direct third-party time measurement, NASA-TLX workload assessment, and blinded quality scoring. Key findings: (1) Documentation time was NOT significantly reduced (305 ± 53.9 s in Phase A vs. 336 ± 78.0 s in Phase B; ns) — attributable to the editing burden when voice input was insufficient; (2) NASA-TLX **Temporal Demand (time pressure)** was significantly lower with medimo (p=0.037) even without time savings — suggesting reduction in perceived urgency even if total time didn't drop; (3) NASA-TLX **Frustration (dissatisfaction)** was significantly HIGHER with medimo (p=0.041) — attributed to low AI literacy and skill gaps with a novel workflow; (4) Documentation quality (SOAP sections S and P, total score) was significantly higher with medimo (p=0.045, 0.045, 0.023 respectively); (5) Strong positive correlation between number of voice memos recorded and documentation time reduction (r=0.71, p=0.006) — suggesting that tool utilization intensity drives benefit; (6) Significant positive correlation between time reduction and implementation intent/willingness to adopt (r=0.67, p=0.009). Authors conclude that user motivation and AI literacy are key moderators of benefit.",
+    "hypothesis": "Explicit: to evaluate whether the use of generative AI reduces clinical documentation time, alleviates workload, and improves quality in a rehabilitation setting.",
+    "measures": [],
+    "keyFindings": [],
+    "year": "2025",
+    "studyDesign": "Observational",
+    "geography": "",
+    "sampleSize": 12
+  },
+  {
+    "id": "Owens 2024 - Ambient Voice Technology Patient Physician Relationship",
+    "title": "Effect of Ambient Voice Technology, Natural Language Processing, and Artificial Intelligence on the Patient–Physician Relationship",
+    "authors": "Owens, Lance M.; Wilda, J. Joshua; Grifka, Ronald G.; Westendorp, Joan; Fletcher, Jeffrey J.",
+    "doi": "10.1055/a-2337-4739",
+    "journal": "Applied Clinical Informatics | Vol. 15, No. 4 | 2024 | pp. 660–667. Thieme. University of Michigan Health-West, Wyoming Michigan. Received March 15, 2024; Accepted May 31, 2024; Published August 7, 2024.",
+    "product": "**DAX Copilot** (Nuance/Microsoft). Primary care ambulatory settings at University of Michigan Health-West.",
+    "setting": "University of Michigan Health-West (community-based academic health system, Wyoming Michigan). Prospective observational study with two phases: (1) **Open-label phase** — 288 patients whose physicians used DAX; patients knew DAX was being used; (2) **Masked phase** — 304 patients compared DAX encounters vs. non-DAX encounters, blinded to whether DAX was used. Primary outcome: Patient-Doctor Relationship Questionnaire-9 (PDRQ-9) score. STROBE guidelines followed.",
+    "evidenceLevel": "Observational (prospective, two-arm: open-label + masked comparison)",
+    "dataSources": "Patient survey (PDRQ-9 — validated 9-item patient-reported outcome measuring patient-physician relationship) | Open-label patient satisfaction questions",
+    "summary": "This is the only study in the corpus using a **validated patient-reported outcome instrument** (PDRQ-9) to measure the impact of ambient AI scribes on the patient-physician relationship. Two-phase design: open-label (n=288, patients knew DAX was used) and masked (n=304, patients blinded to DAX use). Key findings: In the **open-label phase**, patients strongly agreed that physicians were more focused on them, spent less time typing, and made encounters feel more personable — positive open-label signals. However, in the **masked phase**, NO difference was detected in PDRQ-9 scores between DAX and non-DAX encounters (median 45 vs. 45; p=0.31). Adjusted OR for complete satisfaction on \"how well clinician listened\" was 0.8 (95% CI 0.48–1.34) — not significant. Conclusion: patients strongly endorse DAX when they know it's being used (social desirability/expectation effect), but when blinded, no measurable difference in the patient-physician relationship on a validated scale. This is a critical methodological finding for the field.",
+    "hypothesis": "Explicit: to evaluate how use of ambient voice recognition with NLP and AI (DAX) affects the patient-physician relationship.",
+    "measures": [],
+    "keyFindings": [],
+    "year": "2024",
+    "studyDesign": "Observational",
+    "geography": "Michigan, USA",
+    "sampleSize": 288
+  },
+  {
+    "id": "Palm 2025 - Quality AI Generated Clinical Notes PDQI Validation",
+    "title": "Assessing the quality of AI-generated clinical notes: validated evaluation of a large language model ambient scribe",
+    "authors": "Palm, Erin; Manikantan, Astrit; Mahal, Herprit; Belwadi Subramanya, Srikanth; Pepin, Mark E.",
+    "doi": "10.3389/frai.2025.1691499",
+    "journal": "Frontiers in Artificial Intelligence | Section: Medicine and Public Health | Vol. 8 | October 21, 2025. Open Access.",
+    "product": "**Suki** — explicitly named. \"Suki is an ambient clinical documentation system that summarizes audio-recorded medical interactions into structured clinical notes.\" Both proprietary and fine-tuned third-party LLMs are used. All authors are Suki AI employees (Redwood City, CA) or affiliated with Stanford/Santa Clara Valley Medical Center. ⚠️ **Industry-authored study** — Suki employees evaluated Suki's own product.",
+    "setting": "97 de-identified audio recordings of outpatient clinical encounters across 5 specialties: general medicine (20), pediatrics (20), OB/gyn (17), orthopedics (20), adult cardiology (20). Audio pulled from Suki's production database (October 2024). All encounters anonymized by Suki operations team. No clinical sites named. Two blinded specialty reviewers evaluated each encounter's AI (\"Ambient\") note vs. physician-authored (\"Gold\") note.",
+    "evidenceLevel": "Observational (cross-sectional note quality evaluation — prospective generation, blinded comparative review)",
+    "dataSources": "AI-generated notes (Suki Ambient) | Physician-authored reference notes (Gold notes, written from same audio/transcript) | Blinded expert review using modified PDQI-9 (11 criteria, 1–5 Likert + binary hallucination detection)",
+    "summary": "This industry study from Suki AI compared the quality of Suki-generated \"Ambient\" clinical notes to blinded physician-authored \"Gold\" notes across 97 encounters in 5 specialties, using a modified PDQI-9 instrument (8 original PDQI-9 items minus \"Up to date\" + \"Appropriate for specialty\" + \"Fair\" + binary \"Hallucination\"). 388 total note evaluations. Key results from Table 4: Gold notes scored modestly higher overall (4.25 vs. 4.20, p=0.04). Gold notes were superior on Accurate (p=0.05), Succinct (p<0.001), and Internally Consistent (p=0.004). Ambient notes were superior on Thorough (p<0.001) and Organized (p=0.03). Hallucinations: present in 31% of Ambient notes vs. 20% of Gold notes (p=0.01). Despite these deficits, reviewers overall *preferred* Ambient notes 47% vs. 39% for Gold (14% equal preference). Interrater agreement was high overall (RWG>0.7) except cardiology (moderate agreement for 6/11 criteria). OB/Gyn and pediatrics tended to favor Gold; general medicine, orthopedics, and cardiology tended to favor Ambient.",
+    "hypothesis": "Explicit: to compare quality of LLM-generated Ambient notes with physician-authored reference notes across five clinical specialties using PDQI-9 as validation framework.",
+    "measures": [],
+    "keyFindings": [],
+    "year": "2025",
+    "studyDesign": "Observational",
+    "geography": "UK",
+    "sampleSize": null
+  },
+  {
+    "id": "Pearlman 2025 - AI Scribe EHR Efficiency",
+    "title": "Use of an AI Scribe and Electronic Health Record Efficiency",
+    "authors": "Pearlman, Kevin; Wan, Wen; Shah, Sachin; Laiteerapong, Neda; et al.",
+    "doi": "10.1001/jamanetworkopen.2025.37000",
+    "journal": "JAMA Network Open | 2025. Open access. University of Chicago, Department of Medicine.",
+    "product": "AI scribe (unnamed in available text; study context is University of Chicago ambulatory pilot, July–September 2024). Likely Abridge or DAX Copilot based on institutional context. Product identified as \"AI scribe pilot.\"",
+    "setting": "Large academic health system (University of Chicago Medicine). Pilot group: n=125 clinicians who opted into AI scribe pilot; Control group: n=478 matched clinicians who did not. Baseline period: April–June 2024; Intervention period: July–September 2024. Propensity score weighting used to balance groups. Mix of primary care (27%), medical subspecialty (37%), and surgical/procedural (36%). Physicians (93.6%) and advanced practice professionals (6.4%).",
+    "evidenceLevel": "Observational (quasi-experimental, propensity score-weighted comparison with concurrent control group)",
+    "dataSources": "EHR data (Epic EHR telemetry — time in EHR, time in notes, after-hours time, encounter closure time)",
+    "summary": "This methodologically rigorous study at University of Chicago used propensity score weighting to compare EHR efficiency outcomes between 125 AI scribe pilot clinicians and 478 matched controls over a 3-month intervention period. Primary outcomes were objective EHR telemetry metrics. Key findings: AI scribe use was associated with significant reductions in total EHR time per appointment (−2.0 min, p<.001) and time in notes per appointment (−0.5 min, p<.001) compared to control. Notably, after-hours documentation time did NOT change significantly (−0.5 min, p=.95) — a consistent null finding across both groups. Benefit was strongly dose-dependent: clinicians in the highest AI scribe use quartile (Q4) showed the largest reductions; low users (Q1) showed minimal or no benefit. Generalized linear models adjusted for sex, years since training, specialty, clinician type, hospital-based vs. offsite clinic, Epic proficiency score, and baseline values. Authors note this is among the most methodologically rigorous studies in the field due to the concurrent control group and propensity score balancing.",
+    "hypothesis": "Explicit: to evaluate whether AI scribe use is associated with reduced EHR time and improved efficiency metrics.",
+    "measures": [],
+    "keyFindings": [],
+    "year": "2025",
+    "studyDesign": "Observational",
+    "geography": "",
+    "sampleSize": 125
+  },
+  {
+    "id": "Peterson Health Technology Institute 2025 - Adoption AI Healthcare Delivery Systems",
+    "title": "Adoption of Artificial Intelligence in Healthcare Delivery Systems: Early Applications and Impacts",
+    "authors": "Peterson Health Technology Institute (PHTI) AI Taskforce — health system executives, AI solution company executives, and industry experts convened September 2024–early 2025.",
+    "doi": "None — grey literature (think tank/policy research institute report)",
+    "journal": "Peterson Health Technology Institute (PHTI) | Market Trend Report | Published: March 2025",
+    "product": "No single product — evaluates the ambient scribe category broadly. ~60 ambient scribes currently being implemented in practice. Covers adoption patterns, impact measurement, and implementation learnings from early-adopter health systems across the sector.",
+    "setting": "Broadly across US healthcare delivery systems. Primary care is most common first implementation focus. PHTI AI Taskforce included executives from a broad range of health systems.",
+    "evidenceLevel": "Grey Literature (independent nonprofit policy research report; AI Taskforce consensus; not peer-reviewed — but high credibility source)",
+    "dataSources": "Qualitative: AI Taskforce member meetings (health system + AI company executives); one-on-one interviews; synthesis of published peer-reviewed literature; industry data",
+    "summary": "PHTI's Market Trend Report on ambient AI scribe adoption, published March 2025. PHTI is an independent nonprofit funded by the Peterson Center on Healthcare; it provides evidence-based evaluations with no vendor funding. The report's AI Taskforce included health system leaders and AI solution companies convened September 2024–early 2025. Key findings: ambient scribes may be the fastest healthcare technology adoption ever (no regulatory mandate required); ~60 products now available; evidence for burnout/cognitive load reduction is \"positive (emerging)\"; evidence for documentation time savings and productivity is \"mixed\"; coding/financial impact is \"too early to conclude.\" The report explicitly flags that HCC/E&M coding extensions may increase healthcare spending even if coding is accurate. Calls for standardized metrics across 3 domains: clinician, patient, and financial.",
+    "hypothesis": "Not a study — policy synthesis and early adopter learnings report. Central question: do ambient scribes work, and how should health systems measure their impact?",
+    "measures": [
+      {
+        "measure": "",
+        "description": "",
+        "dimensions": ""
+      },
+      {
+        "measure": "",
+        "description": "",
+        "dimensions": ""
+      },
+      {
+        "measure": "",
+        "description": "",
+        "dimensions": ""
+      },
+      {
+        "measure": "",
+        "description": "",
+        "dimensions": ""
+      },
+      {
+        "measure": "",
+        "description": "",
+        "dimensions": ""
+      },
+      {
+        "measure": "",
+        "description": "",
+        "dimensions": ""
+      },
+      {
+        "measure": "",
+        "description": "",
+        "dimensions": ""
+      },
+      {
+        "measure": "",
+        "description": "",
+        "dimensions": ""
+      },
+      {
+        "measure": "",
+        "description": "",
+        "dimensions": ""
+      },
+      {
+        "measure": "",
+        "description": "",
+        "dimensions": ""
+      }
+    ],
+    "keyFindings": [],
+    "year": "2025",
+    "studyDesign": "Review",
+    "geography": "",
+    "sampleSize": null
+  },
+  {
+    "id": "Prasad 2025 - Clinician Perceptions Virtual Scribe Use Survey",
+    "title": "Clinician Perceptions of Virtual Scribe Use: A Survey Study",
+    "authors": "Prasad, Kriti; Frits, Michelle; Iannaccone, Christine; Melnick, Edward R.;",
+    "doi": "10.1007/s11606-025-09771-5",
+    "journal": "Journal of General Internal Medicine | Published online August 5, 2025. Springer/Society of General Internal Medicine.",
+    "product": "**Virtual scribes — mix of synchronous and asynchronous human/human-assisted remote scribing services** at Mass General Brigham (Brigham and Women's Hospital), Boston MA. Services used include:",
+    "setting": "Mass General Brigham (Brigham and Women's Hospital, Massachusetts General Hospital), Boston MA. Large academic health system. Virtual scribe program running since 2017. Survey conducted November 2022–January 2023. 450 eligible participants; 20 excluded (never used or <1 week); 430 eligible → 120 responded → 7 NPs excluded → **113 physicians analyzed** (26.3% response rate). Ambulatory physicians only. 68.1% female; 77.9% primary care; 60.2% used ≥2 years.",
+    "evidenceLevel": "Observational (cross-sectional mixed-methods — quantitative survey + deductive thematic qualitative analysis)",
+    "dataSources": "Survey (14-item REDCap survey) | Qualitative (free-text survey comments, deductive thematic analysis)",
+    "summary": "Cross-sectional mixed-methods survey of 113 ambulatory physicians at Mass General Brigham who used virtual scribe services from 2017–2023. Overall results were mixed: 47.8% were satisfied, 66.4% reported improved wellbeing, 61.1% reported enhanced patient relationships. The most frequently cited benefits were better focus on patients during visits (50%) and reduced documentation time (53%); the most common drawback was a steep learning curve. Multivariable analyses revealed strong moderators: non-primary care physicians were substantially more likely to benefit on all three outcomes (wellbeing aOR 34.60 [5.26, 227.64]; satisfaction aOR 10.12 [2.06, 49.62]; patient relationship aOR 6.34 [1.24, 32.34]). Males were more likely than females to report improved satisfaction and patient relationships. Paradoxically, shorter scribe tenure (<2 years) was associated with dramatically reduced odds of satisfaction and patient relationship benefit — suggesting benefits accrue with adaptation time. Qualitative themes highlighted service reliability concerns (scribe turnover, training burden, variable quality), documentation problems (poor quality, paradoxical documentation time increases, errors), and workflow impacts (delayed encounter closure alongside positive impacts like more time for patients). Authors conclude specialty and gender are key moderators and call for further investigation into primary care vs. non-primary care differential.",
+    "hypothesis": "Explicit: to characterize the relationship between virtual scribe use and physician wellbeing and identify physician characteristics associated with benefitting from virtual scribe support.",
+    "measures": [],
+    "keyFindings": [],
+    "year": "2025",
+    "studyDesign": "Observational",
+    "geography": "",
+    "sampleSize": 113
+  },
+  {
+    "id": "Shah 2024 - Ambient AI Scribes Physician Burnout Usability Documentation Burden",
+    "title": "Ambient artificial intelligence scribes: physician burnout and perspectives on usability and documentation burden",
+    "authors": "Shah, Shreya J.; Devon-Sand, Anna; Ma, Stephen P.; Smith, Margaret; Jeong, Yejin; Crowell, Trevor; Delahaie, Clarissa; Hsia, Caroline; Lin, Steven; Shanafelt, Tait; Pfeffer, Michael A.; Sharp, Christopher; Garcia, Patricia",
+    "doi": "10.1093/jamia/ocae295",
+    "journal": "Journal of the American Medical Informatics Association (JAMIA) | Vol. 32, Issue 2 | Pages 375–380 | 2025 (published December 2024, PMID: 39657021; PMC: PMC11756571)",
+    "product": "**Nuance DAX Copilot** — integrated with Epic EHR (Epic Haiku mobile app) at Stanford Health Care. The tool generated draft notes in 4 SmartSections: HPI, physical exam, results, and assessment and plan. Attestation SmartSection also included.",
+    "setting": "Outpatient ambulatory — Stanford Health Care (academic medical center), both faculty and community practice networks. Primary care (66%) and ambulatory specialties (34%): cardiology, gastroenterology, rheumatology, neurology, ophthalmology, otolaryngology, geriatrics. October 2023–January 2024 (3-month pilot, 48 physicians).",
+    "evidenceLevel": "Quality Improvement (prospective)",
+    "dataSources": "Survey/self-report (pre/post paired survey); product telemetry (utilization data)",
+    "summary": "One of the earliest published QI studies of a large-scale institutional ambient AI scribe implementation. 48 physicians at Stanford Health Care used DAX Copilot for 3 months. Paired pre/post survey (n=38) found large statistically significant reductions in physician task load (PTL: −24.42, p<.001) and burnout/work exhaustion (PFI-WE: −1.94 on 10-point scale, p<.001), and moderate improvement in usability (SUS: +10.92, p=.003). Post-survey (n=46): 98% found DAX easy to use; 65% reported improved documentation efficiency; 52% improved documentation quality; median perceived time savings 20 minutes per half day of clinic. This is the companion QI paper to Ma 2025 (JAMIA, ocae304) — together they form the full Stanford DAX pilot picture (quantitative outcomes + physician perspectives).",
+    "hypothesis": "Not explicitly stated. Objective: evaluate physician perspectives on usability, perceived utility, and impact on physician burden and burnout following ambient AI scribe pilot implementation.",
+    "measures": [
+      {
+        "measure": "Physician Task Load (PTL)",
+        "description": "4-item adapted NASA TLX; 0–100 scale, lower = less cognitive burden",
+        "dimensions": "US, NB"
+      },
+      {
+        "measure": "Work Exhaustion (PFI-WE)",
+        "description": "4-item work exhaustion subscale of Stanford PFI; 0–10 scale, lower = less burnout",
+        "dimensions": "US, NB"
+      },
+      {
+        "measure": "System Usability Scale (SUS)",
+        "description": "10-item standardized usability instrument; 0–100 scale",
+        "dimensions": "US, SQ"
+      },
+      {
+        "measure": "UTAUT items",
+        "description": "Adapted Unified Theory of Acceptance and Use of Technology scale (perceived utility, ease of use, peer interest, long-term intent)",
+        "dimensions": "U, US"
+      },
+      {
+        "measure": "Perceived time savings per half day",
+        "description": "Self-reported time savings/additions; median and range captured",
+        "dimensions": "NB"
+      },
+      {
+        "measure": "Post-survey perceived improvements",
+        "description": "Efficiency, documentation quality, ease of use (post-survey only)",
+        "dimensions": "US, IQ (indirect)"
+      }
+    ],
+    "keyFindings": [
+      "Paired pre/post (n=38):",
+      "PTL (burden): Pre-pilot mean 68.98 → post-pilot 44.56 (−24.42; Cohen's d = 1.28; p<.001) — large effect size",
+      "Burnout (PFI-WE): Pre-pilot 7.47 → post-pilot 5.53 (−1.94; Cohen's d = 0.86; p<.001) — large-to-moderate effect size",
+      "SUS usability: Pre-pilot 58.09 (compared to current documentation tools) → post-pilot 69.01 for DAX (+10.92; Cohen's d = 0.69; p=.003) — moderate effect size",
+      "Post-survey only (n=46):",
+      "98% found DAX Copilot easy to use",
+      "65% reported improved efficiency with documentation tasks",
+      "52% reported improved quality of clinical documentation",
+      "65% reported using DAX Copilot often when completing documentation",
+      "80% reported colleagues were interested in using DAX",
+      "78% reported seeing themselves using DAX in long-term practice",
+      "Median perceived time savings: 20 minutes per half-day of clinic (range: −90 to +90 min)",
+      "UTAUT items: Optimism about DAX utility and utilization was present pre-pilot and remained stable post-pilot. Ease-of-use perceptions improved significantly."
+    ],
+    "year": "2024",
+    "studyDesign": "QI/Pre-Post",
+    "geography": "",
+    "sampleSize": 38
+  },
+  {
+    "id": "Shah 2025 - Physician Perspectives Ambient AI Scribes",
+    "title": "Physician Perspectives on Ambient AI Scribes",
+    "authors": "Shah, Shreya J.; Crowell, Trevor; Jeong, Yejin; Devon-Sand, Anna; Smith, Margaret; Yang, Betsy; Ma, Stephen P.; Liang, April S.; Delahaie, Clarissa; Hsia, Caroline; Shanafelt, Tait; Pfeffer, Michael A.; Sharp, Christopher; Lin, Steven; Garcia, Patricia",
+    "doi": "10.1001/jamanetworkopen.2025.1904",
+    "journal": "JAMA Network Open | 2025",
+    "product": "**Nuance DAX Copilot** — deployed at Stanford Medicine (Stanford University School of Medicine / Stanford Healthcare). The qualitative study focuses on provider perspectives from a real-world DAX Copilot pilot.",
+    "setting": "Stanford Medicine — ambulatory outpatient settings across community and faculty practice. 22 physician interviews: primary care (community 8, faculty 5) and ambulatory specialty (community 4, faculty 5). Stratified by utilization level (high/medium).",
+    "evidenceLevel": "Qualitative (semi-structured interviews; thematic analysis guided by RE-AIM PRISM framework)",
+    "dataSources": "Survey/self-report (qualitative interview transcripts; codebook guided by RE-AIM PRISM framework)",
+    "summary": "This qualitative study at Stanford conducted 22 semi-structured physician interviews to understand perspectives on ambient AI scribes (DAX Copilot). The analysis was structured by the RE-AIM PRISM implementation science framework. Physicians were stratified by utilization level and practice setting. Themes centered on workload relief, patient engagement, documentation accuracy concerns, note quality variability, and implementation barriers. The study is a companion to Ma et al. (2025) — which covers the quantitative utilization data from the same Stanford DAX pilot — and together they form a comprehensive mixed-methods picture from Stanford.",
+    "hypothesis": "Not explicitly stated. Exploratory qualitative study using implementation science framework (RE-AIM PRISM) to identify facilitators and barriers.",
+    "measures": [],
+    "keyFindings": [],
+    "year": "2025",
+    "studyDesign": "Qualitative",
+    "geography": "",
+    "sampleSize": 22
+  },
+  {
+    "id": "Shuaib 2021 - Scribe Program Patient Throughput Physician Productivity",
+    "title": "Impact of a scribe program on patient throughput, physician productivity, and patient satisfaction in a community-based emergency department",
+    "authors": "Shuaib, Waqas; Hilmi, John; Caballero, Joshua; Rashid, Ijaz; Stanazai, Hashim; Ajanovic, Alan; Moshtaghi, Alex; Amari, Ahmed; Tawfeek, Kerolos; Khurana, Anjit; Hasabo, Hesham; Baqais, Abdulrehman; Mattar, Ahmed A.; Gaeta, Theodore J.",
+    "doi": "10.1177/1460458217692930",
+    "journal": "Health Informatics Journal | Vol. 27, No. 1 | 2021. Published 2018 online (received 2017). SAGE Publications.",
+    "product": "**Human medical scribes** (not AI/ambient technology). Scribe program implemented by a private-sector scribe company; scribes are college students/recent graduates trained on-the-job (proficient after 20 shifts, skilled after 40 shifts). One scribe assigned per physician. All scribe-generated charts forwarded to physician for review, amendment, and signature. ⚠️ This paper is a **human scribe baseline** — not an ambient AI study. Included in the corpus as a pre-AI comparator.",
+    "setting": "Suburban non-academic community emergency department, ~80,000 visits/year, Level II Trauma Center (American College of Surgeons), treating adults and pediatrics. Study period: July 2015–February 2016. Pre-implementation baseline: 90 days (July 1–Sept 30, 2015); 2-month washout/phase-in; post-implementation: 90 days (Dec 1, 2015–Feb 28, 2016). Physicians only (NPs/PAs excluded). 3–4 scribes available at all times. No staff changes during study.",
+    "evidenceLevel": "Observational (uncontrolled before-and-after / quasi-experimental)",
+    "dataSources": "EHR data (quality assurance reports from EHR system) | Survey (Press Ganey patient satisfaction) | Time-motion analysis (direct observation)",
+    "summary": "This prospective before-and-after study at a community ED (n=12,721 pre-scribe, n=13,598 post-scribe patient encounters) evaluated the impact of a human medical scribe program on throughput, physician productivity, and patient satisfaction. All five throughput metrics improved significantly (all p<0.0001): door-to-doc time improved from 61 to 56 min; LOS for discharged patients improved from 303 to 287 min. Physician productivity metrics improved substantially: patients per hour increased from 2.3 to 3.2 (p<0.001), total wRVUs per hour from 3.1 to 5.2 (p<0.001). Time-motion analysis showed post-visit documentation time halved (14→7 min, p<0.01), while doctor-patient interaction time nearly doubled (4→7.8 min, p<0.01). Patient satisfaction was already high and remained high; the only statistically significant satisfaction item was \"clinician providing satisfactory feedback\" (3.9→4.7, p<0.01). Physician ED satisfaction percentile improved from 66% to 81% (15-point gain). Authors conclude human scribes are feasible and effective in community EDs (most prior evidence was from academic institutions).",
+    "hypothesis": "Explicit: to evaluate the impact of medical scribes on patient throughput, physician productivity, and patient satisfaction in a community ED setting.",
+    "measures": [],
+    "keyFindings": [],
+    "year": "2021",
+    "studyDesign": "Observational",
+    "geography": "",
+    "sampleSize": 12
+  },
+  {
+    "id": "Stults 2025 - Evaluation Ambient AI Documentation Platform Clinicians",
+    "title": "Evaluation of an Ambient Artificial Intelligence Documentation Platform for Clinicians",
+    "authors": "Stults, Cheryl D.; Deng, Sien; Martinez, Meghan C.; Wilcox, Joseph; Szwerinski, Nina; Chen, Kevin H.; Driscoll, Stephanie; Washburn, Joanna; Jones, Veena G.",
+    "doi": "10.1001/jamanetworkopen.2025.8614",
+    "journal": "JAMA Network Open | 2025",
+    "product": "Abridge (identified from qualitative quotes in Table 3 — e.g., \"I have loved my experience with Abridge thus far\"). Paper does not explicitly name the product in the methods, but quotes make identification clear. Integrated with Epic at Sutter Health.",
+    "setting": "Sutter Health, Palo Alto, California. 100 clinicians enrolled; 57 completed both pre- and post-implementation surveys. Mixed specialties: primary care (58%), medical subspecialty (21%), surgical subspecialty (21%). Physicians (92%) and advanced practice clinicians (8%). Pre/post survey design combined with EHR Signal data.",
+    "evidenceLevel": "Observational (pre/post mixed-methods: quantitative survey + EHR telemetry)",
+    "dataSources": "Survey/self-report | EHR data (Epic Signal) | Mixed",
+    "summary": "This quality improvement study at Sutter Health (Northern and Central California) evaluated an ambient AI documentation platform (identified as Abridge in qualitative quotes) across 100 clinicians, with 57 completing both pre- and post-implementation surveys. Ambient AI was associated with significantly decreased time in notes per appointment (mean 6.2 → 5.3 min, p<.001), with a notable sex difference: women saw a larger reduction (8.1 → 6.7 min) than men (4.7 → 4.2 min; DiD p=.001). Documentation and progress note lengths increased slightly. NASA-TLX subscores (mental demand, temporal demand, effort) all improved significantly (all p<.001). However, Mini-",
+    "hypothesis": "Not explicitly stated. Implicit hypothesis: ambient AI documentation will improve clinician experience of documentation burden, burnout, and EHR efficiency.",
+    "measures": [
+      {
+        "measure": "**Time in Notes per Appointment (min)**",
+        "description": "Objective EHR Signal measure: mean time clinicians spent in notes per encounter. Decreased from 6.2 to 5.3 min overall (p<.001). Significant sex-based difference (DiD p=.001): women reduced more than men.",
+        "dimensions": "NB - Net Benefits"
+      },
+      {
+        "measure": "**After-Hours Note Writing (≤1 hr)**",
+        "description": "Survey item: proportion of clinicians spending ≤1 hr writing notes outside work hours. Increased from 14.0% to 54.4% (p<.001) — major WOW reduction finding.",
+        "dimensions": "NB - Net Benefits, US - User Satisfaction"
+      },
+      {
+        "measure": "**Off-Hours EHR Activity (min)**",
+        "description": "Objective EHR Signal: total EHR time 5:30pm–7:00am weekdays + weekends. Did NOT change significantly (mean 38.2 → 39.8 min, p=.14). Diverges from self-report finding — notable methodological tension.",
+        "dimensions": "NB - Net Benefits"
+      },
+      {
+        "measure": "**Documentation Length / Progress Note Length (characters)**",
+        "description": "Objective EHR Signal: note character counts pre vs. post. Both increased slightly but significantly (documentation: p=.01; progress note: p<.001). Ambient AI produces longer notes.",
+        "dimensions": "IQ - Information Quality, NB - Net Benefits"
+      },
+      {
+        "measure": "**NASA-TLX Mental Demand**",
+        "description": "Survey subscale: self-reported mental demand of documentation. Decreased significantly from median 12 to 5 (p<.001) across all subgroups.",
+        "dimensions": "US - User Satisfaction"
+      },
+      {
+        "measure": "**NASA-TLX Temporal Demand**",
+        "description": "Survey subscale: time pressure associated with documentation. Decreased significantly from median 13 to 5 (p<.001).",
+        "dimensions": "US - User Satisfaction"
+      },
+      {
+        "measure": "**NASA-TLX Effort**",
+        "description": "Survey subscale: perceived effort required for documentation. Decreased significantly from median 14 to 5 (p<.001).",
+        "dimensions": "US - User Satisfaction"
+      }
+    ],
+    "keyFindings": [],
+    "year": "2025",
+    "studyDesign": "Observational",
+    "geography": "California, USA",
+    "sampleSize": 100
+  },
+  {
+    "id": "Suhail 2026 - Metrics for Ambient Clinical Documentation Scoping Review",
+    "title": "Current evidence and future directions of metrics used to evaluate ambient clinical documentation: A scoping review",
+    "authors": "Suhail, Dernas; Wong,",
+    "doi": "10.1016/j.ijmedinf.2025.106113",
+    "journal": "International Journal of Medical Informatics | Vol. 205 | January 2026 | Article 106113. Received 25 July 2025; Accepted 9 September 2025; Available online 10 September 2025.",
+    "product": "N/A — scoping review of 11 primary studies. Products in included studies: Nuance Dragon Ambient Experience (DAX) used in 3 of 11 studies; Dragon Medical 11.0 in 2; other systems (ChatGPT-4, AWS Transcribe, Google Speech-to-Text, proprietary) in remainder.",
+    "setting": "Scoping review — synthesizes 11 primary studies. Settings across included studies: USA (7), Australia (2), Germany (1). Mix of simulated consultations, inpatient, and outpatient settings. Medline and Embase search (4,949 articles identified → 11 included via PRISMA-ScR).",
+    "evidenceLevel": "Scoping Review (PRISMA-ScR compliant)",
+    "dataSources": "Synthesis of published primary literature (Medline + Embase)",
+    "summary": "This peer-reviewed scoping review — the direct counterpart to the Gebauer 2025 preprint (which it explicitly cites and positions itself as the peer-reviewed alternative to) — synthesizes evaluation metrics from 11 primary studies on ambient clinical documentation (ACD). The 11 included studies span 6 comparative experimental studies, 2 mixed-methods observational studies, 1 cross-sectional study, 1 prospective experimental study, and 1 peer-matched cohort study. Four main evaluation themes were identified: (1) **model performance** (7/11 studies — F1, ROUGE, BERTScore, BLEURT, PDQI, custom entity-linking metrics), (2) **documentation efficiency** (3/11 — time per patient, out-of-hours documentation, words per minute, WRVU), (3) **clinician experience** (3/11 — OLBI burnout, Press Ganey Engagement, Mini-",
+    "hypothesis": "Not explicitly stated. Implicit objective: to synthesize the landscape of ACD evaluation metrics and propose a standardized framework (ACDQI) for future studies.",
+    "measures": [
+      {
+        "measure": "**F1 Score**",
+        "description": "Harmonic mean of precision and recall. Most common model performance metric in the corpus (used in 4/11 studies). Applied to information extraction component.",
+        "dimensions": "SQ - System Quality, IQ - Information Quality"
+      },
+      {
+        "measure": "**ROUGE Score (ROUGE-1, ROUGE-2, ROUGE-L)**",
+        "description": "Lexical overlap between machine-generated and reference notes. Easy to use but limited semantic understanding. Used in 2/11 studies. Part of ACDQI.",
+        "dimensions": "IQ - Information Quality"
+      },
+      {
+        "measure": "**BERTScore / BLEURT**",
+        "description": "Contextual embedding-based metrics capturing semantic similarity. More computationally demanding than ROUGE but better aligned with clinical quality. Used in 1/11 study; recommended in ACDQI. Represents evolution beyond lexical metrics.",
+        "dimensions": "IQ - Information Quality, SQ - System Quality"
+      },
+      {
+        "measure": "**PDQI (Physician Documentation Quality Instrument)**",
+        "description": "Validated instrument scoring note quality 9–45. Used in 1/11 study (Kernberg 2024 with ChatGPT-4). Part of ACDQI.",
+        "dimensions": "IQ - Information Quality"
+      },
+      {
+        "measure": "**LINK / CORRECT LINK (Entity Linking Annotations)**",
+        "description": "Custom metrics for semantic entity-level accuracy between generated and reference notes. Resource-intensive, prone to subjectivity. Used in 1/11 study (Sezgin 2024).",
+        "dimensions": "IQ - Information Quality, SQ - System Quality"
+      },
+      {
+        "measure": "**Errors of Omission / Addition / Incorrect Data**",
+        "description": "Manual error classification in machine-generated notes (1/11 study). Directional measure of factual accuracy and completeness.",
+        "dimensions": "IQ - Information Quality"
+      },
+      {
+        "measure": "**Average Documentation Time per Patient (min)**",
+        "description": "Primary efficiency metric — how long including proofing time. Included in ACDQI (scored: 10 × minutes, max 400 if ≤10 min; score = 0 if >10 min). Used in 2/11 studies.",
+        "dimensions": "NB - Net Benefits"
+      },
+      {
+        "measure": "**Out-of-Hours EHR Documentation Time**",
+        "description": "Time spent documenting outside working hours. Used in 2/11 studies as a WOW/after-hours burden metric.",
+        "dimensions": "NB - Net Benefits, US - User Satisfaction"
+      },
+      {
+        "measure": "**Words per Minute (documentation speed)**",
+        "description": "Speed of clinical note production. One study found ACD 2.7× faster than typing and dictation for history; 2.2× faster for physical exam vs. typing; 3.1× faster vs. dictation.",
+        "dimensions": "NB - Net Benefits"
+      },
+      {
+        "measure": "**Work Relative Value Units (WRVU)**",
+        "description": "Monthly/yearly productivity measure (US Medicare reimbursement framework). Used in 1/11 study (Haberle 2024) as a proxy for clinical value productivity.",
+        "dimensions": "NB - Net Benefits"
+      },
+      {
+        "measure": "**Oldenburg Burnout Inventory (OLBI)**",
+        "description": "Validated burnout instrument (scored 16–64), two domains: exhaustion and disengagement. Used in 1/11 study (Owens 2024). High ACD use associated with significantly lower burnout scores.",
+        "dimensions": "US - User Satisfaction"
+      },
+      {
+        "measure": "**Press Ganey Workforce Engagement Score**",
+        "description": "Validated clinician engagement measure (scored 1–5). Used in 1/11 study (Haberle 2024).",
+        "dimensions": "US - User Satisfaction"
+      }
+    ],
+    "keyFindings": [],
+    "year": "2026",
+    "studyDesign": "Review",
+    "geography": "Australia",
+    "sampleSize": null
+  },
+  {
+    "id": "Tierney 2024 - Ambient Artificial Intelligence Scribes Alleviate Burden Clinical Documentation",
+    "title": "Ambient Artificial Intelligence Scribes to Alleviate the Burden of Clinical Documentation",
+    "authors": "Tierney, Aaron A.; Gayre, Gregg; Hoberman, Brian; Mattern, Britt; Ballesca, Manuel; Kipnis, Patricia; Liu, Vincent; Lee, Kristine",
+    "doi": "10.1056/CAT.23.0404",
+    "journal": "NEJM Catalyst Innovations in Care Delivery | Vol. 5, No. 3 | February 21, 2024. The Permanente Medical Group (TPMG), Kaiser Permanente Northern California. Large-scale implementation study.",
+    "product": "**Ambient AI scribe technology** (Nuance DAX Copilot). Smartphone microphone to transcribe encounters; does not retain audio recordings. EHR-integrated. Pilot enabled for 10,000 physicians and staff across diverse settings and specialties at TPMG in October 2023.",
+    "setting": "The Permanente Medical Group (TPMG), Kaiser Permanente Northern California. Large-scale implementation across diverse settings and specialties. In 10 weeks since implementation, used by 3,442 physicians in as many as 303,266 patient encounters. 968 physicians enabled ambient AI scribes in ≥100 patient encounters; one physician in 1,210 encounters. Early evaluation metrics based on existing tool that evaluates quality of human-generated scribe notes.",
+    "evidenceLevel": "Observational (large-scale implementation study with early evaluation metrics)",
+    "dataSources": "Utilization data (303,266 encounters) | Early evaluation metrics based on human-generated scribe note quality tool | Statistical analyses of time spent in documentation and EHR",
+    "summary": "This large-scale implementation study at TPMG enabled ambient AI scribe technology for 10,000 physicians and staff in October 2023. In 10 weeks, used by 3,442 physicians in 303,266 patient encounters across diverse specialties. Response from physicians who used the tool has been favorable — they cite the technology’s capability to facilitate more personal, meaningful, and effective patient interactions and to reduce the burden of after-hours clerical work. Early assessments of patient feedback have been positive, with some describing improved interaction with their physicians. Early evaluation metrics, based on an existing tool that evaluates the quality of human-generated scribe notes, find that ambient AI use produces high-quality clinical documentation for physicians’ editing. Further statistical analyses after AI scribe implementation also find that usage is linked with reduced time spent in documentation and in the EHR. Ongoing enhancements focused on direct EHR integration, improved capabilities for incorporating medical interpretation, and enhanced workflow personalization options for individual users. Despite early promise, careful attention must be paid to ensure the technology supports clinicians while optimizing output for accuracy, relevance, and alignment in the physician–patient relationship.",
+    "hypothesis": "Explicit: ambient AI scribes have great potential to reduce documentation burden, enhance physician–patient encounters, and augment clinicians’ capabilities.",
+    "measures": [],
+    "keyFindings": [],
+    "year": "2024",
+    "studyDesign": "Observational",
+    "geography": "California, USA",
+    "sampleSize": 0
+  },
+  {
+    "id": "Tierney 2025 - Ambient AI Scribes Learnings 1 Year 2.5 Million Uses",
+    "title": "Ambient Artificial Intelligence Scribes: Learnings after 1 Year and over 2.5 Million Uses",
+    "authors": "Tierney, Aaron A.; Gayre, Gregg; Hoberman, Brian; Mattern, Britt; Ballesca, Manuel; Wilson Hannay, Sarah B.; Castilla, Kate; Lau, Cindy S.; Kipnis, Patricia; Liu, Vincent; Lee, Kristine",
+    "doi": "10.1056/CAT.25.0040",
+    "journal": "NEJM Catalyst Innovations in Care Delivery | Vol. 6, No. 5 | May 2025",
+    "product": "Two unnamed ambient AI scribe vendors — The Permanente Medical Group (Kaiser Permanente) transitioned between vendors during the study period. Both vendors unnamed throughout. This is the 1-year follow-up to Tierney 2024 (initial pilot, also in corpus).",
+    "setting": "Adult and Family Medicine (primary survey cohort); plus mental health, emergency medicine, and multiple specialties across enterprise. The Permanente Medical Group (TPMG), Kaiser Permanente — large integrated health system, all 8 KP regions.",
+    "evidenceLevel": "Quality Improvement / Operational Longitudinal Report (Commentary format). Within-physician difference-in-differences analysis for workload metrics. Survey for physician and patient experience.",
+    "dataSources": "- Product telemetry (adoption and usage metrics)",
+    "summary": "One-year operational follow-up of ambient AI scribe deployment at TPMG/Kaiser Permanente, building on Tierney 2024 (10-week pilot). Covers Oct 16, 2023 – Dec 28, 2024 (63 weeks). 7,260 physicians used the tool across 2,576,627 patient encounters. Usage grew linearly; top-third high users drove 89% of total activations. Dose-response confirmed: high users saved 0.7 min/note vs. 0.15 min/note for low users. Aggregate savings: 15,791 hours (~1,794 8-hour working days) vs. nonusers. DiD analysis shows significant reductions in pajama time, after-hours work, notes time, and orders time; small increase in in-basket time. Physician survey: 84% positive impact on visit interactions, 82% positive work satisfaction. Patient survey: 56% positive impact on visit quality, 0% negative, 92% comfortable or neutral with AI. Organization switched vendors mid-period; adoption remained stable, with prior usage patterns predicting subsequent usage. No COI — entirely industry-independent TPMG report.",
+    "hypothesis": "Not formally stated (commentary format). Key questions investigated: (1) Is AI scribe use growing/sustainable? (2) Does dose-response exist? (3) What physician characteristics predict adoption? (4) What is the physician and patient experience? (5) What happens when you switch vendors?",
+    "measures": [
+      {
+        "measure": "Cumulative AI scribe uses",
+        "description": "2,576,627 encounters over 63 weeks across 7,260 physicians",
+        "dimensions": "U"
+      },
+      {
+        "measure": "Adoption growth curve",
+        "description": "Linear weekly increase in providers and visits (Fig. 1)",
+        "dimensions": "U"
+      },
+      {
+        "measure": "High vs. low user classification",
+        "description": "Top-third vs. bottom two-thirds by use volume",
+        "dimensions": "U"
+      },
+      {
+        "measure": "Adoption predictors",
+        "description": "Age, years since graduation, gender — association with adoption",
+        "dimensions": "U"
+      },
+      {
+        "measure": "Specialty adoption rates",
+        "description": "% of clinicians using AI scribe, % of visits using AI scribe, by specialty",
+        "dimensions": "U"
+      },
+      {
+        "measure": "Dose–response: time in notes",
+        "description": "Reduction in min/note for high users (−0.7) vs. low users (−0.15) vs. nonusers (Fig. 3)",
+        "dimensions": "NB"
+      },
+      {
+        "measure": "Aggregate time savings",
+        "description": "15,791 hours total (~1,794 8-hour working days) vs. nonusers over 1 year",
+        "dimensions": "NB"
+      },
+      {
+        "measure": "DiD: pajama time",
+        "description": "−1.03 min (P=0.02) for users vs. nonusers",
+        "dimensions": "NB"
+      },
+      {
+        "measure": "DiD: time outside 7am–7pm",
+        "description": "−1.83 min (P<0.001) for users vs. nonusers",
+        "dimensions": "NB"
+      },
+      {
+        "measure": "DiD: time in notes/appointment",
+        "description": "−0.40 min (P<0.001) for users vs. nonusers",
+        "dimensions": "NB"
+      },
+      {
+        "measure": "DiD: time in orders/appointment",
+        "description": "−0.07 min (P=0.01) for users vs. nonusers",
+        "dimensions": "NB"
+      },
+      {
+        "measure": "DiD: time in in-basket/appointment",
+        "description": "+0.10 min (P=0.008) — INCREASE for users vs. nonusers",
+        "dimensions": "NB"
+      },
+      {
+        "measure": "Physician satisfaction (survey)",
+        "description": "84% positive impact on visit interactions; 82% positive effect on work satisfaction",
+        "dimensions": "US"
+      },
+      {
+        "measure": "Patient satisfaction (survey)",
+        "description": "56% positive impact on visit quality; 44% no impact; 0% negative",
+        "dimensions": "NB"
+      },
+      {
+        "measure": "Patient comfort with AI",
+        "description": "92% comfortable or neutral; 8% some level of discomfort",
+        "dimensions": "NB"
+      },
+      {
+        "measure": "Vendor transition stability",
+        "description": "78% of high users stayed high; 50% of low users stayed low; 17% of low users became high",
+        "dimensions": "U, SerQ"
+      }
+    ],
+    "keyFindings": [],
+    "year": "2025",
+    "studyDesign": "QI/Pre-Post",
+    "geography": "",
+    "sampleSize": 260
+  },
+  {
+    "id": "Wang 2021 - Patient-Centered Digital Scribe Automatic Medical Documentation",
+    "title": "A patient-centered digital scribe for automatic medical documentation",
+    "authors": "Wang, Jesse; Lavender, Marc; Hoque, Ehsan; Brophy, Patrick; Kautz, Henry",
+    "doi": "10.1093/jamiaopen/ooab003",
+    "journal": "JAMIA Open | Vol. 4, No. 1 | 2021 | ooab003. Open Access. University of Rochester Medical Center. Proof-of-concept study with two medical students.",
+    "product": "**Patient-centered digital scribe**. Uses summarizing and signposting from patient-centered communication to document history sections. Uses text classification to simultaneously document physical exam. Not a commercial product — custom system developed for this study. Audio captured with earset microphone; transcribed with Google Speech-to-Text video model; diarized and punctuated.",
+    "setting": "Simulation study with two medical students alternating as physician and patient. 57 mock consultations from PriMock57 dataset (Babylon Health). Consultations ~10 minutes long, covering common primary care topics. 5 regularly practicing UK GPs (≥3 years experience) evaluated notes over 8 weeks (~30 working hours/evaluator). Lead Clinician (author) supervised evaluation. All clinicians paid UK standard GP working rate.",
+    "evidenceLevel": "Observational (simulation study — human evaluation + automatic metric correlation)",
+    "dataSources": "Human evaluation (5 GPs): listen/take notes, post-edit 5 notes per consultation, classify errors, qualitative feedback | 18 automatic NLP metrics (ROUGE, BertScore, Levenshtein, etc.) | Post-editing time measurement",
+    "summary": "This foundational NLP methodology paper addresses how to properly evaluate automatically generated clinical consultation notes. The study deployed 5 UK GPs to evaluate 285 notes (57 consultations × 5 notes each) across 4 tasks: listen and take notes, post-edit, classify errors (incorrect statements, omissions), and provide qualitative feedback. Then correlated human judgments with 18 automatic quality metrics. Key findings: (1) Omissions are the most common and clinically significant error type — consistent with later simulation studies (Biro 2025, Anderson 2025, Arko 2025); (2) Simple Levenshtein distance (character-based edit distance) performs as well as or better than model-based metrics like BertScore for this task; (3) ROUGE and other automatic metrics correlate poorly with human clinical judgment; (4) Post-editing generated notes can be faster than writing from scratch but may be more cognitively intensive. All annotations open-sourced (PriMock57 dataset). This paper predates modern commercial ambient AI scribes but establishes the methodological foundation for how to evaluate them. Dataset released as open source.",
+    "hypothesis": "Explicit: to present a human evaluation study of consultation notes and establish which automatic metrics best correlate with human clinical judgment.",
+    "measures": [],
+    "keyFindings": [],
+    "year": "2021",
+    "studyDesign": "Observational",
+    "geography": "UK",
+    "sampleSize": null
+  },
+  {
+    "id": "Wang 2025 - Evaluation Framework Ambient Digital Scribing Tools",
+    "title": "An evaluation framework for ambient digital scribing tools in clinical applications",
+    "authors": "Wang, Haoyuan; Yang, Rui; Alwakeel, Mahmoud; Kayastha, Ankit; Chowdhury, Anand; Biro, Joshua M.; Sorrentino, Anthony D.; Handley, Jessica L.; Hantzmon, Sarah; Bessias, Sophia; Economou-",
+    "doi": "10.1038/s41746-025-01622-1",
+    "journal": "npj Digital Medicine | 2025",
+    "product": "An internally developed ADS tool (built by the authors) — used as a test case to validate the proposed framework. Also references DAX Copilot and Abridge in the literature context, but does not directly evaluate those products.",
+    "setting": "40 real clinical visit recordings used for validation. Academic/clinical research setting. Not a specific health system deployment — framework validation study.",
+    "evidenceLevel": "Observational (framework development + empirical validation on 40 real recordings)",
+    "dataSources": "Mixed (automated NLP metrics + human expert evaluation + LLM-as-evaluator + simulation testing)",
+    "summary": "This paper proposes a comprehensive evaluation framework for ambient digital scribing (ADS) tools, spanning four evaluation modalities: human evaluation, automated metrics, simulation testing, and LLMs-as-evaluators. The framework assesses three pipeline stages: transcription, speaker diarization, and medical note generation. Evaluation criteria include fluency, completeness, and factuality. Applied to 40 real clinical recordings, the framework identified strengths (fluency, clarity) and weaknesses (factual accuracy, new medication capture). The paper is one of the most technically rigorous framework proposals in the corpus and directly relevant to the Regenstrief/Suki evaluation design work.",
+    "hypothesis": "Not explicitly stated as a testable hypothesis. The paper aims to demonstrate that the proposed multi-modal evaluation framework can identify both strengths and weaknesses in ADS tool performance more comprehensively than existing single-method approaches.",
+    "measures": [],
+    "keyFindings": [],
+    "year": "2025",
+    "studyDesign": "Observational",
+    "geography": "",
+    "sampleSize": null
+  },
+  {
+    "id": "Wojda 2025 - HCI of Ambient AI Qualitative Study",
+    "title": "Understanding the Human-Computer Interaction of Ambient AI in Healthcare: A Qualitative Study of Early Provider Experiences",
+    "authors": "Wojda, Thomas R.; Savio, Francis Vino Dominic; Hochheiser, Harry; Amaravathi, Anusha; Bharat, Krish; Fischer, Gary",
+    "doi": "10.5772/intechopen.1011340",
+    "journal": "IntechOpen (open-access book chapter) — Published July 3, 2025",
+    "product": "[[Abridge]] and [[Nuance DAX]] — both deployed across UPMC (University of Pittsburgh Medical Center). Products not compared directly; analysis focuses on combined early-adopter experience.",
+    "setting": "Large integrated health system (UPMC). Mixed specialties. Survey-based qualitative study with 204 respondents one month post-implementation; 103 provided free-text feedback analyzed thematically.",
+    "evidenceLevel": "Qualitative (thematic analysis embedded in a mixed-methods evaluation)",
+    "dataSources": "Survey/self-report (open-ended survey responses; sentiment analysis + interrater reliability assessment)",
+    "summary": "This study examined provider HCI experiences one month after ambient AI implementation across UPMC, using reflexive thematic analysis of open-ended survey responses. Six major themes emerged: (1) improved efficiency and workflow, (2) enhanced patient interaction, (3) documentation quality and editing burden, (4) learning curve and workflow adaptation, (5) specialty-specific performance variability, and (6) provider skepticism and AI trust. Sentiment analysis showed a balanced distribution of positive, negative, and mixed perceptions. The study highlights that while time savings and patient engagement improved, concerns around accuracy, editing load, and privacy persisted.",
+    "hypothesis": "Not explicitly stated. Study is exploratory/inductive; aims to generate hypotheses for future study rather than test a specific hypothesis.",
+    "measures": [],
+    "keyFindings": [],
+    "year": "2025",
+    "studyDesign": "Qualitative",
+    "geography": "",
+    "sampleSize": null
+  },
+  {
+    "id": "You 2025 - Ambient Documentation Technology Documentation Burden Burnout",
+    "title": "Ambient Documentation Technology in Clinician Experience of Documentation Burden and Burnout",
+    "authors": "You, Jacqueline G.; Dbouk, Reema H.; Landman, Adam; Ting, David Y.; Dutta, Sayon; Wang, Julie C.; Centi, Amanda J.; Macfarlane, Molly; Bechor, Eran; Letourneau, Jonathan; Choo-Kang, Gabrielle; Kim, Esther H.; Magee, Cordula; Lang, Brian J.; Angelo, Laura; Olin, Jackson; Frits, Michelle; Iannaccone, Christine; Rui, Angela; Salmikova, Ivana; Holland, Christopher; Blanchette, Bryan; Silverman, Rachel; Bates, David W.; Rotenstein, Lisa; Mishuris, Rebecca G.",
+    "doi": "10.1001/jamanetworkopen.2025.28056",
+    "journal": "JAMA Network Open | 2025",
+    "product": "Not specified by name. Ambient documentation technology deployed across Mass General Brigham (MGB, Boston) and Emory Healthcare (Atlanta). Mixed-methods evaluation of a real-world implementation.",
+    "setting": "Two large academic health systems: Mass General Brigham (Boston) and Emory Healthcare (Atlanta). Multi-specialty outpatient and inpatient settings. Mixed-methods pre/post survey design.",
+    "evidenceLevel": "Observational (pre/post mixed-methods: quantitative surveys + qualitative analysis)",
+    "dataSources": "Survey/self-report | Mixed (qualitative + quantitative survey instruments)",
+    "summary": "This mixed-methods study evaluated ambient documentation technology at MGB and Emory, using pre- and post-implementation surveys to assess clinician experience with documentation burden and burnout. The study collected both quantitative Likert-scale responses and qualitative free-text data across multiple specialty types. Survey domains included EHR burden, burnout indicators, well-being, and documentation workflow experience. The study provides one of the larger multi-site mixed-methods evaluations in the corpus and is notable for including both academic and community settings across two geographically distinct health systems.",
+    "hypothesis": "Not explicitly stated. Implicit hypothesis: implementation of ambient documentation technology will reduce self-reported documentation burden and improve measures of burnout and clinician well-being.",
+    "measures": [],
+    "keyFindings": [],
+    "year": "2025",
+    "studyDesign": "Observational",
+    "geography": "",
+    "sampleSize": null
+  },
+  {
+    "id": "van Buchem 2021 - Digital Scribe Scoping Review Research Agenda",
+    "title": "The digital scribe in clinical practice: a scoping review and research agenda",
+    "authors": "van Buchem, Marloes M.; Candel, Boris G.J.M.; Haan, Jeroen; Engelen, Laurens; Leeuw, Adriaan W.; van Gils, Mark; de Bruijne, Marleen C.; Moorman, P.W.",
+    "doi": "10.1038/s41746-021-00432-5",
+    "journal": "npj Digital Medicine | Vol. 4 | Article 32 | 2021 (published online March 2021)",
+    "product": "No commercial ambient AI products evaluated directly. 20 academic studies on digital scribe systems reviewed. Only DeepScribe provided unpublished performance data when contacted; Robin Healthcare, Nuance, Amazon, Saykara, Sopris Health did not respond. Babylonian Health (Google), Nuance mentioned as major commercial players.",
+    "setting": "Scoping review — no single clinical setting. Studies spanned general (unspecified), primary care, home hemodialysis, orthopedic, cardiology, family medicine, internal medicine, telemedicine.",
+    "evidenceLevel": "Scoping/Systematic Review",
+    "dataSources": "Literature review (Medline, Web of Science, ACL, Arxiv); industry outreach",
+    "summary": "This is a scoping review (PRISMA-ScR) of digital scribe technology through December 2020. Of 2,348 articles screened, 20 were included. 3 focused on ASR for clinical conversations; 17 used manual transcripts for NLP tasks (entity extraction, classification, summarization). Only 2 of 20 studies examined clinical validity/usability; none investigated clinical utility. Companies actively developing digital scribes do not publish performance data — only DeepScribe responded to outreach. The paper identifies a critical gap: the field is stuck at technical validity, far from clinical deployment readiness.",
+    "hypothesis": "Not explicitly stated. Research questions: (1) What methods are used to develop digital scribes? (2) How accurate are these methods? (3) Have these been evaluated in clinical practice?",
+    "measures": [
+      {
+        "measure": "ASR accuracy",
+        "description": "Accuracy of automatic speech recognition on clinical conversations (word error rate)",
+        "dimensions": "SQ"
+      },
+      {
+        "measure": "NLP task performance",
+        "description": "Entity extraction, classification, summarization accuracy on clinical transcripts",
+        "dimensions": "SQ, IQ"
+      },
+      {
+        "measure": "Clinical validity/usability",
+        "description": "Did any studies evaluate the tool with actual clinicians in clinical practice?",
+        "dimensions": "IQ, US"
+      },
+      {
+        "measure": "Clinical utility",
+        "description": "Did any studies assess patient or clinical outcomes in real-world use?",
+        "dimensions": "NB"
+      },
+      {
+        "measure": "Industry transparency",
+        "description": "Whether commercial companies provided performance data when requested",
+        "dimensions": "SerQ"
+      }
+    ],
+    "keyFindings": [
+      "20 studies included from 2,348 screened. Only 2 assessed clinical validity/usability."
+    ],
+    "year": "2021",
+    "studyDesign": "Review",
+    "geography": "",
+    "sampleSize": null
+  },
+  {
+    "id": "van Buchem 2024 - Digital Scribe Documentation Time Quality Usability",
+    "title": "Impact of a Digital Scribe System on Clinical Documentation Time and Quality: Usability Study",
+    "authors": "van Buchem, Marieke Meija; Kant, Ilse M. J.; King, Liza; Kazmaier, Jacqueline; Steyerberg, Ewout W.; Bauer, Martijn P.",
+    "doi": "10.2196/60020",
+    "journal": "JMIR AI | Vol. 3 | Published: September 23, 2024",
+    "product": "**Autoscriber** (Autoscriber B.V., Eindhoven, Netherlands) — a commercially available Dutch-language digital scribe system using NLP for automated note generation from clinical consultations.",
+    "setting": "Simulation-based usability study. Medical students with clinical experience (n=22) created 430 summaries of mock consultations. Three conditions: manual summarization, fully automated AI summaries, and automated summaries with manual editing. Leiden University Medical Center, Netherlands.",
+    "evidenceLevel": "Simulation (controlled usability study using mock consultations with medical students; not real clinical deployment)",
+    "dataSources": "Mixed (direct timing + validated quality instrument PDQI-9 + automated NLP metrics ROUGE/BERTScore + user survey)",
+    "summary": "This Dutch usability study tested a digital scribe (Autoscriber) on 430 mock consultations with 22 medical students. Comparing manual, auto, and auto+edit conditions: automated summaries took slightly less time (186s vs 202s for editing, manual baseline) but scored worse on the PDQI-9 documentation quality instrument (median 25 vs 31). Auto summaries had higher word counts but lower lexical diversity. Student perceptions were mixed — ease of use and time-saving potential noted, but criticized for longer, more rigid structure. Study highlights that blanket automation may not improve quality without editing, and that benefit varies by individual.",
+    "hypothesis": "Not explicitly stated. Implicit hypothesis: a digital scribe system will reduce documentation time without compromising quality.",
+    "measures": [],
+    "keyFindings": [],
+    "year": "2024",
+    "studyDesign": "Simulation",
+    "geography": "Netherlands",
+    "sampleSize": 22
+  }
+]

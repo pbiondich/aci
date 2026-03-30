@@ -1,0 +1,473 @@
+[
+  {
+    "id": "CM-01",
+    "name": "Clinician Burnout and Exhaustion",
+    "dimension": "US - User Satisfaction",
+    "domain": "Clinician Well-Being",
+    "paperCount": 0,
+    "definition": "Provider-reported emotional exhaustion, depersonalization, and interpersonal disengagement from clinical work — the core burnout syndrome. Measured via validated psychometric instruments. Distinct from cognitive task load (in-encounter mental effort) and professional fulfillment (positive engagement).",
+    "instruments": [
+      "Stanford PFI — Work Exhaustion subscale"
+    ],
+    "typicalFindings": "",
+    "rigorRating": "",
+    "concerns": "**RCT effect size caveat:** Afshar 2025b (RCT, n=66) found −0.44 PFI work exhaustion. Shah 2024 (QI, selected sample) found −1.94 on same scale. The gap is expected from selection bias in non-randomized studies. The RCT estimate is more trustworthy. Burnout is dissociable from cognitive load (CM-02) and professional fulfillment (CM-03) — see Afshar 2025b where all three moved differently.",
+    "papers": []
+  },
+  {
+    "id": "CM-02",
+    "name": "Cognitive and Task Load",
+    "dimension": "US - User Satisfaction",
+    "domain": "Clinician Well-Being",
+    "paperCount": 0,
+    "definition": "The mental effort, time pressure, and frustration experienced by clinicians *during* or *immediately after* a clinical encounter — the in-the-moment cognitive demand of documentation. Distinct from burnout (CM-01), which is a sustained emotional state.",
+    "instruments": [
+      "NASA-TLX (full or subscales)",
+      "Physician Task Load Index (PTL)",
+      "Cognitive Demand survey items",
+      "Note-related cognitive task load"
+    ],
+    "typicalFindings": "",
+    "rigorRating": "",
+    "concerns": "NASA-TLX measures cognitive effort during task performance — conceptually distinct from burnout (cumulative emotional depletion). Both may improve with ambient scribes but through different mechanisms.",
+    "papers": []
+  },
+  {
+    "id": "CM-03",
+    "name": "Professional Fulfillment and Meaningfulness",
+    "dimension": "US - User Satisfaction",
+    "domain": "Clinician Well-Being",
+    "paperCount": 0,
+    "definition": "Provider-reported positive engagement with clinical work — the presence of meaning, reward, and satisfaction in the work itself. The positive pole of the well-being spectrum, distinct from absence of burnout. Measured via PFI fulfillment subscale or related instruments.",
+    "instruments": [
+      "Stanford PFI — Professional Fulfillment subscale",
+      "Meaningfulness of work items",
+      "Work-life balance items",
+      "PROMIS Sleep Disturbance (Short Form 4a)"
+    ],
+    "typicalFindings": "",
+    "rigorRating": "",
+    "concerns": "**Key null finding:** Afshar 2025b (RCT) found professional fulfillment increased at p=0.04 — which missed the pre-specified alpha of 0.025. This means ambient AI reduces exhaustion but does not significantly *increase* fulfillment. These are dissociable constructs: removing a negative ≠ adding a positive.",
+    "papers": []
+  },
+  {
+    "id": "CM-04",
+    "name": "Documentation Time",
+    "dimension": "NB - Net Benefits",
+    "domain": "Documentation Efficiency",
+    "paperCount": 0,
+    "definition": "Total time spent creating, editing, and finalizing a clinical note — from note initiation to note signature. The most frequently measured efficiency outcome in the corpus. Includes in-clinic documentation time. Does NOT include after-hours time (see CM-05) unless explicitly pooled.",
+    "instruments": [
+      "EHR audit-log telemetry (Epic Signal / UAL)",
+      "Direct timing (simulation)",
+      "Self-report (survey)",
+      "Per-note telemetry"
+    ],
+    "typicalFindings": "",
+    "rigorRating": "",
+    "concerns": "**Critical heterogeneity:** Reported reductions range from −12% (EHR telemetry: Ma 2025, Guo 2026) to −72% (self-report: AAFP 2021). Self-report consistently overestimates. EHR audit-log is the most reliable method. Papers measuring per-note time vs. per-day time are not directly comparable.",
+    "papers": []
+  },
+  {
+    "id": "CM-05",
+    "name": "After-Hours Documentation",
+    "dimension": "NB - Net Benefits",
+    "domain": "Documentation Efficiency",
+    "paperCount": 0,
+    "definition": "Time spent on clinical documentation outside of scheduled working hours — 'pajama time', 'after-hours EHR', or 'work outside work.' Distinct from total documentation time (CM-04) because it captures work-life boundary effects specifically. One of the most clinically meaningful outcomes because it directly affects physician well-being.",
+    "instruments": [
+      "EHR audit-log (Epic Signal / UAL)",
+      "Work Outside Work (WoW)",
+      "Self-report (survey)",
+      "After appointment date",
+      "After-hours EHR time (% change)"
+    ],
+    "typicalFindings": "",
+    "rigorRating": "",
+    "concerns": "**Consistent null pattern in objective data:** After-hours time does NOT improve significantly in EHR telemetry across most corpus papers (Pearlman 2025, Stults 2025). Self-report shows improvement. Exceptions: Duggan 2025 (−16.9%), Boyter/KLAS 2025 (−39% UAL), Afshar 2025b (−0.50 hrs/day, but fragile — disappears after removing top 3% outliers). This self-report/objective divergence is one of the most reproducible findings in the corpus.",
+    "papers": []
+  },
+  {
+    "id": "CM-06",
+    "name": "Chart Closure Timeliness",
+    "dimension": "NB - Net Benefits",
+    "domain": "Documentation Efficiency",
+    "paperCount": 0,
+    "definition": "Whether and how quickly clinical notes are completed and signed — measured as same-day closure rates, time to chart closure, 24-hour deficiency rates, or completion before the next patient. Captures documentation *completion behavior* rather than time-per-note.",
+    "instruments": [
+      "Same-day encounter closure rate (%)",
+      "Time to chart closure (hours)",
+      "24-hour CPT/documentation deficiency rate",
+      "Note completion before next patient",
+      "Chart completion timing (survey)"
+    ],
+    "typicalFindings": "",
+    "rigorRating": "",
+    "concerns": "Chart closure is a distinct operational metric from raw documentation time — a note can be completed quickly but signed late. Boyter/KLAS 2025 found −41% in chart closure time (UAL data). Afshar 2025a used it as a real-time monitoring metric with a notable dip during template change.",
+    "papers": []
+  },
+  {
+    "id": "CM-07",
+    "name": "Total EHR Time",
+    "dimension": "NB - Net Benefits",
+    "domain": "Documentation Efficiency",
+    "paperCount": 0,
+    "definition": "Total time spent in the EHR across all tasks — note-writing, inbox management, order entry, results review, messaging — normalized per scheduled workday. Broader than documentation time alone; captures the total EHR burden.",
+    "instruments": [
+      "EHR audit-log (total active time)",
+      "Total time in EHR per appointment"
+    ],
+    "typicalFindings": "",
+    "rigorRating": "",
+    "concerns": "**Emerging measure — only 5 papers measure this explicitly.** Ma 2025 found −19.95 min/day total EHR time (largest effect in corpus) while only −6.89 min/day for documentation time specifically — suggesting ambient scribes reduce EHR burden beyond just note-writing, possibly by enabling faster note closure and less revisiting.",
+    "papers": []
+  },
+  {
+    "id": "CM-08",
+    "name": "Note Completeness and Omission Rate",
+    "dimension": "IQ - Information Quality",
+    "domain": "Note Information Quality",
+    "paperCount": 0,
+    "definition": "Whether clinically relevant information is captured in the AI-generated note — measured as omission rates, completeness scores, or presence of expected data elements. The most common error type in simulation studies. Represents the 'completeness' component of note quality.",
+    "instruments": [
+      "Omission rate (%)",
+      "Error categorization — omissions",
+      "PDSQI-9 / PDQI-9 Thoroughness domain",
+      "Clinical note error rate (% key elements)",
+      "New medication capture"
+    ],
+    "typicalFindings": "",
+    "rigorRating": "",
+    "concerns": "**Most consistent IQ finding in corpus:** Omissions are the dominant error type in ALL 5 simulation studies (71–86% of errors). More clinically dangerous than hallucinations at scale because missing information is harder to detect than wrong information. Patient doesn't complain about what's not in the note.",
+    "papers": []
+  },
+  {
+    "id": "CM-09",
+    "name": "Note Accuracy and Hallucination Rate",
+    "dimension": "IQ - Information Quality",
+    "domain": "Note Information Quality",
+    "paperCount": 0,
+    "definition": "The presence of clinically inaccurate or fabricated content in AI-generated notes — information that was not stated in the encounter or is factually wrong. Distinct from omissions (CM-08). Includes hallucinations (invented content) and incorrect facts (stated inaccurately).",
+    "instruments": [
+      "Hallucination rate (%)",
+      "Addition errors (%)",
+      "Incorrect facts (%)",
+      "PDSQI-9 / PDQI-9 Accuracy domain",
+      "Clinically significant inaccuracies",
+      "Cross-replicate consistency"
+    ],
+    "typicalFindings": "",
+    "rigorRating": "",
+    "concerns": "**Hallucinations are less common than omissions but more dangerous per-event.** Baker 2023 (36%) and Palm 2025 (31%) found highest rates. Kernberg 2023 found only 3.2% incorrect facts but 86% omissions — different definitions matter. Bundy 2024 identified negation errors ('did not' → 'did') as a specific high-risk subtype. Reproducibility failure (Kernberg): same case, different errors each run — clinicians can't predict where to check.",
+    "papers": []
+  },
+  {
+    "id": "CM-10",
+    "name": "Note Quality Overall PDQI",
+    "dimension": "IQ - Information Quality",
+    "domain": "Note Information Quality",
+    "paperCount": 0,
+    "definition": "Aggregate quality rating of the AI-generated clinical note using a validated multi-dimensional instrument. The PDQI-9 and PDSQI-9 assess accuracy, thoroughness, usefulness, organization, comprehensibility, succinctness, synthesis, and consistency as a composite. Distinct from individual error-type measures (CM-08, CM-09).",
+    "instruments": [
+      "PDQI-9 (Physician Documentation Quality Instrument)",
+      "PDSQI-9 (Provider Documentation Summarization QI)",
+      "Global rating (1–5)",
+      "Documentation quality — SOAP sections",
+      "Discharge summary / progress note PDQI"
+    ],
+    "typicalFindings": "",
+    "rigorRating": "",
+    "concerns": "PDQI-9 was designed for human-authored notes and has been adapted for AI assessment; the LLM-as-judge implementation (Afshar 2025b) is validated against physician ratings. Scores of 3.97–4.99/5.0 (Afshar 2025b) represent the highest in corpus. Scale interpretation: 26.2 = 'terrible or bad', 36.6 = 'good or excellent' (Kernberg 2023 mean: 29.7, closer to terrible). The PDQI is a composite — see CM-08 and CM-09 for component error types.",
+    "papers": []
+  },
+  {
+    "id": "CM-11",
+    "name": "Note Length and Verbosity",
+    "dimension": "IQ - Information Quality",
+    "domain": "Note Information Quality",
+    "paperCount": 0,
+    "definition": "The length and lexical richness of AI-generated notes — measured as word count, character count, or lexical diversity. A proxy for verbosity and informativeness. Longer notes may be more thorough or may be padded/over-generated; context determines interpretation.",
+    "instruments": [
+      "Word count",
+      "Character count",
+      "Note length ratio",
+      "Lexical diversity",
+      "Documentation length (chars/week)"
+    ],
+    "typicalFindings": "",
+    "rigorRating": "",
+    "concerns": "Note length is a secondary/proxy measure. It can indicate thoroughness (longer = more complete) or over-generation (longer = padded). Wojda 2025 and Shah 2025 flag note verbosity as a concern — physicians may need to edit down AI-generated notes, creating editing burden that offsets time savings.",
+    "papers": []
+  },
+  {
+    "id": "CM-12",
+    "name": "Automated NLP Evaluation Metrics",
+    "dimension": "IQ - Information Quality",
+    "domain": "Note Information Quality",
+    "paperCount": 0,
+    "definition": "METHODOLOGICAL MEASURE. Computational similarity metrics used to evaluate AI-generated notes against reference standards — including n-gram overlap (ROUGE), semantic similarity (BERTScore), and entity-level accuracy metrics. Not a clinical outcome; measures the evaluation approach's technical validity.",
+    "instruments": [
+      "ROUGE (1, 2, L)",
+      "BERTScore / BLEURT",
+      "F1 Score",
+      "SAIL Score",
+      "Entity linking (LINK / CORRECT LINK)",
+      "LLM-as-Evaluator agreement"
+    ],
+    "typicalFindings": "",
+    "rigorRating": "",
+    "concerns": "**METHODOLOGICAL CANONICAL.** These metrics do not measure clinical outcomes — they measure whether automated quality assessment agrees with human assessment. Critical finding from Moramarco 2022: Levenshtein distance performs as well as BERTScore on clinical notes. LLM-as-judge (Afshar 2025b) is validated against physician ratings. Automated metrics should be treated as research tools, not clinical quality measures.",
+    "papers": []
+  },
+  {
+    "id": "CM-13",
+    "name": "Adoption Behavior and Utilization Rate",
+    "dimension": "U - Use",
+    "domain": "Adoption & Use",
+    "paperCount": 0,
+    "definition": "Actual, observed use of the ambient AI scribe — measured as % of encounters in which the tool is used, number of sessions, or paid adoption post-trial. Captures behavior (what people actually do), not intention (what they say they'll do).",
+    "instruments": [
+      "Utilization rate (% of encounters)",
+      "Total uses / sessions",
+      "Adoption rate (% purchasing post-trial)",
+      "Active user count over time",
+      "SmartSection utilization by type",
+      "Dose-response / quartile analysis"
+    ],
+    "typicalFindings": "",
+    "rigorRating": "",
+    "concerns": "**Heavy-user/light-user heterogeneity is universal.** Every large deployment reports a bimodal distribution: heavy users who use ambient AI for nearly all encounters, and light/non-users. Dose-response is consistent: heavy users benefit most (Pearlman 2025, Omon 2025, Lukac 2025). Tierney 2025 found top-third of users account for disproportionate % of 2.5M total uses.",
+    "papers": []
+  },
+  {
+    "id": "CM-14",
+    "name": "Adoption Intention and Long-Term Use",
+    "dimension": "U - Use",
+    "domain": "Adoption & Use",
+    "paperCount": 0,
+    "definition": "Provider-reported intention to continue using the ambient AI scribe beyond the study period — including willingness to adopt, long-term use intent, recommendation likelihood, and implementation readiness. Captures attitudinal vs. behavioral adoption (Technology Acceptance Model distinction).",
+    "instruments": [
+      "UTAUT / TAM items",
+      "Recommendation likelihood (Likert)",
+      "Long-term use intent (Likert)",
+      "Implementation intent",
+      "License relinquishment"
+    ],
+    "typicalFindings": "",
+    "rigorRating": "",
+    "concerns": "Only 5 papers explicitly measure adoption intention as a formal study measure (vs. mentioning it). Tierney 2025 found physician age and years since graduation are NOT predictive of adoption — challenging the generational adoption narrative.",
+    "papers": []
+  },
+  {
+    "id": "CM-15",
+    "name": "Provider Satisfaction and Usability",
+    "dimension": "US - User Satisfaction",
+    "domain": "User Satisfaction",
+    "paperCount": 0,
+    "definition": "Provider-reported satisfaction with the ambient AI scribe tool — including perceived usability, ease of use, overall acceptability, and willingness to continue. Distinct from burnout (emotional outcome) and from adoption behavior (what they do). Captures subjective technology evaluation.",
+    "instruments": [
+      "System Usability Scale (SUS)",
+      "UTAUT perceived usefulness",
+      "Likert satisfaction items",
+      "Qualitative feedback",
+      "Overall product preference"
+    ],
+    "typicalFindings": "",
+    "rigorRating": "",
+    "concerns": "Provider satisfaction is almost universally positive across the corpus — but most studies recruited volunteers or interested practitioners, inflating results. Prasad 2025 is the critical counter-signal: <2yr virtual scribe use was strongly negatively associated with satisfaction. Selection bias in most studies is substantial.",
+    "papers": []
+  },
+  {
+    "id": "CM-16",
+    "name": "Provider Trust in AI",
+    "dimension": "US - User Satisfaction",
+    "domain": "User Satisfaction",
+    "paperCount": 0,
+    "definition": "Provider-reported trust in the accuracy and reliability of AI-generated notes, including skepticism about AI errors, ethical/legal concerns about ambient listening, and the degree to which clinicians verify AI output. A distinct attitudinal dimension from general satisfaction.",
+    "instruments": [
+      "Trust in AI (Likert item)",
+      "Provider Skepticism (qualitative)",
+      "Ethical/Legal Concerns (survey)",
+      "Industry transparency"
+    ],
+    "typicalFindings": "",
+    "rigorRating": "",
+    "concerns": "Only 5 papers formally measure this as a study outcome, though AI trust themes appear qualitatively in many more. Bundy 2024 found 7/12 physicians feared increased patient volume from ambient scribes — a specific mistrust pattern about downstream consequences rather than tool performance.",
+    "papers": []
+  },
+  {
+    "id": "CM-17",
+    "name": "Patient Experience and Relationship Quality",
+    "dimension": "NB - Net Benefits",
+    "domain": "Patient Outcomes",
+    "paperCount": 0,
+    "definition": "Patient-reported or validated assessment of the quality of the patient-physician interaction — including relationship quality, satisfaction with the visit, and experience of being heard. The most underdeveloped outcome domain in the corpus, measured primarily through validated instruments in only 1 paper.",
+    "instruments": [
+      "PDRQ-9 (Patient-Doctor Relationship Questionnaire)",
+      "Patient satisfaction survey (Press Ganey / custom)",
+      "Patient Likelihood to Recommend (LTR)",
+      "Patient consent compliance",
+      "Qualitative patient feedback"
+    ],
+    "typicalFindings": "",
+    "rigorRating": "",
+    "concerns": "**CRITICAL GAP — almost entirely unmeasured with validated instruments.** Only Owens 2024 uses a validated patient-reported instrument (PDRQ-9) — and found a null result in the masked phase (p=.31). Open-label phase was positive, suggesting patient expectation effect. All other 'patient experience' data is clinician-reported or anecdotal. No paper has measured patient-reported outcomes at scale with rigorously validated tools.",
+    "papers": []
+  },
+  {
+    "id": "CM-18",
+    "name": "Physician-Patient Interaction Quality",
+    "dimension": "NB - Net Benefits",
+    "domain": "Patient Outcomes",
+    "paperCount": 0,
+    "definition": "Behavioral measures of the quality of the physician-patient interaction during the clinical encounter — including face-to-face time, clinician attentiveness, screen time reduction, and perceived engagement. Distinct from patient experience (CM-17), which is patient-reported; this is primarily clinician-reported or observed.",
+    "instruments": [
+      "Doctor-patient interaction time (min)",
+      "Survey items on attention / engagement",
+      "Consultation duration",
+      "Time searching for information",
+      "Patients seen per hour"
+    ],
+    "typicalFindings": "",
+    "rigorRating": "",
+    "concerns": "Shuaib 2021 (human scribe comparator) is the strongest data point: doctor-patient interaction time doubled and patients/hour increased 39%. This establishes the *potential* of documentation automation for interaction quality. Ambient AI studies primarily capture this through self-report survey items rather than direct observation.",
+    "papers": []
+  },
+  {
+    "id": "CM-19",
+    "name": "Clinical Patient Safety",
+    "dimension": "NB - Net Benefits",
+    "domain": "Patient Outcomes",
+    "paperCount": 0,
+    "definition": "Patient safety outcomes associated with ambient AI documentation — including documentation errors that affect clinical decisions, adverse events, harm scores, and gaps between documented symptoms and clinical action. The most concerning and least studied outcome dimension.",
+    "instruments": [
+      "AHRQ Harm Score",
+      "Adverse events / patient safety events",
+      "Likelihood of psychiatric intervention (aOR)",
+      "RDoC symptom documentation level",
+      "PHQ-9 documentation",
+      "Patient safety survey items"
+    ],
+    "typicalFindings": "",
+    "rigorRating": "",
+    "concerns": "**Castro 2025 is the landmark paper here:** More psychiatric symptom *documentation* but significantly *less* psychiatric *intervention* (aOR 0.83) with ambient scribe use — preprint only, but the only paper measuring what happens to patients clinically. This is a potential unintended consequence with serious safety implications. Only 9 papers touch this dimension, and most use simulated or survey data rather than real patient outcomes.",
+    "papers": []
+  },
+  {
+    "id": "CM-20",
+    "name": "Financial Productivity and Revenue Impact",
+    "dimension": "NB - Net Benefits",
+    "domain": "Financial & Organizational",
+    "paperCount": 0,
+    "definition": "Changes in physician financial productivity associated with ambient AI scribe use — measured as RVU changes, revenue per clinician per year, or ROI. Captures organizational financial benefit and potential system-level cost implications.",
+    "instruments": [
+      "RVUs per encounter / per week",
+      "Work Relative Value Units (wRVUs) per hour",
+      "Additional revenue per clinician per year",
+      "ROI (return on investment)",
+      "Cost comparison"
+    ],
+    "typicalFindings": "",
+    "rigorRating": "",
+    "concerns": "Three independent papers show financial productivity improvement: Holmgren 2026 (+$3,044/year RVU, UCSF, no denial increase), Boyter/KLAS 2025 (+$13,049/year mostly from HCC, Ambience). PHTI 2025 raises the population-level concern: even *accurate* higher coding increases healthcare system spending. The individual health system ROI may conflict with payer/societal interests.",
+    "papers": []
+  },
+  {
+    "id": "CM-21",
+    "name": "Coding Accuracy ICD-10 HCC and EM",
+    "dimension": "IQ - Information Quality",
+    "domain": "Financial & Organizational",
+    "paperCount": 0,
+    "definition": "The accuracy and completeness of diagnostic and billing codes generated or supported by ambient AI documentation — ICD-10 diagnosis codes, HCC (Hierarchical Condition Category) capture for risk adjustment, and E/M (Evaluation & Management) coding level. Bridges IQ (note quality sufficient for accurate coding) and NB (coding accuracy drives revenue and population health metrics).",
+    "instruments": [
+      "ICD-10 coding compliance (certified coder review)",
+      "HCC capture rate",
+      "E/M level change (weighted average)",
+      "Real-time ICD-10 accuracy monitoring",
+      "Claim denial rate"
+    ],
+    "typicalFindings": "",
+    "rigorRating": "",
+    "concerns": "**Coding improvement is one of the most consistent findings** — appearing in Afshar 2025b (RCT, p<0.001), Boyter/KLAS 2025, and Holmgren 2026. Critically, Holmgren 2026 shows NO increase in denial rate, suggesting coding improvement is legitimate (better documentation of existing complexity, not upcoding). However, PHTI 2025 flags the population-level cost concern regardless.",
+    "papers": []
+  },
+  {
+    "id": "CM-22",
+    "name": "Patient Volume and Throughput",
+    "dimension": "NB - Net Benefits",
+    "domain": "Financial & Organizational",
+    "paperCount": 0,
+    "definition": "Changes in the number of patients seen per unit time or changes in patient flow through clinical environments — a downstream efficiency outcome of reduced documentation burden. Includes ED metrics (door-to-doc, length of stay) and outpatient productivity (encounters per week).",
+    "instruments": [
+      "Patients seen per hour",
+      "Encounters per week",
+      "Door-to-doc / door-to-room time (min)",
+      "Length of stay (admitted / discharged, min)",
+      "Ability to add patient"
+    ],
+    "typicalFindings": "",
+    "rigorRating": "",
+    "concerns": "Only 6 papers measure throughput, and the strongest data is from Shuaib 2021 (human scribe, ED) — a baseline comparator, not an ambient AI study. Holmgren 2026 found +0.80 encounters/week with ambient AI adoption (statistically significant). Note: increased patient volume may not be desirable if it increases workload without compensation.",
+    "papers": []
+  },
+  {
+    "id": "CM-23",
+    "name": "Implementation Barriers and Workflow Fit",
+    "dimension": "SerQ - Service Quality",
+    "domain": "Implementation",
+    "paperCount": 0,
+    "definition": "Factors that impede or facilitate ambient AI scribe adoption and sustained use — including technical barriers, workflow integration challenges, specialty fit, training quality, and organizational support. Mapped to SerQ as a property of the deployment/implementation experience.",
+    "instruments": [
+      "Qualitative interview (thematic analysis)",
+      "Implementation science frameworks (RE-AIM, SEIPS, CFIR)",
+      "Non-adopter analysis",
+      "FIM / AIM / IAM / IUS scales",
+      "QUEST framework",
+      "SEIPS 3.0 assessment"
+    ],
+    "typicalFindings": "",
+    "rigorRating": "",
+    "concerns": "Universal finding: heterogeneous adoption with a cohort of heavy users, moderate users, and non-/low-users. PHTI 2025 formalizes 3 cohorts. Clinicians who benefit most: high baseline documentation burden, complex narrative notes, high patient face-time. Non-adopters cluster around: no existing burden, optimized workflow, technical incompatibility.",
+    "papers": []
+  },
+  {
+    "id": "CM-24",
+    "name": "Transcription and ASR Accuracy",
+    "dimension": "SQ - System Quality",
+    "domain": "System Quality",
+    "paperCount": 0,
+    "definition": "Technical accuracy of automatic speech recognition (ASR) in transcribing clinical conversations — word error rate, speaker diarization, and medical vocabulary recognition. The upstream quality gate: if the transcript is wrong, the note will be wrong regardless of NLP quality.",
+    "instruments": [
+      "Word Error Rate (WER)",
+      "Speaker Diarization Accuracy",
+      "Medical Term Recall (MTR)",
+      "Transcript error transmission rate"
+    ],
+    "typicalFindings": "",
+    "rigorRating": "",
+    "concerns": "**Only 3 papers formally measure ASR accuracy as an outcome.** Commercial products (DAX, Abridge, Suki, Ambience) do not publish their WER or diarization accuracy — a documented pattern of industry opacity since van Buchem 2021. This is a fundamental evidence gap: the acoustic quality of commercial products is entirely unknown in the published literature.",
+    "papers": []
+  },
+  {
+    "id": "CM-25",
+    "name": "Evaluation Methodology Quality",
+    "dimension": "SQ - System Quality",
+    "domain": "System Quality",
+    "paperCount": 0,
+    "definition": "META-MEASURE. The rigor and validity of the study design and measurement approach — including inter-rater reliability, sample representativeness, benchmark dataset availability, and methodological adequacy. Not a clinical outcome; assesses whether other measures in the study are trustworthy.",
+    "instruments": [
+      "Inter-rater reliability (ICC)",
+      "Inter-rater agreement (RWG)",
+      "LLM-as-evaluator agreement",
+      "Benchmark dataset availability",
+      "Specialty coverage",
+      "Demographic and clinical matching",
+      "Propensity score balance",
+      "Cross-replicate consistency"
+    ],
+    "typicalFindings": "",
+    "rigorRating": "",
+    "concerns": "**META CANONICAL — assesses research quality, not clinical outcomes.** Critical for synthesizing across studies: many corpus papers have low methodological rigor (no randomization, no control group, selected samples). The hierarchy by evidence level: Afshar 2025b (RCT, stepped-wedge, 24 weeks) > Pearlman 2025 (propensity-matched observational) > most QI studies (pre-post, no controls).",
+    "papers": []
+  }
+]
