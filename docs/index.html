@@ -1,4 +1,22 @@
 <!DOCTYPE html>
+<!--
+  ACI Evaluation Report — Interactive Web Application
+  25 canonical measures derived from 426 raw measure rows across 54 papers | March 2026 | v.12
+
+  Version History:
+    v.01 — Initial build (single-page React app with Recharts)
+    v.02 — Added .nojekyll for GitHub Pages
+    v.03 — Replaced Babel + Recharts with pure CSS/HTML charts (fixed blank page)
+    v.04 — Renamed "Gold Standard" → "Best Relative Quality"
+    v.05 — Fixed paper counts (parse from headings in extraction script)
+    v.06 — Added GitHub Action for auto-regenerating JSON from markdown
+    v.07 — Removed Silver/Bronze → Moderate/Low tier labels
+    v.08 — Cleaned up Product column (cleanProduct normalizer)
+    v.09 — Reordered tabs (Overview, Canonical Measures, Article Explorer, D&M Framework, Study Corpus, Level of Rigor)
+    v.10 — Added markdown rendering in Canonical Measures (mdToReact/MdText)
+    v.11 — Applied markdown rendering to Article Explorer modal
+    v.12 — Fixed extractSection regex bug (54/54 articles now have study measures)
+-->
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -399,7 +417,7 @@
           React.createElement('div', { className: 'hero-inner' },
             React.createElement('h1', null, 'Evaluating Ambient Clinical Intelligence'),
             React.createElement('p', null, 'A methodological critique of the evidence base for ambient AI documentation tools in healthcare, mapping 54 studies to the DeLone & McLean IS Success Model.'),
-            React.createElement('p', { className: 'subtitle' }, '25 canonical measures derived from 426 raw measure rows across 54 papers | March 2026')
+            React.createElement('p', { className: 'subtitle' }, '25 canonical measures derived from 426 raw measure rows across 54 papers | March 2026 | v.12')
           )
         ),
         React.createElement('div', { className: 'container' },
