@@ -192,16 +192,16 @@
     const DIM_NAMES = { SQ: 'System Quality', IQ: 'Information Quality', SerQ: 'Service Quality', U: 'Use', US: 'User Satisfaction', NB: 'Net Benefits' };
 
     const RIGOR_MAP = {
-      'CM-01': { rating: 'HIGH', score: 90, label: 'Gold Standard' },
+      'CM-01': { rating: 'HIGH', score: 90, label: 'Best Relative Quality' },
       'CM-02': { rating: 'MODERATE', score: 65, label: 'Silver' },
       'CM-03': { rating: 'LOW', score: 30, label: 'Critical Gap' },
       'CM-04': { rating: 'MODERATE', score: 65, label: 'Silver' },
       'CM-05': { rating: 'LOW', score: 25, label: 'Needs Work' },
       'CM-06': { rating: 'MODERATE', score: 55, label: 'Bronze' },
       'CM-07': { rating: 'LOW', score: 30, label: 'Emerging' },
-      'CM-08': { rating: 'HIGH', score: 90, label: 'Gold Standard' },
+      'CM-08': { rating: 'HIGH', score: 90, label: 'Best Relative Quality' },
       'CM-09': { rating: 'MODERATE', score: 65, label: 'Silver' },
-      'CM-10': { rating: 'HIGH', score: 85, label: 'Gold Standard' },
+      'CM-10': { rating: 'HIGH', score: 85, label: 'Best Relative Quality' },
       'CM-11': { rating: 'LOW', score: 25, label: 'Needs Work' },
       'CM-12': { rating: 'META', score: 50, label: 'Methodological' },
       'CM-13': { rating: 'MODERATE', score: 65, label: 'Silver' },
@@ -212,7 +212,7 @@
       'CM-18': { rating: 'LOW', score: 25, label: 'Needs Work' },
       'CM-19': { rating: 'LOW', score: 15, label: 'Critically Low' },
       'CM-20': { rating: 'MODERATE', score: 55, label: 'Bronze' },
-      'CM-21': { rating: 'HIGH', score: 85, label: 'Gold Standard' },
+      'CM-21': { rating: 'HIGH', score: 85, label: 'Best Relative Quality' },
       'CM-22': { rating: 'LOW', score: 25, label: 'Needs Work' },
       'CM-23': { rating: 'MODERATE', score: 45, label: 'Needs Work' },
       'CM-24': { rating: 'LOW', score: 10, label: 'Critically Low' },
@@ -531,7 +531,7 @@
       }, [measures]);
 
       const tiers = {
-        'Gold Standard': rigorData.filter(d => d.rating === 'HIGH'),
+        'Best Relative Quality': rigorData.filter(d => d.rating === 'HIGH'),
         'Silver / Moderate': rigorData.filter(d => d.rating === 'MODERATE'),
         'Needs Work / Low': rigorData.filter(d => d.rating === 'LOW'),
         'Meta / Methodological': rigorData.filter(d => d.rating === 'META'),
