@@ -4,7 +4,7 @@
     "name": "Clinician Burnout and Exhaustion",
     "dimension": "US - User Satisfaction",
     "domain": "Clinician Well-Being",
-    "paperCount": 0,
+    "paperCount": 14,
     "definition": "Provider-reported emotional exhaustion, depersonalization, and interpersonal disengagement from clinical work — the core burnout syndrome. Measured via validated psychometric instruments. Distinct from cognitive task load (in-encounter mental effort) and professional fulfillment (positive engagement).",
     "instruments": [
       "Stanford PFI — Work Exhaustion subscale"
@@ -19,7 +19,7 @@
     "name": "Cognitive and Task Load",
     "dimension": "US - User Satisfaction",
     "domain": "Clinician Well-Being",
-    "paperCount": 0,
+    "paperCount": 11,
     "definition": "The mental effort, time pressure, and frustration experienced by clinicians *during* or *immediately after* a clinical encounter — the in-the-moment cognitive demand of documentation. Distinct from burnout (CM-01), which is a sustained emotional state.",
     "instruments": [
       "NASA-TLX (full or subscales)",
@@ -37,7 +37,7 @@
     "name": "Professional Fulfillment and Meaningfulness",
     "dimension": "US - User Satisfaction",
     "domain": "Clinician Well-Being",
-    "paperCount": 0,
+    "paperCount": 6,
     "definition": "Provider-reported positive engagement with clinical work — the presence of meaning, reward, and satisfaction in the work itself. The positive pole of the well-being spectrum, distinct from absence of burnout. Measured via PFI fulfillment subscale or related instruments.",
     "instruments": [
       "Stanford PFI — Professional Fulfillment subscale",
@@ -55,7 +55,7 @@
     "name": "Documentation Time",
     "dimension": "NB - Net Benefits",
     "domain": "Documentation Efficiency",
-    "paperCount": 0,
+    "paperCount": 27,
     "definition": "Total time spent creating, editing, and finalizing a clinical note — from note initiation to note signature. The most frequently measured efficiency outcome in the corpus. Includes in-clinic documentation time. Does NOT include after-hours time (see CM-05) unless explicitly pooled.",
     "instruments": [
       "EHR audit-log telemetry (Epic Signal / UAL)",
@@ -73,7 +73,7 @@
     "name": "After-Hours Documentation",
     "dimension": "NB - Net Benefits",
     "domain": "Documentation Efficiency",
-    "paperCount": 0,
+    "paperCount": 17,
     "definition": "Time spent on clinical documentation outside of scheduled working hours — 'pajama time', 'after-hours EHR', or 'work outside work.' Distinct from total documentation time (CM-04) because it captures work-life boundary effects specifically. One of the most clinically meaningful outcomes because it directly affects physician well-being.",
     "instruments": [
       "EHR audit-log (Epic Signal / UAL)",
@@ -92,7 +92,7 @@
     "name": "Chart Closure Timeliness",
     "dimension": "NB - Net Benefits",
     "domain": "Documentation Efficiency",
-    "paperCount": 0,
+    "paperCount": 8,
     "definition": "Whether and how quickly clinical notes are completed and signed — measured as same-day closure rates, time to chart closure, 24-hour deficiency rates, or completion before the next patient. Captures documentation *completion behavior* rather than time-per-note.",
     "instruments": [
       "Same-day encounter closure rate (%)",
@@ -111,7 +111,7 @@
     "name": "Total EHR Time",
     "dimension": "NB - Net Benefits",
     "domain": "Documentation Efficiency",
-    "paperCount": 0,
+    "paperCount": 5,
     "definition": "Total time spent in the EHR across all tasks — note-writing, inbox management, order entry, results review, messaging — normalized per scheduled workday. Broader than documentation time alone; captures the total EHR burden.",
     "instruments": [
       "EHR audit-log (total active time)",
@@ -127,7 +127,7 @@
     "name": "Note Completeness and Omission Rate",
     "dimension": "IQ - Information Quality",
     "domain": "Note Information Quality",
-    "paperCount": 0,
+    "paperCount": 11,
     "definition": "Whether clinically relevant information is captured in the AI-generated note — measured as omission rates, completeness scores, or presence of expected data elements. The most common error type in simulation studies. Represents the 'completeness' component of note quality.",
     "instruments": [
       "Omission rate (%)",
@@ -146,7 +146,7 @@
     "name": "Note Accuracy and Hallucination Rate",
     "dimension": "IQ - Information Quality",
     "domain": "Note Information Quality",
-    "paperCount": 0,
+    "paperCount": 13,
     "definition": "The presence of clinically inaccurate or fabricated content in AI-generated notes — information that was not stated in the encounter or is factually wrong. Distinct from omissions (CM-08). Includes hallucinations (invented content) and incorrect facts (stated inaccurately).",
     "instruments": [
       "Hallucination rate (%)",
@@ -166,7 +166,7 @@
     "name": "Note Quality Overall PDQI",
     "dimension": "IQ - Information Quality",
     "domain": "Note Information Quality",
-    "paperCount": 0,
+    "paperCount": 16,
     "definition": "Aggregate quality rating of the AI-generated clinical note using a validated multi-dimensional instrument. The PDQI-9 and PDSQI-9 assess accuracy, thoroughness, usefulness, organization, comprehensibility, succinctness, synthesis, and consistency as a composite. Distinct from individual error-type measures (CM-08, CM-09).",
     "instruments": [
       "PDQI-9 (Physician Documentation Quality Instrument)",
@@ -185,7 +185,7 @@
     "name": "Note Length and Verbosity",
     "dimension": "IQ - Information Quality",
     "domain": "Note Information Quality",
-    "paperCount": 0,
+    "paperCount": 10,
     "definition": "The length and lexical richness of AI-generated notes — measured as word count, character count, or lexical diversity. A proxy for verbosity and informativeness. Longer notes may be more thorough or may be padded/over-generated; context determines interpretation.",
     "instruments": [
       "Word count",
@@ -204,7 +204,7 @@
     "name": "Automated NLP Evaluation Metrics",
     "dimension": "IQ - Information Quality",
     "domain": "Note Information Quality",
-    "paperCount": 0,
+    "paperCount": 7,
     "definition": "METHODOLOGICAL MEASURE. Computational similarity metrics used to evaluate AI-generated notes against reference standards — including n-gram overlap (ROUGE), semantic similarity (BERTScore), and entity-level accuracy metrics. Not a clinical outcome; measures the evaluation approach's technical validity.",
     "instruments": [
       "ROUGE (1, 2, L)",
@@ -224,7 +224,7 @@
     "name": "Adoption Behavior and Utilization Rate",
     "dimension": "U - Use",
     "domain": "Adoption & Use",
-    "paperCount": 0,
+    "paperCount": 12,
     "definition": "Actual, observed use of the ambient AI scribe — measured as % of encounters in which the tool is used, number of sessions, or paid adoption post-trial. Captures behavior (what people actually do), not intention (what they say they'll do).",
     "instruments": [
       "Utilization rate (% of encounters)",
@@ -244,7 +244,7 @@
     "name": "Adoption Intention and Long-Term Use",
     "dimension": "U - Use",
     "domain": "Adoption & Use",
-    "paperCount": 0,
+    "paperCount": 5,
     "definition": "Provider-reported intention to continue using the ambient AI scribe beyond the study period — including willingness to adopt, long-term use intent, recommendation likelihood, and implementation readiness. Captures attitudinal vs. behavioral adoption (Technology Acceptance Model distinction).",
     "instruments": [
       "UTAUT / TAM items",
@@ -263,7 +263,7 @@
     "name": "Provider Satisfaction and Usability",
     "dimension": "US - User Satisfaction",
     "domain": "User Satisfaction",
-    "paperCount": 0,
+    "paperCount": 20,
     "definition": "Provider-reported satisfaction with the ambient AI scribe tool — including perceived usability, ease of use, overall acceptability, and willingness to continue. Distinct from burnout (emotional outcome) and from adoption behavior (what they do). Captures subjective technology evaluation.",
     "instruments": [
       "System Usability Scale (SUS)",
@@ -282,7 +282,7 @@
     "name": "Provider Trust in AI",
     "dimension": "US - User Satisfaction",
     "domain": "User Satisfaction",
-    "paperCount": 0,
+    "paperCount": 5,
     "definition": "Provider-reported trust in the accuracy and reliability of AI-generated notes, including skepticism about AI errors, ethical/legal concerns about ambient listening, and the degree to which clinicians verify AI output. A distinct attitudinal dimension from general satisfaction.",
     "instruments": [
       "Trust in AI (Likert item)",
@@ -300,7 +300,7 @@
     "name": "Patient Experience and Relationship Quality",
     "dimension": "NB - Net Benefits",
     "domain": "Patient Outcomes",
-    "paperCount": 0,
+    "paperCount": 17,
     "definition": "Patient-reported or validated assessment of the quality of the patient-physician interaction — including relationship quality, satisfaction with the visit, and experience of being heard. The most underdeveloped outcome domain in the corpus, measured primarily through validated instruments in only 1 paper.",
     "instruments": [
       "PDRQ-9 (Patient-Doctor Relationship Questionnaire)",
@@ -319,7 +319,7 @@
     "name": "Physician-Patient Interaction Quality",
     "dimension": "NB - Net Benefits",
     "domain": "Patient Outcomes",
-    "paperCount": 0,
+    "paperCount": 8,
     "definition": "Behavioral measures of the quality of the physician-patient interaction during the clinical encounter — including face-to-face time, clinician attentiveness, screen time reduction, and perceived engagement. Distinct from patient experience (CM-17), which is patient-reported; this is primarily clinician-reported or observed.",
     "instruments": [
       "Doctor-patient interaction time (min)",
@@ -338,7 +338,7 @@
     "name": "Clinical Patient Safety",
     "dimension": "NB - Net Benefits",
     "domain": "Patient Outcomes",
-    "paperCount": 0,
+    "paperCount": 9,
     "definition": "Patient safety outcomes associated with ambient AI documentation — including documentation errors that affect clinical decisions, adverse events, harm scores, and gaps between documented symptoms and clinical action. The most concerning and least studied outcome dimension.",
     "instruments": [
       "AHRQ Harm Score",
@@ -358,7 +358,7 @@
     "name": "Financial Productivity and Revenue Impact",
     "dimension": "NB - Net Benefits",
     "domain": "Financial & Organizational",
-    "paperCount": 0,
+    "paperCount": 7,
     "definition": "Changes in physician financial productivity associated with ambient AI scribe use — measured as RVU changes, revenue per clinician per year, or ROI. Captures organizational financial benefit and potential system-level cost implications.",
     "instruments": [
       "RVUs per encounter / per week",
@@ -377,7 +377,7 @@
     "name": "Coding Accuracy ICD-10 HCC and EM",
     "dimension": "IQ - Information Quality",
     "domain": "Financial & Organizational",
-    "paperCount": 0,
+    "paperCount": 5,
     "definition": "The accuracy and completeness of diagnostic and billing codes generated or supported by ambient AI documentation — ICD-10 diagnosis codes, HCC (Hierarchical Condition Category) capture for risk adjustment, and E/M (Evaluation & Management) coding level. Bridges IQ (note quality sufficient for accurate coding) and NB (coding accuracy drives revenue and population health metrics).",
     "instruments": [
       "ICD-10 coding compliance (certified coder review)",
@@ -396,7 +396,7 @@
     "name": "Patient Volume and Throughput",
     "dimension": "NB - Net Benefits",
     "domain": "Financial & Organizational",
-    "paperCount": 0,
+    "paperCount": 6,
     "definition": "Changes in the number of patients seen per unit time or changes in patient flow through clinical environments — a downstream efficiency outcome of reduced documentation burden. Includes ED metrics (door-to-doc, length of stay) and outpatient productivity (encounters per week).",
     "instruments": [
       "Patients seen per hour",
@@ -415,7 +415,7 @@
     "name": "Implementation Barriers and Workflow Fit",
     "dimension": "SerQ - Service Quality",
     "domain": "Implementation",
-    "paperCount": 0,
+    "paperCount": 8,
     "definition": "Factors that impede or facilitate ambient AI scribe adoption and sustained use — including technical barriers, workflow integration challenges, specialty fit, training quality, and organizational support. Mapped to SerQ as a property of the deployment/implementation experience.",
     "instruments": [
       "Qualitative interview (thematic analysis)",
@@ -435,7 +435,7 @@
     "name": "Transcription and ASR Accuracy",
     "dimension": "SQ - System Quality",
     "domain": "System Quality",
-    "paperCount": 0,
+    "paperCount": 3,
     "definition": "Technical accuracy of automatic speech recognition (ASR) in transcribing clinical conversations — word error rate, speaker diarization, and medical vocabulary recognition. The upstream quality gate: if the transcript is wrong, the note will be wrong regardless of NLP quality.",
     "instruments": [
       "Word Error Rate (WER)",
@@ -453,7 +453,7 @@
     "name": "Evaluation Methodology Quality",
     "dimension": "SQ - System Quality",
     "domain": "System Quality",
-    "paperCount": 0,
+    "paperCount": 14,
     "definition": "META-MEASURE. The rigor and validity of the study design and measurement approach — including inter-rater reliability, sample representativeness, benchmark dataset availability, and methodological adequacy. Not a clinical outcome; assesses whether other measures in the study are trustworthy.",
     "instruments": [
       "Inter-rater reliability (ICC)",
