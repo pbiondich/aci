@@ -41,8 +41,8 @@
     /* Badges */
     .badge { display: inline-block; padding: 3px 10px; border-radius: 12px; font-size: 12px; font-weight: 600; }
     .badge-gold { background: #e8f5e9; color: #2e7d32; }
-    .badge-silver { background: #fff3e0; color: #e65100; }
-    .badge-bronze { background: #fce4ec; color: #c62828; }
+    .badge-moderate { background: #fff3e0; color: #e65100; }
+    .badge-low { background: #fce4ec; color: #c62828; }
     .badge-critical { background: #ffebee; color: #b71c1c; }
     .badge-meta { background: #e3f2fd; color: #1565c0; }
     .badge-dim { background: #ede7f6; color: #4527a0; padding: 2px 8px; font-size: 11px; }
@@ -133,11 +133,12 @@
     const h = React.createElement;
 
     // ─── Pure CSS Bar Chart Components ───
-    function HBarChart({ data, labelKey, valueKey, maxVal, colorFn }) {
+    function HBarChart({ data, labelKey, valueKey, maxVal, colorFn, labelWidth }) {
       const mx = maxVal || Math.max(...data.map(d => d[valueKey]));
+      const lw = labelWidth || 140;
       return h('div', { style: { display: 'flex', flexDirection: 'column', gap: 6 } },
         data.map((d, i) => h('div', { key: i, style: { display: 'flex', alignItems: 'center', gap: 8 } },
-          h('div', { style: { width: 140, fontSize: 12, color: '#555', textAlign: 'right', flexShrink: 0, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' } }, d[labelKey]),
+          h('div', { style: { width: lw, fontSize: 12, color: '#555', textAlign: 'right', flexShrink: 0 } }, d[labelKey]),
           h('div', { style: { flex: 1, background: '#eee', borderRadius: 4, height: 22, position: 'relative', overflow: 'hidden' } },
             h('div', { style: { width: (d[valueKey] / mx * 100) + '%', height: '100%', background: colorFn ? colorFn(d, i) : '#1F4E79', borderRadius: 4, transition: 'width 0.5s ease' } }),
             h('span', { style: { position: 'absolute', right: 6, top: 2, fontSize: 11, fontWeight: 600, color: d[valueKey]/mx > 0.5 ? 'white' : '#333' } }, d[valueKey])
@@ -187,31 +188,53 @@
       );
     }
 
+    function cleanProduct(raw) {
+      var p = (raw || '').replace(/\*\*/g, '').replace(/\[\[|\]\]/g, '');
+      if (/dax copilot/i.test(p)) return 'DAX Copilot (Nuance)';
+      if (/dragon ambient|nuance dax|\bDAX\b/i.test(p)) return 'DAX (Nuance)';
+      if (/abridge/i.test(p) && /dax|nuance/i.test(p)) return 'DAX + Abridge';
+      if (/abridge/i.test(p)) return 'Abridge';
+      if (/suki/i.test(p)) return 'Suki AI';
+      if (/heidi/i.test(p)) return 'Heidi Health';
+      if (/ambience healthcare/i.test(p)) return 'Ambience Healthcare';
+      if (/lyrebird/i.test(p)) return 'Lyrebird Health';
+      if (/autoscriber/i.test(p)) return 'Autoscriber';
+      if (/nabla/i.test(p)) return 'DAX vs Nabla';
+      if (/medimo/i.test(p)) return 'medimo';
+      if (/navina/i.test(p)) return 'Navina AI';
+      if (/chatgpt|gpt-4/i.test(p)) return 'ChatGPT / GPT-4';
+      if (/n\/a|systematic review|scoping review|not applicable|rapid review/i.test(p)) return 'N/A (Review)';
+      if (/anonymized|unnamed|not named|two unnamed/i.test(p)) return 'Unnamed / Anonymized';
+      if (/human.*scribe/i.test(p)) return 'Human Scribes (Baseline)';
+      if (/BART|neural/i.test(p)) return 'Research NLP Model';
+      return p.length > 30 ? p.substring(0, 28) + '...' : p || 'Not specified';
+    }
+
     const COLORS = ['#1F4E79','#2d6da3','#4a90c4','#6db3e6','#90d4f7','#ef6c00','#c62828','#2e7d32','#7b1fa2','#00838f'];
     const DIM_COLORS = { SQ: '#7b1fa2', IQ: '#1565c0', SerQ: '#00838f', U: '#2e7d32', US: '#ef6c00', NB: '#c62828' };
     const DIM_NAMES = { SQ: 'System Quality', IQ: 'Information Quality', SerQ: 'Service Quality', U: 'Use', US: 'User Satisfaction', NB: 'Net Benefits' };
 
     const RIGOR_MAP = {
       'CM-01': { rating: 'HIGH', score: 90, label: 'Best Relative Quality' },
-      'CM-02': { rating: 'MODERATE', score: 65, label: 'Silver' },
+      'CM-02': { rating: 'MODERATE', score: 65, label: 'Moderate' },
       'CM-03': { rating: 'LOW', score: 30, label: 'Critical Gap' },
-      'CM-04': { rating: 'MODERATE', score: 65, label: 'Silver' },
+      'CM-04': { rating: 'MODERATE', score: 65, label: 'Moderate' },
       'CM-05': { rating: 'LOW', score: 25, label: 'Needs Work' },
-      'CM-06': { rating: 'MODERATE', score: 55, label: 'Bronze' },
+      'CM-06': { rating: 'MODERATE', score: 55, label: 'Low' },
       'CM-07': { rating: 'LOW', score: 30, label: 'Emerging' },
       'CM-08': { rating: 'HIGH', score: 90, label: 'Best Relative Quality' },
-      'CM-09': { rating: 'MODERATE', score: 65, label: 'Silver' },
+      'CM-09': { rating: 'MODERATE', score: 65, label: 'Moderate' },
       'CM-10': { rating: 'HIGH', score: 85, label: 'Best Relative Quality' },
       'CM-11': { rating: 'LOW', score: 25, label: 'Needs Work' },
       'CM-12': { rating: 'META', score: 50, label: 'Methodological' },
-      'CM-13': { rating: 'MODERATE', score: 65, label: 'Silver' },
+      'CM-13': { rating: 'MODERATE', score: 65, label: 'Moderate' },
       'CM-14': { rating: 'LOW', score: 25, label: 'Needs Work' },
       'CM-15': { rating: 'LOW', score: 35, label: 'Needs Work' },
       'CM-16': { rating: 'LOW', score: 20, label: 'Critical Gap' },
       'CM-17': { rating: 'LOW', score: 15, label: 'Critically Low' },
       'CM-18': { rating: 'LOW', score: 25, label: 'Needs Work' },
       'CM-19': { rating: 'LOW', score: 15, label: 'Critically Low' },
-      'CM-20': { rating: 'MODERATE', score: 55, label: 'Bronze' },
+      'CM-20': { rating: 'MODERATE', score: 55, label: 'Low' },
       'CM-21': { rating: 'HIGH', score: 85, label: 'Best Relative Quality' },
       'CM-22': { rating: 'LOW', score: 25, label: 'Needs Work' },
       'CM-23': { rating: 'MODERATE', score: 45, label: 'Needs Work' },
@@ -222,7 +245,7 @@
     function getRigorBadge(id) {
       const r = RIGOR_MAP[id];
       if (!r) return null;
-      const cls = r.rating === 'HIGH' ? 'badge-gold' : r.rating === 'MODERATE' ? 'badge-silver' : r.rating === 'META' ? 'badge-meta' : r.score <= 20 ? 'badge-critical' : 'badge-bronze';
+      const cls = r.rating === 'HIGH' ? 'badge-gold' : r.rating === 'MODERATE' ? 'badge-moderate' : r.rating === 'META' ? 'badge-meta' : r.score <= 20 ? 'badge-critical' : 'badge-low';
       return React.createElement('span', { className: `badge ${cls}` }, r.label);
     }
 
@@ -264,11 +287,11 @@
 
       const tabs = [
         { id: 'overview', label: 'Overview' },
-        { id: 'corpus', label: 'Study Corpus' },
-        { id: 'framework', label: 'D&M Framework' },
         { id: 'measures', label: 'Canonical Measures' },
-        { id: 'rigor', label: 'Rigor Assessment' },
         { id: 'articles', label: 'Article Explorer' },
+        { id: 'framework', label: 'D&M Framework' },
+        { id: 'corpus', label: 'Study Corpus' },
+        { id: 'rigor', label: 'Level of Rigor' },
       ];
 
       return React.createElement(React.Fragment, null,
@@ -367,15 +390,7 @@
       const productData = useMemo(() => {
         const c = {};
         articles.forEach(a => {
-          let p = (a.product || 'Unknown').substring(0, 80);
-          if (/dax/i.test(p)) p = 'DAX Copilot (Nuance)';
-          else if (/abridge/i.test(p)) p = 'Abridge';
-          else if (/suki/i.test(p)) p = 'Suki AI';
-          else if (/heidi/i.test(p)) p = 'Heidi Health';
-          else if (/chatgpt|gpt-4/i.test(p)) p = 'ChatGPT/GPT-4';
-          else if (/ambience/i.test(p)) p = 'Ambience Healthcare';
-          else if (/n\/a|review|framework|synthesis/i.test(p)) p = 'N/A (Review/Framework)';
-          else if (p.length > 30) p = 'Other / Unnamed';
+          var p = cleanProduct(a.product);
           c[p] = (c[p]||0)+1;
         });
         return Object.entries(c).sort((a,b) => b[1]-a[1]).map(([name, value]) => ({ name, value }));
@@ -532,17 +547,17 @@
 
       const tiers = {
         'Best Relative Quality': rigorData.filter(d => d.rating === 'HIGH'),
-        'Silver / Moderate': rigorData.filter(d => d.rating === 'MODERATE'),
+        'Moderate': rigorData.filter(d => d.rating === 'MODERATE'),
         'Needs Work / Low': rigorData.filter(d => d.rating === 'LOW'),
         'Meta / Methodological': rigorData.filter(d => d.rating === 'META'),
       };
 
       return React.createElement('div', { className: 'container' },
-        React.createElement('h1', null, 'Scientific Rigor Assessment'),
+        React.createElement('h1', null, 'Level of Rigor'),
         React.createElement('p', null, 'Each canonical measure is assessed on study design quality, instrument validation, finding convergence, and bias risk. The chart below shows rigor scores (0\u2013100) for all 25 measures.'),
 
         React.createElement('div', { className: 'card' },
-          React.createElement(HBarChart, { data: rigorData.map(function(d) { return { name: d.id + ': ' + d.fullName, value: d.score }; }), labelKey: 'name', valueKey: 'value', maxVal: 100, colorFn: function(d) { return getRigorColor(d.value); } })
+          React.createElement(HBarChart, { data: rigorData.map(function(d) { return { name: d.id + ': ' + d.fullName, value: d.score }; }), labelKey: 'name', valueKey: 'value', maxVal: 100, colorFn: function(d) { return getRigorColor(d.value); }, labelWidth: 320 })
         ),
 
         Object.entries(tiers).map(([tier, items]) => items.length > 0 &&
@@ -621,11 +636,7 @@
             ),
             React.createElement('tbody', null,
               filtered.map((a, i) => {
-                let prod = (a.product || '').substring(0, 40);
-                if (/dax/i.test(prod)) prod = 'DAX Copilot';
-                else if (/abridge/i.test(prod)) prod = 'Abridge';
-                else if (/suki/i.test(prod)) prod = 'Suki AI';
-                else if (prod.length > 30) prod = prod.substring(0, 28) + '...';
+                var prod = cleanProduct(a.product);
                 return React.createElement('tr', {
                   key: i, style: { cursor: 'pointer' },
                   onClick: () => setSelectedArticle(a)
