@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--
   ACI Evaluation Report — Interactive Web Application
-  25 canonical measures derived from 426 raw measure rows across 54 papers | March 2026 | v.14
+  25 canonical measures derived from 426 raw measure rows across 54 papers | March 2026 | v.15
 
   Version History:
     v.01 — Initial build (single-page React app with Recharts)
@@ -18,6 +18,7 @@
     v.12 — Fixed extractSection regex bug (54/54 articles now have study measures)
     v.13 — Responsive Article Explorer table (dynamic column widths, mobile breakpoints)
     v.14 — Fixed title truncation in Article Explorer (full titles wrap, removed 70-char limit)
+    v.15 — Added "Aliases Used in Literature" section to canonical measure details
 -->
 <html lang="en">
 <head>
@@ -443,7 +444,7 @@
           React.createElement('div', { className: 'hero-inner' },
             React.createElement('h1', null, 'Evaluating Ambient Clinical Intelligence'),
             React.createElement('p', null, 'A methodological critique of the evidence base for ambient AI documentation tools in healthcare, mapping 54 studies to the DeLone & McLean IS Success Model.'),
-            React.createElement('p', { className: 'subtitle' }, '25 canonical measures derived from 426 raw measure rows across 54 papers | March 2026 | v.14')
+            React.createElement('p', { className: 'subtitle' }, '25 canonical measures derived from 426 raw measure rows across 54 papers | March 2026 | v.15')
           )
         ),
         React.createElement('div', { className: 'container' },
@@ -632,6 +633,12 @@
                   ),
                   m.typicalFindings && React.createElement('div', { style: { marginTop: 8, marginBottom: 8 } }, React.createElement('strong', null, 'Typical Findings: '), React.createElement(MdText, { text: m.typicalFindings })),
                   m.concerns && React.createElement('div', { style: { marginBottom: 8 } }, React.createElement('strong', null, 'Methodological Concerns: '), React.createElement(MdText, { text: m.concerns })),
+                  m.aliases && m.aliases.length > 0 && React.createElement('div', { style: { marginTop: 12, marginBottom: 8 } },
+                    React.createElement('strong', null, 'Aliases Used in Literature:'),
+                    React.createElement('ul', { style: { margin: '6px 0 0 20px', padding: 0, fontSize: 13, color: '#444' } },
+                      m.aliases.map((a, ai) => React.createElement('li', { key: ai, style: { marginBottom: 3 } }, React.createElement(MdText, { text: a })))
+                    )
+                  ),
                 )
               );
             })

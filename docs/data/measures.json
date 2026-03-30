@@ -13,6 +13,16 @@
       "Single-item burnout question",
       "Reduced burnout (Likert, dichotomized)"
     ],
+    "aliases": [
+      "Burnout (corpus-wide — see papers list)",
+      "Work Exhaustion / Interpersonal Disengagement (Afshar 2025b, Shah 2024)",
+      "Mini-Z Burnout Score (Olson 2025, Guo 2026)",
+      "OLBI (van Buchem 2024)",
+      "Burnout Reduction (Boyter 2025)",
+      "Burnout Frequency (Albrecht 2025)",
+      "Reduced Burnout Risk (Olson 2025)",
+      "Physician Burnout (Kanaparthy 2025)"
+    ],
     "typicalFindings": "",
     "rigorRating": "",
     "concerns": "**RCT effect size caveat:** Afshar 2025b (RCT, n=66) found −0.44 PFI work exhaustion. Shah 2024 (QI, selected sample) found −1.94 on same scale. The gap is expected from selection bias in non-randomized studies. The RCT estimate is more trustworthy. Burnout is dissociable from cognitive load (CM-02) and professional fulfillment (CM-03) — see Afshar 2025b where all three moved differently.",
@@ -46,6 +56,18 @@
       "Cognitive Demand survey items",
       "Note-related cognitive task load"
     ],
+    "aliases": [
+      "NASA-TLX (Bracken 2025, Peterson Health Technology Institute 2025, Omon 2025, Stults 2025)",
+      "Physician Task Load (PTL) Index (Shah 2024)",
+      "Cognitive Load (Olson 2025, Peterson Health Technology Institute 2025)",
+      "Cognitive Burden (Duggan 2025)",
+      "Note-Related Cognitive Task Load (Olson 2025)",
+      "Cognitive Demand (Guo 2026)",
+      "Mental Demand (Bracken 2025, Omon 2025)",
+      "NASA-TLX Temporal Demand / Time Pressure (Karavassilis 2025)",
+      "Less EHR Frustration (Guo 2026)",
+      "NASA-TLX Frustration (Bracken 2025)"
+    ],
     "typicalFindings": "",
     "rigorRating": "",
     "concerns": "NASA-TLX measures cognitive effort during task performance — conceptually distinct from burnout (cumulative emotional depletion). Both may improve with ambient scribes but through different mechanisms.",
@@ -76,6 +98,17 @@
       "Work-life balance items",
       "PROMIS Sleep Disturbance (Short Form 4a)"
     ],
+    "aliases": [
+      "Professional Fulfillment (Afshar 2025b)",
+      "Meaningfulness of Work (Afshar 2025b)",
+      "Work-Life Balance (Boyter 2025, Haberle 2024, Duggan 2025)",
+      "Documentation Prevents Me From Being Fully Engaged (Duggan 2025)",
+      "My Documentation Burden Prevents Better Work-Life Balance (Duggan 2025)",
+      "Sleep Quality (Albrecht 2025)",
+      "PROMIS Sleep Disturbance (Albrecht 2025)",
+      "Documentation Impact on Well-Being (Galloway 2024)",
+      "Improved Wellbeing (Liu 2024)"
+    ],
     "typicalFindings": "",
     "rigorRating": "",
     "concerns": "**Key null finding:** Afshar 2025b (RCT) found professional fulfillment increased at p=0.04 — which missed the pre-specified alpha of 0.025. This means ambient AI reduces exhaustion but does not significantly *increase* fulfillment. These are dissociable constructs: removing a negative ≠ adding a positive.",
@@ -100,6 +133,22 @@
       "Direct timing (simulation)",
       "Self-report (survey)",
       "Per-note telemetry"
+    ],
+    "aliases": [
+      "Documentation Time (corpus-wide — see papers list)",
+      "Time in Notes (Pearlman 2025, Cao 2024, Afshar 2025, Duggan 2025, Tierney 2025)",
+      "Time on Notes (Afshar 2025b)",
+      "Active Documentation Time (Boyter 2025)",
+      "Average Time per Note (Guo 2026, Guo 2025)",
+      "Average Documentation Time per Provider per Day (Suhail 2026, Guo 2025)",
+      "Time-in-Note (Lukac 2025)",
+      "Note-Writing Time (Kanaparthy 2025)",
+      "Time Spent on Notes (Afshar 2025, Evans 2025, Prasad 2025, Guo 2025, Billings 2025a)",
+      "Time per Appointment (Guo 2026)",
+      "Notetaking Time Reduction (Billings 2025a)",
+      "Time Savings per Week (AAFP 2021)",
+      "Reduced Documentation Time (Bundy 2024, Prasad 2025)",
+      "Post-Visit Documentation Time (Shuaib 2021, Liu 2024)"
     ],
     "typicalFindings": "",
     "rigorRating": "",
@@ -148,6 +197,19 @@
       "After appointment date",
       "After-hours EHR time (% change)"
     ],
+    "aliases": [
+      "After-Hours EHR Time (Haberle 2024, Cao 2024, Peterson Health Technology Institute 2025, Ma 2025)",
+      "Pajama Time (Peterson Health Technology Institute 2025)",
+      "Work Outside Work / WoW (Afshar 2025b)",
+      "After-Hours Documentation (Boyter 2025, AAFP 2021, Albrecht 2025, Duggan 2025)",
+      "After Hours Time Spent Documenting per Appointment (Stults 2025)",
+      "Time After Appointment Date (Boyter 2025)",
+      "Decreased After-Hours Documentation (Albrecht 2025)",
+      "After-Hours Note Writing (Albrecht 2025)",
+      "Out-of-Hours EHR Documentation Time (Suhail 2026)",
+      "Decreased EHR Time at Home (Stults 2025)",
+      "Off-Hours EHR Activity (Stults 2025)"
+    ],
     "typicalFindings": "",
     "rigorRating": "",
     "concerns": "**Consistent null pattern in objective data:** After-hours time does NOT improve significantly in EHR telemetry across most corpus papers (Pearlman 2025, Stults 2025). Self-report shows improvement. Exceptions: Duggan 2025 (−16.9%), Boyter/KLAS 2025 (−39% UAL), Afshar 2025b (−0.50 hrs/day, but fragile — disappears after removing top 3% outliers). This self-report/objective divergence is one of the most reproducible findings in the corpus.",
@@ -185,6 +247,17 @@
       "Note completion before next patient",
       "Chart completion timing (survey)"
     ],
+    "aliases": [
+      "Same-Day Encounter Closure (Guo 2026, Duggan 2025)",
+      "Chart Closure Time (Boyter 2025: −41%)",
+      "Note Completion Before Next Patient (Albrecht 2025)",
+      "24-Hour Documentation Deficiency Rate (Afshar 2025)",
+      "24-Hour CPT Submission Deficiency Rate (Afshar 2025)",
+      "Time to Close Encounter (Pearlman 2025)",
+      "Pre-Next-Visit Closure (Afshar 2025b)",
+      "Chart Completion Timing (Stults 2025)",
+      "Same-Day / Pre-Next-Visit Closure (Afshar 2025b)"
+    ],
     "typicalFindings": "",
     "rigorRating": "",
     "concerns": "Chart closure is a distinct operational metric from raw documentation time — a note can be completed quickly but signed late. Boyter/KLAS 2025 found −41% in chart closure time (UAL data). Afshar 2025a used it as a real-time monitoring metric with a notable dip during template change.",
@@ -210,6 +283,12 @@
       "EHR audit-log (total active time)",
       "Total time in EHR per appointment"
     ],
+    "aliases": [
+      "Total EHR Time (Ma 2025: −19.95 min/day)",
+      "Total Time in EHR per Appointment (Pearlman 2025)",
+      "Daily EHR Time (⚠️ verify source)",
+      "Time in Documentation and EHR (Tierney 2024)"
+    ],
     "typicalFindings": "",
     "rigorRating": "",
     "concerns": "**Emerging measure — only 5 papers measure this explicitly.** Ma 2025 found −19.95 min/day total EHR time (largest effect in corpus) while only −6.89 min/day for documentation time specifically — suggesting ambient scribes reduce EHR burden beyond just note-writing, possibly by enabling faster note closure and less revisiting.",
@@ -234,6 +313,19 @@
       "PDSQI-9 / PDQI-9 Thoroughness domain",
       "Clinical note error rate (% key elements)",
       "New medication capture"
+    ],
+    "aliases": [
+      "Omissions (Kernberg 2023, Arko 2025, Biro 2025, Anderson 2025, Foo 2025)",
+      "Error Subtype — Omissions (Arko 2025)",
+      "Omission Errors (%) (Kernberg 2023: 86%; Arko 2025: 71%; Biro 2025; Anderson 2025; Foo 2025)",
+      "Errors of Omission / Addition / Incorrect Data (Anderson 2025)",
+      "Thoroughness (PDQI domain) (Foo 2025)",
+      "Completeness (Suhail 2026, Wang 2025)",
+      "Missing/unclear Information (Karavassilis 2025)",
+      "History Items Included (Baker 2023)",
+      "Overall Error Rate (%) (Arko 2025)",
+      "Clinical Note Error Rate (Anderson 2025)",
+      "New Medication Capture (Wang 2025)"
     ],
     "typicalFindings": "",
     "rigorRating": "",
@@ -267,6 +359,19 @@
       "Clinically significant inaccuracies",
       "Cross-replicate consistency"
     ],
+    "aliases": [
+      "Hallucination Rate (Baker 2023: 36%; Palm 2025: 31%)",
+      "Addition Errors (%) (Kernberg 2023: 10.5%)",
+      "Incorrect Facts (%) (Kernberg 2023: 3.2%)",
+      "Factuality / Hallucination Rate (Wang 2025)",
+      "Clinically Significant Inaccuracies (Biro 2025)",
+      "Freedom from Hallucination (PDQI domain)",
+      "Incorrect Information (Palm 2025)",
+      "Negation Errors (Bundy 2024)",
+      "Hallucinations / Errors (qualitative) (Shah 2025)",
+      "Cross-replicate consistency (Kernberg 2023: 53% consistent)",
+      "Error Rate & Type (Biro 2025)"
+    ],
     "typicalFindings": "",
     "rigorRating": "",
     "concerns": "**Hallucinations are less common than omissions but more dangerous per-event.** Baker 2023 (36%) and Palm 2025 (31%) found highest rates. Kernberg 2023 found only 3.2% incorrect facts but 86% omissions — different definitions matter. Bundy 2024 identified negation errors ('did not' → 'did') as a specific high-risk subtype. Reproducibility failure (Kernberg): same case, different errors each run — clinicians can't predict where to check.",
@@ -299,6 +404,19 @@
       "Global rating (1–5)",
       "Documentation quality — SOAP sections",
       "Discharge summary / progress note PDQI"
+    ],
+    "aliases": [
+      "PDQI-9 Score (Foo 2025, Baker 2023, Kernberg 2023)",
+      "PDSQI-9 (Afshar 2025b: 3.97–4.99/5.0)",
+      "Overall PDQI Score (Palm 2025)",
+      "Documentation Quality (corpus-wide — see papers list)",
+      "Note Quality (corpus-wide — see papers list)",
+      "Progress Note PDQI-9 (Bracken 2025)",
+      "Discharge Summary PDQI-9 (Bracken 2025)",
+      "Documentation Quality — SOAPS / SOAPP (Karavassilis 2025)",
+      "Global Rating (Baker 2023)",
+      "Efficiency Score (PDQI-9/min) (Bracken 2025)",
+      "Appropriate for Specialty (van Buchem 2024)"
     ],
     "typicalFindings": "",
     "rigorRating": "",
@@ -336,6 +454,19 @@
       "Lexical diversity",
       "Documentation length (chars/week)"
     ],
+    "aliases": [
+      "Note Length (Cao 2024, Guo 2026, Duggan 2025, Kanaparthy 2025, Anderson 2025)",
+      "Word Count (Baker 2023, van Buchem 2024)",
+      "Average Characters per Appointment / Note (Guo 2025)",
+      "Total Note Length (Duggan 2025)",
+      "Note Length Ratio (Moramarco 2022)",
+      "Lexical Diversity (Moramarco 2022, Wang 2025)",
+      "Documentation Length (Stults 2025)",
+      "Note Length (characters) (Cao 2024, Guo 2026, Stults 2025)",
+      "Note Length (words) (Anderson 2025)",
+      "Average Characters per Note (van Buchem 2024)",
+      "Note Verbosity / Quality Concerns (Shah 2025, Wojda 2025)"
+    ],
     "typicalFindings": "",
     "rigorRating": "",
     "concerns": "Note length is a secondary/proxy measure. It can indicate thoroughness (longer = more complete) or over-generation (longer = padded). Wojda 2025 and Shah 2025 flag note verbosity as a concern — physicians may need to edit down AI-generated notes, creating editing burden that offsets time savings.",
@@ -367,6 +498,18 @@
       "Entity linking (LINK / CORRECT LINK)",
       "LLM-as-Evaluator agreement"
     ],
+    "aliases": [
+      "ROUGE Score (Suhail 2026, Gebauer 2025, van Buchem 2024)",
+      "BERTScore (Suhail 2026, Gebauer 2025, Moramarco 2022, van Buchem 2024, Wang 2021)",
+      "BLEURT (Wang 2025)",
+      "F1 Score (Wang 2025, Moramarco 2022)",
+      "Automatic Metric Correlation (Moramarco 2022)",
+      "Automatic Metric Correlation with Human Judgment (Moramarco 2022)",
+      "SAIL Score (Wang 2025)",
+      "NLP Task Performance (van Buchem 2021)",
+      "LINK / CORRECT LINK (Moramarco 2022)",
+      "LLM-as-Evaluator Agreement (Afshar 2025b, Wang 2025)"
+    ],
     "typicalFindings": "",
     "rigorRating": "",
     "concerns": "**METHODOLOGICAL CANONICAL.** These metrics do not measure clinical outcomes — they measure whether automated quality assessment agrees with human assessment. Critical finding from Moramarco 2022: Levenshtein distance performs as well as BERTScore on clinical notes. LLM-as-judge (Afshar 2025b) is validated against physician ratings. Automated metrics should be treated as research tools, not clinical quality measures.",
@@ -394,6 +537,21 @@
       "Active user count over time",
       "SmartSection utilization by type",
       "Dose-response / quartile analysis"
+    ],
+    "aliases": [
+      "Utilization Rate (Ma 2025: 55%)",
+      "Adoption Rate (AAFP 2021: 60% post-trial)",
+      "Scribe Utilization Rate (Afshar 2025: 65.4%)",
+      "SmartSection Utilization (Ma 2025)",
+      "Ambient Usage Level (You 2025)",
+      "Use Volume Over Time (Tierney 2025: 2.5M uses in 1 year)",
+      "User Adoption Predictors (Tierney 2025)",
+      "Days of Use as Moderator (Pearlman 2025)",
+      "Utilization Stratification (Olson 2025)",
+      "Voice Memo Frequency (Omon 2025)",
+      "AI Scribe Use Quartile (Pearlman 2025)",
+      "Portion of Notes Manually Typed (Duggan 2025)",
+      "Vendor Transition (Tierney 2025)"
     ],
     "typicalFindings": "",
     "rigorRating": "",
@@ -427,6 +585,16 @@
       "Implementation intent",
       "License relinquishment"
     ],
+    "aliases": [
+      "Intention to Use (Galloway 2024, Evans 2025)",
+      "Willingness to Adopt (Omon 2025)",
+      "Recommendation Likelihood (Galloway 2024)",
+      "Recommendation Intention (Evans 2025)",
+      "Long-Term Use (Shah 2024: 78%)",
+      "Implementation Intent (Omon 2025)",
+      "User Adoption Predictors (Tierney 2025)",
+      "License Relinquishment (Ma 2025)"
+    ],
     "typicalFindings": "",
     "rigorRating": "",
     "concerns": "Only 5 papers explicitly measure adoption intention as a formal study measure (vs. mentioning it). Tierney 2025 found physician age and years since graduation are NOT predictive of adoption — challenging the generational adoption narrative.",
@@ -451,6 +619,24 @@
       "Likert satisfaction items",
       "Qualitative feedback",
       "Overall product preference"
+    ],
+    "aliases": [
+      "Physician Satisfaction (AAFP 2021, Tierney 2025, Shuaib 2021)",
+      "Clinician Satisfaction (Cao 2024, Prasad 2025)",
+      "System Usability Scale (SUS) (Shah 2024)",
+      "UTAUT items (Shah 2024)",
+      "Favorable Utility (Shah 2024: 65% improved efficiency, 98% easy to use)",
+      "Job Satisfaction (Boyter 2025, Galloway 2024)",
+      "Employee Satisfaction (Boyter 2025)",
+      "Usability Rating (Karavassilis 2025)",
+      "Ease of Use (Shah 2024, van Buchem 2024)",
+      "Perceived Efficiency (You 2025)",
+      "Perceived Usefulness (van Buchem 2024)",
+      "Acceptability (Evans 2025)",
+      "High-Quality Care Perception (survey) (Galloway 2024)",
+      "Qualitative Feedback (Moramarco 2022, Wang 2021)",
+      "Overall Product Preference (Lukac 2025)",
+      "Provider Feedback (Tierney 2024)"
     ],
     "typicalFindings": "",
     "rigorRating": "",
@@ -491,6 +677,13 @@
       "Ethical/Legal Concerns (survey)",
       "Industry transparency"
     ],
+    "aliases": [
+      "Trust in AI (Afshar 2025b — secondary outcome)",
+      "Provider Skepticism & AI Trust (Shah 2025, Wojda 2025)",
+      "Ethical/Legal Concerns (Falcetta 2023)",
+      "Industry Transparency (van Buchem 2021)",
+      "Fear of Increased Patient Volume (Bundy 2024)"
+    ],
     "typicalFindings": "",
     "rigorRating": "",
     "concerns": "Only 5 papers formally measure this as a study outcome, though AI trust themes appear qualitatively in many more. Bundy 2024 found 7/12 physicians feared increased patient volume from ambient scribes — a specific mistrust pattern about downstream consequences rather than tool performance.",
@@ -515,6 +708,20 @@
       "Patient Likelihood to Recommend (LTR)",
       "Patient consent compliance",
       "Qualitative patient feedback"
+    ],
+    "aliases": [
+      "Patient Experience (Cao 2024, Peterson Health Technology Institute 2025, Castro 2025, Galloway 2024, Owens 2024)",
+      "Patient Satisfaction (Suhail 2026, Peterson Health Technology Institute 2025, Tierney 2025, Owens 2024, Shuaib 2021)",
+      "PDRQ-9 Score (Owens 2024 — null in masked phase)",
+      "Patient Likelihood to Recommend (Tierney 2024, Tierney 2025)",
+      "Patient Engagement (Shah 2025, Bundy 2024)",
+      "Patient Opt-Out Rate (Suhail 2026, Haberle 2024, Evans 2025)",
+      "Enhanced Patient Relationship (Liu 2024)",
+      "Therapeutic Alliance (Evans 2025)",
+      "Documentation Impact on Patient Experience (Duggan 2025)",
+      "Patient Trust (Evans 2025)",
+      "Patient Feedback (Tierney 2024, Karavassilis 2025)",
+      "Patient Consent Compliance (Afshar 2025)"
     ],
     "typicalFindings": "",
     "rigorRating": "",
@@ -553,6 +760,17 @@
       "Time searching for information",
       "Patients seen per hour"
     ],
+    "aliases": [
+      "Doctor-Patient Interaction Time (Shuaib 2021: doubled)",
+      "Undivided Attention to Patients (Duggan 2025, Stults 2025)",
+      "Focus on Patients During Visit (Prasad 2025)",
+      "Documentation Needs Impact My Ability to Talk Face-to-Face (Duggan 2025)",
+      "I Feel Distracted by Documentation While Talking (Duggan 2025)",
+      "Consultation Duration (Balloch 2024)",
+      "Patients Seen per Hour (Shuaib 2021: +39%)",
+      "Time Searching for Information (Karavassilis 2025)",
+      "I Feel Able to See More Patients (Duggan 2025)"
+    ],
     "typicalFindings": "",
     "rigorRating": "",
     "concerns": "Shuaib 2021 (human scribe comparator) is the strongest data point: doctor-patient interaction time doubled and patients/hour increased 39%. This establishes the *potential* of documentation automation for interaction quality. Ambient AI studies primarily capture this through self-report survey items rather than direct observation.",
@@ -581,6 +799,17 @@
       "RDoC symptom documentation level",
       "PHQ-9 documentation",
       "Patient safety survey items"
+    ],
+    "aliases": [
+      "AHRQ Harm Score (Anderson 2025)",
+      "Patient Safety Events (Anderson 2025)",
+      "Critical Errors (Anderson 2025)",
+      "Likelihood of Psychiatric Intervention (Castro 2025: aOR 0.83, p=.005)",
+      "RDoC Symptom Documentation Level (Castro 2025)",
+      "PHQ-9 Documentation (Castro 2025)",
+      "Patient Safety (survey) (Galloway 2024, multiple)",
+      "Clinically Significant Errors in AI Notes (Biro 2025, Anderson 2025)",
+      "Negation Errors (Bundy 2024)"
     ],
     "typicalFindings": "",
     "rigorRating": "",
@@ -611,6 +840,17 @@
       "ROI (return on investment)",
       "Cost comparison"
     ],
+    "aliases": [
+      "RVUs per Encounter / per Week (Holmgren 2026: +0.04/encounter, +1.81/week, ≈$3,044/year)",
+      "Work Relative Value Units (Haberle 2024)",
+      "Physician Productivity (billing) (⚠️ verify source)",
+      "Financial Viability (Combined) (Boyter 2025: +$13,049/year)",
+      "Financial Benefit (⚠️ verify source)",
+      "ROI (Boyter 2025)",
+      "Cost Comparison (Cao 2024)",
+      "Additional Yearly Revenue (Boyter 2025)",
+      "VBC-Attributed Panel Size (Haberle 2024)"
+    ],
     "typicalFindings": "",
     "rigorRating": "",
     "concerns": "Three independent papers show financial productivity improvement: Holmgren 2026 (+$3,044/year RVU, UCSF, no denial increase), Boyter/KLAS 2025 (+$13,049/year mostly from HCC, Ambience). PHTI 2025 raises the population-level concern: even *accurate* higher coding increases healthcare system spending. The individual health system ROI may conflict with payer/societal interests.",
@@ -638,6 +878,15 @@
       "Real-time ICD-10 accuracy monitoring",
       "Claim denial rate"
     ],
+    "aliases": [
+      "ICD-10 Coding Accuracy (Afshar 2025, Afshar 2025b: p<0.001 improvement)",
+      "Diagnostic Billing Compliance (Afshar 2025b)",
+      "HCC Capture per Encounter (Boyter 2025: +$9,685/year)",
+      "E/M Coding Level (Boyter 2025: +$1,907/year)",
+      "Claim Denial Rate (Holmgren 2026: null — no increase in denials)",
+      "Coding Accuracy (Peterson Health Technology Institute 2025, Afshar 2025)",
+      "Coding Improvement (⚠️ verify source)"
+    ],
     "typicalFindings": "",
     "rigorRating": "",
     "concerns": "**Coding improvement is one of the most consistent findings** — appearing in Afshar 2025b (RCT, p<0.001), Boyter/KLAS 2025, and Holmgren 2026. Critically, Holmgren 2026 shows NO increase in denial rate, suggesting coding improvement is legitimate (better documentation of existing complexity, not upcoding). However, PHTI 2025 flags the population-level cost concern regardless.",
@@ -662,6 +911,15 @@
       "Door-to-doc / door-to-room time (min)",
       "Length of stay (admitted / discharged, min)",
       "Ability to add patient"
+    ],
+    "aliases": [
+      "Patients Seen per Hour (Shuaib 2021: +39%)",
+      "Encounters per Week (Holmgren 2026: +0.80/week)",
+      "Door-to-Doc Time (Shuaib 2021)",
+      "Door-to-Room Time (Shuaib 2021)",
+      "Length of Stay — Admitted / Discharged (Shuaib 2021)",
+      "Productivity (%) (Shuaib 2021)",
+      "Ability to Add Patient (Albrecht 2025)"
     ],
     "typicalFindings": "",
     "rigorRating": "",
@@ -690,6 +948,19 @@
       "QUEST framework",
       "SEIPS 3.0 assessment"
     ],
+    "aliases": [
+      "Implementation Barriers (Shah 2025)",
+      "Learning Curve (Wojda 2025, Prasad 2025)",
+      "Steep Learning Curve (Shah 2024, multiple)",
+      "Workflow Adaptation (Wojda 2025)",
+      "Non-Adopter Categories (AAFP 2021: 4 types; Peterson Health Technology Institute 2025: 3 cohorts)",
+      "Encounter Suitability (qualitative) (Bundy 2024)",
+      "FIM/AIM/IUS (Suhail 2026)",
+      "SEIPS 3.0 (Kanaparthy 2025)",
+      "QUEST Framework (Kanaparthy 2025)",
+      "Feasibility (Nguyen 2023)",
+      "Clinical Utility (Falcetta 2023)"
+    ],
     "typicalFindings": "",
     "rigorRating": "",
     "concerns": "Universal finding: heterogeneous adoption with a cohort of heavy users, moderate users, and non-/low-users. PHTI 2025 formalizes 3 cohorts. Clinicians who benefit most: high baseline documentation burden, complex narrative notes, high patient face-time. Non-adopters cluster around: no existing burden, optimized workflow, technical incompatibility.",
@@ -717,6 +988,14 @@
       "Medical Term Recall (MTR)",
       "Transcript error transmission rate"
     ],
+    "aliases": [
+      "Transcription Accuracy / WER (Wang 2025)",
+      "ASR Accuracy (Falcetta 2023, van Buchem 2021)",
+      "Medical Term Recall (MTR) (Wang 2025)",
+      "Speaker Diarization Accuracy (van Buchem 2021)",
+      "Transcript Error Transmission Rate (%) (Anderson 2025)",
+      "Transcript Errors per Case (Anderson 2025)"
+    ],
     "typicalFindings": "",
     "rigorRating": "",
     "concerns": "**Only 3 papers formally measure ASR accuracy as an outcome.** Commercial products (DAX, Abridge, Suki, Ambience) do not publish their WER or diarization accuracy — a documented pattern of industry opacity since van Buchem 2021. This is a fundamental evidence gap: the acoustic quality of commercial products is entirely unknown in the published literature.",
@@ -742,6 +1021,18 @@
       "Demographic and clinical matching",
       "Propensity score balance",
       "Cross-replicate consistency"
+    ],
+    "aliases": [
+      "Inter-Rater Reliability (ICC) (Kernberg 2023, Foo 2025)",
+      "Interrater Agreement (RWG) (Olson 2025)",
+      "LLM-as-Evaluator Agreement (Afshar 2025b, Wang 2025)",
+      "Benchmark Dataset Availability (Gebauer 2025)",
+      "Specialty Coverage (Gebauer 2025, Wang 2025)",
+      "Demographic and Clinical Matching (Castro 2025)",
+      "Propensity Score Balance (Pearlman 2025)",
+      "Cross-Replicate Consistency (Kernberg 2023: 53%)",
+      "Real-World Clinical Validation (van Buchem 2021)",
+      "Number of Studies Meeting Criteria (Falcetta 2023, Kanaparthy 2025)"
     ],
     "typicalFindings": "",
     "rigorRating": "",

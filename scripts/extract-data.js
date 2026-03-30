@@ -131,6 +131,7 @@ function extractBulletPoints(content, sectionHeading) {
       .replace(/\*(.*?)\*/g, '$1')
       .replace(/__(.+?)__/g, '$1')
       .replace(/_(.+?)_/g, '$1')
+      .replace(/\[\[([^\]|]+)\|([^\]]+)\]\]/g, '$2')
       .replace(/\[\[([^\]]+)\]\]/g, '$1')
       .replace(/\[([^\]]+)\]\([^\)]+\)/g, '$1')
       .trim()
@@ -273,7 +274,9 @@ function parseMeasure(filePath) {
   const findingsMatch = content.match(/## Key Finding.*?\n([\s\S]*?)(?=^##|$)/m);
   if (findingsMatch) typicalFindings = findingsMatch[1].trim().substring(0, 500);
 
-  return { id, name, dimension, domain: '', paperCount, definition, instruments, typicalFindings, rigorRating: '', concerns, papers };
+  const aliases = extractBulletPoints(content, 'Aliases Used in Literature');
+
+  return { id, name, dimension, domain: '', paperCount, definition, instruments, aliases, typicalFindings, rigorRating: '', concerns, papers };
 }
 
 function mapMeasuresToDomains(measures) {
