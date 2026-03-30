@@ -188,6 +188,74 @@
       );
     }
 
+    // Convert markdown text to array of React elements
+    function mdToReact(text) {
+      if (!text) return null;
+      // Split on **bold**, *italic*, [[wikilinks]], and [links](url)
+      var parts = [];
+      var remaining = text;
+      var key = 0;
+      while (remaining.length > 0) {
+        // Find earliest markdown pattern
+        var boldIdx = remaining.indexOf('**');
+        var wikiIdx = remaining.indexOf('[[');
+        var linkIdx = remaining.search(/\[([^\]]+)\]\(/);
+        var italIdx = -1;
+        // Only match single * that's not part of **
+        var italMatch = remaining.match(/(?<!\*)\*(?!\*)([^*]+)\*(?!\*)/);
+        if (italMatch) italIdx = remaining.indexOf(italMatch[0]);
+
+        var earliest = Infinity;
+        var type = null;
+        if (boldIdx >= 0 && boldIdx < earliest) { earliest = boldIdx; type = 'bold'; }
+        if (wikiIdx >= 0 && wikiIdx < earliest) { earliest = wikiIdx; type = 'wiki'; }
+        if (linkIdx >= 0 && linkIdx < earliest) { earliest = linkIdx; type = 'link'; }
+        if (italIdx >= 0 && italIdx < earliest) { earliest = italIdx; type = 'italic'; }
+
+        if (type === null) { parts.push(remaining); break; }
+
+        // Push text before the pattern
+        if (earliest > 0) parts.push(remaining.substring(0, earliest));
+
+        if (type === 'bold') {
+          var endBold = remaining.indexOf('**', earliest + 2);
+          if (endBold === -1) { parts.push(remaining.substring(earliest)); remaining = ''; break; }
+          parts.push(h('strong', { key: key++ }, remaining.substring(earliest + 2, endBold)));
+          remaining = remaining.substring(endBold + 2);
+        } else if (type === 'wiki') {
+          var endWiki = remaining.indexOf(']]', earliest + 2);
+          if (endWiki === -1) { parts.push(remaining.substring(earliest)); remaining = ''; break; }
+          parts.push(h('em', { key: key++ }, remaining.substring(earliest + 2, endWiki)));
+          remaining = remaining.substring(endWiki + 2);
+        } else if (type === 'link') {
+          var lMatch = remaining.substring(earliest).match(/\[([^\]]+)\]\(([^\)]+)\)/);
+          if (!lMatch) { parts.push(remaining.substring(earliest, earliest + 1)); remaining = remaining.substring(earliest + 1); continue; }
+          parts.push(h('a', { key: key++, href: lMatch[2], target: '_blank' }, lMatch[1]));
+          remaining = remaining.substring(earliest + lMatch[0].length);
+        } else if (type === 'italic') {
+          parts.push(h('em', { key: key++ }, italMatch[1]));
+          remaining = remaining.substring(earliest + italMatch[0].length);
+        }
+      }
+      return parts;
+    }
+
+    // Render a text field that may contain markdown, splitting on newlines into paragraphs
+    function MdText(props) {
+      var text = props.text || '';
+      var lines = text.split('\n').filter(function(l) { return l.trim().length > 0; });
+      if (lines.length <= 1) {
+        return h('span', null, mdToReact(text));
+      }
+      return h('div', null, lines.map(function(line, i) {
+        var trimmed = line.trim();
+        if (trimmed.startsWith('- ') || trimmed.startsWith('* ')) {
+          return h('div', { key: i, style: { paddingLeft: 16, marginBottom: 4 } }, '\u2022 ', mdToReact(trimmed.substring(2)));
+        }
+        return h('p', { key: i, style: { marginBottom: 6 } }, mdToReact(trimmed));
+      }));
+    }
+
     function cleanProduct(raw) {
       var p = (raw || '').replace(/\*\*/g, '').replace(/\[\[|\]\]/g, '');
       if (/dax copilot/i.test(p)) return 'DAX Copilot (Nuance)';
@@ -511,15 +579,15 @@
                   React.createElement('div', { className: 'rigor-fill', style: { width: `${rigor.score}%`, background: getRigorColor(rigor.score) } })
                 ),
                 isExpanded && React.createElement('div', { className: 'measure-body' },
-                  m.definition && React.createElement('p', null, React.createElement('strong', null, 'Definition: '), m.definition),
+                  m.definition && React.createElement('div', { style: { marginBottom: 8 } }, React.createElement('strong', null, 'Definition: '), React.createElement(MdText, { text: m.definition })),
                   m.instruments && m.instruments.length > 0 && React.createElement('div', null,
                     React.createElement('strong', null, 'Instruments: '),
                     React.createElement('div', { className: 'tag-row' },
                       m.instruments.map((inst, i) => React.createElement('span', { key: i, className: 'tag' }, inst))
                     )
                   ),
-                  m.typicalFindings && React.createElement('p', { style: { marginTop: 8 } }, React.createElement('strong', null, 'Typical Findings: '), m.typicalFindings),
-                  m.concerns && React.createElement('p', null, React.createElement('strong', null, 'Concerns: '), m.concerns),
+                  m.typicalFindings && React.createElement('div', { style: { marginTop: 8, marginBottom: 8 } }, React.createElement('strong', null, 'Typical Findings: '), React.createElement(MdText, { text: m.typicalFindings })),
+                  m.concerns && React.createElement('div', { style: { marginBottom: 8 } }, React.createElement('strong', null, 'Methodological Concerns: '), React.createElement(MdText, { text: m.concerns })),
                 )
               );
             })
