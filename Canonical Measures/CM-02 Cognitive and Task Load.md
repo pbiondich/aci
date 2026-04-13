@@ -19,10 +19,8 @@ The mental effort, time pressure, and frustration experienced by clinicians *dur
 - Cognitive Load ([[Olson 2025 - Ambient AI Scribes Administrative Burden Burnout|Olson 2025]], [[Peterson Health Technology Institute 2025 - Adoption AI Healthcare Delivery Systems|Peterson Health Technology Institute 2025]])
 - Cognitive Burden ([[Duggan 2025 - Clinician Experiences Ambient Scribe Documentation Burden|Duggan 2025]])
 - Note-Related Cognitive Task Load ([[Olson 2025 - Ambient AI Scribes Administrative Burden Burnout|Olson 2025]])
-- Cognitive Demand ([[Guo 2026 - Evaluating Ambient AI Documentation UCI Health Mixed Methods|Guo 2026]])
-- Mental Demand ([[Bracken 2025 - Ambient AI Inpatient Documentation Simulation Orthopaedic|Bracken 2025]], [[Omon 2025 - Generative AI Rehabilitation Clinical Documentation|Omon 2025]])
+- Mental Demand ([[Bracken 2025 - Ambient AI Inpatient Documentation Simulation Orthopaedic|Bracken 2025]], [[Omon 2025 - Generative AI Rehabilitation Clinical Documentation|Omon 2025]], [[Guo 2026 - Evaluating Ambient AI Documentation UCI Health Mixed Methods|Guo 2026]]) *(⚠️ note: paper labels this "Mental Demand" not "Cognitive Demand"; Guo 2026 year may be incorrect — likely 2025)*
 - NASA-TLX Temporal Demand / Time Pressure ([[Karavassilis 2025 - Ambient Voice Technology Same Day Emergency Care SDEC|Karavassilis 2025]])
-- Less EHR Frustration ([[Guo 2026 - Evaluating Ambient AI Documentation UCI Health Mixed Methods|Guo 2026]])
 - NASA-TLX Frustration ([[Bracken 2025 - Ambient AI Inpatient Documentation Simulation Orthopaedic|Bracken 2025]])
 
 ## ⚠️ Key Note

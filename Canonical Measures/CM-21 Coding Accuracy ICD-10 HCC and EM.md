@@ -17,8 +17,8 @@ The accuracy and completeness of diagnostic and billing codes generated or suppo
 ## Aliases Used in Literature
 - ICD-10 Coding Accuracy ([[Afshar 2025 - Novel Playbook for Pragmatic Trial Operations|Afshar 2025]], [[Afshar 2025b - Pragmatic RCT Ambient AI Health Practitioner Wellbeing|Afshar 2025b]]: p<0.001 improvement)
 - Diagnostic Billing Compliance ([[Afshar 2025b - Pragmatic RCT Ambient AI Health Practitioner Wellbeing|Afshar 2025b]])
-- HCC Capture per Encounter ([[Boyter 2025 - Ambience Healthcare ROI Validations KLAS Report|Boyter 2025]]: +$9,685/year)
-- E/M Coding Level ([[Boyter 2025 - Ambience Healthcare ROI Validations KLAS Report|Boyter 2025]]: +$1,907/year)
+- HCC Capture per Encounter ([[Boyter 2025 - Ambience Healthcare ROI Validations KLAS Report|Boyter 2025]]) *(⚠️ the dollar value of HCC capture (+$9,685/year) is a revenue/financial impact — that financial quantity belongs in CM-20; the capture rate itself may remain here as a coding accuracy metric)*
+- E/M Coding Level ([[Boyter 2025 - Ambience Healthcare ROI Validations KLAS Report|Boyter 2025]]) *(⚠️ the dollar value of E/M level change (+$1,907/year) is a revenue/financial impact — belongs in CM-20; the coding level itself may remain here)*
 - Claim Denial Rate ([[Holmgren 2026 - Ambient AI Scribes Physician Financial Productivity|Holmgren 2026]]: null — no increase in denials)
 - Coding Accuracy ([[Peterson Health Technology Institute 2025 - Adoption AI Healthcare Delivery Systems|Peterson Health Technology Institute 2025]], [[Afshar 2025 - Novel Playbook for Pragmatic Trial Operations|Afshar 2025]])
 - Coding Improvement *(⚠️ verify source)*
