@@ -28,7 +28,8 @@ Actual, observed use of the ambient AI scribe — measured as % of encounters in
 - Voice Memo Frequency ([[Omon 2025 - Generative AI Rehabilitation Clinical Documentation|Omon 2025]])
 - AI Scribe Use Quartile ([[Pearlman 2025 - AI Scribe EHR Efficiency|Pearlman 2025]])
 - Portion of Notes Manually Typed ([[Duggan 2025 - Clinician Experiences Ambient Scribe Documentation Burden|Duggan 2025]])
-- Vendor Transition ([[Tierney 2025 - Ambient AI Scribes Learnings 1 Year 2.5 Million Uses|Tierney 2025]])
+
+> **Removed alias:** *Vendor Transition* (Tierney 2025) — not a correct interpretation; vendor switching is not a measure of adoption behavior.
 
 ## ⚠️ Key Note
 **Heavy-user/light-user heterogeneity is universal.** Every large deployment reports a bimodal distribution: heavy users who use ambient AI for nearly all encounters, and light/non-users. Dose-response is consistent: heavy users benefit most (Pearlman 2025, Omon 2025, Lukac 2025). Tierney 2025 found top-third of users account for disproportionate % of 2.5M total uses.

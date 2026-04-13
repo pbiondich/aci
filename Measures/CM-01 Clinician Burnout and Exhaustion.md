@@ -13,6 +13,7 @@ Provider-reported emotional exhaustion, depersonalization, and interpersonal dis
 | Oldenburg Burnout Inventory (OLBI) | 16-item validated instrument; disengagement + exhaustion domains | Survey |
 | Single-item burnout question | "How often do you feel burned out?" Likert scale | Survey |
 | Reduced burnout (Likert, dichotomized) | % reporting burnout at pre vs. post | Survey |
+| PROMIS Sleep Disturbance (Short Form 4a) | Validated sleep quality instrument; proxy for restorative recovery associated with burnout | Survey |
 
 ## Aliases Used in Literature
 - Burnout *(corpus-wide — see papers list)*
@@ -23,6 +24,8 @@ Provider-reported emotional exhaustion, depersonalization, and interpersonal dis
 - Burnout Frequency ([[Albrecht 2025 - Ambient AI Clinical Documentation QI Survey|Albrecht 2025]])
 - Reduced Burnout Risk ([[Olson 2025 - Ambient AI Scribes Administrative Burden Burnout|Olson 2025]])
 - Physician Burnout ([[Kanaparthy 2025 - Real-World Evidence Digital Scribes Rapid Review|Kanaparthy 2025]])
+- Sleep Quality ([[Albrecht 2025 - Ambient AI Clinical Documentation QI Survey|Albrecht 2025]]) *(moved from CM-03)*
+- PROMIS Sleep Disturbance ([[Albrecht 2025 - Ambient AI Clinical Documentation QI Survey|Albrecht 2025]]) *(moved from CM-03)*
 
 ## ⚠️ Key Note
 **RCT effect size caveat:** Afshar 2025b (RCT, n=66) found −0.44 PFI work exhaustion. Shah 2024 (QI, selected sample) found −1.94 on same scale. The gap is expected from selection bias in non-randomized studies. The RCT estimate is more trustworthy. Burnout is dissociable from cognitive load (CM-02) and professional fulfillment (CM-03) — see Afshar 2025b where all three moved differently.

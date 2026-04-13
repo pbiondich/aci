@@ -13,6 +13,11 @@ Total time spent creating, editing, and finalizing a clinical note — from note
 | Self-report (survey) | Clinician-estimated time savings per note or per half-day | Survey |
 | Per-note telemetry | Time per individual note (start to sign); product-specific | Product telemetry |
 
+## Quantitative vs. Qualitative
+Aliases in this measure should be distinguished by data source:
+- **Quantitative (objective):** EHR telemetry (Epic Signal/UAL), direct timing, per-note telemetry — preferred for synthesis
+- **Qualitative (self-report):** Survey/Likert estimates of time savings — systematically overstates reductions; do not pool with objective measures
+
 ## Aliases Used in Literature
 - Documentation Time *(corpus-wide — see papers list)*
 - Time in Notes ([[Pearlman 2025 - AI Scribe EHR Efficiency|Pearlman 2025]], [[Cao 2024 - Artificial Intelligence-Driven Digital Scribes Dermatology|Cao 2024]], [[Afshar 2025 - Novel Playbook for Pragmatic Trial Operations|Afshar 2025]], [[Duggan 2025 - Clinician Experiences Ambient Scribe Documentation Burden|Duggan 2025]], [[Tierney 2025 - Ambient AI Scribes Learnings 1 Year 2.5 Million Uses|Tierney 2025]])

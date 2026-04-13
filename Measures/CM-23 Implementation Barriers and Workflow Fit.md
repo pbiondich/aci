@@ -22,7 +22,7 @@ Factors that impede or facilitate ambient AI scribe adoption and sustained use �
 - Workflow Adaptation ([[Wojda 2025 - HCI of Ambient AI Qualitative Study|Wojda 2025]])
 - Non-Adopter Categories ([[AAFP 2021 - Using AI Assistant Reduce Documentation Burden Family Medicine|AAFP 2021]]: 4 types; [[Peterson Health Technology Institute 2025 - Adoption AI Healthcare Delivery Systems|Peterson Health Technology Institute 2025]]: 3 cohorts)
 - Encounter Suitability (qualitative) ([[Bundy 2024 - Administrative Loads Physicians AI Documentation Qualitative|Bundy 2024]])
-- FIM/AIM/IUS ([[Suhail 2026 - Metrics for Ambient Clinical Documentation Scoping Review|Suhail 2026]])
+- FIM/AIM/IUS ([[Suhail 2026 - Metrics for Ambient Clinical Documentation Scoping Review|Suhail 2026]]) *(⚠️ verify: unclear where Suhail is sourcing FIM/AIM/IUS from — check that these scales appear in the paper and are correctly attributed)*
 - SEIPS 3.0 ([[Kanaparthy 2025 - Real-World Evidence Digital Scribes Rapid Review|Kanaparthy 2025]])
 - QUEST Framework ([[Kanaparthy 2025 - Real-World Evidence Digital Scribes Rapid Review|Kanaparthy 2025]])
 - Feasibility ([[Nguyen 2023 - Implementing Digital Scribes Reduce EHR Documentation Burden Cancer Care|Nguyen 2023]])
