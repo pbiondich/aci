@@ -4,7 +4,7 @@
 **D&M Dimension:** [[NB - Net Benefits]]
 
 ## Definition
-The fully loaded cost of deploying and maintaining an ACI solution over its lifecycle — including license/subscription fees, EHR integration costs, IT infrastructure, training, ongoing vendor management, and contract terms. Distinct from financial productivity (CM-20), which measures revenue-side impact. TCO captures the denominator of any ROI calculation.
+The fully loaded cost of deploying and maintaining an ACI solution over its lifecycle — including license/subscription fees, EHR integration costs, IT infrastructure, initial and recurring training, ongoing vendor management, change management burden (absorbing vendor-driven model updates, retraining clinicians, revising governance policies), and contract terms. Distinct from financial productivity (CM-20), which measures revenue-side impact. TCO captures the denominator of any ROI calculation.
 
 ## Hypothesized Stakeholder(s)
 - **CFO** — foundational to any investment justification; needed to compare pilot product vs. EHR vendor's native offering
@@ -23,6 +23,7 @@ Nearly every study in the corpus reports efficiency or satisfaction outcomes, bu
 | Vendor contract analysis | Itemized license, integration, and support fees over contract term | Financial records |
 | IT cost tracking | Staff time for integration, maintenance, troubleshooting, and upgrades | IT department logs |
 | Training cost accounting | Hours spent on clinician onboarding, refresher training, super-user support | Training records |
+| Change management cost tracking | Staff time and resources spent responding to vendor updates, retraining, and policy revisions | IT + training + governance logs |
 | Total cost per provider per year | Normalized TCO divided by number of active users | Financial modeling |
 
 ## Key Questions for Validation

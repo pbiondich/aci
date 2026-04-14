@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--
   ACI Evaluation Report — Interactive Web Application
-  25 canonical measures derived from 494 raw measure rows across 54 papers | April 2026 | v.17
+  25 canonical measures derived from 494 raw measure rows across 54 papers | April 2026 | v.18
 
   Version History:
     v.01 — Initial build (single-page React app with Recharts)
@@ -20,7 +20,8 @@
     v.14 — Fixed title truncation in Article Explorer (full titles wrap, removed 70-char limit)
     v.15 — Added "Aliases Used in Literature" section to canonical measure details
     v.16 — Data refresh: updated measure paper counts and concerns text; corrected raw measure count 426→494; April 2026
-    v.17 — Added Draft Measures tab (14 DMs) and Decision Guide tab (stakeholder role filter: CFO/CMIO/CPO/COO)
+    v.17 — Added Draft Measures tab and Decision Guide tab (stakeholder role filter: CFO/CMIO/CPO/COO)
+    v.18 — Refined Draft Measures (12 DMs after dedup), reordered Decision Guide roles, renamed section headers, reordered detail sections
 -->
 <html lang="en">
 <head>
@@ -454,7 +455,7 @@
           React.createElement('div', { className: 'hero-inner' },
             React.createElement('h1', null, 'Evaluating Ambient Clinical Intelligence'),
             React.createElement('p', null, 'A methodological critique of the evidence base for ambient AI documentation tools in healthcare, mapping 54 studies to the DeLone & McLean IS Success Model.'),
-            React.createElement('p', { className: 'subtitle' }, '25 canonical measures derived from 494 raw measure rows across 54 papers | April 2026 | v.17')
+            React.createElement('p', { className: 'subtitle' }, '25 canonical measures derived from 494 raw measure rows across 54 papers | April 2026 | v.18')
           )
         ),
         React.createElement('div', { className: 'container' },
@@ -796,7 +797,7 @@
 
       return React.createElement('div', { className: 'container' },
         React.createElement('h1', null, 'Draft Measures'),
-        React.createElement('p', null, 'Proposed evaluation measures identified through stakeholder gap analysis. These are hypotheses pending validation via key informant interviews with healthcare executives (CFO, CMIO, CPO, COO).'),
+        React.createElement('p', null, 'Proposed additional measures identified through a stakeholder gap analysis brainstorming exercise.  These are draft pending validation via key informant interviews with healthcare executives (CFO, CMIO, CPO, COO).'),
         React.createElement('div', { style: { background: '#FFF3E0', border: '1px solid #FFB74D', borderRadius: 8, padding: '12px 16px', marginBottom: 24, fontSize: 14 } },
           React.createElement('strong', null, 'Note: '),
           'These are not yet canonical measures. They represent gaps identified in the published literature that may be important for executive decision-making about ACI investments. Validation through key informant interviews will determine which become formal measures.'
@@ -840,8 +841,14 @@
                   dm.relatedMeasures.map((r, ri) => React.createElement('li', { key: ri }, React.createElement(MdText, { text: r })))
                 )
               ),
-              dm.methods && dm.methods.length > 0 && React.createElement('div', { style: { marginBottom: 12 } },
-                React.createElement('strong', null, 'Suggested Measurement Methods:'),
+              dm.validationQuestions && dm.validationQuestions.length > 0 && React.createElement('div', { style: { marginBottom: 12 } },
+                React.createElement('strong', null, 'Key Questions for Interviews:'),
+                React.createElement('ol', { style: { margin: '6px 0 0 20px', padding: 0, fontSize: 13 } },
+                  dm.validationQuestions.map((q, qi) => React.createElement('li', { key: qi, style: { marginBottom: 4 } }, q))
+                )
+              ),
+              dm.methods && dm.methods.length > 0 && React.createElement('div', { style: { marginBottom: 8 } },
+                React.createElement('strong', null, 'Example Measurement Methods:'),
                 React.createElement('table', { className: 'data-table', style: { marginTop: 8 } },
                   React.createElement('thead', null,
                     React.createElement('tr', null,
@@ -858,12 +865,6 @@
                     ))
                   )
                 )
-              ),
-              dm.validationQuestions && dm.validationQuestions.length > 0 && React.createElement('div', { style: { marginBottom: 8 } },
-                React.createElement('strong', null, 'Key Questions for Validation:'),
-                React.createElement('ol', { style: { margin: '6px 0 0 20px', padding: 0, fontSize: 13 } },
-                  dm.validationQuestions.map((q, qi) => React.createElement('li', { key: qi, style: { marginBottom: 4 } }, q))
-                )
               )
             )
           );
@@ -874,11 +875,11 @@
     // ─── DECISION GUIDE TAB ───
     function DecisionGuideTab({ measures, draftMeasures, guideRole, setGuideRole }) {
       var roles = [
-        { id: 'ALL', label: 'All Roles', color: '#1F4E79', desc: 'Complete view across all executive stakeholders' },
-        { id: 'CFO', label: 'CFO', color: '#2E7D32', desc: 'Financial justification, ROI, revenue impact, and cost management' },
         { id: 'CMIO', label: 'CMIO', color: '#1565C0', desc: 'Clinical safety, documentation quality, system performance, and evidence rigor' },
-        { id: 'CPO', label: 'Chief People Officer', color: '#6A1B9A', desc: 'Workforce wellbeing, retention, equity, and clinician experience' },
+        { id: 'CFO', label: 'CFO', color: '#2E7D32', desc: 'Financial justification, ROI, revenue impact, and cost management' },
         { id: 'COO', label: 'COO', color: '#E65100', desc: 'Operational scalability, reliability, workflow impact, and throughput' },
+        { id: 'CPO', label: 'Chief People Officer', color: '#6A1B9A', desc: 'Workforce wellbeing, retention, equity, and clinician experience' },
+        { id: 'ALL', label: 'All Roles', color: '#1F4E79', desc: 'Complete view across all executive stakeholders' },
       ];
 
       // Map canonical measures to stakeholder roles
@@ -928,7 +929,7 @@
         ),
 
         // Canonical Measures section
-        React.createElement('h2', { style: { borderBottom: '2px solid #1F4E79', paddingBottom: 8, marginBottom: 16 } }, 'Evidence from the Literature'),
+        React.createElement('h2', { style: { borderBottom: '2px solid #1F4E79', paddingBottom: 8, marginBottom: 16 } }, 'Literature-Derived Measures'),
         React.createElement('p', { style: { fontSize: 14, color: '#666', marginBottom: 16 } },
           guideRole === 'ALL'
             ? 'All 25 canonical measures derived from the published evidence base.'
@@ -954,7 +955,7 @@
 
         // Evidence gaps section
         filteredDMs.length > 0 && React.createElement(React.Fragment, null,
-          React.createElement('h2', { style: { borderBottom: '2px solid #FFB74D', paddingBottom: 8, marginTop: 32, marginBottom: 16 } }, 'Evidence Gaps (Draft Measures)'),
+          React.createElement('h2', { style: { borderBottom: '2px solid #FFB74D', paddingBottom: 8, marginTop: 32, marginBottom: 16 } }, 'Additional Draft Measures'),
           React.createElement('p', { style: { fontSize: 14, color: '#666', marginBottom: 16 } },
             guideRole === 'ALL'
               ? 'All 14 draft measures identified through stakeholder gap analysis — pending key informant validation.'
