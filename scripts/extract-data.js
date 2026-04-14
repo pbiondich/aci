@@ -336,6 +336,77 @@ function parseDimensions() {
 }
 
 // ============================================================================
+// DRAFT MEASURE PARSING
+// ============================================================================
+
+function parseDraftMeasure(filePath) {
+  const content = readFile(filePath);
+  if (!content) return null;
+
+  const filename = path.basename(filePath, '.md');
+  const idMatch = filename.match(/^(DM-\d{2})/);
+  const id = idMatch ? idMatch[1] : filename;
+
+  const nameMatch = content.match(/^#+ (.+)$/m);
+  const name = nameMatch ? nameMatch[1].replace(/^DM-\d{2}\s*/, '').trim() : filename;
+
+  let dimension = '';
+  const dimMatch = content.match(/\*\*D&M Dimension:\*\*\s*\[\[([^\]]+)\]\]/);
+  if (dimMatch) dimension = dimMatch[1];
+
+  const definition = extractSingleLine(content, 'Definition');
+
+  // Extract stakeholders as bullet points with role and rationale
+  const stakeholderSection = extractSection(content, 'Hypothesized Stakeholder\\(s\\)');
+  const stakeholders = [];
+  if (stakeholderSection) {
+    const lines = stakeholderSection.split('\n').filter(l => l.trim().startsWith('-'));
+    for (const line of lines) {
+      const roleMatch = line.match(/\*\*(\w+)\*\*\s*[—\-]\s*(.*)/);
+      if (roleMatch) {
+        stakeholders.push({ role: roleMatch[1], rationale: roleMatch[2].trim() });
+      }
+    }
+  }
+
+  const rationale = extractSection(content, 'Rationale');
+
+  // Extract related canonical measures
+  const relSection = extractSection(content, 'Relationship to Existing Canonical Measures');
+  const relatedMeasures = [];
+  if (relSection) {
+    const lines = relSection.split('\n').filter(l => l.trim().startsWith('-'));
+    for (const line of lines) {
+      const cleaned = line.replace(/^[\s-*]+/, '')
+        .replace(/\[\[([^\]|]+)\|([^\]]+)\]\]/g, '$2')
+        .replace(/\[\[([^\]]+)\]\]/g, '$1')
+        .trim();
+      if (cleaned) relatedMeasures.push(cleaned);
+    }
+  }
+
+  // Extract suggested methods table
+  const methods = extractTable(content, 'Suggested Measurement Methods');
+
+  // Extract validation questions
+  const validationQuestions = [];
+  const vqSection = extractSection(content, 'Key Questions for Validation');
+  if (vqSection) {
+    const lines = vqSection.split('\n').filter(l => l.trim().startsWith('-'));
+    for (const line of lines) {
+      const q = line.replace(/^[\s-*]+/, '').trim();
+      if (q) validationQuestions.push(q);
+    }
+  }
+
+  return {
+    id, name, dimension, definition, stakeholders, rationale,
+    relatedMeasures, methods, validationQuestions,
+    status: 'Draft — pending key informant validation'
+  };
+}
+
+// ============================================================================
 // MAIN
 // ============================================================================
 
@@ -352,7 +423,7 @@ function main() {
   console.log(`Articles parsed: ${articles.length}`);
 
   // Measures
-  const measureFiles = getMarkdownFiles(path.join(VAULT_ROOT, 'Measures'));
+  const measureFiles = getMarkdownFiles(path.join(VAULT_ROOT, 'Canonical Measures'));
   let measures = measureFiles
     .filter(f => !path.basename(f).startsWith('README'))
     .map(parseMeasure)
@@ -373,10 +444,19 @@ function main() {
   });
   console.log(`Dimensions parsed: ${dimensions.length}`);
 
+  // Draft Measures
+  const draftMeasureFiles = getMarkdownFiles(path.join(VAULT_ROOT, 'Draft Measures'));
+  const draftMeasures = draftMeasureFiles
+    .filter(f => !path.basename(f).startsWith('README') && !path.basename(f).startsWith('Draft Measure Template'))
+    .map(parseDraftMeasure)
+    .filter(m => m && m.id && m.id.startsWith('DM-'));
+  console.log(`Draft Measures parsed: ${draftMeasures.length}`);
+
   // Write JSON
   fs.writeFileSync(path.join(OUTPUT_DIR, 'articles.json'), JSON.stringify(articles, null, 2));
   fs.writeFileSync(path.join(OUTPUT_DIR, 'measures.json'), JSON.stringify(measures, null, 2));
   fs.writeFileSync(path.join(OUTPUT_DIR, 'dimensions.json'), JSON.stringify(dimensions, null, 2));
+  fs.writeFileSync(path.join(OUTPUT_DIR, 'draft-measures.json'), JSON.stringify(draftMeasures, null, 2));
 
   console.log(`\nJSON files written to ${OUTPUT_DIR}`);
   console.log('Done.');

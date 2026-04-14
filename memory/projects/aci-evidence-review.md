@@ -2,7 +2,7 @@
 
 **Repo:** https://github.com/pbiondich/aci
 **Live site:** https://pbiondich.github.io/aci/
-**Current version:** v.15
+**Current version:** v.17
 **Status:** Active
 
 ## What It Is
@@ -11,7 +11,7 @@ A systematic literature review of 54 studies evaluating Ambient Clinical Intelli
 ## Architecture
 - **Obsidian vault** — markdown files are the single source of truth
   - `Articles/*.md` — 54 study articles
-  - `Measures/CM-*.md` — 25 canonical measures
+  - `Canonical Measures/CM-*.md` — 25 canonical measures
   - `D&M Dimensions/*.md` — 6 D&M dimensions
 - **Extraction script** — `scripts/extract-data.js` (Node.js) reads vault markdown, outputs JSON to `docs/data/`
 - **Web app** — `docs/index.html`, single HTML file, React 18.2.0 via CDN (production UMD), no build step
@@ -75,6 +75,8 @@ A systematic literature review of 54 studies evaluating Ambient Clinical Intelli
 - v.13 — Responsive Article Explorer table (dynamic column widths, mobile breakpoints)
 - v.14 — Fixed title truncation (full titles wrap, removed 70-char limit)
 - v.15 — Added "Aliases Used in Literature" section to canonical measure details
+- v.16 — Data refresh: updated measure paper counts and concerns; corrected raw measure count 426→494; April 2026
+- v.17 — Added Draft Measures tab (14 DMs) and Decision Guide tab (stakeholder role filter: CFO/CMIO/CPO/COO)
 
 ## Key Files
 | File | Purpose |

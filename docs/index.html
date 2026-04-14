@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--
   ACI Evaluation Report — Interactive Web Application
-  25 canonical measures derived from 494 raw measure rows across 54 papers | April 2026 | v.16
+  25 canonical measures derived from 494 raw measure rows across 54 papers | April 2026 | v.17
 
   Version History:
     v.01 — Initial build (single-page React app with Recharts)
@@ -20,6 +20,7 @@
     v.14 — Fixed title truncation in Article Explorer (full titles wrap, removed 70-char limit)
     v.15 — Added "Aliases Used in Literature" section to canonical measure details
     v.16 — Data refresh: updated measure paper counts and concerns text; corrected raw measure count 426→494; April 2026
+    v.17 — Added Draft Measures tab (14 DMs) and Decision Guide tab (stakeholder role filter: CFO/CMIO/CPO/COO)
 -->
 <html lang="en">
 <head>
@@ -386,9 +387,12 @@
       const [articles, setArticles] = useState([]);
       const [measures, setMeasures] = useState([]);
       const [dimensions, setDimensions] = useState([]);
+      const [draftMeasures, setDraftMeasures] = useState([]);
       const [tab, setTab] = useState('overview');
       const [selectedArticle, setSelectedArticle] = useState(null);
       const [expandedMeasure, setExpandedMeasure] = useState(null);
+      const [expandedDraft, setExpandedDraft] = useState(null);
+      const [guideRole, setGuideRole] = useState('ALL');
       const [filters, setFilters] = useState({ search: '', design: '', product: '', year: '', dimension: '' });
 
       useEffect(() => {
@@ -396,12 +400,15 @@
           fetch('data/articles.json').then(r => r.json()),
           fetch('data/measures.json').then(r => r.json()),
           fetch('data/dimensions.json').then(r => r.json()),
-        ]).then(([a, m, d]) => { setArticles(a); setMeasures(m); setDimensions(d); });
+          fetch('data/draft-measures.json').then(r => r.json()).catch(() => []),
+        ]).then(([a, m, d, dm]) => { setArticles(a); setMeasures(m); setDimensions(d); setDraftMeasures(dm); });
       }, []);
 
       const tabs = [
         { id: 'overview', label: 'Overview' },
         { id: 'measures', label: 'Canonical Measures' },
+        { id: 'drafts', label: 'Draft Measures' },
+        { id: 'guide', label: 'Decision Guide' },
         { id: 'articles', label: 'Article Explorer' },
         { id: 'framework', label: 'D&M Framework' },
         { id: 'corpus', label: 'Study Corpus' },
@@ -426,6 +433,8 @@
         tab === 'corpus' && React.createElement(CorpusTab, { articles }),
         tab === 'framework' && React.createElement(FrameworkTab, { dimensions, measures, articles }),
         tab === 'measures' && React.createElement(MeasuresTab, { measures, expandedMeasure, setExpandedMeasure }),
+        tab === 'drafts' && React.createElement(DraftMeasuresTab, { draftMeasures, expandedDraft, setExpandedDraft }),
+        tab === 'guide' && React.createElement(DecisionGuideTab, { measures, draftMeasures, guideRole, setGuideRole }),
         tab === 'rigor' && React.createElement(RigorTab, { measures }),
         tab === 'articles' && React.createElement(ArticlesTab, { articles, filters, setFilters, selectedArticle, setSelectedArticle }),
         selectedArticle && React.createElement(ArticleModal, { article: selectedArticle, onClose: () => setSelectedArticle(null) }),
@@ -445,7 +454,7 @@
           React.createElement('div', { className: 'hero-inner' },
             React.createElement('h1', null, 'Evaluating Ambient Clinical Intelligence'),
             React.createElement('p', null, 'A methodological critique of the evidence base for ambient AI documentation tools in healthcare, mapping 54 studies to the DeLone & McLean IS Success Model.'),
-            React.createElement('p', { className: 'subtitle' }, '25 canonical measures derived from 494 raw measure rows across 54 papers | April 2026 | v.16')
+            React.createElement('p', { className: 'subtitle' }, '25 canonical measures derived from 494 raw measure rows across 54 papers | April 2026 | v.17')
           )
         ),
         React.createElement('div', { className: 'container' },
@@ -770,6 +779,214 @@
               })
             )
           )
+        )
+      );
+    }
+
+    // ─── DRAFT MEASURES TAB ───
+    function DraftMeasuresTab({ draftMeasures, expandedDraft, setExpandedDraft }) {
+      var stakeholderColors = { CFO: '#2E7D32', CMIO: '#1565C0', CPO: '#6A1B9A', COO: '#E65100' };
+
+      function stakeholderPill(role) {
+        return React.createElement('span', {
+          key: role,
+          style: { display: 'inline-block', padding: '2px 8px', borderRadius: 12, fontSize: 11, fontWeight: 600, color: '#fff', background: stakeholderColors[role] || '#666', marginRight: 4 }
+        }, role);
+      }
+
+      return React.createElement('div', { className: 'container' },
+        React.createElement('h1', null, 'Draft Measures'),
+        React.createElement('p', null, 'Proposed evaluation measures identified through stakeholder gap analysis. These are hypotheses pending validation via key informant interviews with healthcare executives (CFO, CMIO, CPO, COO).'),
+        React.createElement('div', { style: { background: '#FFF3E0', border: '1px solid #FFB74D', borderRadius: 8, padding: '12px 16px', marginBottom: 24, fontSize: 14 } },
+          React.createElement('strong', null, 'Note: '),
+          'These are not yet canonical measures. They represent gaps identified in the published literature that may be important for executive decision-making about ACI investments. Validation through key informant interviews will determine which become formal measures.'
+        ),
+        draftMeasures.map((dm, i) => {
+          var isExpanded = expandedDraft === dm.id;
+          return React.createElement('div', { key: dm.id, className: 'card', style: { marginBottom: 12, cursor: 'pointer', borderLeft: '4px solid #FFB74D' },
+            onClick: () => setExpandedDraft(isExpanded ? null : dm.id) },
+            React.createElement('div', { style: { display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' } },
+              React.createElement('div', null,
+                React.createElement('strong', { style: { fontSize: 16 } }, dm.id + ' '),
+                React.createElement('span', { style: { fontSize: 16 } }, dm.name),
+                React.createElement('div', { style: { marginTop: 6 } },
+                  dm.stakeholders.map(s => stakeholderPill(s.role)),
+                  React.createElement('span', { style: { marginLeft: 8, fontSize: 12, color: '#666' } }, dimPill(dm.dimension.split(' - ')[0]))
+                )
+              ),
+              React.createElement('span', { style: { fontSize: 12, color: '#999', whiteSpace: 'nowrap' } }, isExpanded ? '▲ collapse' : '▼ expand')
+            ),
+            isExpanded && React.createElement('div', { style: { marginTop: 16, borderTop: '1px solid #eee', paddingTop: 12 }, onClick: e => e.stopPropagation() },
+              dm.definition && React.createElement('div', { style: { marginBottom: 12 } },
+                React.createElement('strong', null, 'Definition: '),
+                React.createElement(MdText, { text: dm.definition })
+              ),
+              dm.stakeholders && dm.stakeholders.length > 0 && React.createElement('div', { style: { marginBottom: 12 } },
+                React.createElement('strong', null, 'Stakeholder Relevance:'),
+                React.createElement('ul', { style: { margin: '6px 0 0 20px', padding: 0, fontSize: 13 } },
+                  dm.stakeholders.map((s, si) => React.createElement('li', { key: si, style: { marginBottom: 4 } },
+                    React.createElement('strong', null, s.role + ': '),
+                    s.rationale
+                  ))
+                )
+              ),
+              dm.rationale && React.createElement('div', { style: { marginBottom: 12 } },
+                React.createElement('strong', null, 'Rationale: '),
+                React.createElement(MdText, { text: dm.rationale })
+              ),
+              dm.relatedMeasures && dm.relatedMeasures.length > 0 && React.createElement('div', { style: { marginBottom: 12 } },
+                React.createElement('strong', null, 'Related Canonical Measures:'),
+                React.createElement('ul', { style: { margin: '6px 0 0 20px', padding: 0, fontSize: 13 } },
+                  dm.relatedMeasures.map((r, ri) => React.createElement('li', { key: ri }, React.createElement(MdText, { text: r })))
+                )
+              ),
+              dm.methods && dm.methods.length > 0 && React.createElement('div', { style: { marginBottom: 12 } },
+                React.createElement('strong', null, 'Suggested Measurement Methods:'),
+                React.createElement('table', { className: 'data-table', style: { marginTop: 8 } },
+                  React.createElement('thead', null,
+                    React.createElement('tr', null,
+                      React.createElement('th', null, 'Method'),
+                      React.createElement('th', null, 'Description'),
+                      React.createElement('th', null, 'Data Source')
+                    )
+                  ),
+                  React.createElement('tbody', null,
+                    dm.methods.map((m, mi) => React.createElement('tr', { key: mi },
+                      React.createElement('td', null, m.method || ''),
+                      React.createElement('td', { style: { fontSize: 13 } }, m.description || ''),
+                      React.createElement('td', null, m.data_source || '')
+                    ))
+                  )
+                )
+              ),
+              dm.validationQuestions && dm.validationQuestions.length > 0 && React.createElement('div', { style: { marginBottom: 8 } },
+                React.createElement('strong', null, 'Key Questions for Validation:'),
+                React.createElement('ol', { style: { margin: '6px 0 0 20px', padding: 0, fontSize: 13 } },
+                  dm.validationQuestions.map((q, qi) => React.createElement('li', { key: qi, style: { marginBottom: 4 } }, q))
+                )
+              )
+            )
+          );
+        })
+      );
+    }
+
+    // ─── DECISION GUIDE TAB ───
+    function DecisionGuideTab({ measures, draftMeasures, guideRole, setGuideRole }) {
+      var roles = [
+        { id: 'ALL', label: 'All Roles', color: '#1F4E79', desc: 'Complete view across all executive stakeholders' },
+        { id: 'CFO', label: 'CFO', color: '#2E7D32', desc: 'Financial justification, ROI, revenue impact, and cost management' },
+        { id: 'CMIO', label: 'CMIO', color: '#1565C0', desc: 'Clinical safety, documentation quality, system performance, and evidence rigor' },
+        { id: 'CPO', label: 'Chief People Officer', color: '#6A1B9A', desc: 'Workforce wellbeing, retention, equity, and clinician experience' },
+        { id: 'COO', label: 'COO', color: '#E65100', desc: 'Operational scalability, reliability, workflow impact, and throughput' },
+      ];
+
+      // Map canonical measures to stakeholder roles
+      var cmRoleMap = {
+        CFO: ['CM-04', 'CM-05', 'CM-20', 'CM-22', 'CM-21'],
+        CMIO: ['CM-08', 'CM-09', 'CM-10', 'CM-11', 'CM-12', 'CM-19', 'CM-24', 'CM-25', 'CM-13'],
+        CPO: ['CM-01', 'CM-02', 'CM-03', 'CM-05', 'CM-15', 'CM-16'],
+        COO: ['CM-04', 'CM-06', 'CM-07', 'CM-13', 'CM-22', 'CM-23'],
+      };
+
+      var activeRole = roles.find(r => r.id === guideRole) || roles[0];
+
+      // Filter canonical measures
+      var filteredCMs = measures;
+      if (guideRole !== 'ALL') {
+        var cmIds = cmRoleMap[guideRole] || [];
+        filteredCMs = measures.filter(m => cmIds.includes(m.id));
+      }
+
+      // Filter draft measures
+      var filteredDMs = draftMeasures;
+      if (guideRole !== 'ALL') {
+        filteredDMs = draftMeasures.filter(dm => dm.stakeholders.some(s => s.role === guideRole));
+      }
+
+      return React.createElement('div', { className: 'container' },
+        React.createElement('h1', null, 'Decision Guide'),
+        React.createElement('p', null, 'A stakeholder-focused view of ACI evaluation evidence. Select a role to see the canonical measures and evidence gaps most relevant to that executive\'s decision-making needs.'),
+
+        // Role selector buttons
+        React.createElement('div', { style: { display: 'flex', flexWrap: 'wrap', gap: 8, marginBottom: 24 } },
+          roles.map(r => React.createElement('button', {
+            key: r.id,
+            onClick: () => setGuideRole(r.id),
+            style: {
+              padding: '10px 20px', borderRadius: 8, border: guideRole === r.id ? '2px solid ' + r.color : '2px solid #ddd',
+              background: guideRole === r.id ? r.color : '#fff', color: guideRole === r.id ? '#fff' : '#333',
+              fontWeight: 600, fontSize: 14, cursor: 'pointer', transition: 'all 0.2s'
+            }
+          }, r.label))
+        ),
+
+        // Role description
+        React.createElement('div', { className: 'card', style: { background: activeRole.color + '11', borderLeft: '4px solid ' + activeRole.color, marginBottom: 24 } },
+          React.createElement('strong', { style: { color: activeRole.color } }, activeRole.label + ': '),
+          React.createElement('span', null, activeRole.desc)
+        ),
+
+        // Canonical Measures section
+        React.createElement('h2', { style: { borderBottom: '2px solid #1F4E79', paddingBottom: 8, marginBottom: 16 } }, 'Evidence from the Literature'),
+        React.createElement('p', { style: { fontSize: 14, color: '#666', marginBottom: 16 } },
+          guideRole === 'ALL'
+            ? 'All 25 canonical measures derived from the published evidence base.'
+            : filteredCMs.length + ' canonical measures most relevant to the ' + activeRole.label + '.'
+        ),
+        filteredCMs.map(m => React.createElement('div', { key: m.id, className: 'card', style: { marginBottom: 10, borderLeft: '4px solid #1F4E79' } },
+          React.createElement('div', { style: { display: 'flex', justifyContent: 'space-between', alignItems: 'center' } },
+            React.createElement('div', null,
+              React.createElement('strong', null, m.id + ' '),
+              React.createElement('span', null, m.name),
+              React.createElement('span', { style: { marginLeft: 8 } }, dimPill(m.dimension.split(' - ')[0]))
+            ),
+            React.createElement('div', { style: { display: 'flex', alignItems: 'center', gap: 12 } },
+              React.createElement('span', { style: { fontSize: 12, color: '#666' } }, m.paperCount + ' papers'),
+              m.paperCount >= 10 && React.createElement('span', { style: { display: 'inline-block', width: 10, height: 10, borderRadius: '50%', background: '#4CAF50' } }),
+              m.paperCount >= 5 && m.paperCount < 10 && React.createElement('span', { style: { display: 'inline-block', width: 10, height: 10, borderRadius: '50%', background: '#FFC107' } }),
+              m.paperCount < 5 && React.createElement('span', { style: { display: 'inline-block', width: 10, height: 10, borderRadius: '50%', background: '#f44336' } })
+            )
+          ),
+          m.definition && React.createElement('p', { style: { fontSize: 13, color: '#555', margin: '8px 0 0' } }, React.createElement(MdText, { text: m.definition })),
+          m.concerns && React.createElement('div', { style: { fontSize: 13, color: '#b71c1c', marginTop: 8, fontStyle: 'italic' } }, React.createElement(MdText, { text: m.concerns }))
+        )),
+
+        // Evidence gaps section
+        filteredDMs.length > 0 && React.createElement(React.Fragment, null,
+          React.createElement('h2', { style: { borderBottom: '2px solid #FFB74D', paddingBottom: 8, marginTop: 32, marginBottom: 16 } }, 'Evidence Gaps (Draft Measures)'),
+          React.createElement('p', { style: { fontSize: 14, color: '#666', marginBottom: 16 } },
+            guideRole === 'ALL'
+              ? 'All 14 draft measures identified through stakeholder gap analysis — pending key informant validation.'
+              : filteredDMs.length + ' evidence gaps most relevant to the ' + activeRole.label + '.'
+          ),
+          filteredDMs.map(dm => React.createElement('div', { key: dm.id, className: 'card', style: { marginBottom: 10, borderLeft: '4px solid #FFB74D' } },
+            React.createElement('div', null,
+              React.createElement('strong', null, dm.id + ' '),
+              React.createElement('span', null, dm.name),
+              React.createElement('span', { style: { marginLeft: 8 } }, dimPill(dm.dimension.split(' - ')[0])),
+              dm.stakeholders.map(s => React.createElement('span', {
+                key: s.role,
+                style: { display: 'inline-block', padding: '2px 8px', borderRadius: 12, fontSize: 11, fontWeight: 600, color: '#fff', background: (roles.find(r => r.id === s.role) || {}).color || '#666', marginLeft: 4 }
+              }, s.role))
+            ),
+            dm.definition && React.createElement('p', { style: { fontSize: 13, color: '#555', margin: '8px 0 0' } }, React.createElement(MdText, { text: dm.definition })),
+            guideRole !== 'ALL' && dm.stakeholders.filter(s => s.role === guideRole).map(s =>
+              React.createElement('p', { key: s.role, style: { fontSize: 13, color: '#666', marginTop: 4, fontStyle: 'italic' } }, s.rationale)
+            )
+          ))
+        ),
+
+        // Summary stats
+        React.createElement('div', { style: { marginTop: 32, padding: 16, background: '#f5f5f5', borderRadius: 8, fontSize: 13, color: '#666', textAlign: 'center' } },
+          React.createElement('span', null, filteredCMs.length + ' canonical measures with published evidence'),
+          React.createElement('span', null, ' · '),
+          React.createElement('span', null, filteredDMs.length + ' draft measures pending validation'),
+          React.createElement('span', null, ' · '),
+          React.createElement('span', null, 'Evidence strength: '),
+          React.createElement('span', { style: { display: 'inline-block', width: 10, height: 10, borderRadius: '50%', background: '#4CAF50' } }), ' 10+ papers ',
+          React.createElement('span', { style: { display: 'inline-block', width: 10, height: 10, borderRadius: '50%', background: '#FFC107' } }), ' 5-9 ',
+          React.createElement('span', { style: { display: 'inline-block', width: 10, height: 10, borderRadius: '50%', background: '#f44336' } }), ' <5'
         )
       );
     }
