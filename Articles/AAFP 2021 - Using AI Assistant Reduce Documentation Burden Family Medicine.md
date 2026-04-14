@@ -34,14 +34,14 @@ Not explicitly stated. Aim: assess whether AI-assisted documentation (Suki) is e
 
 ## Study Measures
 
-| Measure | Description | D&M Dimension(s) |
-|---|---|---|
-| Adoption rate | % of trial participants who purchased Suki after trial; 60% (61/102) | U |
-| Documentation time reduction | % reduction in median per-note documentation time among adopters; 72% | NB |
-| Time savings per week | Calculated hours saved per clinician per week; 3.3 hours | NB |
-| In-clinic documentation time | Phase 1 finding: 62% reduction in documentation time during clinic hours | NB |
-| After-hours documentation time | Phase 1 finding: 76% reduction in after-hours documentation | NB |
-| Physician satisfaction | Self-reported satisfaction with workload and practice | US |
+| Measure                        | Description                                                              | D&M Dimension(s) |
+| ------------------------------ | ------------------------------------------------------------------------ | ---------------- |
+| Adoption rate                  | % of trial participants who purchased Suki after trial; 60% (61/102)     | U                |
+| Documentation time reduction   | % reduction in median per-note documentation time among adopters; 72%    | NB               |
+| Time savings per week          | Calculated hours saved per clinician per week; 3.3 hours                 | NB               |
+| In-clinic documentation time   | Phase 1 finding: 62% reduction in documentation time during clinic hours | NB               |
+| After-hours documentation time | Phase 1 finding: 76% reduction in after-hours documentation              | NB               |
+| Physician satisfaction         | Self-reported satisfaction with workload and practice                    | US               |
 
 ---
 

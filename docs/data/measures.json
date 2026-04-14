@@ -4,7 +4,7 @@
     "name": "Clinician Burnout and Exhaustion",
     "dimension": "US - User Satisfaction",
     "domain": "Clinician Well-Being",
-    "paperCount": 14,
+    "paperCount": 16,
     "definition": "Provider-reported emotional exhaustion, depersonalization, and interpersonal disengagement from clinical work — the core burnout syndrome. Measured via validated psychometric instruments. Distinct from cognitive task load (in-encounter mental effort) and professional fulfillment (positive engagement).",
     "instruments": [
       "Stanford PFI — Work Exhaustion subscale",
@@ -40,7 +40,9 @@
       "Shah 2024 - Ambient AI Scribes Physician Burnout Usability Documentation Burden",
       "Stults 2025 - Evaluation Ambient AI Documentation Platform Clinicians",
       "Suhail 2026 - Metrics for Ambient Clinical Documentation Scoping Review",
-      "You 2025 - Ambient Documentation Technology Documentation Burden Burnout"
+      "You 2025 - Ambient Documentation Technology Documentation Burden Burnout",
+      "Tierney 2025 - Ambient AI Scribes Learnings 1 Year 2.5 Million Uses",
+      "Billings 2025b - Practicing Value-Based Care with AI"
     ]
   },
   {
@@ -188,7 +190,7 @@
     "name": "After-Hours Documentation",
     "dimension": "NB - Net Benefits",
     "domain": "Documentation Efficiency",
-    "paperCount": 17,
+    "paperCount": 18,
     "definition": "Time spent on clinical documentation outside of scheduled working hours — 'pajama time', 'after-hours EHR', or 'work outside work.' Distinct from total documentation time (CM-04) because it captures work-life boundary effects specifically. One of the most clinically meaningful outcomes because it directly affects physician well-being.",
     "instruments": [
       "EHR audit-log (Epic Signal / UAL)",
@@ -212,7 +214,7 @@
     ],
     "typicalFindings": "",
     "rigorRating": "",
-    "concerns": "**Consistent null pattern in objective data:** After-hours time does NOT improve significantly in EHR telemetry across most corpus papers (Pearlman 2025, Stults 2025). Self-report shows improvement. Exceptions: Duggan 2025 (−16.9%), Boyter/KLAS 2025 (−39% UAL), Afshar 2025b (−0.50 hrs/day, but fragile — disappears after removing top 3% outliers). This self-report/objective divergence is one of the most reproducible findings in the corpus.",
+    "concerns": "**Consistent null pattern in objective data:** After-hours time does NOT improve significantly in EHR telemetry across most corpus papers (Pearlman 2025, Stults 2025). Self-report shows improvement. Exceptions: Duggan 2025 (−16.9%), Boyter/KLAS 2025 (−39% UAL), Afshar 2025b (−0.50 hrs/day, but fragile — disappears after removing top 3% outliers). **Tierney 2025** adds one of the strongest objective signals in the corpus: DiD reduction in pajama time (−1.03 min, p=0.02) and time outside 7am–7pm (−1.83 min, p<0.001). This self-report/objective divergence remains one of the most reproducible findings.",
     "papers": [
       "AAFP 2021 - Using AI Assistant Reduce Documentation Burden Family Medicine",
       "Afshar 2025 - Novel Playbook for Pragmatic Trial Operations",
@@ -230,7 +232,8 @@
       "Pearlman 2025 - AI Scribe EHR Efficiency",
       "Peterson Health Technology Institute 2025 - Adoption AI Healthcare Delivery Systems",
       "Stults 2025 - Evaluation Ambient AI Documentation Platform Clinicians",
-      "Suhail 2026 - Metrics for Ambient Clinical Documentation Scoping Review"
+      "Suhail 2026 - Metrics for Ambient Clinical Documentation Scoping Review",
+      "Tierney 2025 - Ambient AI Scribes Learnings 1 Year 2.5 Million Uses"
     ]
   },
   {
@@ -528,7 +531,7 @@
     "name": "Adoption Behavior and Utilization Rate",
     "dimension": "U - Use",
     "domain": "Adoption & Use",
-    "paperCount": 12,
+    "paperCount": 13,
     "definition": "Actual, observed use of the ambient AI scribe — measured as % of encounters in which the tool is used, number of sessions, or paid adoption post-trial. Captures behavior (what people actually do), not intention (what they say they'll do).",
     "instruments": [
       "Utilization rate (% of encounters)",
@@ -568,7 +571,8 @@
       "Omon 2025 - Generative AI Rehabilitation Clinical Documentation",
       "Shah 2025 - Physician Perspectives Ambient AI Scribes",
       "Tierney 2025 - Ambient AI Scribes Learnings 1 Year 2.5 Million Uses",
-      "You 2025 - Ambient Documentation Technology Documentation Burden Burnout"
+      "You 2025 - Ambient Documentation Technology Documentation Burden Burnout",
+      "Tierney 2025 - Ambient AI Scribes Learnings 1 Year 2.5 Million Uses"
     ]
   },
   {
@@ -700,7 +704,7 @@
     "name": "Patient Experience and Relationship Quality",
     "dimension": "NB - Net Benefits",
     "domain": "Patient Outcomes",
-    "paperCount": 17,
+    "paperCount": 18,
     "definition": "Patient-reported or validated assessment of the quality of the patient-physician interaction — including relationship quality, satisfaction with the visit, and experience of being heard. The most underdeveloped outcome domain in the corpus, measured primarily through validated instruments in only 1 paper.",
     "instruments": [
       "PDRQ-9 (Patient-Doctor Relationship Questionnaire)",
@@ -743,7 +747,8 @@
       "Suhail 2026 - Metrics for Ambient Clinical Documentation Scoping Review",
       "Tierney 2024 - Ambient Artificial Intelligence Scribes Alleviate Burden Clinical Documentation",
       "Tierney 2025 - Ambient AI Scribes Learnings 1 Year 2.5 Million Uses",
-      "Wojda 2025 - HCI of Ambient AI Qualitative Study"
+      "Wojda 2025 - HCI of Ambient AI Qualitative Study",
+      "Tierney 2025 - Ambient AI Scribes Learnings 1 Year 2.5 Million Uses"
     ]
   },
   {
@@ -751,7 +756,7 @@
     "name": "Physician-Patient Interaction Quality",
     "dimension": "NB - Net Benefits",
     "domain": "Patient Outcomes",
-    "paperCount": 8,
+    "paperCount": 9,
     "definition": "Behavioral measures of the quality of the physician-patient interaction during the clinical encounter — including face-to-face time, clinician attentiveness, screen time reduction, and perceived engagement. Distinct from patient experience (CM-17), which is patient-reported; this is primarily clinician-reported or observed.",
     "instruments": [
       "Doctor-patient interaction time (min)",
@@ -782,7 +787,8 @@
       "Karavassilis 2025 - Ambient Voice Technology Same Day Emergency Care SDEC",
       "Prasad 2025 - Clinician Perceptions Virtual Scribe Use Survey",
       "Shuaib 2021 - Scribe Program Patient Throughput Physician Productivity",
-      "Stults 2025 - Evaluation Ambient AI Documentation Platform Clinicians"
+      "Stults 2025 - Evaluation Ambient AI Documentation Platform Clinicians",
+      "Tierney 2025 - Ambient AI Scribes Learnings 1 Year 2.5 Million Uses"
     ]
   },
   {

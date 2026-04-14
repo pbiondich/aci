@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--
   ACI Evaluation Report — Interactive Web Application
-  25 canonical measures derived from 426 raw measure rows across 54 papers | March 2026 | v.15
+  25 canonical measures derived from 494 raw measure rows across 54 papers | April 2026 | v.16
 
   Version History:
     v.01 — Initial build (single-page React app with Recharts)
@@ -19,6 +19,7 @@
     v.13 — Responsive Article Explorer table (dynamic column widths, mobile breakpoints)
     v.14 — Fixed title truncation in Article Explorer (full titles wrap, removed 70-char limit)
     v.15 — Added "Aliases Used in Literature" section to canonical measure details
+    v.16 — Data refresh: updated measure paper counts and concerns text; corrected raw measure count 426→494; April 2026
 -->
 <html lang="en">
 <head>
@@ -444,14 +445,14 @@
           React.createElement('div', { className: 'hero-inner' },
             React.createElement('h1', null, 'Evaluating Ambient Clinical Intelligence'),
             React.createElement('p', null, 'A methodological critique of the evidence base for ambient AI documentation tools in healthcare, mapping 54 studies to the DeLone & McLean IS Success Model.'),
-            React.createElement('p', { className: 'subtitle' }, '25 canonical measures derived from 426 raw measure rows across 54 papers | March 2026 | v.15')
+            React.createElement('p', { className: 'subtitle' }, '25 canonical measures derived from 494 raw measure rows across 54 papers | April 2026 | v.16')
           )
         ),
         React.createElement('div', { className: 'container' },
           React.createElement('div', { className: 'stats-row' },
             [
               { n: articles.length, l: 'Studies Reviewed' },
-              { n: '426', l: 'Raw Measures Extracted' },
+              { n: '494', l: 'Raw Measures Extracted' },
               { n: measures.length, l: 'Canonical Measures' },
               { n: '3', l: 'Randomized Trials' },
               { n: '6', l: 'D&M Dimensions' },
@@ -485,7 +486,7 @@
           React.createElement('div', { className: 'card' },
             React.createElement('h2', { style: { marginTop: 0 } }, 'About This Review'),
             React.createElement('p', null, 'Ambient clinical intelligence (ACI) \u2014 AI tools that listen to clinical conversations and automatically generate documentation \u2014 is one of the most rapidly adopted technology categories in modern healthcare. Yet the evidence base evaluating these tools remains nascent, disorganized, and methodologically inconsistent.'),
-            React.createElement('p', null, 'This interactive report presents a systematic analysis of 54 published studies, organized through the DeLone and McLean Information Systems Success Model. By mapping 426 raw study measures into 25 canonical constructs and assessing the scientific rigor of each, this analysis identifies where the evidence is credible, where it is thin, and where critical gaps threaten patient safety and informed decision-making.'),
+            React.createElement('p', null, 'This interactive report presents a systematic analysis of 54 published studies, organized through the DeLone and McLean Information Systems Success Model. By mapping 494 raw study measures into 25 canonical constructs and assessing the scientific rigor of each, this analysis identifies where the evidence is credible, where it is thin, and where critical gaps threaten patient safety and informed decision-making.'),
             React.createElement('p', null, 'Use the navigation above to explore the study corpus, the D&M framework, individual canonical measures, rigor assessments, and the full article database.')
           ),
         )
@@ -595,7 +596,7 @@
 
       return React.createElement('div', { className: 'container' },
         React.createElement('h1', null, '25 Canonical Measures'),
-        React.createElement('p', null, 'Derived bottom-up from 426 raw measure rows across 54 papers. These canonical measures provide a shared vocabulary for cross-study comparison of ambient AI evaluation.'),
+        React.createElement('p', null, 'Derived bottom-up from 494 raw measure rows across 54 papers. These canonical measures provide a shared vocabulary for cross-study comparison of ambient AI evaluation.'),
 
         Object.entries(domains).map(([domain, ms]) =>
           React.createElement('div', { key: domain },

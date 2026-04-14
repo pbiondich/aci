@@ -31,7 +31,7 @@ Patient-reported or validated assessment of the quality of the patient-physician
 ## ⚠️ Key Note
 **CRITICAL GAP — almost entirely unmeasured with validated instruments.** Only Owens 2024 uses a validated patient-reported instrument (PDRQ-9) — and found a null result in the masked phase (p=.31). Open-label phase was positive, suggesting patient expectation effect. All other 'patient experience' data is clinician-reported or anecdotal. No paper has measured patient-reported outcomes at scale with rigorously validated tools.
 
-## Papers Measuring This (17)
+## Papers Measuring This (18)
 - [[Afshar 2025 - Novel Playbook for Pragmatic Trial Operations]]
 - [[Billings 2025a - Ambient AI Assistant Transforms Primary Care Experience]]
 - [[Bundy 2024 - Administrative Loads Physicians AI Documentation Qualitative]]
@@ -49,6 +49,7 @@ Patient-reported or validated assessment of the quality of the patient-physician
 - [[Tierney 2024 - Ambient Artificial Intelligence Scribes Alleviate Burden Clinical Documentation]]
 - [[Tierney 2025 - Ambient AI Scribes Learnings 1 Year 2.5 Million Uses]]
 - [[Wojda 2025 - HCI of Ambient AI Qualitative Study]]
+- [[Tierney 2025 - Ambient AI Scribes Learnings 1 Year 2.5 Million Uses]] (patient survey n=118: 56% positive impact on visit quality, 0% negative, 39% more time speaking with doctor, 92% comfortable/neutral with AI)
 
 ---
 *Canonical Measures | Suki Literature Review Vault | Derived 2026-03-25*

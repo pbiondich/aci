@@ -28,9 +28,9 @@ Time spent on clinical documentation outside of scheduled working hours — 'paj
 - Off-Hours EHR Activity ([[Stults 2025 - Evaluation Ambient AI Documentation Platform Clinicians|Stults 2025]])
 
 ## ⚠️ Key Note
-**Consistent null pattern in objective data:** After-hours time does NOT improve significantly in EHR telemetry across most corpus papers (Pearlman 2025, Stults 2025). Self-report shows improvement. Exceptions: Duggan 2025 (−16.9%), Boyter/KLAS 2025 (−39% UAL), Afshar 2025b (−0.50 hrs/day, but fragile — disappears after removing top 3% outliers). This self-report/objective divergence is one of the most reproducible findings in the corpus.
+**Consistent null pattern in objective data:** After-hours time does NOT improve significantly in EHR telemetry across most corpus papers (Pearlman 2025, Stults 2025). Self-report shows improvement. Exceptions: Duggan 2025 (−16.9%), Boyter/KLAS 2025 (−39% UAL), Afshar 2025b (−0.50 hrs/day, but fragile — disappears after removing top 3% outliers). **Tierney 2025** adds one of the strongest objective signals in the corpus: DiD reduction in pajama time (−1.03 min, p=0.02) and time outside 7am–7pm (−1.83 min, p<0.001). This self-report/objective divergence remains one of the most reproducible findings.
 
-## Papers Measuring This (17)
+## Papers Measuring This (18)
 - [[AAFP 2021 - Using AI Assistant Reduce Documentation Burden Family Medicine]]
 - [[Afshar 2025 - Novel Playbook for Pragmatic Trial Operations]]
 - [[Afshar 2025b - Pragmatic RCT Ambient AI Health Practitioner Wellbeing]]
@@ -48,6 +48,7 @@ Time spent on clinical documentation outside of scheduled working hours — 'paj
 - [[Peterson Health Technology Institute 2025 - Adoption AI Healthcare Delivery Systems]]
 - [[Stults 2025 - Evaluation Ambient AI Documentation Platform Clinicians]]
 - [[Suhail 2026 - Metrics for Ambient Clinical Documentation Scoping Review]]
+- [[Tierney 2025 - Ambient AI Scribes Learnings 1 Year 2.5 Million Uses]]
 
 ---
 *Canonical Measures | Suki Literature Review Vault | Derived 2026-03-25*

@@ -27,7 +27,9 @@ Provider-reported emotional exhaustion, depersonalization, and interpersonal dis
 ## ⚠️ Key Note
 **RCT effect size caveat:** Afshar 2025b (RCT, n=66) found −0.44 PFI work exhaustion. Shah 2024 (QI, selected sample) found −1.94 on same scale. The gap is expected from selection bias in non-randomized studies. The RCT estimate is more trustworthy. Burnout is dissociable from cognitive load (CM-02) and professional fulfillment (CM-03) — see Afshar 2025b where all three moved differently.
 
-## Papers Measuring This (14)
+**Tierney 2025** adds large-scale objective DiD support (pajama time −1.03 min p=0.02; after-hours −1.83 min p<0.001) plus 82% positive work satisfaction. **Billings 2025b** reports −32% burnout (p=0.023).
+
+## Papers Measuring This (16)
 - [[Afshar 2025b - Pragmatic RCT Ambient AI Health Practitioner Wellbeing]]
 - [[Albrecht 2025 - Ambient AI Clinical Documentation QI Survey]]
 - [[Billings 2025a - Ambient AI Assistant Transforms Primary Care Experience]]
@@ -42,6 +44,8 @@ Provider-reported emotional exhaustion, depersonalization, and interpersonal dis
 - [[Stults 2025 - Evaluation Ambient AI Documentation Platform Clinicians]]
 - [[Suhail 2026 - Metrics for Ambient Clinical Documentation Scoping Review]]
 - [[You 2025 - Ambient Documentation Technology Documentation Burden Burnout]]
+- [[Tierney 2025 - Ambient AI Scribes Learnings 1 Year 2.5 Million Uses]]
+- [[Billings 2025b - Practicing Value-Based Care with AI]]
 
 ---
 *Canonical Measures | Suki Literature Review Vault | Derived 2026-03-25*
