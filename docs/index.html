@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--
   ACI Evaluation Report — Interactive Web Application
-  25 canonical measures derived from 494 raw measure rows across 54 papers | April 2026 | v.19
+  25 canonical measures derived from 494 raw measure rows across 54 papers | April 2026 | v.20
 
   Version History:
     v.01 — Initial build (single-page React app with Recharts)
@@ -23,6 +23,7 @@
     v.17 — Added Draft Measures tab and Decision Guide tab (stakeholder role filter: CFO/CMIO/CPO/COO)
     v.18 — Refined Draft Measures (12 DMs after dedup), reordered Decision Guide roles, renamed section headers, reordered detail sections
     v.19 — URL hash routing for shareable tab links (e.g. #guide, #articles)
+    v.20 — Added preliminary methodology warning to Level of Rigor tab
 -->
 <html lang="en">
 <head>
@@ -468,7 +469,7 @@
           React.createElement('div', { className: 'hero-inner' },
             React.createElement('h1', null, 'Evaluating Ambient Clinical Intelligence'),
             React.createElement('p', null, 'A methodological critique of the evidence base for ambient AI documentation tools in healthcare, mapping 54 studies to the DeLone & McLean IS Success Model.'),
-            React.createElement('p', { className: 'subtitle' }, '25 canonical measures derived from 494 raw measure rows across 54 papers | April 2026 | v.19')
+            React.createElement('p', { className: 'subtitle' }, '25 canonical measures derived from 494 raw measure rows across 54 papers | April 2026 | v.20')
           )
         ),
         React.createElement('div', { className: 'container' },
@@ -697,7 +698,11 @@
 
       return React.createElement('div', { className: 'container' },
         React.createElement('h1', null, 'Level of Rigor'),
-        React.createElement('p', null, 'Each canonical measure is assessed on study design quality, instrument validation, finding convergence, and bias risk. The chart below shows rigor scores (0\u2013100) for all 25 measures.'),
+        React.createElement('div', { style: { background: '#FFF3E0', border: '1px solid #FFB74D', borderRadius: 8, padding: '16px 20px', marginBottom: 20 } },
+          React.createElement('strong', { style: { color: '#E65100' } }, '\u26A0\uFE0F Work in Progress'),
+          React.createElement('p', { style: { margin: '8px 0 0', color: '#BF360C', fontSize: 14 } }, 'The rigor scores below are a mockup to illustrate how this tab could work. The scores are placeholder values and do not yet reflect a validated methodology. A future version will introduce a formal scoring rubric based on study design quality, instrument validation, finding convergence, and bias risk.')
+        ),
+        React.createElement('p', null, 'The chart below shows placeholder rigor scores (0\u2013100) for all 25 canonical measures.'),
 
         React.createElement('div', { className: 'card' },
           React.createElement(HBarChart, { data: rigorData.map(function(d) { return { name: d.id + ': ' + d.fullName, value: d.score }; }), labelKey: 'name', valueKey: 'value', maxVal: 100, colorFn: function(d) { return getRigorColor(d.value); }, labelWidth: 320 })
