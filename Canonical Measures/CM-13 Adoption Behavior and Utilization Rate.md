@@ -34,7 +34,7 @@ Actual, observed use of the ambient AI scribe — measured as % of encounters in
 ## ⚠️ Key Note
 **Heavy-user/light-user heterogeneity is universal.** Every large deployment reports a bimodal distribution: heavy users who use ambient AI for nearly all encounters, and light/non-users. Dose-response is consistent: heavy users benefit most (Pearlman 2025, Omon 2025, Lukac 2025). Tierney 2025 found top-third of users account for disproportionate % of 2.5M total uses.
 
-## Papers Measuring This (14)
+## Papers Measuring This (13)
 - [[AAFP 2021 - Using AI Assistant Reduce Documentation Burden Family Medicine]]
 - [[Afshar 2025 - Novel Playbook for Pragmatic Trial Operations]]
 - [[Albrecht 2025 - Ambient AI Clinical Documentation QI Survey]]

@@ -34,7 +34,7 @@ Prior to this derivation (2026-03-24), the vault contained 11 seeded measures th
 ### Domain: Adoption & Use (U)
 | ID | Name | Papers |
 |---|---|---|
-| CM-13 | Adoption Behavior and Utilization Rate | 14 |
+| CM-13 | Adoption Behavior and Utilization Rate | 13 |
 | CM-14 | Adoption Intention and Long-Term Use | 6 |
 
 ### Domain: User Satisfaction (US)
@@ -66,7 +66,7 @@ Prior to this derivation (2026-03-24), the vault contained 11 seeded measures th
 | ID | Name | Papers |
 |---|---|---|
 | CM-24 | Transcription and ASR Accuracy | 3 |
-| CM-25 | Evaluation Methodology Quality *(meta)* | 15 |
+| CM-25 | Evaluation Methodology Quality *(meta)* | 14 |
 
 ## Key Derivation Decisions
 
