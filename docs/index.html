@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--
   ACI Evaluation Report — Interactive Web Application
-  25 canonical measures derived from 494 raw measure rows across 54 papers | April 2026 | v.18
+  25 canonical measures derived from 494 raw measure rows across 54 papers | April 2026 | v.19
 
   Version History:
     v.01 — Initial build (single-page React app with Recharts)
@@ -22,6 +22,7 @@
     v.16 — Data refresh: updated measure paper counts and concerns text; corrected raw measure count 426→494; April 2026
     v.17 — Added Draft Measures tab and Decision Guide tab (stakeholder role filter: CFO/CMIO/CPO/COO)
     v.18 — Refined Draft Measures (12 DMs after dedup), reordered Decision Guide roles, renamed section headers, reordered detail sections
+    v.19 — URL hash routing for shareable tab links (e.g. #guide, #articles)
 -->
 <html lang="en">
 <head>
@@ -389,12 +390,24 @@
       const [measures, setMeasures] = useState([]);
       const [dimensions, setDimensions] = useState([]);
       const [draftMeasures, setDraftMeasures] = useState([]);
-      const [tab, setTab] = useState('overview');
+      var validTabs = ['overview','measures','guide','drafts','articles','framework','corpus','rigor'];
+      function getTabFromHash() {
+        var h = window.location.hash.replace('#','');
+        return validTabs.indexOf(h) !== -1 ? h : 'overview';
+      }
+      const [tab, setTabRaw] = useState(getTabFromHash);
+      function setTab(id) { window.location.hash = id; setTabRaw(id); }
       const [selectedArticle, setSelectedArticle] = useState(null);
       const [expandedMeasure, setExpandedMeasure] = useState(null);
       const [expandedDraft, setExpandedDraft] = useState(null);
       const [guideRole, setGuideRole] = useState('CMIO');
       const [filters, setFilters] = useState({ search: '', design: '', product: '', year: '', dimension: '' });
+
+      useEffect(() => {
+        function onHash() { setTabRaw(getTabFromHash()); }
+        window.addEventListener('hashchange', onHash);
+        return function() { window.removeEventListener('hashchange', onHash); };
+      }, []);
 
       useEffect(() => {
         Promise.all([
@@ -455,7 +468,7 @@
           React.createElement('div', { className: 'hero-inner' },
             React.createElement('h1', null, 'Evaluating Ambient Clinical Intelligence'),
             React.createElement('p', null, 'A methodological critique of the evidence base for ambient AI documentation tools in healthcare, mapping 54 studies to the DeLone & McLean IS Success Model.'),
-            React.createElement('p', { className: 'subtitle' }, '25 canonical measures derived from 494 raw measure rows across 54 papers | April 2026 | v.18')
+            React.createElement('p', { className: 'subtitle' }, '25 canonical measures derived from 494 raw measure rows across 54 papers | April 2026 | v.19')
           )
         ),
         React.createElement('div', { className: 'container' },
