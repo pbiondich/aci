@@ -28,13 +28,14 @@ Provider-reported intention to continue using the ambient AI scribe beyond the s
 ## ⚠️ Key Note
 Only 5 papers explicitly measure adoption intention as a formal study measure (vs. mentioning it). Tierney 2025 found physician age and years since graduation are NOT predictive of adoption — challenging the generational adoption narrative.
 
-## Papers Measuring This (5)
+## Papers Measuring This (6)
 - [[Evans 2025 - AI Scribe Allied Health Private Practice Australia]]
 - [[Galloway 2024 - Impact Artificial Intelligence Based Solution Clinicians Clinical Documentation]]
 - [[Ma 2025 - Ambient AI Scribes Utilization Documentation Time Stanford]]
 - [[Omon 2025 - Generative AI Rehabilitation Clinical Documentation]]
 - [[Tierney 2025 - Ambient AI Scribes Learnings 1 Year 2.5 Million Uses]]
+- [[Billings 2025b - Practicing Value-Based Care with AI]]
 
 ---
 *Canonical Measures | Suki Literature Review Vault | Derived 2026-03-25*
-*Method: Bottom-up derivation from 426 raw measure rows across 54 papers*
+*Method: Bottom-up derivation from 494 raw measure rows across 54 papers*

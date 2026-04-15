@@ -24,7 +24,7 @@ System Quality assesses the **technical performance of the ambient AI tool itsel
 ## ⚠️ Evidence Gap
 SQ is the most evidence-sparse dimension in the corpus. Commercial ambient AI products (DAX, Abridge, Suki, Ambience) do not publish transcription accuracy, WER, or diarization performance data — a documented pattern of industry opacity since van Buchem 2021. Only 3 papers formally measure ASR accuracy. CM-25 (Evaluation Methodology Quality) is a meta-measure assessing research rigor rather than a direct clinical outcome.
 
-## Papers in this Dimension (14)
+## Papers in this Dimension (24)
 - [[Anderson 2025 - Quality Safety Ambient Digital Scribe Platforms Simulation]]
 - [[Baker 2023 - ChatGPT Ability Assist Clinical Documentation Orthopaedic RCT]]
 - [[Biro 2025 - Simulation Testing Ambient Digital Scribes Case Report]]
@@ -39,6 +39,16 @@ SQ is the most evidence-sparse dimension in the corpus. Commercial ambient AI pr
 - [[Wang 2021 - Patient-Centered Digital Scribe Automatic Medical Documentation]]
 - [[Wang 2025 - Evaluation Framework Ambient Digital Scribing Tools]]
 - [[van Buchem 2021 - Digital Scribe Scoping Review Research Agenda]]
+- [[Arko 2025 - Documenting Care AI Comparative Commercial Scribe Tools]]
+- [[Bracken 2025 - Ambient AI Inpatient Documentation Simulation Orthopaedic]]
+- [[Bundy 2024 - Administrative Loads Physicians AI Documentation Qualitative]]
+- [[Duggan 2025 - Clinician Experiences Ambient Scribe Documentation Burden]]
+- [[Guo 2026 - Evaluating Ambient AI Documentation UCI Health Mixed Methods]]
+- [[Lukac 2025 - RCT Two Ambient AI Scribes Documentation Efficiency Burnout]]
+- [[Shah 2024 - Ambient AI Scribes Physician Burnout Usability Documentation Burden]]
+- [[Suhail 2026 - Metrics for Ambient Clinical Documentation Scoping Review]]
+- [[Wojda 2025 - HCI of Ambient AI Qualitative Study]]
+- [[van Buchem 2024 - Digital Scribe Documentation Time Quality Usability]]
 
 ---
 *D&M Dimensions | Suki Literature Review Vault | Updated 2026-03-25*

@@ -31,7 +31,7 @@ Factors that impede or facilitate ambient AI scribe adoption and sustained use �
 ## ⚠️ Key Note
 Universal finding: heterogeneous adoption with a cohort of heavy users, moderate users, and non-/low-users. PHTI 2025 formalizes 3 cohorts. Clinicians who benefit most: high baseline documentation burden, complex narrative notes, high patient face-time. Non-adopters cluster around: no existing burden, optimized workflow, technical incompatibility.
 
-## Papers Measuring This (8)
+## Papers Measuring This (12)
 - [[Kanaparthy 2025 - Real-World Evidence Digital Scribes Rapid Review]]
 - [[Nguyen 2023 - Implementing Digital Scribes Reduce EHR Documentation Burden Cancer Care]]
 - [[Olson 2025 - Ambient AI Scribes Administrative Burden Burnout]]
@@ -40,7 +40,11 @@ Universal finding: heterogeneous adoption with a cohort of heavy users, moderate
 - [[Suhail 2026 - Metrics for Ambient Clinical Documentation Scoping Review]]
 - [[Wojda 2025 - HCI of Ambient AI Qualitative Study]]
 - [[van Buchem 2021 - Digital Scribe Scoping Review Research Agenda]]
+- [[Albrecht 2025 - Ambient AI Clinical Documentation QI Survey]]
+- [[Bundy 2024 - Administrative Loads Physicians AI Documentation Qualitative]]
+- [[Guo 2026 - Evaluating Ambient AI Documentation UCI Health Mixed Methods]]
+- [[You 2025 - Ambient Documentation Technology Documentation Burden Burnout]]
 
 ---
 *Canonical Measures | Suki Literature Review Vault | Derived 2026-03-25*
-*Method: Bottom-up derivation from 426 raw measure rows across 54 papers*
+*Method: Bottom-up derivation from 494 raw measure rows across 54 papers*

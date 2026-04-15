@@ -38,7 +38,7 @@ Provider-reported satisfaction with the ambient AI scribe tool — including per
 ## ⚠️ Key Note
 Provider satisfaction is almost universally positive across the corpus — but most studies recruited volunteers or interested practitioners, inflating results. Prasad 2025 is the critical counter-signal: <2yr virtual scribe use was strongly negatively associated with satisfaction. Selection bias in most studies is substantial.
 
-## Papers Measuring This (20)
+## Papers Measuring This (21)
 - [[AAFP 2021 - Using AI Assistant Reduce Documentation Burden Family Medicine]]
 - [[Afshar 2025 - Novel Playbook for Pragmatic Trial Operations]]
 - [[Albrecht 2025 - Ambient AI Clinical Documentation QI Survey]]
@@ -59,7 +59,8 @@ Provider satisfaction is almost universally positive across the corpus — but m
 - [[Tierney 2025 - Ambient AI Scribes Learnings 1 Year 2.5 Million Uses]]
 - [[van Buchem 2021 - Digital Scribe Scoping Review Research Agenda]]
 - [[van Buchem 2024 - Digital Scribe Documentation Time Quality Usability]]
+- [[Billings 2025a - Ambient AI Assistant Transforms Primary Care Experience]]
 
 ---
 *Canonical Measures | Suki Literature Review Vault | Derived 2026-03-25*
-*Method: Bottom-up derivation from 426 raw measure rows across 54 papers*
+*Method: Bottom-up derivation from 494 raw measure rows across 54 papers*

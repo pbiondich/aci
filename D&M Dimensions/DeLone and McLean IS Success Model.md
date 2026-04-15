@@ -16,7 +16,7 @@ The DeLone & McLean IS Success Model (updated 2003) is a validated framework for
 | [[US - User Satisfaction]]   | US   | How do people *feel* about it?                             | 5   | 35     |
 | [[NB - Net Benefits]]        | NB   | What *downstream outcomes* does it produce?                | 10  | 41     |
 
-**Total canonical measures: 25 | Derived bottom-up from 426 raw measure rows across 54 papers**
+**Total canonical measures: 25 | Derived bottom-up from 494 raw measure rows across 54 papers**
 
 ## Causal Logic
 The model proposes a causal flow:

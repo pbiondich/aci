@@ -24,7 +24,7 @@ Service Quality assesses the **vendor, implementation, and support experience** 
 ## ⚠️ Least Measured Dimension
 SerQ is the most underrepresented dimension in peer-reviewed literature — only 8 papers address it formally. Most implementation experience is captured through qualitative methods (interviews, thematic analysis) rather than validated instruments. The FIM/AIM/IUS scales appear in Suhail 2026. PHTI 2025 provides the strongest cross-site synthesis of implementation learnings. Universal finding: heterogeneous adoption with heavy/moderate/non-user cohorts is the defining implementation pattern.
 
-## Papers in this Dimension (8)
+## Papers in this Dimension (14)
 - [[Kanaparthy 2025 - Real-World Evidence Digital Scribes Rapid Review]]
 - [[Nguyen 2023 - Implementing Digital Scribes Reduce EHR Documentation Burden Cancer Care]]
 - [[Olson 2025 - Ambient AI Scribes Administrative Burden Burnout]]
@@ -33,6 +33,12 @@ SerQ is the most underrepresented dimension in peer-reviewed literature — only
 - [[Suhail 2026 - Metrics for Ambient Clinical Documentation Scoping Review]]
 - [[Wojda 2025 - HCI of Ambient AI Qualitative Study]]
 - [[van Buchem 2021 - Digital Scribe Scoping Review Research Agenda]]
+- [[Afshar 2025 - Novel Playbook for Pragmatic Trial Operations]]
+- [[Bundy 2024 - Administrative Loads Physicians AI Documentation Qualitative]]
+- [[Falcetta 2023 - Automatic Documentation Professional Health Interactions Systematic Review]]
+- [[Guo 2026 - Evaluating Ambient AI Documentation UCI Health Mixed Methods]]
+- [[Karavassilis 2025 - Ambient Voice Technology Same Day Emergency Care SDEC]]
+- [[Tierney 2025 - Ambient AI Scribes Learnings 1 Year 2.5 Million Uses]]
 
 ---
 *D&M Dimensions | Suki Literature Review Vault | Updated 2026-03-25*

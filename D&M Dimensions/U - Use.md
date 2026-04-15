@@ -25,7 +25,7 @@ Use captures **whether and how much the ambient AI tool is actually used** — b
 ## ⚠️ Key Finding: Dose-Response and Heterogeneity
 Every large deployment study finds heterogeneous adoption: heavy users, moderate users, and low/non-users. Dose-response is consistent — heavy users benefit most (Pearlman 2025, Omon 2025, Lukac 2025). Tierney 2025 (2.5M uses): top-third of users account for disproportionate % of total use. Tierney 2025 also found physician age and years since graduation are NOT predictive of adoption — challenging the generational adoption narrative.
 
-## Papers in this Dimension (13)
+## Papers in this Dimension (28)
 - [[AAFP 2021 - Using AI Assistant Reduce Documentation Burden Family Medicine]]
 - [[Afshar 2025 - Novel Playbook for Pragmatic Trial Operations]]
 - [[Albrecht 2025 - Ambient AI Clinical Documentation QI Survey]]
@@ -39,6 +39,21 @@ Every large deployment study finds heterogeneous adoption: heavy users, moderate
 - [[Shah 2025 - Physician Perspectives Ambient AI Scribes]]
 - [[Tierney 2025 - Ambient AI Scribes Learnings 1 Year 2.5 Million Uses]]
 - [[You 2025 - Ambient Documentation Technology Documentation Burden Burnout]]
+- [[Afshar 2025b - Pragmatic RCT Ambient AI Health Practitioner Wellbeing]]
+- [[Billings 2025b - Practicing Value-Based Care with AI]]
+- [[Bundy 2024 - Administrative Loads Physicians AI Documentation Qualitative]]
+- [[Cao 2024 - Artificial Intelligence-Driven Digital Scribes Dermatology]]
+- [[Guo 2026 - Evaluating Ambient AI Documentation UCI Health Mixed Methods]]
+- [[Haberle 2024 - Impact Nuance DAX Ambient Listening AI Documentation]]
+- [[Holmgren 2026 - Ambient AI Scribes Physician Financial Productivity]]
+- [[Kanaparthy 2025 - Real-World Evidence Digital Scribes Rapid Review]]
+- [[Nguyen 2023 - Implementing Digital Scribes Reduce EHR Documentation Burden Cancer Care]]
+- [[Pearlman 2025 - AI Scribe EHR Efficiency]]
+- [[Prasad 2025 - Clinician Perceptions Virtual Scribe Use Survey]]
+- [[Shah 2024 - Ambient AI Scribes Physician Burnout Usability Documentation Burden]]
+- [[Suhail 2026 - Metrics for Ambient Clinical Documentation Scoping Review]]
+- [[Tierney 2024 - Ambient Artificial Intelligence Scribes Alleviate Burden Clinical Documentation]]
+- [[Wojda 2025 - HCI of Ambient AI Qualitative Study]]
 
 ---
 *D&M Dimensions | Suki Literature Review Vault | Updated 2026-03-25*

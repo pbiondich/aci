@@ -33,7 +33,7 @@ The presence of clinically inaccurate or fabricated content in AI-generated note
 ## ⚠️ Key Note
 **Hallucinations are less common than omissions but more dangerous per-event.** Baker 2023 (36%) and Palm 2025 (31%) found highest rates. Kernberg 2023 found only 3.2% incorrect facts but 86% omissions — different definitions matter. Bundy 2024 identified negation errors ('did not' → 'did') as a specific high-risk subtype. Reproducibility failure (Kernberg): same case, different errors each run — clinicians can't predict where to check.
 
-## Papers Measuring This (13)
+## Papers Measuring This (14)
 - [[Arko 2025 - Documenting Care AI Comparative Commercial Scribe Tools]]
 - [[Baker 2023 - ChatGPT Ability Assist Clinical Documentation Orthopaedic RCT]]
 - [[Biro 2025 - Simulation Testing Ambient Digital Scribes Case Report]]
@@ -47,7 +47,8 @@ The presence of clinically inaccurate or fabricated content in AI-generated note
 - [[Suhail 2026 - Metrics for Ambient Clinical Documentation Scoping Review]]
 - [[Wang 2021 - Patient-Centered Digital Scribe Automatic Medical Documentation]]
 - [[Wang 2025 - Evaluation Framework Ambient Digital Scribing Tools]]
+- [[Shah 2025 - Physician Perspectives Ambient AI Scribes]]
 
 ---
 *Canonical Measures | Suki Literature Review Vault | Derived 2026-03-25*
-*Method: Bottom-up derivation from 426 raw measure rows across 54 papers*
+*Method: Bottom-up derivation from 494 raw measure rows across 54 papers*

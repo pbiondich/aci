@@ -41,4 +41,4 @@ NASA-TLX measures cognitive effort during task performance — conceptually dist
 
 ---
 *Canonical Measures | Suki Literature Review Vault | Derived 2026-03-25*
-*Method: Bottom-up derivation from 426 raw measure rows across 54 papers*
+*Method: Bottom-up derivation from 494 raw measure rows across 54 papers*

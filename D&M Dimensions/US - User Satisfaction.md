@@ -28,7 +28,7 @@ User Satisfaction captures **how clinicians subjectively experience the ambient 
 ## ⚠️ Key Finding: Self-Report Inflation and Construct Dissociation
 US is the most commonly measured dimension (35 papers) but is subject to substantial selection bias — most studies recruit interested volunteers. The RCT (Afshar 2025b) shows burnout reduces (−0.44 PFI, p<0.001) but professional fulfillment does not significantly increase (p=0.04 vs pre-specified 0.025 threshold) — these are dissociable constructs. QI studies consistently overestimate effects vs. the RCT. Provider satisfaction is almost universally positive across the corpus — but Prasad 2025 is the critical counter-signal: <2yr virtual scribe use strongly negatively associated with satisfaction.
 
-## Papers in this Dimension (35)
+## Papers in this Dimension (43)
 - [[AAFP 2021 - Using AI Assistant Reduce Documentation Burden Family Medicine]]
 - [[Afshar 2025 - Novel Playbook for Pragmatic Trial Operations]]
 - [[Afshar 2025b - Pragmatic RCT Ambient AI Health Practitioner Wellbeing]]
@@ -64,6 +64,14 @@ US is the most commonly measured dimension (35 papers) but is subject to substan
 - [[You 2025 - Ambient Documentation Technology Documentation Burden Burnout]]
 - [[van Buchem 2021 - Digital Scribe Scoping Review Research Agenda]]
 - [[van Buchem 2024 - Digital Scribe Documentation Time Quality Usability]]
+- [[Billings 2025b - Practicing Value-Based Care with AI]]
+- [[Haberle 2024 - Impact Nuance DAX Ambient Listening AI Documentation]]
+- [[Ma 2025 - Ambient AI Scribes Utilization Documentation Time Stanford]]
+- [[Moramarco 2022 - Human Evaluation Automatic Metrics Consultation Note Generation]]
+- [[Owens 2024 - Ambient Voice Technology Patient Physician Relationship]]
+- [[Palm 2025 - Quality AI Generated Clinical Notes PDQI Validation]]
+- [[Shah 2025 - Physician Perspectives Ambient AI Scribes]]
+- [[Wang 2021 - Patient-Centered Digital Scribe Automatic Medical Documentation]]
 
 ---
 *D&M Dimensions | Suki Literature Review Vault | Updated 2026-03-25*

@@ -27,14 +27,15 @@ Changes in the number of patients seen per unit time or changes in patient flow 
 ## ⚠️ Key Note
 Only 6 papers measure throughput, and the strongest data is from Shuaib 2021 (human scribe, ED) — a baseline comparator, not an ambient AI study. Holmgren 2026 found +0.80 encounters/week with ambient AI adoption (statistically significant). Note: increased patient volume may not be desirable if it increases workload without compensation.
 
-## Papers Measuring This (6)
+## Papers Measuring This (7)
 - [[Albrecht 2025 - Ambient AI Clinical Documentation QI Survey]]
 - [[Boyter 2025 - Ambience Healthcare ROI Validations KLAS Report]]
 - [[Bundy 2024 - Administrative Loads Physicians AI Documentation Qualitative]]
 - [[Haberle 2024 - Impact Nuance DAX Ambient Listening AI Documentation]]
 - [[Holmgren 2026 - Ambient AI Scribes Physician Financial Productivity]]
 - [[Shuaib 2021 - Scribe Program Patient Throughput Physician Productivity]]
+- [[Peterson Health Technology Institute 2025 - Adoption AI Healthcare Delivery Systems]]
 
 ---
 *Canonical Measures | Suki Literature Review Vault | Derived 2026-03-25*
-*Method: Bottom-up derivation from 426 raw measure rows across 54 papers*
+*Method: Bottom-up derivation from 494 raw measure rows across 54 papers*

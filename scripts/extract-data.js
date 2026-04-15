@@ -459,6 +459,30 @@ function main() {
   fs.writeFileSync(path.join(OUTPUT_DIR, 'draft-measures.json'), JSON.stringify(draftMeasures, null, 2));
 
   console.log(`\nJSON files written to ${OUTPUT_DIR}`);
+<<<<<<< HEAD
+=======
+
+  // Linkage validation hint
+  try {
+    const { execSync } = require('child_process');
+    const linkScript = path.join(__dirname, 'link-article.js');
+    if (fs.existsSync(linkScript)) {
+      const result = execSync(`node "${linkScript}" --all`, { encoding: 'utf-8', timeout: 30000 });
+      const summaryMatch = result.match(/Total gaps:\s*(\d+)/);
+      const gaps = summaryMatch ? parseInt(summaryMatch[1]) : 0;
+      if (gaps > 0) {
+        console.log(`\n⚠️  LINKAGE WARNING: ${gaps} missing article-to-measure/dimension links detected.`);
+        console.log(`   Run: node scripts/link-article.js --all       (to review)`);
+        console.log(`   Run: node scripts/link-article.js --all --fix (to fix)\n`);
+      } else {
+        console.log(`\n✅ Linkage check passed: all articles correctly linked to CMs and dimensions.`);
+      }
+    }
+  } catch (e) {
+    // Linkage check is optional; don't fail the build
+  }
+
+>>>>>>> 7a868b8 (Linkage validation: fix 25 missing CM links, update names and counts)
   console.log('Done.');
 }
 

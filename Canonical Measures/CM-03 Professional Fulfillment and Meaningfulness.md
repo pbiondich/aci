@@ -25,16 +25,22 @@ Provider-reported positive engagement with clinical work — the presence of mea
 ## ⚠️ Key Note
 **Key null finding:** Afshar 2025b (RCT) found professional fulfillment increased at p=0.04 — which missed the pre-specified alpha of 0.025. This means ambient AI reduces exhaustion but does not significantly *increase* fulfillment. These are dissociable constructs: removing a negative ≠ adding a positive.
 
-## Papers Measuring This (6)
+## Papers Measuring This (10)
 - [[Afshar 2025b - Pragmatic RCT Ambient AI Health Practitioner Wellbeing]]
 - [[Duggan 2025 - Clinician Experiences Ambient Scribe Documentation Burden]]
 - [[Galloway 2024 - Impact Artificial Intelligence Based Solution Clinicians Clinical Documentation]]
 - [[Lukac 2025 - RCT Two Ambient AI Scribes Documentation Efficiency Burnout]]
 - [[Nguyen 2023 - Implementing Digital Scribes Reduce EHR Documentation Burden Cancer Care]]
 - [[Suhail 2026 - Metrics for Ambient Clinical Documentation Scoping Review]]
+- [[Afshar 2025 - Novel Playbook for Pragmatic Trial Operations]]
+- [[Albrecht 2025 - Ambient AI Clinical Documentation QI Survey]]
+- [[Evans 2025 - AI Scribe Allied Health Private Practice Australia]]
+- [[Prasad 2025 - Clinician Perceptions Virtual Scribe Use Survey]]
+
+> **Note:** Albrecht 2025 removed from this list — its contribution (sleep quality) has moved to CM-01.
 
 > **Note:** Albrecht 2025 removed from this list — its contribution (sleep quality) has moved to CM-01.
 
 ---
 *Canonical Measures | Suki Literature Review Vault | Derived 2026-03-25*
-*Method: Bottom-up derivation from 426 raw measure rows across 54 papers*
+*Method: Bottom-up derivation from 494 raw measure rows across 54 papers*

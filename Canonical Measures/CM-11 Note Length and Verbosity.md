@@ -30,7 +30,7 @@ The length and lexical richness of AI-generated notes — measured as word count
 ## ⚠️ Key Note
 Note length is a secondary/proxy measure. It can indicate thoroughness (longer = more complete) or over-generation (longer = padded). Wojda 2025 and Shah 2025 flag note verbosity as a concern — physicians may need to edit down AI-generated notes, creating editing burden that offsets time savings.
 
-## Papers Measuring This (10)
+## Papers Measuring This (11)
 - [[Anderson 2025 - Quality Safety Ambient Digital Scribe Platforms Simulation]]
 - [[Arko 2025 - Documenting Care AI Comparative Commercial Scribe Tools]]
 - [[Baker 2023 - ChatGPT Ability Assist Clinical Documentation Orthopaedic RCT]]
@@ -41,7 +41,8 @@ Note length is a secondary/proxy measure. It can indicate thoroughness (longer =
 - [[Kanaparthy 2025 - Real-World Evidence Digital Scribes Rapid Review]]
 - [[Stults 2025 - Evaluation Ambient AI Documentation Platform Clinicians]]
 - [[van Buchem 2024 - Digital Scribe Documentation Time Quality Usability]]
+- [[Bundy 2024 - Administrative Loads Physicians AI Documentation Qualitative]]
 
 ---
 *Canonical Measures | Suki Literature Review Vault | Derived 2026-03-25*
-*Method: Bottom-up derivation from 426 raw measure rows across 54 papers*
+*Method: Bottom-up derivation from 494 raw measure rows across 54 papers*

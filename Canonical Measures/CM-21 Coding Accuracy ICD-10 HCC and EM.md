@@ -26,13 +26,14 @@ The accuracy and completeness of diagnostic and billing codes generated or suppo
 ## ⚠️ Key Note
 **Coding improvement is one of the most consistent findings** — appearing in Afshar 2025b (RCT, p<0.001), Boyter/KLAS 2025, and Holmgren 2026. Critically, Holmgren 2026 shows NO increase in denial rate, suggesting coding improvement is legitimate (better documentation of existing complexity, not upcoding). However, PHTI 2025 flags the population-level cost concern regardless.
 
-## Papers Measuring This (5)
+## Papers Measuring This (6)
 - [[Afshar 2025 - Novel Playbook for Pragmatic Trial Operations]]
 - [[Afshar 2025b - Pragmatic RCT Ambient AI Health Practitioner Wellbeing]]
 - [[Boyter 2025 - Ambience Healthcare ROI Validations KLAS Report]]
 - [[Holmgren 2026 - Ambient AI Scribes Physician Financial Productivity]]
 - [[Peterson Health Technology Institute 2025 - Adoption AI Healthcare Delivery Systems]]
+- [[Billings 2025b - Practicing Value-Based Care with AI]]
 
 ---
 *Canonical Measures | Suki Literature Review Vault | Derived 2026-03-25*
-*Method: Bottom-up derivation from 426 raw measure rows across 54 papers*
+*Method: Bottom-up derivation from 494 raw measure rows across 54 papers*

@@ -28,7 +28,11 @@ Behavioral measures of the quality of the physician-patient interaction during t
 ## ⚠️ Key Note
 Shuaib 2021 (human scribe comparator) is the strongest data point: doctor-patient interaction time doubled and patients/hour increased 39%. This establishes the *potential* of documentation automation for interaction quality. Ambient AI studies primarily capture this through self-report survey items rather than direct observation.
 
+<<<<<<< HEAD
 ## Papers Measuring This (9)
+=======
+## Papers Measuring This (12)
+>>>>>>> 7a868b8 (Linkage validation: fix 25 missing CM links, update names and counts)
 - [[Balloch 2024 - Ambient Artificial Intelligence Tool Improve Quality Clinical Documentation]]
 - [[Bundy 2024 - Administrative Loads Physicians AI Documentation Qualitative]]
 - [[Duggan 2025 - Clinician Experiences Ambient Scribe Documentation Burden]]
@@ -38,7 +42,13 @@ Shuaib 2021 (human scribe comparator) is the strongest data point: doctor-patien
 - [[Shuaib 2021 - Scribe Program Patient Throughput Physician Productivity]]
 - [[Stults 2025 - Evaluation Ambient AI Documentation Platform Clinicians]]
 - [[Tierney 2025 - Ambient AI Scribes Learnings 1 Year 2.5 Million Uses]] (84% of physicians reported positive impact on visit interactions; patient survey showed 39% more time speaking with doctor and 0% negative impact on visit quality)
+<<<<<<< HEAD
+=======
+- [[Billings 2025a - Ambient AI Assistant Transforms Primary Care Experience]]
+- [[Owens 2024 - Ambient Voice Technology Patient Physician Relationship]]
+- [[Wojda 2025 - HCI of Ambient AI Qualitative Study]]
+>>>>>>> 7a868b8 (Linkage validation: fix 25 missing CM links, update names and counts)
 
 ---
 *Canonical Measures | Suki Literature Review Vault | Derived 2026-03-25*
-*Method: Bottom-up derivation from 426 raw measure rows across 54 papers*
+*Method: Bottom-up derivation from 494 raw measure rows across 54 papers*

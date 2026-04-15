@@ -19,15 +19,15 @@ Information Quality assesses the **quality, accuracy, and completeness of the ge
 
 ## Canonical Measures in this Dimension (5)
 - [[CM-08 Note Completeness and Omission Rate]] (11 papers)
-- [[CM-09 Note Accuracy and Hallucination Rate]] (13 papers)
-- [[CM-10 Note Quality Overall PDQI]] (16 papers)
+- [[CM-09 Note Inaccuracy Rate]] (13 papers)
+- [[CM-10 Note Quality Overall]] (17 papers)
 - [[CM-11 Note Length and Verbosity]] (10 papers)
 - [[CM-12 Automated NLP Evaluation Metrics]] (7 papers)
 
 ## ⚠️ Key Finding: Omission Dominance
 Across all 5 simulation studies in the corpus (Arko 2025, Biro 2025, Anderson 2025, Foo 2025, Kernberg 2023), omissions are the dominant error type (71–86% of all errors). Hallucinations/additions are secondary. More clinically dangerous than hallucinations at scale because missing information is harder to detect. CM-12 (Automated NLP Metrics) is a methodological measure — ROUGE/BERTScore capture textual similarity, not clinical accuracy; Moramarco 2022 showed Levenshtein distance performs as well as BERTScore.
 
-## Papers in this Dimension (31)
+## Papers in this Dimension (38)
 - [[Afshar 2025b - Pragmatic RCT Ambient AI Health Practitioner Wellbeing]]
 - [[Anderson 2025 - Quality Safety Ambient Digital Scribe Platforms Simulation]]
 - [[Arko 2025 - Documenting Care AI Comparative Commercial Scribe Tools]]
@@ -59,6 +59,13 @@ Across all 5 simulation studies in the corpus (Arko 2025, Biro 2025, Anderson 20
 - [[Wang 2025 - Evaluation Framework Ambient Digital Scribing Tools]]
 - [[Wojda 2025 - HCI of Ambient AI Qualitative Study]]
 - [[van Buchem 2024 - Digital Scribe Documentation Time Quality Usability]]
+- [[Afshar 2025 - Novel Playbook for Pragmatic Trial Operations]]
+- [[Boyter 2025 - Ambience Healthcare ROI Validations KLAS Report]]
+- [[Holmgren 2026 - Ambient AI Scribes Physician Financial Productivity]]
+- [[Ma 2025 - Ambient AI Scribes Utilization Documentation Time Stanford]]
+- [[Prasad 2025 - Clinician Perceptions Virtual Scribe Use Survey]]
+- [[Shah 2024 - Ambient AI Scribes Physician Burnout Usability Documentation Burden]]
+- [[van Buchem 2021 - Digital Scribe Scoping Review Research Agenda]]
 
 ---
 *D&M Dimensions | Suki Literature Review Vault | Updated 2026-03-25*

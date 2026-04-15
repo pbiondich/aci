@@ -2,7 +2,11 @@
 
 **Repo:** https://github.com/pbiondich/aci
 **Live site:** https://pbiondich.github.io/aci/
+<<<<<<< HEAD
 **Current version:** v.18
+=======
+**Current version:** v.20
+>>>>>>> 7a868b8 (Linkage validation: fix 25 missing CM links, update names and counts)
 **Status:** Active
 
 ## What It Is
@@ -115,6 +119,11 @@ Proposed additional measures identified through stakeholder gap analysis brainst
 - v.16 — Data refresh: updated measure paper counts and concerns; corrected raw measure count 426→494; April 2026
 - v.17 — Added Draft Measures tab and Decision Guide tab (stakeholder role filter: CFO/CMIO/CPO/COO)
 - v.18 — Refined Draft Measures, reordered Decision Guide roles, renamed section headers, reordered detail sections
+<<<<<<< HEAD
+=======
+- v.19 — URL hash routing for shareable tab links (e.g. #guide, #articles)
+- v.20 — Added "Work in Progress" warning to Level of Rigor tab (scores are placeholder mockup, formal rubric planned)
+>>>>>>> 7a868b8 (Linkage validation: fix 25 missing CM links, update names and counts)
 
 ## Key Files
 | File | Purpose |
@@ -135,3 +144,29 @@ Proposed additional measures identified through stakeholder gap analysis brainst
 - Key informant interviews to validate draft measures
 - Potential "Vendor Claims vs. Evidence" view in Decision Guide
 - Renumbering of DMs after list stabilizes post-interviews
+<<<<<<< HEAD
+=======
+- Formal rigor scoring methodology — current scores are placeholder mockup values; need reproducible rubric (e.g. composite of study design, instrument validation, convergence, bias risk). Possible approach: compute composite from article-level data already in vault (study design, evidence level, paper count, convergence, validated instruments)
+- Suki operational metrics mapping to canonical measures (see `Metrics for Suki - CM Mapped.xlsx` in workspace)
+
+## URL Hash Routing
+- Tabs are shareable via URL hash: `pbiondich.github.io/aci/#guide`, `#articles`, etc.
+- Valid hashes: `#overview`, `#measures`, `#guide`, `#drafts`, `#articles`, `#framework`, `#corpus`, `#rigor`
+- Reads hash on page load; updates hash on tab click; supports browser back/forward via `hashchange` listener
+- Defaults to `#overview` if no hash or invalid hash
+
+## Level of Rigor Tab
+- Scores are **placeholder mockup values** (not validated)
+- Amber "Work in Progress" banner displayed at top of tab
+- Tier groupings: Best Relative Quality, Moderate, Needs Work / Low, Meta / Methodological
+- Cross-Cutting Findings section at bottom (self-report/objective divergence, patient safety gap)
+- Future: design formal scoring rubric
+
+## Suki Operational Metrics Mapping
+- Spreadsheet: `Metrics for Suki - CM Mapped.xlsx`
+- Maps Suki EHR telemetry fields (across Epic, Cerner, Meditech, Athena) to canonical measures
+- Strong direct matches (green): CM-04 (doc time), CM-05 (after-hours), CM-06 (chart closure), CM-07 (total EHR time), CM-20 (financial productivity), CM-21 (coding accuracy), CM-22 (patient volume)
+- Indirect proxies (amber): `amendment_count` → CM-08, `total_signed_notes` → CM-13
+- Removed: `ma_patient_count` (too weak an association with CM-21)
+- Coverage gap: no Suki metrics map to note quality (CM-08–12), clinician wellbeing (CM-01–03), patient experience (CM-17–18), trust (CM-16), or safety (CM-19) — these require survey instruments or chart review, not EHR telemetry
+>>>>>>> 7a868b8 (Linkage validation: fix 25 missing CM links, update names and counts)

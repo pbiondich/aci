@@ -1,15 +1,16 @@
-# CM-10 Note Quality Overall PDQI
+# CM-10 Note Quality Overall
 
 **D&M Dimension:** [[IQ - Information Quality]]
 
 ## Definition
-Aggregate quality rating of the AI-generated clinical note using a validated multi-dimensional instrument. The PDQI-9 and PDSQI-9 assess accuracy, thoroughness, usefulness, organization, comprehensibility, succinctness, synthesis, and consistency as a composite. Distinct from individual error-type measures (CM-08, CM-09).
+Aggregate quality rating of the AI-generated clinical note using a validated multi-dimensional instrument. Instruments include the PDQI-9/PDSQI-9 (which assess accuracy, thoroughness, usefulness, organization, comprehensibility, succinctness, synthesis, and consistency as a composite), the SAIL score, and global quality ratings. Distinct from individual error-type measures (CM-08, CM-09).
 
 ## Measurement Methods
 | Method | Description | Data Source |
 |---|---|---|
 | PDQI-9 (Physician Documentation Quality Instrument) | Validated 9-item instrument; 5-point Likert per item; max 45; originally for human notes | Human rater |
 | PDSQI-9 (Provider Documentation Summarization QI) | Adapted PDQI-9 for AI-generated summaries; includes LLM-as-judge implementation validated against physician ratings | LLM-as-judge / Human rater |
+| SAIL Score | Standards-based AI documentation quality assessment | Human rater |
 | Global rating (1–5) | Single-item overall quality assessment | Human rater |
 | Documentation quality — SOAP sections | PDQI applied by section (Subjective, Plan) | Human rater |
 | Discharge summary / progress note PDQI | PDQI applied to specific note types | Human rater |
@@ -30,7 +31,7 @@ Aggregate quality rating of the AI-generated clinical note using a validated mul
 ## ⚠️ Key Note
 PDQI-9 was designed for human-authored notes and has been adapted for AI assessment; the LLM-as-judge implementation (Afshar 2025b) is validated against physician ratings. Scores of 3.97–4.99/5.0 (Afshar 2025b) represent the highest in corpus. Scale interpretation: 26.2 = 'terrible or bad', 36.6 = 'good or excellent' (Kernberg 2023 mean: 29.7, closer to terrible). The PDQI is a composite — see CM-08 and CM-09 for component error types.
 
-## Papers Measuring This (16)
+## Papers Measuring This (17)
 - [[Afshar 2025b - Pragmatic RCT Ambient AI Health Practitioner Wellbeing]]
 - [[Anderson 2025 - Quality Safety Ambient Digital Scribe Platforms Simulation]]
 - [[Arko 2025 - Documenting Care AI Comparative Commercial Scribe Tools]]
@@ -47,7 +48,8 @@ PDQI-9 was designed for human-authored notes and has been adapted for AI assessm
 - [[Tierney 2024 - Ambient Artificial Intelligence Scribes Alleviate Burden Clinical Documentation]]
 - [[Wojda 2025 - HCI of Ambient AI Qualitative Study]]
 - [[van Buchem 2024 - Digital Scribe Documentation Time Quality Usability]]
+- [[Balloch 2024 - Ambient Artificial Intelligence Tool Improve Quality Clinical Documentation]]
 
 ---
 *Canonical Measures | Suki Literature Review Vault | Derived 2026-03-25*
-*Method: Bottom-up derivation from 426 raw measure rows across 54 papers*
+*Method: Bottom-up derivation from 494 raw measure rows across 54 papers*

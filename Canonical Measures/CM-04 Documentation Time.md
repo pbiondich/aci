@@ -37,7 +37,7 @@ Aliases in this measure should be distinguished by data source:
 ## ⚠️ Key Note
 **Critical heterogeneity:** Reported reductions range from −12% (EHR telemetry: Ma 2025, Guo 2026) to −72% (self-report: AAFP 2021). Self-report consistently overestimates. EHR audit-log is the most reliable method. Papers measuring per-note time vs. per-day time are not directly comparable.
 
-## Papers Measuring This (27)
+## Papers Measuring This (31)
 - [[AAFP 2021 - Using AI Assistant Reduce Documentation Burden Family Medicine]]
 - [[Afshar 2025 - Novel Playbook for Pragmatic Trial Operations]]
 - [[Afshar 2025b - Pragmatic RCT Ambient AI Health Practitioner Wellbeing]]
@@ -65,7 +65,11 @@ Aliases in this measure should be distinguished by data source:
 - [[Suhail 2026 - Metrics for Ambient Clinical Documentation Scoping Review]]
 - [[Tierney 2025 - Ambient AI Scribes Learnings 1 Year 2.5 Million Uses]]
 - [[van Buchem 2024 - Digital Scribe Documentation Time Quality Usability]]
+- [[Balloch 2024 - Ambient Artificial Intelligence Tool Improve Quality Clinical Documentation]]
+- [[Biro 2025 - Simulation Testing Ambient Digital Scribes Case Report]]
+- [[Moramarco 2022 - Human Evaluation Automatic Metrics Consultation Note Generation]]
+- [[Wang 2021 - Patient-Centered Digital Scribe Automatic Medical Documentation]]
 
 ---
 *Canonical Measures | Suki Literature Review Vault | Derived 2026-03-25*
-*Method: Bottom-up derivation from 426 raw measure rows across 54 papers*
+*Method: Bottom-up derivation from 494 raw measure rows across 54 papers*

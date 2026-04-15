@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<!--
+  ACI Evaluation Report — Interactive Web Application
+  25 canonical measures derived from 494 raw measure rows across 54 papers | April 2026 | v.20
+
+  Version History:
+    v.01 — Initial build (single-page React app with Recharts)
+    v.02 — Added .nojekyll for GitHub Pages
+    v.03 — Replaced Babel + Recharts with pure CSS/HTML charts (fixed blank page)
+    v.04 — Renamed "Gold Standard" → "Best Relative Quality"
+    v.05 — Fixed paper counts (parse from headings in extraction script)
+    v.06 — Added GitHub Action for auto-regenerating JSON from markdown
+    v.07 — Removed Silver/Bronze → Moderate/Low tier labels
+    v.08 — Cleaned up Product column (cleanProduct normalizer)
+    v.09 — Reordered tabs (Overview, Canonical Measures, Article Explorer, D&M Framework, Study Corpus, Level of Rigor)
+    v.10 — Added markdown rendering in Canonical Measures (mdToReact/MdText)
+    v.11 — Applied markdown rendering to Article Explorer modal
+    v.12 — Fixed extractSection regex bug (54/54 articles now have study measures)
+    v.13 — Responsive Article Explorer table (dynamic column widths, mobile breakpoints)
+    v.14 — Fixed title truncation in Article Explorer (full titles wrap, removed 70-char limit)
+    v.15 — Added "Aliases Used in Literature" section to canonical measure details
+    v.16 — Data refresh: updated measure paper counts and concerns text; corrected raw measure count 426→494; April 2026
+    v.17 — Added Draft Measures tab and Decision Guide tab (stakeholder role filter: CFO/CMIO/CPO/COO)
+    v.18 — Refined Draft Measures (12 DMs after dedup), reordered Decision Guide roles, renamed section headers, reordered detail sections
+    v.19 — URL hash routing for shareable tab links (e.g. #guide, #articles)
+    v.20 — Added preliminary methodology warning to Level of Rigor tab
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Evaluating Ambient Clinical Intelligence</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f8f9fa; color: #1a1a2e; line-height: 1.6; }
+
+    /* Navigation */
+    .nav { position: sticky; top: 0; z-index: 100; background: #1F4E79; color: white; padding: 0; box-shadow: 0 2px 8px rgba(0,0,0,0.15); }
+    .nav-inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; padding: 0 24px; }
+    .nav-brand { font-size: 16px; font-weight: 700; padding: 14px 0; margin-right: 32px; white-space: nowrap; }
+    .nav-links { display: flex; gap: 0; }
+    .nav-link { padding: 14px 18px; cursor: pointer; font-size: 14px; font-weight: 500; border-bottom: 3px solid transparent; transition: all 0.2s; color: rgba(255,255,255,0.8); }
+    .nav-link:hover { background: rgba(255,255,255,0.1); color: white; }
+    .nav-link.active { border-bottom-color: #60B5FF; color: white; background: rgba(255,255,255,0.05); }
+
+    /* Layout */
+    .container { max-width: 1200px; margin: 0 auto; padding: 32px 24px; }
+
+    /* Typography */
+    h1 { font-size: 32px; font-weight: 700; color: #1F4E79; margin-bottom: 8px; }
+    h2 { font-size: 24px; font-weight: 700; color: #1F4E79; margin: 32px 0 16px; }
+    h3 { font-size: 18px; font-weight: 600; color: #333; margin: 24px 0 12px; }
+    p { margin-bottom: 16px; color: #444; }
+
+    /* Cards */
+    .card { background: white; border-radius: 8px; padding: 24px; margin-bottom: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); border: 1px solid #e8ecf0; }
+    .card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; flex-wrap: wrap; gap: 8px; }
+
+    /* Stats row */
+    .stats-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 16px; margin-bottom: 28px; }
+    .stat-card { background: white; border-radius: 8px; padding: 20px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.08); border: 1px solid #e8ecf0; }
+    .stat-num { font-size: 36px; font-weight: 800; color: #1F4E79; }
+    .stat-label { font-size: 13px; color: #666; margin-top: 4px; }
+
+    /* Badges */
+    .badge { display: inline-block; padding: 3px 10px; border-radius: 12px; font-size: 12px; font-weight: 600; }
+    .badge-gold { background: #e8f5e9; color: #2e7d32; }
+    .badge-moderate { background: #fff3e0; color: #e65100; }
+    .badge-low { background: #fce4ec; color: #c62828; }
+    .badge-critical { background: #ffebee; color: #b71c1c; }
+    .badge-meta { background: #e3f2fd; color: #1565c0; }
+    .badge-dim { background: #ede7f6; color: #4527a0; padding: 2px 8px; font-size: 11px; }
+
+    /* Tables */
+    .data-table { width: 100%; border-collapse: collapse; font-size: 14px; table-layout: fixed; }
+    .data-table th { background: #1F4E79; color: white; padding: 10px 14px; text-align: left; font-weight: 600; position: sticky; top: 56px; z-index: 10; }
+    .data-table td { padding: 10px 14px; border-bottom: 1px solid #eee; vertical-align: top; }
+    .data-table td.col-title { overflow-wrap: break-word; word-wrap: break-word; }
+    .data-table td.col-product, .data-table td.col-design { overflow: hidden; text-overflow: ellipsis; }
+    .data-table tr:hover td { background: #f0f7ff; }
+    .data-table tr:nth-child(even) td { background: #fafbfc; }
+    .data-table tr:nth-child(even):hover td { background: #f0f7ff; }
+    /* Article Explorer column widths */
+    .col-year { width: 6%; }
+    .col-title { width: 50%; }
+    .col-design { width: 14%; }
+    .col-product { width: 20%; }
+    .col-measures { width: 10%; text-align: center; }
+    @media (max-width: 900px) {
+      .col-year { width: 8%; }
+      .col-title { width: 44%; }
+      .col-design { width: 16%; }
+      .col-product { width: 22%; }
+      .col-measures { width: 10%; }
+      .data-table { font-size: 12px; }
+      .data-table th, .data-table td { padding: 8px 8px; }
+    }
+    @media (max-width: 600px) {
+      .col-product { display: none; }
+      .col-design { display: none; }
+      .col-title { width: 70%; }
+      .col-year { width: 15%; }
+      .col-measures { width: 15%; }
+    }
+
+    /* Filters */
+    .filters { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 20px; align-items: center; }
+    .filter-select { padding: 8px 12px; border: 1px solid #ddd; border-radius: 6px; font-size: 14px; background: white; color: #333; min-width: 160px; }
+    .search-input { padding: 8px 14px; border: 1px solid #ddd; border-radius: 6px; font-size: 14px; flex: 1; min-width: 200px; }
+    .search-input:focus, .filter-select:focus { outline: none; border-color: #1F4E79; box-shadow: 0 0 0 2px rgba(31,78,121,0.15); }
+
+    /* Charts */
+    .chart-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 20px; margin: 20px 0; }
+    .chart-card { background: white; border-radius: 8px; padding: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); border: 1px solid #e8ecf0; }
+    .chart-title { font-size: 15px; font-weight: 600; color: #333; margin-bottom: 12px; }
+
+    /* Measure cards */
+    .measure-card { background: white; border-radius: 8px; padding: 20px; margin-bottom: 16px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); border-left: 4px solid #1F4E79; cursor: pointer; transition: all 0.2s; }
+    .measure-card:hover { box-shadow: 0 3px 12px rgba(0,0,0,0.12); }
+    .measure-card.expanded { border-left-color: #60B5FF; }
+    .measure-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
+    .measure-body { margin-top: 16px; padding-top: 16px; border-top: 1px solid #eee; }
+    .measure-body p { font-size: 14px; }
+
+    /* Detail modal */
+    .modal-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.5); z-index: 200; display: flex; align-items: center; justify-content: center; padding: 20px; }
+    .modal { background: white; border-radius: 12px; max-width: 800px; width: 100%; max-height: 85vh; overflow-y: auto; padding: 32px; }
+    .modal-close { float: right; background: none; border: none; font-size: 24px; cursor: pointer; color: #666; padding: 4px 8px; }
+    .modal-close:hover { color: #333; }
+
+    /* Tags */
+    .tag-row { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0; }
+    .tag { padding: 2px 8px; background: #e8ecf0; border-radius: 4px; font-size: 12px; color: #555; }
+
+    /* Hero */
+    .hero { background: linear-gradient(135deg, #1F4E79 0%, #2d6da3 100%); color: white; padding: 48px 24px; margin-bottom: 0; }
+    .hero-inner { max-width: 1200px; margin: 0 auto; }
+    .hero h1 { color: white; font-size: 36px; margin-bottom: 12px; }
+    .hero p { color: rgba(255,255,255,0.85); font-size: 17px; max-width: 720px; }
+    .hero .subtitle { font-size: 15px; color: rgba(255,255,255,0.65); margin-top: 8px; }
+
+    /* D&M dimension colors */
+    .dim-sq { border-left-color: #7b1fa2; }
+    .dim-iq { border-left-color: #1565c0; }
+    .dim-serq { border-left-color: #00838f; }
+    .dim-u { border-left-color: #2e7d32; }
+    .dim-us { border-left-color: #ef6c00; }
+    .dim-nb { border-left-color: #c62828; }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .nav-inner { flex-wrap: wrap; }
+      .nav-brand { width: 100%; margin-right: 0; padding: 10px 0; }
+      .nav-links { overflow-x: auto; width: 100%; }
+      .chart-grid { grid-template-columns: 1fr; }
+      .stats-row { grid-template-columns: repeat(2, 1fr); }
+      .hero h1 { font-size: 26px; }
+    }
+
+    .finding-item { padding: 6px 0; font-size: 14px; color: #444; border-bottom: 1px solid #f0f0f0; }
+    .finding-item:last-child { border-bottom: none; }
+    .dim-pill { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; color: white; margin-right: 4px; }
+    .dim-pill-SQ { background: #7b1fa2; }
+    .dim-pill-IQ { background: #1565c0; }
+    .dim-pill-SerQ { background: #00838f; }
+    .dim-pill-U { background: #2e7d32; }
+    .dim-pill-US { background: #ef6c00; }
+    .dim-pill-NB { background: #c62828; }
+
+    .rigor-bar { height: 8px; border-radius: 4px; background: #eee; overflow: hidden; margin-top: 6px; }
+    .rigor-fill { height: 100%; border-radius: 4px; }
+
+    a { color: #1565c0; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+  <script type="text/javascript">
+    const { useState, useEffect, useMemo } = React;
+    const h = React.createElement;
+
+    // ─── Pure CSS Bar Chart Components ───
+    function HBarChart({ data, labelKey, valueKey, maxVal, colorFn, labelWidth }) {
+      const mx = maxVal || Math.max(...data.map(d => d[valueKey]));
+      const lw = labelWidth || 140;
+      return h('div', { style: { display: 'flex', flexDirection: 'column', gap: 6 } },
+        data.map((d, i) => h('div', { key: i, style: { display: 'flex', alignItems: 'center', gap: 8 } },
+          h('div', { style: { width: lw, fontSize: 12, color: '#555', textAlign: 'right', flexShrink: 0 } }, d[labelKey]),
+          h('div', { style: { flex: 1, background: '#eee', borderRadius: 4, height: 22, position: 'relative', overflow: 'hidden' } },
+            h('div', { style: { width: (d[valueKey] / mx * 100) + '%', height: '100%', background: colorFn ? colorFn(d, i) : '#1F4E79', borderRadius: 4, transition: 'width 0.5s ease' } }),
+            h('span', { style: { position: 'absolute', right: 6, top: 2, fontSize: 11, fontWeight: 600, color: d[valueKey]/mx > 0.5 ? 'white' : '#333' } }, d[valueKey])
+          )
+        ))
+      );
+    }
+
+    function VBarChart({ data, labelKey, valueKey, colorFn, height }) {
+      const mx = Math.max(...data.map(d => d[valueKey]));
+      const ht = height || 200;
+      return h('div', { style: { display: 'flex', alignItems: 'flex-end', gap: 8, height: ht, padding: '0 8px' } },
+        data.map((d, i) => h('div', { key: i, style: { flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 4 } },
+          h('span', { style: { fontSize: 11, fontWeight: 600, color: '#333' } }, d[valueKey]),
+          h('div', { style: { width: '100%', maxWidth: 48, height: (d[valueKey] / mx * (ht - 40)) + 'px', background: colorFn ? colorFn(d, i) : '#1F4E79', borderRadius: '4px 4px 0 0', transition: 'height 0.5s ease', minHeight: 2 } }),
+          h('span', { style: { fontSize: 10, color: '#666', textAlign: 'center', transform: 'rotate(-30deg)', transformOrigin: 'top center', whiteSpace: 'nowrap' } }, d[labelKey])
+        ))
+      );
+    }
+
+    function DonutChart({ data, colors, size }) {
+      const total = data.reduce((s, d) => s + d.value, 0);
+      const sz = size || 200;
+      let cumAngle = 0;
+      const paths = data.map((d, i) => {
+        const angle = (d.value / total) * 360;
+        const startAngle = cumAngle;
+        cumAngle += angle;
+        const startRad = (startAngle - 90) * Math.PI / 180;
+        const endRad = (cumAngle - 90) * Math.PI / 180;
+        const r = sz / 2 - 10;
+        const cx = sz / 2, cy = sz / 2;
+        const x1 = cx + r * Math.cos(startRad), y1 = cy + r * Math.sin(startRad);
+        const x2 = cx + r * Math.cos(endRad), y2 = cy + r * Math.sin(endRad);
+        const large = angle > 180 ? 1 : 0;
+        const path = `M ${cx} ${cy} L ${x1} ${y1} A ${r} ${r} 0 ${large} 1 ${x2} ${y2} Z`;
+        return h('path', { key: i, d: path, fill: colors[i % colors.length], stroke: 'white', strokeWidth: 2 });
+      });
+      return h('div', { style: { display: 'flex', alignItems: 'center', gap: 16, flexWrap: 'wrap' } },
+        h('svg', { width: sz, height: sz, viewBox: `0 0 ${sz} ${sz}` }, ...paths, h('circle', { cx: sz/2, cy: sz/2, r: sz/4, fill: 'white' })),
+        h('div', { style: { display: 'flex', flexDirection: 'column', gap: 4 } },
+          data.map((d, i) => h('div', { key: i, style: { display: 'flex', alignItems: 'center', gap: 6, fontSize: 12 } },
+            h('div', { style: { width: 10, height: 10, borderRadius: 2, background: colors[i % colors.length], flexShrink: 0 } }),
+            h('span', null, d.name + ' (' + d.value + ')')
+          ))
+        )
+      );
+    }
+
+    // Convert markdown text to array of React elements
+    function mdToReact(text) {
+      if (!text) return null;
+      // Split on **bold**, *italic*, [[wikilinks]], and [links](url)
+      var parts = [];
+      var remaining = text;
+      var key = 0;
+      while (remaining.length > 0) {
+        // Find earliest markdown pattern
+        var boldIdx = remaining.indexOf('**');
+        var wikiIdx = remaining.indexOf('[[');
+        var linkIdx = remaining.search(/\[([^\]]+)\]\(/);
+        var italIdx = -1;
+        // Only match single * that's not part of **
+        var italMatch = remaining.match(/(?<!\*)\*(?!\*)([^*]+)\*(?!\*)/);
+        if (italMatch) italIdx = remaining.indexOf(italMatch[0]);
+
+        var earliest = Infinity;
+        var type = null;
+        if (boldIdx >= 0 && boldIdx < earliest) { earliest = boldIdx; type = 'bold'; }
+        if (wikiIdx >= 0 && wikiIdx < earliest) { earliest = wikiIdx; type = 'wiki'; }
+        if (linkIdx >= 0 && linkIdx < earliest) { earliest = linkIdx; type = 'link'; }
+        if (italIdx >= 0 && italIdx < earliest) { earliest = italIdx; type = 'italic'; }
+
+        if (type === null) { parts.push(remaining); break; }
+
+        // Push text before the pattern
+        if (earliest > 0) parts.push(remaining.substring(0, earliest));
+
+        if (type === 'bold') {
+          var endBold = remaining.indexOf('**', earliest + 2);
+          if (endBold === -1) { parts.push(remaining.substring(earliest)); remaining = ''; break; }
+          parts.push(h('strong', { key: key++ }, remaining.substring(earliest + 2, endBold)));
+          remaining = remaining.substring(endBold + 2);
+        } else if (type === 'wiki') {
+          var endWiki = remaining.indexOf(']]', earliest + 2);
+          if (endWiki === -1) { parts.push(remaining.substring(earliest)); remaining = ''; break; }
+          parts.push(h('em', { key: key++ }, remaining.substring(earliest + 2, endWiki)));
+          remaining = remaining.substring(endWiki + 2);
+        } else if (type === 'link') {
+          var lMatch = remaining.substring(earliest).match(/\[([^\]]+)\]\(([^\)]+)\)/);
+          if (!lMatch) { parts.push(remaining.substring(earliest, earliest + 1)); remaining = remaining.substring(earliest + 1); continue; }
+          parts.push(h('a', { key: key++, href: lMatch[2], target: '_blank' }, lMatch[1]));
+          remaining = remaining.substring(earliest + lMatch[0].length);
+        } else if (type === 'italic') {
+          parts.push(h('em', { key: key++ }, italMatch[1]));
+          remaining = remaining.substring(earliest + italMatch[0].length);
+        }
+      }
+      return parts;
+    }
+
+    // Render a text field that may contain markdown, splitting on newlines into paragraphs
+    function MdText(props) {
+      var text = props.text || '';
+      var lines = text.split('\n').filter(function(l) { return l.trim().length > 0; });
+      if (lines.length <= 1) {
+        return h('span', null, mdToReact(text));
+      }
+      return h('div', null, lines.map(function(line, i) {
+        var trimmed = line.trim();
+        if (trimmed.startsWith('- ') || trimmed.startsWith('* ')) {
+          return h('div', { key: i, style: { paddingLeft: 16, marginBottom: 4 } }, '\u2022 ', mdToReact(trimmed.substring(2)));
+        }
+        return h('p', { key: i, style: { marginBottom: 6 } }, mdToReact(trimmed));
+      }));
+    }
+
+    function cleanProduct(raw) {
+      var p = (raw || '').replace(/\*\*/g, '').replace(/\[\[|\]\]/g, '');
+      if (/dax copilot/i.test(p)) return 'DAX Copilot (Nuance)';
+      if (/dragon ambient|nuance dax|\bDAX\b/i.test(p)) return 'DAX (Nuance)';
+      if (/abridge/i.test(p) && /dax|nuance/i.test(p)) return 'DAX + Abridge';
+      if (/abridge/i.test(p)) return 'Abridge';
+      if (/suki/i.test(p)) return 'Suki AI';
+      if (/heidi/i.test(p)) return 'Heidi Health';
+      if (/ambience healthcare/i.test(p)) return 'Ambience Healthcare';
+      if (/lyrebird/i.test(p)) return 'Lyrebird Health';
+      if (/autoscriber/i.test(p)) return 'Autoscriber';
+      if (/nabla/i.test(p)) return 'DAX vs Nabla';
+      if (/medimo/i.test(p)) return 'medimo';
+      if (/navina/i.test(p)) return 'Navina AI';
+      if (/chatgpt|gpt-4/i.test(p)) return 'ChatGPT / GPT-4';
+      if (/n\/a|systematic review|scoping review|not applicable|rapid review/i.test(p)) return 'N/A (Review)';
+      if (/anonymized|unnamed|not named|two unnamed/i.test(p)) return 'Unnamed / Anonymized';
+      if (/human.*scribe/i.test(p)) return 'Human Scribes (Baseline)';
+      if (/BART|neural/i.test(p)) return 'Research NLP Model';
+      return p.length > 30 ? p.substring(0, 28) + '...' : p || 'Not specified';
+    }
+
+    const COLORS = ['#1F4E79','#2d6da3','#4a90c4','#6db3e6','#90d4f7','#ef6c00','#c62828','#2e7d32','#7b1fa2','#00838f'];
+    const DIM_COLORS = { SQ: '#7b1fa2', IQ: '#1565c0', SerQ: '#00838f', U: '#2e7d32', US: '#ef6c00', NB: '#c62828' };
+    const DIM_NAMES = { SQ: 'System Quality', IQ: 'Information Quality', SerQ: 'Service Quality', U: 'Use', US: 'User Satisfaction', NB: 'Net Benefits' };
+
+    const RIGOR_MAP = {
+      'CM-01': { rating: 'HIGH', score: 90, label: 'Best Relative Quality' },
+      'CM-02': { rating: 'MODERATE', score: 65, label: 'Moderate' },
+      'CM-03': { rating: 'LOW', score: 30, label: 'Critical Gap' },
+      'CM-04': { rating: 'MODERATE', score: 65, label: 'Moderate' },
+      'CM-05': { rating: 'LOW', score: 25, label: 'Needs Work' },
+      'CM-06': { rating: 'MODERATE', score: 55, label: 'Low' },
+      'CM-07': { rating: 'LOW', score: 30, label: 'Emerging' },
+      'CM-08': { rating: 'HIGH', score: 90, label: 'Best Relative Quality' },
+      'CM-09': { rating: 'MODERATE', score: 65, label: 'Moderate' },
+      'CM-10': { rating: 'HIGH', score: 85, label: 'Best Relative Quality' },
+      'CM-11': { rating: 'LOW', score: 25, label: 'Needs Work' },
+      'CM-12': { rating: 'META', score: 50, label: 'Methodological' },
+      'CM-13': { rating: 'MODERATE', score: 65, label: 'Moderate' },
+      'CM-14': { rating: 'LOW', score: 25, label: 'Needs Work' },
+      'CM-15': { rating: 'LOW', score: 35, label: 'Needs Work' },
+      'CM-16': { rating: 'LOW', score: 20, label: 'Critical Gap' },
+      'CM-17': { rating: 'LOW', score: 15, label: 'Critically Low' },
+      'CM-18': { rating: 'LOW', score: 25, label: 'Needs Work' },
+      'CM-19': { rating: 'LOW', score: 15, label: 'Critically Low' },
+      'CM-20': { rating: 'MODERATE', score: 55, label: 'Low' },
+      'CM-21': { rating: 'HIGH', score: 85, label: 'Best Relative Quality' },
+      'CM-22': { rating: 'LOW', score: 25, label: 'Needs Work' },
+      'CM-23': { rating: 'MODERATE', score: 45, label: 'Needs Work' },
+      'CM-24': { rating: 'LOW', score: 10, label: 'Critically Low' },
+      'CM-25': { rating: 'META', score: 50, label: 'Meta-Measure' },
+    };
+
+    function getRigorBadge(id) {
+      const r = RIGOR_MAP[id];
+      if (!r) return null;
+      const cls = r.rating === 'HIGH' ? 'badge-gold' : r.rating === 'MODERATE' ? 'badge-moderate' : r.rating === 'META' ? 'badge-meta' : r.score <= 20 ? 'badge-critical' : 'badge-low';
+      return React.createElement('span', { className: `badge ${cls}` }, r.label);
+    }
+
+    function getRigorColor(score) {
+      if (score >= 80) return '#2e7d32';
+      if (score >= 50) return '#ef6c00';
+      if (score >= 30) return '#e65100';
+      return '#c62828';
+    }
+
+    function dimPill(dim) {
+      const d = dim.trim().replace(/[^A-Za-z]/g,'');
+      const key = ['SQ','IQ','SerQ','U','US','NB'].find(k => d.includes(k)) || d;
+      return React.createElement('span', { className: `dim-pill dim-pill-${key}`, key: dim }, key);
+    }
+
+    function parseDimensions(str) {
+      if (!str) return [];
+      return str.split(/[,\/]/).map(s => s.trim()).filter(Boolean);
+    }
+
+    // ─── APP ───
+    function App() {
+      const [articles, setArticles] = useState([]);
+      const [measures, setMeasures] = useState([]);
+      const [dimensions, setDimensions] = useState([]);
+      const [draftMeasures, setDraftMeasures] = useState([]);
+      var validTabs = ['overview','measures','guide','drafts','articles','framework','corpus','rigor'];
+      function getTabFromHash() {
+        var h = window.location.hash.replace('#','');
+        return validTabs.indexOf(h) !== -1 ? h : 'overview';
+      }
+      const [tab, setTabRaw] = useState(getTabFromHash);
+      function setTab(id) { window.location.hash = id; setTabRaw(id); }
+      const [selectedArticle, setSelectedArticle] = useState(null);
+      const [expandedMeasure, setExpandedMeasure] = useState(null);
+      const [expandedDraft, setExpandedDraft] = useState(null);
+      const [guideRole, setGuideRole] = useState('CMIO');
+      const [filters, setFilters] = useState({ search: '', design: '', product: '', year: '', dimension: '' });
+
+      useEffect(() => {
+        function onHash() { setTabRaw(getTabFromHash()); }
+        window.addEventListener('hashchange', onHash);
+        return function() { window.removeEventListener('hashchange', onHash); };
+      }, []);
+
+      useEffect(() => {
+        Promise.all([
+          fetch('data/articles.json').then(r => r.json()),
+          fetch('data/measures.json').then(r => r.json()),
+          fetch('data/dimensions.json').then(r => r.json()),
+          fetch('data/draft-measures.json').then(r => r.json()).catch(() => []),
+        ]).then(([a, m, d, dm]) => { setArticles(a); setMeasures(m); setDimensions(d); setDraftMeasures(dm); });
+      }, []);
+
+      const tabs = [
+        { id: 'overview', label: 'Overview' },
+        { id: 'measures', label: 'Canonical Measures' },
+        { id: 'guide', label: 'Decision Guide' },
+        { id: 'drafts', label: 'Draft Measures' },
+        { id: 'articles', label: 'Article Explorer' },
+        { id: 'framework', label: 'D&M Framework' },
+        { id: 'corpus', label: 'Study Corpus' },
+        { id: 'rigor', label: 'Level of Rigor' },
+      ];
+
+      return React.createElement(React.Fragment, null,
+        // Nav
+        React.createElement('div', { className: 'nav' },
+          React.createElement('div', { className: 'nav-inner' },
+            React.createElement('div', { className: 'nav-brand' }, 'ACI Evidence Review'),
+            React.createElement('div', { className: 'nav-links' },
+              tabs.map(t => React.createElement('div', {
+                key: t.id, className: `nav-link ${tab === t.id ? 'active' : ''}`,
+                onClick: () => setTab(t.id)
+              }, t.label))
+            )
+          )
+        ),
+        // Content
+        tab === 'overview' && React.createElement(OverviewTab, { articles, measures }),
+        tab === 'corpus' && React.createElement(CorpusTab, { articles }),
+        tab === 'framework' && React.createElement(FrameworkTab, { dimensions, measures, articles }),
+        tab === 'measures' && React.createElement(MeasuresTab, { measures, expandedMeasure, setExpandedMeasure }),
+        tab === 'drafts' && React.createElement(DraftMeasuresTab, { draftMeasures, expandedDraft, setExpandedDraft }),
+        tab === 'guide' && React.createElement(DecisionGuideTab, { measures, draftMeasures, guideRole, setGuideRole }),
+        tab === 'rigor' && React.createElement(RigorTab, { measures }),
+        tab === 'articles' && React.createElement(ArticlesTab, { articles, filters, setFilters, selectedArticle, setSelectedArticle }),
+        selectedArticle && React.createElement(ArticleModal, { article: selectedArticle, onClose: () => setSelectedArticle(null) }),
+      );
+    }
+
+    // ─── OVERVIEW TAB ───
+    function OverviewTab({ articles, measures }) {
+      const years = useMemo(() => {
+        const counts = {};
+        articles.forEach(a => { const y = a.year || 'Unknown'; counts[y] = (counts[y]||0)+1; });
+        return Object.entries(counts).sort((a,b) => a[0].localeCompare(b[0])).map(([y,c]) => ({ year: y, count: c }));
+      }, [articles]);
+
+      return React.createElement(React.Fragment, null,
+        React.createElement('div', { className: 'hero' },
+          React.createElement('div', { className: 'hero-inner' },
+            React.createElement('h1', null, 'Evaluating Ambient Clinical Intelligence'),
+            React.createElement('p', null, 'A methodological critique of the evidence base for ambient AI documentation tools in healthcare, mapping 54 studies to the DeLone & McLean IS Success Model.'),
+            React.createElement('p', { className: 'subtitle' }, '25 canonical measures derived from 494 raw measure rows across 54 papers | April 2026 | v.20')
+          )
+        ),
+        React.createElement('div', { className: 'container' },
+          React.createElement('div', { className: 'stats-row' },
+            [
+              { n: articles.length, l: 'Studies Reviewed' },
+              { n: '494', l: 'Raw Measures Extracted' },
+              { n: measures.length, l: 'Canonical Measures' },
+              { n: '3', l: 'Randomized Trials' },
+              { n: '6', l: 'D&M Dimensions' },
+              { n: '2021\u20132026', l: 'Publication Range' },
+            ].map((s,i) => React.createElement('div', { className: 'stat-card', key: i },
+              React.createElement('div', { className: 'stat-num' }, s.n),
+              React.createElement('div', { className: 'stat-label' }, s.l),
+            ))
+          ),
+
+          React.createElement('div', { className: 'chart-grid' },
+            React.createElement('div', { className: 'chart-card' },
+              React.createElement('div', { className: 'chart-title' }, 'Publications by Year'),
+              React.createElement(VBarChart, { data: years, labelKey: 'year', valueKey: 'count', height: 220 })
+            ),
+            React.createElement('div', { className: 'chart-card' },
+              React.createElement('div', { className: 'chart-title' }, 'Key Findings at a Glance'),
+              React.createElement('div', null,
+                [
+                  { icon: '\u26A0\uFE0F', text: 'Only 3 RCTs in 54 studies \u2014 most evidence is observational' },
+                  { icon: '\u2705', text: 'Coding accuracy improvement is consistent and validated' },
+                  { icon: '\uD83D\uDCCA', text: 'Limited measurement of cost benefit of ACI to date' },
+                  { icon: '\uD83D\uDCC9', text: 'Self-report overestimates objective time savings by 2\u20136x' },
+                  { icon: '\uD83D\uDCCB', text: 'Omissions dominate errors (71\u201386%) across all simulation studies' },
+                  { icon: '\uD83D\uDEE1\uFE0F', text: 'Near-zero real-world patient safety data exists' },
+                ].map((f,i) => React.createElement('div', { key: i, className: 'finding-item' }, `${f.icon}  ${f.text}`))
+              )
+            )
+          ),
+
+          React.createElement('div', { className: 'card' },
+            React.createElement('h2', { style: { marginTop: 0 } }, 'About This Review'),
+            React.createElement('p', null, 'Ambient clinical intelligence (ACI) \u2014 AI tools that listen to clinical conversations and automatically generate documentation \u2014 is one of the most rapidly adopted technology categories in modern healthcare. Yet the evidence base evaluating these tools remains nascent, disorganized, and methodologically inconsistent.'),
+            React.createElement('p', null, 'This interactive report presents a systematic analysis of 54 published studies, organized through the DeLone and McLean Information Systems Success Model. By mapping 494 raw study measures into 25 canonical constructs and assessing the scientific rigor of each, this analysis identifies where the evidence is credible, where it is thin, and where critical gaps threaten patient safety and informed decision-making.'),
+            React.createElement('p', null, 'Use the navigation above to explore the study corpus, the D&M framework, individual canonical measures, rigor assessments, and the full article database.')
+          ),
+        )
+      );
+    }
+
+    // ─── CORPUS TAB ───
+    function CorpusTab({ articles }) {
+      const designData = useMemo(() => {
+        const c = {};
+        articles.forEach(a => { const d = a.studyDesign || 'Unknown'; c[d] = (c[d]||0)+1; });
+        return Object.entries(c).sort((a,b) => b[1]-a[1]).map(([name, value]) => ({ name, value }));
+      }, [articles]);
+
+      const productData = useMemo(() => {
+        const c = {};
+        articles.forEach(a => {
+          var p = cleanProduct(a.product);
+          c[p] = (c[p]||0)+1;
+        });
+        return Object.entries(c).sort((a,b) => b[1]-a[1]).map(([name, value]) => ({ name, value }));
+      }, [articles]);
+
+      return React.createElement('div', { className: 'container' },
+        React.createElement('h1', null, 'Study Corpus: 54 Papers'),
+        React.createElement('p', null, 'The corpus spans 2021\u20132026, reflecting the explosive growth of the ambient AI scribe market. Three papers were published before 2023; 31 appeared in 2025 alone.'),
+
+        React.createElement('div', { className: 'chart-grid' },
+          React.createElement('div', { className: 'chart-card' },
+            React.createElement('div', { className: 'chart-title' }, 'Study Design Distribution'),
+            React.createElement(HBarChart, { data: designData, labelKey: 'name', valueKey: 'value' })
+          ),
+          React.createElement('div', { className: 'chart-card' },
+            React.createElement('div', { className: 'chart-title' }, 'Products Evaluated'),
+            React.createElement(DonutChart, { data: productData.slice(0, 8), colors: COLORS, size: 200 })
+          ),
+        ),
+
+        React.createElement('div', { className: 'card' },
+          React.createElement('h3', { style: { marginTop: 0 } }, 'Structural Limitations of the Corpus'),
+          React.createElement('p', null, 'The evidence base is overwhelmingly North American (44 of 54 studies), concentrated at a handful of academic health systems (Stanford, UCSF, Kaiser, Penn, UCLA, Mass General Brigham), and dominated by primary care and ambulatory settings. Pediatrics is entirely absent. Inpatient settings appear in only one study. Only three RCTs exist. Most studies follow participants for 1\u20133 months with sample sizes of 50\u2013100 clinicians. Vendor-funded or vendor-adjacent studies tend to report larger effects than independent work.'),
+        )
+      );
+    }
+
+    // ─── FRAMEWORK TAB ───
+    function FrameworkTab({ dimensions, measures, articles }) {
+      const dimData = [
+        { dim: 'NB', name: 'Net Benefits', papers: 41, measures: 10, color: DIM_COLORS.NB },
+        { dim: 'US', name: 'User Satisfaction', papers: 35, measures: 5, color: DIM_COLORS.US },
+        { dim: 'IQ', name: 'Information Quality', papers: 31, measures: 5, color: DIM_COLORS.IQ },
+        { dim: 'U', name: 'Use', papers: 13, measures: 2, color: DIM_COLORS.U },
+        { dim: 'SQ', name: 'System Quality', papers: 14, measures: 2, color: DIM_COLORS.SQ },
+        { dim: 'SerQ', name: 'Service Quality', papers: 8, measures: 1, color: DIM_COLORS.SerQ },
+      ];
+
+      const radarData = dimData.map(d => ({ dimension: d.dim, papers: d.papers, measures: d.measures * 5 }));
+
+      return React.createElement('div', { className: 'container' },
+        React.createElement('h1', null, 'DeLone & McLean IS Success Model'),
+        React.createElement('p', null, 'The D&M model (2003) provides the organizing framework for this analysis. It posits that IS success is a multidimensional phenomenon: Quality dimensions (SQ + IQ + SerQ) drive Use and User Satisfaction, which produce Net Benefits that feed back into the cycle.'),
+
+        React.createElement('div', { className: 'card' },
+          React.createElement('h3', { style: { marginTop: 0 } }, 'Evidence Distribution Across Dimensions'),
+          React.createElement('div', { className: 'chart-grid', style: { margin: 0 } },
+            React.createElement('div', null,
+              React.createElement(HBarChart, { data: dimData.map(function(d) { return { name: d.name, value: d.papers, color: d.color }; }), labelKey: 'name', valueKey: 'value', colorFn: function(d) { return d.color; } })
+            ),
+            React.createElement('div', null,
+              React.createElement(HBarChart, { data: dimData.map(function(d) { return { name: d.name, value: d.measures, color: d.color }; }), labelKey: 'name', valueKey: 'value', colorFn: function(d) { return d.color; } }),
+              React.createElement('div', { style: { fontSize: 12, color: '#888', marginTop: 8, textAlign: 'center' } }, 'Canonical Measures per Dimension')
+            ),
+          )
+        ),
+
+        dimData.map(d => React.createElement('div', {
+          key: d.dim,
+          className: `card dim-${d.dim.toLowerCase()}`,
+          style: { borderLeft: `4px solid ${d.color}` }
+        },
+          React.createElement('div', { className: 'card-header' },
+            React.createElement('h3', { style: { margin: 0 } },
+              React.createElement('span', { className: `dim-pill dim-pill-${d.dim}` }, d.dim),
+              ' ', d.name
+            ),
+            React.createElement('span', { style: { fontSize: 14, color: '#666' } }, `${d.papers} papers | ${d.measures} measures`)
+          ),
+          React.createElement('p', { style: { fontSize: 14, margin: 0 } },
+            d.dim === 'NB' ? 'Strong evidence base (41 papers), but patient safety, patient experience, and patient volume are vastly understudied. Documentation time and burnout dominate.' :
+            d.dim === 'US' ? 'Strong paper count (35) but significant selection bias. Only 1 RCT. Most studies recruit willing volunteers, inflating satisfaction estimates.' :
+            d.dim === 'IQ' ? 'Moderate (31 papers) but highly heterogeneous methods. Omission dominance is the most consistent finding. PDQI-9 used inconsistently.' :
+            d.dim === 'U' ? 'Moderate (13 papers). Dose-response and adoption heterogeneity are universal. Heavy/light user split found in every deployment.' :
+            d.dim === 'SQ' ? 'Weak (14 papers, mostly meta-methodological). Commercial ASR data entirely absent from published literature.' :
+            'Weakest dimension (8 papers). Almost entirely qualitative. No validated implementation instruments in routine use.'
+          )
+        ))
+      );
+    }
+
+    // ─── MEASURES TAB ───
+    function MeasuresTab({ measures, expandedMeasure, setExpandedMeasure }) {
+      const domains = useMemo(() => {
+        const d = {};
+        measures.forEach(m => { const dom = m.domain || 'Other'; if (!d[dom]) d[dom] = []; d[dom].push(m); });
+        return d;
+      }, [measures]);
+
+      return React.createElement('div', { className: 'container' },
+        React.createElement('h1', null, '25 Canonical Measures'),
+        React.createElement('p', null, 'Derived bottom-up from 494 raw measure rows across 54 papers. These canonical measures provide a shared vocabulary for cross-study comparison of ambient AI evaluation.'),
+
+        Object.entries(domains).map(([domain, ms]) =>
+          React.createElement('div', { key: domain },
+            React.createElement('h2', null, domain),
+            ms.map(m => {
+              const rigor = RIGOR_MAP[m.id];
+              const isExpanded = expandedMeasure === m.id;
+              return React.createElement('div', {
+                key: m.id,
+                className: `measure-card ${isExpanded ? 'expanded' : ''}`,
+                onClick: () => setExpandedMeasure(isExpanded ? null : m.id)
+              },
+                React.createElement('div', { className: 'measure-header' },
+                  React.createElement('div', null,
+                    React.createElement('span', { style: { fontSize: 13, color: '#888', marginRight: 8 } }, m.id),
+                    React.createElement('strong', null, m.name),
+                    React.createElement('span', { style: { marginLeft: 8 } }, dimPill(m.dimension || '')),
+                  ),
+                  React.createElement('div', { style: { display: 'flex', alignItems: 'center', gap: 8 } },
+                    React.createElement('span', { style: { fontSize: 13, color: '#666' } }, `${m.paperCount || '?'} papers`),
+                    rigor && getRigorBadge(m.id),
+                    React.createElement('span', { style: { fontSize: 18, color: '#999' } }, isExpanded ? '\u25B2' : '\u25BC'),
+                  )
+                ),
+                rigor && React.createElement('div', { className: 'rigor-bar', style: { maxWidth: 200, marginTop: 8 } },
+                  React.createElement('div', { className: 'rigor-fill', style: { width: `${rigor.score}%`, background: getRigorColor(rigor.score) } })
+                ),
+                isExpanded && React.createElement('div', { className: 'measure-body' },
+                  m.definition && React.createElement('div', { style: { marginBottom: 8 } }, React.createElement('strong', null, 'Definition: '), React.createElement(MdText, { text: m.definition })),
+                  m.instruments && m.instruments.length > 0 && React.createElement('div', null,
+                    React.createElement('strong', null, 'Instruments: '),
+                    React.createElement('div', { className: 'tag-row' },
+                      m.instruments.map((inst, i) => React.createElement('span', { key: i, className: 'tag' }, inst))
+                    )
+                  ),
+                  m.typicalFindings && React.createElement('div', { style: { marginTop: 8, marginBottom: 8 } }, React.createElement('strong', null, 'Typical Findings: '), React.createElement(MdText, { text: m.typicalFindings })),
+                  m.concerns && React.createElement('div', { style: { marginBottom: 8 } }, React.createElement('strong', null, 'Methodological Concerns: '), React.createElement(MdText, { text: m.concerns })),
+                  m.aliases && m.aliases.length > 0 && React.createElement('div', { style: { marginTop: 12, marginBottom: 8 } },
+                    React.createElement('strong', null, 'Aliases Used in Literature:'),
+                    React.createElement('ul', { style: { margin: '6px 0 0 20px', padding: 0, fontSize: 13, color: '#444' } },
+                      m.aliases.map((a, ai) => React.createElement('li', { key: ai, style: { marginBottom: 3 } }, React.createElement(MdText, { text: a })))
+                    )
+                  ),
+                )
+              );
+            })
+          )
+        )
+      );
+    }
+
+    // ─── RIGOR TAB ───
+    function RigorTab({ measures }) {
+      const rigorData = useMemo(() => {
+        return measures
+          .filter(m => RIGOR_MAP[m.id])
+          .map(m => ({
+            id: m.id,
+            name: m.name.length > 25 ? m.name.substring(0,25) + '...' : m.name,
+            fullName: m.name,
+            score: RIGOR_MAP[m.id].score,
+            label: RIGOR_MAP[m.id].label,
+            rating: RIGOR_MAP[m.id].rating,
+            papers: m.paperCount || 0,
+          }))
+          .sort((a, b) => b.score - a.score);
+      }, [measures]);
+
+      const tiers = {
+        'Best Relative Quality': rigorData.filter(d => d.rating === 'HIGH'),
+        'Moderate': rigorData.filter(d => d.rating === 'MODERATE'),
+        'Needs Work / Low': rigorData.filter(d => d.rating === 'LOW'),
+        'Meta / Methodological': rigorData.filter(d => d.rating === 'META'),
+      };
+
+      return React.createElement('div', { className: 'container' },
+        React.createElement('h1', null, 'Level of Rigor'),
+        React.createElement('div', { style: { background: '#FFF3E0', border: '1px solid #FFB74D', borderRadius: 8, padding: '16px 20px', marginBottom: 20 } },
+          React.createElement('strong', { style: { color: '#E65100' } }, '\u26A0\uFE0F Work in Progress'),
+          React.createElement('p', { style: { margin: '8px 0 0', color: '#BF360C', fontSize: 14 } }, 'The rigor scores below are a mockup to illustrate how this tab could work. The scores are placeholder values and do not yet reflect a validated methodology. A future version will introduce a formal scoring rubric based on study design quality, instrument validation, finding convergence, and bias risk.')
+        ),
+        React.createElement('p', null, 'The chart below shows placeholder rigor scores (0\u2013100) for all 25 canonical measures.'),
+
+        React.createElement('div', { className: 'card' },
+          React.createElement(HBarChart, { data: rigorData.map(function(d) { return { name: d.id + ': ' + d.fullName, value: d.score }; }), labelKey: 'name', valueKey: 'value', maxVal: 100, colorFn: function(d) { return getRigorColor(d.value); }, labelWidth: 320 })
+        ),
+
+        Object.entries(tiers).map(([tier, items]) => items.length > 0 &&
+          React.createElement('div', { key: tier },
+            React.createElement('h2', null, tier),
+            React.createElement('div', { className: 'stats-row', style: { gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))' } },
+              items.map(item => React.createElement('div', { key: item.id, className: 'stat-card', style: { textAlign: 'left', borderLeft: `4px solid ${getRigorColor(item.score)}` } },
+                React.createElement('div', { style: { display: 'flex', justifyContent: 'space-between', alignItems: 'center' } },
+                  React.createElement('strong', { style: { fontSize: 14 } }, `${item.id}: ${item.fullName}`),
+                  React.createElement('span', { style: { fontSize: 24, fontWeight: 800, color: getRigorColor(item.score) } }, item.score),
+                ),
+                React.createElement('div', { className: 'rigor-bar', style: { marginTop: 8 } },
+                  React.createElement('div', { className: 'rigor-fill', style: { width: `${item.score}%`, background: getRigorColor(item.score) } })
+                ),
+                React.createElement('div', { style: { fontSize: 12, color: '#666', marginTop: 4 } }, `${item.papers} papers`)
+              ))
+            )
+          )
+        ),
+
+        React.createElement('div', { className: 'card' },
+          React.createElement('h3', { style: { marginTop: 0 } }, 'Cross-Cutting Findings'),
+          React.createElement('p', null, 'The self-report/objective divergence is the most reproducible methodological finding: clinicians consistently report larger improvements than objective data confirm, across documentation time (2\u20136x overestimate), after-hours documentation (self-report positive, objective null), patient experience (open-label positive, masked null), and burnout (QI studies 2\u20134x larger than RCT).'),
+          React.createElement('p', null, 'The near-total absence of real-world patient safety data is the most critical gap. Ambient AI generates safety-critical clinical documentation without systematic post-market safety surveillance. The field is deploying tools at scale without the safety monitoring infrastructure expected for medical devices or pharmaceuticals.'),
+        )
+      );
+    }
+
+    // ─── ARTICLES TAB ───
+    function ArticlesTab({ articles, filters, setFilters, selectedArticle, setSelectedArticle }) {
+      const designs = useMemo(() => [...new Set(articles.map(a => a.studyDesign).filter(Boolean))].sort(), [articles]);
+      const years = useMemo(() => [...new Set(articles.map(a => a.year).filter(Boolean))].sort(), [articles]);
+
+      const filtered = useMemo(() => {
+        return articles.filter(a => {
+          if (filters.search && !JSON.stringify(a).toLowerCase().includes(filters.search.toLowerCase())) return false;
+          if (filters.design && a.studyDesign !== filters.design) return false;
+          if (filters.year && String(a.year) !== filters.year) return false;
+          return true;
+        });
+      }, [articles, filters]);
+
+      return React.createElement('div', { className: 'container' },
+        React.createElement('h1', null, 'Article Explorer'),
+        React.createElement('p', null, `Showing ${filtered.length} of ${articles.length} studies. Click any row to see full details.`),
+        React.createElement('div', { className: 'filters' },
+          React.createElement('input', {
+            className: 'search-input', placeholder: 'Search articles...',
+            value: filters.search, onChange: e => setFilters({ ...filters, search: e.target.value })
+          }),
+          React.createElement('select', {
+            className: 'filter-select', value: filters.design,
+            onChange: e => setFilters({ ...filters, design: e.target.value })
+          },
+            React.createElement('option', { value: '' }, 'All Designs'),
+            designs.map(d => React.createElement('option', { key: d, value: d }, d))
+          ),
+          React.createElement('select', {
+            className: 'filter-select', value: filters.year,
+            onChange: e => setFilters({ ...filters, year: e.target.value })
+          },
+            React.createElement('option', { value: '' }, 'All Years'),
+            years.map(y => React.createElement('option', { key: y, value: y }, y))
+          ),
+        ),
+        React.createElement('div', { className: 'card', style: { padding: 0, overflow: 'auto' } },
+          React.createElement('table', { className: 'data-table' },
+            React.createElement('thead', null,
+              React.createElement('tr', null,
+                React.createElement('th', { className: 'col-year' }, 'Year'),
+                React.createElement('th', { className: 'col-title' }, 'Title'),
+                React.createElement('th', { className: 'col-design' }, 'Design'),
+                React.createElement('th', { className: 'col-product' }, 'Product'),
+                React.createElement('th', { className: 'col-measures' }, 'Measures'),
+              )
+            ),
+            React.createElement('tbody', null,
+              filtered.map((a, i) => {
+                var prod = cleanProduct(a.product);
+                return React.createElement('tr', {
+                  key: i, style: { cursor: 'pointer' },
+                  onClick: () => setSelectedArticle(a)
+                },
+                  React.createElement('td', { className: 'col-year' }, a.year || '?'),
+                  React.createElement('td', { className: 'col-title' }, React.createElement('strong', null, a.title || a.id)),
+                  React.createElement('td', { className: 'col-design' }, React.createElement('span', { className: 'tag' }, a.studyDesign || '?')),
+                  React.createElement('td', { className: 'col-product' }, prod),
+                  React.createElement('td', { className: 'col-measures' }, (a.measures || []).length),
+                );
+              })
+            )
+          )
+        )
+      );
+    }
+
+    // ─── DRAFT MEASURES TAB ───
+    function DraftMeasuresTab({ draftMeasures, expandedDraft, setExpandedDraft }) {
+      var stakeholderColors = { CFO: '#2E7D32', CMIO: '#1565C0', CPO: '#6A1B9A', COO: '#E65100' };
+
+      function stakeholderPill(role) {
+        return React.createElement('span', {
+          key: role,
+          style: { display: 'inline-block', padding: '2px 8px', borderRadius: 12, fontSize: 11, fontWeight: 600, color: '#fff', background: stakeholderColors[role] || '#666', marginRight: 4 }
+        }, role);
+      }
+
+      return React.createElement('div', { className: 'container' },
+        React.createElement('h1', null, 'Draft Measures'),
+        React.createElement('p', null, 'Proposed additional measures identified through a stakeholder gap analysis brainstorming exercise.  These are draft pending validation via key informant interviews with healthcare executives (CFO, CMIO, CPO, COO).'),
+        React.createElement('div', { style: { background: '#FFF3E0', border: '1px solid #FFB74D', borderRadius: 8, padding: '12px 16px', marginBottom: 24, fontSize: 14 } },
+          React.createElement('strong', null, 'Note: '),
+          'These are not yet canonical measures. They represent gaps identified in the published literature that may be important for executive decision-making about ACI investments. Validation through key informant interviews will determine which become formal measures.'
+        ),
+        draftMeasures.map((dm, i) => {
+          var isExpanded = expandedDraft === dm.id;
+          return React.createElement('div', { key: dm.id, className: 'card', style: { marginBottom: 12, cursor: 'pointer', borderLeft: '4px solid #FFB74D' },
+            onClick: () => setExpandedDraft(isExpanded ? null : dm.id) },
+            React.createElement('div', { style: { display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' } },
+              React.createElement('div', null,
+                React.createElement('strong', { style: { fontSize: 16 } }, dm.id + ' '),
+                React.createElement('span', { style: { fontSize: 16 } }, dm.name),
+                React.createElement('div', { style: { marginTop: 6 } },
+                  dm.stakeholders.map(s => stakeholderPill(s.role)),
+                  React.createElement('span', { style: { marginLeft: 8, fontSize: 12, color: '#666' } }, dimPill(dm.dimension.split(' - ')[0]))
+                )
+              ),
+              React.createElement('span', { style: { fontSize: 12, color: '#999', whiteSpace: 'nowrap' } }, isExpanded ? '▲ collapse' : '▼ expand')
+            ),
+            isExpanded && React.createElement('div', { style: { marginTop: 16, borderTop: '1px solid #eee', paddingTop: 12 }, onClick: e => e.stopPropagation() },
+              dm.definition && React.createElement('div', { style: { marginBottom: 12 } },
+                React.createElement('strong', null, 'Definition: '),
+                React.createElement(MdText, { text: dm.definition })
+              ),
+              dm.stakeholders && dm.stakeholders.length > 0 && React.createElement('div', { style: { marginBottom: 12 } },
+                React.createElement('strong', null, 'Stakeholder Relevance:'),
+                React.createElement('ul', { style: { margin: '6px 0 0 20px', padding: 0, fontSize: 13 } },
+                  dm.stakeholders.map((s, si) => React.createElement('li', { key: si, style: { marginBottom: 4 } },
+                    React.createElement('strong', null, s.role + ': '),
+                    s.rationale
+                  ))
+                )
+              ),
+              dm.rationale && React.createElement('div', { style: { marginBottom: 12 } },
+                React.createElement('strong', null, 'Rationale: '),
+                React.createElement(MdText, { text: dm.rationale })
+              ),
+              dm.relatedMeasures && dm.relatedMeasures.length > 0 && React.createElement('div', { style: { marginBottom: 12 } },
+                React.createElement('strong', null, 'Related Canonical Measures:'),
+                React.createElement('ul', { style: { margin: '6px 0 0 20px', padding: 0, fontSize: 13 } },
+                  dm.relatedMeasures.map((r, ri) => React.createElement('li', { key: ri }, React.createElement(MdText, { text: r })))
+                )
+              ),
+              dm.validationQuestions && dm.validationQuestions.length > 0 && React.createElement('div', { style: { marginBottom: 12 } },
+                React.createElement('strong', null, 'Key Questions for Interviews:'),
+                React.createElement('ol', { style: { margin: '6px 0 0 20px', padding: 0, fontSize: 13 } },
+                  dm.validationQuestions.map((q, qi) => React.createElement('li', { key: qi, style: { marginBottom: 4 } }, q))
+                )
+              ),
+              dm.methods && dm.methods.length > 0 && React.createElement('div', { style: { marginBottom: 8 } },
+                React.createElement('strong', null, 'Example Measurement Methods:'),
+                React.createElement('table', { className: 'data-table', style: { marginTop: 8 } },
+                  React.createElement('thead', null,
+                    React.createElement('tr', null,
+                      React.createElement('th', null, 'Method'),
+                      React.createElement('th', null, 'Description'),
+                      React.createElement('th', null, 'Data Source')
+                    )
+                  ),
+                  React.createElement('tbody', null,
+                    dm.methods.map((m, mi) => React.createElement('tr', { key: mi },
+                      React.createElement('td', null, m.method || ''),
+                      React.createElement('td', { style: { fontSize: 13 } }, m.description || ''),
+                      React.createElement('td', null, m.data_source || '')
+                    ))
+                  )
+                )
+              )
+            )
+          );
+        })
+      );
+    }
+
+    // ─── DECISION GUIDE TAB ───
+    function DecisionGuideTab({ measures, draftMeasures, guideRole, setGuideRole }) {
+      var roles = [
+        { id: 'CMIO', label: 'CMIO', color: '#1565C0', desc: 'Clinical safety, documentation quality, system performance, and evidence rigor' },
+        { id: 'CFO', label: 'CFO', color: '#2E7D32', desc: 'Financial justification, ROI, revenue impact, and cost management' },
+        { id: 'COO', label: 'COO', color: '#E65100', desc: 'Operational scalability, reliability, workflow impact, and throughput' },
+        { id: 'CPO', label: 'Chief People Officer', color: '#6A1B9A', desc: 'Workforce wellbeing, retention, equity, and clinician experience' },
+        { id: 'ALL', label: 'All Roles', color: '#1F4E79', desc: 'Complete view across all executive stakeholders' },
+      ];
+
+      // Map canonical measures to stakeholder roles
+      var cmRoleMap = {
+        CFO: ['CM-04', 'CM-05', 'CM-20', 'CM-22', 'CM-21'],
+        CMIO: ['CM-08', 'CM-09', 'CM-10', 'CM-11', 'CM-12', 'CM-19', 'CM-24', 'CM-25', 'CM-13'],
+        CPO: ['CM-01', 'CM-02', 'CM-03', 'CM-05', 'CM-15', 'CM-16'],
+        COO: ['CM-04', 'CM-06', 'CM-07', 'CM-13', 'CM-22', 'CM-23'],
+      };
+
+      var activeRole = roles.find(r => r.id === guideRole) || roles[0];
+
+      // Filter canonical measures
+      var filteredCMs = measures;
+      if (guideRole !== 'ALL') {
+        var cmIds = cmRoleMap[guideRole] || [];
+        filteredCMs = measures.filter(m => cmIds.includes(m.id));
+      }
+
+      // Filter draft measures
+      var filteredDMs = draftMeasures;
+      if (guideRole !== 'ALL') {
+        filteredDMs = draftMeasures.filter(dm => dm.stakeholders.some(s => s.role === guideRole));
+      }
+
+      return React.createElement('div', { className: 'container' },
+        React.createElement('h1', null, 'Decision Guide'),
+        React.createElement('p', null, 'A stakeholder-focused view of ACI evaluation evidence. Select a role to see the canonical measures and evidence gaps most relevant to that executive\'s decision-making needs.'),
+
+        // Role selector buttons
+        React.createElement('div', { style: { display: 'flex', flexWrap: 'wrap', gap: 8, marginBottom: 24 } },
+          roles.map(r => React.createElement('button', {
+            key: r.id,
+            onClick: () => setGuideRole(r.id),
+            style: {
+              padding: '10px 20px', borderRadius: 8, border: guideRole === r.id ? '2px solid ' + r.color : '2px solid #ddd',
+              background: guideRole === r.id ? r.color : '#fff', color: guideRole === r.id ? '#fff' : '#333',
+              fontWeight: 600, fontSize: 14, cursor: 'pointer', transition: 'all 0.2s'
+            }
+          }, r.label))
+        ),
+
+        // Role description
+        React.createElement('div', { className: 'card', style: { background: activeRole.color + '11', borderLeft: '4px solid ' + activeRole.color, marginBottom: 24 } },
+          React.createElement('strong', { style: { color: activeRole.color } }, activeRole.label + ': '),
+          React.createElement('span', null, activeRole.desc)
+        ),
+
+        // Canonical Measures section
+        React.createElement('h2', { style: { borderBottom: '2px solid #1F4E79', paddingBottom: 8, marginBottom: 16 } }, 'Literature-Derived Measures'),
+        React.createElement('p', { style: { fontSize: 14, color: '#666', marginBottom: 16 } },
+          guideRole === 'ALL'
+            ? 'All 25 canonical measures derived from the published evidence base.'
+            : filteredCMs.length + ' canonical measures most relevant to the ' + activeRole.label + '.'
+        ),
+        filteredCMs.map(m => React.createElement('div', { key: m.id, className: 'card', style: { marginBottom: 10, borderLeft: '4px solid #1F4E79' } },
+          React.createElement('div', { style: { display: 'flex', justifyContent: 'space-between', alignItems: 'center' } },
+            React.createElement('div', null,
+              React.createElement('strong', null, m.id + ' '),
+              React.createElement('span', null, m.name),
+              React.createElement('span', { style: { marginLeft: 8 } }, dimPill(m.dimension.split(' - ')[0]))
+            ),
+            React.createElement('div', { style: { display: 'flex', alignItems: 'center', gap: 12 } },
+              React.createElement('span', { style: { fontSize: 12, color: '#666' } }, m.paperCount + ' papers'),
+              m.paperCount >= 10 && React.createElement('span', { style: { display: 'inline-block', width: 10, height: 10, borderRadius: '50%', background: '#4CAF50' } }),
+              m.paperCount >= 5 && m.paperCount < 10 && React.createElement('span', { style: { display: 'inline-block', width: 10, height: 10, borderRadius: '50%', background: '#FFC107' } }),
+              m.paperCount < 5 && React.createElement('span', { style: { display: 'inline-block', width: 10, height: 10, borderRadius: '50%', background: '#f44336' } })
+            )
+          ),
+          m.definition && React.createElement('p', { style: { fontSize: 13, color: '#555', margin: '8px 0 0' } }, React.createElement(MdText, { text: m.definition })),
+          m.concerns && React.createElement('div', { style: { fontSize: 13, color: '#b71c1c', marginTop: 8, fontStyle: 'italic' } }, React.createElement(MdText, { text: m.concerns }))
+        )),
+
+        // Evidence gaps section
+        filteredDMs.length > 0 && React.createElement(React.Fragment, null,
+          React.createElement('h2', { style: { borderBottom: '2px solid #FFB74D', paddingBottom: 8, marginTop: 32, marginBottom: 16 } }, 'Additional Draft Measures'),
+          React.createElement('p', { style: { fontSize: 14, color: '#666', marginBottom: 16 } },
+            guideRole === 'ALL'
+              ? 'All 14 draft measures identified through stakeholder gap analysis — pending key informant validation.'
+              : filteredDMs.length + ' evidence gaps most relevant to the ' + activeRole.label + '.'
+          ),
+          filteredDMs.map(dm => React.createElement('div', { key: dm.id, className: 'card', style: { marginBottom: 10, borderLeft: '4px solid #FFB74D' } },
+            React.createElement('div', null,
+              React.createElement('strong', null, dm.id + ' '),
+              React.createElement('span', null, dm.name),
+              React.createElement('span', { style: { marginLeft: 8 } }, dimPill(dm.dimension.split(' - ')[0])),
+              dm.stakeholders.map(s => React.createElement('span', {
+                key: s.role,
+                style: { display: 'inline-block', padding: '2px 8px', borderRadius: 12, fontSize: 11, fontWeight: 600, color: '#fff', background: (roles.find(r => r.id === s.role) || {}).color || '#666', marginLeft: 4 }
+              }, s.role))
+            ),
+            dm.definition && React.createElement('p', { style: { fontSize: 13, color: '#555', margin: '8px 0 0' } }, React.createElement(MdText, { text: dm.definition })),
+            guideRole !== 'ALL' && dm.stakeholders.filter(s => s.role === guideRole).map(s =>
+              React.createElement('p', { key: s.role, style: { fontSize: 13, color: '#666', marginTop: 4, fontStyle: 'italic' } }, s.rationale)
+            )
+          ))
+        ),
+
+        // Summary stats
+        React.createElement('div', { style: { marginTop: 32, padding: 16, background: '#f5f5f5', borderRadius: 8, fontSize: 13, color: '#666', textAlign: 'center' } },
+          React.createElement('span', null, filteredCMs.length + ' canonical measures with published evidence'),
+          React.createElement('span', null, ' · '),
+          React.createElement('span', null, filteredDMs.length + ' draft measures pending validation'),
+          React.createElement('span', null, ' · '),
+          React.createElement('span', null, 'Evidence strength: '),
+          React.createElement('span', { style: { display: 'inline-block', width: 10, height: 10, borderRadius: '50%', background: '#4CAF50' } }), ' 10+ papers ',
+          React.createElement('span', { style: { display: 'inline-block', width: 10, height: 10, borderRadius: '50%', background: '#FFC107' } }), ' 5-9 ',
+          React.createElement('span', { style: { display: 'inline-block', width: 10, height: 10, borderRadius: '50%', background: '#f44336' } }), ' <5'
+        )
+      );
+    }
+
+    // ─── ARTICLE MODAL ───
+    function ArticleModal({ article, onClose }) {
+      const a = article;
+      return React.createElement('div', { className: 'modal-overlay', onClick: onClose },
+        React.createElement('div', { className: 'modal', onClick: e => e.stopPropagation() },
+          React.createElement('button', { className: 'modal-close', onClick: onClose }, '\u00D7'),
+          React.createElement('h2', { style: { marginTop: 0, paddingRight: 40 } }, a.title || a.id),
+          React.createElement('p', { style: { color: '#666', fontSize: 14 } }, a.authors),
+          a.doi && React.createElement('p', null, React.createElement('strong', null, 'DOI: '), React.createElement('a', { href: a.doi.startsWith('http') ? a.doi : `https://doi.org/${a.doi.replace(/.*?(10\.\d+)/, '$1')}`, target: '_blank' }, a.doi)),
+          React.createElement('p', null, React.createElement('strong', null, 'Journal: '), React.createElement(MdText, { text: a.journal })),
+          React.createElement('p', null, React.createElement('strong', null, 'Product: '), React.createElement(MdText, { text: a.product })),
+          React.createElement('p', null, React.createElement('strong', null, 'Setting: '), React.createElement(MdText, { text: a.setting })),
+          React.createElement('p', null, React.createElement('strong', null, 'Evidence Level: '), React.createElement(MdText, { text: a.evidenceLevel })),
+          React.createElement('p', null, React.createElement('strong', null, 'Data Sources: '), React.createElement(MdText, { text: a.dataSources })),
+          React.createElement('h3', null, 'Summary'),
+          React.createElement('div', { style: { marginBottom: 16 } }, React.createElement(MdText, { text: a.summary })),
+          a.measures && a.measures.length > 0 && React.createElement(React.Fragment, null,
+            React.createElement('h3', null, 'Study Measures'),
+            React.createElement('table', { className: 'data-table' },
+              React.createElement('thead', null,
+                React.createElement('tr', null,
+                  React.createElement('th', null, 'Measure'),
+                  React.createElement('th', null, 'Description'),
+                  React.createElement('th', null, 'D&M'),
+                )
+              ),
+              React.createElement('tbody', null,
+                a.measures.map((m, i) => React.createElement('tr', { key: i },
+                  React.createElement('td', null, React.createElement(MdText, { text: m.measure })),
+                  React.createElement('td', { style: { fontSize: 13 } }, React.createElement(MdText, { text: m.description })),
+                  React.createElement('td', null, (m.dimensions || '').split(/[,\/]/).map(d => dimPill(d))),
+                ))
+              )
+            )
+          ),
+          a.keyFindings && a.keyFindings.length > 0 && React.createElement(React.Fragment, null,
+            React.createElement('h3', null, 'Key Findings'),
+            a.keyFindings.map((f, i) => React.createElement('div', { key: i, className: 'finding-item' }, React.createElement(MdText, { text: f })))
+          ),
+        )
+      );
+    }
+
+    ReactDOM.render(React.createElement(App), document.getElementById('root'));
+  </script>
+</body>
+</html>
