@@ -28,6 +28,10 @@ Whether and how quickly clinical notes are completed and signed — measured as 
 ## ⚠️ Key Note
 Chart closure is a distinct operational metric from raw documentation time — a note can be completed quickly but signed late. Boyter/KLAS 2025 found −41% in chart closure time (UAL data). Afshar 2025a used it as a real-time monitoring metric with a notable dip during template change.
 
+**⚠️ Definition overlap with CM-04:** The "time to chart" portion of this measure overlaps with documentation time (CM-04). All "time to close" aliases need to be checked to ensure they are capturing completion behavior (signing/submitting), not note-writing time.
+
+**⚠️ Time to Close Encounter (Pearlman 2025):** Verify that this measures note closure, not patient discharge or room turnover (i.e., not patient movement).
+
 ## Papers Measuring This (8)
 - [[Afshar 2025b - Pragmatic RCT Ambient AI Health Practitioner Wellbeing]]
 - [[Albrecht 2025 - Ambient AI Clinical Documentation QI Survey]]

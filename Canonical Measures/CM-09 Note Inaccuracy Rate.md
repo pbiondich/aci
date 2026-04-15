@@ -1,6 +1,8 @@
-# CM-09 Note Accuracy and Hallucination Rate
+# CM-09 Note Inaccuracy Rate
 
 **D&M Dimension:** [[IQ - Information Quality]]
+
+*(Previously titled "Note Accuracy and Hallucination Rate" — renamed to match definition, which measures inaccuracy not accuracy)*
 
 ## Definition
 The presence of clinically inaccurate or fabricated content in AI-generated notes — information that was not stated in the encounter or is factually wrong. Distinct from omissions (CM-08). Includes hallucinations (invented content) and incorrect facts (stated inaccurately).

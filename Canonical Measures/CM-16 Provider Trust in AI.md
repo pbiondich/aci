@@ -23,6 +23,8 @@ Provider-reported trust in the accuracy and reliability of AI-generated notes, i
 ## ⚠️ Key Note
 Only 5 papers formally measure this as a study outcome, though AI trust themes appear qualitatively in many more. Bundy 2024 found 7/12 physicians feared increased patient volume from ambient scribes — a specific mistrust pattern about downstream consequences rather than tool performance.
 
+**⚠️ Category placement under team discussion:** Trust may be a precondition for adoption (you won't adopt if you don't trust), which would logically place it before adoption (CM-13/CM-14) in the causal chain. Alternatively, given the definitions here, trust may belong within CM-15 (Provider Satisfaction and Usability) rather than as a standalone measure. *Team consensus needed before finalizing.*
+
 ## Papers Measuring This (5)
 - [[Afshar 2025b - Pragmatic RCT Ambient AI Health Practitioner Wellbeing]]
 - [[Bundy 2024 - Administrative Loads Physicians AI Documentation Qualitative]]
