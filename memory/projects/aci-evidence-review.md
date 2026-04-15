@@ -2,20 +2,25 @@
 
 **Repo:** https://github.com/pbiondich/aci
 **Live site:** https://pbiondich.github.io/aci/
-**Current version:** v.17
+**Current version:** v.18
 **Status:** Active
 
 ## What It Is
-A systematic literature review of 54 studies evaluating Ambient Clinical Intelligence tools, organized using the DeLone & McLean IS Success Model. Includes an Obsidian vault (source of truth), a Word report, and an interactive single-page web application on GitHub Pages.
+A systematic literature review of 54 studies evaluating Ambient Clinical Intelligence tools, organized using the DeLone & McLean IS Success Model. Includes an Obsidian vault (source of truth), a Word report, and an interactive single-page web application on GitHub Pages. Also includes 12 draft measures identified through stakeholder gap analysis, pending validation via key informant interviews.
 
 ## Architecture
 - **Obsidian vault** — markdown files are the single source of truth
   - `Articles/*.md` — 54 study articles
-  - `Canonical Measures/CM-*.md` — 25 canonical measures
+  - `Canonical Measures/CM-*.md` — 25 canonical measures (directory renamed from `Measures/`)
+  - `Draft Measures/DM-*.md` — 12 draft measures
   - `D&M Dimensions/*.md` — 6 D&M dimensions
+  - `Templates/` — includes Article Review Template, D&M Mapping Guide, Draft Measure Template
 - **Extraction script** — `scripts/extract-data.js` (Node.js) reads vault markdown, outputs JSON to `docs/data/`
+  - Parses articles, canonical measures, dimensions, and draft measures
+  - Handles wiki-link pipe syntax (`[[long title|short title]]`) for clean alias display
 - **Web app** — `docs/index.html`, single HTML file, React 18.2.0 via CDN (production UMD), no build step
 - **GitHub Action** — `.github/workflows/build-site.yml`, auto-regenerates JSON on push to main
+  - Watches: `Articles/**`, `Canonical Measures/**`, `Draft Measures/**`, `D&M Dimensions/**`, `Templates/**`, `scripts/**`, `docs/index.html`
 - **GitHub Pages** — serves from `/docs` folder on main branch, `.nojekyll` file present
 
 ## Key Design Decisions
@@ -24,20 +29,41 @@ A systematic literature review of 54 studies evaluating Ambient Clinical Intelli
 - Client-side markdown rendering via `mdToReact()` / `MdText` component (handles **bold**, *italic*, [[wikilinks]], [links](url))
 - `cleanProduct()` normalizer for verbose product field text
 - `extractSection()` uses string slicing (not regex \Z) to handle last-section-in-file
+- Draft measures are visually distinct from canonical measures (orange left-border, amber warning banner)
 
 ## Webapp Tabs (in order)
 1. Overview
 2. Canonical Measures
-3. Article Explorer
-4. D&M Framework
-5. Study Corpus
-6. Level of Rigor
+3. Decision Guide
+4. Draft Measures
+5. Article Explorer
+6. D&M Framework
+7. Study Corpus
+8. Level of Rigor
 
 ## Canonical Measure Detail Sections
 1. Definition
 2. Typical Findings
 3. Methodological Concerns
 4. Aliases Used in Literature (bulleted list)
+
+## Draft Measure Detail Sections
+1. Definition
+2. Stakeholder Relevance
+3. Rationale
+4. Related Canonical Measures
+5. Key Questions for Interviews
+6. Example Measurement Methods
+
+## Decision Guide
+- Stakeholder role filter buttons: CMIO, CFO, COO, Chief People Officer, All Roles
+- Defaults to CMIO view
+- Filters both canonical measures and draft measures by selected role
+- Canonical measures mapped to roles via `cmRoleMap`
+- Draft measures mapped via stakeholder tags in the markdown
+- Evidence strength indicators: green (10+ papers), yellow (5-9), red (<5)
+- Two sections: "Literature-Derived Measures" and "Additional Draft Measures"
+- Stakeholder colors: CMIO=#1565C0, CFO=#2E7D32, COO=#E65100, CPO=#6A1B9A
 
 ## Article Explorer
 - Columns: Year (6%), Title (50%), Design (14%), Product (20%), Measures (10%)
@@ -54,8 +80,26 @@ A systematic literature review of 54 studies evaluating Ambient Clinical Intelli
 - "Critically Low"
 - "Meta/Methodological"
 
+## Draft Measures (DM-01 through DM-12)
+Proposed additional measures identified through stakeholder gap analysis brainstorming. Pending key informant validation with CFO, CMIO, CPO, COO.
+
+| ID    | Name                                     | Stakeholders   |
+| ----- | ---------------------------------------- | -------------- |
+| DM-01 | Total Cost of Ownership                  | CFO, COO       |
+| DM-02 | Malpractice and Liability Exposure       | CFO, CMIO, COO |
+| DM-03 | Staff Turnover Cost Avoidance            | CPO, CFO       |
+| DM-04 | Specialty-Specific Performance Variation | CMIO, COO      |
+| DM-05 | Structured Data Integrity                | CMIO, COO      |
+| DM-06 | Clinician Edit Burden                    | CMIO, CPO      |
+| DM-07 | Equity of Impact Across Roles            | CPO, COO       |
+| DM-08 | Onboarding and Training Burden           | CPO, COO, CMIO |
+| DM-09 | System Reliability and Downtime          | COO, CMIO      |
+| DM-10 | Scalability Evidence                     | COO, CFO       |
+| DM-11 | Workflow Disruption During Rollout       | COO, CFO, CPO  |
+| DM-12 | Patient Consent and Opt-Out Burden       | COO, CMIO      |
+
 ## Version Convention
-- Displayed in subtitle: `25 canonical measures derived from 494 raw measure rows across 54 papers | March 2026 | v.XX`
+- Displayed in subtitle: `25 canonical measures derived from 494 raw measure rows across 54 papers | April 2026 | v.XX`
 - HTML comment changelog at top of index.html
 - Bump with every improvement
 
@@ -76,7 +120,8 @@ A systematic literature review of 54 studies evaluating Ambient Clinical Intelli
 - v.14 — Fixed title truncation (full titles wrap, removed 70-char limit)
 - v.15 — Added "Aliases Used in Literature" section to canonical measure details
 - v.16 — Data refresh: updated measure paper counts and concerns; corrected raw measure count 426→494; April 2026
-- v.17 — Added Draft Measures tab (14 DMs) and Decision Guide tab (stakeholder role filter: CFO/CMIO/CPO/COO)
+- v.17 — Added Draft Measures tab and Decision Guide tab (stakeholder role filter: CFO/CMIO/CPO/COO)
+- v.18 — Refined Draft Measures, reordered Decision Guide roles, renamed section headers, reordered detail sections
 
 ## Key Files
 | File | Purpose |
@@ -85,7 +130,15 @@ A systematic literature review of 54 studies evaluating Ambient Clinical Intelli
 | `scripts/extract-data.js` | Node.js extraction from vault markdown to JSON |
 | `.github/workflows/build-site.yml` | CI: auto-regenerate JSON on push |
 | `docs/data/articles.json` | 54 articles (~198KB) |
-| `docs/data/measures.json` | 25 measures (~28KB) |
+| `docs/data/measures.json` | 25 canonical measures (~28KB) |
+| `docs/data/draft-measures.json` | 12 draft measures |
 | `docs/data/dimensions.json` | 6 dimensions (~6KB) |
 | `docs/.nojekyll` | Prevents Jekyll processing on GitHub Pages |
+| `Templates/Draft Measure Template.md` | Template for new draft measures |
 | `Evaluating Ambient Clinical Intelligence - Draft Report.docx` | Word document report |
+
+## Future Considerations
+- Individual Impact vs. Organizational Impact split of Net Benefits (1992 D&M model) — parked for later
+- Key informant interviews to validate draft measures
+- Potential "Vendor Claims vs. Evidence" view in Decision Guide
+- Renumbering of DMs after list stabilizes post-interviews
