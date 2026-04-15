@@ -37,5 +37,5 @@ Only 6 papers measure throughput, and the strongest data is from Shuaib 2021 (hu
 - [[Peterson Health Technology Institute 2025 - Adoption AI Healthcare Delivery Systems]]
 
 ---
-*Canonical Measures | Suki Literature Review Vault | Derived 2026-03-25*
+*Canonical Measures | Suki Literature Review Vault | Derived 2026-03-25, updated 2026-04-15*
 *Method: Bottom-up derivation from 494 raw measure rows across 54 papers*

@@ -52,5 +52,5 @@ Patient-reported or validated assessment of the quality of the patient-physician
 - [[Tierney 2025 - Ambient AI Scribes Learnings 1 Year 2.5 Million Uses]] (patient survey n=118: 56% positive impact on visit quality, 0% negative, 39% more time speaking with doctor, 92% comfortable/neutral with AI)
 
 ---
-*Canonical Measures | Suki Literature Review Vault | Derived 2026-03-25*
+*Canonical Measures | Suki Literature Review Vault | Derived 2026-03-25, updated 2026-04-15*
 *Method: Bottom-up derivation from 494 raw measure rows across 54 papers*

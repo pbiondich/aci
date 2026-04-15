@@ -43,5 +43,5 @@ Chart closure is a distinct operational metric from raw documentation time — a
 - [[Shuaib 2021 - Scribe Program Patient Throughput Physician Productivity]]
 
 ---
-*Canonical Measures | Suki Literature Review Vault | Derived 2026-03-25*
+*Canonical Measures | Suki Literature Review Vault | Derived 2026-03-25, updated 2026-04-15*
 *Method: Bottom-up derivation from 494 raw measure rows across 54 papers*

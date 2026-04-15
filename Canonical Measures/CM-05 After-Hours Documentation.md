@@ -52,5 +52,5 @@ Time spent on clinical documentation outside of scheduled working hours — 'paj
 - [[Billings 2025b - Practicing Value-Based Care with AI]]
 
 ---
-*Canonical Measures | Suki Literature Review Vault | Derived 2026-03-25*
+*Canonical Measures | Suki Literature Review Vault | Derived 2026-03-25, updated 2026-04-15*
 *Method: Bottom-up derivation from 494 raw measure rows across 54 papers*

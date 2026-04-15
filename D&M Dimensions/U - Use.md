@@ -56,4 +56,4 @@ Every large deployment study finds heterogeneous adoption: heavy users, moderate
 - [[Wojda 2025 - HCI of Ambient AI Qualitative Study]]
 
 ---
-*D&M Dimensions | Suki Literature Review Vault | Updated 2026-03-25*
+*D&M Dimensions | Suki Literature Review Vault | Created 2026-03-25, updated 2026-04-15*

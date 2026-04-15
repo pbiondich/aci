@@ -41,5 +41,5 @@ Three independent papers show financial productivity improvement: Holmgren 2026 
 - [[Galloway 2024 - Impact Artificial Intelligence Based Solution Clinicians Clinical Documentation]]
 
 ---
-*Canonical Measures | Suki Literature Review Vault | Derived 2026-03-25*
+*Canonical Measures | Suki Literature Review Vault | Derived 2026-03-25, updated 2026-04-15*
 *Method: Bottom-up derivation from 494 raw measure rows across 54 papers*

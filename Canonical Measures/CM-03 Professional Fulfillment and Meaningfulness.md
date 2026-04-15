@@ -42,5 +42,5 @@ Provider-reported positive engagement with clinical work — the presence of mea
 > **Note:** Albrecht 2025 removed from this list — its contribution (sleep quality) has moved to CM-01.
 
 ---
-*Canonical Measures | Suki Literature Review Vault | Derived 2026-03-25*
+*Canonical Measures | Suki Literature Review Vault | Derived 2026-03-25, updated 2026-04-15*
 *Method: Bottom-up derivation from 494 raw measure rows across 54 papers*

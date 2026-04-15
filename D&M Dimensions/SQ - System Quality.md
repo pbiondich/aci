@@ -51,4 +51,4 @@ SQ is the most evidence-sparse dimension in the corpus. Commercial ambient AI pr
 - [[van Buchem 2024 - Digital Scribe Documentation Time Quality Usability]]
 
 ---
-*D&M Dimensions | Suki Literature Review Vault | Updated 2026-03-25*
+*D&M Dimensions | Suki Literature Review Vault | Created 2026-03-25, updated 2026-04-15*

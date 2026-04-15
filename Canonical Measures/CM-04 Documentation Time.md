@@ -71,5 +71,5 @@ Aliases in this measure should be distinguished by data source:
 - [[Wang 2021 - Patient-Centered Digital Scribe Automatic Medical Documentation]]
 
 ---
-*Canonical Measures | Suki Literature Review Vault | Derived 2026-03-25*
+*Canonical Measures | Suki Literature Review Vault | Derived 2026-03-25, updated 2026-04-15*
 *Method: Bottom-up derivation from 494 raw measure rows across 54 papers*

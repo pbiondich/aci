@@ -51,5 +51,5 @@ PDQI-9 was designed for human-authored notes and has been adapted for AI assessm
 - [[Balloch 2024 - Ambient Artificial Intelligence Tool Improve Quality Clinical Documentation]]
 
 ---
-*Canonical Measures | Suki Literature Review Vault | Derived 2026-03-25*
+*Canonical Measures | Suki Literature Review Vault | Derived 2026-03-25, updated 2026-04-15*
 *Method: Bottom-up derivation from 494 raw measure rows across 54 papers*

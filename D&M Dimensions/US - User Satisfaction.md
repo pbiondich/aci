@@ -74,4 +74,4 @@ US is the most commonly measured dimension (35 papers) but is subject to substan
 - [[Wang 2021 - Patient-Centered Digital Scribe Automatic Medical Documentation]]
 
 ---
-*D&M Dimensions | Suki Literature Review Vault | Updated 2026-03-25*
+*D&M Dimensions | Suki Literature Review Vault | Created 2026-03-25, updated 2026-04-15*

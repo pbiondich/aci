@@ -42,5 +42,5 @@ The model proposes a causal flow:
 - **Patient outcomes (NB)** are the most critical gap: patient experience, patient safety, and patient volume are vastly understudied
 
 ---
-*D&M Dimensions | Suki Literature Review Vault | Updated 2026-03-25*
+*D&M Dimensions | Suki Literature Review Vault | Created 2026-03-25, updated 2026-04-15*
 *Canonical measures derived 2026-03-25 from full 54-paper corpus analysis*

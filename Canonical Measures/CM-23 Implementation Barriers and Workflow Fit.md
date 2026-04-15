@@ -46,5 +46,5 @@ Universal finding: heterogeneous adoption with a cohort of heavy users, moderate
 - [[You 2025 - Ambient Documentation Technology Documentation Burden Burnout]]
 
 ---
-*Canonical Measures | Suki Literature Review Vault | Derived 2026-03-25*
+*Canonical Measures | Suki Literature Review Vault | Derived 2026-03-25, updated 2026-04-15*
 *Method: Bottom-up derivation from 494 raw measure rows across 54 papers*

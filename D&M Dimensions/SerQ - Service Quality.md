@@ -41,4 +41,4 @@ SerQ is the most underrepresented dimension in peer-reviewed literature — only
 - [[Tierney 2025 - Ambient AI Scribes Learnings 1 Year 2.5 Million Uses]]
 
 ---
-*D&M Dimensions | Suki Literature Review Vault | Updated 2026-03-25*
+*D&M Dimensions | Suki Literature Review Vault | Created 2026-03-25, updated 2026-04-15*
