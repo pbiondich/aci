@@ -73,13 +73,6 @@ A systematic literature review of 54 studies evaluating Ambient Clinical Intelli
 - Click row to open modal with full details
 - Modal fields use MdText for markdown rendering
 
-## Rigor Tier Labels
-- "Best Relative Quality" (NOT "Gold Standard")
-- "Moderate" (NOT "Silver")
-- "Low" (NOT "Bronze")
-- "Critically Low"
-- "Meta/Methodological"
-
 ## Draft Measures (DM-01 through DM-12)
 Proposed additional measures identified through stakeholder gap analysis brainstorming. Pending key informant validation with CFO, CMIO, CPO, COO.
 
