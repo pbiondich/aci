@@ -17,13 +17,8 @@ Prior to this derivation (2026-03-24), the vault contained 11 seeded measures th
 ### Domain: Documentation Efficiency (NB)
 | ID | Name | Papers |
 |---|---|---|
-<<<<<<< HEAD
-| CM-04 | Documentation Time | 28 |
-| CM-05 | After-Hours Documentation | 18 |
-=======
 | CM-04 | Documentation Time | 31 |
 | CM-05 | After-Hours Documentation | 19 |
->>>>>>> 7a868b8 (Linkage validation: fix 25 missing CM links, update names and counts)
 | CM-06 | Chart Closure Timeliness | 8 |
 | CM-07 | Total EHR Time | 5 |
 
@@ -39,13 +34,8 @@ Prior to this derivation (2026-03-24), the vault contained 11 seeded measures th
 ### Domain: Adoption & Use (U)
 | ID | Name | Papers |
 |---|---|---|
-<<<<<<< HEAD
-| CM-13 | Adoption Behavior and Utilization Rate | 13 |
-| CM-14 | Adoption Intention and Long-Term Use | 5 |
-=======
 | CM-13 | Adoption Behavior and Utilization Rate | 14 |
 | CM-14 | Adoption Intention and Long-Term Use | 6 |
->>>>>>> 7a868b8 (Linkage validation: fix 25 missing CM links, update names and counts)
 
 ### Domain: User Satisfaction (US)
 | ID | Name | Papers |
@@ -57,25 +47,15 @@ Prior to this derivation (2026-03-24), the vault contained 11 seeded measures th
 | ID | Name | Papers |
 |---|---|---|
 | CM-17 | Patient Experience and Relationship Quality | 18 |
-<<<<<<< HEAD
-| CM-18 | Physician-Patient Interaction Quality | 9 |
-=======
 | CM-18 | Physician-Patient Interaction Quality | 12 |
->>>>>>> 7a868b8 (Linkage validation: fix 25 missing CM links, update names and counts)
 | CM-19 | Clinical Patient Safety | 9 |
 
 ### Domain: Financial & Organizational (NB)
 | ID | Name | Papers |
 |---|---|---|
-<<<<<<< HEAD
-| CM-20 | Financial Productivity and Revenue Impact | 7 |
-| CM-21 | Coding Accuracy ICD-10 HCC and EM | 6 |
-| CM-22 | Patient Volume and Throughput | 6 |
-=======
 | CM-20 | Financial Productivity and Revenue Impact | 8 |
 | CM-21 | Coding Accuracy ICD-10 HCC and EM | 6 |
 | CM-22 | Patient Volume and Throughput | 7 |
->>>>>>> 7a868b8 (Linkage validation: fix 25 missing CM links, update names and counts)
 
 ### Domain: Implementation (SerQ)
 | ID | Name | Papers |
@@ -97,12 +77,6 @@ Prior to this derivation (2026-03-24), the vault contained 11 seeded measures th
 5. **Patient outcomes split into 3:** Patient Experience (CM-17) + Interaction Quality (CM-18) + Patient Safety (CM-19)
 
 ---
-<<<<<<< HEAD
-*Updated: 2026-04-14 | Derived from 426 raw measure rows, 54 papers*
-
-**2026-04-14 update:** Tierney 2025 (large-scale 2.57M-encounter longitudinal DiD study with no COI) and Billings 2025b (VBC AI copilot with strong HCC/RAF outcomes) have been fully incorporated into the relevant canonical measures.
-=======
 *Updated: 2026-04-15 | Derived from 494 raw measure rows, 54 papers*
 
 **2026-04-15 update:** Paper counts refreshed after automated linkage validation (25 missing links fixed across 15 CMs). CM-09 renamed to "Note Inaccuracy Rate"; CM-10 renamed to "Note Quality Overall" (accommodates SAIL Score alongside PDQI-9).
->>>>>>> 7a868b8 (Linkage validation: fix 25 missing CM links, update names and counts)

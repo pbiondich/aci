@@ -459,8 +459,6 @@ function main() {
   fs.writeFileSync(path.join(OUTPUT_DIR, 'draft-measures.json'), JSON.stringify(draftMeasures, null, 2));
 
   console.log(`\nJSON files written to ${OUTPUT_DIR}`);
-<<<<<<< HEAD
-=======
 
   // Linkage validation hint
   try {
@@ -482,7 +480,6 @@ function main() {
     // Linkage check is optional; don't fail the build
   }
 
->>>>>>> 7a868b8 (Linkage validation: fix 25 missing CM links, update names and counts)
   console.log('Done.');
 }
 

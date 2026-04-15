@@ -25,11 +25,7 @@ Only 5 papers formally measure this as a study outcome, though AI trust themes a
 
 **⚠️ Category placement under team discussion:** Trust may be a precondition for adoption (you won't adopt if you don't trust), which would logically place it before adoption (CM-13/CM-14) in the causal chain. Alternatively, given the definitions here, trust may belong within CM-15 (Provider Satisfaction and Usability) rather than as a standalone measure. *Team consensus needed before finalizing.*
 
-<<<<<<< HEAD
-## Papers Measuring This (5)
-=======
 ## Papers Measuring This (6)
->>>>>>> 7a868b8 (Linkage validation: fix 25 missing CM links, update names and counts)
 - [[Afshar 2025b - Pragmatic RCT Ambient AI Health Practitioner Wellbeing]]
 - [[Bundy 2024 - Administrative Loads Physicians AI Documentation Qualitative]]
 - [[Falcetta 2023 - Automatic Documentation Professional Health Interactions Systematic Review]]

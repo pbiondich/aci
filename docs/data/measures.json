@@ -11,12 +11,8 @@
       "Mini-Z / Mini-Z 2.0",
       "Oldenburg Burnout Inventory (OLBI)",
       "Single-item burnout question",
-<<<<<<< HEAD
-      "Reduced burnout (Likert, dichotomized)"
-=======
       "Reduced burnout (Likert, dichotomized)",
       "PROMIS Sleep Disturbance (Short Form 4a)"
->>>>>>> 7a868b8 (Linkage validation: fix 25 missing CM links, update names and counts)
     ],
     "aliases": [
       "Burnout (corpus-wide — see papers list)",
@@ -26,13 +22,9 @@
       "Burnout Reduction (Boyter 2025)",
       "Burnout Frequency (Albrecht 2025)",
       "Reduced Burnout Risk (Olson 2025)",
-<<<<<<< HEAD
-      "Physician Burnout (Kanaparthy 2025)"
-=======
       "Physician Burnout (Kanaparthy 2025)",
       "Sleep Quality (Albrecht 2025) (moved from CM-03)",
       "PROMIS Sleep Disturbance (Albrecht 2025) (moved from CM-03)"
->>>>>>> 7a868b8 (Linkage validation: fix 25 missing CM links, update names and counts)
     ],
     "typicalFindings": "",
     "rigorRating": "",
@@ -75,15 +67,8 @@
       "Cognitive Load (Olson 2025, Peterson Health Technology Institute 2025)",
       "Cognitive Burden (Duggan 2025)",
       "Note-Related Cognitive Task Load (Olson 2025)",
-<<<<<<< HEAD
-      "Cognitive Demand (Guo 2026)",
-      "Mental Demand (Bracken 2025, Omon 2025)",
-      "NASA-TLX Temporal Demand / Time Pressure (Karavassilis 2025)",
-      "Less EHR Frustration (Guo 2026)",
-=======
       "Mental Demand (Bracken 2025, Omon 2025, Guo 2026) (⚠️ note: paper labels this \"Mental Demand\" not \"Cognitive Demand\"; Guo 2026 year may be incorrect — likely 2025)",
       "NASA-TLX Temporal Demand / Time Pressure (Karavassilis 2025)",
->>>>>>> 7a868b8 (Linkage validation: fix 25 missing CM links, update names and counts)
       "NASA-TLX Frustration (Bracken 2025)"
     ],
     "typicalFindings": "",
@@ -108,35 +93,18 @@
     "name": "Professional Fulfillment and Meaningfulness",
     "dimension": "US - User Satisfaction",
     "domain": "Clinician Well-Being",
-<<<<<<< HEAD
-    "paperCount": 6,
-=======
     "paperCount": 10,
->>>>>>> 7a868b8 (Linkage validation: fix 25 missing CM links, update names and counts)
     "definition": "Provider-reported positive engagement with clinical work — the presence of meaning, reward, and satisfaction in the work itself. The positive pole of the well-being spectrum, distinct from absence of burnout. Measured via PFI fulfillment subscale or related instruments.",
     "instruments": [
       "Stanford PFI — Professional Fulfillment subscale",
       "Meaningfulness of work items",
-<<<<<<< HEAD
-      "Work-life balance items",
-      "PROMIS Sleep Disturbance (Short Form 4a)"
-=======
       "Work-life balance items"
->>>>>>> 7a868b8 (Linkage validation: fix 25 missing CM links, update names and counts)
     ],
     "aliases": [
       "Professional Fulfillment (Afshar 2025b)",
       "Meaningfulness of Work (Afshar 2025b)",
-<<<<<<< HEAD
-      "Work-Life Balance (Boyter 2025, Haberle 2024, Duggan 2025)",
-      "Documentation Prevents Me From Being Fully Engaged (Duggan 2025)",
-      "My Documentation Burden Prevents Better Work-Life Balance (Duggan 2025)",
-      "Sleep Quality (Albrecht 2025)",
-      "PROMIS Sleep Disturbance (Albrecht 2025)",
-=======
       "Work-Life Balance (Boyter 2025, Haberle 2024 (⚠️ instrument name from Haberle needs verification — may be incorrectly labeled), Duggan 2025)",
       "My Documentation Burden Prevents Better Work-Life Balance (Duggan 2025)",
->>>>>>> 7a868b8 (Linkage validation: fix 25 missing CM links, update names and counts)
       "Documentation Impact on Well-Being (Galloway 2024)",
       "Improved Wellbeing (Liu 2024)"
     ],
@@ -149,15 +117,11 @@
       "Galloway 2024 - Impact Artificial Intelligence Based Solution Clinicians Clinical Documentation",
       "Lukac 2025 - RCT Two Ambient AI Scribes Documentation Efficiency Burnout",
       "Nguyen 2023 - Implementing Digital Scribes Reduce EHR Documentation Burden Cancer Care",
-<<<<<<< HEAD
-      "Suhail 2026 - Metrics for Ambient Clinical Documentation Scoping Review"
-=======
       "Suhail 2026 - Metrics for Ambient Clinical Documentation Scoping Review",
       "Afshar 2025 - Novel Playbook for Pragmatic Trial Operations",
       "Albrecht 2025 - Ambient AI Clinical Documentation QI Survey",
       "Evans 2025 - AI Scribe Allied Health Private Practice Australia",
       "Prasad 2025 - Clinician Perceptions Virtual Scribe Use Survey"
->>>>>>> 7a868b8 (Linkage validation: fix 25 missing CM links, update names and counts)
     ]
   },
   {
@@ -165,11 +129,7 @@
     "name": "Documentation Time",
     "dimension": "NB - Net Benefits",
     "domain": "Documentation Efficiency",
-<<<<<<< HEAD
-    "paperCount": 27,
-=======
     "paperCount": 31,
->>>>>>> 7a868b8 (Linkage validation: fix 25 missing CM links, update names and counts)
     "definition": "Total time spent creating, editing, and finalizing a clinical note — from note initiation to note signature. The most frequently measured efficiency outcome in the corpus. Includes in-clinic documentation time. Does NOT include after-hours time (see CM-05) unless explicitly pooled.",
     "instruments": [
       "EHR audit-log telemetry (Epic Signal / UAL)",
@@ -223,15 +183,11 @@
       "Stults 2025 - Evaluation Ambient AI Documentation Platform Clinicians",
       "Suhail 2026 - Metrics for Ambient Clinical Documentation Scoping Review",
       "Tierney 2025 - Ambient AI Scribes Learnings 1 Year 2.5 Million Uses",
-<<<<<<< HEAD
-      "van Buchem 2024 - Digital Scribe Documentation Time Quality Usability"
-=======
       "van Buchem 2024 - Digital Scribe Documentation Time Quality Usability",
       "Balloch 2024 - Ambient Artificial Intelligence Tool Improve Quality Clinical Documentation",
       "Biro 2025 - Simulation Testing Ambient Digital Scribes Case Report",
       "Moramarco 2022 - Human Evaluation Automatic Metrics Consultation Note Generation",
       "Wang 2021 - Patient-Centered Digital Scribe Automatic Medical Documentation"
->>>>>>> 7a868b8 (Linkage validation: fix 25 missing CM links, update names and counts)
     ]
   },
   {
@@ -239,11 +195,7 @@
     "name": "After-Hours Documentation",
     "dimension": "NB - Net Benefits",
     "domain": "Documentation Efficiency",
-<<<<<<< HEAD
-    "paperCount": 18,
-=======
     "paperCount": 19,
->>>>>>> 7a868b8 (Linkage validation: fix 25 missing CM links, update names and counts)
     "definition": "Time spent on clinical documentation outside of scheduled working hours — 'pajama time', 'after-hours EHR', or 'work outside work.' Distinct from total documentation time (CM-04) because it captures work-life boundary effects specifically. One of the most clinically meaningful outcomes because it directly affects physician well-being.",
     "instruments": [
       "EHR audit-log (Epic Signal / UAL)",
@@ -286,12 +238,8 @@
       "Peterson Health Technology Institute 2025 - Adoption AI Healthcare Delivery Systems",
       "Stults 2025 - Evaluation Ambient AI Documentation Platform Clinicians",
       "Suhail 2026 - Metrics for Ambient Clinical Documentation Scoping Review",
-<<<<<<< HEAD
-      "Tierney 2025 - Ambient AI Scribes Learnings 1 Year 2.5 Million Uses"
-=======
       "Tierney 2025 - Ambient AI Scribes Learnings 1 Year 2.5 Million Uses",
       "Billings 2025b - Practicing Value-Based Care with AI"
->>>>>>> 7a868b8 (Linkage validation: fix 25 missing CM links, update names and counts)
     ]
   },
   {
@@ -407,17 +355,10 @@
   },
   {
     "id": "CM-09",
-<<<<<<< HEAD
-    "name": "Note Accuracy and Hallucination Rate",
-    "dimension": "IQ - Information Quality",
-    "domain": "Note Information Quality",
-    "paperCount": 13,
-=======
     "name": "Note Inaccuracy Rate",
     "dimension": "IQ - Information Quality",
     "domain": "Note Information Quality",
     "paperCount": 14,
->>>>>>> 7a868b8 (Linkage validation: fix 25 missing CM links, update names and counts)
     "definition": "The presence of clinically inaccurate or fabricated content in AI-generated notes — information that was not stated in the encounter or is factually wrong. Distinct from omissions (CM-08). Includes hallucinations (invented content) and incorrect facts (stated inaccurately).",
     "instruments": [
       "Hallucination rate (%)",
@@ -456,26 +397,12 @@
       "Palm 2025 - Quality AI Generated Clinical Notes PDQI Validation",
       "Suhail 2026 - Metrics for Ambient Clinical Documentation Scoping Review",
       "Wang 2021 - Patient-Centered Digital Scribe Automatic Medical Documentation",
-<<<<<<< HEAD
-      "Wang 2025 - Evaluation Framework Ambient Digital Scribing Tools"
-=======
       "Wang 2025 - Evaluation Framework Ambient Digital Scribing Tools",
       "Shah 2025 - Physician Perspectives Ambient AI Scribes"
->>>>>>> 7a868b8 (Linkage validation: fix 25 missing CM links, update names and counts)
     ]
   },
   {
     "id": "CM-10",
-<<<<<<< HEAD
-    "name": "Note Quality Overall PDQI",
-    "dimension": "IQ - Information Quality",
-    "domain": "Note Information Quality",
-    "paperCount": 16,
-    "definition": "Aggregate quality rating of the AI-generated clinical note using a validated multi-dimensional instrument. The PDQI-9 and PDSQI-9 assess accuracy, thoroughness, usefulness, organization, comprehensibility, succinctness, synthesis, and consistency as a composite. Distinct from individual error-type measures (CM-08, CM-09).",
-    "instruments": [
-      "PDQI-9 (Physician Documentation Quality Instrument)",
-      "PDSQI-9 (Provider Documentation Summarization QI)",
-=======
     "name": "Note Quality Overall",
     "dimension": "IQ - Information Quality",
     "domain": "Note Information Quality",
@@ -485,7 +412,6 @@
       "PDQI-9 (Physician Documentation Quality Instrument)",
       "PDSQI-9 (Provider Documentation Summarization QI)",
       "SAIL Score",
->>>>>>> 7a868b8 (Linkage validation: fix 25 missing CM links, update names and counts)
       "Global rating (1–5)",
       "Documentation quality — SOAP sections",
       "Discharge summary / progress note PDQI"
@@ -522,12 +448,8 @@
       "Suhail 2026 - Metrics for Ambient Clinical Documentation Scoping Review",
       "Tierney 2024 - Ambient Artificial Intelligence Scribes Alleviate Burden Clinical Documentation",
       "Wojda 2025 - HCI of Ambient AI Qualitative Study",
-<<<<<<< HEAD
-      "van Buchem 2024 - Digital Scribe Documentation Time Quality Usability"
-=======
       "van Buchem 2024 - Digital Scribe Documentation Time Quality Usability",
       "Balloch 2024 - Ambient Artificial Intelligence Tool Improve Quality Clinical Documentation"
->>>>>>> 7a868b8 (Linkage validation: fix 25 missing CM links, update names and counts)
     ]
   },
   {
@@ -535,11 +457,7 @@
     "name": "Note Length and Verbosity",
     "dimension": "IQ - Information Quality",
     "domain": "Note Information Quality",
-<<<<<<< HEAD
-    "paperCount": 10,
-=======
     "paperCount": 11,
->>>>>>> 7a868b8 (Linkage validation: fix 25 missing CM links, update names and counts)
     "definition": "The length and lexical richness of AI-generated notes — measured as word count, character count, or lexical diversity. A proxy for verbosity and informativeness. Longer notes may be more thorough or may be padded/over-generated; context determines interpretation.",
     "instruments": [
       "Word count",
@@ -574,12 +492,8 @@
       "Guo 2026 - Evaluating Ambient AI Documentation UCI Health Mixed Methods",
       "Kanaparthy 2025 - Real-World Evidence Digital Scribes Rapid Review",
       "Stults 2025 - Evaluation Ambient AI Documentation Platform Clinicians",
-<<<<<<< HEAD
-      "van Buchem 2024 - Digital Scribe Documentation Time Quality Usability"
-=======
       "van Buchem 2024 - Digital Scribe Documentation Time Quality Usability",
       "Bundy 2024 - Administrative Loads Physicians AI Documentation Qualitative"
->>>>>>> 7a868b8 (Linkage validation: fix 25 missing CM links, update names and counts)
     ]
   },
   {
@@ -627,11 +541,7 @@
     "name": "Adoption Behavior and Utilization Rate",
     "dimension": "U - Use",
     "domain": "Adoption & Use",
-<<<<<<< HEAD
-    "paperCount": 13,
-=======
     "paperCount": 14,
->>>>>>> 7a868b8 (Linkage validation: fix 25 missing CM links, update names and counts)
     "definition": "Actual, observed use of the ambient AI scribe — measured as % of encounters in which the tool is used, number of sessions, or paid adoption post-trial. Captures behavior (what people actually do), not intention (what they say they'll do).",
     "instruments": [
       "Utilization rate (% of encounters)",
@@ -653,12 +563,7 @@
       "Utilization Stratification (Olson 2025)",
       "Voice Memo Frequency (Omon 2025)",
       "AI Scribe Use Quartile (Pearlman 2025)",
-<<<<<<< HEAD
-      "Portion of Notes Manually Typed (Duggan 2025)",
-      "Vendor Transition (Tierney 2025)"
-=======
       "Portion of Notes Manually Typed (Duggan 2025)"
->>>>>>> 7a868b8 (Linkage validation: fix 25 missing CM links, update names and counts)
     ],
     "typicalFindings": "",
     "rigorRating": "",
@@ -676,12 +581,7 @@
       "Shah 2025 - Physician Perspectives Ambient AI Scribes",
       "Tierney 2025 - Ambient AI Scribes Learnings 1 Year 2.5 Million Uses",
       "You 2025 - Ambient Documentation Technology Documentation Burden Burnout",
-<<<<<<< HEAD
-      "Tierney 2025 - Ambient AI Scribes Learnings 1 Year 2.5 Million Uses"
-=======
-      "Tierney 2025 - Ambient AI Scribes Learnings 1 Year 2.5 Million Uses",
       "Billings 2025b - Practicing Value-Based Care with AI"
->>>>>>> 7a868b8 (Linkage validation: fix 25 missing CM links, update names and counts)
     ]
   },
   {
@@ -689,13 +589,8 @@
     "name": "Adoption Intention and Long-Term Use",
     "dimension": "U - Use",
     "domain": "Adoption & Use",
-<<<<<<< HEAD
-    "paperCount": 5,
-    "definition": "Provider-reported intention to continue using the ambient AI scribe beyond the study period — including willingness to adopt, long-term use intent, recommendation likelihood, and implementation readiness. Captures attitudinal vs. behavioral adoption (Technology Acceptance Model distinction).",
-=======
     "paperCount": 6,
     "definition": "Provider-reported intention to continue using the ambient AI scribe beyond the study period — including willingness to adopt and implementation readiness. Captures attitudinal vs. behavioral adoption (Technology Acceptance Model distinction).",
->>>>>>> 7a868b8 (Linkage validation: fix 25 missing CM links, update names and counts)
     "instruments": [
       "UTAUT / TAM items",
       "Recommendation likelihood (Likert)",
@@ -706,12 +601,6 @@
     "aliases": [
       "Intention to Use (Galloway 2024, Evans 2025)",
       "Willingness to Adopt (Omon 2025)",
-<<<<<<< HEAD
-      "Recommendation Likelihood (Galloway 2024)",
-      "Recommendation Intention (Evans 2025)",
-      "Long-Term Use (Shah 2024: 78%)",
-=======
->>>>>>> 7a868b8 (Linkage validation: fix 25 missing CM links, update names and counts)
       "Implementation Intent (Omon 2025)",
       "User Adoption Predictors (Tierney 2025)",
       "License Relinquishment (Ma 2025)"
@@ -724,12 +613,8 @@
       "Galloway 2024 - Impact Artificial Intelligence Based Solution Clinicians Clinical Documentation",
       "Ma 2025 - Ambient AI Scribes Utilization Documentation Time Stanford",
       "Omon 2025 - Generative AI Rehabilitation Clinical Documentation",
-<<<<<<< HEAD
-      "Tierney 2025 - Ambient AI Scribes Learnings 1 Year 2.5 Million Uses"
-=======
       "Tierney 2025 - Ambient AI Scribes Learnings 1 Year 2.5 Million Uses",
       "Billings 2025b - Practicing Value-Based Care with AI"
->>>>>>> 7a868b8 (Linkage validation: fix 25 missing CM links, update names and counts)
     ]
   },
   {
@@ -737,13 +622,8 @@
     "name": "Provider Satisfaction and Usability",
     "dimension": "US - User Satisfaction",
     "domain": "User Satisfaction",
-<<<<<<< HEAD
-    "paperCount": 20,
-    "definition": "Provider-reported satisfaction with the ambient AI scribe tool — including perceived usability, ease of use, overall acceptability, and willingness to continue. Distinct from burnout (emotional outcome) and from adoption behavior (what they do). Captures subjective technology evaluation.",
-=======
     "paperCount": 21,
     "definition": "Provider-reported satisfaction with the ambient AI scribe tool — including perceived usability, ease of use, and overall acceptability. Distinct from burnout (emotional outcome) and from adoption behavior (what they do). Captures subjective technology evaluation.",
->>>>>>> 7a868b8 (Linkage validation: fix 25 missing CM links, update names and counts)
     "instruments": [
       "System Usability Scale (SUS)",
       "UTAUT perceived usefulness",
@@ -757,30 +637,18 @@
       "System Usability Scale (SUS) (Shah 2024)",
       "UTAUT items (Shah 2024)",
       "Favorable Utility (Shah 2024: 65% improved efficiency, 98% easy to use)",
-<<<<<<< HEAD
-      "Job Satisfaction (Boyter 2025, Galloway 2024)",
-      "Employee Satisfaction (Boyter 2025)",
-=======
       "Product Satisfaction / Job Satisfaction (Boyter 2025, Galloway 2024) (⚠️ these measure satisfaction with the AI product, not job satisfaction in the occupational sense — label as product satisfaction)",
       "Employee Satisfaction (Boyter 2025) (⚠️ same caveat — product satisfaction, not occupational satisfaction; most items in this category should be classified as product satisfaction)",
->>>>>>> 7a868b8 (Linkage validation: fix 25 missing CM links, update names and counts)
       "Usability Rating (Karavassilis 2025)",
       "Ease of Use (Shah 2024, van Buchem 2024)",
       "Perceived Efficiency (You 2025)",
       "Perceived Usefulness (van Buchem 2024)",
       "Acceptability (Evans 2025)",
-<<<<<<< HEAD
-      "High-Quality Care Perception (survey) (Galloway 2024)",
-      "Qualitative Feedback (Moramarco 2022, Wang 2021)",
-      "Overall Product Preference (Lukac 2025)",
-      "Provider Feedback (Tierney 2024)"
-=======
       "Overall Product Preference (Lukac 2025)",
       "Provider Feedback (Tierney 2024)",
       "Recommendation Likelihood (Galloway 2024) (moved from CM-14)",
       "Recommendation Intention (Evans 2025) (moved from CM-14)",
       "Long-Term Use (Shah 2024: 78%) (moved from CM-14)"
->>>>>>> 7a868b8 (Linkage validation: fix 25 missing CM links, update names and counts)
     ],
     "typicalFindings": "",
     "rigorRating": "",
@@ -805,12 +673,8 @@
       "Tierney 2024 - Ambient Artificial Intelligence Scribes Alleviate Burden Clinical Documentation",
       "Tierney 2025 - Ambient AI Scribes Learnings 1 Year 2.5 Million Uses",
       "van Buchem 2021 - Digital Scribe Scoping Review Research Agenda",
-<<<<<<< HEAD
-      "van Buchem 2024 - Digital Scribe Documentation Time Quality Usability"
-=======
       "van Buchem 2024 - Digital Scribe Documentation Time Quality Usability",
       "Billings 2025a - Ambient AI Assistant Transforms Primary Care Experience"
->>>>>>> 7a868b8 (Linkage validation: fix 25 missing CM links, update names and counts)
     ]
   },
   {
@@ -818,11 +682,7 @@
     "name": "Provider Trust in AI",
     "dimension": "US - User Satisfaction",
     "domain": "User Satisfaction",
-<<<<<<< HEAD
-    "paperCount": 5,
-=======
     "paperCount": 6,
->>>>>>> 7a868b8 (Linkage validation: fix 25 missing CM links, update names and counts)
     "definition": "Provider-reported trust in the accuracy and reliability of AI-generated notes, including skepticism about AI errors, ethical/legal concerns about ambient listening, and the degree to which clinicians verify AI output. A distinct attitudinal dimension from general satisfaction.",
     "instruments": [
       "Trust in AI (Likert item)",
@@ -845,12 +705,8 @@
       "Bundy 2024 - Administrative Loads Physicians AI Documentation Qualitative",
       "Falcetta 2023 - Automatic Documentation Professional Health Interactions Systematic Review",
       "Wojda 2025 - HCI of Ambient AI Qualitative Study",
-<<<<<<< HEAD
-      "van Buchem 2021 - Digital Scribe Scoping Review Research Agenda"
-=======
       "van Buchem 2021 - Digital Scribe Scoping Review Research Agenda",
       "Billings 2025b - Practicing Value-Based Care with AI"
->>>>>>> 7a868b8 (Linkage validation: fix 25 missing CM links, update names and counts)
     ]
   },
   {
@@ -910,41 +766,23 @@
     "name": "Physician-Patient Interaction Quality",
     "dimension": "NB - Net Benefits",
     "domain": "Patient Outcomes",
-<<<<<<< HEAD
-    "paperCount": 9,
-=======
     "paperCount": 12,
->>>>>>> 7a868b8 (Linkage validation: fix 25 missing CM links, update names and counts)
     "definition": "Behavioral measures of the quality of the physician-patient interaction during the clinical encounter — including face-to-face time, clinician attentiveness, screen time reduction, and perceived engagement. Distinct from patient experience (CM-17), which is patient-reported; this is primarily clinician-reported or observed.",
     "instruments": [
       "Doctor-patient interaction time (min)",
       "Survey items on attention / engagement",
       "Consultation duration",
-<<<<<<< HEAD
-      "Time searching for information",
-      "Patients seen per hour"
-=======
       "Time searching for information"
->>>>>>> 7a868b8 (Linkage validation: fix 25 missing CM links, update names and counts)
     ],
     "aliases": [
       "Doctor-Patient Interaction Time (Shuaib 2021: doubled)",
       "Undivided Attention to Patients (Duggan 2025, Stults 2025)",
       "Focus on Patients During Visit (Prasad 2025)",
-<<<<<<< HEAD
-      "Documentation Needs Impact My Ability to Talk Face-to-Face (Duggan 2025)",
-      "I Feel Distracted by Documentation While Talking (Duggan 2025)",
-      "Consultation Duration (Balloch 2024)",
-      "Patients Seen per Hour (Shuaib 2021: +39%)",
-      "Time Searching for Information (Karavassilis 2025)",
-      "I Feel Able to See More Patients (Duggan 2025)"
-=======
       "Documentation Prevents Me From Being Fully Engaged (Duggan 2025) (moved from CM-03)",
       "Documentation Needs Impact My Ability to Talk Face-to-Face (Duggan 2025)",
       "I Feel Distracted by Documentation While Talking (Duggan 2025)",
       "Consultation Duration (Balloch 2024)",
       "Time Searching for Information (Karavassilis 2025)"
->>>>>>> 7a868b8 (Linkage validation: fix 25 missing CM links, update names and counts)
     ],
     "typicalFindings": "",
     "rigorRating": "",
@@ -958,14 +796,10 @@
       "Prasad 2025 - Clinician Perceptions Virtual Scribe Use Survey",
       "Shuaib 2021 - Scribe Program Patient Throughput Physician Productivity",
       "Stults 2025 - Evaluation Ambient AI Documentation Platform Clinicians",
-<<<<<<< HEAD
-      "Tierney 2025 - Ambient AI Scribes Learnings 1 Year 2.5 Million Uses"
-=======
       "Tierney 2025 - Ambient AI Scribes Learnings 1 Year 2.5 Million Uses",
       "Billings 2025a - Ambient AI Assistant Transforms Primary Care Experience",
       "Owens 2024 - Ambient Voice Technology Patient Physician Relationship",
       "Wojda 2025 - HCI of Ambient AI Qualitative Study"
->>>>>>> 7a868b8 (Linkage validation: fix 25 missing CM links, update names and counts)
     ]
   },
   {
@@ -987,21 +821,12 @@
       "AHRQ Harm Score (Anderson 2025)",
       "Patient Safety Events (Anderson 2025)",
       "Critical Errors (Anderson 2025)",
-<<<<<<< HEAD
-      "Likelihood of Psychiatric Intervention (Castro 2025: aOR 0.83, p=.005)",
-      "RDoC Symptom Documentation Level (Castro 2025)",
-      "PHQ-9 Documentation (Castro 2025)",
-      "Patient Safety (survey) (Galloway 2024, multiple)",
-      "Clinically Significant Errors in AI Notes (Biro 2025, Anderson 2025)",
-      "Negation Errors (Bundy 2024)"
-=======
       "Likelihood of Psychiatric Intervention (Castro 2025: aOR 0.83, p=.005) (⚠️ this is quality of care, not patient safety — measures a clinical decision rate, not a harm event; candidate for reclassification)",
       "RDoC Symptom Documentation Level (Castro 2025) (⚠️ quality of care / documentation completeness, not safety)",
       "PHQ-9 Documentation (Castro 2025) (⚠️ quality of care / documentation completeness, not safety)",
       "Patient Safety (survey) (Galloway 2024, multiple)",
       "Clinically Significant Errors in AI Notes (Biro 2025, Anderson 2025) (⚠️ errors without demonstrated patient outcome = technical quality, not patient safety)",
       "Negation Errors (Bundy 2024) (⚠️ technical quality / hallucination; belongs with CM-09 unless patient outcome is documented)"
->>>>>>> 7a868b8 (Linkage validation: fix 25 missing CM links, update names and counts)
     ],
     "typicalFindings": "",
     "rigorRating": "",
@@ -1023,11 +848,7 @@
     "name": "Financial Productivity and Revenue Impact",
     "dimension": "NB - Net Benefits",
     "domain": "Financial & Organizational",
-<<<<<<< HEAD
-    "paperCount": 7,
-=======
     "paperCount": 8,
->>>>>>> 7a868b8 (Linkage validation: fix 25 missing CM links, update names and counts)
     "definition": "Changes in physician financial productivity associated with ambient AI scribe use — measured as RVU changes, revenue per clinician per year, or ROI. Captures organizational financial benefit and potential system-level cost implications.",
     "instruments": [
       "RVUs per encounter / per week",
@@ -1045,11 +866,8 @@
       "ROI (Boyter 2025)",
       "Cost Comparison (Cao 2024)",
       "Additional Yearly Revenue (Boyter 2025)",
-<<<<<<< HEAD
-=======
       "Revenue Impact of HCC Capture (Boyter 2025: +$9,685/year) (moved from CM-21 — dollar value of coding inaccuracy/improvement is financial impact)",
       "Revenue Impact of E/M Level Improvement (Boyter 2025: +$1,907/year) (moved from CM-21 — dollar value is financial impact)",
->>>>>>> 7a868b8 (Linkage validation: fix 25 missing CM links, update names and counts)
       "VBC-Attributed Panel Size (Haberle 2024)"
     ],
     "typicalFindings": "",
@@ -1062,12 +880,8 @@
       "Holmgren 2026 - Ambient AI Scribes Physician Financial Productivity",
       "Kanaparthy 2025 - Real-World Evidence Digital Scribes Rapid Review",
       "Shuaib 2021 - Scribe Program Patient Throughput Physician Productivity",
-<<<<<<< HEAD
-      "Suhail 2026 - Metrics for Ambient Clinical Documentation Scoping Review"
-=======
       "Suhail 2026 - Metrics for Ambient Clinical Documentation Scoping Review",
       "Galloway 2024 - Impact Artificial Intelligence Based Solution Clinicians Clinical Documentation"
->>>>>>> 7a868b8 (Linkage validation: fix 25 missing CM links, update names and counts)
     ]
   },
   {
@@ -1075,11 +889,7 @@
     "name": "Coding Accuracy ICD-10 HCC and EM",
     "dimension": "IQ - Information Quality",
     "domain": "Financial & Organizational",
-<<<<<<< HEAD
-    "paperCount": 5,
-=======
     "paperCount": 6,
->>>>>>> 7a868b8 (Linkage validation: fix 25 missing CM links, update names and counts)
     "definition": "The accuracy and completeness of diagnostic and billing codes generated or supported by ambient AI documentation — ICD-10 diagnosis codes, HCC (Hierarchical Condition Category) capture for risk adjustment, and E/M (Evaluation & Management) coding level. Bridges IQ (note quality sufficient for accurate coding) and NB (coding accuracy drives revenue and population health metrics).",
     "instruments": [
       "ICD-10 coding compliance (certified coder review)",
@@ -1091,13 +901,8 @@
     "aliases": [
       "ICD-10 Coding Accuracy (Afshar 2025, Afshar 2025b: p<0.001 improvement)",
       "Diagnostic Billing Compliance (Afshar 2025b)",
-<<<<<<< HEAD
-      "HCC Capture per Encounter (Boyter 2025: +$9,685/year)",
-      "E/M Coding Level (Boyter 2025: +$1,907/year)",
-=======
       "HCC Capture per Encounter (Boyter 2025) (⚠️ the dollar value of HCC capture (+$9,685/year) is a revenue/financial impact — that financial quantity belongs in CM-20; the capture rate itself may remain here as a coding accuracy metric)",
       "E/M Coding Level (Boyter 2025) (⚠️ the dollar value of E/M level change (+$1,907/year) is a revenue/financial impact — belongs in CM-20; the coding level itself may remain here)",
->>>>>>> 7a868b8 (Linkage validation: fix 25 missing CM links, update names and counts)
       "Claim Denial Rate (Holmgren 2026: null — no increase in denials)",
       "Coding Accuracy (Peterson Health Technology Institute 2025, Afshar 2025)",
       "Coding Improvement (⚠️ verify source)"
@@ -1110,12 +915,8 @@
       "Afshar 2025b - Pragmatic RCT Ambient AI Health Practitioner Wellbeing",
       "Boyter 2025 - Ambience Healthcare ROI Validations KLAS Report",
       "Holmgren 2026 - Ambient AI Scribes Physician Financial Productivity",
-<<<<<<< HEAD
-      "Peterson Health Technology Institute 2025 - Adoption AI Healthcare Delivery Systems"
-=======
       "Peterson Health Technology Institute 2025 - Adoption AI Healthcare Delivery Systems",
       "Billings 2025b - Practicing Value-Based Care with AI"
->>>>>>> 7a868b8 (Linkage validation: fix 25 missing CM links, update names and counts)
     ]
   },
   {
@@ -1123,11 +924,7 @@
     "name": "Patient Volume and Throughput",
     "dimension": "NB - Net Benefits",
     "domain": "Financial & Organizational",
-<<<<<<< HEAD
-    "paperCount": 6,
-=======
     "paperCount": 7,
->>>>>>> 7a868b8 (Linkage validation: fix 25 missing CM links, update names and counts)
     "definition": "Changes in the number of patients seen per unit time or changes in patient flow through clinical environments — a downstream efficiency outcome of reduced documentation burden. Includes ED metrics (door-to-doc, length of stay) and outpatient productivity (encounters per week).",
     "instruments": [
       "Patients seen per hour",
@@ -1137,23 +934,14 @@
       "Ability to add patient"
     ],
     "aliases": [
-<<<<<<< HEAD
-      "Patients Seen per Hour (Shuaib 2021: +39%)",
-=======
       "Patients Seen per Hour (Shuaib 2021: +39%) (moved from CM-18)",
->>>>>>> 7a868b8 (Linkage validation: fix 25 missing CM links, update names and counts)
       "Encounters per Week (Holmgren 2026: +0.80/week)",
       "Door-to-Doc Time (Shuaib 2021)",
       "Door-to-Room Time (Shuaib 2021)",
       "Length of Stay — Admitted / Discharged (Shuaib 2021)",
-<<<<<<< HEAD
-      "Productivity (%) (Shuaib 2021)",
-      "Ability to Add Patient (Albrecht 2025)"
-=======
       "Patients Through (Shuaib 2021) (⚠️ Shuaib's \"Productivity (%)\" label is misleading — this is patient throughput, not physician productivity in a financial/RVU sense)",
       "Ability to Add Patient (Albrecht 2025)",
       "I Feel Able to See More Patients (Duggan 2025) (moved from CM-18)"
->>>>>>> 7a868b8 (Linkage validation: fix 25 missing CM links, update names and counts)
     ],
     "typicalFindings": "",
     "rigorRating": "",
@@ -1164,12 +952,8 @@
       "Bundy 2024 - Administrative Loads Physicians AI Documentation Qualitative",
       "Haberle 2024 - Impact Nuance DAX Ambient Listening AI Documentation",
       "Holmgren 2026 - Ambient AI Scribes Physician Financial Productivity",
-<<<<<<< HEAD
-      "Shuaib 2021 - Scribe Program Patient Throughput Physician Productivity"
-=======
       "Shuaib 2021 - Scribe Program Patient Throughput Physician Productivity",
       "Peterson Health Technology Institute 2025 - Adoption AI Healthcare Delivery Systems"
->>>>>>> 7a868b8 (Linkage validation: fix 25 missing CM links, update names and counts)
     ]
   },
   {
@@ -1177,11 +961,7 @@
     "name": "Implementation Barriers and Workflow Fit",
     "dimension": "SerQ - Service Quality",
     "domain": "Implementation",
-<<<<<<< HEAD
-    "paperCount": 8,
-=======
     "paperCount": 12,
->>>>>>> 7a868b8 (Linkage validation: fix 25 missing CM links, update names and counts)
     "definition": "Factors that impede or facilitate ambient AI scribe adoption and sustained use — including technical barriers, workflow integration challenges, specialty fit, training quality, and organizational support. Mapped to SerQ as a property of the deployment/implementation experience.",
     "instruments": [
       "Qualitative interview (thematic analysis)",
@@ -1198,11 +978,7 @@
       "Workflow Adaptation (Wojda 2025)",
       "Non-Adopter Categories (AAFP 2021: 4 types; Peterson Health Technology Institute 2025: 3 cohorts)",
       "Encounter Suitability (qualitative) (Bundy 2024)",
-<<<<<<< HEAD
-      "FIM/AIM/IUS (Suhail 2026)",
-=======
       "FIM/AIM/IUS (Suhail 2026) (⚠️ verify: unclear where Suhail is sourcing FIM/AIM/IUS from — check that these scales appear in the paper and are correctly attributed)",
->>>>>>> 7a868b8 (Linkage validation: fix 25 missing CM links, update names and counts)
       "SEIPS 3.0 (Kanaparthy 2025)",
       "QUEST Framework (Kanaparthy 2025)",
       "Feasibility (Nguyen 2023)",
@@ -1219,15 +995,11 @@
       "Shah 2025 - Physician Perspectives Ambient AI Scribes",
       "Suhail 2026 - Metrics for Ambient Clinical Documentation Scoping Review",
       "Wojda 2025 - HCI of Ambient AI Qualitative Study",
-<<<<<<< HEAD
-      "van Buchem 2021 - Digital Scribe Scoping Review Research Agenda"
-=======
       "van Buchem 2021 - Digital Scribe Scoping Review Research Agenda",
       "Albrecht 2025 - Ambient AI Clinical Documentation QI Survey",
       "Bundy 2024 - Administrative Loads Physicians AI Documentation Qualitative",
       "Guo 2026 - Evaluating Ambient AI Documentation UCI Health Mixed Methods",
       "You 2025 - Ambient Documentation Technology Documentation Burden Burnout"
->>>>>>> 7a868b8 (Linkage validation: fix 25 missing CM links, update names and counts)
     ]
   },
   {
@@ -1263,11 +1035,7 @@
   {
     "id": "CM-25",
     "name": "Evaluation Methodology Quality",
-<<<<<<< HEAD
-    "dimension": "SQ - System Quality",
-=======
     "dimension": "",
->>>>>>> 7a868b8 (Linkage validation: fix 25 missing CM links, update names and counts)
     "domain": "System Quality",
     "paperCount": 14,
     "definition": "META-MEASURE. The rigor and validity of the study design and measurement approach — including inter-rater reliability, sample representativeness, benchmark dataset availability, and methodological adequacy. Not a clinical outcome; assesses whether other measures in the study are trustworthy.",
