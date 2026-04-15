@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--
   ACI Evaluation Report — Interactive Web Application
-  25 canonical measures derived from 494 raw measure rows across 54 papers | April 2026 | v.20
+  25 canonical measures derived from 494 raw measure rows across 54 papers | April 2026 | v.21
 
   Version History:
     v.01 — Initial build (single-page React app with Recharts)
@@ -24,6 +24,7 @@
     v.18 — Refined Draft Measures (12 DMs after dedup), reordered Decision Guide roles, renamed section headers, reordered detail sections
     v.19 — URL hash routing for shareable tab links (e.g. #guide, #articles)
     v.20 — Added preliminary methodology warning to Level of Rigor tab
+    v.21 — Removed methodological concerns from Decision Guide cards; fixed draft measure count (14→12)
 -->
 <html lang="en">
 <head>
@@ -469,7 +470,7 @@
           React.createElement('div', { className: 'hero-inner' },
             React.createElement('h1', null, 'Evaluating Ambient Clinical Intelligence'),
             React.createElement('p', null, 'A methodological critique of the evidence base for ambient AI documentation tools in healthcare, mapping 54 studies to the DeLone & McLean IS Success Model.'),
-            React.createElement('p', { className: 'subtitle' }, '25 canonical measures derived from 494 raw measure rows across 54 papers | April 2026 | v.20')
+            React.createElement('p', { className: 'subtitle' }, '25 canonical measures derived from 494 raw measure rows across 54 papers | April 2026 | v.21')
           )
         ),
         React.createElement('div', { className: 'container' },
@@ -967,8 +968,7 @@
               m.paperCount < 5 && React.createElement('span', { style: { display: 'inline-block', width: 10, height: 10, borderRadius: '50%', background: '#f44336' } })
             )
           ),
-          m.definition && React.createElement('p', { style: { fontSize: 13, color: '#555', margin: '8px 0 0' } }, React.createElement(MdText, { text: m.definition })),
-          m.concerns && React.createElement('div', { style: { fontSize: 13, color: '#b71c1c', marginTop: 8, fontStyle: 'italic' } }, React.createElement(MdText, { text: m.concerns }))
+          m.definition && React.createElement('p', { style: { fontSize: 13, color: '#555', margin: '8px 0 0' } }, React.createElement(MdText, { text: m.definition }))
         )),
 
         // Evidence gaps section
@@ -976,7 +976,7 @@
           React.createElement('h2', { style: { borderBottom: '2px solid #FFB74D', paddingBottom: 8, marginTop: 32, marginBottom: 16 } }, 'Additional Draft Measures'),
           React.createElement('p', { style: { fontSize: 14, color: '#666', marginBottom: 16 } },
             guideRole === 'ALL'
-              ? 'All 14 draft measures identified through stakeholder gap analysis — pending key informant validation.'
+              ? 'All 12 draft measures identified through stakeholder gap analysis — pending key informant validation.'
               : filteredDMs.length + ' evidence gaps most relevant to the ' + activeRole.label + '.'
           ),
           filteredDMs.map(dm => React.createElement('div', { key: dm.id, className: 'card', style: { marginBottom: 10, borderLeft: '4px solid #FFB74D' } },
