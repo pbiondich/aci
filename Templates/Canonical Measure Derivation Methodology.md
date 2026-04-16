@@ -32,24 +32,6 @@ Each canonical measure was documented in a dedicated markdown file in `Canonical
 - **Key Note** — interpretive commentary on the most important findings, methodological concerns, or cross-study patterns
 - **Papers Measuring This** — complete list of articles in the corpus that measure this construct
 
-## Step 4: Linkage Validation (April 2025)
-
-An automated cross-reference analysis was conducted to detect missing article-to-measure links:
-
-1. **Extracted** all measure names from all 54 article Study Measures tables
-2. **Built** a keyword/alias index from all 25 canonical measure files (using aliases, measurement method names, and definition keywords)
-3. **Pattern-matched** each article's measures against each CM's keyword index
-4. **Compared** matches against each CM's "Papers Measuring This" list
-5. **Identified** 35 potential gaps where an article appeared to measure a CM construct but was not listed in that CM's paper list
-6. **Manually reviewed** each gap for false positives (pattern over-matching, e.g., "coding accuracy" matching CM-09 instead of CM-21)
-7. **Confirmed and applied** 25 real missing links; rejected 9 false positives and 1 borderline case
-
-### Common Causes of Missing Links
-
-- **Indirect terminology:** Article uses a different name for the same construct (e.g., "Job Satisfaction" → CM-03 Professional Fulfillment)
-- **Boundary cases:** Measure sits at the edge of two CMs (e.g., "Editing Time" is both documentation time and a note quality indicator)
-- **Articles added later:** Articles added to the corpus after the initial CM derivation were not always retroactively linked to all relevant CMs
-- **Scope differences:** Some articles (e.g., Billings 2025b on VBC) span constructs that don't map cleanly to the documentation-focused CM taxonomy
 
 ## Known Limitations
 
@@ -61,11 +43,9 @@ An automated cross-reference analysis was conducted to detect missing article-to
 
 4. **One-directional validation:** This process checks whether articles that measure a construct are listed in the CM. It does not check the reverse — whether articles listed in a CM actually measure that construct. A future reverse validation pass would strengthen confidence.
 
-5. **Paper count accuracy:** The paper counts displayed in the webapp and in CM files depend on this linkage being correct. The 11% gap rate found during validation suggests paper counts prior to this correction were systematically undercounted for some measures.
-
 ## Step 6: Automated Linkage Tooling
 
-To prevent gap accumulation going forward, two automated tools were built:
+In an attempt to automate this process for new articles entering the corpus, two automated tools were built:
 
 ### `scripts/link-article.js` — Article Linkage Tool
 
@@ -93,7 +73,7 @@ The extraction script now runs `link-article.js --all` as a post-build validatio
 
 ### D&M Dimension Linkage
 
-During the April 2025 validation, we also discovered **54 missing dimension links** across 36 articles. These were gaps where an article's Study Measures table tagged a D&M dimension (e.g., NB, US) but the article was not listed in that dimension's "Papers in this Dimension" list. The linkage tool handles both CM and dimension linkage in a single pass.
+The linkage tool handles both canonical measure and D&M dimension linkage in a single pass.
 
 ## Recommended Maintenance
 
