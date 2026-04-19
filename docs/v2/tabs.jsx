@@ -17,11 +17,11 @@ function OverviewTab({ articles, measures, draftMeasures, setTab }) {
 
   const findings = [
     { kicker: 'n = 3 / 54', headline: <>Only <em>three</em> randomized trials anchor a literature the size of a regulated drug class.</>, source: 'Afshar 2025b, Lukac 2025, Baker 2023' },
-    { kicker: '71–86%', headline: <>Across every simulation study, <em>omissions</em> dominate the error profile — not hallucinations.</>, source: 'Anderson 2025, Biro 2025, Foo 2025' },
+    { kicker: '71–86%', headline: <>Across every simulation study, <em>omissions</em> dominate the error profile... not hallucinations.</>, source: 'Anderson 2025, Biro 2025, Foo 2025' },
     { kicker: '2–6×', headline: <>Clinicians self-report <em>two to six times</em> more time saved than EHR logs confirm.</>, source: 'Haberle 2024, Ma 2025, Tierney 2025' },
     { kicker: 'n ≈ 0', headline: <>Real-world <em>patient safety</em> data on ambient AI tools is effectively absent.</>, source: 'CM-19 · 9 papers, all simulated' },
     { kicker: 'CM-21', headline: <>Coding accuracy and HCC capture improvements are <em>consistent and validated</em>.</>, source: '6 papers converge' },
-    { kicker: 'SerQ', headline: <>Implementation evidence is <em>almost entirely qualitative</em> — no validated instruments.</>, source: 'Afshar 2025a, PHTI 2025' }
+    { kicker: 'SerQ', headline: <>Implementation evidence is <em>almost entirely qualitative</em>... no validated instruments.</>, source: 'Afshar 2025a, PHTI 2025' }
   ];
 
   const maxYear = Math.max(...yearCounts.map(([,c]) => c));
@@ -39,7 +39,7 @@ function OverviewTab({ articles, measures, draftMeasures, setTab }) {
               clinical <span className="em accent">intelligence</span>.
             </h1>
             <p className="lede" style={{marginTop:24}}>
-              <span className="drop">T</span>wenty-five canonical measures, twelve draft measures pending key-informant validation, and four hundred and ninety-four raw measure rows — distilled from a full-text review of fifty-four studies on the ambient AI scribes now documenting millions of clinical encounters a month.
+              <span className="drop">T</span>wenty-five canonical measures, twelve draft measures pending key-informant validation, and four hundred and ninety-four raw measure rows, distilled from a full-text review of fifty-four studies on the ambient AI scribes now documenting millions of clinical encounters a month.
             </p>
           </div>
           <div className="hero-byline">
@@ -78,10 +78,10 @@ function OverviewTab({ articles, measures, draftMeasures, setTab }) {
         <div className="grid-feature" style={{marginBottom:72}}>
           <div className="body-text" style={{fontSize:18, lineHeight:1.65}}>
             <p style={{fontSize:18, color:'var(--ink)'}}>
-              Ambient clinical intelligence — AI that listens to a clinical conversation and writes the note — has become one of the fastest-adopted categories in modern healthcare. Yet the published evidence evaluating these tools remains <em>fragmented, heterogeneous, and methodologically uneven</em>.
+              Ambient clinical intelligence... AI that listens to a clinical conversation and writes the note, has become one of the fastest-adopted categories in modern healthcare. Yet the published evidence evaluating these tools remains <em>fragmented, heterogeneous, and methodologically uneven</em>.
             </p>
             <p>This review takes a bottom-up approach. Rather than impose an a priori taxonomy, every outcome measure was extracted verbatim from each study's methods section, clustered into conceptually distinct constructs, and mapped to one of six dimensions from the DeLone & McLean Information Systems Success Model. The result is a twenty-five-measure vocabulary for comparing results across an otherwise incoherent body of work.</p>
-            <p>The <em>draft measures</em> — the second product of this review — emerge from a different source. Through key-informant interviews with health-system decision-makers, twelve additional constructs surfaced as important to CFO, CMIO, COO, and CPO audiences but are effectively absent from the published literature. They are named here not as validated measures but as a research agenda.</p>
+            <p>The <em>draft measures</em>, the second product of this review, emerge from a different source. Through key-informant interviews with health-system decision-makers, twelve additional constructs surfaced as important to CFO, CMIO, COO, and CPO audiences but are effectively absent from the published literature. They are named here not as validated measures but as a research agenda.</p>
           </div>
           <aside className="aside">
             This emerging new digital health product category would benefit from increased evaluation rigor and standardization. Regenstrief seeks to contribute as a neutral ally familiar with digital health evaluation.
@@ -113,7 +113,7 @@ function OverviewTab({ articles, measures, draftMeasures, setTab }) {
               <div className="cta-num">03</div>
               <div className="smallcaps" style={{color:'var(--accent)'}}>By stakeholder</div>
               <h3 className="sub" style={{marginTop:10, fontSize:26}}>Decision guide</h3>
-              <p style={{fontSize:14, color:'var(--ink-3)', marginTop:10, lineHeight:1.5}}>What evidence each executive role should weigh — CFO, CMIO, COO, CPO.</p>
+              <p style={{fontSize:14, color:'var(--ink-3)', marginTop:10, lineHeight:1.5}}>What evidence each executive role should weigh, ie: CFO, CMIO, COO, CPO.</p>
               <div className="cta-arrow">Read by role →</div>
             </div>
           </div>
@@ -306,11 +306,11 @@ function DraftsTab({ drafts, expanded, setExpanded }) {
       <div style={{marginBottom:40}}>
         <div className="smallcaps">IV · Draft Measures</div>
         <h1 className="display" style={{fontSize:54, marginTop:8}}>The research agenda<br/>that <span className="em accent">the literature is missing</span>.</h1>
-        <p className="lede" style={{marginTop:16, maxWidth:720}}>Twelve constructs surfaced through key-informant interviews with health-system leaders — all absent or effectively unmeasured in the 54-paper corpus. Pending validation.</p>
+        <p className="lede" style={{marginTop:16, maxWidth:720}}>Twelve constructs surfaced through key-informant interviews with health-system leaders... all absent or effectively unmeasured in the 54-paper corpus. Pending validation.</p>
       </div>
 
       <div className="aside" style={{marginBottom:40}}>
-        Draft measures are <em>not</em> canonical. They are hypotheses about what decision-makers need the literature to answer — named, defined, and left open for future research to validate.
+        Draft measures are <em>not</em> canonical. They are hypotheses about what decision-makers need the literature to answer: named, defined, and left open for future research to validate.
       </div>
 
       <div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:24}}>
@@ -743,9 +743,9 @@ function CorpusTab({ articles }) {
       <div className="grid-feature" style={{marginTop:48}}>
         <div className="body-text" style={{fontSize:17}}>
           <h3 className="sub">Structural limitations</h3>
-          <p>The evidence base is overwhelmingly North American. It concentrates at a handful of academic health systems — Stanford, UCSF, Kaiser, Penn, UCLA, Mass General Brigham — and is dominated by primary care and ambulatory settings.</p>
+          <p>The evidence base is overwhelmingly North American. It concentrates at a handful of academic health systems: Stanford, UCSF, Kaiser, Penn, UCLA, Mass General Brigham, and is dominated by primary care and ambulatory settings.</p>
           <p>Pediatrics is entirely absent. Inpatient settings appear in only one study. Most studies follow participants for one to three months with sample sizes of fifty to one hundred clinicians.</p>
-          <p>Vendor-funded or vendor-adjacent studies tend to report larger effects than independent work — an important bias to carry through any reading of these results.</p>
+          <p>Vendor-funded or vendor-adjacent studies tend to report larger effects than independent work... an important bias to carry through any reading of these results.</p>
         </div>
         <aside className="aside">
           Pediatrics is absent. Inpatient is nearly absent. The evidence is a snapshot of ambulatory primary care at large academic systems.
@@ -775,7 +775,7 @@ function RigorTab({ measures }) {
       <div style={{marginBottom:32}}>
         <div className="smallcaps">VIII · Level of Rigor</div>
         <h1 className="display" style={{fontSize:54, marginTop:8}}>Not all evidence<br/>is <span className="em accent">created equal</span>.</h1>
-        <p className="lede" style={{marginTop:16, maxWidth:720}}>A placeholder rigor score across the twenty-five canonical measures. A full rubric — study design, instrument validation, finding convergence, bias risk — is in development.</p>
+        <p className="lede" style={{marginTop:16, maxWidth:720}}>A placeholder rigor score across the twenty-five canonical measures. A full rubric — study design, instrument validation, finding convergence, bias risk, is in development.</p>
       </div>
 
       <div className="aside" style={{marginBottom:40}}>
@@ -837,7 +837,7 @@ function RigorTab({ measures }) {
       <div className="grid-feature" style={{marginTop:40}}>
         <div className="body-text" style={{fontSize:17}}>
           <h3 className="sub">Cross-cutting findings</h3>
-          <p>The self-report / objective divergence is the most reproducible methodological finding across the corpus: clinicians consistently report larger improvements than objective data confirm — for documentation time (two to six times overestimated), after-hours documentation (positive self-report, null objective), patient experience (positive in open-label, null in masked), and burnout (QI estimates two to four times larger than RCT).</p>
+          <p>The self-report / objective divergence is the most reproducible methodological finding across the corpus: clinicians consistently report larger improvements than objective data confirm: for documentation time (two to six times overestimated), after-hours documentation (positive self-report, null objective), patient experience (positive in open-label, null in masked), and burnout (QI estimates two to four times larger than RCT).</p>
           <p>The near-total absence of real-world patient safety data is the most critical gap. Ambient AI generates safety-critical clinical documentation without systematic post-market safety surveillance. The field is deploying tools at scale without the safety-monitoring infrastructure expected for medical devices or pharmaceuticals.</p>
         </div>
         <aside className="aside">
