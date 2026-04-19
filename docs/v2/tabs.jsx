@@ -44,7 +44,7 @@ function OverviewTab({ articles, measures, draftMeasures, setTab }) {
           </div>
           <div className="hero-byline">
             <div>
-              <div className="label">Volume · Issue</div>
+              <div className="label">Version · Date</div>
               <div className="val">v.22 · April 2026</div>
             </div>
             <div>
@@ -84,24 +84,38 @@ function OverviewTab({ articles, measures, draftMeasures, setTab }) {
             <p>The <em>draft measures</em> — the second product of this review — emerge from a different source. Through key-informant interviews with health-system decision-makers, twelve additional constructs surfaced as important to CFO, CMIO, COO, and CPO audiences but are effectively absent from the published literature. They are named here not as validated measures but as a research agenda.</p>
           </div>
           <aside className="aside">
-            The field is deploying tools at scale without the safety-monitoring infrastructure expected for medical devices or pharmaceuticals.
+            This emerging new digital health product category would benefit from increased evaluation rigor and standardization. Regenstrief seeks to contribute as a neutral ally familiar with digital health evaluation.
           </aside>
         </div>
 
-        {/* HEADLINE FINDINGS */}
-        <div style={{marginBottom:64}}>
-          <div style={{display:'flex', alignItems:'baseline', justifyContent:'space-between', marginBottom:24, borderBottom:'1px solid var(--ink)', paddingBottom:10}}>
-            <h2 className="section">Six findings, <span className="em">six caveats</span>.</h2>
-            <span className="smallcaps">Evidence at a glance</span>
+        {/* CALLS TO ACTION */}
+        <div style={{marginBottom:72}}>
+          <div style={{display:'flex', alignItems:'baseline', justifyContent:'space-between', marginBottom:20, borderBottom:'1px solid var(--ink)', paddingBottom:10}}>
+            <h2 className="section">Begin <span className="em">here</span>.</h2>
+            <span className="smallcaps">Three entry points</span>
           </div>
-          <div className="grid-3">
-            {findings.map((f, i) => (
-              <div key={i} className="finding" style={{borderTop: i < 3 ? 'none' : undefined}}>
-                <div className="kicker">{f.kicker}</div>
-                <div className="headline">{f.headline}</div>
-                <div className="source">{f.source}</div>
-              </div>
-            ))}
+          <div className="grid-3" style={{marginTop:24}}>
+            <div className="cta-card" onClick={() => setTab('measures')}>
+              <div className="cta-num">01</div>
+              <div className="smallcaps" style={{color:'var(--accent)'}}>Start here</div>
+              <h3 className="sub" style={{marginTop:10, fontSize:26}}>The 25 canonical measures</h3>
+              <p style={{fontSize:14, color:'var(--ink-3)', marginTop:10, lineHeight:1.5}}>Browse each measure with definitions, instruments, findings, and source papers.</p>
+              <div className="cta-arrow">Explore measures →</div>
+            </div>
+            <div className="cta-card" onClick={() => setTab('drafts')}>
+              <div className="cta-num">02</div>
+              <div className="smallcaps" style={{color:'var(--accent)'}}>Research agenda</div>
+              <h3 className="sub" style={{marginTop:10, fontSize:26}}>The 12 draft measures</h3>
+              <p style={{fontSize:14, color:'var(--ink-3)', marginTop:10, lineHeight:1.5}}>Constructs health-system leaders care about that the literature does not yet cover.</p>
+              <div className="cta-arrow">See the gaps →</div>
+            </div>
+            <div className="cta-card" onClick={() => setTab('guide')}>
+              <div className="cta-num">03</div>
+              <div className="smallcaps" style={{color:'var(--accent)'}}>By stakeholder</div>
+              <h3 className="sub" style={{marginTop:10, fontSize:26}}>Decision guide</h3>
+              <p style={{fontSize:14, color:'var(--ink-3)', marginTop:10, lineHeight:1.5}}>What evidence each executive role should weigh — CFO, CMIO, COO, CPO.</p>
+              <div className="cta-arrow">Read by role →</div>
+            </div>
           </div>
         </div>
 
@@ -138,26 +152,6 @@ function OverviewTab({ articles, measures, draftMeasures, setTab }) {
               ))}
             </div>
             <p className="footnote" style={{marginTop:16}}>Counts reflect number of papers contributing at least one measure to each dimension; papers commonly span multiple dimensions.</p>
-          </div>
-        </div>
-
-        {/* CALLS TO ACTION */}
-        <div className="rule double"/>
-        <div className="grid-3" style={{marginTop:40}}>
-          <div className="card card-hoverable" onClick={() => setTab('measures')}>
-            <div className="smallcaps">Start here</div>
-            <h3 className="sub" style={{marginTop:10}}>The 25 canonical measures</h3>
-            <p style={{fontSize:14, color:'var(--ink-3)', marginTop:6}}>Browse each measure with definitions, instruments, findings, and source papers.</p>
-          </div>
-          <div className="card card-hoverable" onClick={() => setTab('drafts')}>
-            <div className="smallcaps">Research agenda</div>
-            <h3 className="sub" style={{marginTop:10}}>The 12 draft measures</h3>
-            <p style={{fontSize:14, color:'var(--ink-3)', marginTop:6}}>Constructs health-system leaders care about that the literature does not yet cover.</p>
-          </div>
-          <div className="card card-hoverable" onClick={() => setTab('guide')}>
-            <div className="smallcaps">By stakeholder</div>
-            <h3 className="sub" style={{marginTop:10}}>Decision guide</h3>
-            <p style={{fontSize:14, color:'var(--ink-3)', marginTop:6}}>What evidence each executive role should weigh — CFO, CMIO, COO, CPO.</p>
           </div>
         </div>
       </div>

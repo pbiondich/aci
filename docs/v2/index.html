@@ -43,11 +43,9 @@
   .italic { font-style: italic; }
 
   /* --- MASTHEAD --- */
-  .masthead { border-bottom: 1px solid var(--ink); padding: 18px 40px 14px; display: flex; align-items: flex-end; justify-content: space-between; gap: 32px; }
-  .masthead-brand { display: flex; align-items: baseline; gap: 14px; }
-  .masthead-mark { width: 26px; height: 26px; background: var(--ink); position: relative; flex-shrink: 0; align-self: center; }
-  .masthead-mark::after { content: ''; position: absolute; inset: 6px; background: var(--paper); }
-  .masthead-mark::before { content: ''; position: absolute; inset: 10px; background: var(--accent); z-index: 1; }
+  .masthead { border-bottom: 1px solid var(--ink); padding: 18px 40px 14px; display: flex; align-items: center; justify-content: space-between; gap: 32px; }
+  .masthead-brand { display: flex; align-items: center; gap: 14px; }
+  .masthead-mark { width: 36px; height: 36px; flex-shrink: 0; align-self: center; background: var(--accent); -webkit-mask: url('logo-paper.png') center/contain no-repeat; mask: url('logo-paper.png') center/contain no-repeat; }
   .masthead-title { font-family: 'Newsreader', serif; font-size: 22px; font-weight: 500; font-style: italic; letter-spacing: -0.01em; }
   .masthead-meta { font-family: 'Inter', sans-serif; font-size: 11px; text-transform: uppercase; letter-spacing: 0.14em; color: var(--ink-3); display: flex; gap: 18px; align-items: center; }
   .masthead-meta .dot { width: 4px; height: 4px; border-radius: 50%; background: var(--ink-4); }
@@ -203,6 +201,16 @@
   .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
   .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
   .grid-feature { display: grid; grid-template-columns: 2fr 1fr; gap: 56px; }
+
+  /* --- CTA CARD --- */
+  .cta-card { position: relative; background: var(--paper); border: 1px solid var(--ink); padding: 32px 28px 28px; cursor: pointer; transition: all 0.2s ease; overflow: hidden; }
+  .cta-card::before { content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 4px; background: var(--accent); transform: scaleY(0); transform-origin: top; transition: transform 0.3s ease; }
+  .cta-card:hover { background: #faf6ea; transform: translateY(-2px); box-shadow: 0 6px 0 -1px var(--ink); }
+  .cta-card:hover::before { transform: scaleY(1); }
+  .cta-card:hover .cta-arrow { color: var(--accent); letter-spacing: 0.16em; }
+  .cta-card .cta-num { position: absolute; top: 20px; right: 24px; font-family: 'Newsreader', serif; font-style: italic; font-size: 44px; font-weight: 300; color: var(--paper-3); line-height: 1; transition: color 0.2s; }
+  .cta-card:hover .cta-num { color: var(--accent-soft); }
+  .cta-card .cta-arrow { margin-top: 20px; padding-top: 16px; border-top: 1px solid var(--rule); font-family: 'Inter', sans-serif; font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.14em; color: var(--ink-2); transition: all 0.2s; }
 
   /* --- KEY FINDING TILE --- */
   .finding { padding: 24px 0; border-top: 1px solid var(--rule); }

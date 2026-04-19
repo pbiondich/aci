@@ -16,14 +16,20 @@ const DIM_BLURB = {
   NB: 'What downstream outcomes does it produce?'
 };
 
+// Order matters: check longer codes first so "US" is not shadowed by "U",
+// and "SerQ" is not shadowed by "SQ".
+const DIM_CODES_ORDERED = ['SerQ','US','SQ','IQ','NB','U'];
 function parseDim(str) {
   if (!str) return [];
-  return str.split(/[,\/]/).map(s => s.trim().replace(/[^A-Za-z]/g,'')).filter(d => DIM_CODES.indexOf(d) !== -1);
+  return str.split(/[,\/]/).map(tok => {
+    const t = tok.trim();
+    // Match first token (before space/dash) OR fall back to scanning
+    const head = t.split(/[\s\-]/)[0].replace(/[^A-Za-z]/g,'');
+    if (DIM_CODES.indexOf(head) !== -1) return head;
+    return DIM_CODES_ORDERED.find(c => t.indexOf(c) === 0) || '';
+  }).filter(Boolean);
 }
-function primaryDim(str) {
-  const parsed = parseDim(str);
-  return parsed[0] || '';
-}
+function primaryDim(str) { return parseDim(str)[0] || ''; }
 function DimTag({ code }) {
   if (!code) return null;
   return <span className={`dim-tag dim-${code}`}>{code}</span>;
