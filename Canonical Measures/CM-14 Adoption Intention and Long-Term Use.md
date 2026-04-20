@@ -10,7 +10,7 @@ Provider-reported intention to continue using the ambient AI scribe beyond the s
 ## Measurement Methods
 | Method | Description | Data Source |
 |---|---|---|
-| UTAUT / TAM items | Validated adoption intention constructs | Survey |
+| [UTAUT](https://aisel.aisnet.org/misq/vol27/iss3/5/) / [TAM](https://doi.org/10.2307/249008) items | Validated adoption intention constructs | Survey |
 | Recommendation likelihood (Likert) | Would you recommend this tool to colleagues? | Survey |
 | Long-term use intent (Likert) | Can you see yourself using this in long-term practice? | Survey |
 | Implementation intent | Expressed intent to adopt at scale | Survey |

@@ -13,7 +13,7 @@ The presence of clinically inaccurate or fabricated content in AI-generated note
 | Hallucination rate (%) | % of notes containing at least one fabricated element | Simulation / Human rater |
 | Addition errors (%) | % of error events classified as added content not in source | Simulation / Human rater |
 | Incorrect facts (%) | % of error events where information stated but wrong | Simulation / Human rater |
-| PDSQI-9 / PDQI-9 Accuracy domain | Validated subscale; includes falsification/fabrication criterion | Human rater / LLM-as-judge |
+| [PDSQI-9](https://pubmed.ncbi.nlm.nih.gov/40323321/) / [PDQI-9](https://pubmed.ncbi.nlm.nih.gov/18436914/) Accuracy domain | Validated subscale; includes falsification/fabrication criterion | Human rater / LLM-as-judge |
 | Clinically significant inaccuracies | Likert scale; provider-rated accuracy of AI notes | Survey |
 | Cross-replicate consistency | % of data elements correct across 3 model runs of same case | Simulation |
 

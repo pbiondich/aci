@@ -9,11 +9,11 @@ Factors that impede or facilitate ambient AI scribe adoption and sustained use â
 | Method | Description | Data Source |
 |---|---|---|
 | Qualitative interview (thematic analysis) | Provider narratives on implementation challenges | Qualitative |
-| Implementation science frameworks (RE-AIM, SEIPS, CFIR) | Structured evaluation of implementation context | Mixed methods |
+| Implementation science frameworks ([RE-AIM](https://pubmed.ncbi.nlm.nih.gov/10474547/), [SEIPS](https://pubmed.ncbi.nlm.nih.gov/17142610/), [CFIR](https://pubmed.ncbi.nlm.nih.gov/19664226/)) | Structured evaluation of implementation context | Mixed methods |
 | Non-adopter analysis | Analysis of clinicians who didn't adopt or stopped | Operational / survey |
-| FIM / AIM / IAM / IUS scales | Validated implementation measures | Survey |
-| QUEST framework | Quality evaluation framework for AI tools | Mixed methods |
-| SEIPS 3.0 assessment | Systems Engineering Initiative for Patient Safety model | Mixed methods |
+| [FIM / AIM / IAM](https://pubmed.ncbi.nlm.nih.gov/28851459/) / IUS scales | Validated implementation measures | Survey |
+| [QUEST](https://pubmed.ncbi.nlm.nih.gov/30340488/) framework | Quality evaluation framework for AI tools | Mixed methods |
+| [SEIPS](https://pubmed.ncbi.nlm.nih.gov/17142610/) 3.0 assessment | Systems Engineering Initiative for Patient Safety model | Mixed methods |
 
 ## Aliases Used in Literature
 - Implementation Barriers ([[Shah 2025 - Physician Perspectives Ambient AI Scribes|Shah 2025]])

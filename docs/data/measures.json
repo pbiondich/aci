@@ -7,12 +7,12 @@
     "paperCount": 16,
     "definition": "Provider-reported emotional exhaustion, depersonalization, and interpersonal disengagement from clinical work — the core burnout syndrome. Measured via validated psychometric instruments. Distinct from cognitive task load (in-encounter mental effort) and professional fulfillment (positive engagement).",
     "instruments": [
-      "Stanford PFI — Work Exhaustion subscale",
-      "Mini-Z / Mini-Z 2.0",
-      "Oldenburg Burnout Inventory (OLBI)",
+      "[Stanford PFI](https://pmc.ncbi.nlm.nih.gov/articles/PMC5794850/) — Work Exhaustion subscale",
+      "[Mini-Z / Mini-Z 2.0](https://pmc.ncbi.nlm.nih.gov/articles/PMC9411313/)",
+      "[Oldenburg Burnout Inventory (OLBI)](https://www.tandfonline.com/doi/full/10.1080/02678370500340728)",
       "Single-item burnout question",
       "Reduced burnout (Likert, dichotomized)",
-      "PROMIS Sleep Disturbance (Short Form 4a)"
+      "[PROMIS Sleep Disturbance](https://pubmed.ncbi.nlm.nih.gov/22250775/) (Short Form 4a)"
     ],
     "aliases": [
       "Burnout (corpus-wide — see papers list)",
@@ -56,7 +56,7 @@
     "paperCount": 11,
     "definition": "The mental effort, time pressure, and frustration experienced by clinicians *during* or *immediately after* a clinical encounter — the in-the-moment cognitive demand of documentation. Distinct from burnout (CM-01), which is a sustained emotional state.",
     "instruments": [
-      "NASA-TLX (full or subscales)",
+      "[NASA-TLX](https://pubmed.ncbi.nlm.nih.gov/35674407/) (full or subscales)",
       "Physician Task Load Index (PTL)",
       "Cognitive Demand survey items",
       "Note-related cognitive task load"
@@ -96,7 +96,7 @@
     "paperCount": 10,
     "definition": "Provider-reported positive engagement with clinical work — the presence of meaning, reward, and satisfaction in the work itself. The positive pole of the well-being spectrum, distinct from absence of burnout. Measured via PFI fulfillment subscale or related instruments.",
     "instruments": [
-      "Stanford PFI — Professional Fulfillment subscale",
+      "[Stanford PFI](https://pmc.ncbi.nlm.nih.gov/articles/PMC5794850/) — Professional Fulfillment subscale",
       "Meaningfulness of work items",
       "Work-life balance items"
     ],
@@ -319,7 +319,7 @@
     "instruments": [
       "Omission rate (%)",
       "Error categorization — omissions",
-      "PDSQI-9 / PDQI-9 Thoroughness domain",
+      "[PDSQI-9](https://pubmed.ncbi.nlm.nih.gov/40323321/) / [PDQI-9](https://pubmed.ncbi.nlm.nih.gov/18436914/) Thoroughness domain",
       "Clinical note error rate (% key elements)",
       "New medication capture"
     ],
@@ -364,7 +364,7 @@
       "Hallucination rate (%)",
       "Addition errors (%)",
       "Incorrect facts (%)",
-      "PDSQI-9 / PDQI-9 Accuracy domain",
+      "[PDSQI-9](https://pubmed.ncbi.nlm.nih.gov/40323321/) / [PDQI-9](https://pubmed.ncbi.nlm.nih.gov/18436914/) Accuracy domain",
       "Clinically significant inaccuracies",
       "Cross-replicate consistency"
     ],
@@ -409,9 +409,9 @@
     "paperCount": 17,
     "definition": "Aggregate quality rating of the AI-generated clinical note using a validated multi-dimensional instrument. Instruments include the PDQI-9/PDSQI-9 (which assess accuracy, thoroughness, usefulness, organization, comprehensibility, succinctness, synthesis, and consistency as a composite), the SAIL score, and global quality ratings. Distinct from individual error-type measures (CM-08, CM-09).",
     "instruments": [
-      "PDQI-9 (Physician Documentation Quality Instrument)",
-      "PDSQI-9 (Provider Documentation Summarization QI)",
-      "SAIL Score",
+      "[PDQI-9 (Physician Documentation Quality Instrument)](https://pubmed.ncbi.nlm.nih.gov/18436914/)",
+      "[PDSQI-9 (Provider Documentation Summarization QI)](https://pubmed.ncbi.nlm.nih.gov/40323321/)",
+      "[SAIL Score](https://pubmed.ncbi.nlm.nih.gov/39371531/)",
       "Global rating (1–5)",
       "Documentation quality — SOAP sections",
       "Discharge summary / progress note PDQI"
@@ -504,10 +504,10 @@
     "paperCount": 7,
     "definition": "METHODOLOGICAL MEASURE. Computational similarity metrics used to evaluate AI-generated notes against reference standards — including n-gram overlap (ROUGE), semantic similarity (BERTScore), and entity-level accuracy metrics. Not a clinical outcome; measures the evaluation approach's technical validity.",
     "instruments": [
-      "ROUGE (1, 2, L)",
-      "BERTScore / BLEURT",
-      "F1 Score",
-      "SAIL Score",
+      "[ROUGE](https://aclanthology.org/W04-1013.pdf) (1, 2, L)",
+      "[BERTScore](https://arxiv.org/pdf/1904.09675) / BLEURT",
+      "[F1 Score](https://en.wikipedia.org/wiki/F-score)",
+      "[SAIL Score](https://pubmed.ncbi.nlm.nih.gov/39371531/)",
       "Entity linking (LINK / CORRECT LINK)",
       "LLM-as-Evaluator agreement"
     ],
@@ -592,7 +592,7 @@
     "paperCount": 6,
     "definition": "Provider-reported intention to continue using the ambient AI scribe beyond the study period — including willingness to adopt and implementation readiness. Captures attitudinal vs. behavioral adoption (Technology Acceptance Model distinction).",
     "instruments": [
-      "UTAUT / TAM items",
+      "[UTAUT](https://aisel.aisnet.org/misq/vol27/iss3/5/) / [TAM](https://doi.org/10.2307/249008) items",
       "Recommendation likelihood (Likert)",
       "Long-term use intent (Likert)",
       "Implementation intent",
@@ -625,8 +625,8 @@
     "paperCount": 21,
     "definition": "Provider-reported satisfaction with the ambient AI scribe tool — including perceived usability, ease of use, and overall acceptability. Distinct from burnout (emotional outcome) and from adoption behavior (what they do). Captures subjective technology evaluation.",
     "instruments": [
-      "System Usability Scale (SUS)",
-      "UTAUT perceived usefulness",
+      "[System Usability Scale (SUS)](https://doi.org/10.1201/9781498710411-35)",
+      "[UTAUT](https://aisel.aisnet.org/misq/vol27/iss3/5/) perceived usefulness",
       "Likert satisfaction items",
       "Qualitative feedback",
       "Overall product preference"
@@ -717,8 +717,8 @@
     "paperCount": 18,
     "definition": "Patient-reported or validated assessment of the quality of the patient-physician interaction — including relationship quality, satisfaction with the visit, and experience of being heard. The most underdeveloped outcome domain in the corpus, measured primarily through validated instruments in only 1 paper.",
     "instruments": [
-      "PDRQ-9 (Patient-Doctor Relationship Questionnaire)",
-      "Patient satisfaction survey (Press Ganey / custom)",
+      "[PDRQ-9 (Patient-Doctor Relationship Questionnaire)](https://pubmed.ncbi.nlm.nih.gov/15038928/)",
+      "Patient satisfaction survey ([Press Ganey](https://www.pressganey.com/industry/healthcare/patient-experience/) / custom)",
       "Patient Likelihood to Recommend (LTR)",
       "Patient consent compliance",
       "Qualitative patient feedback"
@@ -810,11 +810,11 @@
     "paperCount": 9,
     "definition": "Patient safety outcomes associated with ambient AI documentation — including documentation errors that affect clinical decisions, adverse events, harm scores, and gaps between documented symptoms and clinical action. The most concerning and least studied outcome dimension.",
     "instruments": [
-      "AHRQ Harm Score",
+      "[AHRQ Harm Score](https://journals.lww.com/journalpatientsafety/abstract/2015/03000/the_reliability_of_ahrq_common_format_harm_scales.8.aspx)",
       "Adverse events / patient safety events",
       "Likelihood of psychiatric intervention (aOR)",
       "RDoC symptom documentation level",
-      "PHQ-9 documentation",
+      "[PHQ-9](https://pubmed.ncbi.nlm.nih.gov/11556941/) documentation",
       "Patient safety survey items"
     ],
     "aliases": [
@@ -965,11 +965,11 @@
     "definition": "Factors that impede or facilitate ambient AI scribe adoption and sustained use — including technical barriers, workflow integration challenges, specialty fit, training quality, and organizational support. Mapped to SerQ as a property of the deployment/implementation experience.",
     "instruments": [
       "Qualitative interview (thematic analysis)",
-      "Implementation science frameworks (RE-AIM, SEIPS, CFIR)",
+      "Implementation science frameworks ([RE-AIM](https://pubmed.ncbi.nlm.nih.gov/10474547/), [SEIPS](https://pubmed.ncbi.nlm.nih.gov/17142610/), [CFIR](https://pubmed.ncbi.nlm.nih.gov/19664226/))",
       "Non-adopter analysis",
-      "FIM / AIM / IAM / IUS scales",
-      "QUEST framework",
-      "SEIPS 3.0 assessment"
+      "[FIM / AIM / IAM](https://pubmed.ncbi.nlm.nih.gov/28851459/) / IUS scales",
+      "[QUEST](https://pubmed.ncbi.nlm.nih.gov/30340488/) framework",
+      "[SEIPS](https://pubmed.ncbi.nlm.nih.gov/17142610/) 3.0 assessment"
     ],
     "aliases": [
       "Implementation Barriers (Shah 2025)",
@@ -1010,7 +1010,7 @@
     "paperCount": 3,
     "definition": "Technical accuracy of automatic speech recognition (ASR) in transcribing clinical conversations — word error rate, speaker diarization, and medical vocabulary recognition. The upstream quality gate: if the transcript is wrong, the note will be wrong regardless of NLP quality.",
     "instruments": [
-      "Word Error Rate (WER)",
+      "[Word Error Rate (WER)](https://en.wikipedia.org/wiki/Word_error_rate)",
       "Speaker Diarization Accuracy",
       "Medical Term Recall (MTR)",
       "Transcript error transmission rate"

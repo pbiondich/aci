@@ -8,12 +8,12 @@ Provider-reported emotional exhaustion, depersonalization, and interpersonal dis
 ## Measurement Methods
 | Method | Description | Data Source |
 |---|---|---|
-| Stanford PFI — Work Exhaustion subscale | 10-item validated subscale; 1–5 scale (higher=worse); captures exhaustion + interpersonal disengagement | Survey |
-| Mini-Z / Mini-Z 2.0 | 10-item brief burnout screen; validated in primary care; 10–50 scale (higher=better) | Survey |
-| Oldenburg Burnout Inventory (OLBI) | 16-item validated instrument; disengagement + exhaustion domains | Survey |
+| [Stanford PFI](https://pmc.ncbi.nlm.nih.gov/articles/PMC5794850/) — Work Exhaustion subscale | 10-item validated subscale; 1–5 scale (higher=worse); captures exhaustion + interpersonal disengagement | Survey |
+| [Mini-Z / Mini-Z 2.0](https://pmc.ncbi.nlm.nih.gov/articles/PMC9411313/) | 10-item brief burnout screen; validated in primary care; 10–50 scale (higher=better) | Survey |
+| [Oldenburg Burnout Inventory (OLBI)](https://www.tandfonline.com/doi/full/10.1080/02678370500340728) | 16-item validated instrument; disengagement + exhaustion domains | Survey |
 | Single-item burnout question | "How often do you feel burned out?" Likert scale | Survey |
 | Reduced burnout (Likert, dichotomized) | % reporting burnout at pre vs. post | Survey |
-| PROMIS Sleep Disturbance (Short Form 4a) | Validated sleep quality instrument; proxy for restorative recovery associated with burnout | Survey |
+| [PROMIS Sleep Disturbance](https://pubmed.ncbi.nlm.nih.gov/22250775/) (Short Form 4a) | Validated sleep quality instrument; proxy for restorative recovery associated with burnout | Survey |
 
 ## Aliases Used in Literature
 - Burnout *(corpus-wide — see papers list)*

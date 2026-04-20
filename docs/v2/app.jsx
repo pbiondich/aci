@@ -76,7 +76,7 @@ function App() {
         <div className="masthead-meta">
           <span>Structured Evidence Review</span>
           <span className="dot"/>
-          <span>v.22 · Apr 2026</span>
+          <span>v.23 · Apr 2026</span>
           <span className="dot"/>
           <a href="../" style={{color:'var(--ink-3)', textDecoration:'none', letterSpacing:'0.14em'}}>← View classic</a>
         </div>
@@ -97,13 +97,13 @@ function App() {
       ) : (
         <main data-screen-label={tab}>
           {tab === 'overview'  && <OverviewTab articles={articles} measures={measures} draftMeasures={drafts} setTab={setTab}/>}
-          {tab === 'measures'  && <MeasuresTab measures={measures} expanded={expandedMeasure} setExpanded={setExpandedMeasure}/>}
+          {tab === 'measures'  && <MeasuresTab measures={measures} expanded={expandedMeasure} setExpanded={setExpandedMeasure} articles={articles} onSelectArticle={setSelectedArticle}/>}
           {tab === 'guide'     && <GuideTab measures={measures} drafts={drafts} role={guideRole} setRole={setGuideRole}/>}
           {tab === 'drafts'    && <DraftsTab drafts={drafts} expanded={expandedDraft} setExpanded={setExpandedDraft}/>}
           {tab === 'articles'  && <ArticlesTab articles={articles} selected={selectedArticle} setSelected={setSelectedArticle}/>}
           {tab === 'framework' && <FrameworkTab dimensions={dimensions} measures={measures} articles={articles}/>}
           {tab === 'corpus'    && <CorpusTab articles={articles}/>}
-          {tab === 'rigor'     && <RigorTab measures={measures}/>}
+          {tab === 'rigor'     && <RigorTab measures={measures} articles={articles}/>}
         </main>
       )}
 
@@ -111,7 +111,7 @@ function App() {
 
       <footer style={{borderTop:'1px solid var(--ink)', marginTop:80, padding:'28px 40px', background:'var(--paper)'}}>
         <div style={{maxWidth:1280, margin:'0 auto', display:'flex', justifyContent:'space-between', alignItems:'center', fontSize:12, color:'var(--ink-3)', fontFamily:'Inter, sans-serif', letterSpacing:'0.04em', flexWrap:'wrap', gap:12}}>
-          <span>Biondich et al. · Evaluating Ambient Clinical Intelligence · v.22</span>
+          <span>Biondich et al. · Evaluating Ambient Clinical Intelligence · v.23</span>
           <span style={{fontStyle:'italic', fontFamily:'Newsreader, serif', fontSize:13}}>54 studies · 494 measure rows · 25 canonical · 12 draft</span>
         </div>
       </footer>

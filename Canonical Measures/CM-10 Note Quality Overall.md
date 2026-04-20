@@ -8,9 +8,9 @@ Aggregate quality rating of the AI-generated clinical note using a validated mul
 ## Measurement Methods
 | Method | Description | Data Source |
 |---|---|---|
-| PDQI-9 (Physician Documentation Quality Instrument) | Validated 9-item instrument; 5-point Likert per item; max 45; originally for human notes | Human rater |
-| PDSQI-9 (Provider Documentation Summarization QI) | Adapted PDQI-9 for AI-generated summaries; includes LLM-as-judge implementation validated against physician ratings | LLM-as-judge / Human rater |
-| SAIL Score | Standards-based AI documentation quality assessment | Human rater |
+| [PDQI-9 (Physician Documentation Quality Instrument)](https://pubmed.ncbi.nlm.nih.gov/18436914/) | Validated 9-item instrument; 5-point Likert per item; max 45; originally for human notes | Human rater |
+| [PDSQI-9 (Provider Documentation Summarization QI)](https://pubmed.ncbi.nlm.nih.gov/40323321/) | Adapted PDQI-9 for AI-generated summaries; includes LLM-as-judge implementation validated against physician ratings | LLM-as-judge / Human rater |
+| [SAIL Score](https://pubmed.ncbi.nlm.nih.gov/39371531/) | Standards-based AI documentation quality assessment | Human rater |
 | Global rating (1–5) | Single-item overall quality assessment | Human rater |
 | Documentation quality — SOAP sections | PDQI applied by section (Subjective, Plan) | Human rater |
 | Discharge summary / progress note PDQI | PDQI applied to specific note types | Human rater |

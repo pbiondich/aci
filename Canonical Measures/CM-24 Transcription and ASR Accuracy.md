@@ -8,7 +8,7 @@ Technical accuracy of automatic speech recognition (ASR) in transcribing clinica
 ## Measurement Methods
 | Method | Description | Data Source |
 |---|---|---|
-| Word Error Rate (WER) | % of words incorrectly transcribed vs. reference | ASR evaluation |
+| [Word Error Rate (WER)](https://en.wikipedia.org/wiki/Word_error_rate) | % of words incorrectly transcribed vs. reference | ASR evaluation |
 | Speaker Diarization Accuracy | % of segments correctly attributed to correct speaker | ASR evaluation |
 | Medical Term Recall (MTR) | % of clinical vocabulary correctly transcribed | ASR evaluation |
 | Transcript error transmission rate | % of transcript errors that propagate into the final note | Simulation |

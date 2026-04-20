@@ -8,11 +8,11 @@ Patient safety outcomes associated with ambient AI documentation — including d
 ## Measurement Methods
 | Method | Description | Data Source |
 |---|---|---|
-| AHRQ Harm Score | Validated harm classification for medical errors | EHR / expert review |
+| [AHRQ Harm Score](https://journals.lww.com/journalpatientsafety/abstract/2015/03000/the_reliability_of_ahrq_common_format_harm_scales.8.aspx) | Validated harm classification for medical errors | EHR / expert review |
 | Adverse events / patient safety events | Formal incident reporting or EHR-identified events | EHR / administrative |
 | Likelihood of psychiatric intervention (aOR) | Association between AI scribe use and clinical action | EHR data (observational) |
 | RDoC symptom documentation level | Neuropsychiatric symptom documentation completeness | EHR audit |
-| PHQ-9 documentation | Whether depression screening documented in note | EHR audit |
+| [PHQ-9](https://pubmed.ncbi.nlm.nih.gov/11556941/) documentation | Whether depression screening documented in note | EHR audit |
 | Patient safety survey items | Provider-reported safety concerns | Survey |
 
 ## Aliases Used in Literature

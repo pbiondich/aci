@@ -8,10 +8,10 @@ METHODOLOGICAL MEASURE. Computational similarity metrics used to evaluate AI-gen
 ## Measurement Methods
 | Method | Description | Data Source |
 |---|---|---|
-| ROUGE (1, 2, L) | N-gram overlap between AI note and reference text | Automated NLP |
-| BERTScore / BLEURT | Semantic similarity using contextual embeddings | Automated NLP |
-| F1 Score | Token-level precision/recall | Automated NLP |
-| SAIL Score | Combined scoring metric | Automated NLP |
+| [ROUGE](https://aclanthology.org/W04-1013.pdf) (1, 2, L) | N-gram overlap between AI note and reference text | Automated NLP |
+| [BERTScore](https://arxiv.org/pdf/1904.09675) / BLEURT | Semantic similarity using contextual embeddings | Automated NLP |
+| [F1 Score](https://en.wikipedia.org/wiki/F-score) | Token-level precision/recall | Automated NLP |
+| [SAIL Score](https://pubmed.ncbi.nlm.nih.gov/39371531/) | Combined scoring metric | Automated NLP |
 | Entity linking (LINK / CORRECT LINK) | Clinical entity recognition accuracy | Automated NLP |
 | LLM-as-Evaluator agreement | Correlation between LLM judge and human ratings | Automated / Human |
 

@@ -8,7 +8,7 @@ Provider-reported positive engagement with clinical work — the presence of mea
 ## Measurement Methods
 | Method | Description | Data Source |
 |---|---|---|
-| Stanford PFI — Professional Fulfillment subscale | 6-item validated subscale; 1–5 scale (higher=better); captures work engagement and reward | Survey |
+| [Stanford PFI](https://pmc.ncbi.nlm.nih.gov/articles/PMC5794850/) — Professional Fulfillment subscale | 6-item validated subscale; 1–5 scale (higher=better); captures work engagement and reward | Survey |
 | Meaningfulness of work items | Custom Likert items on perceived clinical meaning | Survey |
 | Work-life balance items | Survey items on work-life integration and personal recovery | Survey |
 

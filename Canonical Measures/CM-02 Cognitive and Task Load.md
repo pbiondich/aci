@@ -8,7 +8,7 @@ The mental effort, time pressure, and frustration experienced by clinicians *dur
 ## Measurement Methods
 | Method | Description | Data Source |
 |---|---|---|
-| NASA-TLX (full or subscales) | Validated 6-domain workload instrument: Mental Demand, Physical Demand, Temporal Demand, Performance, Effort, Frustration | Survey |
+| [NASA-TLX](https://pubmed.ncbi.nlm.nih.gov/35674407/) (full or subscales) | Validated 6-domain workload instrument: Mental Demand, Physical Demand, Temporal Demand, Performance, Effort, Frustration | Survey |
 | Physician Task Load Index (PTL) | 4-item adapted NASA-TLX; 0–100 scale (lower=better) | Survey |
 | Cognitive Demand survey items | Custom Likert items on perceived cognitive burden | Survey |
 | Note-related cognitive task load | Specific subscale measuring documentation cognitive effort | Survey |

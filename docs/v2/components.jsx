@@ -128,15 +128,89 @@ const RIGOR = {
   'CM-23':{t:'MODERATE',s:45,l:'Needs work'},'CM-24':{t:'LOW',s:10,l:'Critical'},
   'CM-25':{t:'META',s:50,l:'Meta'}
 };
+
+/* --- Convergence map --- */
+/* converge = findings broadly agree, mixed = self-report/objective diverge or heterogeneous,
+   diverge = key findings contradict, emerging = too few studies to assess */
+const CONVERGENCE = {
+  'CM-01':{c:'mixed',    r:'RCT effect sizes are roughly 4× smaller than QI studies on the same scale — selection bias inflates non-randomized results.'},
+  'CM-02':{c:'converge', r:'Consistent cognitive load reduction across NASA-TLX, PTL, and survey instruments in multiple settings.'},
+  'CM-03':{c:'mixed',    r:'The only RCT (Afshar 2025b) missed its pre-specified significance threshold for professional fulfillment (p=0.04 vs. α=0.025).'},
+  'CM-04':{c:'mixed',    r:'Self-reported time savings are 2–6× larger than EHR telemetry confirms. The gap is the most reproduced finding in the corpus.'},
+  'CM-05':{c:'diverge',  r:'Clinicians report after-hours improvement, but EHR logs show no significant change in most studies (Pearlman 2025, Stults 2025).'},
+  'CM-06':{c:'converge', r:'Chart closure timeliness improves consistently across studies — one of the cleaner operational signals.'},
+  'CM-07':{c:'emerging', r:'Only 5 papers measure total EHR time explicitly. Ma 2025 found the largest effect (−20 min/day), but replication is thin.'},
+  'CM-08':{c:'converge', r:'Omissions dominate errors (71–86%) across all 5 simulation studies — the most consistent information quality finding.'},
+  'CM-09':{c:'mixed',    r:'Hallucination rates range from 3% to 36% depending on study methodology, specialty, and how "inaccuracy" is defined.'},
+  'CM-10':{c:'converge', r:'PDQI-9 scores are consistently high (3.97–4.99 / 5.0) across studies using validated note quality instruments.'},
+  'CM-11':{c:'mixed',    r:'Longer notes can signal thoroughness or over-generation. Clinicians flag verbosity as a concern even when quality scores are high.'},
+  'CM-12':{c:'converge', r:'NLP evaluation metrics (ROUGE, BERTScore) correlate with each other but not always with clinical judgment — a known limitation.'},
+  'CM-13':{c:'converge', r:'Every large deployment reports the same bimodal pattern: heavy users who use it for nearly all encounters, and light/non-users.'},
+  'CM-14':{c:'emerging', r:'Only 6 papers formally measure adoption intention. Tierney 2025 found age and experience are NOT predictive — challenging assumptions.'},
+  'CM-15':{c:'mixed',    r:'Satisfaction is almost universally positive, but most studies recruited volunteers — inflating results. Prasad 2025 is the counter-signal.'},
+  'CM-16':{c:'emerging', r:'Only 6 papers formally measure trust. Bundy 2024 found physicians fear increased patient volume from AI efficiency gains.'},
+  'CM-17':{c:'diverge',  r:'Patient experience is positive in open-label studies but null when patients are masked to whether AI was used (Owens 2024, PDRQ-9).'},
+  'CM-18':{c:'mixed',    r:'The strongest interaction quality data comes from human scribe studies (Shuaib 2021). Ambient AI-specific evidence is sparse.'},
+  'CM-19':{c:'diverge',  r:'Castro 2025 found more psychiatric documentation but significantly less psychiatric intervention with ambient scribes — a safety concern.'},
+  'CM-20':{c:'converge', r:'Three independent papers show financial productivity improvement: Holmgren (+$3K/yr RVU), Boyter/KLAS (+$13K/yr HCC), Afshar (coding uplift).'},
+  'CM-21':{c:'converge', r:'Coding accuracy improvement is consistent across RCT (Afshar 2025b, p<0.001), QI (Boyter/KLAS), and observational (Holmgren) designs.'},
+  'CM-22':{c:'emerging', r:'The strongest throughput data is from human scribes (Shuaib 2021, +39% patients/hr). Ambient AI evidence shows modest gains at best.'},
+  'CM-23':{c:'converge', r:'Heterogeneous adoption with heavy/moderate/non-user cohorts is a universal finding. PHTI 2025 formalizes the three-cohort pattern.'},
+  'CM-24':{c:'emerging', r:'Only 3 papers formally measure ASR accuracy. Commercial vendors do not publish word error rates — an industry opacity problem.'},
+  'CM-25':{c:'converge', r:'Methodological weaknesses (no randomization, no control, self-report reliance) are consistently identified across reviews.'}
+};
+const CONV_LABEL = {
+  converge: 'Findings converge', mixed: 'Mixed signals',
+  diverge: 'Findings diverge', emerging: 'Too early to tell'
+};
+const CONV_ICON = { converge: '●', mixed: '◐', diverge: '○', emerging: '◌' };
+
 function TierBadge({ id }) {
   const r = RIGOR[id]; if (!r) return null;
   return <span className={`tier-badge tier-${r.t}`}>{r.l}</span>;
+}
+function tierColor(tier) {
+  if (tier === 'HIGH') return 'var(--green)';
+  if (tier === 'MODERATE') return 'var(--gold)';
+  if (tier === 'META') return 'var(--ink-3)';
+  return 'var(--accent)';
 }
 function rigorColor(s) {
   if (s >= 80) return 'var(--green)';
   if (s >= 50) return 'var(--gold)';
   if (s >= 30) return 'var(--accent-2)';
   return 'var(--accent)';
+}
+function convColor(conv) {
+  if (conv === 'converge') return 'var(--green)';
+  if (conv === 'mixed') return 'var(--gold)';
+  if (conv === 'diverge') return 'var(--accent)';
+  return 'var(--ink-3)';
+}
+
+/* --- Study design breakdown helper --- */
+function getDesignBreakdown(measurePapers, articles) {
+  const counts = {};
+  const articleMap = {};
+  articles.forEach(a => { articleMap[a.id] = a; });
+  (measurePapers || []).forEach(pid => {
+    const a = articleMap[pid];
+    const d = a ? (a.studyDesign || 'Unknown') : 'Unknown';
+    counts[d] = (counts[d] || 0) + 1;
+  });
+  // Sort: RCT first, then by count descending
+  const order = ['RCT','Observational','QI/Pre-Post','Review','Qualitative','Simulation','Unknown'];
+  return Object.entries(counts)
+    .sort((a, b) => {
+      const ai = order.indexOf(a[0]), bi = order.indexOf(b[0]);
+      if (ai !== -1 && bi !== -1) return ai - bi;
+      if (ai !== -1) return -1;
+      if (bi !== -1) return 1;
+      return b[1] - a[1];
+    });
+}
+function formatDesignBreakdown(breakdown) {
+  return breakdown.map(([d, c]) => c + ' ' + d).join(', ');
 }
 
 /* --- Bar chart (editorial style) --- */
@@ -190,6 +264,8 @@ Object.assign(window, {
   DIM_CODES, DIM_LONG, DIM_BLURB,
   parseDim, primaryDim, DimTag,
   renderMd, MdText, cleanProduct,
-  RIGOR, TierBadge, rigorColor,
+  RIGOR, CONVERGENCE, CONV_LABEL, CONV_ICON,
+  TierBadge, tierColor, rigorColor, convColor,
+  getDesignBreakdown, formatDesignBreakdown,
   HBar, DotGrid, Modal
 });

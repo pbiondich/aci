@@ -8,8 +8,8 @@ Provider-reported satisfaction with the ambient AI scribe tool — including per
 ## Measurement Methods
 | Method | Description | Data Source |
 |---|---|---|
-| System Usability Scale (SUS) | Validated 10-item usability instrument; 0–100 (68 = average) | Survey |
-| UTAUT perceived usefulness | Validated constructs for usefulness, ease-of-use | Survey |
+| [System Usability Scale (SUS)](https://doi.org/10.1201/9781498710411-35) | Validated 10-item usability instrument; 0–100 (68 = average) | Survey |
+| [UTAUT](https://aisel.aisnet.org/misq/vol27/iss3/5/) perceived usefulness | Validated constructs for usefulness, ease-of-use | Survey |
 | Likert satisfaction items | Single or multi-item custom satisfaction scales | Survey |
 | Qualitative feedback | Provider narratives on usability experience | Qualitative |
 | Overall product preference | Head-to-head preference between products | Survey |

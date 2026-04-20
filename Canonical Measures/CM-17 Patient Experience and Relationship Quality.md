@@ -8,8 +8,8 @@ Patient-reported or validated assessment of the quality of the patient-physician
 ## Measurement Methods
 | Method | Description | Data Source |
 |---|---|---|
-| PDRQ-9 (Patient-Doctor Relationship Questionnaire) | Validated 9-item patient-reported relationship quality scale | Survey (patient) |
-| Patient satisfaction survey (Press Ganey / custom) | Post-visit patient survey on visit quality | Survey (patient) |
+| [PDRQ-9 (Patient-Doctor Relationship Questionnaire)](https://pubmed.ncbi.nlm.nih.gov/15038928/) | Validated 9-item patient-reported relationship quality scale | Survey (patient) |
+| Patient satisfaction survey ([Press Ganey](https://www.pressganey.com/industry/healthcare/patient-experience/) / custom) | Post-visit patient survey on visit quality | Survey (patient) |
 | Patient Likelihood to Recommend (LTR) | NPS-style patient recommendation question | Survey (patient) |
 | Patient consent compliance | % of patients consenting to ambient AI recording | Operational |
 | Qualitative patient feedback | Open-ended patient responses on AI experience | Qualitative |

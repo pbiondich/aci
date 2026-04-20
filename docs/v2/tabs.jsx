@@ -162,7 +162,7 @@ function OverviewTab({ articles, measures, draftMeasures, setTab }) {
 /* ========================================================================
    MEASURES — canonical list with inline expand
    ======================================================================== */
-function MeasuresTab({ measures, expanded, setExpanded }) {
+function MeasuresTab({ measures, expanded, setExpanded, articles, onSelectArticle }) {
   const [q, setQ] = useStateT('');
   const [dim, setDim] = useStateT('');
   const [domain, setDomain] = useStateT('');
@@ -272,12 +272,20 @@ function MeasuresTab({ measures, expanded, setExpanded }) {
                       <div>
                         {m.instruments && m.instruments.length > 0 && <div style={{marginBottom:24}}>
                           <h4 className="mini">Instruments</h4>
-                          {m.instruments.map((inst, i) => <div key={i} style={{fontSize:13, padding:'6px 10px', marginBottom:4, background:'var(--paper-2)', borderLeft:'2px solid var(--ink)', fontFamily:'Inter'}}>{inst}</div>)}
+                          {m.instruments.map((inst, i) => <div key={i} className="inst-row" style={{fontSize:13, padding:'6px 10px', marginBottom:4, background:'var(--paper-2)', borderLeft:'2px solid var(--ink)', fontFamily:'Inter'}}>{renderMd(inst)}</div>)}
                         </div>}
                         {m.papers && m.papers.length > 0 && <div>
                           <h4 className="mini">{m.papers.length} source paper{m.papers.length > 1 ? 's' : ''}</h4>
                           <div style={{maxHeight:240, overflowY:'auto', fontSize:13, lineHeight:1.5, paddingRight:8}}>
-                            {m.papers.map((p, i) => <div key={i} style={{padding:'6px 0', borderBottom:'1px solid var(--rule)', fontStyle:'italic', color:'var(--ink-2)'}}>{p}</div>)}
+                            {m.papers.map((p, i) => {
+                              const art = articles && articles.find(a => a.id === p);
+                              return <div key={i} style={{padding:'6px 0', borderBottom:'1px solid var(--rule)', fontStyle:'italic', color: art ? 'var(--accent)' : 'var(--ink-2)', cursor: art ? 'pointer' : 'default', transition:'color 0.15s'}}
+                                onClick={() => art && onSelectArticle(art)}
+                                onMouseEnter={e => { if (art) e.currentTarget.style.color = 'var(--ink)'; }}
+                                onMouseLeave={e => { if (art) e.currentTarget.style.color = 'var(--accent)'; }}>
+                                {p}{art && <span style={{fontSize:10, marginLeft:4, opacity:0.5}}>↗</span>}
+                              </div>;
+                            })}
                           </div>
                         </div>}
                       </div>
@@ -756,78 +764,146 @@ function CorpusTab({ articles }) {
 }
 
 /* ========================================================================
-   RIGOR — evidence heatmap
+   RIGOR — evidence profile cards with tier badges
    ======================================================================== */
-function RigorTab({ measures }) {
-  const data = useMemoT(() => measures.filter(m => RIGOR[m.id]).map(m => ({
-    id: m.id, name: m.name, score: RIGOR[m.id].s, tier: RIGOR[m.id].t, label: RIGOR[m.id].l, papers: m.paperCount || 0, dim: primaryDim(m.dimension)
-  })).sort((a,b) => b.score - a.score), [measures]);
+function RigorTab({ measures, articles }) {
+  const [openRationale, setOpenRationale] = useStateT(null);
 
-  const tiers = {
-    'Best relative quality': data.filter(d => d.tier === 'HIGH'),
-    'Moderate': data.filter(d => d.tier === 'MODERATE'),
-    'Needs work / Low': data.filter(d => d.tier === 'LOW'),
-    'Methodological / Meta': data.filter(d => d.tier === 'META')
-  };
+  const data = useMemoT(() => measures.filter(m => RIGOR[m.id]).map(m => {
+    const r = RIGOR[m.id];
+    const convObj = CONVERGENCE[m.id] || {c:'emerging', r:''};
+    const breakdown = getDesignBreakdown(m.papers, articles || []);
+    return {
+      id: m.id, name: m.name, tier: r.t, label: r.l,
+      papers: m.paperCount || 0, dim: primaryDim(m.dimension),
+      conv: convObj.c, rationale: convObj.r, breakdown
+    };
+  }), [measures, articles]);
+
+  /* Sort within each tier by paper count descending */
+  const tierDefs = [
+    { key:'HIGH',     title:'Best relative quality',  desc:'Multiple study designs, validated instruments, reproducible findings.' },
+    { key:'MODERATE', title:'Moderate',                desc:'Some methodological strength but gaps in design, sample, or convergence.' },
+    { key:'LOW',      title:'Needs work',              desc:'Few studies, weak designs, or findings that diverge across methods.' },
+    { key:'META',     title:'Methodological / Meta',   desc:'Measures that assess research quality rather than clinical outcomes.' }
+  ];
+
+  const tierData = {};
+  tierDefs.forEach(t => {
+    tierData[t.key] = data.filter(d => d.tier === t.key).sort((a,b) => b.papers - a.papers);
+  });
+
+  /* Summary stats */
+  const totalPapers = 54;
+  const highCount = tierData['HIGH'].length;
+  const lowCount = tierData['LOW'].length;
+  const convergeCount = data.filter(d => d.conv === 'converge').length;
+  const divergeCount = data.filter(d => d.conv === 'diverge').length;
 
   return (
     <div className="page">
       <div style={{marginBottom:32}}>
         <div className="smallcaps">VIII · Level of Rigor</div>
         <h1 className="display" style={{fontSize:54, marginTop:8}}>Not all evidence<br/>is <span className="em accent">created equal</span>.</h1>
-        <p className="lede" style={{marginTop:16, maxWidth:720}}>A placeholder rigor score across the twenty-five canonical measures. A full rubric — study design, instrument validation, finding convergence, bias risk, is in development.</p>
+        <p className="lede" style={{marginTop:16, maxWidth:720}}>
+          Each canonical measure draws on a different slice of the {totalPapers}-study corpus.
+          {' '}{highCount} measures have the strongest evidence base; {lowCount} need substantially more work.
+          {' '}Findings converge for {convergeCount} measures and actively diverge for {divergeCount}.
+        </p>
       </div>
 
       <div className="aside" style={{marginBottom:40}}>
-        <strong style={{fontStyle:'normal', color:'var(--accent)'}}>Work in progress.</strong> The scores shown are illustrative placeholders. A future version will apply a formal, multi-criteria rubric.
+        <strong style={{fontStyle:'normal', color:'var(--accent)'}}>Work in progress.</strong> Tier assignments reflect editorial judgment based on study design mix, sample sizes, instrument validation, and finding convergence. A formal multi-criteria rubric is in development.
       </div>
 
-      {/* HEATMAP */}
-      <div style={{marginBottom:48}}>
-        <h4 className="mini">Figure 5 · Rigor score across all measures</h4>
-        <div style={{background:'var(--paper)', border:'1px solid var(--rule)', padding:24, marginTop:12}}>
-          {data.map(d => (
-            <div key={d.id} className="heatmap-row">
-              <div className="heatmap-label">
-                <span className="mid">{d.id}</span>{d.name}
-              </div>
-              <div style={{display:'grid', gridTemplateColumns:'1fr 60px 80px', gap:12, alignItems:'center'}}>
-                <div style={{height:20, background:'var(--paper-2)', position:'relative'}}>
-                  <div style={{width:d.score+'%', height:'100%', background: rigorColor(d.score)}}/>
-                </div>
-                <span className="mono" style={{fontSize:12, color:'var(--ink-2)', textAlign:'right'}}>{d.score}/100</span>
-                <span style={{fontSize:11, color:'var(--ink-3)', fontFamily:'Inter', textTransform:'uppercase', letterSpacing:'0.1em'}}>{d.label}</span>
-              </div>
-            </div>
-          ))}
-        </div>
+      {/* OVERVIEW STRIP */}
+      <div style={{display:'flex', gap:1, marginBottom:48, height:8}}>
+        {data.slice().sort((a,b) => {
+          const order = {HIGH:0, MODERATE:1, LOW:2, META:3};
+          return (order[a.tier]||9) - (order[b.tier]||9);
+        }).map(d => (
+          <div key={d.id} title={d.id + ' — ' + d.name} style={{
+            flex:1, background:tierColor(d.tier), opacity:0.85
+          }}/>
+        ))}
       </div>
 
       {/* TIER GROUPS */}
-      {Object.entries(tiers).map(([name, items]) => items.length > 0 && (
-        <div key={name} style={{marginBottom:40}}>
-          <div style={{display:'flex', alignItems:'baseline', justifyContent:'space-between', borderBottom:'1px solid var(--ink)', paddingBottom:8, marginBottom:16}}>
-            <h2 className="section" style={{fontSize:28}}>{name}</h2>
-            <span className="smallcaps">{items.length} measure{items.length > 1 ? 's' : ''}</span>
+      {tierDefs.map(t => tierData[t.key].length > 0 && (
+        <div key={t.key} style={{marginBottom:56}}>
+          <div style={{borderBottom:'2px solid var(--ink)', paddingBottom:10, marginBottom:8}}>
+            <div style={{display:'flex', alignItems:'baseline', justifyContent:'space-between'}}>
+              <h2 className="section" style={{fontSize:28}}>{t.title}</h2>
+              <span className="smallcaps">{tierData[t.key].length} measure{tierData[t.key].length > 1 ? 's' : ''}</span>
+            </div>
+            <p style={{fontSize:14, color:'var(--ink-3)', fontFamily:'Newsreader, serif', fontStyle:'italic', marginTop:4}}>{t.desc}</p>
           </div>
-          <div className="grid-3">
-            {items.map(item => (
-              <div key={item.id} className="card">
-                <div style={{display:'flex', justifyContent:'space-between', alignItems:'baseline', marginBottom:6}}>
-                  <span className="mono" style={{fontSize:12, color:'var(--ink-3)'}}>{item.id}</span>
-                  <DimTag code={item.dim}/>
+
+          <div className="grid-2" style={{marginTop:20}}>
+            {tierData[t.key].map(item => {
+              const convLabel = CONV_LABEL[item.conv] || '';
+              const convIcon = CONV_ICON[item.conv] || '';
+              const hasRCT = item.breakdown.some(([d]) => d === 'RCT');
+
+              return (
+                <div key={item.id} className="card" style={{padding:24}}>
+                  {/* Header row */}
+                  <div style={{display:'flex', justifyContent:'space-between', alignItems:'flex-start', marginBottom:8}}>
+                    <div>
+                      <span className="mono" style={{fontSize:12, color:'var(--ink-3)'}}>{item.id}</span>
+                      {' '}
+                      <DimTag code={item.dim}/>
+                    </div>
+                    <TierBadge id={item.id}/>
+                  </div>
+
+                  {/* Measure name */}
+                  <h3 style={{fontFamily:'Newsreader, serif', fontSize:20, fontWeight:500, marginBottom:16, lineHeight:1.3}}>{item.name}</h3>
+
+                  {/* Evidence profile */}
+                  <div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'12px 24px', fontSize:13}}>
+                    {/* Papers */}
+                    <div>
+                      <div className="smallcaps" style={{fontSize:10, marginBottom:4, letterSpacing:'0.12em'}}>Papers</div>
+                      <div style={{fontFamily:'Newsreader, serif', fontSize:28, fontWeight:400, lineHeight:1}}>{item.papers}</div>
+                    </div>
+
+                    {/* Convergence */}
+                    <div>
+                      <div className="smallcaps" style={{fontSize:10, marginBottom:4, letterSpacing:'0.12em'}}>Convergence</div>
+                      <div style={{display:'flex', alignItems:'center', gap:6, cursor: item.rationale ? 'pointer' : 'default'}}
+                           onClick={() => item.rationale && setOpenRationale(openRationale === item.id ? null : item.id)}>
+                        <span style={{color:convColor(item.conv), fontSize:16}}>{convIcon}</span>
+                        <span style={{fontFamily:'Inter, sans-serif', fontSize:13, color:'var(--ink-2)'}}>{convLabel}</span>
+                        {item.rationale && <span style={{fontSize:10, color:'var(--ink-4)', marginLeft:2}}>{openRationale === item.id ? '▾' : '▸'}</span>}
+                      </div>
+                      {openRationale === item.id && item.rationale && (
+                        <div style={{marginTop:8, padding:'10px 12px', background:'var(--paper-2)', borderLeft:'2px solid ' + convColor(item.conv),
+                          fontFamily:'Newsreader, serif', fontSize:14, lineHeight:1.5, color:'var(--ink-2)', fontStyle:'italic'}}>
+                          {item.rationale}
+                        </div>
+                      )}
+                    </div>
+
+                    {/* Study designs — full width */}
+                    <div style={{gridColumn:'1 / -1'}}>
+                      <div className="smallcaps" style={{fontSize:10, marginBottom:4, letterSpacing:'0.12em'}}>Study designs</div>
+                      <div style={{fontFamily:'Inter, sans-serif', fontSize:12, color:'var(--ink-2)', lineHeight:1.5}}>
+                        {item.breakdown.map(([d, c], i) => (
+                          <span key={d}>
+                            {i > 0 && <span style={{color:'var(--rule)', margin:'0 6px'}}>·</span>}
+                            <span style={{fontWeight: d === 'RCT' ? 600 : 400, color: d === 'RCT' ? 'var(--ink)' : 'var(--ink-2)'}}>
+                              {c} {d}
+                            </span>
+                          </span>
+                        ))}
+                        {!hasRCT && <span style={{color:'var(--accent)', fontStyle:'italic', marginLeft:8, fontSize:11}}>no RCTs</span>}
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <h3 style={{fontFamily:'Newsreader', fontSize:18, fontWeight:500, marginBottom:12}}>{item.name}</h3>
-                <div style={{display:'flex', alignItems:'baseline', gap:12}}>
-                  <span style={{fontFamily:'Newsreader', fontSize:36, fontWeight:400, color: rigorColor(item.score)}}>{item.score}</span>
-                  <span style={{fontSize:12, color:'var(--ink-3)'}}>/ 100</span>
-                  <span style={{marginLeft:'auto', fontSize:12, color:'var(--ink-3)'}} className="mono">{item.papers} papers</span>
-                </div>
-                <div style={{marginTop:8, height:4, background:'var(--paper-2)'}}>
-                  <div style={{width:item.score+'%', height:'100%', background:rigorColor(item.score)}}/>
-                </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       ))}
@@ -837,7 +913,7 @@ function RigorTab({ measures }) {
       <div className="grid-feature" style={{marginTop:40}}>
         <div className="body-text" style={{fontSize:17}}>
           <h3 className="sub">Cross-cutting findings</h3>
-          <p>The self-report / objective divergence is the most reproducible methodological finding across the corpus: clinicians consistently report larger improvements than objective data confirm: for documentation time (two to six times overestimated), after-hours documentation (positive self-report, null objective), patient experience (positive in open-label, null in masked), and burnout (QI estimates two to four times larger than RCT).</p>
+          <p>The self-report / objective divergence is the most reproducible methodological finding across the corpus: clinicians consistently report larger improvements than objective data confirm — for documentation time (two to six times overestimated), after-hours documentation (positive self-report, null objective), patient experience (positive in open-label, null in masked), and burnout (QI estimates two to four times larger than RCT).</p>
           <p>The near-total absence of real-world patient safety data is the most critical gap. Ambient AI generates safety-critical clinical documentation without systematic post-market safety surveillance. The field is deploying tools at scale without the safety-monitoring infrastructure expected for medical devices or pharmaceuticals.</p>
         </div>
         <aside className="aside">

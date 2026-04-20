@@ -10,7 +10,7 @@ Whether clinically relevant information is captured in the AI-generated note —
 |---|---|---|
 | Omission rate (%) | % of expected data elements absent from the note | Simulation / Human rater |
 | Error categorization — omissions | Structured count of missing elements vs. reference | Simulation / Human rater |
-| PDSQI-9 / PDQI-9 Thoroughness domain | Validated subscale measuring note completeness | Human rater / LLM-as-judge |
+| [PDSQI-9](https://pubmed.ncbi.nlm.nih.gov/40323321/) / [PDQI-9](https://pubmed.ncbi.nlm.nih.gov/18436914/) Thoroughness domain | Validated subscale measuring note completeness | Human rater / LLM-as-judge |
 | Clinical note error rate (% key elements) | % of key clinical elements correctly captured | Simulation |
 | New medication capture | Whether new medications mentioned in encounter appear in note | EHR audit |
 
