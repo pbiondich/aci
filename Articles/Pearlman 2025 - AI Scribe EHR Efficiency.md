@@ -40,12 +40,12 @@ Explicit: to evaluate whether AI scribe use is associated with reduced EHR time 
 
 | Measure | Description | D&M Dimension(s) |
 |---|---|---|
-| **Total Time in EHR per Appointment (min)** | Primary outcome. Objective Epic telemetry. Pilot: 22.2→20.2 min (−2.0, p<.001). Control: 24.2→23.8 min (−0.4, p=.001). Between-group difference significant. | [[NB - Net Benefits]] |
-| **Time in Notes per Appointment (min)** | Primary outcome. Note-specific EHR time. Pilot: 7.5→7.0 min (−0.5, p<.001). Control: 9.2→9.0 min (−0.2, p<.001). Absolute reduction modest but significant. | [[NB - Net Benefits]] |
-| **After-Hours Time Spent Documenting per Appointment (min)** | Primary outcome. Pilot: 3.2→2.7 min (−0.5, p=.95). **NOT significant.** Control: 2.6→2.5 min (−0.1, p=.47). Neither group improved after-hours time — consistent null finding across studies. | [[NB - Net Benefits]] |
-| **Time to Close Encounter (hours)** | Time from appointment completion to note sign-off. Data available in Table 2 (truncated in fetch). | [[NB - Net Benefits]] |
-| **AI Scribe Use Quartile (dose-response)** | Clinicians stratified Q1–Q4 by scribe use intensity. Q4 (highest users) showed largest EHR time reductions; Q1 showed minimal benefit. Strong dose-response relationship is key methodological finding. | [[U - Use]], [[NB - Net Benefits]] |
-| **Propensity Score Balance** | After weighting, all baseline covariates (sex, years since training, specialty, clinician type, site, Epic proficiency, baseline EHR metrics, appointment volume) were balanced between groups (difference ≈0). Methodological quality measure. | (methodological) |
+| Total Time in EHR per Appointment (min) | Primary outcome. Objective Epic telemetry. Pilot: 22.2→20.2 min (−2.0, p<.001). Control: 24.2→23.8 min (−0.4, p=.001). Between-group difference significant. | [[NB - Net Benefits]] |
+| Time in Notes per Appointment (min) | Primary outcome. Note-specific EHR time. Pilot: 7.5→7.0 min (−0.5, p<.001). Control: 9.2→9.0 min (−0.2, p<.001). Absolute reduction modest but significant. | [[NB - Net Benefits]] |
+| After-Hours Time Spent Documenting per Appointment (min) | Primary outcome. Pilot: 3.2→2.7 min (−0.5, p=.95). **NOT significant.** Control: 2.6→2.5 min (−0.1, p=.47). Neither group improved after-hours time — consistent null finding across studies. | [[NB - Net Benefits]] |
+| Time to Close Encounter (hours) | Time from appointment completion to note sign-off. Data available in Table 2 (truncated in fetch). | [[NB - Net Benefits]] |
+| AI Scribe Use Quartile (dose-response) | Clinicians stratified Q1–Q4 by scribe use intensity. Q4 (highest users) showed largest EHR time reductions; Q1 showed minimal benefit. Strong dose-response relationship is key methodological finding. | [[U - Use]], [[NB - Net Benefits]] |
+| Propensity Score Balance | After weighting, all baseline covariates (sex, years since training, specialty, clinician type, site, Epic proficiency, baseline EHR metrics, appointment volume) were balanced between groups (difference ≈0). Methodological quality measure. | (methodological) |
 
 ---
 *Reviewed by Iris | Source: JAMA Network Open 2025 | DOI: 10.1001/jamanetworkopen.2025.37000 | Template v2.0 | Full text reviewed ✅*

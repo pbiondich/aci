@@ -40,10 +40,10 @@ Explicit: to evaluate how use of ambient voice recognition with NLP and AI (DAX)
 
 | Measure | Description | D&M Dimension(s) |
 |---|---|---|
-| **PDRQ-9 Score (primary outcome, masked phase)** | 9-item validated Patient-Doctor Relationship Questionnaire. No difference detected: DAX median 45 (IQR 8) vs. no-DAX median 45 (IQR 3.5); p=0.31. aOR for complete satisfaction on "how well clinician listened" = 0.8 [0.48–1.34], NS. | [[NB - Net Benefits]] |
-| **Patient Satisfaction — "More Focused on Me" (open-label)** | Open-label: patients strongly agreed physician was more focused on them when DAX was used. | [[NB - Net Benefits]], [[US - User Satisfaction]] |
-| **Patient Satisfaction — "Less Time Typing" (open-label)** | Open-label: patients strongly agreed physician spent less time typing during DAX encounters. | [[NB - Net Benefits]] |
-| **Patient Satisfaction — "More Personable Encounter" (open-label)** | Open-label: patients strongly agreed the encounter felt more personable with DAX. | [[NB - Net Benefits]], [[US - User Satisfaction]] |
+| PDRQ-9 Score (primary outcome, masked phase) | 9-item validated Patient-Doctor Relationship Questionnaire. No difference detected: DAX median 45 (IQR 8) vs. no-DAX median 45 (IQR 3.5); p=0.31. aOR for complete satisfaction on "how well clinician listened" = 0.8 [0.48–1.34], NS. | [[NB - Net Benefits]] |
+| Patient Satisfaction — "More Focused on Me" (open-label) | Open-label: patients strongly agreed physician was more focused on them when DAX was used. | [[NB - Net Benefits]], [[US - User Satisfaction]] |
+| Patient Satisfaction — "Less Time Typing" (open-label) | Open-label: patients strongly agreed physician spent less time typing during DAX encounters. | [[NB - Net Benefits]] |
+| Patient Satisfaction — "More Personable Encounter" (open-label) | Open-label: patients strongly agreed the encounter felt more personable with DAX. | [[NB - Net Benefits]], [[US - User Satisfaction]] |
 
 ---
 *Reviewed by Iris | Source: Applied Clinical Informatics 2024 | DOI: 10.1055/a-2337-4739 | Template v2.0 | Full text reviewed ✅*

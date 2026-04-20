@@ -40,18 +40,18 @@ Explicit: to evaluate whether the use of generative AI reduces clinical document
 
 | Measure | Description | D&M Dimension(s) |
 |---|---|---|
-| **Documentation Time (seconds)** | Third-party-measured time from sitting at EMR to completed registration. Phase A: 305 ± 53.9 s; Phase B: 336 ± 78.0 s. **No significant difference** (p=ns). Editing burden from incomplete voice input offset any AI efficiency gain. | [[NB - Net Benefits]] |
-| **NASA-TLX Temporal Demand (Time Pressure)** | NASA-TLX subscale on perceived time urgency during documentation (0–100 VAS). Significantly lower with medimo (AVE Phase A: 58.0, Phase B: 49.8; p=0.037). Only subscale showing significant improvement. | [[US - User Satisfaction]], [[NB - Net Benefits]] |
-| **NASA-TLX Frustration/Dissatisfaction** | NASA-TLX subscale on frustration level (0–100 VAS). Significantly HIGHER with medimo (AVE Phase A: 46.4, Phase B: 55.3; p=0.041). Attributed to low AI literacy and discomfort with novel workflow. Key null/adverse finding. | [[US - User Satisfaction]] |
-| **NASA-TLX Mental Demand** | Mental demand subscale. No significant difference (53.3 → 52.0). | [[US - User Satisfaction]] |
-| **NASA-TLX Physical Demand** | Physical demand subscale. No significant difference (42.9 → 43.9). | [[US - User Satisfaction]] |
-| **NASA-TLX Own Performance** | Self-rated task performance subscale. No significant difference (41.5 → 47.3). | [[US - User Satisfaction]] |
-| **NASA-TLX Effort** | Effort subscale. No significant difference (56.1 → 53.7). | [[US - User Satisfaction]] |
-| **Documentation Quality — SOAP_S (Subjective)** | Blinded score (3 independent PTs, 10-point scale) for the Subjective section of SOAP notes. Significantly higher with medimo (AVE 8.3 → 8.4; p=0.045). Real-time recording captured patient complaints more accurately. | [[IQ - Information Quality]] |
-| **Documentation Quality — SOAP_P (Plan)** | Blinded score for the Plan section of SOAP notes. Significantly higher with medimo (AVE 5.4 → 6.7; p=0.045). Largest quality gain; real-time capture improved treatment plan specificity. | [[IQ - Information Quality]] |
-| **Documentation Quality — Total Score** | Sum of all 6 quality subscale scores (Details, Non-use of technical jargon, Appropriate expressions, SOAP_S, SOAP_O, SOAP_P). Significantly higher with medimo (AVE 40.9 → 44.9; p=0.023). SOAP_O (Objective) did not reach significance alone. | [[IQ - Information Quality]] |
-| **Voice Memo Frequency** | Count of non-conversational voice memos recorded per participant during Phase B. Strong positive correlation with documentation time reduction (r=0.71, p=0.006). Behavioral proxy for tool engagement and utilization intensity. | [[U - Use]], [[NB - Net Benefits]] |
-| **Implementation Intent (Willingness to Adopt)** | Post-study 5-point scale: "If medimo were introduced, would you use it?" Significant positive correlation with time reduction (r=0.67, p=0.009). User motivation is a key predictor of achieving time benefits. | [[U - Use]], [[US - User Satisfaction]] |
+| Documentation Time (seconds) | Third-party-measured time from sitting at EMR to completed registration. Phase A: 305 ± 53.9 s; Phase B: 336 ± 78.0 s. **No significant difference** (p=ns). Editing burden from incomplete voice input offset any AI efficiency gain. | [[NB - Net Benefits]] |
+| NASA-TLX Temporal Demand (Time Pressure) | NASA-TLX subscale on perceived time urgency during documentation (0–100 VAS). Significantly lower with medimo (AVE Phase A: 58.0, Phase B: 49.8; p=0.037). Only subscale showing significant improvement. | [[US - User Satisfaction]], [[NB - Net Benefits]] |
+| NASA-TLX Frustration/Dissatisfaction | NASA-TLX subscale on frustration level (0–100 VAS). Significantly HIGHER with medimo (AVE Phase A: 46.4, Phase B: 55.3; p=0.041). Attributed to low AI literacy and discomfort with novel workflow. Key null/adverse finding. | [[US - User Satisfaction]] |
+| NASA-TLX Mental Demand | Mental demand subscale. No significant difference (53.3 → 52.0). | [[US - User Satisfaction]] |
+| NASA-TLX Physical Demand | Physical demand subscale. No significant difference (42.9 → 43.9). | [[US - User Satisfaction]] |
+| NASA-TLX Own Performance | Self-rated task performance subscale. No significant difference (41.5 → 47.3). | [[US - User Satisfaction]] |
+| NASA-TLX Effort | Effort subscale. No significant difference (56.1 → 53.7). | [[US - User Satisfaction]] |
+| Documentation Quality — SOAP_S (Subjective) | Blinded score (3 independent PTs, 10-point scale) for the Subjective section of SOAP notes. Significantly higher with medimo (AVE 8.3 → 8.4; p=0.045). Real-time recording captured patient complaints more accurately. | [[IQ - Information Quality]] |
+| Documentation Quality — SOAP_P (Plan) | Blinded score for the Plan section of SOAP notes. Significantly higher with medimo (AVE 5.4 → 6.7; p=0.045). Largest quality gain; real-time capture improved treatment plan specificity. | [[IQ - Information Quality]] |
+| Documentation Quality — Total Score | Sum of all 6 quality subscale scores (Details, Non-use of technical jargon, Appropriate expressions, SOAP_S, SOAP_O, SOAP_P). Significantly higher with medimo (AVE 40.9 → 44.9; p=0.023). SOAP_O (Objective) did not reach significance alone. | [[IQ - Information Quality]] |
+| Voice Memo Frequency | Count of non-conversational voice memos recorded per participant during Phase B. Strong positive correlation with documentation time reduction (r=0.71, p=0.006). Behavioral proxy for tool engagement and utilization intensity. | [[U - Use]], [[NB - Net Benefits]] |
+| Implementation Intent (Willingness to Adopt) | Post-study 5-point scale: "If medimo were introduced, would you use it?" Significant positive correlation with time reduction (r=0.67, p=0.009). User motivation is a key predictor of achieving time benefits. | [[U - Use]], [[US - User Satisfaction]] |
 
 ---
 *Reviewed by Iris | Source: Cureus 2025 | DOI: 10.7759/cureus.81313 | Template v2.0 | Full text reviewed ✅*

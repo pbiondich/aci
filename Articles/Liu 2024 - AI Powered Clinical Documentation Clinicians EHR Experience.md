@@ -40,11 +40,11 @@ To evaluate clinicians' experiences with clinical documentation before and after
 
 | Measure | Description | D&M Dimension(s) |
 |---|---|---|
-| **Decreased EHR Time at Home** | Proportion reporting improvement. Intervention 47.1% vs. control 14.5% (p<.001). Absolute difference: +32.6 percentage points. | [[NB - Net Benefits]] |
-| **Decreased Weekly EHR Time Outside Work Hours** | Proportion reporting improvement. Intervention 44.7% vs. control 20.0% (p=.003). | [[NB - Net Benefits]] |
-| **Decreased Post-Visit Documentation Time** | Proportion reporting improvement. Intervention 43.5% vs. control 18.2% (p=.002). | [[NB - Net Benefits]] |
-| **Less EHR Frustration** | Proportion reporting improvement. Intervention 44.7% vs. control 14.5% (p<.001). | [[US - User Satisfaction]] |
-| **Unchanged Experience** | Majority in both groups reported no change: 44.7% (intervention) vs. 68.7% (control) unchanged. Among DAX users, 55.3% saw no measurable benefit at 5 weeks. | [[US - User Satisfaction]] |
+| Decreased EHR Time at Home | Proportion reporting improvement. Intervention 47.1% vs. control 14.5% (p<.001). Absolute difference: +32.6 percentage points. | [[NB - Net Benefits]] |
+| Decreased Weekly EHR Time Outside Work Hours | Proportion reporting improvement. Intervention 44.7% vs. control 20.0% (p=.003). | [[NB - Net Benefits]] |
+| Decreased Post-Visit Documentation Time | Proportion reporting improvement. Intervention 43.5% vs. control 18.2% (p=.002). | [[NB - Net Benefits]] |
+| Less EHR Frustration | Proportion reporting improvement. Intervention 44.7% vs. control 14.5% (p<.001). | [[US - User Satisfaction]] |
+| Unchanged Experience | Majority in both groups reported no change: 44.7% (intervention) vs. 68.7% (control) unchanged. Among DAX users, 55.3% saw no measurable benefit at 5 weeks. | [[US - User Satisfaction]] |
 
 ---
 *Reviewed by Iris | Source: JAMA Network Open 2024 | DOI: 10.1001/jamanetworkopen.2024.32460 | Template v2.0 | Full text reviewed ✅*

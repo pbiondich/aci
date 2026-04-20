@@ -40,12 +40,12 @@ Not explicitly stated. Objective is descriptive: to catalog existing frameworks 
 
 | Measure | Description | D&M Dimension(s) |
 |---|---|---|
-| **ROUGE Score** | Automated NLP metric comparing AI-generated note text to reference notes using n-gram overlap. Measures surface-level textual similarity, not clinical accuracy. | [[IQ - Information Quality]], [[SQ - System Quality]] |
-| **BERTScore** | Semantic similarity metric using contextual embeddings to compare generated vs. reference text. More nuanced than ROUGE but still not clinically validated. | [[IQ - Information Quality]], [[SQ - System Quality]] |
-| **Clinical Accuracy** | Domain-specific evaluation of whether AI-generated notes correctly capture clinical facts, diagnoses, and plans from the encounter. | [[IQ - Information Quality]] |
-| **Hallucination / Error Rate** | Frequency of factually incorrect or fabricated content in AI-generated clinical notes. Identified as a critical gap — no standardized detection approach exists yet. | [[IQ - Information Quality]], [[SQ - System Quality]] |
-| **Benchmark Dataset Availability** | Whether studies used publicly available datasets for reproducible evaluation. Only 2 datasets found to be publicly available; cited as a major field-wide limitation. | [[SQ - System Quality]] |
-| **Specialty Coverage** | Range of clinical specialties represented in evaluation datasets. Found to be minimal — mostly primary care/general medicine, limiting generalizability. | [[IQ - Information Quality]] |
+| ROUGE Score | Automated NLP metric comparing AI-generated note text to reference notes using n-gram overlap. Measures surface-level textual similarity, not clinical accuracy. | [[IQ - Information Quality]], [[SQ - System Quality]] |
+| BERTScore | Semantic similarity metric using contextual embeddings to compare generated vs. reference text. More nuanced than ROUGE but still not clinically validated. | [[IQ - Information Quality]], [[SQ - System Quality]] |
+| Clinical Accuracy | Domain-specific evaluation of whether AI-generated notes correctly capture clinical facts, diagnoses, and plans from the encounter. | [[IQ - Information Quality]] |
+| Hallucination / Error Rate | Frequency of factually incorrect or fabricated content in AI-generated clinical notes. Identified as a critical gap — no standardized detection approach exists yet. | [[IQ - Information Quality]], [[SQ - System Quality]] |
+| Benchmark Dataset Availability | Whether studies used publicly available datasets for reproducible evaluation. Only 2 datasets found to be publicly available; cited as a major field-wide limitation. | [[SQ - System Quality]] |
+| Specialty Coverage | Range of clinical specialties represented in evaluation datasets. Found to be minimal — mostly primary care/general medicine, limiting generalizability. | [[IQ - Information Quality]] |
 
 ---
 *Reviewed by Iris | Source: medRxiv preprint 2025 | DOI: 10.1101/2025.01.29.25320859 | Template v2.0*

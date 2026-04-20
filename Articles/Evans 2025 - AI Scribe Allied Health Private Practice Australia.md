@@ -40,17 +40,17 @@ Explicit: to describe perspectives and experiences of AHPs and patients regardin
 
 | Measure | Description | D&M Dimension(s) |
 |---|---|---|
-| **Time Spent on Notes** | AHP-reported time writing patient notes. Significant reduction baseline→6wks and baseline→3months; no further change 6wks→3months. Improvement plateaus early. | [[NB - Net Benefits]] |
-| **Time Spent on Letters** | AHP-reported time writing referral letters. Same pattern as notes — significant reduction early, plateau by 3 months. | [[NB - Net Benefits]] |
-| **Out-of-Hours Documentation** | How often AHPs completed notes outside of clinical hours. Significant reduction at both 6 weeks and 3 months vs. baseline. | [[NB - Net Benefits]], [[US - User Satisfaction]] |
-| **Documentation Burden (Likert)** | Perception that keeping accurate and comprehensive documentation is a burden. Significant reduction at 3 months vs. baseline (Cohen's d = 0.22, 95% CI 0.03–0.41). | [[US - User Satisfaction]], [[NB - Net Benefits]] |
-| **Productivity (%)** | Clinical hours utilization (completed consultations / 0.5hr worked), compared to same 4 weeks in prior year. Average increase: **5.8%**. Objective measure from practice management software. | [[NB - Net Benefits]] |
-| **Recommendation Intention** | "I would recommend continued use of the AI scribe." 95% agreed/strongly agreed at 3 months. | [[U - Use]], [[US - User Satisfaction]] |
-| **Job Satisfaction (Likert)** | "Using AI for clinical notes improved my job satisfaction." 29% agreed/strongly agreed; 23% somewhat agreed. Mixed result — lower than recommendation rate. | [[US - User Satisfaction]] |
-| **Therapeutic Alliance (Qualitative)** | Semi-structured interviews: AI scribe had positive impact on therapeutic alliance — AHPs could focus more on patients. Consistent theme across 15 AHPs and 14 patients. | [[NB - Net Benefits]], [[US - User Satisfaction]] |
-| **Patient Opt-Out Rate** | 74 patients declined consent over 3 months; estimated 64,099 total appointments during period = extremely low opt-out rate (~0.1%). | [[U - Use]], [[NB - Net Benefits]] |
-| **Patient Trust** | Patients comfortable consenting to AI scribe; trust in clinician extended to trust in the technology. Some noted other patients might need more data/privacy information. | [[NB - Net Benefits]] |
-| **AI Scribe Utilization by Task** | Used most for initial appointments; least for letters to referrers and patient summaries at both time points. Pattern similar to Ma 2025 (narrative/HPI tasks favored over structured data). | [[U - Use]] |
+| Time Spent on Notes | AHP-reported time writing patient notes. Significant reduction baseline→6wks and baseline→3months; no further change 6wks→3months. Improvement plateaus early. | [[NB - Net Benefits]] |
+| Time Spent on Letters | AHP-reported time writing referral letters. Same pattern as notes — significant reduction early, plateau by 3 months. | [[NB - Net Benefits]] |
+| Out-of-Hours Documentation | How often AHPs completed notes outside of clinical hours. Significant reduction at both 6 weeks and 3 months vs. baseline. | [[NB - Net Benefits]], [[US - User Satisfaction]] |
+| Documentation Burden (Likert) | Perception that keeping accurate and comprehensive documentation is a burden. Significant reduction at 3 months vs. baseline (Cohen's d = 0.22, 95% CI 0.03–0.41). | [[US - User Satisfaction]], [[NB - Net Benefits]] |
+| Productivity (%) | Clinical hours utilization (completed consultations / 0.5hr worked), compared to same 4 weeks in prior year. Average increase: **5.8%**. Objective measure from practice management software. | [[NB - Net Benefits]] |
+| Recommendation Intention | "I would recommend continued use of the AI scribe." 95% agreed/strongly agreed at 3 months. | [[U - Use]], [[US - User Satisfaction]] |
+| Job Satisfaction (Likert) | "Using AI for clinical notes improved my job satisfaction." 29% agreed/strongly agreed; 23% somewhat agreed. Mixed result — lower than recommendation rate. | [[US - User Satisfaction]] |
+| Therapeutic Alliance (Qualitative) | Semi-structured interviews: AI scribe had positive impact on therapeutic alliance — AHPs could focus more on patients. Consistent theme across 15 AHPs and 14 patients. | [[NB - Net Benefits]], [[US - User Satisfaction]] |
+| Patient Opt-Out Rate | 74 patients declined consent over 3 months; estimated 64,099 total appointments during period = extremely low opt-out rate (~0.1%). | [[U - Use]], [[NB - Net Benefits]] |
+| Patient Trust | Patients comfortable consenting to AI scribe; trust in clinician extended to trust in the technology. Some noted other patients might need more data/privacy information. | [[NB - Net Benefits]] |
+| AI Scribe Utilization by Task | Used most for initial appointments; least for letters to referrers and patient summaries at both time points. Pattern similar to Ma 2025 (narrative/HPI tasks favored over structured data). | [[U - Use]] |
 
 ---
 *Reviewed by Iris | Source: Musculoskeletal Science and Practice 2025 | DOI: 10.1016/j.msksp.2025.103333 | Template v2.0 | Full text reviewed ✅*

@@ -40,14 +40,14 @@ Not explicitly stated as a testable hypothesis. The paper aims to demonstrate th
 
 | Measure | Description | D&M Dimension(s) |
 |---|---|---|
-| **Transcription Accuracy / Word Error Rate (WER)** | Standard metric measuring how accurately the system converts spoken audio to text. Baseline quality indicator for the upstream pipeline stage. | [[SQ - System Quality]] |
-| **Speaker Diarization Accuracy** | Ability of the system to correctly attribute spoken segments to the correct speaker (clinician vs. patient). Errors here propagate to note quality. | [[SQ - System Quality]] |
-| **Fluency** | Human-rated measure of how naturally and coherently the generated clinical note reads — assessing readability and grammatical flow. | [[IQ - Information Quality]] |
-| **Completeness** | Whether the generated note includes all clinically relevant information from the encounter. Critical safety dimension — omissions can affect care decisions. | [[IQ - Information Quality]] |
-| **Factuality / Hallucination Rate** | Whether the generated note accurately reflects what was said, without fabricating or distorting clinical facts. Among the most safety-critical metrics. | [[IQ - Information Quality]], [[SQ - System Quality]] |
-| **Medical Term Recall (MTR)** | Enhanced transcription metric assessing accurate capture of medical terminology specifically — goes beyond general WER for clinical relevance. | [[SQ - System Quality]], [[IQ - Information Quality]] |
-| **LLM-as-Evaluator Agreement** | Degree of agreement between LLM automated scoring and human expert evaluation, used to validate the scalability of AI-based review approaches. | [[SQ - System Quality]] |
-| **New Medication Capture** | Specific sub-metric tracking whether newly prescribed or discussed medications are accurately documented in the note. Identified as a particular weakness. | [[IQ - Information Quality]] |
+| Transcription Accuracy / Word Error Rate (WER) | Standard metric measuring how accurately the system converts spoken audio to text. Baseline quality indicator for the upstream pipeline stage. | [[SQ - System Quality]] |
+| Speaker Diarization Accuracy | Ability of the system to correctly attribute spoken segments to the correct speaker (clinician vs. patient). Errors here propagate to note quality. | [[SQ - System Quality]] |
+| Fluency | Human-rated measure of how naturally and coherently the generated clinical note reads — assessing readability and grammatical flow. | [[IQ - Information Quality]] |
+| Completeness | Whether the generated note includes all clinically relevant information from the encounter. Critical safety dimension — omissions can affect care decisions. | [[IQ - Information Quality]] |
+| Factuality / Hallucination Rate | Whether the generated note accurately reflects what was said, without fabricating or distorting clinical facts. Among the most safety-critical metrics. | [[IQ - Information Quality]], [[SQ - System Quality]] |
+| Medical Term Recall (MTR) | Enhanced transcription metric assessing accurate capture of medical terminology specifically — goes beyond general WER for clinical relevance. | [[SQ - System Quality]], [[IQ - Information Quality]] |
+| LLM-as-Evaluator Agreement | Degree of agreement between LLM automated scoring and human expert evaluation, used to validate the scalability of AI-based review approaches. | [[SQ - System Quality]] |
+| New Medication Capture | Specific sub-metric tracking whether newly prescribed or discussed medications are accurately documented in the note. Identified as a particular weakness. | [[IQ - Information Quality]] |
 
 ---
 *Reviewed by Iris | Source: npj Digital Medicine 2025 | DOI: 10.1038/s41746-025-01622-1 | Template v2.0*

@@ -40,13 +40,13 @@ Not explicitly stated. Study is exploratory/inductive; aims to generate hypothes
 
 | Measure | Description | D&M Dimension(s) |
 |---|---|---|
-| **Workflow Efficiency (qualitative)** | Provider-reported perceptions of time savings and workflow improvement after ambient AI adoption, captured through open-ended survey responses. | [[US - User Satisfaction]], [[NB - Net Benefits]] |
-| **Patient Interaction Quality** | Clinician-reported experience of enhanced presence and engagement with patients when freed from documentation tasks during encounters. | [[US - User Satisfaction]], [[NB - Net Benefits]] |
-| **Documentation Quality & Editing Burden** | Provider perceptions of note accuracy and the additional effort required to review, correct, and edit AI-generated notes before sign-off. | [[IQ - Information Quality]], [[US - User Satisfaction]] |
-| **Learning Curve & Workflow Adaptation** | Qualitative capture of the adjustment period and training challenges providers experienced integrating ambient AI into existing workflows. | [[SerQ - Service Quality]], [[U - Use]] |
-| **Specialty-Specific Performance** | Provider-reported variation in ambient AI usefulness across clinical specialties, noting where the tool excelled or fell short. | [[SQ - System Quality]], [[IQ - Information Quality]] |
-| **Provider Skepticism & AI Trust** | Thematic coding of concerns around AI reliability, patient privacy, data use, and overall trust in the technology. | [[US - User Satisfaction]], [[SerQ - Service Quality]] |
-| **Sentiment Distribution** | Automated sentiment analysis of free-text responses, classified as positive, negative, or mixed — used to characterize the aggregate emotional valence of early adoption. | [[US - User Satisfaction]] |
+| Workflow Efficiency (qualitative) | Provider-reported perceptions of time savings and workflow improvement after ambient AI adoption, captured through open-ended survey responses. | [[US - User Satisfaction]], [[NB - Net Benefits]] |
+| Patient Interaction Quality | Clinician-reported experience of enhanced presence and engagement with patients when freed from documentation tasks during encounters. | [[US - User Satisfaction]], [[NB - Net Benefits]] |
+| Documentation Quality & Editing Burden | Provider perceptions of note accuracy and the additional effort required to review, correct, and edit AI-generated notes before sign-off. | [[IQ - Information Quality]], [[US - User Satisfaction]] |
+| Learning Curve & Workflow Adaptation | Qualitative capture of the adjustment period and training challenges providers experienced integrating ambient AI into existing workflows. | [[SerQ - Service Quality]], [[U - Use]] |
+| Specialty-Specific Performance | Provider-reported variation in ambient AI usefulness across clinical specialties, noting where the tool excelled or fell short. | [[SQ - System Quality]], [[IQ - Information Quality]] |
+| Provider Skepticism & AI Trust | Thematic coding of concerns around AI reliability, patient privacy, data use, and overall trust in the technology. | [[US - User Satisfaction]], [[SerQ - Service Quality]] |
+| Sentiment Distribution | Automated sentiment analysis of free-text responses, classified as positive, negative, or mixed — used to characterize the aggregate emotional valence of early adoption. | [[US - User Satisfaction]] |
 
 ---
 *Reviewed by Iris | Source: IntechOpen 2025 | DOI: 10.5772/intechopen.1011340 | Template v2.0*

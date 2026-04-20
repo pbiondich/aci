@@ -40,26 +40,26 @@ Explicit: ambient AI will improve work efficiency, reduce physician workload, an
 
 | Measure | Description | D&M Dimension(s) |
 |---|---|---|
-| **Average Time per Note (min)** | Epic Signal. 6.37→5.58 min (p<.001). ~12% reduction; ~14% relative decrease overall. Immediate improvement then stable. | [[NB - Net Benefits]] |
-| **Total Daily Documentation Time (min/day)** | Epic Signal. 55.97→49.13 min (p<.001). ~6.8 min/day saved. | [[NB - Net Benefits]] |
-| **Time per Appointment (min)** | Epic Signal. 9.91→8.82 min (p<.001). Includes all note types within encounter. | [[NB - Net Benefits]] |
-| **Note Length (characters)** | Epic Signal. 7522→7862 chars (p<.001). Modest but significant increase — consistent with Guo 2025 and other corpus papers. | [[IQ - Information Quality]], [[NB - Net Benefits]] |
-| **Same-Day Encounter Closure Rate** | Epic Signal. **No significant change.** Only analyzed for providers with ≥40 notes/week; limited to 12-month dataset. Consistent null finding. | [[NB - Net Benefits]] |
-| **Undivided Attention to Patients (survey)** | KLAS survey: Pre 2.70 → Post 3.45 (p<.001). Physicians more focused on patients. | [[NB - Net Benefits]], [[US - User Satisfaction]] |
-| **Patient-Centered Care Delivery (survey)** | Pre 3.68 → Post 4.40 (p<.001). | [[NB - Net Benefits]] |
-| **High-Quality Care Perception (survey)** | Pre 3.98 → Post 4.54 (p<.001). | [[NB - Net Benefits]] |
-| **Patient Safety (survey)** | Pre 3.72 → Post 4.03 (p=.027). | [[NB - Net Benefits]] |
-| **Clinical Practice Effectiveness (survey)** | Pre 3.66 → Post 4.28 (p<.001). | [[NB - Net Benefits]], [[US - User Satisfaction]] |
-| **Overall Efficiency (survey)** | Pre 3.42 → Post 4.31 (p<.001). Large perceptual shift. | [[NB - Net Benefits]] |
-| **Cognitive Demand (survey)** | Reduced: p=.031. | [[US - User Satisfaction]], [[NB - Net Benefits]] |
-| **Documentation Effort (survey)** | Reduced: p=.014. | [[US - User Satisfaction]], [[NB - Net Benefits]] |
-| **Primary vs. Specialty Care (DiD)** | Most survey changes consistent across both groups. Only exception: alerts preventing care-delivery mistakes showed significant DiD (DiD=−0.70, p=.040). | (methodological) |
-| **Temporal Demand (survey)** | 0–10 scale. 7.07→6.58, p=.055 — NOT significant. Pace of note writing did not improve significantly despite time savings. | [[US - User Satisfaction]] |
-| **Chart Completion Timing (survey)** | % of charts completed during or right after visits. 53.6%→55.8%, p=.429 — NOT significant. Consistent with objective same-day closure null finding. | [[NB - Net Benefits]] |
-| **Specialty-Specific Workflow Support (survey)** | Pre 3.75 → Post 4.23 (p=.003). Significant overall, but specialty care subgroup only trended (p=.107) while primary care significant (p=.003). | [[SerQ - Service Quality]], [[US - User Satisfaction]] |
-| **EHR Training and Implementation (survey)** | Multiple items improved significantly. Initial training preparedness (p=.016), ease of learning (p<.001), ongoing training helpfulness (p=.046), org implementation support (p=.004), personal mastery (p=.005), specialty-specific training (p=.019). DiD significant for org support: primary care improved more (DiD=+0.49, p=.035). | [[SerQ - Service Quality]] |
-| **System Usability (survey)** | System availability improved (p=.005); internal integration (p=.002); external integration (p=.010). System availability DiD: specialty care improved more (DiD=−0.59, p=.047). | [[SQ - System Quality]], [[SerQ - Service Quality]] |
-| **Qualitative Themes (Table 4)** | (1) Positive: streamlined workflow, reduced mental fatigue, enhanced patient focus. (2) Limitations: need specialty-specific customization (neurology exam, psychiatry language, surgical workflows), workflow disruptions (phone vs. workstation, app switching), accuracy/editing burden. (3) Future expectations: AI for inbox management, chart summarization, billing, problem list optimization. | [[SerQ - Service Quality]], [[U - Use]] |
+| Average Time per Note (min) | Epic Signal. 6.37→5.58 min (p<.001). ~12% reduction; ~14% relative decrease overall. Immediate improvement then stable. | [[NB - Net Benefits]] |
+| Total Daily Documentation Time (min/day) | Epic Signal. 55.97→49.13 min (p<.001). ~6.8 min/day saved. | [[NB - Net Benefits]] |
+| Time per Appointment (min) | Epic Signal. 9.91→8.82 min (p<.001). Includes all note types within encounter. | [[NB - Net Benefits]] |
+| Note Length (characters) | Epic Signal. 7522→7862 chars (p<.001). Modest but significant increase — consistent with Guo 2025 and other corpus papers. | [[IQ - Information Quality]], [[NB - Net Benefits]] |
+| Same-Day Encounter Closure Rate | Epic Signal. **No significant change.** Only analyzed for providers with ≥40 notes/week; limited to 12-month dataset. Consistent null finding. | [[NB - Net Benefits]] |
+| Undivided Attention to Patients (survey) | KLAS survey: Pre 2.70 → Post 3.45 (p<.001). Physicians more focused on patients. | [[NB - Net Benefits]], [[US - User Satisfaction]] |
+| Patient-Centered Care Delivery (survey) | Pre 3.68 → Post 4.40 (p<.001). | [[NB - Net Benefits]] |
+| High-Quality Care Perception (survey) | Pre 3.98 → Post 4.54 (p<.001). | [[NB - Net Benefits]] |
+| Patient Safety (survey) | Pre 3.72 → Post 4.03 (p=.027). | [[NB - Net Benefits]] |
+| Clinical Practice Effectiveness (survey) | Pre 3.66 → Post 4.28 (p<.001). | [[NB - Net Benefits]], [[US - User Satisfaction]] |
+| Overall Efficiency (survey) | Pre 3.42 → Post 4.31 (p<.001). Large perceptual shift. | [[NB - Net Benefits]] |
+| Cognitive Demand (survey) | Reduced: p=.031. | [[US - User Satisfaction]], [[NB - Net Benefits]] |
+| Documentation Effort (survey) | Reduced: p=.014. | [[US - User Satisfaction]], [[NB - Net Benefits]] |
+| Primary vs. Specialty Care (DiD) | Most survey changes consistent across both groups. Only exception: alerts preventing care-delivery mistakes showed significant DiD (DiD=−0.70, p=.040). | (methodological) |
+| Temporal Demand (survey) | 0–10 scale. 7.07→6.58, p=.055 — NOT significant. Pace of note writing did not improve significantly despite time savings. | [[US - User Satisfaction]] |
+| Chart Completion Timing (survey) | % of charts completed during or right after visits. 53.6%→55.8%, p=.429 — NOT significant. Consistent with objective same-day closure null finding. | [[NB - Net Benefits]] |
+| Specialty-Specific Workflow Support (survey) | Pre 3.75 → Post 4.23 (p=.003). Significant overall, but specialty care subgroup only trended (p=.107) while primary care significant (p=.003). | [[SerQ - Service Quality]], [[US - User Satisfaction]] |
+| EHR Training and Implementation (survey) | Multiple items improved significantly. Initial training preparedness (p=.016), ease of learning (p<.001), ongoing training helpfulness (p=.046), org implementation support (p=.004), personal mastery (p=.005), specialty-specific training (p=.019). DiD significant for org support: primary care improved more (DiD=+0.49, p=.035). | [[SerQ - Service Quality]] |
+| System Usability (survey) | System availability improved (p=.005); internal integration (p=.002); external integration (p=.010). System availability DiD: specialty care improved more (DiD=−0.59, p=.047). | [[SQ - System Quality]], [[SerQ - Service Quality]] |
+| Qualitative Themes (Table 4) | (1) Positive: streamlined workflow, reduced mental fatigue, enhanced patient focus. (2) Limitations: need specialty-specific customization (neurology exam, psychiatry language, surgical workflows), workflow disruptions (phone vs. workstation, app switching), accuracy/editing burden. (3) Future expectations: AI for inbox management, chart summarization, billing, problem list optimization. | [[SerQ - Service Quality]], [[U - Use]] |
 
 ---
 *Reviewed by Iris | Source: JAMIA 2026 | DOI: 10.1093/jamia/ocaf180 | Template v2.0 | Full text reviewed ✅ (10-page PDF confirmed)*

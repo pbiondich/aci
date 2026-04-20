@@ -40,18 +40,18 @@ Explicit: to examine the impact of an ambient AI scribe on documentation timing,
 
 | Measure | Description | D&M Dimension(s) |
 |---|---|---|
-| **Progress Note Time (seconds)** | AI: median 27s (IQR 18–39.75) vs. manual: 128s (IQR 112.3–168.8). Reduction 78.9% (p<.0001, r=0.87). By complexity: simple −82s, moderate −113s, complex −158s. 96.6% of AI notes reviewed in <60s. | [[NB - Net Benefits]] |
-| **Discharge Summary Time (seconds)** | AI: median 113.9s (IQR 64.4–143.5) vs. manual: 458.7s (IQR 367.9–663.5). Median difference 356.6s (p<.0001, r=0.88). By complexity: simple −5min, moderate −5.5min, complex −12min. | [[NB - Net Benefits]] |
-| **Progress Note PDQI-9 Overall** | AI: median 43.5 (IQR 41–45) vs. manual: 41 (IQR 38.25–43). p=.002, r=0.43. Significant difference only for simple encounters; moderate and complex encounters NS. | [[IQ - Information Quality]] |
-| **Progress Note PDQI-9 — Thoroughness** | AI significantly better (p<.0001, r=0.62). | [[IQ - Information Quality]] |
-| **Progress Note PDQI-9 — Currency (Up to Date)** | AI significantly better (p=.0046, r=0.42). | [[IQ - Information Quality]] |
-| **Progress Note PDQI-9 — Usefulness** | AI significantly better (p=.0069, r=0.49). | [[IQ - Information Quality]] |
-| **Progress Note PDQI-9 — Accuracy** | **No significant difference** (p=.705, r=0.07). AI did not compromise accuracy. | [[IQ - Information Quality]] |
-| **Discharge Summary PDQI-9 Overall** | AI: median 40 (IQR 40–43) vs. manual: 33 (IQR 31–37). p<.0001. Larger gap than progress notes; widens with complexity. | [[IQ - Information Quality]] |
-| **Discharge Summary PDQI-9 — Comprehensibility, Org, Consistency, Synthesis** | All 4 domains significantly better with AI (p=.001, .0001, .0039, .0005). | [[IQ - Information Quality]] |
-| **Discharge Summary PDQI-9 — Accuracy** | **No significant difference** (p=.299). Consistent with progress notes. | [[IQ - Information Quality]] |
-| **Clinically Significant Errors in AI Notes** | 2/60 progress notes (3%) had clinically significant errors. 55% required no edits. 40% minor formatting only. | [[IQ - Information Quality]], [[SQ - System Quality]] |
-| **NASA-TLX — All Domains** | All 6 domains improved pre→post ambient AI. Frustration: −79%. Effort: −81%. Largest workload relief of any paper in the corpus on NASA-TLX. | [[US - User Satisfaction]] |
+| Progress Note Time (seconds) | AI: median 27s (IQR 18–39.75) vs. manual: 128s (IQR 112.3–168.8). Reduction 78.9% (p<.0001, r=0.87). By complexity: simple −82s, moderate −113s, complex −158s. 96.6% of AI notes reviewed in <60s. | [[NB - Net Benefits]] |
+| Discharge Summary Time (seconds) | AI: median 113.9s (IQR 64.4–143.5) vs. manual: 458.7s (IQR 367.9–663.5). Median difference 356.6s (p<.0001, r=0.88). By complexity: simple −5min, moderate −5.5min, complex −12min. | [[NB - Net Benefits]] |
+| Progress Note PDQI-9 Overall | AI: median 43.5 (IQR 41–45) vs. manual: 41 (IQR 38.25–43). p=.002, r=0.43. Significant difference only for simple encounters; moderate and complex encounters NS. | [[IQ - Information Quality]] |
+| Progress Note PDQI-9 — Thoroughness | AI significantly better (p<.0001, r=0.62). | [[IQ - Information Quality]] |
+| Progress Note PDQI-9 — Currency (Up to Date) | AI significantly better (p=.0046, r=0.42). | [[IQ - Information Quality]] |
+| Progress Note PDQI-9 — Usefulness | AI significantly better (p=.0069, r=0.49). | [[IQ - Information Quality]] |
+| Progress Note PDQI-9 — Accuracy | **No significant difference** (p=.705, r=0.07). AI did not compromise accuracy. | [[IQ - Information Quality]] |
+| Discharge Summary PDQI-9 Overall | AI: median 40 (IQR 40–43) vs. manual: 33 (IQR 31–37). p<.0001. Larger gap than progress notes; widens with complexity. | [[IQ - Information Quality]] |
+| Discharge Summary PDQI-9 — Comprehensibility, Org, Consistency, Synthesis | All 4 domains significantly better with AI (p=.001, .0001, .0039, .0005). | [[IQ - Information Quality]] |
+| Discharge Summary PDQI-9 — Accuracy | **No significant difference** (p=.299). Consistent with progress notes. | [[IQ - Information Quality]] |
+| Clinically Significant Errors in AI Notes | 2/60 progress notes (3%) had clinically significant errors. 55% required no edits. 40% minor formatting only. | [[IQ - Information Quality]], [[SQ - System Quality]] |
+| NASA-TLX — All Domains | All 6 domains improved pre→post ambient AI. Frustration: −79%. Effort: −81%. Largest workload relief of any paper in the corpus on NASA-TLX. | [[US - User Satisfaction]] |
 
 ---
 

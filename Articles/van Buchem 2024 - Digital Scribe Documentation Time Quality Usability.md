@@ -40,13 +40,13 @@ Not explicitly stated. Implicit hypothesis: a digital scribe system will reduce 
 
 | Measure | Description | D&M Dimension(s) |
 |---|---|---|
-| **Documentation Time** | Time in seconds to complete clinical note summary across the three conditions (manual vs. auto vs. auto+edit). Direct timing measurement. | [[NB - Net Benefits]] |
-| **PDQI-9 (Physician Documentation Quality Instrument)** | A validated 9-item instrument for rating clinical note quality across dimensions including accuracy, organization, and relevance. Blinded reassignment of notes for scoring. | [[IQ - Information Quality]] |
-| **Word Count** | Number of words in the generated summary. Auto-generated notes had significantly higher word counts — potential indicator of note bloat. | [[IQ - Information Quality]] |
-| **Lexical Diversity** | Measure of vocabulary variety in the note text. Lower in auto-generated notes, suggesting more formulaic/repetitive language. | [[IQ - Information Quality]] |
-| **ROUGE Score** | Automated text overlap metric comparing AI-generated summaries to manual reference summaries. | [[IQ - Information Quality]], [[SQ - System Quality]] |
-| **BERTScore** | Semantic similarity metric using contextual embeddings to compare generated vs. reference summaries. | [[IQ - Information Quality]], [[SQ - System Quality]] |
-| **User Satisfaction / Perceived Usefulness** | Student-reported perceptions of the digital scribe's ease of use and utility, captured via post-study survey. | [[US - User Satisfaction]] |
+| Documentation Time | Time in seconds to complete clinical note summary across the three conditions (manual vs. auto vs. auto+edit). Direct timing measurement. | [[NB - Net Benefits]] |
+| PDQI-9 (Physician Documentation Quality Instrument) | A validated 9-item instrument for rating clinical note quality across dimensions including accuracy, organization, and relevance. Blinded reassignment of notes for scoring. | [[IQ - Information Quality]] |
+| Word Count | Number of words in the generated summary. Auto-generated notes had significantly higher word counts — potential indicator of note bloat. | [[IQ - Information Quality]] |
+| Lexical Diversity | Measure of vocabulary variety in the note text. Lower in auto-generated notes, suggesting more formulaic/repetitive language. | [[IQ - Information Quality]] |
+| ROUGE Score | Automated text overlap metric comparing AI-generated summaries to manual reference summaries. | [[IQ - Information Quality]], [[SQ - System Quality]] |
+| BERTScore | Semantic similarity metric using contextual embeddings to compare generated vs. reference summaries. | [[IQ - Information Quality]], [[SQ - System Quality]] |
+| User Satisfaction / Perceived Usefulness | Student-reported perceptions of the digital scribe's ease of use and utility, captured via post-study survey. | [[US - User Satisfaction]] |
 
 ---
 *Reviewed by Iris | Source: JMIR AI 2024 | DOI: 10.2196/60020 | Template v2.0*

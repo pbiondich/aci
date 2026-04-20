@@ -40,15 +40,15 @@ Not explicitly stated. Implicit hypothesis: ambient AI documentation will improv
 
 | Measure | Description | D&M Dimension(s) |
 |---|---|---|
-| **Time in Notes per Appointment (min)** | Objective EHR Signal measure: mean time clinicians spent in notes per encounter. Decreased from 6.2 to 5.3 min overall (p<.001). Significant sex-based difference (DiD p=.001): women reduced more than men. | [[NB - Net Benefits]] |
-| **After-Hours Note Writing (≤1 hr)** | Survey item: proportion of clinicians spending ≤1 hr writing notes outside work hours. Increased from 14.0% to 54.4% (p<.001) — major WOW reduction finding. | [[NB - Net Benefits]], [[US - User Satisfaction]] |
-| **Off-Hours EHR Activity (min)** | Objective EHR Signal: total EHR time 5:30pm–7:00am weekdays + weekends. Did NOT change significantly (mean 38.2 → 39.8 min, p=.14). Diverges from self-report finding — notable methodological tension. | [[NB - Net Benefits]] |
-| **Documentation Length / Progress Note Length (characters)** | Objective EHR Signal: note character counts pre vs. post. Both increased slightly but significantly (documentation: p=.01; progress note: p<.001). Ambient AI produces longer notes. | [[IQ - Information Quality]], [[NB - Net Benefits]] |
-| **NASA-TLX Mental Demand** | Survey subscale: self-reported mental demand of documentation. Decreased significantly from median 12 to 5 (p<.001) across all subgroups. | [[US - User Satisfaction]] |
-| **NASA-TLX Temporal Demand** | Survey subscale: time pressure associated with documentation. Decreased significantly from median 13 to 5 (p<.001). | [[US - User Satisfaction]] |
-| **NASA-TLX Effort** | Survey subscale: perceived effort required for documentation. Decreased significantly from median 14 to 5 (p<.001). | [[US - User Satisfaction]] |
-| **Mini-Z Burnout Score** | Single-item validated burnout measure. Proportion endorsing burnout: 42.1% → 35.1%, p=.12 — NOT statistically significant. Burnout did not improve despite documentation load improvement. | [[US - User Satisfaction]] |
-| **Undivided Attention to Patients** | Survey item: proportion agreeing they can give patients undivided attention. Increased from 57.9% to 93.0% (p<.001). | [[US - User Satisfaction]], [[NB - Net Benefits]] |
+| Time in Notes per Appointment (min) | Objective EHR Signal measure: mean time clinicians spent in notes per encounter. Decreased from 6.2 to 5.3 min overall (p<.001). Significant sex-based difference (DiD p=.001): women reduced more than men. | [[NB - Net Benefits]] |
+| After-Hours Note Writing (≤1 hr) | Survey item: proportion of clinicians spending ≤1 hr writing notes outside work hours. Increased from 14.0% to 54.4% (p<.001) — major WOW reduction finding. | [[NB - Net Benefits]], [[US - User Satisfaction]] |
+| Off-Hours EHR Activity (min) | Objective EHR Signal: total EHR time 5:30pm–7:00am weekdays + weekends. Did NOT change significantly (mean 38.2 → 39.8 min, p=.14). Diverges from self-report finding — notable methodological tension. | [[NB - Net Benefits]] |
+| Documentation Length / Progress Note Length (characters) | Objective EHR Signal: note character counts pre vs. post. Both increased slightly but significantly (documentation: p=.01; progress note: p<.001). Ambient AI produces longer notes. | [[IQ - Information Quality]], [[NB - Net Benefits]] |
+| NASA-TLX Mental Demand | Survey subscale: self-reported mental demand of documentation. Decreased significantly from median 12 to 5 (p<.001) across all subgroups. | [[US - User Satisfaction]] |
+| NASA-TLX Temporal Demand | Survey subscale: time pressure associated with documentation. Decreased significantly from median 13 to 5 (p<.001). | [[US - User Satisfaction]] |
+| NASA-TLX Effort | Survey subscale: perceived effort required for documentation. Decreased significantly from median 14 to 5 (p<.001). | [[US - User Satisfaction]] |
+| Mini-Z Burnout Score | Single-item validated burnout measure. Proportion endorsing burnout: 42.1% → 35.1%, p=.12 — NOT statistically significant. Burnout did not improve despite documentation load improvement. | [[US - User Satisfaction]] |
+| Undivided Attention to Patients | Survey item: proportion agreeing they can give patients undivided attention. Increased from 57.9% to 93.0% (p<.001). | [[US - User Satisfaction]], [[NB - Net Benefits]] |
 
 ---
 *Reviewed by Iris | Source: JAMA Network Open 2025 | DOI: 10.1001/jamanetworkopen.2025.8614 | Template v2.0 | Full text reviewed ✅*

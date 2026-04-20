@@ -40,15 +40,15 @@ To evaluate the impact of Heidi Health Ambient Voice Technology on documentation
 
 | Measure | Description | D&M Dimension(s) |
 |---|---|---|
-| **Documentation Time per Case (seconds)** | AVT: mean 52.01s (SD 18.34) vs. manual: 368.32s (SD 128.70). 85.8% reduction. Saving of 5.27 min/case (p<0.001). | [[NB - Net Benefits]] |
-| **Usability Rating (1–10)** | Mean 9.1/10. High usability reported by clinicians. | [[US - User Satisfaction]], [[SerQ - Service Quality]] |
-| **Burnout Reduction** | 18/20 clinicians reported reduced burnout with AVT. | [[US - User Satisfaction]] |
-| **Patient Satisfaction** | 90% of patients reported enhanced consultation experience. 19/20 felt AVT enhanced clinician attentiveness and consultation flow. 18/20 preferred future use. | [[NB - Net Benefits]] |
-| **Manual Documentation Time per Consultation** | Most clinicians (17/20) reported 0–30 min per consultation. Contrast with AVT's 52 seconds average. | [[NB - Net Benefits]] |
-| **Out-of-Hours Documentation** | 10 clinicians spent additional 0–30 min daily outside regular hours on documentation. | [[NB - Net Benefits]] |
-| **Accuracy Confidence (manual notes)** | Moderate confidence (common score 6/10 on 1–10 scale). | [[IQ - Information Quality]] |
-| **Missing/unclear Information** | Daily issue for 13 clinicians. Primary causes: incomplete documentation (16 respondents). | [[IQ - Information Quality]] |
-| **Time Searching for Information** | Most clinicians (10/20) spent 31–60 min per day searching for missing information. | [[NB - Net Benefits]] |
+| Documentation Time per Case (seconds) | AVT: mean 52.01s (SD 18.34) vs. manual: 368.32s (SD 128.70). 85.8% reduction. Saving of 5.27 min/case (p<0.001). | [[NB - Net Benefits]] |
+| Usability Rating (1–10) | Mean 9.1/10. High usability reported by clinicians. | [[US - User Satisfaction]], [[SerQ - Service Quality]] |
+| Burnout Reduction | 18/20 clinicians reported reduced burnout with AVT. | [[US - User Satisfaction]] |
+| Patient Satisfaction | 90% of patients reported enhanced consultation experience. 19/20 felt AVT enhanced clinician attentiveness and consultation flow. 18/20 preferred future use. | [[NB - Net Benefits]] |
+| Manual Documentation Time per Consultation | Most clinicians (17/20) reported 0–30 min per consultation. Contrast with AVT's 52 seconds average. | [[NB - Net Benefits]] |
+| Out-of-Hours Documentation | 10 clinicians spent additional 0–30 min daily outside regular hours on documentation. | [[NB - Net Benefits]] |
+| Accuracy Confidence (manual notes) | Moderate confidence (common score 6/10 on 1–10 scale). | [[IQ - Information Quality]] |
+| Missing/unclear Information | Daily issue for 13 clinicians. Primary causes: incomplete documentation (16 respondents). | [[IQ - Information Quality]] |
+| Time Searching for Information | Most clinicians (10/20) spent 31–60 min per day searching for missing information. | [[NB - Net Benefits]] |
 
 ---
 *Reviewed by Iris | Source: Acute Medicine 2025 | DOI: 10.52964/AMJA.1007 | Template v2.0 | Full text reviewed ✅*

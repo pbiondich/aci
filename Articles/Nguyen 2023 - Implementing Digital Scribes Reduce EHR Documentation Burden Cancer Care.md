@@ -40,14 +40,14 @@ Explicit: to evaluate DS feasibility, acceptability, appropriateness, usability,
 
 | Measure | Description | D&M Dimension(s) |
 |---|---|---|
-| **Feasibility** | Feasibility of Intervention Measure (4-20). Mean 15.2 (slightly below cutoff of 16). | [[SerQ - Service Quality]] |
-| **Acceptability** | Acceptability of Intervention Measure (4-20). Mean 16.0 (marginally acceptable). | [[SerQ - Service Quality]] |
-| **Appropriateness** | Appropriateness of Intervention Measure (4-20). Mean 16.3 (marginally appropriate). | [[SerQ - Service Quality]] |
-| **Usability** | Implementation Usability Scale (0-100). Mean 68.6 (marginally usable). | [[SerQ - Service Quality]] |
-| **Burnout (Mini-Z)** | Mini-Z composite score (10-50). 33.3 vs 35.9 (p=.257) — no significant improvement. | [[US - User Satisfaction]] |
-| **Documentation Time Perception** | Perceived sufficiency of documentation time. Improved from 2.1 to 3.6 (p=.005). | [[NB - Net Benefits]] |
-| **Sleep Quality** | PROMIS Short Form 4a Sleep Disturbance. No significant change reported. | [[US - User Satisfaction]] |
-| **Implementation Themes** | 4 themes: DS use (initially straightforward patients), DS characteristics (complexity/usability), workflow (setup, editing workload, telemedicine integration), implementation process (training materials, unfulfilled training needs). | [[SerQ - Service Quality]], [[U - Use]] |
+| Feasibility | Feasibility of Intervention Measure (4-20). Mean 15.2 (slightly below cutoff of 16). | [[SerQ - Service Quality]] |
+| Acceptability | Acceptability of Intervention Measure (4-20). Mean 16.0 (marginally acceptable). | [[SerQ - Service Quality]] |
+| Appropriateness | Appropriateness of Intervention Measure (4-20). Mean 16.3 (marginally appropriate). | [[SerQ - Service Quality]] |
+| Usability | Implementation Usability Scale (0-100). Mean 68.6 (marginally usable). | [[SerQ - Service Quality]] |
+| Burnout (Mini-Z) | Mini-Z composite score (10-50). 33.3 vs 35.9 (p=.257) — no significant improvement. | [[US - User Satisfaction]] |
+| Documentation Time Perception | Perceived sufficiency of documentation time. Improved from 2.1 to 3.6 (p=.005). | [[NB - Net Benefits]] |
+| Sleep Quality | PROMIS Short Form 4a Sleep Disturbance. No significant change reported. | [[US - User Satisfaction]] |
+| Implementation Themes | 4 themes: DS use (initially straightforward patients), DS characteristics (complexity/usability), workflow (setup, editing workload, telemedicine integration), implementation process (training materials, unfulfilled training needs). | [[SerQ - Service Quality]], [[U - Use]] |
 
 ---
 *Reviewed by Iris | Source: JCO Clinical Cancer Informatics 2023 | DOI: 10.1200/CCI.22.00166 | Template v2.0 | Full text reviewed ✅*

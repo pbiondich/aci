@@ -40,20 +40,20 @@ Explicit: to compare quality of LLM-generated Ambient notes with physician-autho
 
 | Measure | Description | D&M Dimension(s) |
 |---|---|---|
-| **PDQI-9 Accuracy** | Note is free of incorrect information. Gold 4.13 vs. Ambient 3.98 (−0.15, p=0.05). Gold significantly better. | [[IQ - Information Quality]] |
-| **PDQI-9 Thoroughness** | Note is complete and documents all issues of importance. Ambient 4.22 vs. Gold 3.80 (+0.43, p<0.001). Ambient significantly better — more complete. | [[IQ - Information Quality]] |
-| **PDQI-9 Usefulness** | Note is relevant and provides valuable information. No significant difference (4.05 vs. 4.03, p=0.80). | [[IQ - Information Quality]], [[NB - Net Benefits]] |
-| **PDQI-9 Organization** | Note is well-formed and structured. Ambient 4.19 vs. Gold 4.01 (+0.18, p=0.03). Ambient significantly better organized. | [[IQ - Information Quality]] |
-| **PDQI-9 Comprehensibility** | Note is clear without ambiguity. No significant difference (4.26 vs. 4.19, p=0.38). | [[IQ - Information Quality]] |
-| **PDQI-9 Succinctness** | Note is brief and without redundancy. Gold 4.40 vs. Ambient 3.72 (−0.67, p<0.001). Gold vastly better — Ambient notes are verbose/redundant. Largest quality gap. | [[IQ - Information Quality]] |
-| **PDQI-9 Synthesis** | Note reflects author's clinical understanding. No significant difference (4.22 vs. 4.09, p=0.07). | [[IQ - Information Quality]] |
-| **PDQI-9 Internal Consistency** | No part contradicts any other. Gold 4.47 vs. Ambient 4.31 (−0.16, p=0.004). Gold significantly better. | [[IQ - Information Quality]], [[SQ - System Quality]] |
-| **PDQI-9 Appropriate for Specialty** | Language/content typical for specialty. No significant difference (4.38 vs. 4.29, p=0.24). | [[IQ - Information Quality]], [[SQ - System Quality]] |
-| **PDQI-9 Fairness** | Note does not display bias. No significant difference (4.82 vs. 4.83, p=0.70). Both near-ceiling. | [[IQ - Information Quality]] |
-| **Hallucination Rate** | Binary detection: inaccuracies due to hallucinated content. Ambient 31% vs. Gold 20% (p=0.01). Ambient significantly more hallucinations. | [[IQ - Information Quality]], [[SQ - System Quality]] |
-| **Overall PDQI Score** | Mean across all 10 scored criteria. Gold 4.25 vs. Ambient 4.20 (p=0.04). Statistically significant but clinically small difference. | [[IQ - Information Quality]] |
-| **Overall Note Preference** | Single-question: which note do you prefer? Ambient preferred 47%, Gold 39%, equal 14%. Despite lower aggregate PDQI score, reviewers preferred Ambient overall. | [[US - User Satisfaction]], [[IQ - Information Quality]] |
-| **Interrater Agreement (RWG)** | Within-group agreement across specialties. High (>0.7) in gen med, OB/gyn, ortho. Moderate in peds and cardiology. Hallucination binary had RWG=0.94. | (methodological) |
+| PDQI-9 Accuracy | Note is free of incorrect information. Gold 4.13 vs. Ambient 3.98 (−0.15, p=0.05). Gold significantly better. | [[IQ - Information Quality]] |
+| PDQI-9 Thoroughness | Note is complete and documents all issues of importance. Ambient 4.22 vs. Gold 3.80 (+0.43, p<0.001). Ambient significantly better — more complete. | [[IQ - Information Quality]] |
+| PDQI-9 Usefulness | Note is relevant and provides valuable information. No significant difference (4.05 vs. 4.03, p=0.80). | [[IQ - Information Quality]], [[NB - Net Benefits]] |
+| PDQI-9 Organization | Note is well-formed and structured. Ambient 4.19 vs. Gold 4.01 (+0.18, p=0.03). Ambient significantly better organized. | [[IQ - Information Quality]] |
+| PDQI-9 Comprehensibility | Note is clear without ambiguity. No significant difference (4.26 vs. 4.19, p=0.38). | [[IQ - Information Quality]] |
+| PDQI-9 Succinctness | Note is brief and without redundancy. Gold 4.40 vs. Ambient 3.72 (−0.67, p<0.001). Gold vastly better — Ambient notes are verbose/redundant. Largest quality gap. | [[IQ - Information Quality]] |
+| PDQI-9 Synthesis | Note reflects author's clinical understanding. No significant difference (4.22 vs. 4.09, p=0.07). | [[IQ - Information Quality]] |
+| PDQI-9 Internal Consistency | No part contradicts any other. Gold 4.47 vs. Ambient 4.31 (−0.16, p=0.004). Gold significantly better. | [[IQ - Information Quality]], [[SQ - System Quality]] |
+| PDQI-9 Appropriate for Specialty | Language/content typical for specialty. No significant difference (4.38 vs. 4.29, p=0.24). | [[IQ - Information Quality]], [[SQ - System Quality]] |
+| PDQI-9 Fairness | Note does not display bias. No significant difference (4.82 vs. 4.83, p=0.70). Both near-ceiling. | [[IQ - Information Quality]] |
+| Hallucination Rate | Binary detection: inaccuracies due to hallucinated content. Ambient 31% vs. Gold 20% (p=0.01). Ambient significantly more hallucinations. | [[IQ - Information Quality]], [[SQ - System Quality]] |
+| Overall PDQI Score | Mean across all 10 scored criteria. Gold 4.25 vs. Ambient 4.20 (p=0.04). Statistically significant but clinically small difference. | [[IQ - Information Quality]] |
+| Overall Note Preference | Single-question: which note do you prefer? Ambient preferred 47%, Gold 39%, equal 14%. Despite lower aggregate PDQI score, reviewers preferred Ambient overall. | [[US - User Satisfaction]], [[IQ - Information Quality]] |
+| Interrater Agreement (RWG) | Within-group agreement across specialties. High (>0.7) in gen med, OB/gyn, ortho. Moderate in peds and cardiology. Hallucination binary had RWG=0.94. | (methodological) |
 
 ---
 *Reviewed by Iris | Source: Frontiers in Artificial Intelligence 2025 | DOI: 10.3389/frai.2025.1691499 | Template v2.0 | Full text reviewed ✅*

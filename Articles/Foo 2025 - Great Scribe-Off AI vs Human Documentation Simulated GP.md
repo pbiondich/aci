@@ -40,13 +40,13 @@ Explicit: to compare documentation quality from commercially available AI scribe
 
 | Measure | Description | D&M Dimension(s) |
 |---|---|---|
-| **Overall PDQI-9 Score (max 50)** | Mean scores across 4 cases: AI Scribes 1=43.50, 2=40.00, 4=44.08, 5=44.08; Human=37.42. No significant difference overall (p=0.071). | [[IQ - Information Quality]] |
-| **Accuracy (PDQI domain)** | Significant difference between scribes (p=.049). Scribe 4 excelled; human notes scored lowest. | [[IQ - Information Quality]] |
-| **Thoroughness (PDQI domain)** | Most significant domain difference (p=.008). AI scribes more thorough than humans. Good ICC (0.879). Scribe 4 top. | [[IQ - Information Quality]] |
-| **Succinctness (PDQI domain)** | Significant difference (p=.029). Scribe 5 most succinct; Scribe 4 least succinct. Trade-off between thoroughness and brevity. | [[IQ - Information Quality]] |
-| **Freedom from Hallucination (PDQI domain)** | Significant difference (p=.025). Scribe 2 highest hallucination rate. Humans not hallucination-free — extrapolations counted (e.g., inferring BMI, specifying tests beyond what was mentioned). | [[IQ - Information Quality]], [[SQ - System Quality]] |
-| **Inter-rater Reliability (ICC)** | Overall ICC=0.56 (moderate, p=.023). Good for thoroughness (0.879) and accuracy (0.745). Poor for synthesis (0.082) and other subjective domains. | (methodological) |
-| **Human vs. AI domains** | Humans lowest in accuracy, thoroughness, usefulness, comprehensibility, synthesis, internal consistency. AI not significantly better on usefulness, organisation, comprehensibility, synthesis, internal consistency, bias. | [[IQ - Information Quality]] |
+| Overall PDQI-9 Score (max 50) | Mean scores across 4 cases: AI Scribes 1=43.50, 2=40.00, 4=44.08, 5=44.08; Human=37.42. No significant difference overall (p=0.071). | [[IQ - Information Quality]] |
+| Accuracy (PDQI domain) | Significant difference between scribes (p=.049). Scribe 4 excelled; human notes scored lowest. | [[IQ - Information Quality]] |
+| Thoroughness (PDQI domain) | Most significant domain difference (p=.008). AI scribes more thorough than humans. Good ICC (0.879). Scribe 4 top. | [[IQ - Information Quality]] |
+| Succinctness (PDQI domain) | Significant difference (p=.029). Scribe 5 most succinct; Scribe 4 least succinct. Trade-off between thoroughness and brevity. | [[IQ - Information Quality]] |
+| Freedom from Hallucination (PDQI domain) | Significant difference (p=.025). Scribe 2 highest hallucination rate. Humans not hallucination-free — extrapolations counted (e.g., inferring BMI, specifying tests beyond what was mentioned). | [[IQ - Information Quality]], [[SQ - System Quality]] |
+| Inter-rater Reliability (ICC) | Overall ICC=0.56 (moderate, p=.023). Good for thoroughness (0.879) and accuracy (0.745). Poor for synthesis (0.082) and other subjective domains. | (methodological) |
+| Human vs. AI domains | Humans lowest in accuracy, thoroughness, usefulness, comprehensibility, synthesis, internal consistency. AI not significantly better on usefulness, organisation, comprehensibility, synthesis, internal consistency, bias. | [[IQ - Information Quality]] |
 
 ---
 
@@ -56,7 +56,7 @@ Explicit: to compare documentation quality from commercially available AI scribe
 |---|---|---|---|---|
 | Scribe 1 | AI | 43.50 | 40.84–46.16 | Balanced performer |
 | Scribe 2 | AI | 40.00 | 35.63–44.37 | Highest hallucination rate |
-| **Scribe 3** | **Human (GP)** | **37.42** | **31.88–42.95** | **Lowest overall; worst accuracy/thoroughness** |
+| Scribe 3 | **Human (GP)** | **37.42** | **31.88–42.95** | **Lowest overall; worst accuracy/thoroughness** |
 | Scribe 4 | AI | 44.08 | 42.21–45.96 | Best accuracy + thoroughness; least succinct |
 | Scribe 5 | AI | 44.08 | 40.34–47.74 | Most succinct; slightly less accurate |
 

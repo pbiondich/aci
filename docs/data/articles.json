@@ -74,42 +74,42 @@
     "hypothesis": "Integrating ambient AI into clinical workflows using a bidirectional governance model and a real-time monitoring framework will yield high adoption within a defined operational timeline and achieve acceptable documentation accuracy and workflow efficiency.",
     "measures": [
       {
-        "measure": "**Utilization Rate**",
+        "measure": "Utilization Rate",
         "description": "Proportion of eligible clinical notes actually completed using the ambient AI system. Measured as weighted median across providers over time; captures real-world adoption behavior.",
         "dimensions": "U - Use"
       },
       {
-        "measure": "**Time in Notes**",
+        "measure": "Time in Notes",
         "description": "Time providers spend actively writing or editing notes within the EHR. Tracked via Epic metadata; assesses whether ambient AI reduces direct documentation effort.",
         "dimensions": "NB - Net Benefits"
       },
       {
-        "measure": "**Work Outside Work (WOW)**",
+        "measure": "Work Outside Work (WOW)",
         "description": "Time spent on EHR documentation outside scheduled work hours. A proxy for after-hours administrative burden and indicator of potential burnout risk reduction.",
         "dimensions": "NB - Net Benefits, US - User Satisfaction"
       },
       {
-        "measure": "**ICD-10 Coding Accuracy**",
+        "measure": "ICD-10 Coding Accuracy",
         "description": "Accuracy of diagnostic codes in AI-generated notes, audited using an internally developed LLM validated against certified professional coders (Pearson's r=0.97).",
         "dimensions": "IQ - Information Quality, NB - Net Benefits"
       },
       {
-        "measure": "**Provider Well-Being**",
+        "measure": "Provider Well-Being",
         "description": "Primary RCT outcome; assessed via validated survey instruments. Designed to detect meaningful change in burnout and professional satisfaction across 66 providers.",
         "dimensions": "US - User Satisfaction"
       },
       {
-        "measure": "**Patient Consent Compliance**",
+        "measure": "Patient Consent Compliance",
         "description": "Rate at which providers obtained and documented required patient consent before ambient AI recording. Monitored in real time; ensures regulatory and ethical compliance.",
         "dimensions": "SerQ - Service Quality"
       },
       {
-        "measure": "**Documentation Efficiency**",
+        "measure": "Documentation Efficiency",
         "description": "Time from end of patient encounter to note completion and signature. Tracks whether ambient AI accelerates the documentation cycle relative to standard practice.",
         "dimensions": "NB - Net Benefits"
       },
       {
-        "measure": "**Provider Feedback / User Experience**",
+        "measure": "Provider Feedback / User Experience",
         "description": "Qualitative and survey-based assessments of provider satisfaction, usability concerns, and workflow friction. Collected via REDCap; drives iterative PDSA improvement cycles.",
         "dimensions": "US - User Satisfaction, SerQ - Service Quality"
       },
@@ -221,52 +221,52 @@
     "hypothesis": "To evaluate the impact of Abridge ambient AI documentation on clinicians’ perceptions of documentation burden, after-hours work, burnout risk, and job satisfaction.",
     "measures": [
       {
-        "measure": "**Documentation Workflow Ease (POLR)**",
+        "measure": "Documentation Workflow Ease (POLR)",
         "description": "Concordant question: \"I find the documentation workflow easy.\" Post-implementation: OR 6.91 [3.90-12.56], p<.001. Clinicians 7× more likely to agree workflow is easy with Abridge.",
         "dimensions": "US - User Satisfaction, NB - Net Benefits"
       },
       {
-        "measure": "**Note Completion Before Next Patient (POLR)**",
+        "measure": "Note Completion Before Next Patient (POLR)",
         "description": "\"I can complete the note before the next patient visit.\" Post-implementation: OR 4.95 [2.87-8.69], p<.001. 5× higher odds post-Abridge.",
         "dimensions": "NB - Net Benefits"
       },
       {
-        "measure": "**Decreased Documentation Burden**",
+        "measure": "Decreased Documentation Burden",
         "description": "Post-survey: 77% agreed/strongly agreed Abridge decreased documentation burden.",
         "dimensions": "NB - Net Benefits"
       },
       {
-        "measure": "**Decreased After-Hours Documentation**",
+        "measure": "Decreased After-Hours Documentation",
         "description": "Post-survey: 73% agreed/strongly agreed Abridge decreased time spent documenting outside clinical hours.",
         "dimensions": "NB - Net Benefits"
       },
       {
-        "measure": "**Reduced Burnout Risk**",
+        "measure": "Reduced Burnout Risk",
         "description": "Post-survey: 67% agreed/strongly agreed Abridge reduced risk for burnout due to documentation.",
         "dimensions": "US - User Satisfaction"
       },
       {
-        "measure": "**Increased Job Satisfaction**",
+        "measure": "Increased Job Satisfaction",
         "description": "Post-survey: 64% agreed/strongly agreed Abridge increased satisfaction at work.",
         "dimensions": "US - User Satisfaction"
       },
       {
-        "measure": "**Ability to Add Patient**",
+        "measure": "Ability to Add Patient",
         "description": "Post-survey: 47% agreed/strongly agreed at least one more patient could be added to clinic sessions if needed.",
         "dimensions": "NB - Net Benefits"
       },
       {
-        "measure": "**Baseline Documentation Burden**",
+        "measure": "Baseline Documentation Burden",
         "description": "Pre-survey: 83% spent time documenting outside clinical hours; 75% felt at risk for burnout due to documentation.",
         "dimensions": "NB - Net Benefits, US - User Satisfaction"
       },
       {
-        "measure": "**Specialty as Moderator**",
+        "measure": "Specialty as Moderator",
         "description": "No significant difference in post-survey responses by specialty type (primary care, medical subspecialty, surgical subspecialty). Benefit consistent across specialties.",
         "dimensions": "(methodological)"
       },
       {
-        "measure": "**Days of Use as Moderator**",
+        "measure": "Days of Use as Moderator",
         "description": "No significant effect of number of days using Abridge on post-survey responses. Benefit seen quickly.",
         "dimensions": "(methodological)"
       },
@@ -296,42 +296,42 @@
     "hypothesis": "Explicit: to evaluate and compare the quality and safety of ambient digital scribe platforms using simulated ambulatory encounters.",
     "measures": [
       {
-        "measure": "**Transcript Errors per Case**",
+        "measure": "Transcript Errors per Case",
         "description": "Errors in ASR transcript vs. professional transcription. Mean 13.9 errors/case (95% CI 6.0–17.5) across platforms A–D. Platforms C and D significantly worse than A and B (p<.0020). Platform E did not produce transcripts (edited summaries only).",
         "dimensions": "SQ - System Quality, IQ - Information Quality"
       },
       {
-        "measure": "**Transcript Error Transmission Rate (%)**",
+        "measure": "Transcript Error Transmission Rate (%)",
         "description": "Proportion of transcript errors that appeared in the clinical note. Mean 19.5% (95% CI 6.6–28.8%). No significant difference between platforms A–D.",
         "dimensions": "IQ - Information Quality, SQ - System Quality"
       },
       {
-        "measure": "**Clinical Note Error Rate (% key elements)**",
+        "measure": "Clinical Note Error Rate (% key elements)",
         "description": "Percentage of key clinical elements omitted or captured erroneously. Mean 26.3% (95% CI 17.0–31.0%) across all platforms. Platform E significantly worse (46.1% error rate vs. 16.7–23.3% for A–D).",
         "dimensions": "IQ - Information Quality"
       },
       {
-        "measure": "**Error Subtype — Omissions**",
+        "measure": "Error Subtype — Omissions",
         "description": "Most common error type: 76.3% of all errors were omissions (95% CI 70.0–83.3%). Significantly more than commission errors (p=.022). Consistent with Biro 2025 finding. Platform E had higher commission rate than C.",
         "dimensions": "IQ - Information Quality"
       },
       {
-        "measure": "**AHRQ Harm Score (moderate-to-severe errors)**",
+        "measure": "AHRQ Harm Score (moderate-to-severe errors)",
         "description": "Mean 3.0 errors per case (range 0–21) had potential for moderate-to-severe harm (AHRQ ≥2). Platform E significantly worse (weighted harm score higher than A–D, p<.0082 for all). Platforms A–D not significantly different from each other.",
         "dimensions": "IQ - Information Quality, NB - Net Benefits"
       },
       {
-        "measure": "**Cross-Platform Consistency**",
+        "measure": "Cross-Platform Consistency",
         "description": "Only 35.8% ± 11.3% of correctly reported elements were consistently correct across all 5 platforms. High variability means a physician can't reliably predict which elements will be accurate for any given case.",
         "dimensions": "SQ - System Quality, IQ - Information Quality"
       },
       {
-        "measure": "**PDQI-9 Note Quality Score (9–45)**",
+        "measure": "PDQI-9 Note Quality Score (9–45)",
         "description": "Mean 36±4 across all platforms. Platform C highest (39.4), B second (38.4), E lowest (32.3). C > A, D, E (p<.028); B > E (p=.001). Significant inter-platform variation.",
         "dimensions": "IQ - Information Quality, SQ - System Quality"
       },
       {
-        "measure": "**Note Length (words)**",
+        "measure": "Note Length (words)",
         "description": "Mean 444±120 words across A–D. Platform E significantly shorter (271 words) than B, C, D (p<.001). Shorter + higher error rate for E.",
         "dimensions": "IQ - Information Quality"
       }
@@ -356,37 +356,37 @@
     "hypothesis": "To evaluate quality and accuracy of notes generated by 4 commercial AI scribes using simulated encounters and create a framework for institutional vendor evaluation.",
     "measures": [
       {
-        "measure": "**Overall Error Rate (%)**",
+        "measure": "Overall Error Rate (%)",
         "description": "Errors / total expected data elements. Mean 18.9%; range 12.2–24.4%. No significant difference (p=0.345). Vendor A lowest (12.2%), Vendor C highest (24.4%).",
         "dimensions": "IQ - Information Quality"
       },
       {
-        "measure": "**Omission Errors (%)**",
+        "measure": "Omission Errors (%)",
         "description": "Missing expected data elements. 71% of all errors. Vendor C highest omission rate (24.4%) — short notes = more omissions.",
         "dimensions": "IQ - Information Quality"
       },
       {
-        "measure": "**Addition Errors (%)**",
+        "measure": "Addition Errors (%)",
         "description": "Elements added but not discussed in encounter. 19.4% of errors. Vendors B and D only. Vendor B highest (7.3%).",
         "dimensions": "IQ - Information Quality, SQ - System Quality"
       },
       {
-        "measure": "**Incorrect Facts (%)**",
+        "measure": "Incorrect Facts (%)",
         "description": "Factually wrong transcriptions. Only 6.5% of errors. Only Vendor D had incorrect facts (3.7%).",
         "dimensions": "IQ - Information Quality, SQ - System Quality"
       },
       {
-        "measure": "**PDQI-9 Total Score (mean, 9–45)**",
+        "measure": "PDQI-9 Total Score (mean, 9–45)",
         "description": "Vendor A: 38.5, B: 35.5, C: 39.5, D: 39.5. No significant difference (p=0.267). Vendor B lowest; Vendor C and D highest.",
         "dimensions": "IQ - Information Quality"
       },
       {
-        "measure": "**PDQI-9 Succinctness**",
+        "measure": "PDQI-9 Succinctness",
         "description": "Vendor B mean 2.0/5 — below 3.5 threshold. Only individual PDQI-9 element with a notably low score. Not statistically significant (p=0.145).",
         "dimensions": "IQ - Information Quality"
       },
       {
-        "measure": "**Note Length Ratio**",
+        "measure": "Note Length Ratio",
         "description": "Words per note / number of expected data elements. Range 4.6–17.7 across vendors (p=0.112). Vendor B longest (17.7), Vendor C shortest (4.6).",
         "dimensions": "IQ - Information Quality"
       }
@@ -411,42 +411,42 @@
     "hypothesis": "To investigate ChatGPT’s ability to assist with writing a history of present illness based on standardized patient histories compared with histories generated solely by healthcare professionals.",
     "measures": [
       {
-        "measure": "**Documentation Time (seconds)**",
+        "measure": "Documentation Time (seconds)",
         "description": "Dictation fastest (43s), ChatGPT intermediate (69s), typing slowest (97s). Dictation significantly faster than typing (p=0.001). ChatGPT not significantly different from either.",
         "dimensions": "NB - Net Benefits"
       },
       {
-        "measure": "**Word Count**",
+        "measure": "Word Count",
         "description": "ChatGPT significantly longer (136 words) than dictation (90) and typing (68). p≤0.001 for both comparisons.",
         "dimensions": "IQ - Information Quality"
       },
       {
-        "measure": "**PDQI-9 Score (0–45)**",
+        "measure": "PDQI-9 Score (0–45)",
         "description": "ChatGPT significantly higher than typing (p=0.001) and dictation (p=0.01). Faculty scored highest overall (34.2), then residents (32.1), students (31.8).",
         "dimensions": "IQ - Information Quality"
       },
       {
-        "measure": "**Global Rating (1–5)**",
+        "measure": "Global Rating (1–5)",
         "description": "ChatGPT significantly higher than typing (p=0.008) and dictation (p=0.04).",
         "dimensions": "IQ - Information Quality"
       },
       {
-        "measure": "**History Items Included**",
+        "measure": "History Items Included",
         "description": "ChatGPT included significantly more history items (6 vs. 5 for both dictation and typing, p=0.03).",
         "dimensions": "IQ - Information Quality"
       },
       {
-        "measure": "**Hallucination/Error Rate**",
+        "measure": "Hallucination/Error Rate",
         "description": "ChatGPT included erroneous/fictitious history points in **36%** (4/11) documents. Hallucinations included adding physical exam findings and patient history details not in standardized script.",
         "dimensions": "IQ - Information Quality, SQ - System Quality"
       },
       {
-        "measure": "**Efficiency Score (PDQI-9/min)**",
+        "measure": "Efficiency Score (PDQI-9/min)",
         "description": "Dictation 51.1, ChatGPT 34.9, typing 21.5. Dictation significantly better than typing (p≤0.001). No significant difference between dictation and ChatGPT (p=0.06).",
         "dimensions": "NB - Net Benefits"
       },
       {
-        "measure": "**Inter-rater Reliability (ICC)**",
+        "measure": "Inter-rater Reliability (ICC)",
         "description": "Poor agreement on PDQI-9 (ICC 0.1) and overall rating (ICC 0.19).",
         "dimensions": "(methodological)"
       },
@@ -476,17 +476,17 @@
     "hypothesis": "To assess the clinical utility of an ambient AI tool in enhancing consultation experience and the completion of clinical documentation.",
     "measures": [
       {
-        "measure": "**SAIL Score**",
+        "measure": "SAIL Score",
         "description": "Sheffield Assessment Instrument for Letters for documentation quality. AI-produced documentation achieved higher SAIL scores.",
         "dimensions": "IQ - Information Quality"
       },
       {
-        "measure": "**Consultation Duration**",
+        "measure": "Consultation Duration",
         "description": "AI consultations 26.3% shorter on average without impacting patient interaction time.",
         "dimensions": "NB - Net Benefits"
       },
       {
-        "measure": "**Clinician Experience**",
+        "measure": "Clinician Experience",
         "description": "Enhanced experience and reduced task load reported by clinicians (NASA Task Load Index).",
         "dimensions": "US - User Satisfaction"
       },
@@ -731,32 +731,32 @@
     "hypothesis": "Explicit: to demonstrate the value of simulation testing for rapidly evaluating artificial intelligence products (specifically ADS).",
     "measures": [
       {
-        "measure": "**Editing Time (seconds)**",
+        "measure": "Editing Time (seconds)",
         "description": "Time for physician to edit AI-generated draft note to final signed note. ADS Product A took significantly longer than Product B (+80.6 seconds, p<.001). Physician 1 faster than Physician 2. Order of use did not affect time.",
         "dimensions": "NB - Net Benefits"
       },
       {
-        "measure": "**Perceived Editing Amount (5-point Likert)**",
+        "measure": "Perceived Editing Amount (5-point Likert)",
         "description": "Physician rating of how much editing was required (1=none, 5=extreme). Mean 2.89 (moderate). No significant difference between products or order of use.",
         "dimensions": "US - User Satisfaction, NB - Net Benefits"
       },
       {
-        "measure": "**Perceived Effort (5-point Likert)**",
+        "measure": "Perceived Effort (5-point Likert)",
         "description": "Physician rating of effort required to edit note (1=none, 5=extreme). Mean 2.73 (minimal-moderate). Physician 1 reported significantly less effort than Physician 2 (p=.014). No product difference.",
         "dimensions": "US - User Satisfaction"
       },
       {
-        "measure": "**Error Rate & Type**",
+        "measure": "Error Rate & Type",
         "description": "127 total errors across 44 notes (2.88 errors/note average). Omissions most common (54.1% Product A, 83.3% Product B). Product A had more additions and irrelevant/misplaced text errors.",
         "dimensions": "IQ - Information Quality, SQ - System Quality"
       },
       {
-        "measure": "**Overall Product Preference**",
+        "measure": "Overall Product Preference",
         "description": "Physician chose which ADS performed better for each script. Product A preferred 12 times, Product B 6 times, equal 4 times. Physicians agreed on which was better in only 3 of 11 scripts.",
         "dimensions": "US - User Satisfaction"
       },
       {
-        "measure": "**Simulation Testing Methodology**",
+        "measure": "Simulation Testing Methodology",
         "description": "Rapid evaluation approach using scripted encounters. 11 scripts, 2 teams, 2 products = 44 notes. Alternating order to control for learning effects. Linear mixed-effects model for editing time, ordinal logistic regression for Likert ratings.",
         "dimensions": "(methodological)"
       },
@@ -856,62 +856,62 @@
     "hypothesis": "Explicit: to examine the impact of an ambient AI scribe on documentation timing, quality, and workload in a simulated orthopaedic inpatient setting.",
     "measures": [
       {
-        "measure": "**Progress Note Time (seconds)**",
+        "measure": "Progress Note Time (seconds)",
         "description": "AI: median 27s (IQR 18–39.75) vs. manual: 128s (IQR 112.3–168.8). Reduction 78.9% (p<.0001, r=0.87). By complexity: simple −82s, moderate −113s, complex −158s. 96.6% of AI notes reviewed in <60s.",
         "dimensions": "NB - Net Benefits"
       },
       {
-        "measure": "**Discharge Summary Time (seconds)**",
+        "measure": "Discharge Summary Time (seconds)",
         "description": "AI: median 113.9s (IQR 64.4–143.5) vs. manual: 458.7s (IQR 367.9–663.5). Median difference 356.6s (p<.0001, r=0.88). By complexity: simple −5min, moderate −5.5min, complex −12min.",
         "dimensions": "NB - Net Benefits"
       },
       {
-        "measure": "**Progress Note PDQI-9 Overall**",
+        "measure": "Progress Note PDQI-9 Overall",
         "description": "AI: median 43.5 (IQR 41–45) vs. manual: 41 (IQR 38.25–43). p=.002, r=0.43. Significant difference only for simple encounters; moderate and complex encounters NS.",
         "dimensions": "IQ - Information Quality"
       },
       {
-        "measure": "**Progress Note PDQI-9 — Thoroughness**",
+        "measure": "Progress Note PDQI-9 — Thoroughness",
         "description": "AI significantly better (p<.0001, r=0.62).",
         "dimensions": "IQ - Information Quality"
       },
       {
-        "measure": "**Progress Note PDQI-9 — Currency (Up to Date)**",
+        "measure": "Progress Note PDQI-9 — Currency (Up to Date)",
         "description": "AI significantly better (p=.0046, r=0.42).",
         "dimensions": "IQ - Information Quality"
       },
       {
-        "measure": "**Progress Note PDQI-9 — Usefulness**",
+        "measure": "Progress Note PDQI-9 — Usefulness",
         "description": "AI significantly better (p=.0069, r=0.49).",
         "dimensions": "IQ - Information Quality"
       },
       {
-        "measure": "**Progress Note PDQI-9 — Accuracy**",
+        "measure": "Progress Note PDQI-9 — Accuracy",
         "description": "**No significant difference** (p=.705, r=0.07). AI did not compromise accuracy.",
         "dimensions": "IQ - Information Quality"
       },
       {
-        "measure": "**Discharge Summary PDQI-9 Overall**",
+        "measure": "Discharge Summary PDQI-9 Overall",
         "description": "AI: median 40 (IQR 40–43) vs. manual: 33 (IQR 31–37). p<.0001. Larger gap than progress notes; widens with complexity.",
         "dimensions": "IQ - Information Quality"
       },
       {
-        "measure": "**Discharge Summary PDQI-9 — Comprehensibility, Org, Consistency, Synthesis**",
+        "measure": "Discharge Summary PDQI-9 — Comprehensibility, Org, Consistency, Synthesis",
         "description": "All 4 domains significantly better with AI (p=.001, .0001, .0039, .0005).",
         "dimensions": "IQ - Information Quality"
       },
       {
-        "measure": "**Discharge Summary PDQI-9 — Accuracy**",
+        "measure": "Discharge Summary PDQI-9 — Accuracy",
         "description": "**No significant difference** (p=.299). Consistent with progress notes.",
         "dimensions": "IQ - Information Quality"
       },
       {
-        "measure": "**Clinically Significant Errors in AI Notes**",
+        "measure": "Clinically Significant Errors in AI Notes",
         "description": "2/60 progress notes (3%) had clinically significant errors. 55% required no edits. 40% minor formatting only.",
         "dimensions": "IQ - Information Quality, SQ - System Quality"
       },
       {
-        "measure": "**NASA-TLX — All Domains**",
+        "measure": "NASA-TLX — All Domains",
         "description": "All 6 domains improved pre→post ambient AI. Frustration: −79%. Effort: −81%. Largest workload relief of any paper in the corpus on NASA-TLX.",
         "dimensions": "US - User Satisfaction"
       }
@@ -936,37 +936,37 @@
     "hypothesis": "Explicit: to evaluate physicians' experiences with DAX Copilot and assess its impact on workflows, workloads, and how it could most effectively be incorporated into practice.",
     "measures": [
       {
-        "measure": "**Quality of Life / Documentation Time (qualitative)**",
+        "measure": "Quality of Life / Documentation Time (qualitative)",
         "description": "Most interviewees (n=10) reported or expected improvement in quality of life through reduced documentation time. \"Out of the week now, it may be one day that I have to come home and finish notes…at most an hour and a half.\"",
         "dimensions": "NB - Net Benefits"
       },
       {
-        "measure": "**Cognitive Burden / Offloading (qualitative)**",
+        "measure": "Cognitive Burden / Offloading (qualitative)",
         "description": "DAXC significantly reduced anxiety about forgetting clinical details. \"DAX helps a lot with cognitive offloading…you're not going to lose information like you might have before.\"",
         "dimensions": "US - User Satisfaction, NB - Net Benefits"
       },
       {
-        "measure": "**Patient Engagement / Eye Contact (qualitative)**",
+        "measure": "Patient Engagement / Eye Contact (qualitative)",
         "description": "Physicians reported being more present, more attentive, better eye contact. \"I'm really sort of knee to knee with them…definitely much more present.\"",
         "dimensions": "NB - Net Benefits"
       },
       {
-        "measure": "**Note Verbosity / Quality Concerns (qualitative)**",
+        "measure": "Note Verbosity / Quality Concerns (qualitative)",
         "description": "Notes can be overwhelmingly verbose (n=4). \"This person has a common cold and it generated six paragraphs.\" DAXC can't reliably distinguish relevant from irrelevant content.",
         "dimensions": "IQ - Information Quality, SQ - System Quality"
       },
       {
-        "measure": "**Hallucinations / Errors (qualitative)**",
+        "measure": "Hallucinations / Errors (qualitative)",
         "description": "AI fabricating additional people in the room, imagining events, wrong diagnoses, misgendering, negation errors (\"did not\" → \"did\"). All interviewees noted these required editing.",
         "dimensions": "IQ - Information Quality, SQ - System Quality"
       },
       {
-        "measure": "**Encounter Suitability (qualitative)**",
+        "measure": "Encounter Suitability (qualitative)",
         "description": "Disagreement among physicians on best use cases. Some preferred DAXC for complex/protracted visits; others found it counterproductive for simple short visits (<10 min). \"I didn't want to use [DAXC] for very simple sick visits.\"",
         "dimensions": "U - Use, SerQ - Service Quality"
       },
       {
-        "measure": "**Fear of Increased Patient Volume (qualitative)**",
+        "measure": "Fear of Increased Patient Volume (qualitative)",
         "description": "7/12 physicians worried DAXC efficiency would be used to mandate seeing more patients. \"I do worry that's what this long game is.\" Novel concern not prominently captured in other papers.",
         "dimensions": "US - User Satisfaction, NB - Net Benefits"
       },
@@ -996,42 +996,42 @@
     "hypothesis": "Explicit: to explore the use of DAX as a digital scribe in an academic and community-based dermatology setting.",
     "measures": [
       {
-        "measure": "**Time in Notes per Day (min)**",
+        "measure": "Time in Notes per Day (min)",
         "description": "Epic Signal. 54.6→42.2 min (p=.003). Significant reduction.",
         "dimensions": "NB - Net Benefits"
       },
       {
-        "measure": "**Time in Notes per Appointment (min)**",
+        "measure": "Time in Notes per Appointment (min)",
         "description": "Epic Signal. 6.5→5.1 min (p<.001). Significant reduction.",
         "dimensions": "NB - Net Benefits"
       },
       {
-        "measure": "**After-Hours EHR Time (min/day)**",
+        "measure": "After-Hours EHR Time (min/day)",
         "description": "Epic Signal. 35.5→28.1 min (p=.005). Significant reduction.",
         "dimensions": "NB - Net Benefits"
       },
       {
-        "measure": "**Note Length (characters)**",
+        "measure": "Note Length (characters)",
         "description": "Epic Signal. 4412→4617 characters (p=.03). Significant increase.",
         "dimensions": "IQ - Information Quality"
       },
       {
-        "measure": "**Provider Note Contribution (%)**",
+        "measure": "Provider Note Contribution (%)",
         "description": "Epic Signal. 96.7%→51.7% (p<.001). AI drafts substantially displacing manual typing.",
         "dimensions": "U - Use, NB - Net Benefits"
       },
       {
-        "measure": "**Clinician Satisfaction**",
+        "measure": "Clinician Satisfaction",
         "description": "Survey: 66.7% satisfied with documentation turnaround time. 83.3% would be \"very disappointed\" if DAX unavailable.",
         "dimensions": "US - User Satisfaction"
       },
       {
-        "measure": "**Patient Experience**",
+        "measure": "Patient Experience",
         "description": "Patients reported positive perceptions of encounters during DAX use.",
         "dimensions": "NB - Net Benefits"
       },
       {
-        "measure": "**Cost Comparison**",
+        "measure": "Cost Comparison",
         "description": "Monthly software cost $1850 vs. scribe $3050 (including recruiting/training). Potential savings $13,400–$14,400 per scribe replacement.",
         "dimensions": "NB - Net Benefits"
       },
@@ -1061,27 +1061,27 @@
     "hypothesis": "Explicit: to characterize differences in documentation and treatment of psychiatric symptoms in primary care outpatient notes generated using ambient scribes.",
     "measures": [
       {
-        "measure": "**RDoC Symptom Documentation Level (6 domains)**",
+        "measure": "RDoC Symptom Documentation Level (6 domains)",
         "description": "Estimated levels of Research Domain Criteria neuropsychiatric symptomatology extracted by GPT-4o from clinical notes. All 6 domains significantly higher in ambient-scribed notes (p<.001 for all). More symptoms documented.",
         "dimensions": "IQ - Information Quality, NB - Net Benefits"
       },
       {
-        "measure": "**Likelihood of Psychiatric Intervention**",
+        "measure": "Likelihood of Psychiatric Intervention",
         "description": "Logistic regression outcome: whether visit resulted in referral, new psychiatric diagnosis, or new antidepressant prescription. Ambient scribe: aOR 0.83 [0.72–0.95], p=.005 — significantly LESS likely. Human scribe: aOR 1.01 [0.87–1.17], p=NS.",
         "dimensions": "NB - Net Benefits"
       },
       {
-        "measure": "**PHQ-9 Documentation**",
+        "measure": "PHQ-9 Documentation",
         "description": "5.0% of ambient-scribed visits met criteria for moderate or greater depressive symptoms by PHQ-9. Used as baseline severity context.",
         "dimensions": "IQ - Information Quality"
       },
       {
-        "measure": "**Demographic and Clinical Matching**",
+        "measure": "Demographic and Clinical Matching",
         "description": "1:1 matching on age, sex, sociodemographic factors, and clinical features across 4 groups. Ambient scribe group: mean age 48 (SD 14); 59% female.",
         "dimensions": "(methodological)"
       },
       {
-        "measure": "**GPT-4o NLP Extraction (HIPAA-compliant)**",
+        "measure": "GPT-4o NLP Extraction (HIPAA-compliant)",
         "description": "GPT-4o used to extract RDoC symptom levels from de-identified notes. Represents a novel outcome measure methodology — LLM-as-evaluator of clinical note content. Accuracy/validation of GPT-4o extraction not reported in abstract.",
         "dimensions": "SQ - System Quality, IQ - Information Quality"
       },
@@ -1111,62 +1111,62 @@
     "hypothesis": "To evaluate clinicians' experiences with clinical documentation before and after implementing an AI-powered ambient scribing tool (DAX Copilot).",
     "measures": [
       {
-        "measure": "**Time in Notes per Appointment (min)**",
+        "measure": "Time in Notes per Appointment (min)",
         "description": "Epic Signal. 10.3→8.2 min (−1.6 min, −15.2%, p<.001).",
         "dimensions": "NB - Net Benefits"
       },
       {
-        "measure": "**Same-Day Encounter Closure (%)**",
+        "measure": "Same-Day Encounter Closure (%)",
         "description": "Epic Signal. 66.2%→72.4% (+6.0 percentage points, +9.1%, p<.001). **Significant improvement** — one of few papers showing this.",
         "dimensions": "NB - Net Benefits"
       },
       {
-        "measure": "**After-Hours Documentation (\"Pajama Time\", min/scheduled day)**",
+        "measure": "After-Hours Documentation (\"Pajama Time\", min/scheduled day)",
         "description": "Epic Signal. 50.6→35.4 min (−8.6 min, −16.9%, p=.02). **Significant after-hours reduction** — rare objective finding; contrasts with null results in Pearlman 2025 and others.",
         "dimensions": "NB - Net Benefits"
       },
       {
-        "measure": "**Portion of Notes Manually Typed (%)**",
+        "measure": "Portion of Notes Manually Typed (%)",
         "description": "Epic Signal. 11.2%→7.9% (−20.7%, p<.001). AI-generated drafts substantially displacing manual typing.",
         "dimensions": "NB - Net Benefits, U - Use"
       },
       {
-        "measure": "**Total Note Length (characters/week)**",
+        "measure": "Total Note Length (characters/week)",
         "description": "Epic Signal. 202,638→244,427 chars/week (+15.5%, p<.001). More total documentation volume produced.",
         "dimensions": "IQ - Information Quality"
       },
       {
-        "measure": "**\"I feel distracted by documentation while talking with patients\"**",
+        "measure": "\"I feel distracted by documentation while talking with patients\"",
         "description": "Survey 0–10 scale. 5.67→2.27 (−3.40, p<.001). 30/46 participants moved from agree to disagree. Largest individual item change.",
         "dimensions": "US - User Satisfaction"
       },
       {
-        "measure": "**\"Documentation prevents me from being fully engaged and present\"**",
+        "measure": "\"Documentation prevents me from being fully engaged and present\"",
         "description": "Survey. 5.41→2.05 (−3.36, p<.001). 31 new disagrees.",
         "dimensions": "US - User Satisfaction, NB - Net Benefits"
       },
       {
-        "measure": "**\"I feel mentally overloaded by documentation and patients simultaneously\"**",
+        "measure": "\"I feel mentally overloaded by documentation and patients simultaneously\"",
         "description": "Survey. 5.72→2.32 (−3.39, p<.001). 31 new disagrees.",
         "dimensions": "US - User Satisfaction"
       },
       {
-        "measure": "**\"Documentation needs impact my ability to talk face-to-face with patients\"**",
+        "measure": "\"Documentation needs impact my ability to talk face-to-face with patients\"",
         "description": "Survey. 5.61→2.19 (−3.42, p<.001). 30 new disagrees.",
         "dimensions": "US - User Satisfaction, NB - Net Benefits"
       },
       {
-        "measure": "**\"My documentation burden prevents better work-life balance\"**",
+        "measure": "\"My documentation burden prevents better work-life balance\"",
         "description": "Survey. 6.48→2.84 (−3.64, p<.001). 27 new disagrees. Largest absolute change.",
         "dimensions": "US - User Satisfaction"
       },
       {
-        "measure": "**\"I feel able to see more patients on a scheduled day\"**",
+        "measure": "\"I feel able to see more patients on a scheduled day\"",
         "description": "Survey. 3.26→3.11 (−0.15, p=.93). **NOT significant.** Perception of additional patient capacity did NOT change.",
         "dimensions": "NB - Net Benefits"
       },
       {
-        "measure": "**Qualitative: Note Quality Concerns**",
+        "measure": "Qualitative: Note Quality Concerns",
         "description": "Many negative comments about verbosity, language unnaturalness, inaccuracy, extensive editing burden. \"The amount of time spent checking and correcting the generated text is equal to or exceeds the charting burden experienced without DAX.\"",
         "dimensions": "IQ - Information Quality, SQ - System Quality"
       },
@@ -1196,57 +1196,57 @@
     "hypothesis": "Explicit: to describe perspectives and experiences of AHPs and patients regarding the use of an AI scribe for clinical documentation in Australian allied health private practice.",
     "measures": [
       {
-        "measure": "**Time Spent on Notes**",
+        "measure": "Time Spent on Notes",
         "description": "AHP-reported time writing patient notes. Significant reduction baseline→6wks and baseline→3months; no further change 6wks→3months. Improvement plateaus early.",
         "dimensions": "NB - Net Benefits"
       },
       {
-        "measure": "**Time Spent on Letters**",
+        "measure": "Time Spent on Letters",
         "description": "AHP-reported time writing referral letters. Same pattern as notes — significant reduction early, plateau by 3 months.",
         "dimensions": "NB - Net Benefits"
       },
       {
-        "measure": "**Out-of-Hours Documentation**",
+        "measure": "Out-of-Hours Documentation",
         "description": "How often AHPs completed notes outside of clinical hours. Significant reduction at both 6 weeks and 3 months vs. baseline.",
         "dimensions": "NB - Net Benefits, US - User Satisfaction"
       },
       {
-        "measure": "**Documentation Burden (Likert)**",
+        "measure": "Documentation Burden (Likert)",
         "description": "Perception that keeping accurate and comprehensive documentation is a burden. Significant reduction at 3 months vs. baseline (Cohen's d = 0.22, 95% CI 0.03–0.41).",
         "dimensions": "US - User Satisfaction, NB - Net Benefits"
       },
       {
-        "measure": "**Productivity (%)**",
+        "measure": "Productivity (%)",
         "description": "Clinical hours utilization (completed consultations / 0.5hr worked), compared to same 4 weeks in prior year. Average increase: **5.8%**. Objective measure from practice management software.",
         "dimensions": "NB - Net Benefits"
       },
       {
-        "measure": "**Recommendation Intention**",
+        "measure": "Recommendation Intention",
         "description": "\"I would recommend continued use of the AI scribe.\" 95% agreed/strongly agreed at 3 months.",
         "dimensions": "U - Use, US - User Satisfaction"
       },
       {
-        "measure": "**Job Satisfaction (Likert)**",
+        "measure": "Job Satisfaction (Likert)",
         "description": "\"Using AI for clinical notes improved my job satisfaction.\" 29% agreed/strongly agreed; 23% somewhat agreed. Mixed result — lower than recommendation rate.",
         "dimensions": "US - User Satisfaction"
       },
       {
-        "measure": "**Therapeutic Alliance (Qualitative)**",
+        "measure": "Therapeutic Alliance (Qualitative)",
         "description": "Semi-structured interviews: AI scribe had positive impact on therapeutic alliance — AHPs could focus more on patients. Consistent theme across 15 AHPs and 14 patients.",
         "dimensions": "NB - Net Benefits, US - User Satisfaction"
       },
       {
-        "measure": "**Patient Opt-Out Rate**",
+        "measure": "Patient Opt-Out Rate",
         "description": "74 patients declined consent over 3 months; estimated 64,099 total appointments during period = extremely low opt-out rate (~0.1%).",
         "dimensions": "U - Use, NB - Net Benefits"
       },
       {
-        "measure": "**Patient Trust**",
+        "measure": "Patient Trust",
         "description": "Patients comfortable consenting to AI scribe; trust in clinician extended to trust in the technology. Some noted other patients might need more data/privacy information.",
         "dimensions": "NB - Net Benefits"
       },
       {
-        "measure": "**AI Scribe Utilization by Task**",
+        "measure": "AI Scribe Utilization by Task",
         "description": "Used most for initial appointments; least for letters to referrers and patient summaries at both time points. Pattern similar to Ma 2025 (narrative/HPI tasks favored over structured data).",
         "dimensions": "U - Use"
       },
@@ -1276,32 +1276,32 @@
     "hypothesis": "To establish the current model and technology status for the automatic transcribing of healthcare professionals’ patient interactions.",
     "measures": [
       {
-        "measure": "**Number of Studies Meeting Criteria**",
+        "measure": "Number of Studies Meeting Criteria",
         "description": "1,995 titles → 8 included studies. Extremely low yield highlights the nascent state of the field.",
         "dimensions": "(methodological)"
       },
       {
-        "measure": "**Real-World Clinical Validation**",
+        "measure": "Real-World Clinical Validation",
         "description": "None of the 8 included studies had large-scale prospective validation or real-world testing. All were early technical demonstrations.",
         "dimensions": "(methodological)"
       },
       {
-        "measure": "**Commercial Availability**",
+        "measure": "Commercial Availability",
         "description": "None of the included studies had a commercially available product at time of publication (2023).",
         "dimensions": "SerQ - Service Quality"
       },
       {
-        "measure": "**Technical Challenges Identified**",
+        "measure": "Technical Challenges Identified",
         "description": "Medical vocabulary complexity, context understanding, non-linear conversation flow, room noise, speaker variability, data privacy, legal liability.",
         "dimensions": "SQ - System Quality"
       },
       {
-        "measure": "**Ethical/Legal Concerns**",
+        "measure": "Ethical/Legal Concerns",
         "description": "Privacy, data storage, liability for AI-generated errors, consent for recording. Major barriers identified.",
         "dimensions": "SerQ - Service Quality, NB - Net Benefits"
       },
       {
-        "measure": "**Model Types**",
+        "measure": "Model Types",
         "description": "Neural networks most used (ASR + NLP + medical lexicon + structured output). Reinforcement learning, supervised learning, convolutional neural networks mentioned.",
         "dimensions": "SQ - System Quality"
       },
@@ -1331,37 +1331,37 @@
     "hypothesis": "Explicit: to compare documentation quality from commercially available AI scribes and human-generated notes using modified PDQI-9 in simulated general practice consultations.",
     "measures": [
       {
-        "measure": "**Overall PDQI-9 Score (max 50)**",
+        "measure": "Overall PDQI-9 Score (max 50)",
         "description": "Mean scores across 4 cases: AI Scribes 1=43.50, 2=40.00, 4=44.08, 5=44.08; Human=37.42. No significant difference overall (p=0.071).",
         "dimensions": "IQ - Information Quality"
       },
       {
-        "measure": "**Accuracy (PDQI domain)**",
+        "measure": "Accuracy (PDQI domain)",
         "description": "Significant difference between scribes (p=.049). Scribe 4 excelled; human notes scored lowest.",
         "dimensions": "IQ - Information Quality"
       },
       {
-        "measure": "**Thoroughness (PDQI domain)**",
+        "measure": "Thoroughness (PDQI domain)",
         "description": "Most significant domain difference (p=.008). AI scribes more thorough than humans. Good ICC (0.879). Scribe 4 top.",
         "dimensions": "IQ - Information Quality"
       },
       {
-        "measure": "**Succinctness (PDQI domain)**",
+        "measure": "Succinctness (PDQI domain)",
         "description": "Significant difference (p=.029). Scribe 5 most succinct; Scribe 4 least succinct. Trade-off between thoroughness and brevity.",
         "dimensions": "IQ - Information Quality"
       },
       {
-        "measure": "**Freedom from Hallucination (PDQI domain)**",
+        "measure": "Freedom from Hallucination (PDQI domain)",
         "description": "Significant difference (p=.025). Scribe 2 highest hallucination rate. Humans not hallucination-free — extrapolations counted (e.g., inferring BMI, specifying tests beyond what was mentioned).",
         "dimensions": "IQ - Information Quality, SQ - System Quality"
       },
       {
-        "measure": "**Inter-rater Reliability (ICC)**",
+        "measure": "Inter-rater Reliability (ICC)",
         "description": "Overall ICC=0.56 (moderate, p=.023). Good for thoroughness (0.879) and accuracy (0.745). Poor for synthesis (0.082) and other subjective domains.",
         "dimensions": "(methodological)"
       },
       {
-        "measure": "**Human vs. AI domains**",
+        "measure": "Human vs. AI domains",
         "description": "Humans lowest in accuracy, thoroughness, usefulness, comprehensibility, synthesis, internal consistency. AI not significantly better on usefulness, organisation, comprehensibility, synthesis, internal consistency, bias.",
         "dimensions": "IQ - Information Quality"
       }
@@ -1386,37 +1386,37 @@
     "hypothesis": "Explicit: to evaluate the impact of an AI-based solution on clinicians’ clinical documentation experience.",
     "measures": [
       {
-        "measure": "**Documentation Meets Requirements**",
+        "measure": "Documentation Meets Requirements",
         "description": "Pre 41.9% positive → post 71% positive (p=0.034).",
         "dimensions": "US - User Satisfaction, NB - Net Benefits"
       },
       {
-        "measure": "**Documentation Ease**",
+        "measure": "Documentation Ease",
         "description": "Pre 32.3% positive → post 48.4% positive (p=0.023).",
         "dimensions": "US - User Satisfaction, NB - Net Benefits"
       },
       {
-        "measure": "**Documentation Impact on Well-Being**",
+        "measure": "Documentation Impact on Well-Being",
         "description": "Pre 71% negative → post 38.7% negative (p=0.010). Significant improvement in perceived burnout risk.",
         "dimensions": "US - User Satisfaction"
       },
       {
-        "measure": "**Documentation Impact on Patient Experience**",
+        "measure": "Documentation Impact on Patient Experience",
         "description": "Pre 35.5% negative → post 6.5% negative (p=0.005). Largest improvement.",
         "dimensions": "NB - Net Benefits"
       },
       {
-        "measure": "**Recommendation Likelihood**",
+        "measure": "Recommendation Likelihood",
         "description": "Post-survey: 35.5% highly likely to recommend to a colleague.",
         "dimensions": "US - User Satisfaction"
       },
       {
-        "measure": "**Productivity Impact**",
+        "measure": "Productivity Impact",
         "description": "Post-survey: 58.1% agreed it increases productivity.",
         "dimensions": "NB - Net Benefits"
       },
       {
-        "measure": "**Intention to Use**",
+        "measure": "Intention to Use",
         "description": "Post-survey: 29.0% intend to use for majority of notes.",
         "dimensions": "U - Use"
       },
@@ -1446,32 +1446,32 @@
     "hypothesis": "Not explicitly stated. Objective is descriptive: to catalog existing frameworks and identify gaps.",
     "measures": [
       {
-        "measure": "**ROUGE Score**",
+        "measure": "ROUGE Score",
         "description": "Automated NLP metric comparing AI-generated note text to reference notes using n-gram overlap. Measures surface-level textual similarity, not clinical accuracy.",
         "dimensions": "IQ - Information Quality, SQ - System Quality"
       },
       {
-        "measure": "**BERTScore**",
+        "measure": "BERTScore",
         "description": "Semantic similarity metric using contextual embeddings to compare generated vs. reference text. More nuanced than ROUGE but still not clinically validated.",
         "dimensions": "IQ - Information Quality, SQ - System Quality"
       },
       {
-        "measure": "**Clinical Accuracy**",
+        "measure": "Clinical Accuracy",
         "description": "Domain-specific evaluation of whether AI-generated notes correctly capture clinical facts, diagnoses, and plans from the encounter.",
         "dimensions": "IQ - Information Quality"
       },
       {
-        "measure": "**Hallucination / Error Rate**",
+        "measure": "Hallucination / Error Rate",
         "description": "Frequency of factually incorrect or fabricated content in AI-generated clinical notes. Identified as a critical gap — no standardized detection approach exists yet.",
         "dimensions": "IQ - Information Quality, SQ - System Quality"
       },
       {
-        "measure": "**Benchmark Dataset Availability**",
+        "measure": "Benchmark Dataset Availability",
         "description": "Whether studies used publicly available datasets for reproducible evaluation. Only 2 datasets found to be publicly available; cited as a major field-wide limitation.",
         "dimensions": "SQ - System Quality"
       },
       {
-        "measure": "**Specialty Coverage**",
+        "measure": "Specialty Coverage",
         "description": "Range of clinical specialties represented in evaluation datasets. Found to be minimal — mostly primary care/general medicine, limiting generalizability.",
         "dimensions": "IQ - Information Quality"
       },
@@ -1501,27 +1501,27 @@
     "hypothesis": "Explicit: \"We hypothesize that the use of the tool will affect note length and reduce clinician workload in terms of time spent on note-taking.\"",
     "measures": [
       {
-        "measure": "**Average Time per Note (min)**",
+        "measure": "Average Time per Note (min)",
         "description": "Mean time spent writing a single note, derived from Epic Signal. Decreased from 6.58 min (baseline) to 5.45 min at 3-month follow-up (T=-6.61, p<0.001). Sustained across all three months.",
         "dimensions": "NB - Net Benefits"
       },
       {
-        "measure": "**Average Documentation Time per Provider per Day (min)**",
+        "measure": "Average Documentation Time per Provider per Day (min)",
         "description": "Total daily time spent on note-writing per physician. Decreased from 63.99 min to 53.33 min at 3-month follow-up (T=-3.98, p<0.001). ~10.6 min/day saved.",
         "dimensions": "NB - Net Benefits"
       },
       {
-        "measure": "**Average Characters per Note**",
+        "measure": "Average Characters per Note",
         "description": "Character count of individual progress notes. Increased by ~559 chars baseline → 3-month (T=2.64, p<0.05). Authors flag potential template inflation.",
         "dimensions": "IQ - Information Quality, NB - Net Benefits"
       },
       {
-        "measure": "**Average Characters per Appointment**",
+        "measure": "Average Characters per Appointment",
         "description": "Total character count across all note types generated per encounter. Increased by ~1,021 chars (8,232 → 9,253, T=5.23, p<0.001).",
         "dimensions": "IQ - Information Quality, NB - Net Benefits"
       },
       {
-        "measure": "**Adoption / Inclusion Rate**",
+        "measure": "Adoption / Inclusion Rate",
         "description": "124 enrolled; only 42 (34%) met 3-month analysis criteria. Used as a proxy for differential adoption and sustainability of tool use. Not a primary outcome but analytically important.",
         "dimensions": "U - Use"
       },
@@ -1551,102 +1551,102 @@
     "hypothesis": "Explicit: ambient AI will improve work efficiency, reduce physician workload, and help mitigate burnout.",
     "measures": [
       {
-        "measure": "**Average Time per Note (min)**",
+        "measure": "Average Time per Note (min)",
         "description": "Epic Signal. 6.37→5.58 min (p<.001). ~12% reduction; ~14% relative decrease overall. Immediate improvement then stable.",
         "dimensions": "NB - Net Benefits"
       },
       {
-        "measure": "**Total Daily Documentation Time (min/day)**",
+        "measure": "Total Daily Documentation Time (min/day)",
         "description": "Epic Signal. 55.97→49.13 min (p<.001). ~6.8 min/day saved.",
         "dimensions": "NB - Net Benefits"
       },
       {
-        "measure": "**Time per Appointment (min)**",
+        "measure": "Time per Appointment (min)",
         "description": "Epic Signal. 9.91→8.82 min (p<.001). Includes all note types within encounter.",
         "dimensions": "NB - Net Benefits"
       },
       {
-        "measure": "**Note Length (characters)**",
+        "measure": "Note Length (characters)",
         "description": "Epic Signal. 7522→7862 chars (p<.001). Modest but significant increase — consistent with Guo 2025 and other corpus papers.",
         "dimensions": "IQ - Information Quality, NB - Net Benefits"
       },
       {
-        "measure": "**Same-Day Encounter Closure Rate**",
+        "measure": "Same-Day Encounter Closure Rate",
         "description": "Epic Signal. **No significant change.** Only analyzed for providers with ≥40 notes/week; limited to 12-month dataset. Consistent null finding.",
         "dimensions": "NB - Net Benefits"
       },
       {
-        "measure": "**Undivided Attention to Patients (survey)**",
+        "measure": "Undivided Attention to Patients (survey)",
         "description": "KLAS survey: Pre 2.70 → Post 3.45 (p<.001). Physicians more focused on patients.",
         "dimensions": "NB - Net Benefits, US - User Satisfaction"
       },
       {
-        "measure": "**Patient-Centered Care Delivery (survey)**",
+        "measure": "Patient-Centered Care Delivery (survey)",
         "description": "Pre 3.68 → Post 4.40 (p<.001).",
         "dimensions": "NB - Net Benefits"
       },
       {
-        "measure": "**High-Quality Care Perception (survey)**",
+        "measure": "High-Quality Care Perception (survey)",
         "description": "Pre 3.98 → Post 4.54 (p<.001).",
         "dimensions": "NB - Net Benefits"
       },
       {
-        "measure": "**Patient Safety (survey)**",
+        "measure": "Patient Safety (survey)",
         "description": "Pre 3.72 → Post 4.03 (p=.027).",
         "dimensions": "NB - Net Benefits"
       },
       {
-        "measure": "**Clinical Practice Effectiveness (survey)**",
+        "measure": "Clinical Practice Effectiveness (survey)",
         "description": "Pre 3.66 → Post 4.28 (p<.001).",
         "dimensions": "NB - Net Benefits, US - User Satisfaction"
       },
       {
-        "measure": "**Overall Efficiency (survey)**",
+        "measure": "Overall Efficiency (survey)",
         "description": "Pre 3.42 → Post 4.31 (p<.001). Large perceptual shift.",
         "dimensions": "NB - Net Benefits"
       },
       {
-        "measure": "**Cognitive Demand (survey)**",
+        "measure": "Cognitive Demand (survey)",
         "description": "Reduced: p=.031.",
         "dimensions": "US - User Satisfaction, NB - Net Benefits"
       },
       {
-        "measure": "**Documentation Effort (survey)**",
+        "measure": "Documentation Effort (survey)",
         "description": "Reduced: p=.014.",
         "dimensions": "US - User Satisfaction, NB - Net Benefits"
       },
       {
-        "measure": "**Primary vs. Specialty Care (DiD)**",
+        "measure": "Primary vs. Specialty Care (DiD)",
         "description": "Most survey changes consistent across both groups. Only exception: alerts preventing care-delivery mistakes showed significant DiD (DiD=−0.70, p=.040).",
         "dimensions": "(methodological)"
       },
       {
-        "measure": "**Temporal Demand (survey)**",
+        "measure": "Temporal Demand (survey)",
         "description": "0–10 scale. 7.07→6.58, p=.055 — NOT significant. Pace of note writing did not improve significantly despite time savings.",
         "dimensions": "US - User Satisfaction"
       },
       {
-        "measure": "**Chart Completion Timing (survey)**",
+        "measure": "Chart Completion Timing (survey)",
         "description": "% of charts completed during or right after visits. 53.6%→55.8%, p=.429 — NOT significant. Consistent with objective same-day closure null finding.",
         "dimensions": "NB - Net Benefits"
       },
       {
-        "measure": "**Specialty-Specific Workflow Support (survey)**",
+        "measure": "Specialty-Specific Workflow Support (survey)",
         "description": "Pre 3.75 → Post 4.23 (p=.003). Significant overall, but specialty care subgroup only trended (p=.107) while primary care significant (p=.003).",
         "dimensions": "SerQ - Service Quality, US - User Satisfaction"
       },
       {
-        "measure": "**EHR Training and Implementation (survey)**",
+        "measure": "EHR Training and Implementation (survey)",
         "description": "Multiple items improved significantly. Initial training preparedness (p=.016), ease of learning (p<.001), ongoing training helpfulness (p=.046), org implementation support (p=.004), personal mastery (p=.005), specialty-specific training (p=.019). DiD significant for org support: primary care improved more (DiD=+0.49, p=.035).",
         "dimensions": "SerQ - Service Quality"
       },
       {
-        "measure": "**System Usability (survey)**",
+        "measure": "System Usability (survey)",
         "description": "System availability improved (p=.005); internal integration (p=.002); external integration (p=.010). System availability DiD: specialty care improved more (DiD=−0.59, p=.047).",
         "dimensions": "SQ - System Quality, SerQ - Service Quality"
       },
       {
-        "measure": "**Qualitative Themes (Table 4)**",
+        "measure": "Qualitative Themes (Table 4)",
         "description": "(1) Positive: streamlined workflow, reduced mental fatigue, enhanced patient focus. (2) Limitations: need specialty-specific customization (neurology exam, psychiatry language, surgical workflows), workflow disruptions (phone vs. workstation, app switching), accuracy/editing burden. (3) Future expectations: AI for inbox management, chart summarization, billing, problem list optimization.",
         "dimensions": "SerQ - Service Quality, U - Use"
       },
@@ -1676,52 +1676,52 @@
     "hypothesis": "To evaluate the impact of implementation of Nuance DAX on provider engagement, productivity, panel size, documentation (including time spent in the EHR after hours), and coding timeliness. Also measure impact to patient safety and LTR by patients.",
     "measures": [
       {
-        "measure": "**Provider Engagement**",
+        "measure": "Provider Engagement",
         "description": "Press Ganey Workforce Engagement survey (Sept 2021 and May 2022). Higher scores in engagement, safety, resilience, and work-life balance for DAX participants vs all employed primary care providers. Non-participants saw worsening engagement.",
         "dimensions": "US - User Satisfaction"
       },
       {
-        "measure": "**Patient Safety**",
+        "measure": "Patient Safety",
         "description": "No patient safety events reported in safety event tracking system related to DAX.",
         "dimensions": "NB - Net Benefits"
       },
       {
-        "measure": "**Patient LTR Score**",
+        "measure": "Patient LTR Score",
         "description": "Monthly LTR percentages from Press Ganey patient surveys. No statistical significance detected between baseline and conclusion for DAX group.",
         "dimensions": "NB - Net Benefits"
       },
       {
-        "measure": "**Productivity (wRVU)**",
+        "measure": "Productivity (wRVU)",
         "description": "Work relative value units. Statistically significant increase in study group (p<.001). Small absolute change of no practical significance.",
         "dimensions": "NB - Net Benefits"
       },
       {
-        "measure": "**VBC-Attributed Panel Size**",
+        "measure": "VBC-Attributed Panel Size",
         "description": "Risk lives for VBC primary care providers. No significant difference between baseline and conclusion (p=.17).",
         "dimensions": "NB - Net Benefits"
       },
       {
-        "measure": "**After-Hours EHR Time**",
+        "measure": "After-Hours EHR Time",
         "description": "Statistically significant worsening (p<.05) — small amount (2.6% more time after-hours than baseline).",
         "dimensions": "NB - Net Benefits"
       },
       {
-        "measure": "**Documentation Time per Patient**",
+        "measure": "Documentation Time per Patient",
         "description": "Significant decrease for DAX participants only (p<.001).",
         "dimensions": "NB - Net Benefits"
       },
       {
-        "measure": "**24-Hour Documentation Deficiency Rate**",
+        "measure": "24-Hour Documentation Deficiency Rate",
         "description": "Statistically significant improvement in both groups (p<.001). No significant interaction or effect of DAX participation (p=.322).",
         "dimensions": "NB - Net Benefits"
       },
       {
-        "measure": "**24-Hour CPT Submission Deficiency Rate**",
+        "measure": "24-Hour CPT Submission Deficiency Rate",
         "description": "Statistically significant worsening in both groups. No significant interaction or effect of DAX participation (p=.57).",
         "dimensions": "NB - Net Benefits"
       },
       {
-        "measure": "**Patient Opt-Out Rate**",
+        "measure": "Patient Opt-Out Rate",
         "description": "5 patients opted out of  total DAX encounters (0.014%). Very low opt-out rate.",
         "dimensions": "U - Use, NB - Net Benefits"
       },
@@ -1805,37 +1805,37 @@
     "hypothesis": "Explicit: to synthesize evidence on clinician efficiency, user satisfaction, quality, and practical barriers associated with digital scribes using ambient listening and generative AI in real-world clinical settings.",
     "measures": [
       {
-        "measure": "**Self-Reported Documentation Time**",
+        "measure": "Self-Reported Documentation Time",
         "description": "Across included studies: decreased with scribe use. However self-report ≠ objective. Note length increased simultaneously.",
         "dimensions": "NB - Net Benefits"
       },
       {
-        "measure": "**Note Length**",
+        "measure": "Note Length",
         "description": "Increased with scribe use across included studies — consistent with other corpus findings.",
         "dimensions": "IQ - Information Quality, NB - Net Benefits"
       },
       {
-        "measure": "**Physician Burnout (validated scales)**",
+        "measure": "Physician Burnout (validated scales)",
         "description": "**Not significantly affected** in included studies using validated burnout instruments. This contradicts self-report and engagement measures. Authors flag this gap explicitly.",
         "dimensions": "US - User Satisfaction"
       },
       {
-        "measure": "**Physician Engagement**",
+        "measure": "Physician Engagement",
         "description": "Improved across included studies — contrasts with the null burnout finding. Engagement ≠ burnout on validated scales.",
         "dimensions": "US - User Satisfaction"
       },
       {
-        "measure": "**Physician Productivity (billing metrics)**",
+        "measure": "Physician Productivity (billing metrics)",
         "description": "**Unchanged** — wRVUs and similar billing productivity measures did not change. Consistent with Shuaib 2021 per-patient wRVU finding.",
         "dimensions": "NB - Net Benefits"
       },
       {
-        "measure": "**QUEST Framework Evaluation**",
+        "measure": "QUEST Framework Evaluation",
         "description": "Included studies fell short when assessed against the QUEST human evaluation framework for quality and safety — gaps in how studies are designed and reported.",
         "dimensions": "(methodological)"
       },
       {
-        "measure": "**SEIPS 3.0 Model Assessment**",
+        "measure": "SEIPS 3.0 Model Assessment",
         "description": "Included studies insufficient for assessing integration into workflows per SEIPS 3.0. Most studies don't examine system/workflow factors.",
         "dimensions": "SerQ - Service Quality, U - Use"
       },
@@ -1865,47 +1865,47 @@
     "hypothesis": "To evaluate the impact of Heidi Health Ambient Voice Technology on documentation efficiency, clinician workload, and patient satisfaction in Same Day Emergency Care.",
     "measures": [
       {
-        "measure": "**Documentation Time per Case (seconds)**",
+        "measure": "Documentation Time per Case (seconds)",
         "description": "AVT: mean 52.01s (SD 18.34) vs. manual: 368.32s (SD 128.70). 85.8% reduction. Saving of 5.27 min/case (p<0.001).",
         "dimensions": "NB - Net Benefits"
       },
       {
-        "measure": "**Usability Rating (1–10)**",
+        "measure": "Usability Rating (1–10)",
         "description": "Mean 9.1/10. High usability reported by clinicians.",
         "dimensions": "US - User Satisfaction, SerQ - Service Quality"
       },
       {
-        "measure": "**Burnout Reduction**",
+        "measure": "Burnout Reduction",
         "description": "18/20 clinicians reported reduced burnout with AVT.",
         "dimensions": "US - User Satisfaction"
       },
       {
-        "measure": "**Patient Satisfaction**",
+        "measure": "Patient Satisfaction",
         "description": "90% of patients reported enhanced consultation experience. 19/20 felt AVT enhanced clinician attentiveness and consultation flow. 18/20 preferred future use.",
         "dimensions": "NB - Net Benefits"
       },
       {
-        "measure": "**Manual Documentation Time per Consultation**",
+        "measure": "Manual Documentation Time per Consultation",
         "description": "Most clinicians (17/20) reported 0–30 min per consultation. Contrast with AVT's 52 seconds average.",
         "dimensions": "NB - Net Benefits"
       },
       {
-        "measure": "**Out-of-Hours Documentation**",
+        "measure": "Out-of-Hours Documentation",
         "description": "10 clinicians spent additional 0–30 min daily outside regular hours on documentation.",
         "dimensions": "NB - Net Benefits"
       },
       {
-        "measure": "**Accuracy Confidence (manual notes)**",
+        "measure": "Accuracy Confidence (manual notes)",
         "description": "Moderate confidence (common score 6/10 on 1–10 scale).",
         "dimensions": "IQ - Information Quality"
       },
       {
-        "measure": "**Missing/unclear Information**",
+        "measure": "Missing/unclear Information",
         "description": "Daily issue for 13 clinicians. Primary causes: incomplete documentation (16 respondents).",
         "dimensions": "IQ - Information Quality"
       },
       {
-        "measure": "**Time Searching for Information**",
+        "measure": "Time Searching for Information",
         "description": "Most clinicians (10/20) spent 31–60 min per day searching for missing information.",
         "dimensions": "NB - Net Benefits"
       },
@@ -1992,27 +1992,27 @@
     "hypothesis": "To evaluate clinicians' experiences with clinical documentation before and after implementing an AI-powered clinical documentation tool, compared to a control group not using the tool.",
     "measures": [
       {
-        "measure": "**Decreased EHR Time at Home**",
+        "measure": "Decreased EHR Time at Home",
         "description": "Proportion reporting improvement. Intervention 47.1% vs. control 14.5% (p<.001). Absolute difference: +32.6 percentage points.",
         "dimensions": "NB - Net Benefits"
       },
       {
-        "measure": "**Decreased Weekly EHR Time Outside Work Hours**",
+        "measure": "Decreased Weekly EHR Time Outside Work Hours",
         "description": "Proportion reporting improvement. Intervention 44.7% vs. control 20.0% (p=.003).",
         "dimensions": "NB - Net Benefits"
       },
       {
-        "measure": "**Decreased Post-Visit Documentation Time**",
+        "measure": "Decreased Post-Visit Documentation Time",
         "description": "Proportion reporting improvement. Intervention 43.5% vs. control 18.2% (p=.002).",
         "dimensions": "NB - Net Benefits"
       },
       {
-        "measure": "**Less EHR Frustration**",
+        "measure": "Less EHR Frustration",
         "description": "Proportion reporting improvement. Intervention 44.7% vs. control 14.5% (p<.001).",
         "dimensions": "US - User Satisfaction"
       },
       {
-        "measure": "**Unchanged Experience**",
+        "measure": "Unchanged Experience",
         "description": "Majority in both groups reported no change: 44.7% (intervention) vs. 68.7% (control) unchanged. Among DAX users, 55.3% saw no measurable benefit at 5 weeks.",
         "dimensions": "US - User Satisfaction"
       },
@@ -2042,37 +2042,37 @@
     "hypothesis": "Explicit: to test the effectiveness of two AI scribes (DAX and Nabla) in reducing time spent writing notes and associated burnout in a randomized-clinical trial.",
     "measures": [
       {
-        "measure": "**Time-in-Note (primary outcome, % change)**",
+        "measure": "Time-in-Note (primary outcome, % change)",
         "description": "Log-transformed time per note from EHR telemetry. Nabla: −9.5% vs control (p=.02), −7.8% vs DAX (p=.05). DAX: −1.7% vs control (p=.66, NS). Dose-response expected but not reported by use quartile here.",
         "dimensions": "NB - Net Benefits"
       },
       {
-        "measure": "**Scribe Utilization Rate**",
+        "measure": "Scribe Utilization Rate",
         "description": "DAX used in 33.5% of 24,696 visits; Nabla in 29.5% of 23,653 visits. Both ~30% utilization. Low adoption rate context for any time-savings interpretation.",
         "dimensions": "U - Use"
       },
       {
-        "measure": "**Mini-Z 2.0 Total Score (10–50, higher = better)**",
+        "measure": "Mini-Z 2.0 Total Score (10–50, higher = better)",
         "description": "Validated burnout instrument. Both scribes combined: +2.76 [+1.41, +4.10], p<.001. No significant difference between DAX and Nabla.",
         "dimensions": "US - User Satisfaction"
       },
       {
-        "measure": "**Task Load Index (4-item, 0–400, lower = better)**",
+        "measure": "Task Load Index (4-item, 0–400, lower = better)",
         "description": "Perceived workload scale. Any scribe: −35.8 [−63.7, −7.9], p=.01. Significant reduction.",
         "dimensions": "US - User Satisfaction"
       },
       {
-        "measure": "**Professional Fulfillment Index — Work Exhaustion (0–4, lower = better)**",
+        "measure": "Professional Fulfillment Index — Work Exhaustion (0–4, lower = better)",
         "description": "Validated work exhaustion subscale. Any scribe: −0.27 [−0.48, −0.07], p=.01.",
         "dimensions": "US - User Satisfaction"
       },
       {
-        "measure": "**Clinically Significant Inaccuracies (Likert 1–5)**",
+        "measure": "Clinically Significant Inaccuracies (Likert 1–5)",
         "description": "Frequency of clinically significant inaccuracies rated by physicians (1=never, 5=always). DAX 2.7 [2.4–3.0], Nabla 2.8 [2.6–3.0]; p=.68. Both in the \"occasionally\" range. No significant difference between tools.",
         "dimensions": "IQ - Information Quality, SQ - System Quality"
       },
       {
-        "measure": "**Adverse Events**",
+        "measure": "Adverse Events",
         "description": "One Grade 1 (mild) adverse event reported across entire study period. No serious events.",
         "dimensions": "IQ - Information Quality, NB - Net Benefits"
       },
@@ -2102,37 +2102,37 @@
     "hypothesis": "Explicit: to quantify utilization and impact on documentation time of a large language model-powered ambient AI scribe.",
     "measures": [
       {
-        "measure": "**Utilization Rate (% of encounters)**",
+        "measure": "Utilization Rate (% of encounters)",
         "description": "DAX used in 55.25% of 17,428 encounters. Median per-physician: 52.5% (IQR 17.86–80.97%). High individual heterogeneity — some near 100%, others near 0%.",
         "dimensions": "U - Use"
       },
       {
-        "measure": "**SmartSection Utilization by Type**",
+        "measure": "SmartSection Utilization by Type",
         "description": "HPI most used (median 39.7%), A&P second (14.8%), Results (2.6%), PE (1.6%). Physicians adopt AI-generated HPI and A&P far more than physical exam or results sections.",
         "dimensions": "U - Use, IQ - Information Quality"
       },
       {
-        "measure": "**Time per Note (min)**",
+        "measure": "Time per Note (min)",
         "description": "Median change −0.57 min (IQR −1.3 to −0.13); baseline 4.86 min → pilot 3.64 min. T=−5.19, p<.001. Statistically significant but modest absolute reduction (~12%).",
         "dimensions": "NB - Net Benefits"
       },
       {
-        "measure": "**Daily Documentation Time (min/day)**",
+        "measure": "Daily Documentation Time (min/day)",
         "description": "Median change −6.89 min/day (IQR −22.37 to −0.65). T=−4.48, p<.001.",
         "dimensions": "NB - Net Benefits"
       },
       {
-        "measure": "**After-Hours EHR Time (min/day)**",
+        "measure": "After-Hours EHR Time (min/day)",
         "description": "Median change −5.17 min/day (IQR −21.32 to 3.82). T=−2.65, p=.01. **Significant after-hours reduction** — contrasts with null findings in Pearlman 2025 and Stults 2025. Note: not normalized to encounter volume.",
         "dimensions": "NB - Net Benefits"
       },
       {
-        "measure": "**Total EHR Time (min/day)**",
+        "measure": "Total EHR Time (min/day)",
         "description": "Median change −19.95 min/day (IQR −39.34 to −3.64). T=−5.85, p<.001. Largest absolute time saving in the corpus. Note: same caveat about non-normalization to encounter volume.",
         "dimensions": "NB - Net Benefits"
       },
       {
-        "measure": "**License Relinquishment**",
+        "measure": "License Relinquishment",
         "description": "3 of 50 (6%) voluntarily returned their license citing low perceived utility. Used as a proxy for non-adoption/rejection.",
         "dimensions": "U - Use, US - User Satisfaction"
       },
@@ -2162,32 +2162,32 @@
     "hypothesis": "Explicit: to present a human evaluation study of consultation notes and establish which automatic metrics best correlate with human clinical judgment.",
     "measures": [
       {
-        "measure": "**Post-Edit Time (minutes)**",
+        "measure": "Post-Edit Time (minutes)",
         "description": "Time to correct an AI-generated note to factual accuracy. Key efficiency metric for real-world scribe use. Prior work (Moramarco 2021) showed post-editing faster but more cognitively intensive than writing from scratch.",
         "dimensions": "NB - Net Benefits, US - User Satisfaction"
       },
       {
-        "measure": "**Incorrect Statements (error type)**",
+        "measure": "Incorrect Statements (error type)",
         "description": "Factual errors in generated notes vs. consultation audio — sentences containing one or more factual inaccuracies.",
         "dimensions": "IQ - Information Quality, SQ - System Quality"
       },
       {
-        "measure": "**Omissions (error type)**",
+        "measure": "Omissions (error type)",
         "description": "Medical facts that should be in the note but were omitted by the model. Most common error type. Critical omissions flagged for medico-legal liability.",
         "dimensions": "IQ - Information Quality, SQ - System Quality"
       },
       {
-        "measure": "**Critical Errors**",
+        "measure": "Critical Errors",
         "description": "Errors tagged as having essential clinical importance — those that would lead to medico-legal liability. Safety-weighted error classification.",
         "dimensions": "IQ - Information Quality"
       },
       {
-        "measure": "**Automatic Metric Correlation with Human Judgment**",
+        "measure": "Automatic Metric Correlation with Human Judgment",
         "description": "18 metrics evaluated (ROUGE-1/2/L, BERTScore, Levenshtein, others). Key finding: Levenshtein distance (character edit distance) correlates as well as or better than BertScore with human judgments. ROUGE correlates poorly.",
         "dimensions": "SQ - System Quality, IQ - Information Quality"
       },
       {
-        "measure": "**Qualitative Feedback (clinician-reported)**",
+        "measure": "Qualitative Feedback (clinician-reported)",
         "description": "Issues with order of statements, repetition, and other structural concerns beyond factual errors.",
         "dimensions": "IQ - Information Quality"
       },
@@ -2217,42 +2217,42 @@
     "hypothesis": "Explicit: to evaluate DS feasibility, acceptability, appropriateness, usability, and preliminary association with clinician well-being in cancer care setting.",
     "measures": [
       {
-        "measure": "**Feasibility**",
+        "measure": "Feasibility",
         "description": "Feasibility of Intervention Measure (4-20). Mean 15.2 (slightly below cutoff of 16).",
         "dimensions": "SerQ - Service Quality"
       },
       {
-        "measure": "**Acceptability**",
+        "measure": "Acceptability",
         "description": "Acceptability of Intervention Measure (4-20). Mean 16.0 (marginally acceptable).",
         "dimensions": "SerQ - Service Quality"
       },
       {
-        "measure": "**Appropriateness**",
+        "measure": "Appropriateness",
         "description": "Appropriateness of Intervention Measure (4-20). Mean 16.3 (marginally appropriate).",
         "dimensions": "SerQ - Service Quality"
       },
       {
-        "measure": "**Usability**",
+        "measure": "Usability",
         "description": "Implementation Usability Scale (0-100). Mean 68.6 (marginally usable).",
         "dimensions": "SerQ - Service Quality"
       },
       {
-        "measure": "**Burnout (Mini-Z)**",
+        "measure": "Burnout (Mini-Z)",
         "description": "Mini-Z composite score (10-50). 33.3 vs 35.9 (p=.257) — no significant improvement.",
         "dimensions": "US - User Satisfaction"
       },
       {
-        "measure": "**Documentation Time Perception**",
+        "measure": "Documentation Time Perception",
         "description": "Perceived sufficiency of documentation time. Improved from 2.1 to 3.6 (p=.005).",
         "dimensions": "NB - Net Benefits"
       },
       {
-        "measure": "**Sleep Quality**",
+        "measure": "Sleep Quality",
         "description": "PROMIS Short Form 4a Sleep Disturbance. No significant change reported.",
         "dimensions": "US - User Satisfaction"
       },
       {
-        "measure": "**Implementation Themes**",
+        "measure": "Implementation Themes",
         "description": "4 themes: DS use (initially straightforward patients), DS characteristics (complexity/usability), workflow (setup, editing workload, telemedicine integration), implementation process (training materials, unfulfilled training needs).",
         "dimensions": "SerQ - Service Quality, U - Use"
       },
@@ -2282,27 +2282,27 @@
     "hypothesis": "Explicit: to evaluate whether ambient AI scribe use reduces administrative burden and professional burnout among clinicians across health systems.",
     "measures": [
       {
-        "measure": "**Burnout (10-point scale, primary outcome)**",
+        "measure": "Burnout (10-point scale, primary outcome)",
         "description": "Self-reported burnout on validated 10-point scale. Decreased from mean 4.59 to 4.12 (−0.47, p<.001). Multivariable OR 0.26 [0.13–0.54], p<.001. One of the few studies in corpus showing significant burnout reduction on a validated scale.",
         "dimensions": "US - User Satisfaction"
       },
       {
-        "measure": "**Note-Related Cognitive Task Load**",
+        "measure": "Note-Related Cognitive Task Load",
         "description": "Validated scale assessing mental burden of note-writing tasks. Large decrease: 7.10 → 4.46 (−2.64, p<.001). Among the largest effect sizes for cognitive load in the corpus.",
         "dimensions": "US - User Satisfaction, NB - Net Benefits"
       },
       {
-        "measure": "**Secondary Survey Outcomes (Table 3)**",
+        "measure": "Secondary Survey Outcomes (Table 3)",
         "description": "Additional survey domains including documentation satisfaction, time perception, patient interaction quality. Specific items available in full results.",
         "dimensions": "US - User Satisfaction, NB - Net Benefits"
       },
       {
-        "measure": "**Site-Level Heterogeneity**",
+        "measure": "Site-Level Heterogeneity",
         "description": "6 health systems, site sizes ranging from 9 (Site 3) to 105 (Site 6) participants. Site 5 excluded from burnout sub-analysis per supplemental eTable 2 — suggests site-level variation in outcomes.",
         "dimensions": "(methodological)"
       },
       {
-        "measure": "**Specialty Subgroup Analysis**",
+        "measure": "Specialty Subgroup Analysis",
         "description": "Full specialty mix (surgery, OB/gyn, peds, neurology/psychiatry, primary care). One of few studies with surgical specialty representation.",
         "dimensions": "US - User Satisfaction"
       },
@@ -2332,62 +2332,62 @@
     "hypothesis": "Explicit: to evaluate whether the use of generative AI reduces clinical documentation time, alleviates workload, and improves quality in a rehabilitation setting.",
     "measures": [
       {
-        "measure": "**Documentation Time (seconds)**",
+        "measure": "Documentation Time (seconds)",
         "description": "Third-party-measured time from sitting at EMR to completed registration. Phase A: 305 ± 53.9 s; Phase B: 336 ± 78.0 s. **No significant difference** (p=ns). Editing burden from incomplete voice input offset any AI efficiency gain.",
         "dimensions": "NB - Net Benefits"
       },
       {
-        "measure": "**NASA-TLX Temporal Demand (Time Pressure)**",
+        "measure": "NASA-TLX Temporal Demand (Time Pressure)",
         "description": "NASA-TLX subscale on perceived time urgency during documentation (0–100 VAS). Significantly lower with medimo (AVE Phase A: 58.0, Phase B: 49.8; p=0.037). Only subscale showing significant improvement.",
         "dimensions": "US - User Satisfaction, NB - Net Benefits"
       },
       {
-        "measure": "**NASA-TLX Frustration/Dissatisfaction**",
+        "measure": "NASA-TLX Frustration/Dissatisfaction",
         "description": "NASA-TLX subscale on frustration level (0–100 VAS). Significantly HIGHER with medimo (AVE Phase A: 46.4, Phase B: 55.3; p=0.041). Attributed to low AI literacy and discomfort with novel workflow. Key null/adverse finding.",
         "dimensions": "US - User Satisfaction"
       },
       {
-        "measure": "**NASA-TLX Mental Demand**",
+        "measure": "NASA-TLX Mental Demand",
         "description": "Mental demand subscale. No significant difference (53.3 → 52.0).",
         "dimensions": "US - User Satisfaction"
       },
       {
-        "measure": "**NASA-TLX Physical Demand**",
+        "measure": "NASA-TLX Physical Demand",
         "description": "Physical demand subscale. No significant difference (42.9 → 43.9).",
         "dimensions": "US - User Satisfaction"
       },
       {
-        "measure": "**NASA-TLX Own Performance**",
+        "measure": "NASA-TLX Own Performance",
         "description": "Self-rated task performance subscale. No significant difference (41.5 → 47.3).",
         "dimensions": "US - User Satisfaction"
       },
       {
-        "measure": "**NASA-TLX Effort**",
+        "measure": "NASA-TLX Effort",
         "description": "Effort subscale. No significant difference (56.1 → 53.7).",
         "dimensions": "US - User Satisfaction"
       },
       {
-        "measure": "**Documentation Quality — SOAP_S (Subjective)**",
+        "measure": "Documentation Quality — SOAP_S (Subjective)",
         "description": "Blinded score (3 independent PTs, 10-point scale) for the Subjective section of SOAP notes. Significantly higher with medimo (AVE 8.3 → 8.4; p=0.045). Real-time recording captured patient complaints more accurately.",
         "dimensions": "IQ - Information Quality"
       },
       {
-        "measure": "**Documentation Quality — SOAP_P (Plan)**",
+        "measure": "Documentation Quality — SOAP_P (Plan)",
         "description": "Blinded score for the Plan section of SOAP notes. Significantly higher with medimo (AVE 5.4 → 6.7; p=0.045). Largest quality gain; real-time capture improved treatment plan specificity.",
         "dimensions": "IQ - Information Quality"
       },
       {
-        "measure": "**Documentation Quality — Total Score**",
+        "measure": "Documentation Quality — Total Score",
         "description": "Sum of all 6 quality subscale scores (Details, Non-use of technical jargon, Appropriate expressions, SOAP_S, SOAP_O, SOAP_P). Significantly higher with medimo (AVE 40.9 → 44.9; p=0.023). SOAP_O (Objective) did not reach significance alone.",
         "dimensions": "IQ - Information Quality"
       },
       {
-        "measure": "**Voice Memo Frequency**",
+        "measure": "Voice Memo Frequency",
         "description": "Count of non-conversational voice memos recorded per participant during Phase B. Strong positive correlation with documentation time reduction (r=0.71, p=0.006). Behavioral proxy for tool engagement and utilization intensity.",
         "dimensions": "U - Use, NB - Net Benefits"
       },
       {
-        "measure": "**Implementation Intent (Willingness to Adopt)**",
+        "measure": "Implementation Intent (Willingness to Adopt)",
         "description": "Post-study 5-point scale: \"If medimo were introduced, would you use it?\" Significant positive correlation with time reduction (r=0.67, p=0.009). User motivation is a key predictor of achieving time benefits.",
         "dimensions": "U - Use, US - User Satisfaction"
       },
@@ -2417,22 +2417,22 @@
     "hypothesis": "Explicit: to evaluate how use of ambient voice recognition with NLP and AI (DAX) affects the patient-physician relationship.",
     "measures": [
       {
-        "measure": "**PDRQ-9 Score (primary outcome, masked phase)**",
+        "measure": "PDRQ-9 Score (primary outcome, masked phase)",
         "description": "9-item validated Patient-Doctor Relationship Questionnaire. No difference detected: DAX median 45 (IQR 8) vs. no-DAX median 45 (IQR 3.5); p=0.31. aOR for complete satisfaction on \"how well clinician listened\" = 0.8 [0.48–1.34], NS.",
         "dimensions": "NB - Net Benefits"
       },
       {
-        "measure": "**Patient Satisfaction — \"More Focused on Me\" (open-label)**",
+        "measure": "Patient Satisfaction — \"More Focused on Me\" (open-label)",
         "description": "Open-label: patients strongly agreed physician was more focused on them when DAX was used.",
         "dimensions": "NB - Net Benefits, US - User Satisfaction"
       },
       {
-        "measure": "**Patient Satisfaction — \"Less Time Typing\" (open-label)**",
+        "measure": "Patient Satisfaction — \"Less Time Typing\" (open-label)",
         "description": "Open-label: patients strongly agreed physician spent less time typing during DAX encounters.",
         "dimensions": "NB - Net Benefits"
       },
       {
-        "measure": "**Patient Satisfaction — \"More Personable Encounter\" (open-label)**",
+        "measure": "Patient Satisfaction — \"More Personable Encounter\" (open-label)",
         "description": "Open-label: patients strongly agreed the encounter felt more personable with DAX.",
         "dimensions": "NB - Net Benefits, US - User Satisfaction"
       },
@@ -2462,72 +2462,72 @@
     "hypothesis": "Explicit: to compare quality of LLM-generated Ambient notes with physician-authored reference notes across five clinical specialties using PDQI-9 as validation framework.",
     "measures": [
       {
-        "measure": "**PDQI-9 Accuracy**",
+        "measure": "PDQI-9 Accuracy",
         "description": "Note is free of incorrect information. Gold 4.13 vs. Ambient 3.98 (−0.15, p=0.05). Gold significantly better.",
         "dimensions": "IQ - Information Quality"
       },
       {
-        "measure": "**PDQI-9 Thoroughness**",
+        "measure": "PDQI-9 Thoroughness",
         "description": "Note is complete and documents all issues of importance. Ambient 4.22 vs. Gold 3.80 (+0.43, p<0.001). Ambient significantly better — more complete.",
         "dimensions": "IQ - Information Quality"
       },
       {
-        "measure": "**PDQI-9 Usefulness**",
+        "measure": "PDQI-9 Usefulness",
         "description": "Note is relevant and provides valuable information. No significant difference (4.05 vs. 4.03, p=0.80).",
         "dimensions": "IQ - Information Quality, NB - Net Benefits"
       },
       {
-        "measure": "**PDQI-9 Organization**",
+        "measure": "PDQI-9 Organization",
         "description": "Note is well-formed and structured. Ambient 4.19 vs. Gold 4.01 (+0.18, p=0.03). Ambient significantly better organized.",
         "dimensions": "IQ - Information Quality"
       },
       {
-        "measure": "**PDQI-9 Comprehensibility**",
+        "measure": "PDQI-9 Comprehensibility",
         "description": "Note is clear without ambiguity. No significant difference (4.26 vs. 4.19, p=0.38).",
         "dimensions": "IQ - Information Quality"
       },
       {
-        "measure": "**PDQI-9 Succinctness**",
+        "measure": "PDQI-9 Succinctness",
         "description": "Note is brief and without redundancy. Gold 4.40 vs. Ambient 3.72 (−0.67, p<0.001). Gold vastly better — Ambient notes are verbose/redundant. Largest quality gap.",
         "dimensions": "IQ - Information Quality"
       },
       {
-        "measure": "**PDQI-9 Synthesis**",
+        "measure": "PDQI-9 Synthesis",
         "description": "Note reflects author's clinical understanding. No significant difference (4.22 vs. 4.09, p=0.07).",
         "dimensions": "IQ - Information Quality"
       },
       {
-        "measure": "**PDQI-9 Internal Consistency**",
+        "measure": "PDQI-9 Internal Consistency",
         "description": "No part contradicts any other. Gold 4.47 vs. Ambient 4.31 (−0.16, p=0.004). Gold significantly better.",
         "dimensions": "IQ - Information Quality, SQ - System Quality"
       },
       {
-        "measure": "**PDQI-9 Appropriate for Specialty**",
+        "measure": "PDQI-9 Appropriate for Specialty",
         "description": "Language/content typical for specialty. No significant difference (4.38 vs. 4.29, p=0.24).",
         "dimensions": "IQ - Information Quality, SQ - System Quality"
       },
       {
-        "measure": "**PDQI-9 Fairness**",
+        "measure": "PDQI-9 Fairness",
         "description": "Note does not display bias. No significant difference (4.82 vs. 4.83, p=0.70). Both near-ceiling.",
         "dimensions": "IQ - Information Quality"
       },
       {
-        "measure": "**Hallucination Rate**",
+        "measure": "Hallucination Rate",
         "description": "Binary detection: inaccuracies due to hallucinated content. Ambient 31% vs. Gold 20% (p=0.01). Ambient significantly more hallucinations.",
         "dimensions": "IQ - Information Quality, SQ - System Quality"
       },
       {
-        "measure": "**Overall PDQI Score**",
+        "measure": "Overall PDQI Score",
         "description": "Mean across all 10 scored criteria. Gold 4.25 vs. Ambient 4.20 (p=0.04). Statistically significant but clinically small difference.",
         "dimensions": "IQ - Information Quality"
       },
       {
-        "measure": "**Overall Note Preference**",
+        "measure": "Overall Note Preference",
         "description": "Single-question: which note do you prefer? Ambient preferred 47%, Gold 39%, equal 14%. Despite lower aggregate PDQI score, reviewers preferred Ambient overall.",
         "dimensions": "US - User Satisfaction, IQ - Information Quality"
       },
       {
-        "measure": "**Interrater Agreement (RWG)**",
+        "measure": "Interrater Agreement (RWG)",
         "description": "Within-group agreement across specialties. High (>0.7) in gen med, OB/gyn, ortho. Moderate in peds and cardiology. Hallucination binary had RWG=0.94.",
         "dimensions": "(methodological)"
       },
@@ -2557,32 +2557,32 @@
     "hypothesis": "Explicit: to evaluate whether AI scribe use is associated with reduced EHR time and improved efficiency metrics.",
     "measures": [
       {
-        "measure": "**Total Time in EHR per Appointment (min)**",
+        "measure": "Total Time in EHR per Appointment (min)",
         "description": "Primary outcome. Objective Epic telemetry. Pilot: 22.2→20.2 min (−2.0, p<.001). Control: 24.2→23.8 min (−0.4, p=.001). Between-group difference significant.",
         "dimensions": "NB - Net Benefits"
       },
       {
-        "measure": "**Time in Notes per Appointment (min)**",
+        "measure": "Time in Notes per Appointment (min)",
         "description": "Primary outcome. Note-specific EHR time. Pilot: 7.5→7.0 min (−0.5, p<.001). Control: 9.2→9.0 min (−0.2, p<.001). Absolute reduction modest but significant.",
         "dimensions": "NB - Net Benefits"
       },
       {
-        "measure": "**After-Hours Time Spent Documenting per Appointment (min)**",
+        "measure": "After-Hours Time Spent Documenting per Appointment (min)",
         "description": "Primary outcome. Pilot: 3.2→2.7 min (−0.5, p=.95). **NOT significant.** Control: 2.6→2.5 min (−0.1, p=.47). Neither group improved after-hours time — consistent null finding across studies.",
         "dimensions": "NB - Net Benefits"
       },
       {
-        "measure": "**Time to Close Encounter (hours)**",
+        "measure": "Time to Close Encounter (hours)",
         "description": "Time from appointment completion to note sign-off. Data available in Table 2 (truncated in fetch).",
         "dimensions": "NB - Net Benefits"
       },
       {
-        "measure": "**AI Scribe Use Quartile (dose-response)**",
+        "measure": "AI Scribe Use Quartile (dose-response)",
         "description": "Clinicians stratified Q1–Q4 by scribe use intensity. Q4 (highest users) showed largest EHR time reductions; Q1 showed minimal benefit. Strong dose-response relationship is key methodological finding.",
         "dimensions": "U - Use, NB - Net Benefits"
       },
       {
-        "measure": "**Propensity Score Balance**",
+        "measure": "Propensity Score Balance",
         "description": "After weighting, all baseline covariates (sex, years since training, specialty, clinician type, site, Epic proficiency, baseline EHR metrics, appointment volume) were balanced between groups (difference ≈0). Methodological quality measure.",
         "dimensions": "(methodological)"
       },
@@ -2698,62 +2698,62 @@
     "hypothesis": "Explicit: to characterize the relationship between virtual scribe use and physician wellbeing and identify physician characteristics associated with benefitting from virtual scribe support.",
     "measures": [
       {
-        "measure": "**Clinician Satisfaction (5-point, dichotomized)**",
+        "measure": "Clinician Satisfaction (5-point, dichotomized)",
         "description": "\"Satisfied\" or \"very satisfied\" with virtual scribe. 47.8% satisfied. aOR non-primary care: 10.12 [2.06, 49.62]; aOR male: 3.62 [1.19, 11.05]; aOR <1yr use: 0.02 [0.004, 0.13] (strongly negative).",
         "dimensions": "US - User Satisfaction"
       },
       {
-        "measure": "**Improved Wellbeing (Likert, dichotomized)**",
+        "measure": "Improved Wellbeing (Likert, dichotomized)",
         "description": "\"Somewhat/strongly agree\" that virtual scribe enhances wellbeing. 66.4% endorsed. Largest effect for non-primary care: aOR 34.60 [5.26, 227.64]. Not significantly associated with gender for wellbeing.",
         "dimensions": "US - User Satisfaction"
       },
       {
-        "measure": "**Enhanced Patient Relationship (Likert, dichotomized)**",
+        "measure": "Enhanced Patient Relationship (Likert, dichotomized)",
         "description": "\"Somewhat/strongly agree\" that virtual scribe enhances relationship with patients. 61.1% endorsed. aOR non-primary care: 6.34 [1.24, 32.34]; aOR male: 4.71 [1.25, 17.78]; aOR <1yr use: 0.01 [0.002, 0.07] (strongly negative).",
         "dimensions": "NB - Net Benefits, US - User Satisfaction"
       },
       {
-        "measure": "**Focus on Patients During Visit**",
+        "measure": "Focus on Patients During Visit",
         "description": "Perceived benefit item: scribe enables better focus on patients. 50% endorsed.",
         "dimensions": "NB - Net Benefits"
       },
       {
-        "measure": "**Reduced Documentation Time**",
+        "measure": "Reduced Documentation Time",
         "description": "Perceived benefit item: scribe reduces time spent on documentation. 53% endorsed.",
         "dimensions": "NB - Net Benefits"
       },
       {
-        "measure": "**Steep Learning Curve**",
+        "measure": "Steep Learning Curve",
         "description": "Most commonly cited drawback — scribe and/or provider learning curve. Qualitative and quantitative endorsement.",
         "dimensions": "SerQ - Service Quality, U - Use"
       },
       {
-        "measure": "**Years of Scribe Use as Moderator**",
+        "measure": "Years of Scribe Use as Moderator",
         "description": "<1 year use: aOR 0.02 satisfaction, 0.01 patient relationship (dramatically negative). 1–2 years: aOR 0.06 satisfaction, 0.16 patient relationship. ≥2 years: reference (positive). Benefit strongly time-dependent.",
         "dimensions": "U - Use"
       },
       {
-        "measure": "**Specialty as Moderator**",
+        "measure": "Specialty as Moderator",
         "description": "Non-primary care vs. primary care: large differentials on all three outcomes. Post-hoc: medical subspecialty > primary care on all outcomes. Primary care notes are longer and more complex — harder for scribes to capture.",
         "dimensions": "US - User Satisfaction"
       },
       {
-        "measure": "**Gender as Moderator**",
+        "measure": "Gender as Moderator",
         "description": "Male physicians had higher odds of improved satisfaction and patient relationships vs. female. Wellbeing not significantly different by gender in multivariable.",
         "dimensions": "US - User Satisfaction"
       },
       {
-        "measure": "**Qualitative — Service Issues**",
+        "measure": "Qualitative — Service Issues",
         "description": "Major theme: scribe turnover, provider time to train scribes, variable scribe quality.",
         "dimensions": "SerQ - Service Quality"
       },
       {
-        "measure": "**Qualitative — Documentation Issues**",
+        "measure": "Qualitative — Documentation Issues",
         "description": "Major theme: poor documentation quality, paradoxical documentation time increase, scribe errors. Contradicts the quantitative \"reduced documentation time\" benefit finding for some physicians.",
         "dimensions": "IQ - Information Quality, NB - Net Benefits"
       },
       {
-        "measure": "**Qualitative — Workflow Impacts**",
+        "measure": "Qualitative — Workflow Impacts",
         "description": "Major theme: delayed encounter closing, inefficiencies; also positive impacts — more time for patients, improved burnout perception.",
         "dimensions": "NB - Net Benefits, US - User Satisfaction"
       },
@@ -2847,32 +2847,32 @@
     "hypothesis": "Not explicitly stated. Exploratory qualitative study using implementation science framework (RE-AIM PRISM) to identify facilitators and barriers.",
     "measures": [
       {
-        "measure": "**Workload Relief (qualitative)**",
+        "measure": "Workload Relief (qualitative)",
         "description": "Physician-reported experience of reduced administrative burden from using ambient AI, including time savings and cognitive offloading during clinical care.",
         "dimensions": "US - User Satisfaction, NB - Net Benefits"
       },
       {
-        "measure": "**Patient Engagement**",
+        "measure": "Patient Engagement",
         "description": "Perceived improvement in physician presence and quality of interaction with patients when freed from note-taking during encounters.",
         "dimensions": "US - User Satisfaction, NB - Net Benefits"
       },
       {
-        "measure": "**Documentation Accuracy Concerns**",
+        "measure": "Documentation Accuracy Concerns",
         "description": "Physician-reported concerns about note accuracy, hallucinations, and the burden of reviewing/editing AI-generated content before sign-off.",
         "dimensions": "IQ - Information Quality, US - User Satisfaction"
       },
       {
-        "measure": "**Note Quality Variability**",
+        "measure": "Note Quality Variability",
         "description": "Provider perceptions of inconsistency in AI note quality across encounter types, specialties, and patient complexity levels.",
         "dimensions": "IQ - Information Quality"
       },
       {
-        "measure": "**Implementation Barriers**",
+        "measure": "Implementation Barriers",
         "description": "Qualitative coding of structural, technical, and workflow barriers to sustained adoption — including EHR integration friction, training gaps, and access issues.",
         "dimensions": "SerQ - Service Quality, U - Use"
       },
       {
-        "measure": "**Utilization Stratification**",
+        "measure": "Utilization Stratification",
         "description": "Physicians grouped by self-reported usage level (high vs. medium). Used to explore whether adoption intensity correlates with attitude and outcome patterns.",
         "dimensions": "U - Use"
       },
@@ -2902,72 +2902,72 @@
     "hypothesis": "Explicit: to evaluate the impact of medical scribes on patient throughput, physician productivity, and patient satisfaction in a community ED setting.",
     "measures": [
       {
-        "measure": "**Door-to-Room Time (min)**",
+        "measure": "Door-to-Room Time (min)",
         "description": "Time from patient arrival in ED to patient placed in a room. Improved 41→37 min (p<0.0001).",
         "dimensions": "NB - Net Benefits"
       },
       {
-        "measure": "**Room-to-Doc Time (min)**",
+        "measure": "Room-to-Doc Time (min)",
         "description": "Time from patient in room to physician sign-up. Improved 26→24 min (p<0.0001).",
         "dimensions": "NB - Net Benefits"
       },
       {
-        "measure": "**Door-to-Doc Time (min)**",
+        "measure": "Door-to-Doc Time (min)",
         "description": "Time from arrival to physician sign-up. Improved 61→56 min (p<0.0001).",
         "dimensions": "NB - Net Benefits"
       },
       {
-        "measure": "**Doc-to-Admit Disposition Time (min)**",
+        "measure": "Doc-to-Admit Disposition Time (min)",
         "description": "Time from physician sign-up to patient admitted. Improved 237→228 min (p<0.0001).",
         "dimensions": "NB - Net Benefits"
       },
       {
-        "measure": "**Length of Stay — Discharged Patients (min)**",
+        "measure": "Length of Stay — Discharged Patients (min)",
         "description": "Total ED time for discharged patients. Improved 303→287 min (p<0.0001).",
         "dimensions": "NB - Net Benefits"
       },
       {
-        "measure": "**Length of Stay — Admitted Patients (min)**",
+        "measure": "Length of Stay — Admitted Patients (min)",
         "description": "Total ED time for admitted patients. Improved 507→473 min (p<0.0001).",
         "dimensions": "NB - Net Benefits"
       },
       {
-        "measure": "**Patients Seen per Hour**",
+        "measure": "Patients Seen per Hour",
         "description": "Physician throughput measure. Increased from 2.3 ± 0.3 to 3.2 ± 0.6 (p<0.001).",
         "dimensions": "NB - Net Benefits"
       },
       {
-        "measure": "**Work Relative Value Units (wRVUs) per Hour**",
+        "measure": "Work Relative Value Units (wRVUs) per Hour",
         "description": "Medicare productivity measure weighted for service complexity. Total wRVUs increased from 241 (3.1/hr) to 336 (5.2/hr) (p<0.001). wRVUs per patient similar (2.57→2.74, p=0.88) — productivity gain was volume not coding intensity.",
         "dimensions": "NB - Net Benefits"
       },
       {
-        "measure": "**Post-Visit Documentation Time (min)**",
+        "measure": "Post-Visit Documentation Time (min)",
         "description": "Time-motion: time to complete patient chart after examination. Halved from 14 ± 3.1 to 7 ± 0.43 min (p<0.01).",
         "dimensions": "NB - Net Benefits"
       },
       {
-        "measure": "**Doctor-Patient Interaction Time (min)**",
+        "measure": "Doctor-Patient Interaction Time (min)",
         "description": "Time-motion: direct face time with patient. Nearly doubled from 4 ± 0.57 to 7.8 ± 1.2 min (p<0.01).",
         "dimensions": "NB - Net Benefits, US - User Satisfaction"
       },
       {
-        "measure": "**Chart Preparation Time (min)**",
+        "measure": "Chart Preparation Time (min)",
         "description": "Time-motion: chart prep before encounter. Eliminated (1.2→0 min, p<0.01) — scribes prepped charts.",
         "dimensions": "NB - Net Benefits"
       },
       {
-        "measure": "**Chart Review Time (min)**",
+        "measure": "Chart Review Time (min)",
         "description": "Time-motion: time reviewing chart. Increased from 5→7 min (p<0.01) — physicians spent more time reviewing, less doing.",
         "dimensions": "NB - Net Benefits"
       },
       {
-        "measure": "**Patient Satisfaction (Press Ganey, 6 items)**",
+        "measure": "Patient Satisfaction (Press Ganey, 6 items)",
         "description": "5-point Likert scale. Pre-scribe satisfaction already high; most items unchanged. Significant increase only in \"clinician providing satisfactory feedback\" (3.9→4.7, p<0.01).",
         "dimensions": "NB - Net Benefits"
       },
       {
-        "measure": "**Physician Satisfaction Percentile (ED)**",
+        "measure": "Physician Satisfaction Percentile (ED)",
         "description": "ED physician satisfaction percentile improved from 66% to 81% post-scribe (+15pp).",
         "dimensions": "US - User Satisfaction"
       },
@@ -2997,47 +2997,47 @@
     "hypothesis": "Not explicitly stated. Implicit hypothesis: ambient AI documentation will improve clinician experience of documentation burden, burnout, and EHR efficiency.",
     "measures": [
       {
-        "measure": "**Time in Notes per Appointment (min)**",
+        "measure": "Time in Notes per Appointment (min)",
         "description": "Objective EHR Signal measure: mean time clinicians spent in notes per encounter. Decreased from 6.2 to 5.3 min overall (p<.001). Significant sex-based difference (DiD p=.001): women reduced more than men.",
         "dimensions": "NB - Net Benefits"
       },
       {
-        "measure": "**After-Hours Note Writing (≤1 hr)**",
+        "measure": "After-Hours Note Writing (≤1 hr)",
         "description": "Survey item: proportion of clinicians spending ≤1 hr writing notes outside work hours. Increased from 14.0% to 54.4% (p<.001) — major WOW reduction finding.",
         "dimensions": "NB - Net Benefits, US - User Satisfaction"
       },
       {
-        "measure": "**Off-Hours EHR Activity (min)**",
+        "measure": "Off-Hours EHR Activity (min)",
         "description": "Objective EHR Signal: total EHR time 5:30pm–7:00am weekdays + weekends. Did NOT change significantly (mean 38.2 → 39.8 min, p=.14). Diverges from self-report finding — notable methodological tension.",
         "dimensions": "NB - Net Benefits"
       },
       {
-        "measure": "**Documentation Length / Progress Note Length (characters)**",
+        "measure": "Documentation Length / Progress Note Length (characters)",
         "description": "Objective EHR Signal: note character counts pre vs. post. Both increased slightly but significantly (documentation: p=.01; progress note: p<.001). Ambient AI produces longer notes.",
         "dimensions": "IQ - Information Quality, NB - Net Benefits"
       },
       {
-        "measure": "**NASA-TLX Mental Demand**",
+        "measure": "NASA-TLX Mental Demand",
         "description": "Survey subscale: self-reported mental demand of documentation. Decreased significantly from median 12 to 5 (p<.001) across all subgroups.",
         "dimensions": "US - User Satisfaction"
       },
       {
-        "measure": "**NASA-TLX Temporal Demand**",
+        "measure": "NASA-TLX Temporal Demand",
         "description": "Survey subscale: time pressure associated with documentation. Decreased significantly from median 13 to 5 (p<.001).",
         "dimensions": "US - User Satisfaction"
       },
       {
-        "measure": "**NASA-TLX Effort**",
+        "measure": "NASA-TLX Effort",
         "description": "Survey subscale: perceived effort required for documentation. Decreased significantly from median 14 to 5 (p<.001).",
         "dimensions": "US - User Satisfaction"
       },
       {
-        "measure": "**Mini-Z Burnout Score**",
+        "measure": "Mini-Z Burnout Score",
         "description": "Single-item validated burnout measure. Proportion endorsing burnout: 42.1% → 35.1%, p=.12 — NOT statistically significant. Burnout did not improve despite documentation load improvement.",
         "dimensions": "US - User Satisfaction"
       },
       {
-        "measure": "**Undivided Attention to Patients**",
+        "measure": "Undivided Attention to Patients",
         "description": "Survey item: proportion agreeing they can give patients undivided attention. Increased from 57.9% to 93.0% (p<.001).",
         "dimensions": "US - User Satisfaction, NB - Net Benefits"
       },
@@ -3067,92 +3067,92 @@
     "hypothesis": "Not explicitly stated. Implicit objective: to synthesize the landscape of ACD evaluation metrics and propose a standardized framework (ACDQI) for future studies.",
     "measures": [
       {
-        "measure": "**F1 Score**",
+        "measure": "F1 Score",
         "description": "Harmonic mean of precision and recall. Most common model performance metric in the corpus (used in 4/11 studies). Applied to information extraction component.",
         "dimensions": "SQ - System Quality, IQ - Information Quality"
       },
       {
-        "measure": "**ROUGE Score (ROUGE-1, ROUGE-2, ROUGE-L)**",
+        "measure": "ROUGE Score (ROUGE-1, ROUGE-2, ROUGE-L)",
         "description": "Lexical overlap between machine-generated and reference notes. Easy to use but limited semantic understanding. Used in 2/11 studies. Part of ACDQI.",
         "dimensions": "IQ - Information Quality"
       },
       {
-        "measure": "**BERTScore / BLEURT**",
+        "measure": "BERTScore / BLEURT",
         "description": "Contextual embedding-based metrics capturing semantic similarity. More computationally demanding than ROUGE but better aligned with clinical quality. Used in 1/11 study; recommended in ACDQI. Represents evolution beyond lexical metrics.",
         "dimensions": "IQ - Information Quality, SQ - System Quality"
       },
       {
-        "measure": "**PDQI (Physician Documentation Quality Instrument)**",
+        "measure": "PDQI (Physician Documentation Quality Instrument)",
         "description": "Validated instrument scoring note quality 9–45. Used in 1/11 study (Kernberg 2024 with ChatGPT-4). Part of ACDQI.",
         "dimensions": "IQ - Information Quality"
       },
       {
-        "measure": "**LINK / CORRECT LINK (Entity Linking Annotations)**",
+        "measure": "LINK / CORRECT LINK (Entity Linking Annotations)",
         "description": "Custom metrics for semantic entity-level accuracy between generated and reference notes. Resource-intensive, prone to subjectivity. Used in 1/11 study (Sezgin 2024).",
         "dimensions": "IQ - Information Quality, SQ - System Quality"
       },
       {
-        "measure": "**Errors of Omission / Addition / Incorrect Data**",
+        "measure": "Errors of Omission / Addition / Incorrect Data",
         "description": "Manual error classification in machine-generated notes (1/11 study). Directional measure of factual accuracy and completeness.",
         "dimensions": "IQ - Information Quality"
       },
       {
-        "measure": "**Average Documentation Time per Patient (min)**",
+        "measure": "Average Documentation Time per Patient (min)",
         "description": "Primary efficiency metric — how long including proofing time. Included in ACDQI (scored: 10 × minutes, max 400 if ≤10 min; score = 0 if >10 min). Used in 2/11 studies.",
         "dimensions": "NB - Net Benefits"
       },
       {
-        "measure": "**Out-of-Hours EHR Documentation Time**",
+        "measure": "Out-of-Hours EHR Documentation Time",
         "description": "Time spent documenting outside working hours. Used in 2/11 studies as a WOW/after-hours burden metric.",
         "dimensions": "NB - Net Benefits, US - User Satisfaction"
       },
       {
-        "measure": "**Words per Minute (documentation speed)**",
+        "measure": "Words per Minute (documentation speed)",
         "description": "Speed of clinical note production. One study found ACD 2.7× faster than typing and dictation for history; 2.2× faster for physical exam vs. typing; 3.1× faster vs. dictation.",
         "dimensions": "NB - Net Benefits"
       },
       {
-        "measure": "**Work Relative Value Units (WRVU)**",
+        "measure": "Work Relative Value Units (WRVU)",
         "description": "Monthly/yearly productivity measure (US Medicare reimbursement framework). Used in 1/11 study (Haberle 2024) as a proxy for clinical value productivity.",
         "dimensions": "NB - Net Benefits"
       },
       {
-        "measure": "**Oldenburg Burnout Inventory (OLBI)**",
+        "measure": "Oldenburg Burnout Inventory (OLBI)",
         "description": "Validated burnout instrument (scored 16–64), two domains: exhaustion and disengagement. Used in 1/11 study (Owens 2024). High ACD use associated with significantly lower burnout scores.",
         "dimensions": "US - User Satisfaction"
       },
       {
-        "measure": "**Press Ganey Workforce Engagement Score**",
+        "measure": "Press Ganey Workforce Engagement Score",
         "description": "Validated clinician engagement measure (scored 1–5). Used in 1/11 study (Haberle 2024).",
         "dimensions": "US - User Satisfaction"
       },
       {
-        "measure": "**Mini-Z Survey for Workplace Stress**",
+        "measure": "Mini-Z Survey for Workplace Stress",
         "description": "10-part validated questionnaire measuring burnout, documentation efficiency perception, and job autonomy. Used in 1/11 study (Nguyen 2023).",
         "dimensions": "US - User Satisfaction"
       },
       {
-        "measure": "**FIM / AIM / IAM / IUS (Implementation measures)**",
+        "measure": "FIM / AIM / IAM / IUS (Implementation measures)",
         "description": "Feasibility of Intervention Measure, Acceptability of Intervention Measure, Appropriateness of Intervention Measure (all scored 4–20), Implementation Usability Scale (0–100). Used in 1/11 study (Nguyen 2023).",
         "dimensions": "SerQ - Service Quality, U - Use"
       },
       {
-        "measure": "**PROMIS Sleep Disturbance (Short Form 4a)**",
+        "measure": "PROMIS Sleep Disturbance (Short Form 4a)",
         "description": "Patient Reported Outcomes Measurement Information System sleep measure. Used in 1/11 study to assess wellbeing impact of documentation burden relief. Unusual/novel outcome for ACD literature.",
         "dimensions": "US - User Satisfaction, NB - Net Benefits"
       },
       {
-        "measure": "**Patient Likelihood to Recommend**",
+        "measure": "Patient Likelihood to Recommend",
         "description": "Single-item patient satisfaction proxy. Used in 1/11 study (Haberle 2024). Broad measure, highly susceptible to confounders per authors.",
         "dimensions": "NB - Net Benefits"
       },
       {
-        "measure": "**Patient Opt-Out Rate**",
+        "measure": "Patient Opt-Out Rate",
         "description": "Number of patients declining ACD use in their consultation. Acceptability/consent proxy. Used in 1/11 study (Haberle 2024).",
         "dimensions": "U - Use, NB - Net Benefits"
       },
       {
-        "measure": "**Patient Safety Events**",
+        "measure": "Patient Safety Events",
         "description": "Occurrence of safety events attributable to ACD use. Used in 1/11 study (Haberle 2024). No safety events reported in that study.",
         "dimensions": "IQ - Information Quality, NB - Net Benefits"
       }
@@ -3177,27 +3177,27 @@
     "hypothesis": "Explicit: ambient AI scribes have great potential to reduce documentation burden, enhance physician–patient encounters, and augment clinicians’ capabilities.",
     "measures": [
       {
-        "measure": "**Utilization**",
+        "measure": "Utilization",
         "description": "Used by 3,442 physicians in 303,266 encounters in 10 weeks. 968 physicians enabled in ≥100 encounters; one in 1,210 encounters.",
         "dimensions": "U - Use"
       },
       {
-        "measure": "**Documentation Quality**",
+        "measure": "Documentation Quality",
         "description": "Early evaluation metrics based on existing tool that evaluates quality of human-generated scribe notes. Ambient AI produces high-quality clinical documentation for physicians’ editing.",
         "dimensions": "IQ - Information Quality"
       },
       {
-        "measure": "**Time in Documentation and EHR**",
+        "measure": "Time in Documentation and EHR",
         "description": "Statistical analyses find usage linked with reduced time spent in documentation and in the EHR.",
         "dimensions": "NB - Net Benefits"
       },
       {
-        "measure": "**Physician Feedback**",
+        "measure": "Physician Feedback",
         "description": "Favorable response — more personal, meaningful, effective patient interactions; reduced after-hours clerical work burden.",
         "dimensions": "US - User Satisfaction"
       },
       {
-        "measure": "**Patient Feedback**",
+        "measure": "Patient Feedback",
         "description": "Early assessments positive — some describe improved interaction with physicians.",
         "dimensions": "NB - Net Benefits"
       },
@@ -3364,32 +3364,32 @@
     "hypothesis": "Explicit: to present a human evaluation study of consultation notes and establish which automatic metrics best correlate with human clinical judgment.",
     "measures": [
       {
-        "measure": "**Post-Edit Time**",
+        "measure": "Post-Edit Time",
         "description": "Time to correct AI-generated note to factual accuracy. Key efficiency metric for real-world scribe use. Prior work showed post-editing faster but more cognitively intensive than writing from scratch.",
         "dimensions": "NB - Net Benefits, US - User Satisfaction"
       },
       {
-        "measure": "**Incorrect Statements**",
+        "measure": "Incorrect Statements",
         "description": "Factual errors in generated notes vs. consultation audio. Sentences containing one or more factual inaccuracies.",
         "dimensions": "IQ - Information Quality, SQ - System Quality"
       },
       {
-        "measure": "**Omissions**",
+        "measure": "Omissions",
         "description": "Medical facts that should be in note but omitted by model. Most common error type. Critical omissions flagged for medico-legal liability.",
         "dimensions": "IQ - Information Quality, SQ - System Quality"
       },
       {
-        "measure": "**Critical Errors**",
+        "measure": "Critical Errors",
         "description": "Errors with essential clinical importance — would lead to medico-legal liability. Safety-weighted error classification.",
         "dimensions": "IQ - Information Quality"
       },
       {
-        "measure": "**Automatic Metric Correlation**",
+        "measure": "Automatic Metric Correlation",
         "description": "18 metrics evaluated (ROUGE variants, BertScore, Levenshtein, others). Key finding: Levenshtein distance correlates as well as or better than BertScore with human judgments. ROUGE correlates poorly.",
         "dimensions": "SQ - System Quality, IQ - Information Quality"
       },
       {
-        "measure": "**Qualitative Feedback**",
+        "measure": "Qualitative Feedback",
         "description": "Issues with order of statements, repetition, and other structural concerns beyond factual errors.",
         "dimensions": "IQ - Information Quality"
       },
@@ -3419,42 +3419,42 @@
     "hypothesis": "Not explicitly stated as a testable hypothesis. The paper aims to demonstrate that the proposed multi-modal evaluation framework can identify both strengths and weaknesses in ADS tool performance more comprehensively than existing single-method approaches.",
     "measures": [
       {
-        "measure": "**Transcription Accuracy / Word Error Rate (WER)**",
+        "measure": "Transcription Accuracy / Word Error Rate (WER)",
         "description": "Standard metric measuring how accurately the system converts spoken audio to text. Baseline quality indicator for the upstream pipeline stage.",
         "dimensions": "SQ - System Quality"
       },
       {
-        "measure": "**Speaker Diarization Accuracy**",
+        "measure": "Speaker Diarization Accuracy",
         "description": "Ability of the system to correctly attribute spoken segments to the correct speaker (clinician vs. patient). Errors here propagate to note quality.",
         "dimensions": "SQ - System Quality"
       },
       {
-        "measure": "**Fluency**",
+        "measure": "Fluency",
         "description": "Human-rated measure of how naturally and coherently the generated clinical note reads — assessing readability and grammatical flow.",
         "dimensions": "IQ - Information Quality"
       },
       {
-        "measure": "**Completeness**",
+        "measure": "Completeness",
         "description": "Whether the generated note includes all clinically relevant information from the encounter. Critical safety dimension — omissions can affect care decisions.",
         "dimensions": "IQ - Information Quality"
       },
       {
-        "measure": "**Factuality / Hallucination Rate**",
+        "measure": "Factuality / Hallucination Rate",
         "description": "Whether the generated note accurately reflects what was said, without fabricating or distorting clinical facts. Among the most safety-critical metrics.",
         "dimensions": "IQ - Information Quality, SQ - System Quality"
       },
       {
-        "measure": "**Medical Term Recall (MTR)**",
+        "measure": "Medical Term Recall (MTR)",
         "description": "Enhanced transcription metric assessing accurate capture of medical terminology specifically — goes beyond general WER for clinical relevance.",
         "dimensions": "SQ - System Quality, IQ - Information Quality"
       },
       {
-        "measure": "**LLM-as-Evaluator Agreement**",
+        "measure": "LLM-as-Evaluator Agreement",
         "description": "Degree of agreement between LLM automated scoring and human expert evaluation, used to validate the scalability of AI-based review approaches.",
         "dimensions": "SQ - System Quality"
       },
       {
-        "measure": "**New Medication Capture**",
+        "measure": "New Medication Capture",
         "description": "Specific sub-metric tracking whether newly prescribed or discussed medications are accurately documented in the note. Identified as a particular weakness.",
         "dimensions": "IQ - Information Quality"
       },
@@ -3484,37 +3484,37 @@
     "hypothesis": "Not explicitly stated. Study is exploratory/inductive; aims to generate hypotheses for future study rather than test a specific hypothesis.",
     "measures": [
       {
-        "measure": "**Workflow Efficiency (qualitative)**",
+        "measure": "Workflow Efficiency (qualitative)",
         "description": "Provider-reported perceptions of time savings and workflow improvement after ambient AI adoption, captured through open-ended survey responses.",
         "dimensions": "US - User Satisfaction, NB - Net Benefits"
       },
       {
-        "measure": "**Patient Interaction Quality**",
+        "measure": "Patient Interaction Quality",
         "description": "Clinician-reported experience of enhanced presence and engagement with patients when freed from documentation tasks during encounters.",
         "dimensions": "US - User Satisfaction, NB - Net Benefits"
       },
       {
-        "measure": "**Documentation Quality & Editing Burden**",
+        "measure": "Documentation Quality & Editing Burden",
         "description": "Provider perceptions of note accuracy and the additional effort required to review, correct, and edit AI-generated notes before sign-off.",
         "dimensions": "IQ - Information Quality, US - User Satisfaction"
       },
       {
-        "measure": "**Learning Curve & Workflow Adaptation**",
+        "measure": "Learning Curve & Workflow Adaptation",
         "description": "Qualitative capture of the adjustment period and training challenges providers experienced integrating ambient AI into existing workflows.",
         "dimensions": "SerQ - Service Quality, U - Use"
       },
       {
-        "measure": "**Specialty-Specific Performance**",
+        "measure": "Specialty-Specific Performance",
         "description": "Provider-reported variation in ambient AI usefulness across clinical specialties, noting where the tool excelled or fell short.",
         "dimensions": "SQ - System Quality, IQ - Information Quality"
       },
       {
-        "measure": "**Provider Skepticism & AI Trust**",
+        "measure": "Provider Skepticism & AI Trust",
         "description": "Thematic coding of concerns around AI reliability, patient privacy, data use, and overall trust in the technology.",
         "dimensions": "US - User Satisfaction, SerQ - Service Quality"
       },
       {
-        "measure": "**Sentiment Distribution**",
+        "measure": "Sentiment Distribution",
         "description": "Automated sentiment analysis of free-text responses, classified as positive, negative, or mixed — used to characterize the aggregate emotional valence of early adoption.",
         "dimensions": "US - User Satisfaction"
       },
@@ -3544,32 +3544,32 @@
     "hypothesis": "Not explicitly stated. Implicit hypothesis: implementation of ambient documentation technology will reduce self-reported documentation burden and improve measures of burnout and clinician well-being.",
     "measures": [
       {
-        "measure": "**Documentation Burden**",
+        "measure": "Documentation Burden",
         "description": "Clinician-reported experience of administrative load from EHR documentation tasks, measured via pre/post survey. Core outcome capturing subjective efficiency impact.",
         "dimensions": "US - User Satisfaction, NB - Net Benefits"
       },
       {
-        "measure": "**Burnout**",
+        "measure": "Burnout",
         "description": "Self-reported burnout symptoms assessed via validated instruments in pre/post surveys. Primary well-being outcome of the evaluation.",
         "dimensions": "US - User Satisfaction"
       },
       {
-        "measure": "**EHR Experience**",
+        "measure": "EHR Experience",
         "description": "Clinician-rated satisfaction with and perceived efficiency of EHR-related workflows, including time-on-task and friction points.",
         "dimensions": "US - User Satisfaction, NB - Net Benefits"
       },
       {
-        "measure": "**Documentation Process Experience**",
+        "measure": "Documentation Process Experience",
         "description": "Qualitative and quantitative assessment of how clinicians experience the workflow of creating clinical notes — including ease, speed, and post-visit editing requirements.",
         "dimensions": "US - User Satisfaction, NB - Net Benefits"
       },
       {
-        "measure": "**Ambient Usage Level**",
+        "measure": "Ambient Usage Level",
         "description": "Categorization of clinicians by degree of ambient tool adoption (stratified in analysis by usage level). Used to examine dose-response relationship between usage and outcomes.",
         "dimensions": "U - Use"
       },
       {
-        "measure": "**Specialty-Specific Variation**",
+        "measure": "Specialty-Specific Variation",
         "description": "Analysis of outcomes stratified by specialty category — surgical, primary care, medical subspecialty — to identify differential effects of ambient technology.",
         "dimensions": "US - User Satisfaction, NB - Net Benefits"
       },
@@ -3651,37 +3651,37 @@
     "hypothesis": "Not explicitly stated. Implicit hypothesis: a digital scribe system will reduce documentation time without compromising quality.",
     "measures": [
       {
-        "measure": "**Documentation Time**",
+        "measure": "Documentation Time",
         "description": "Time in seconds to complete clinical note summary across the three conditions (manual vs. auto vs. auto+edit). Direct timing measurement.",
         "dimensions": "NB - Net Benefits"
       },
       {
-        "measure": "**PDQI-9 (Physician Documentation Quality Instrument)**",
+        "measure": "PDQI-9 (Physician Documentation Quality Instrument)",
         "description": "A validated 9-item instrument for rating clinical note quality across dimensions including accuracy, organization, and relevance. Blinded reassignment of notes for scoring.",
         "dimensions": "IQ - Information Quality"
       },
       {
-        "measure": "**Word Count**",
+        "measure": "Word Count",
         "description": "Number of words in the generated summary. Auto-generated notes had significantly higher word counts — potential indicator of note bloat.",
         "dimensions": "IQ - Information Quality"
       },
       {
-        "measure": "**Lexical Diversity**",
+        "measure": "Lexical Diversity",
         "description": "Measure of vocabulary variety in the note text. Lower in auto-generated notes, suggesting more formulaic/repetitive language.",
         "dimensions": "IQ - Information Quality"
       },
       {
-        "measure": "**ROUGE Score**",
+        "measure": "ROUGE Score",
         "description": "Automated text overlap metric comparing AI-generated summaries to manual reference summaries.",
         "dimensions": "IQ - Information Quality, SQ - System Quality"
       },
       {
-        "measure": "**BERTScore**",
+        "measure": "BERTScore",
         "description": "Semantic similarity metric using contextual embeddings to compare generated vs. reference summaries.",
         "dimensions": "IQ - Information Quality, SQ - System Quality"
       },
       {
-        "measure": "**User Satisfaction / Perceived Usefulness**",
+        "measure": "User Satisfaction / Perceived Usefulness",
         "description": "Student-reported perceptions of the digital scribe's ease of use and utility, captured via post-study survey.",
         "dimensions": "US - User Satisfaction"
       },

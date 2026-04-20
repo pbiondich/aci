@@ -40,12 +40,12 @@ Explicit: to present a human evaluation study of consultation notes and establis
 
 | Measure | Description | D&M Dimension(s) |
 |---|---|---|
-| **Post-Edit Time (minutes)** | Time to correct an AI-generated note to factual accuracy. Key efficiency metric for real-world scribe use. Prior work (Moramarco 2021) showed post-editing faster but more cognitively intensive than writing from scratch. | [[NB - Net Benefits]], [[US - User Satisfaction]] |
-| **Incorrect Statements (error type)** | Factual errors in generated notes vs. consultation audio — sentences containing one or more factual inaccuracies. | [[IQ - Information Quality]], [[SQ - System Quality]] |
-| **Omissions (error type)** | Medical facts that should be in the note but were omitted by the model. Most common error type. Critical omissions flagged for medico-legal liability. | [[IQ - Information Quality]], [[SQ - System Quality]] |
-| **Critical Errors** | Errors tagged as having essential clinical importance — those that would lead to medico-legal liability. Safety-weighted error classification. | [[IQ - Information Quality]] |
-| **Automatic Metric Correlation with Human Judgment** | 18 metrics evaluated (ROUGE-1/2/L, BERTScore, Levenshtein, others). Key finding: Levenshtein distance (character edit distance) correlates as well as or better than BertScore with human judgments. ROUGE correlates poorly. | [[SQ - System Quality]], [[IQ - Information Quality]] |
-| **Qualitative Feedback (clinician-reported)** | Issues with order of statements, repetition, and other structural concerns beyond factual errors. | [[IQ - Information Quality]] |
+| Post-Edit Time (minutes) | Time to correct an AI-generated note to factual accuracy. Key efficiency metric for real-world scribe use. Prior work (Moramarco 2021) showed post-editing faster but more cognitively intensive than writing from scratch. | [[NB - Net Benefits]], [[US - User Satisfaction]] |
+| Incorrect Statements (error type) | Factual errors in generated notes vs. consultation audio — sentences containing one or more factual inaccuracies. | [[IQ - Information Quality]], [[SQ - System Quality]] |
+| Omissions (error type) | Medical facts that should be in the note but were omitted by the model. Most common error type. Critical omissions flagged for medico-legal liability. | [[IQ - Information Quality]], [[SQ - System Quality]] |
+| Critical Errors | Errors tagged as having essential clinical importance — those that would lead to medico-legal liability. Safety-weighted error classification. | [[IQ - Information Quality]] |
+| Automatic Metric Correlation with Human Judgment | 18 metrics evaluated (ROUGE-1/2/L, BERTScore, Levenshtein, others). Key finding: Levenshtein distance (character edit distance) correlates as well as or better than BertScore with human judgments. ROUGE correlates poorly. | [[SQ - System Quality]], [[IQ - Information Quality]] |
+| Qualitative Feedback (clinician-reported) | Issues with order of statements, repetition, and other structural concerns beyond factual errors. | [[IQ - Information Quality]] |
 
 ---
 *Reviewed by Iris | Source: arXiv 2022 / ACL 2022 | DOI: 10.48550/arXiv.2204.00447 | Template v2.0 | Full text reviewed ✅*

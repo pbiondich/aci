@@ -40,12 +40,12 @@ Explicit: to demonstrate the value of simulation testing for rapidly evaluating 
 
 | Measure | Description | D&M Dimension(s) |
 |---|---|---|
-| **Editing Time (seconds)** | Time for physician to edit AI-generated draft note to final signed note. ADS Product A took significantly longer than Product B (+80.6 seconds, p<.001). Physician 1 faster than Physician 2. Order of use did not affect time. | [[NB - Net Benefits]] |
-| **Perceived Editing Amount (5-point Likert)** | Physician rating of how much editing was required (1=none, 5=extreme). Mean 2.89 (moderate). No significant difference between products or order of use. | [[US - User Satisfaction]], [[NB - Net Benefits]] |
-| **Perceived Effort (5-point Likert)** | Physician rating of effort required to edit note (1=none, 5=extreme). Mean 2.73 (minimal-moderate). Physician 1 reported significantly less effort than Physician 2 (p=.014). No product difference. | [[US - User Satisfaction]] |
-| **Error Rate & Type** | 127 total errors across 44 notes (2.88 errors/note average). Omissions most common (54.1% Product A, 83.3% Product B). Product A had more additions and irrelevant/misplaced text errors. | [[IQ - Information Quality]], [[SQ - System Quality]] |
-| **Overall Product Preference** | Physician chose which ADS performed better for each script. Product A preferred 12 times, Product B 6 times, equal 4 times. Physicians agreed on which was better in only 3 of 11 scripts. | [[US - User Satisfaction]] |
-| **Simulation Testing Methodology** | Rapid evaluation approach using scripted encounters. 11 scripts, 2 teams, 2 products = 44 notes. Alternating order to control for learning effects. Linear mixed-effects model for editing time, ordinal logistic regression for Likert ratings. | (methodological) |
+| Editing Time (seconds) | Time for physician to edit AI-generated draft note to final signed note. ADS Product A took significantly longer than Product B (+80.6 seconds, p<.001). Physician 1 faster than Physician 2. Order of use did not affect time. | [[NB - Net Benefits]] |
+| Perceived Editing Amount (5-point Likert) | Physician rating of how much editing was required (1=none, 5=extreme). Mean 2.89 (moderate). No significant difference between products or order of use. | [[US - User Satisfaction]], [[NB - Net Benefits]] |
+| Perceived Effort (5-point Likert) | Physician rating of effort required to edit note (1=none, 5=extreme). Mean 2.73 (minimal-moderate). Physician 1 reported significantly less effort than Physician 2 (p=.014). No product difference. | [[US - User Satisfaction]] |
+| Error Rate & Type | 127 total errors across 44 notes (2.88 errors/note average). Omissions most common (54.1% Product A, 83.3% Product B). Product A had more additions and irrelevant/misplaced text errors. | [[IQ - Information Quality]], [[SQ - System Quality]] |
+| Overall Product Preference | Physician chose which ADS performed better for each script. Product A preferred 12 times, Product B 6 times, equal 4 times. Physicians agreed on which was better in only 3 of 11 scripts. | [[US - User Satisfaction]] |
+| Simulation Testing Methodology | Rapid evaluation approach using scripted encounters. 11 scripts, 2 teams, 2 products = 44 notes. Alternating order to control for learning effects. Linear mixed-effects model for editing time, ordinal logistic regression for Likert ratings. | (methodological) |
 
 ---
 *Reviewed by Iris | Source: JAMIA 2025 | DOI: 10.1093/jamia/ocaf052 | Template v2.0 | Full text reviewed ✅*
