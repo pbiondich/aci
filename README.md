@@ -2,7 +2,7 @@
 
 A systematic literature review of 54 studies evaluating Ambient Clinical Intelligence (ACI) tools, organized using the DeLone & McLean Information Systems Success Model. The review synthesizes 494 raw measure rows into 25 canonical measures across six evaluation dimensions, with an interactive web application for exploring the evidence.
 
-**Live site:** [pbiondich.github.io/aci](https://pbiondich.github.io/aci/)
+**Live site:** [pbiondich.github.io/aci/v2](https://pbiondich.github.io/aci/v2/)
 
 ## Overview
 
@@ -37,7 +37,12 @@ Each of the 54 articles was reviewed in full text and its outcome measures extra
 │   ├── extract-data.js              # Extracts vault markdown → JSON for webapp
 │   └── link-article.js              # Validates article-to-measure linkage
 ├── docs/
-│   ├── index.html                   # Interactive web application (single file)
+│   ├── index.html                   # Classic webapp (single file, v1)
+│   ├── v2/                          # Current webapp (multi-file JSX + Babel)
+│   │   ├── index.html               # Shell: styles, fonts, Babel transpiler
+│   │   ├── components.jsx           # Shared components and helpers
+│   │   ├── tabs.jsx                 # Tab views (Overview through Rigor)
+│   │   └── app.jsx                  # Root app, routing, data loading
 │   └── data/                        # Generated JSON data files
 │       ├── articles.json
 │       ├── measures.json
@@ -51,7 +56,7 @@ Each of the 54 articles was reviewed in full text and its outcome measures extra
 
 ## Web Application
 
-The interactive webapp at [pbiondich.github.io/aci](https://pbiondich.github.io/aci/) provides eight views:
+The interactive webapp at [pbiondich.github.io/aci/v2](https://pbiondich.github.io/aci/v2/) provides eight views:
 
 1. **Overview** — key findings at a glance
 2. **Canonical Measures** — detailed definitions, findings, and paper lists for all 25 measures
@@ -62,11 +67,11 @@ The interactive webapp at [pbiondich.github.io/aci](https://pbiondich.github.io/
 7. **Study Corpus** — corpus-wide statistics and distributions
 8. **Level of Rigor** — tiered quality assessment (work in progress)
 
-Tabs are shareable via URL hash (e.g., `pbiondich.github.io/aci/#guide`).
+Tabs are shareable via URL hash (e.g., `pbiondich.github.io/aci/v2/#guide`).
 
 ### Architecture
 
-The webapp uses a zero-build-step architecture: a single HTML file with inline JavaScript and CSS, React 18.2.0 via CDN, and static JSON data files. No npm, no webpack, no Babel.
+The webapp uses a zero-build-step architecture: an HTML shell with separate JSX component files transpiled at load time by Babel Standalone, React 18.3.1 via CDN, and static JSON data files. No npm, no webpack, no local build tooling. The classic v1 single-file version remains available at [pbiondich.github.io/aci](https://pbiondich.github.io/aci/).
 
 ## Local Setup
 
@@ -109,7 +114,7 @@ This is an active research project. If you're interested in contributing article
 
 If referencing this work, please cite as:
 
-> Biondich, P. et al. (2026). Evaluating Ambient Clinical Intelligence: A Structured Evidence Review Using the DeLone & McLean IS Success Model. Available at: https://pbiondich.github.io/aci/
+> Biondich, P. et al. (2026). Evaluating Ambient Clinical Intelligence: A Structured Evidence Review Using the DeLone & McLean IS Success Model. Available at: https://pbiondich.github.io/aci/v2/
 
 ## License
 
