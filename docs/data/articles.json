@@ -2610,58 +2610,7 @@
     "dataSources": "Qualitative: AI Taskforce member meetings (health system + AI company executives); one-on-one interviews; synthesis of published peer-reviewed literature; industry data",
     "summary": "PHTI's Market Trend Report on ambient AI scribe adoption, published March 2025. PHTI is an independent nonprofit funded by the Peterson Center on Healthcare; it provides evidence-based evaluations with no vendor funding. The report's AI Taskforce included health system leaders and AI solution companies convened September 2024–early 2025. Key findings: ambient scribes may be the fastest healthcare technology adoption ever (no regulatory mandate required); ~60 products now available; evidence for burnout/cognitive load reduction is \"positive (emerging)\"; evidence for documentation time savings and productivity is \"mixed\"; coding/financial impact is \"too early to conclude.\" The report explicitly flags that HCC/E&M coding extensions may increase healthcare spending even if coding is accurate. Calls for standardized metrics across 3 domains: clinician, patient, and financial.",
     "hypothesis": "Not a study — policy synthesis and early adopter learnings report. Central question: do ambient scribes work, and how should health systems measure their impact?",
-    "measures": [
-      {
-        "measure": "",
-        "description": "",
-        "dimensions": ""
-      },
-      {
-        "measure": "",
-        "description": "",
-        "dimensions": ""
-      },
-      {
-        "measure": "",
-        "description": "",
-        "dimensions": ""
-      },
-      {
-        "measure": "",
-        "description": "",
-        "dimensions": ""
-      },
-      {
-        "measure": "",
-        "description": "",
-        "dimensions": ""
-      },
-      {
-        "measure": "",
-        "description": "",
-        "dimensions": ""
-      },
-      {
-        "measure": "",
-        "description": "",
-        "dimensions": ""
-      },
-      {
-        "measure": "",
-        "description": "",
-        "dimensions": ""
-      },
-      {
-        "measure": "",
-        "description": "",
-        "dimensions": ""
-      },
-      {
-        "measure": "",
-        "description": "",
-        "dimensions": ""
-      }
-    ],
+    "measures": [],
     "keyFindings": [
       "~60 ambient scribes currently available/being implemented",
       "Ambient scribes are \"one of the fastest technology adoptions in healthcare history\" — no regulatory mandate required",

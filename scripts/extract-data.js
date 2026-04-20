@@ -202,7 +202,7 @@ function parseArticle(filePath) {
     measure: row.measure || '',
     description: row.description || '',
     dimensions: (row['d&m_dimension(s)'] || row.d_m_dimension || row['d&m_dimensions'] || row['d&m_dimension(s)'] || '').replace(/\[\[|\]\]/g, '')
-  }));
+  })).filter(m => m.measure.trim());
 
   const keyFindings = extractBulletPoints(content, 'Key Findings');
 
