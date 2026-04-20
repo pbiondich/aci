@@ -18,13 +18,9 @@ function App() {
     const h = window.location.hash.replace('#','');
     return validTabs.indexOf(h) !== -1 ? h : 'overview';
   };
-  const [tab, setTabRaw] = useStateA(() => {
-    const stored = localStorage.getItem('aci_tab');
-    return validTabs.indexOf(stored) !== -1 && !window.location.hash ? stored : getHash();
-  });
+  const [tab, setTabRaw] = useStateA(getHash);
   function setTab(id) {
     window.location.hash = id;
-    localStorage.setItem('aci_tab', id);
     setTabRaw(id);
     window.scrollTo(0, 0);
   }
