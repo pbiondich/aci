@@ -18,9 +18,10 @@ Use captures **whether and how much the ambient AI tool is actually used** — b
 - Satisfaction with the tool (→ [[US - User Satisfaction]])
 - Structural barriers to adoption (→ [[SerQ - Service Quality]])
 
-## Canonical Measures in this Dimension (2)
+## Canonical Measures in this Dimension (3)
 - [[CM-13 Adoption Behavior and Utilization Rate]] (12 papers)
-- [[CM-14 Adoption Intention and Long-Term Use]] (5 papers)
+- [[CM-14 Adoption Intention and Long-Term Use]]
+- [[CM-16 Provider Trust in AI]] (5 papers)
 
 ## ⚠️ Key Finding: Dose-Response and Heterogeneity
 Every large deployment study finds heterogeneous adoption: heavy users, moderate users, and low/non-users. Dose-response is consistent — heavy users benefit most (Pearlman 2025, Omon 2025, Lukac 2025). Tierney 2025 (2.5M uses): top-third of users account for disproportionate % of total use. Tierney 2025 also found physician age and years since graduation are NOT predictive of adoption — challenging the generational adoption narrative.

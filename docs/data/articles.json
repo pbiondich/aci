@@ -3460,7 +3460,7 @@
       {
         "measure": "Provider Skepticism & AI Trust",
         "description": "Thematic coding of concerns around AI reliability, patient privacy, data use, and overall trust in the technology.",
-        "dimensions": "US - User Satisfaction, SerQ - Service Quality"
+        "dimensions": "U - Use, SerQ - Service Quality"
       },
       {
         "measure": "Sentiment Distribution",

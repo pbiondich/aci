@@ -18,12 +18,11 @@ User Satisfaction captures **how clinicians subjectively experience the ambient 
 - After-hours documentation time (→ [[NB - Net Benefits]] via CM-05)
 - Patient experience (→ [[NB - Net Benefits]] via CM-17)
 
-## Canonical Measures in this Dimension (5)
+## Canonical Measures in this Dimension (4)
 - [[CM-01 Clinician Burnout and Exhaustion]] (14 papers)
 - [[CM-02 Cognitive and Task Load]] (11 papers)
 - [[CM-03 Professional Fulfillment and Meaningfulness]] (6 papers)
 - [[CM-15 Provider Satisfaction and Usability]] (20 papers)
-- [[CM-16 Provider Trust in AI]] (5 papers)
 
 ## ⚠️ Key Finding: Self-Report Inflation and Construct Dissociation
 US is the most commonly measured dimension (35 papers) but is subject to substantial selection bias — most studies recruit interested volunteers. The RCT (Afshar 2025b) shows burnout reduces (−0.44 PFI, p<0.001) but professional fulfillment does not significantly increase (p=0.04 vs pre-specified 0.025 threshold) — these are dissociable constructs. QI studies consistently overestimate effects vs. the RCT. Provider satisfaction is almost universally positive across the corpus — but Prasad 2025 is the critical counter-signal: <2yr virtual scribe use strongly negatively associated with satisfaction.

@@ -680,33 +680,28 @@
   {
     "id": "CM-16",
     "name": "Provider Trust in AI",
-    "dimension": "US - User Satisfaction",
-    "domain": "User Satisfaction",
-    "paperCount": 6,
-    "definition": "Provider-reported trust in the accuracy and reliability of AI-generated notes, including skepticism about AI errors, ethical/legal concerns about ambient listening, and the degree to which clinicians verify AI output. A distinct attitudinal dimension from general satisfaction.",
+    "dimension": "U - Use",
+    "domain": "Adoption & Use",
+    "paperCount": 3,
+    "definition": "The degree to which clinicians perceive AI-generated documentation as accurate and dependable enough to act on without exhaustive verification. This perception shapes adoption before and during use: a clinician who doubts the output's accuracy will either reject the tool outright or spend significant time re-checking every note, negating efficiency gains. Distinct from general satisfaction (CM-15), which reflects overall experience after use, and from adoption behavior (CM-13), which captures what clinicians actually do. Perceived reliability is the attitudinal precondition that precedes and predicts both.",
     "instruments": [
       "Trust in AI (Likert item)",
       "Provider Skepticism (qualitative)",
-      "Ethical/Legal Concerns (survey)",
-      "Industry transparency"
+      "Accuracy Confidence (survey)",
+      "Perceived Reliability (mixed)"
     ],
     "aliases": [
       "Trust in AI (Afshar 2025b — secondary outcome)",
       "Provider Skepticism & AI Trust (Shah 2025, Wojda 2025)",
-      "Ethical/Legal Concerns (Falcetta 2023)",
-      "Industry Transparency (van Buchem 2021)",
-      "Fear of Increased Patient Volume (Bundy 2024)"
+      "Accuracy Confidence (Karavassilis 2025)"
     ],
     "typicalFindings": "",
     "rigorRating": "",
-    "concerns": "Only 5 papers formally measure this as a study outcome, though AI trust themes appear qualitatively in many more. Bundy 2024 found 7/12 physicians feared increased patient volume from ambient scribes — a specific mistrust pattern about downstream consequences rather than tool performance.",
+    "concerns": "3 papers formally measure this as a study outcome; AI skepticism and reliability concerns appear qualitatively in many more. Placed in the Use dimension (U) rather than User Satisfaction (US) because perceived reliability is an attitudinal precondition that precedes adoption, not a feeling that results from it. Clinicians who doubt output accuracy reject the tool or over-verify, both of which show up as adoption failure rather than satisfaction decline. Ethical/legal concern measures (Falcetta 2023) and fear of downstream consequences (Bundy 2024) are related but distinct constructs — those belong in OI and II respectively, not here.",
     "papers": [
       "Afshar 2025b - Pragmatic RCT Ambient AI Health Practitioner Wellbeing",
-      "Bundy 2024 - Administrative Loads Physicians AI Documentation Qualitative",
-      "Falcetta 2023 - Automatic Documentation Professional Health Interactions Systematic Review",
-      "Wojda 2025 - HCI of Ambient AI Qualitative Study",
-      "van Buchem 2021 - Digital Scribe Scoping Review Research Agenda",
-      "Billings 2025b - Practicing Value-Based Care with AI"
+      "Shah 2025 - Physician Perspectives Ambient AI Scribes",
+      "Wojda 2025 - HCI of Ambient AI Qualitative Study"
     ]
   },
   {

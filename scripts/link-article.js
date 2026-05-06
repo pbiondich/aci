@@ -47,7 +47,7 @@ const CM_PATTERNS = {
   'CM-13': [/utilization rate/i, /adoption rate/i, /\busage rate\b/i, /\busage level\b/i, /inclusion rate/i, /license relinquish/i, /scribe utilization/i],
   'CM-14': [/intention to use/i, /willingness to adopt/i, /recommendation likelihood/i, /recommendation intention/i, /would recommend/i, /implementation intent/i],
   'CM-15': [/(?:physician|clinician|provider|employee) satisfaction/i, /system usability/i, /usability.*(?:rating|scale)/i, /utaut/i, /perceived usefulness/i, /net promoter/i, /clinician experience/i],
-  'CM-16': [/trust in ai/i, /provider.*skeptic/i, /\bai trust\b/i, /trusted.*(?:hcc|diagnosis)/i],
+  'CM-16': [/trust in ai/i, /provider.*skeptic/i, /\\bai trust\\b/i, /accuracy confidence/i, /perceived reliab/i],
   'CM-17': [/patient.*(?:experience|satisfaction|feedback|comfort)/i, /\bpdrq\b/i, /patient.*(?:relationship|engagement)/i, /patient.*(?:ltr|likelihood.*recommend)/i, /press ganey(?!.*workforce)/i, /therapeutic alliance/i, /patient opt.?out/i],
   'CM-18': [/(?:doctor|physician).?patient interaction/i, /undivided attention/i, /face.?to.?face/i, /\beye contact\b/i, /patient.*care time/i, /patient interaction/i, /focused on (?:me|patient)/i, /more personable/i, /patient.?centered care/i],
   'CM-19': [/patient safety/i, /ahrq harm/i, /\bcritical error/i, /adverse event/i, /psychiatric intervention/i, /rdoc.*symptom/i],
