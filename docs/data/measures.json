@@ -2,7 +2,7 @@
   {
     "id": "CM-01",
     "name": "Clinician Burnout and Exhaustion",
-    "dimension": "US - User Satisfaction",
+    "dimension": "II - Individual Impact",
     "domain": "Clinician Well-Being",
     "paperCount": 16,
     "definition": "Provider-reported emotional exhaustion, depersonalization, and interpersonal disengagement from clinical work — the core burnout syndrome. Measured via validated psychometric instruments. Distinct from cognitive task load (in-encounter mental effort) and professional fulfillment (positive engagement).",
@@ -51,7 +51,7 @@
   {
     "id": "CM-02",
     "name": "Cognitive and Task Load",
-    "dimension": "US - User Satisfaction",
+    "dimension": "II - Individual Impact",
     "domain": "Clinician Well-Being",
     "paperCount": 11,
     "definition": "The mental effort, time pressure, and frustration experienced by clinicians *during* or *immediately after* a clinical encounter — the in-the-moment cognitive demand of documentation. Distinct from burnout (CM-01), which is a sustained emotional state.",
@@ -91,7 +91,7 @@
   {
     "id": "CM-03",
     "name": "Professional Fulfillment and Meaningfulness",
-    "dimension": "US - User Satisfaction",
+    "dimension": "II - Individual Impact",
     "domain": "Clinician Well-Being",
     "paperCount": 10,
     "definition": "Provider-reported positive engagement with clinical work — the presence of meaning, reward, and satisfaction in the work itself. The positive pole of the well-being spectrum, distinct from absence of burnout. Measured via PFI fulfillment subscale or related instruments.",
@@ -127,7 +127,7 @@
   {
     "id": "CM-04",
     "name": "Documentation Time",
-    "dimension": "NB - Net Benefits",
+    "dimension": "II - Individual Impact",
     "domain": "Documentation Efficiency",
     "paperCount": 31,
     "definition": "Total time spent creating, editing, and finalizing a clinical note — from note initiation to note signature. The most frequently measured efficiency outcome in the corpus. Includes in-clinic documentation time. Does NOT include after-hours time (see CM-05) unless explicitly pooled.",
@@ -193,7 +193,7 @@
   {
     "id": "CM-05",
     "name": "After-Hours Documentation",
-    "dimension": "NB - Net Benefits",
+    "dimension": "II - Individual Impact",
     "domain": "Documentation Efficiency",
     "paperCount": 19,
     "definition": "Time spent on clinical documentation outside of scheduled working hours — 'pajama time', 'after-hours EHR', or 'work outside work.' Distinct from total documentation time (CM-04) because it captures work-life boundary effects specifically. One of the most clinically meaningful outcomes because it directly affects physician well-being.",
@@ -245,7 +245,7 @@
   {
     "id": "CM-06",
     "name": "Chart Closure Timeliness",
-    "dimension": "NB - Net Benefits",
+    "dimension": "II - Individual Impact",
     "domain": "Documentation Efficiency",
     "paperCount": 8,
     "definition": "Whether and how quickly clinical notes are completed and signed — measured as same-day closure rates, time to chart closure, 24-hour deficiency rates, or completion before the next patient. Captures documentation *completion behavior* rather than time-per-note.",
@@ -284,7 +284,7 @@
   {
     "id": "CM-07",
     "name": "Total EHR Time",
-    "dimension": "NB - Net Benefits",
+    "dimension": "II - Individual Impact",
     "domain": "Documentation Efficiency",
     "paperCount": 5,
     "definition": "Total time spent in the EHR across all tasks — note-writing, inbox management, order entry, results review, messaging — normalized per scheduled workday. Broader than documentation time alone; captures the total EHR burden.",
@@ -712,7 +712,7 @@
   {
     "id": "CM-17",
     "name": "Patient Experience and Relationship Quality",
-    "dimension": "NB - Net Benefits",
+    "dimension": "OI - Organizational Impact",
     "domain": "Patient Outcomes",
     "paperCount": 18,
     "definition": "Patient-reported or validated assessment of the quality of the patient-physician interaction — including relationship quality, satisfaction with the visit, and experience of being heard. The most underdeveloped outcome domain in the corpus, measured primarily through validated instruments in only 1 paper.",
@@ -764,7 +764,7 @@
   {
     "id": "CM-18",
     "name": "Physician-Patient Interaction Quality",
-    "dimension": "NB - Net Benefits",
+    "dimension": "OI - Organizational Impact",
     "domain": "Patient Outcomes",
     "paperCount": 12,
     "definition": "Behavioral measures of the quality of the physician-patient interaction during the clinical encounter — including face-to-face time, clinician attentiveness, screen time reduction, and perceived engagement. Distinct from patient experience (CM-17), which is patient-reported; this is primarily clinician-reported or observed.",
@@ -805,7 +805,7 @@
   {
     "id": "CM-19",
     "name": "Clinical Patient Safety",
-    "dimension": "NB - Net Benefits",
+    "dimension": "OI - Organizational Impact",
     "domain": "Patient Outcomes",
     "paperCount": 9,
     "definition": "Patient safety outcomes associated with ambient AI documentation — including documentation errors that affect clinical decisions, adverse events, harm scores, and gaps between documented symptoms and clinical action. The most concerning and least studied outcome dimension.",
@@ -846,7 +846,7 @@
   {
     "id": "CM-20",
     "name": "Financial Productivity and Revenue Impact",
-    "dimension": "NB - Net Benefits",
+    "dimension": "OI - Organizational Impact",
     "domain": "Financial & Organizational",
     "paperCount": 8,
     "definition": "Changes in physician financial productivity associated with ambient AI scribe use — measured as RVU changes, revenue per clinician per year, or ROI. Captures organizational financial benefit and potential system-level cost implications.",
@@ -887,7 +887,7 @@
   {
     "id": "CM-21",
     "name": "Coding Accuracy ICD-10 HCC and EM",
-    "dimension": "IQ - Information Quality",
+    "dimension": "OI - Organizational Impact",
     "domain": "Financial & Organizational",
     "paperCount": 6,
     "definition": "The accuracy and completeness of diagnostic and billing codes generated or supported by ambient AI documentation — ICD-10 diagnosis codes, HCC (Hierarchical Condition Category) capture for risk adjustment, and E/M (Evaluation & Management) coding level. Bridges IQ (note quality sufficient for accurate coding) and NB (coding accuracy drives revenue and population health metrics).",
@@ -922,7 +922,7 @@
   {
     "id": "CM-22",
     "name": "Patient Volume and Throughput",
-    "dimension": "NB - Net Benefits",
+    "dimension": "OI - Organizational Impact",
     "domain": "Financial & Organizational",
     "paperCount": 7,
     "definition": "Changes in the number of patients seen per unit time or changes in patient flow through clinical environments — a downstream efficiency outcome of reduced documentation burden. Includes ED metrics (door-to-doc, length of stay) and outpatient productivity (encounters per week).",

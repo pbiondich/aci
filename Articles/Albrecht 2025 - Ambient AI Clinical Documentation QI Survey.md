@@ -40,14 +40,14 @@ To evaluate the impact of Abridge ambient AI documentation on clinicians’ perc
 
 | Measure | Description | D&M Dimension(s) |
 |---|---|---|
-| Documentation Workflow Ease (POLR) | Concordant question: "I find the documentation workflow easy." Post-implementation: OR 6.91 [3.90-12.56], p<.001. Clinicians 7× more likely to agree workflow is easy with Abridge. | [[US - User Satisfaction]], [[NB - Net Benefits]] |
-| Note Completion Before Next Patient (POLR) | "I can complete the note before the next patient visit." Post-implementation: OR 4.95 [2.87-8.69], p<.001. 5× higher odds post-Abridge. | [[NB - Net Benefits]] |
-| Decreased Documentation Burden | Post-survey: 77% agreed/strongly agreed Abridge decreased documentation burden. | [[NB - Net Benefits]] |
-| Decreased After-Hours Documentation | Post-survey: 73% agreed/strongly agreed Abridge decreased time spent documenting outside clinical hours. | [[NB - Net Benefits]] |
+| Documentation Workflow Ease (POLR) | Concordant question: "I find the documentation workflow easy." Post-implementation: OR 6.91 [3.90-12.56], p<.001. Clinicians 7× more likely to agree workflow is easy with Abridge. | [[US - User Satisfaction]], [[II - Individual Impact]] |
+| Note Completion Before Next Patient (POLR) | "I can complete the note before the next patient visit." Post-implementation: OR 4.95 [2.87-8.69], p<.001. 5× higher odds post-Abridge. | [[II - Individual Impact]] |
+| Decreased Documentation Burden | Post-survey: 77% agreed/strongly agreed Abridge decreased documentation burden. | [[II - Individual Impact]] |
+| Decreased After-Hours Documentation | Post-survey: 73% agreed/strongly agreed Abridge decreased time spent documenting outside clinical hours. | [[II - Individual Impact]] |
 | Reduced Burnout Risk | Post-survey: 67% agreed/strongly agreed Abridge reduced risk for burnout due to documentation. | [[US - User Satisfaction]] |
 | Increased Job Satisfaction | Post-survey: 64% agreed/strongly agreed Abridge increased satisfaction at work. | [[US - User Satisfaction]] |
-| Ability to Add Patient | Post-survey: 47% agreed/strongly agreed at least one more patient could be added to clinic sessions if needed. | [[NB - Net Benefits]] |
-| Baseline Documentation Burden | Pre-survey: 83% spent time documenting outside clinical hours; 75% felt at risk for burnout due to documentation. | [[NB - Net Benefits]], [[US - User Satisfaction]] |
+| Ability to Add Patient | Post-survey: 47% agreed/strongly agreed at least one more patient could be added to clinic sessions if needed. | [[II - Individual Impact]] |
+| Baseline Documentation Burden | Pre-survey: 83% spent time documenting outside clinical hours; 75% felt at risk for burnout due to documentation. | [[II - Individual Impact]], [[US - User Satisfaction]] |
 | Specialty as Moderator | No significant difference in post-survey responses by specialty type (primary care, medical subspecialty, surgical subspecialty). Benefit consistent across specialties. | (methodological) |
 | Days of Use as Moderator | No significant effect of number of days using Abridge on post-survey responses. Benefit seen quickly. | (methodological) |
 

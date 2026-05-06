@@ -39,7 +39,7 @@ Not explicitly stated. Research questions: (1) What methods are used to develop 
 | ASR accuracy | Accuracy of automatic speech recognition on clinical conversations (word error rate) | SQ |
 | NLP task performance | Entity extraction, classification, summarization accuracy on clinical transcripts | SQ, IQ |
 | Clinical validity/usability | Did any studies evaluate the tool with actual clinicians in clinical practice? | IQ, US |
-| Clinical utility | Did any studies assess patient or clinical outcomes in real-world use? | NB |
+| Clinical utility | Did any studies assess patient or clinical outcomes in real-world use? | [[OI - Organizational Impact]] |
 | Industry transparency | Whether commercial companies provided performance data when requested | SerQ |
 
 ---

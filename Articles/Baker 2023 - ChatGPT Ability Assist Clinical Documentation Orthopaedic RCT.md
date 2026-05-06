@@ -40,13 +40,13 @@ To investigate ChatGPT’s ability to assist with writing a history of present i
 
 | Measure | Description | D&M Dimension(s) |
 |---|---|---|
-| Documentation Time (seconds) | Dictation fastest (43s), ChatGPT intermediate (69s), typing slowest (97s). Dictation significantly faster than typing (p=0.001). ChatGPT not significantly different from either. | [[NB - Net Benefits]] |
+| Documentation Time (seconds) | Dictation fastest (43s), ChatGPT intermediate (69s), typing slowest (97s). Dictation significantly faster than typing (p=0.001). ChatGPT not significantly different from either. | [[II - Individual Impact]] |
 | Word Count | ChatGPT significantly longer (136 words) than dictation (90) and typing (68). p≤0.001 for both comparisons. | [[IQ - Information Quality]] |
 | PDQI-9 Score (0–45) | ChatGPT significantly higher than typing (p=0.001) and dictation (p=0.01). Faculty scored highest overall (34.2), then residents (32.1), students (31.8). | [[IQ - Information Quality]] |
 | Global Rating (1–5) | ChatGPT significantly higher than typing (p=0.008) and dictation (p=0.04). | [[IQ - Information Quality]] |
 | History Items Included | ChatGPT included significantly more history items (6 vs. 5 for both dictation and typing, p=0.03). | [[IQ - Information Quality]] |
 | Hallucination/Error Rate | ChatGPT included erroneous/fictitious history points in **36%** (4/11) documents. Hallucinations included adding physical exam findings and patient history details not in standardized script. | [[IQ - Information Quality]], [[SQ - System Quality]] |
-| Efficiency Score (PDQI-9/min) | Dictation 51.1, ChatGPT 34.9, typing 21.5. Dictation significantly better than typing (p≤0.001). No significant difference between dictation and ChatGPT (p=0.06). | [[NB - Net Benefits]] |
+| Efficiency Score (PDQI-9/min) | Dictation 51.1, ChatGPT 34.9, typing 21.5. Dictation significantly better than typing (p≤0.001). No significant difference between dictation and ChatGPT (p=0.06). | |
 | Inter-rater Reliability (ICC) | Poor agreement on PDQI-9 (ICC 0.1) and overall rating (ICC 0.19). | (methodological) |
 
 ---

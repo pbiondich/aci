@@ -42,7 +42,7 @@ Explicit: to compare quality of LLM-generated Ambient notes with physician-autho
 |---|---|---|
 | PDQI-9 Accuracy | Note is free of incorrect information. Gold 4.13 vs. Ambient 3.98 (−0.15, p=0.05). Gold significantly better. | [[IQ - Information Quality]] |
 | PDQI-9 Thoroughness | Note is complete and documents all issues of importance. Ambient 4.22 vs. Gold 3.80 (+0.43, p<0.001). Ambient significantly better — more complete. | [[IQ - Information Quality]] |
-| PDQI-9 Usefulness | Note is relevant and provides valuable information. No significant difference (4.05 vs. 4.03, p=0.80). | [[IQ - Information Quality]], [[NB - Net Benefits]] |
+| PDQI-9 Usefulness | Note is relevant and provides valuable information. No significant difference (4.05 vs. 4.03, p=0.80). | [[IQ - Information Quality]] |
 | PDQI-9 Organization | Note is well-formed and structured. Ambient 4.19 vs. Gold 4.01 (+0.18, p=0.03). Ambient significantly better organized. | [[IQ - Information Quality]] |
 | PDQI-9 Comprehensibility | Note is clear without ambiguity. No significant difference (4.26 vs. 4.19, p=0.38). | [[IQ - Information Quality]] |
 | PDQI-9 Succinctness | Note is brief and without redundancy. Gold 4.40 vs. Ambient 3.72 (−0.67, p<0.001). Gold vastly better — Ambient notes are verbose/redundant. Largest quality gap. | [[IQ - Information Quality]] |

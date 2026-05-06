@@ -1,6 +1,6 @@
 # CM-17 Patient Experience and Relationship Quality
 
-**D&M Dimension:** [[NB - Net Benefits]]
+**D&M Dimension:** [[OI - Organizational Impact]]
 
 ## Definition
 Patient-reported or validated assessment of the quality of the patient-physician interaction — including relationship quality, satisfaction with the visit, and experience of being heard. The most underdeveloped outcome domain in the corpus, measured primarily through validated instruments in only 1 paper.

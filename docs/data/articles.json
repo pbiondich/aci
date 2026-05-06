@@ -20,22 +20,22 @@
       {
         "measure": "Documentation time reduction",
         "description": "% reduction in median per-note documentation time among adopters; 72%",
-        "dimensions": "NB"
+        "dimensions": "II - Individual Impact"
       },
       {
         "measure": "Time savings per week",
         "description": "Calculated hours saved per clinician per week; 3.3 hours",
-        "dimensions": "NB"
+        "dimensions": "II - Individual Impact"
       },
       {
         "measure": "In-clinic documentation time",
         "description": "Phase 1 finding: 62% reduction in documentation time during clinic hours",
-        "dimensions": "NB"
+        "dimensions": "II - Individual Impact"
       },
       {
         "measure": "After-hours documentation time",
         "description": "Phase 1 finding: 76% reduction in after-hours documentation",
-        "dimensions": "NB"
+        "dimensions": "II - Individual Impact"
       },
       {
         "measure": "Physician satisfaction",
@@ -81,17 +81,17 @@
       {
         "measure": "Time in Notes",
         "description": "Time providers spend actively writing or editing notes within the EHR. Tracked via Epic metadata; assesses whether ambient AI reduces direct documentation effort.",
-        "dimensions": "NB - Net Benefits"
+        "dimensions": "II - Individual Impact"
       },
       {
         "measure": "Work Outside Work (WOW)",
         "description": "Time spent on EHR documentation outside scheduled work hours. A proxy for after-hours administrative burden and indicator of potential burnout risk reduction.",
-        "dimensions": "NB - Net Benefits, US - User Satisfaction"
+        "dimensions": "II - Individual Impact, US - User Satisfaction"
       },
       {
         "measure": "ICD-10 Coding Accuracy",
         "description": "Accuracy of diagnostic codes in AI-generated notes, audited using an internally developed LLM validated against certified professional coders (Pearson's r=0.97).",
-        "dimensions": "IQ - Information Quality, NB - Net Benefits"
+        "dimensions": "IQ - Information Quality, OI - Organizational Impact"
       },
       {
         "measure": "Provider Well-Being",
@@ -106,7 +106,7 @@
       {
         "measure": "Documentation Efficiency",
         "description": "Time from end of patient encounter to note completion and signature. Tracks whether ambient AI accelerates the documentation cycle relative to standard practice.",
-        "dimensions": "NB - Net Benefits"
+        "dimensions": "II - Individual Impact"
       },
       {
         "measure": "Provider Feedback / User Experience",
@@ -141,32 +141,32 @@
       {
         "measure": "Work Exhaustion / Interpersonal Disengagement (PFI)",
         "description": "Stanford PFI 10-item composite; 1–5 scale (higher=worse). Corresponds to burnout. Collected at baseline, 6, 12, 18, 24 weeks. Coprimary outcome.",
-        "dimensions": "US, NB"
+        "dimensions": "US, II - Individual Impact"
       },
       {
         "measure": "Professional Fulfillment (PFI)",
         "description": "Stanford PFI 6-item subscale; 1–5 scale (higher=better). Coprimary outcome.",
-        "dimensions": "US, NB"
+        "dimensions": "US, II - Individual Impact"
       },
       {
         "measure": "Time on notes (EHR audit log)",
         "description": "Hours/day spent on notes, normalized to 8-hour workday; from EHR audit-log data.",
-        "dimensions": "NB"
+        "dimensions": "II - Individual Impact"
       },
       {
         "measure": "Work Outside Work (WoW)",
         "description": "Hours/day documenting outside scheduled hours, normalized to 8-hour workday; EHR audit-log.",
-        "dimensions": "NB"
+        "dimensions": "II - Individual Impact"
       },
       {
         "measure": "Same-day / pre-next-visit closure",
         "description": "Proportion of encounters closed same day or before next patient visit; EHR audit-log.",
-        "dimensions": "NB"
+        "dimensions": "II - Individual Impact"
       },
       {
         "measure": "Diagnostic billing compliance",
         "description": "ICD-10 code alignment with documentation; reviewed by certified coders using standardized rubric. Partial credit for insufficient specificity; zero for billing-validity errors.",
-        "dimensions": "IQ, NB"
+        "dimensions": "IQ, OI - Organizational Impact"
       },
       {
         "measure": "PDSQI-9 note quality",
@@ -223,22 +223,22 @@
       {
         "measure": "Documentation Workflow Ease (POLR)",
         "description": "Concordant question: \"I find the documentation workflow easy.\" Post-implementation: OR 6.91 [3.90-12.56], p<.001. Clinicians 7× more likely to agree workflow is easy with Abridge.",
-        "dimensions": "US - User Satisfaction, NB - Net Benefits"
+        "dimensions": "US - User Satisfaction, II - Individual Impact"
       },
       {
         "measure": "Note Completion Before Next Patient (POLR)",
         "description": "\"I can complete the note before the next patient visit.\" Post-implementation: OR 4.95 [2.87-8.69], p<.001. 5× higher odds post-Abridge.",
-        "dimensions": "NB - Net Benefits"
+        "dimensions": "II - Individual Impact"
       },
       {
         "measure": "Decreased Documentation Burden",
         "description": "Post-survey: 77% agreed/strongly agreed Abridge decreased documentation burden.",
-        "dimensions": "NB - Net Benefits"
+        "dimensions": "II - Individual Impact"
       },
       {
         "measure": "Decreased After-Hours Documentation",
         "description": "Post-survey: 73% agreed/strongly agreed Abridge decreased time spent documenting outside clinical hours.",
-        "dimensions": "NB - Net Benefits"
+        "dimensions": "II - Individual Impact"
       },
       {
         "measure": "Reduced Burnout Risk",
@@ -253,12 +253,12 @@
       {
         "measure": "Ability to Add Patient",
         "description": "Post-survey: 47% agreed/strongly agreed at least one more patient could be added to clinic sessions if needed.",
-        "dimensions": "NB - Net Benefits"
+        "dimensions": "II - Individual Impact"
       },
       {
         "measure": "Baseline Documentation Burden",
         "description": "Pre-survey: 83% spent time documenting outside clinical hours; 75% felt at risk for burnout due to documentation.",
-        "dimensions": "NB - Net Benefits, US - User Satisfaction"
+        "dimensions": "II - Individual Impact, US - User Satisfaction"
       },
       {
         "measure": "Specialty as Moderator",
@@ -318,7 +318,7 @@
       {
         "measure": "AHRQ Harm Score (moderate-to-severe errors)",
         "description": "Mean 3.0 errors per case (range 0–21) had potential for moderate-to-severe harm (AHRQ ≥2). Platform E significantly worse (weighted harm score higher than A–D, p<.0082 for all). Platforms A–D not significantly different from each other.",
-        "dimensions": "IQ - Information Quality, NB - Net Benefits"
+        "dimensions": "IQ - Information Quality, OI - Organizational Impact"
       },
       {
         "measure": "Cross-Platform Consistency",
@@ -413,7 +413,7 @@
       {
         "measure": "Documentation Time (seconds)",
         "description": "Dictation fastest (43s), ChatGPT intermediate (69s), typing slowest (97s). Dictation significantly faster than typing (p=0.001). ChatGPT not significantly different from either.",
-        "dimensions": "NB - Net Benefits"
+        "dimensions": "II - Individual Impact"
       },
       {
         "measure": "Word Count",
@@ -443,7 +443,7 @@
       {
         "measure": "Efficiency Score (PDQI-9/min)",
         "description": "Dictation 51.1, ChatGPT 34.9, typing 21.5. Dictation significantly better than typing (p≤0.001). No significant difference between dictation and ChatGPT (p=0.06).",
-        "dimensions": "NB - Net Benefits"
+        "dimensions": ""
       },
       {
         "measure": "Inter-rater Reliability (ICC)",
@@ -483,7 +483,7 @@
       {
         "measure": "Consultation Duration",
         "description": "AI consultations 26.3% shorter on average without impacting patient interaction time.",
-        "dimensions": "NB - Net Benefits"
+        "dimensions": "OI - Organizational Impact"
       },
       {
         "measure": "Clinician Experience",
@@ -528,27 +528,27 @@
       {
         "measure": "Notetaking Time Reduction (%)",
         "description": "% reduction in self-reported time spent on notetaking",
-        "dimensions": "NB (CM-04)"
+        "dimensions": "II - Individual Impact (CM-04)"
       },
       {
         "measure": "Documentation Burden Reduction (%)",
         "description": "% reduction in overall documentation burden",
-        "dimensions": "NB (CM-04)"
+        "dimensions": "II - Individual Impact (CM-04)"
       },
       {
         "measure": "Patient Interaction Improvement",
         "description": "% saying Suki improved patient interactions \"to a great extent\"",
-        "dimensions": "NB (CM-18)"
+        "dimensions": "OI - Organizational Impact (CM-18)"
       },
       {
         "measure": "Increased Patient Care Time During Visit",
         "description": "% reporting ability to increase face-to-face patient care time",
-        "dimensions": "NB (CM-18)"
+        "dimensions": "OI - Organizational Impact (CM-18)"
       },
       {
         "measure": "After-Hours Time Reduction",
         "description": "% spending less time documenting after hours",
-        "dimensions": "NB (CM-05)"
+        "dimensions": "II - Individual Impact (CM-05)"
       },
       {
         "measure": "Net Promoter Score",
@@ -733,12 +733,12 @@
       {
         "measure": "Editing Time (seconds)",
         "description": "Time for physician to edit AI-generated draft note to final signed note. ADS Product A took significantly longer than Product B (+80.6 seconds, p<.001). Physician 1 faster than Physician 2. Order of use did not affect time.",
-        "dimensions": "NB - Net Benefits"
+        "dimensions": "II - Individual Impact"
       },
       {
         "measure": "Perceived Editing Amount (5-point Likert)",
         "description": "Physician rating of how much editing was required (1=none, 5=extreme). Mean 2.89 (moderate). No significant difference between products or order of use.",
-        "dimensions": "US - User Satisfaction, NB - Net Benefits"
+        "dimensions": "US - User Satisfaction, II - Individual Impact"
       },
       {
         "measure": "Perceived Effort (5-point Likert)",
@@ -788,42 +788,42 @@
       {
         "measure": "Burnout frequency",
         "description": "Structured survey: % reporting near-daily burnout pre vs. post; 36-ppt reduction (n=47)",
-        "dimensions": "US, NB"
+        "dimensions": "US, II - Individual Impact"
       },
       {
         "measure": "Active documentation time",
         "description": "Epic UAL: time on note-taking + patient instructions per 8 hrs scheduled; normalized",
-        "dimensions": "NB"
+        "dimensions": "II - Individual Impact"
       },
       {
         "measure": "After-hours documentation time",
         "description": "Epic UAL: time documenting after hours; 39% decrease",
-        "dimensions": "NB"
+        "dimensions": "II - Individual Impact"
       },
       {
         "measure": "Time after appointment date",
         "description": "Epic UAL: time spent documenting after appointment date; 17% decrease",
-        "dimensions": "NB"
+        "dimensions": "II - Individual Impact"
       },
       {
         "measure": "HCC capture per encounter",
         "description": "ICD-10 → HCC v28 mapping; avg HCCs/encounter pre vs. post-Ambience; normalized",
-        "dimensions": "IQ, NB"
+        "dimensions": "IQ, OI - Organizational Impact"
       },
       {
         "measure": "E/M coding level",
         "description": "CPT E/M levels 1–5; provider-level weighted average; normalized for case mix",
-        "dimensions": "IQ, NB"
+        "dimensions": "IQ, OI - Organizational Impact"
       },
       {
         "measure": "E/M visit volume",
         "description": "Daily E/M volume change post-Ambience",
-        "dimensions": "NB"
+        "dimensions": "OI - Organizational Impact"
       },
       {
         "measure": "Chart closure time",
         "description": "Epic UAL: time from appointment to chart closed; 41% reduction",
-        "dimensions": "NB"
+        "dimensions": "II - Individual Impact"
       },
       {
         "measure": "Employee satisfaction",
@@ -833,7 +833,7 @@
       {
         "measure": "Financial viability (combined)",
         "description": "HCC capture + E/M improvement combined; $13,049/clinician annually",
-        "dimensions": "NB"
+        "dimensions": "OI - Organizational Impact"
       }
     ],
     "keyFindings": [],
@@ -858,12 +858,12 @@
       {
         "measure": "Progress Note Time (seconds)",
         "description": "AI: median 27s (IQR 18–39.75) vs. manual: 128s (IQR 112.3–168.8). Reduction 78.9% (p<.0001, r=0.87). By complexity: simple −82s, moderate −113s, complex −158s. 96.6% of AI notes reviewed in <60s.",
-        "dimensions": "NB - Net Benefits"
+        "dimensions": "II - Individual Impact"
       },
       {
         "measure": "Discharge Summary Time (seconds)",
         "description": "AI: median 113.9s (IQR 64.4–143.5) vs. manual: 458.7s (IQR 367.9–663.5). Median difference 356.6s (p<.0001, r=0.88). By complexity: simple −5min, moderate −5.5min, complex −12min.",
-        "dimensions": "NB - Net Benefits"
+        "dimensions": "II - Individual Impact"
       },
       {
         "measure": "Progress Note PDQI-9 Overall",
@@ -938,17 +938,17 @@
       {
         "measure": "Quality of Life / Documentation Time (qualitative)",
         "description": "Most interviewees (n=10) reported or expected improvement in quality of life through reduced documentation time. \"Out of the week now, it may be one day that I have to come home and finish notes…at most an hour and a half.\"",
-        "dimensions": "NB - Net Benefits"
+        "dimensions": "II - Individual Impact"
       },
       {
         "measure": "Cognitive Burden / Offloading (qualitative)",
         "description": "DAXC significantly reduced anxiety about forgetting clinical details. \"DAX helps a lot with cognitive offloading…you're not going to lose information like you might have before.\"",
-        "dimensions": "US - User Satisfaction, NB - Net Benefits"
+        "dimensions": "US - User Satisfaction, II - Individual Impact"
       },
       {
         "measure": "Patient Engagement / Eye Contact (qualitative)",
         "description": "Physicians reported being more present, more attentive, better eye contact. \"I'm really sort of knee to knee with them…definitely much more present.\"",
-        "dimensions": "NB - Net Benefits"
+        "dimensions": "OI - Organizational Impact"
       },
       {
         "measure": "Note Verbosity / Quality Concerns (qualitative)",
@@ -968,7 +968,7 @@
       {
         "measure": "Fear of Increased Patient Volume (qualitative)",
         "description": "7/12 physicians worried DAXC efficiency would be used to mandate seeing more patients. \"I do worry that's what this long game is.\" Novel concern not prominently captured in other papers.",
-        "dimensions": "US - User Satisfaction, NB - Net Benefits"
+        "dimensions": "US - User Satisfaction, OI - Organizational Impact"
       },
       {
         "measure": "Source: Journal of General Internal Medicine 2024",
@@ -998,17 +998,17 @@
       {
         "measure": "Time in Notes per Day (min)",
         "description": "Epic Signal. 54.6→42.2 min (p=.003). Significant reduction.",
-        "dimensions": "NB - Net Benefits"
+        "dimensions": "II - Individual Impact"
       },
       {
         "measure": "Time in Notes per Appointment (min)",
         "description": "Epic Signal. 6.5→5.1 min (p<.001). Significant reduction.",
-        "dimensions": "NB - Net Benefits"
+        "dimensions": "II - Individual Impact"
       },
       {
         "measure": "After-Hours EHR Time (min/day)",
         "description": "Epic Signal. 35.5→28.1 min (p=.005). Significant reduction.",
-        "dimensions": "NB - Net Benefits"
+        "dimensions": "II - Individual Impact"
       },
       {
         "measure": "Note Length (characters)",
@@ -1018,7 +1018,7 @@
       {
         "measure": "Provider Note Contribution (%)",
         "description": "Epic Signal. 96.7%→51.7% (p<.001). AI drafts substantially displacing manual typing.",
-        "dimensions": "U - Use, NB - Net Benefits"
+        "dimensions": "U - Use, II - Individual Impact"
       },
       {
         "measure": "Clinician Satisfaction",
@@ -1028,12 +1028,12 @@
       {
         "measure": "Patient Experience",
         "description": "Patients reported positive perceptions of encounters during DAX use.",
-        "dimensions": "NB - Net Benefits"
+        "dimensions": "OI - Organizational Impact"
       },
       {
         "measure": "Cost Comparison",
         "description": "Monthly software cost $1850 vs. scribe $3050 (including recruiting/training). Potential savings $13,400–$14,400 per scribe replacement.",
-        "dimensions": "NB - Net Benefits"
+        "dimensions": "OI - Organizational Impact"
       },
       {
         "measure": "Source: JAAD International 2024",
@@ -1063,12 +1063,12 @@
       {
         "measure": "RDoC Symptom Documentation Level (6 domains)",
         "description": "Estimated levels of Research Domain Criteria neuropsychiatric symptomatology extracted by GPT-4o from clinical notes. All 6 domains significantly higher in ambient-scribed notes (p<.001 for all). More symptoms documented.",
-        "dimensions": "IQ - Information Quality, NB - Net Benefits"
+        "dimensions": "IQ - Information Quality"
       },
       {
         "measure": "Likelihood of Psychiatric Intervention",
         "description": "Logistic regression outcome: whether visit resulted in referral, new psychiatric diagnosis, or new antidepressant prescription. Ambient scribe: aOR 0.83 [0.72–0.95], p=.005 — significantly LESS likely. Human scribe: aOR 1.01 [0.87–1.17], p=NS.",
-        "dimensions": "NB - Net Benefits"
+        "dimensions": "OI - Organizational Impact"
       },
       {
         "measure": "PHQ-9 Documentation",
@@ -1113,22 +1113,22 @@
       {
         "measure": "Time in Notes per Appointment (min)",
         "description": "Epic Signal. 10.3→8.2 min (−1.6 min, −15.2%, p<.001).",
-        "dimensions": "NB - Net Benefits"
+        "dimensions": "II - Individual Impact"
       },
       {
         "measure": "Same-Day Encounter Closure (%)",
         "description": "Epic Signal. 66.2%→72.4% (+6.0 percentage points, +9.1%, p<.001). **Significant improvement** — one of few papers showing this.",
-        "dimensions": "NB - Net Benefits"
+        "dimensions": "II - Individual Impact"
       },
       {
         "measure": "After-Hours Documentation (\"Pajama Time\", min/scheduled day)",
         "description": "Epic Signal. 50.6→35.4 min (−8.6 min, −16.9%, p=.02). **Significant after-hours reduction** — rare objective finding; contrasts with null results in Pearlman 2025 and others.",
-        "dimensions": "NB - Net Benefits"
+        "dimensions": "II - Individual Impact"
       },
       {
         "measure": "Portion of Notes Manually Typed (%)",
         "description": "Epic Signal. 11.2%→7.9% (−20.7%, p<.001). AI-generated drafts substantially displacing manual typing.",
-        "dimensions": "NB - Net Benefits, U - Use"
+        "dimensions": "II - Individual Impact, U - Use"
       },
       {
         "measure": "Total Note Length (characters/week)",
@@ -1143,7 +1143,7 @@
       {
         "measure": "\"Documentation prevents me from being fully engaged and present\"",
         "description": "Survey. 5.41→2.05 (−3.36, p<.001). 31 new disagrees.",
-        "dimensions": "US - User Satisfaction, NB - Net Benefits"
+        "dimensions": "US - User Satisfaction, II - Individual Impact"
       },
       {
         "measure": "\"I feel mentally overloaded by documentation and patients simultaneously\"",
@@ -1153,7 +1153,7 @@
       {
         "measure": "\"Documentation needs impact my ability to talk face-to-face with patients\"",
         "description": "Survey. 5.61→2.19 (−3.42, p<.001). 30 new disagrees.",
-        "dimensions": "US - User Satisfaction, NB - Net Benefits"
+        "dimensions": "US - User Satisfaction, II - Individual Impact"
       },
       {
         "measure": "\"My documentation burden prevents better work-life balance\"",
@@ -1163,7 +1163,7 @@
       {
         "measure": "\"I feel able to see more patients on a scheduled day\"",
         "description": "Survey. 3.26→3.11 (−0.15, p=.93). **NOT significant.** Perception of additional patient capacity did NOT change.",
-        "dimensions": "NB - Net Benefits"
+        "dimensions": "II - Individual Impact"
       },
       {
         "measure": "Qualitative: Note Quality Concerns",
@@ -1198,27 +1198,27 @@
       {
         "measure": "Time Spent on Notes",
         "description": "AHP-reported time writing patient notes. Significant reduction baseline→6wks and baseline→3months; no further change 6wks→3months. Improvement plateaus early.",
-        "dimensions": "NB - Net Benefits"
+        "dimensions": "II - Individual Impact"
       },
       {
         "measure": "Time Spent on Letters",
         "description": "AHP-reported time writing referral letters. Same pattern as notes — significant reduction early, plateau by 3 months.",
-        "dimensions": "NB - Net Benefits"
+        "dimensions": "II - Individual Impact"
       },
       {
         "measure": "Out-of-Hours Documentation",
         "description": "How often AHPs completed notes outside of clinical hours. Significant reduction at both 6 weeks and 3 months vs. baseline.",
-        "dimensions": "NB - Net Benefits, US - User Satisfaction"
+        "dimensions": "II - Individual Impact, US - User Satisfaction"
       },
       {
         "measure": "Documentation Burden (Likert)",
         "description": "Perception that keeping accurate and comprehensive documentation is a burden. Significant reduction at 3 months vs. baseline (Cohen's d = 0.22, 95% CI 0.03–0.41).",
-        "dimensions": "US - User Satisfaction, NB - Net Benefits"
+        "dimensions": "US - User Satisfaction, II - Individual Impact"
       },
       {
         "measure": "Productivity (%)",
         "description": "Clinical hours utilization (completed consultations / 0.5hr worked), compared to same 4 weeks in prior year. Average increase: **5.8%**. Objective measure from practice management software.",
-        "dimensions": "NB - Net Benefits"
+        "dimensions": "OI - Organizational Impact"
       },
       {
         "measure": "Recommendation Intention",
@@ -1233,17 +1233,17 @@
       {
         "measure": "Therapeutic Alliance (Qualitative)",
         "description": "Semi-structured interviews: AI scribe had positive impact on therapeutic alliance — AHPs could focus more on patients. Consistent theme across 15 AHPs and 14 patients.",
-        "dimensions": "NB - Net Benefits, US - User Satisfaction"
+        "dimensions": "OI - Organizational Impact, US - User Satisfaction"
       },
       {
         "measure": "Patient Opt-Out Rate",
         "description": "74 patients declined consent over 3 months; estimated 64,099 total appointments during period = extremely low opt-out rate (~0.1%).",
-        "dimensions": "U - Use, NB - Net Benefits"
+        "dimensions": "U - Use, OI - Organizational Impact"
       },
       {
         "measure": "Patient Trust",
         "description": "Patients comfortable consenting to AI scribe; trust in clinician extended to trust in the technology. Some noted other patients might need more data/privacy information.",
-        "dimensions": "NB - Net Benefits"
+        "dimensions": "OI - Organizational Impact"
       },
       {
         "measure": "AI Scribe Utilization by Task",
@@ -1298,7 +1298,7 @@
       {
         "measure": "Ethical/Legal Concerns",
         "description": "Privacy, data storage, liability for AI-generated errors, consent for recording. Major barriers identified.",
-        "dimensions": "SerQ - Service Quality, NB - Net Benefits"
+        "dimensions": "SerQ - Service Quality, OI - Organizational Impact"
       },
       {
         "measure": "Model Types",
@@ -1388,12 +1388,12 @@
       {
         "measure": "Documentation Meets Requirements",
         "description": "Pre 41.9% positive → post 71% positive (p=0.034).",
-        "dimensions": "US - User Satisfaction, NB - Net Benefits"
+        "dimensions": "US - User Satisfaction, II - Individual Impact"
       },
       {
         "measure": "Documentation Ease",
         "description": "Pre 32.3% positive → post 48.4% positive (p=0.023).",
-        "dimensions": "US - User Satisfaction, NB - Net Benefits"
+        "dimensions": "US - User Satisfaction, II - Individual Impact"
       },
       {
         "measure": "Documentation Impact on Well-Being",
@@ -1403,7 +1403,7 @@
       {
         "measure": "Documentation Impact on Patient Experience",
         "description": "Pre 35.5% negative → post 6.5% negative (p=0.005). Largest improvement.",
-        "dimensions": "NB - Net Benefits"
+        "dimensions": "OI - Organizational Impact"
       },
       {
         "measure": "Recommendation Likelihood",
@@ -1413,7 +1413,7 @@
       {
         "measure": "Productivity Impact",
         "description": "Post-survey: 58.1% agreed it increases productivity.",
-        "dimensions": "NB - Net Benefits"
+        "dimensions": "II - Individual Impact"
       },
       {
         "measure": "Intention to Use",
@@ -1503,22 +1503,22 @@
       {
         "measure": "Average Time per Note (min)",
         "description": "Mean time spent writing a single note, derived from Epic Signal. Decreased from 6.58 min (baseline) to 5.45 min at 3-month follow-up (T=-6.61, p<0.001). Sustained across all three months.",
-        "dimensions": "NB - Net Benefits"
+        "dimensions": "II - Individual Impact"
       },
       {
         "measure": "Average Documentation Time per Provider per Day (min)",
         "description": "Total daily time spent on note-writing per physician. Decreased from 63.99 min to 53.33 min at 3-month follow-up (T=-3.98, p<0.001). ~10.6 min/day saved.",
-        "dimensions": "NB - Net Benefits"
+        "dimensions": "II - Individual Impact"
       },
       {
         "measure": "Average Characters per Note",
         "description": "Character count of individual progress notes. Increased by ~559 chars baseline → 3-month (T=2.64, p<0.05). Authors flag potential template inflation.",
-        "dimensions": "IQ - Information Quality, NB - Net Benefits"
+        "dimensions": "IQ - Information Quality, II - Individual Impact"
       },
       {
         "measure": "Average Characters per Appointment",
         "description": "Total character count across all note types generated per encounter. Increased by ~1,021 chars (8,232 → 9,253, T=5.23, p<0.001).",
-        "dimensions": "IQ - Information Quality, NB - Net Benefits"
+        "dimensions": "IQ - Information Quality, II - Individual Impact"
       },
       {
         "measure": "Adoption / Inclusion Rate",
@@ -1553,67 +1553,67 @@
       {
         "measure": "Average Time per Note (min)",
         "description": "Epic Signal. 6.37→5.58 min (p<.001). ~12% reduction; ~14% relative decrease overall. Immediate improvement then stable.",
-        "dimensions": "NB - Net Benefits"
+        "dimensions": "II - Individual Impact"
       },
       {
         "measure": "Total Daily Documentation Time (min/day)",
         "description": "Epic Signal. 55.97→49.13 min (p<.001). ~6.8 min/day saved.",
-        "dimensions": "NB - Net Benefits"
+        "dimensions": "II - Individual Impact"
       },
       {
         "measure": "Time per Appointment (min)",
         "description": "Epic Signal. 9.91→8.82 min (p<.001). Includes all note types within encounter.",
-        "dimensions": "NB - Net Benefits"
+        "dimensions": "II - Individual Impact"
       },
       {
         "measure": "Note Length (characters)",
         "description": "Epic Signal. 7522→7862 chars (p<.001). Modest but significant increase — consistent with Guo 2025 and other corpus papers.",
-        "dimensions": "IQ - Information Quality, NB - Net Benefits"
+        "dimensions": "IQ - Information Quality"
       },
       {
         "measure": "Same-Day Encounter Closure Rate",
         "description": "Epic Signal. **No significant change.** Only analyzed for providers with ≥40 notes/week; limited to 12-month dataset. Consistent null finding.",
-        "dimensions": "NB - Net Benefits"
+        "dimensions": "II - Individual Impact"
       },
       {
         "measure": "Undivided Attention to Patients (survey)",
         "description": "KLAS survey: Pre 2.70 → Post 3.45 (p<.001). Physicians more focused on patients.",
-        "dimensions": "NB - Net Benefits, US - User Satisfaction"
+        "dimensions": "II - Individual Impact, US - User Satisfaction"
       },
       {
         "measure": "Patient-Centered Care Delivery (survey)",
         "description": "Pre 3.68 → Post 4.40 (p<.001).",
-        "dimensions": "NB - Net Benefits"
+        "dimensions": "OI - Organizational Impact"
       },
       {
         "measure": "High-Quality Care Perception (survey)",
         "description": "Pre 3.98 → Post 4.54 (p<.001).",
-        "dimensions": "NB - Net Benefits"
+        "dimensions": "II - Individual Impact"
       },
       {
         "measure": "Patient Safety (survey)",
         "description": "Pre 3.72 → Post 4.03 (p=.027).",
-        "dimensions": "NB - Net Benefits"
+        "dimensions": "OI - Organizational Impact"
       },
       {
         "measure": "Clinical Practice Effectiveness (survey)",
         "description": "Pre 3.66 → Post 4.28 (p<.001).",
-        "dimensions": "NB - Net Benefits, US - User Satisfaction"
+        "dimensions": "II - Individual Impact, US - User Satisfaction"
       },
       {
         "measure": "Overall Efficiency (survey)",
         "description": "Pre 3.42 → Post 4.31 (p<.001). Large perceptual shift.",
-        "dimensions": "NB - Net Benefits"
+        "dimensions": "II - Individual Impact"
       },
       {
         "measure": "Cognitive Demand (survey)",
         "description": "Reduced: p=.031.",
-        "dimensions": "US - User Satisfaction, NB - Net Benefits"
+        "dimensions": "US - User Satisfaction, II - Individual Impact"
       },
       {
         "measure": "Documentation Effort (survey)",
         "description": "Reduced: p=.014.",
-        "dimensions": "US - User Satisfaction, NB - Net Benefits"
+        "dimensions": "US - User Satisfaction, II - Individual Impact"
       },
       {
         "measure": "Primary vs. Specialty Care (DiD)",
@@ -1628,7 +1628,7 @@
       {
         "measure": "Chart Completion Timing (survey)",
         "description": "% of charts completed during or right after visits. 53.6%→55.8%, p=.429 — NOT significant. Consistent with objective same-day closure null finding.",
-        "dimensions": "NB - Net Benefits"
+        "dimensions": "II - Individual Impact"
       },
       {
         "measure": "Specialty-Specific Workflow Support (survey)",
@@ -1683,47 +1683,47 @@
       {
         "measure": "Patient Safety",
         "description": "No patient safety events reported in safety event tracking system related to DAX.",
-        "dimensions": "NB - Net Benefits"
+        "dimensions": "OI - Organizational Impact"
       },
       {
         "measure": "Patient LTR Score",
         "description": "Monthly LTR percentages from Press Ganey patient surveys. No statistical significance detected between baseline and conclusion for DAX group.",
-        "dimensions": "NB - Net Benefits"
+        "dimensions": "OI - Organizational Impact"
       },
       {
         "measure": "Productivity (wRVU)",
         "description": "Work relative value units. Statistically significant increase in study group (p<.001). Small absolute change of no practical significance.",
-        "dimensions": "NB - Net Benefits"
+        "dimensions": "OI - Organizational Impact"
       },
       {
         "measure": "VBC-Attributed Panel Size",
         "description": "Risk lives for VBC primary care providers. No significant difference between baseline and conclusion (p=.17).",
-        "dimensions": "NB - Net Benefits"
+        "dimensions": "OI - Organizational Impact"
       },
       {
         "measure": "After-Hours EHR Time",
         "description": "Statistically significant worsening (p<.05) — small amount (2.6% more time after-hours than baseline).",
-        "dimensions": "NB - Net Benefits"
+        "dimensions": "II - Individual Impact"
       },
       {
         "measure": "Documentation Time per Patient",
         "description": "Significant decrease for DAX participants only (p<.001).",
-        "dimensions": "NB - Net Benefits"
+        "dimensions": "II - Individual Impact"
       },
       {
         "measure": "24-Hour Documentation Deficiency Rate",
         "description": "Statistically significant improvement in both groups (p<.001). No significant interaction or effect of DAX participation (p=.322).",
-        "dimensions": "NB - Net Benefits"
+        "dimensions": "II - Individual Impact"
       },
       {
         "measure": "24-Hour CPT Submission Deficiency Rate",
         "description": "Statistically significant worsening in both groups. No significant interaction or effect of DAX participation (p=.57).",
-        "dimensions": "NB - Net Benefits"
+        "dimensions": "OI - Organizational Impact"
       },
       {
         "measure": "Patient Opt-Out Rate",
         "description": "5 patients opted out of  total DAX encounters (0.014%). Very low opt-out rate.",
-        "dimensions": "U - Use, NB - Net Benefits"
+        "dimensions": "U - Use, OI - Organizational Impact"
       },
       {
         "measure": "Source: JAMIA 2024",
@@ -1753,22 +1753,22 @@
       {
         "measure": "RVUs per encounter",
         "description": "Relative value units billed per individual encounter; measure of financial productivity",
-        "dimensions": "NB"
+        "dimensions": "OI - Organizational Impact"
       },
       {
         "measure": "RVUs per physician per week",
         "description": "Total RVUs per week, controlling for encounter type, payer, complexity",
-        "dimensions": "NB"
+        "dimensions": "OI - Organizational Impact"
       },
       {
         "measure": "Encounters per week",
         "description": "Ambulatory visit volume per physician per week",
-        "dimensions": "NB"
+        "dimensions": "OI - Organizational Impact"
       },
       {
         "measure": "Claim denial rate",
         "description": "Proportion of encounters with a payer denial; proxy for coding quality",
-        "dimensions": "NB, IQ"
+        "dimensions": "OI - Organizational Impact, IQ"
       },
       {
         "measure": "Adoption status",
@@ -1807,12 +1807,12 @@
       {
         "measure": "Self-Reported Documentation Time",
         "description": "Across included studies: decreased with scribe use. However self-report ≠ objective. Note length increased simultaneously.",
-        "dimensions": "NB - Net Benefits"
+        "dimensions": ""
       },
       {
         "measure": "Note Length",
         "description": "Increased with scribe use across included studies — consistent with other corpus findings.",
-        "dimensions": "IQ - Information Quality, NB - Net Benefits"
+        "dimensions": "IQ - Information Quality"
       },
       {
         "measure": "Physician Burnout (validated scales)",
@@ -1827,7 +1827,7 @@
       {
         "measure": "Physician Productivity (billing metrics)",
         "description": "**Unchanged** — wRVUs and similar billing productivity measures did not change. Consistent with Shuaib 2021 per-patient wRVU finding.",
-        "dimensions": "NB - Net Benefits"
+        "dimensions": "OI - Organizational Impact"
       },
       {
         "measure": "QUEST Framework Evaluation",
@@ -1867,7 +1867,7 @@
       {
         "measure": "Documentation Time per Case (seconds)",
         "description": "AVT: mean 52.01s (SD 18.34) vs. manual: 368.32s (SD 128.70). 85.8% reduction. Saving of 5.27 min/case (p<0.001).",
-        "dimensions": "NB - Net Benefits"
+        "dimensions": "II - Individual Impact"
       },
       {
         "measure": "Usability Rating (1–10)",
@@ -1882,17 +1882,17 @@
       {
         "measure": "Patient Satisfaction",
         "description": "90% of patients reported enhanced consultation experience. 19/20 felt AVT enhanced clinician attentiveness and consultation flow. 18/20 preferred future use.",
-        "dimensions": "NB - Net Benefits"
+        "dimensions": "OI - Organizational Impact"
       },
       {
         "measure": "Manual Documentation Time per Consultation",
         "description": "Most clinicians (17/20) reported 0–30 min per consultation. Contrast with AVT's 52 seconds average.",
-        "dimensions": "NB - Net Benefits"
+        "dimensions": "II - Individual Impact"
       },
       {
         "measure": "Out-of-Hours Documentation",
         "description": "10 clinicians spent additional 0–30 min daily outside regular hours on documentation.",
-        "dimensions": "NB - Net Benefits"
+        "dimensions": "II - Individual Impact"
       },
       {
         "measure": "Accuracy Confidence (manual notes)",
@@ -1907,7 +1907,7 @@
       {
         "measure": "Time Searching for Information",
         "description": "Most clinicians (10/20) spent 31–60 min per day searching for missing information.",
-        "dimensions": "NB - Net Benefits"
+        "dimensions": "II - Individual Impact"
       },
       {
         "measure": "Source: Acute Medicine 2025",
@@ -1994,17 +1994,17 @@
       {
         "measure": "Decreased EHR Time at Home",
         "description": "Proportion reporting improvement. Intervention 47.1% vs. control 14.5% (p<.001). Absolute difference: +32.6 percentage points.",
-        "dimensions": "NB - Net Benefits"
+        "dimensions": "II - Individual Impact"
       },
       {
         "measure": "Decreased Weekly EHR Time Outside Work Hours",
         "description": "Proportion reporting improvement. Intervention 44.7% vs. control 20.0% (p=.003).",
-        "dimensions": "NB - Net Benefits"
+        "dimensions": "II - Individual Impact"
       },
       {
         "measure": "Decreased Post-Visit Documentation Time",
         "description": "Proportion reporting improvement. Intervention 43.5% vs. control 18.2% (p=.002).",
-        "dimensions": "NB - Net Benefits"
+        "dimensions": "II - Individual Impact"
       },
       {
         "measure": "Less EHR Frustration",
@@ -2044,7 +2044,7 @@
       {
         "measure": "Time-in-Note (primary outcome, % change)",
         "description": "Log-transformed time per note from EHR telemetry. Nabla: −9.5% vs control (p=.02), −7.8% vs DAX (p=.05). DAX: −1.7% vs control (p=.66, NS). Dose-response expected but not reported by use quartile here.",
-        "dimensions": "NB - Net Benefits"
+        "dimensions": "II - Individual Impact"
       },
       {
         "measure": "Scribe Utilization Rate",
@@ -2074,7 +2074,7 @@
       {
         "measure": "Adverse Events",
         "description": "One Grade 1 (mild) adverse event reported across entire study period. No serious events.",
-        "dimensions": "IQ - Information Quality, NB - Net Benefits"
+        "dimensions": "IQ - Information Quality, OI - Organizational Impact"
       },
       {
         "measure": "Source: medRxiv preprint July 2025",
@@ -2114,22 +2114,22 @@
       {
         "measure": "Time per Note (min)",
         "description": "Median change −0.57 min (IQR −1.3 to −0.13); baseline 4.86 min → pilot 3.64 min. T=−5.19, p<.001. Statistically significant but modest absolute reduction (~12%).",
-        "dimensions": "NB - Net Benefits"
+        "dimensions": "II - Individual Impact"
       },
       {
         "measure": "Daily Documentation Time (min/day)",
         "description": "Median change −6.89 min/day (IQR −22.37 to −0.65). T=−4.48, p<.001.",
-        "dimensions": "NB - Net Benefits"
+        "dimensions": "II - Individual Impact"
       },
       {
         "measure": "After-Hours EHR Time (min/day)",
         "description": "Median change −5.17 min/day (IQR −21.32 to 3.82). T=−2.65, p=.01. **Significant after-hours reduction** — contrasts with null findings in Pearlman 2025 and Stults 2025. Note: not normalized to encounter volume.",
-        "dimensions": "NB - Net Benefits"
+        "dimensions": "II - Individual Impact"
       },
       {
         "measure": "Total EHR Time (min/day)",
         "description": "Median change −19.95 min/day (IQR −39.34 to −3.64). T=−5.85, p<.001. Largest absolute time saving in the corpus. Note: same caveat about non-normalization to encounter volume.",
-        "dimensions": "NB - Net Benefits"
+        "dimensions": "II - Individual Impact"
       },
       {
         "measure": "License Relinquishment",
@@ -2164,7 +2164,7 @@
       {
         "measure": "Post-Edit Time (minutes)",
         "description": "Time to correct an AI-generated note to factual accuracy. Key efficiency metric for real-world scribe use. Prior work (Moramarco 2021) showed post-editing faster but more cognitively intensive than writing from scratch.",
-        "dimensions": "NB - Net Benefits, US - User Satisfaction"
+        "dimensions": "II - Individual Impact, US - User Satisfaction"
       },
       {
         "measure": "Incorrect Statements (error type)",
@@ -2244,7 +2244,7 @@
       {
         "measure": "Documentation Time Perception",
         "description": "Perceived sufficiency of documentation time. Improved from 2.1 to 3.6 (p=.005).",
-        "dimensions": "NB - Net Benefits"
+        "dimensions": "II - Individual Impact"
       },
       {
         "measure": "Sleep Quality",
@@ -2289,12 +2289,12 @@
       {
         "measure": "Note-Related Cognitive Task Load",
         "description": "Validated scale assessing mental burden of note-writing tasks. Large decrease: 7.10 → 4.46 (−2.64, p<.001). Among the largest effect sizes for cognitive load in the corpus.",
-        "dimensions": "US - User Satisfaction, NB - Net Benefits"
+        "dimensions": "US - User Satisfaction, II - Individual Impact"
       },
       {
         "measure": "Secondary Survey Outcomes (Table 3)",
         "description": "Additional survey domains including documentation satisfaction, time perception, patient interaction quality. Specific items available in full results.",
-        "dimensions": "US - User Satisfaction, NB - Net Benefits"
+        "dimensions": "US - User Satisfaction, II - Individual Impact"
       },
       {
         "measure": "Site-Level Heterogeneity",
@@ -2334,12 +2334,12 @@
       {
         "measure": "Documentation Time (seconds)",
         "description": "Third-party-measured time from sitting at EMR to completed registration. Phase A: 305 ± 53.9 s; Phase B: 336 ± 78.0 s. **No significant difference** (p=ns). Editing burden from incomplete voice input offset any AI efficiency gain.",
-        "dimensions": "NB - Net Benefits"
+        "dimensions": "II - Individual Impact"
       },
       {
         "measure": "NASA-TLX Temporal Demand (Time Pressure)",
         "description": "NASA-TLX subscale on perceived time urgency during documentation (0–100 VAS). Significantly lower with medimo (AVE Phase A: 58.0, Phase B: 49.8; p=0.037). Only subscale showing significant improvement.",
-        "dimensions": "US - User Satisfaction, NB - Net Benefits"
+        "dimensions": "US - User Satisfaction, II - Individual Impact"
       },
       {
         "measure": "NASA-TLX Frustration/Dissatisfaction",
@@ -2384,7 +2384,7 @@
       {
         "measure": "Voice Memo Frequency",
         "description": "Count of non-conversational voice memos recorded per participant during Phase B. Strong positive correlation with documentation time reduction (r=0.71, p=0.006). Behavioral proxy for tool engagement and utilization intensity.",
-        "dimensions": "U - Use, NB - Net Benefits"
+        "dimensions": "U - Use, II - Individual Impact"
       },
       {
         "measure": "Implementation Intent (Willingness to Adopt)",
@@ -2419,22 +2419,22 @@
       {
         "measure": "PDRQ-9 Score (primary outcome, masked phase)",
         "description": "9-item validated Patient-Doctor Relationship Questionnaire. No difference detected: DAX median 45 (IQR 8) vs. no-DAX median 45 (IQR 3.5); p=0.31. aOR for complete satisfaction on \"how well clinician listened\" = 0.8 [0.48–1.34], NS.",
-        "dimensions": "NB - Net Benefits"
+        "dimensions": "OI - Organizational Impact"
       },
       {
         "measure": "Patient Satisfaction — \"More Focused on Me\" (open-label)",
         "description": "Open-label: patients strongly agreed physician was more focused on them when DAX was used.",
-        "dimensions": "NB - Net Benefits, US - User Satisfaction"
+        "dimensions": "OI - Organizational Impact, US - User Satisfaction"
       },
       {
         "measure": "Patient Satisfaction — \"Less Time Typing\" (open-label)",
         "description": "Open-label: patients strongly agreed physician spent less time typing during DAX encounters.",
-        "dimensions": "NB - Net Benefits"
+        "dimensions": "OI - Organizational Impact"
       },
       {
         "measure": "Patient Satisfaction — \"More Personable Encounter\" (open-label)",
         "description": "Open-label: patients strongly agreed the encounter felt more personable with DAX.",
-        "dimensions": "NB - Net Benefits, US - User Satisfaction"
+        "dimensions": "OI - Organizational Impact, US - User Satisfaction"
       },
       {
         "measure": "Source: Applied Clinical Informatics 2024",
@@ -2474,7 +2474,7 @@
       {
         "measure": "PDQI-9 Usefulness",
         "description": "Note is relevant and provides valuable information. No significant difference (4.05 vs. 4.03, p=0.80).",
-        "dimensions": "IQ - Information Quality, NB - Net Benefits"
+        "dimensions": "IQ - Information Quality"
       },
       {
         "measure": "PDQI-9 Organization",
@@ -2559,27 +2559,27 @@
       {
         "measure": "Total Time in EHR per Appointment (min)",
         "description": "Primary outcome. Objective Epic telemetry. Pilot: 22.2→20.2 min (−2.0, p<.001). Control: 24.2→23.8 min (−0.4, p=.001). Between-group difference significant.",
-        "dimensions": "NB - Net Benefits"
+        "dimensions": "II - Individual Impact"
       },
       {
         "measure": "Time in Notes per Appointment (min)",
         "description": "Primary outcome. Note-specific EHR time. Pilot: 7.5→7.0 min (−0.5, p<.001). Control: 9.2→9.0 min (−0.2, p<.001). Absolute reduction modest but significant.",
-        "dimensions": "NB - Net Benefits"
+        "dimensions": "II - Individual Impact"
       },
       {
         "measure": "After-Hours Time Spent Documenting per Appointment (min)",
         "description": "Primary outcome. Pilot: 3.2→2.7 min (−0.5, p=.95). **NOT significant.** Control: 2.6→2.5 min (−0.1, p=.47). Neither group improved after-hours time — consistent null finding across studies.",
-        "dimensions": "NB - Net Benefits"
+        "dimensions": "II - Individual Impact"
       },
       {
         "measure": "Time to Close Encounter (hours)",
         "description": "Time from appointment completion to note sign-off. Data available in Table 2 (truncated in fetch).",
-        "dimensions": "NB - Net Benefits"
+        "dimensions": "II - Individual Impact"
       },
       {
         "measure": "AI Scribe Use Quartile (dose-response)",
         "description": "Clinicians stratified Q1–Q4 by scribe use intensity. Q4 (highest users) showed largest EHR time reductions; Q1 showed minimal benefit. Strong dose-response relationship is key methodological finding.",
-        "dimensions": "U - Use, NB - Net Benefits"
+        "dimensions": "U - Use, II - Individual Impact"
       },
       {
         "measure": "Propensity Score Balance",
@@ -2659,17 +2659,17 @@
       {
         "measure": "Enhanced Patient Relationship (Likert, dichotomized)",
         "description": "\"Somewhat/strongly agree\" that virtual scribe enhances relationship with patients. 61.1% endorsed. aOR non-primary care: 6.34 [1.24, 32.34]; aOR male: 4.71 [1.25, 17.78]; aOR <1yr use: 0.01 [0.002, 0.07] (strongly negative).",
-        "dimensions": "NB - Net Benefits, US - User Satisfaction"
+        "dimensions": "OI - Organizational Impact, US - User Satisfaction"
       },
       {
         "measure": "Focus on Patients During Visit",
         "description": "Perceived benefit item: scribe enables better focus on patients. 50% endorsed.",
-        "dimensions": "NB - Net Benefits"
+        "dimensions": "II - Individual Impact"
       },
       {
         "measure": "Reduced Documentation Time",
         "description": "Perceived benefit item: scribe reduces time spent on documentation. 53% endorsed.",
-        "dimensions": "NB - Net Benefits"
+        "dimensions": "II - Individual Impact"
       },
       {
         "measure": "Steep Learning Curve",
@@ -2699,12 +2699,12 @@
       {
         "measure": "Qualitative — Documentation Issues",
         "description": "Major theme: poor documentation quality, paradoxical documentation time increase, scribe errors. Contradicts the quantitative \"reduced documentation time\" benefit finding for some physicians.",
-        "dimensions": "IQ - Information Quality, NB - Net Benefits"
+        "dimensions": "IQ - Information Quality, II - Individual Impact"
       },
       {
         "measure": "Qualitative — Workflow Impacts",
         "description": "Major theme: delayed encounter closing, inefficiencies; also positive impacts — more time for patients, improved burnout perception.",
-        "dimensions": "NB - Net Benefits, US - User Satisfaction"
+        "dimensions": "II - Individual Impact, US - User Satisfaction"
       },
       {
         "measure": "Source: Journal of General Internal Medicine 2025",
@@ -2734,12 +2734,12 @@
       {
         "measure": "Physician Task Load (PTL)",
         "description": "4-item adapted NASA TLX; 0–100 scale, lower = less cognitive burden",
-        "dimensions": "US, NB"
+        "dimensions": "US, II - Individual Impact"
       },
       {
         "measure": "Work Exhaustion (PFI-WE)",
         "description": "4-item work exhaustion subscale of Stanford PFI; 0–10 scale, lower = less burnout",
-        "dimensions": "US, NB"
+        "dimensions": "US, II - Individual Impact"
       },
       {
         "measure": "System Usability Scale (SUS)",
@@ -2754,7 +2754,7 @@
       {
         "measure": "Perceived time savings per half day",
         "description": "Self-reported time savings/additions; median and range captured",
-        "dimensions": "NB"
+        "dimensions": "II - Individual Impact"
       },
       {
         "measure": "Post-survey perceived improvements",
@@ -2798,12 +2798,12 @@
       {
         "measure": "Workload Relief (qualitative)",
         "description": "Physician-reported experience of reduced administrative burden from using ambient AI, including time savings and cognitive offloading during clinical care.",
-        "dimensions": "US - User Satisfaction, NB - Net Benefits"
+        "dimensions": "US - User Satisfaction, II - Individual Impact"
       },
       {
         "measure": "Patient Engagement",
         "description": "Perceived improvement in physician presence and quality of interaction with patients when freed from note-taking during encounters.",
-        "dimensions": "US - User Satisfaction, NB - Net Benefits"
+        "dimensions": "US - User Satisfaction, OI - Organizational Impact"
       },
       {
         "measure": "Documentation Accuracy Concerns",
@@ -2853,67 +2853,67 @@
       {
         "measure": "Door-to-Room Time (min)",
         "description": "Time from patient arrival in ED to patient placed in a room. Improved 41→37 min (p<0.0001).",
-        "dimensions": "NB - Net Benefits"
+        "dimensions": "OI - Organizational Impact"
       },
       {
         "measure": "Room-to-Doc Time (min)",
         "description": "Time from patient in room to physician sign-up. Improved 26→24 min (p<0.0001).",
-        "dimensions": "NB - Net Benefits"
+        "dimensions": "OI - Organizational Impact"
       },
       {
         "measure": "Door-to-Doc Time (min)",
         "description": "Time from arrival to physician sign-up. Improved 61→56 min (p<0.0001).",
-        "dimensions": "NB - Net Benefits"
+        "dimensions": "OI - Organizational Impact"
       },
       {
         "measure": "Doc-to-Admit Disposition Time (min)",
         "description": "Time from physician sign-up to patient admitted. Improved 237→228 min (p<0.0001).",
-        "dimensions": "NB - Net Benefits"
+        "dimensions": "OI - Organizational Impact"
       },
       {
         "measure": "Length of Stay — Discharged Patients (min)",
         "description": "Total ED time for discharged patients. Improved 303→287 min (p<0.0001).",
-        "dimensions": "NB - Net Benefits"
+        "dimensions": "OI - Organizational Impact"
       },
       {
         "measure": "Length of Stay — Admitted Patients (min)",
         "description": "Total ED time for admitted patients. Improved 507→473 min (p<0.0001).",
-        "dimensions": "NB - Net Benefits"
+        "dimensions": "OI - Organizational Impact"
       },
       {
         "measure": "Patients Seen per Hour",
         "description": "Physician throughput measure. Increased from 2.3 ± 0.3 to 3.2 ± 0.6 (p<0.001).",
-        "dimensions": "NB - Net Benefits"
+        "dimensions": "OI - Organizational Impact"
       },
       {
         "measure": "Work Relative Value Units (wRVUs) per Hour",
         "description": "Medicare productivity measure weighted for service complexity. Total wRVUs increased from 241 (3.1/hr) to 336 (5.2/hr) (p<0.001). wRVUs per patient similar (2.57→2.74, p=0.88) — productivity gain was volume not coding intensity.",
-        "dimensions": "NB - Net Benefits"
+        "dimensions": "OI - Organizational Impact"
       },
       {
         "measure": "Post-Visit Documentation Time (min)",
         "description": "Time-motion: time to complete patient chart after examination. Halved from 14 ± 3.1 to 7 ± 0.43 min (p<0.01).",
-        "dimensions": "NB - Net Benefits"
+        "dimensions": "II - Individual Impact"
       },
       {
         "measure": "Doctor-Patient Interaction Time (min)",
         "description": "Time-motion: direct face time with patient. Nearly doubled from 4 ± 0.57 to 7.8 ± 1.2 min (p<0.01).",
-        "dimensions": "NB - Net Benefits, US - User Satisfaction"
+        "dimensions": "OI - Organizational Impact, US - User Satisfaction"
       },
       {
         "measure": "Chart Preparation Time (min)",
         "description": "Time-motion: chart prep before encounter. Eliminated (1.2→0 min, p<0.01) — scribes prepped charts.",
-        "dimensions": "NB - Net Benefits"
+        "dimensions": "II - Individual Impact"
       },
       {
         "measure": "Chart Review Time (min)",
         "description": "Time-motion: time reviewing chart. Increased from 5→7 min (p<0.01) — physicians spent more time reviewing, less doing.",
-        "dimensions": "NB - Net Benefits"
+        "dimensions": "II - Individual Impact"
       },
       {
         "measure": "Patient Satisfaction (Press Ganey, 6 items)",
         "description": "5-point Likert scale. Pre-scribe satisfaction already high; most items unchanged. Significant increase only in \"clinician providing satisfactory feedback\" (3.9→4.7, p<0.01).",
-        "dimensions": "NB - Net Benefits"
+        "dimensions": "OI - Organizational Impact"
       },
       {
         "measure": "Physician Satisfaction Percentile (ED)",
@@ -2948,22 +2948,22 @@
       {
         "measure": "Time in Notes per Appointment (min)",
         "description": "Objective EHR Signal measure: mean time clinicians spent in notes per encounter. Decreased from 6.2 to 5.3 min overall (p<.001). Significant sex-based difference (DiD p=.001): women reduced more than men.",
-        "dimensions": "NB - Net Benefits"
+        "dimensions": "II - Individual Impact"
       },
       {
         "measure": "After-Hours Note Writing (≤1 hr)",
         "description": "Survey item: proportion of clinicians spending ≤1 hr writing notes outside work hours. Increased from 14.0% to 54.4% (p<.001) — major WOW reduction finding.",
-        "dimensions": "NB - Net Benefits, US - User Satisfaction"
+        "dimensions": "II - Individual Impact, US - User Satisfaction"
       },
       {
         "measure": "Off-Hours EHR Activity (min)",
         "description": "Objective EHR Signal: total EHR time 5:30pm–7:00am weekdays + weekends. Did NOT change significantly (mean 38.2 → 39.8 min, p=.14). Diverges from self-report finding — notable methodological tension.",
-        "dimensions": "NB - Net Benefits"
+        "dimensions": "II - Individual Impact"
       },
       {
         "measure": "Documentation Length / Progress Note Length (characters)",
         "description": "Objective EHR Signal: note character counts pre vs. post. Both increased slightly but significantly (documentation: p=.01; progress note: p<.001). Ambient AI produces longer notes.",
-        "dimensions": "IQ - Information Quality, NB - Net Benefits"
+        "dimensions": "IQ - Information Quality, II - Individual Impact"
       },
       {
         "measure": "NASA-TLX Mental Demand",
@@ -2988,7 +2988,7 @@
       {
         "measure": "Undivided Attention to Patients",
         "description": "Survey item: proportion agreeing they can give patients undivided attention. Increased from 57.9% to 93.0% (p<.001).",
-        "dimensions": "US - User Satisfaction, NB - Net Benefits"
+        "dimensions": "US - User Satisfaction, II - Individual Impact"
       },
       {
         "measure": "Source: JAMA Network Open 2025",
@@ -3048,22 +3048,22 @@
       {
         "measure": "Average Documentation Time per Patient (min)",
         "description": "Primary efficiency metric — how long including proofing time. Included in ACDQI (scored: 10 × minutes, max 400 if ≤10 min; score = 0 if >10 min). Used in 2/11 studies.",
-        "dimensions": "NB - Net Benefits"
+        "dimensions": "II - Individual Impact"
       },
       {
         "measure": "Out-of-Hours EHR Documentation Time",
         "description": "Time spent documenting outside working hours. Used in 2/11 studies as a WOW/after-hours burden metric.",
-        "dimensions": "NB - Net Benefits, US - User Satisfaction"
+        "dimensions": "II - Individual Impact, US - User Satisfaction"
       },
       {
         "measure": "Words per Minute (documentation speed)",
         "description": "Speed of clinical note production. One study found ACD 2.7× faster than typing and dictation for history; 2.2× faster for physical exam vs. typing; 3.1× faster vs. dictation.",
-        "dimensions": "NB - Net Benefits"
+        "dimensions": "II - Individual Impact"
       },
       {
         "measure": "Work Relative Value Units (WRVU)",
         "description": "Monthly/yearly productivity measure (US Medicare reimbursement framework). Used in 1/11 study (Haberle 2024) as a proxy for clinical value productivity.",
-        "dimensions": "NB - Net Benefits"
+        "dimensions": "OI - Organizational Impact"
       },
       {
         "measure": "Oldenburg Burnout Inventory (OLBI)",
@@ -3088,22 +3088,22 @@
       {
         "measure": "PROMIS Sleep Disturbance (Short Form 4a)",
         "description": "Patient Reported Outcomes Measurement Information System sleep measure. Used in 1/11 study to assess wellbeing impact of documentation burden relief. Unusual/novel outcome for ACD literature.",
-        "dimensions": "US - User Satisfaction, NB - Net Benefits"
+        "dimensions": "US - User Satisfaction, II - Individual Impact"
       },
       {
         "measure": "Patient Likelihood to Recommend",
         "description": "Single-item patient satisfaction proxy. Used in 1/11 study (Haberle 2024). Broad measure, highly susceptible to confounders per authors.",
-        "dimensions": "NB - Net Benefits"
+        "dimensions": "OI - Organizational Impact"
       },
       {
         "measure": "Patient Opt-Out Rate",
         "description": "Number of patients declining ACD use in their consultation. Acceptability/consent proxy. Used in 1/11 study (Haberle 2024).",
-        "dimensions": "U - Use, NB - Net Benefits"
+        "dimensions": "U - Use, OI - Organizational Impact"
       },
       {
         "measure": "Patient Safety Events",
         "description": "Occurrence of safety events attributable to ACD use. Used in 1/11 study (Haberle 2024). No safety events reported in that study.",
-        "dimensions": "IQ - Information Quality, NB - Net Benefits"
+        "dimensions": "IQ - Information Quality, OI - Organizational Impact"
       }
     ],
     "keyFindings": [],
@@ -3138,7 +3138,7 @@
       {
         "measure": "Time in Documentation and EHR",
         "description": "Statistical analyses find usage linked with reduced time spent in documentation and in the EHR.",
-        "dimensions": "NB - Net Benefits"
+        "dimensions": "II - Individual Impact"
       },
       {
         "measure": "Physician Feedback",
@@ -3148,7 +3148,7 @@
       {
         "measure": "Patient Feedback",
         "description": "Early assessments positive — some describe improved interaction with physicians.",
-        "dimensions": "NB - Net Benefits"
+        "dimensions": "OI - Organizational Impact"
       },
       {
         "measure": "Source: NEJM Catalyst 2024",
@@ -3203,37 +3203,37 @@
       {
         "measure": "Dose–response: time in notes",
         "description": "Reduction in min/note for high users (−0.7) vs. low users (−0.15) vs. nonusers (Fig. 3)",
-        "dimensions": "NB"
+        "dimensions": "II - Individual Impact"
       },
       {
         "measure": "Aggregate time savings",
         "description": "15,791 hours total (~1,794 8-hour working days) vs. nonusers over 1 year",
-        "dimensions": "NB"
+        "dimensions": "II - Individual Impact"
       },
       {
         "measure": "DiD: pajama time",
         "description": "−1.03 min (P=0.02) for users vs. nonusers",
-        "dimensions": "NB"
+        "dimensions": "II - Individual Impact"
       },
       {
         "measure": "DiD: time outside 7am–7pm",
         "description": "−1.83 min (P<0.001) for users vs. nonusers",
-        "dimensions": "NB"
+        "dimensions": "II - Individual Impact"
       },
       {
         "measure": "DiD: time in notes/appointment",
         "description": "−0.40 min (P<0.001) for users vs. nonusers",
-        "dimensions": "NB"
+        "dimensions": "II - Individual Impact"
       },
       {
         "measure": "DiD: time in orders/appointment",
         "description": "−0.07 min (P=0.01) for users vs. nonusers",
-        "dimensions": "NB"
+        "dimensions": "II - Individual Impact"
       },
       {
         "measure": "DiD: time in in-basket/appointment",
         "description": "+0.10 min (P=0.008) — INCREASE for users vs. nonusers",
-        "dimensions": "NB"
+        "dimensions": "II - Individual Impact"
       },
       {
         "measure": "Physician satisfaction (survey)",
@@ -3243,12 +3243,12 @@
       {
         "measure": "Patient satisfaction (survey)",
         "description": "56% positive impact on visit quality; 44% no impact; 0% negative",
-        "dimensions": "NB"
+        "dimensions": "OI - Organizational Impact"
       },
       {
         "measure": "Patient comfort with AI",
         "description": "92% comfortable or neutral; 8% some level of discomfort",
-        "dimensions": "NB"
+        "dimensions": "OI - Organizational Impact"
       },
       {
         "measure": "Vendor transition stability",
@@ -3315,7 +3315,7 @@
       {
         "measure": "Post-Edit Time",
         "description": "Time to correct AI-generated note to factual accuracy. Key efficiency metric for real-world scribe use. Prior work showed post-editing faster but more cognitively intensive than writing from scratch.",
-        "dimensions": "NB - Net Benefits, US - User Satisfaction"
+        "dimensions": "II - Individual Impact, US - User Satisfaction"
       },
       {
         "measure": "Incorrect Statements",
@@ -3435,12 +3435,12 @@
       {
         "measure": "Workflow Efficiency (qualitative)",
         "description": "Provider-reported perceptions of time savings and workflow improvement after ambient AI adoption, captured through open-ended survey responses.",
-        "dimensions": "US - User Satisfaction, NB - Net Benefits"
+        "dimensions": "US - User Satisfaction, II - Individual Impact"
       },
       {
         "measure": "Patient Interaction Quality",
         "description": "Clinician-reported experience of enhanced presence and engagement with patients when freed from documentation tasks during encounters.",
-        "dimensions": "US - User Satisfaction, NB - Net Benefits"
+        "dimensions": "US - User Satisfaction, OI - Organizational Impact"
       },
       {
         "measure": "Documentation Quality & Editing Burden",
@@ -3495,7 +3495,7 @@
       {
         "measure": "Documentation Burden",
         "description": "Clinician-reported experience of administrative load from EHR documentation tasks, measured via pre/post survey. Core outcome capturing subjective efficiency impact.",
-        "dimensions": "US - User Satisfaction, NB - Net Benefits"
+        "dimensions": "US - User Satisfaction, II - Individual Impact"
       },
       {
         "measure": "Burnout",
@@ -3505,12 +3505,12 @@
       {
         "measure": "EHR Experience",
         "description": "Clinician-rated satisfaction with and perceived efficiency of EHR-related workflows, including time-on-task and friction points.",
-        "dimensions": "US - User Satisfaction, NB - Net Benefits"
+        "dimensions": "US - User Satisfaction, II - Individual Impact"
       },
       {
         "measure": "Documentation Process Experience",
         "description": "Qualitative and quantitative assessment of how clinicians experience the workflow of creating clinical notes — including ease, speed, and post-visit editing requirements.",
-        "dimensions": "US - User Satisfaction, NB - Net Benefits"
+        "dimensions": "US - User Satisfaction, II - Individual Impact"
       },
       {
         "measure": "Ambient Usage Level",
@@ -3520,7 +3520,7 @@
       {
         "measure": "Specialty-Specific Variation",
         "description": "Analysis of outcomes stratified by specialty category — surgical, primary care, medical subspecialty — to identify differential effects of ambient technology.",
-        "dimensions": "US - User Satisfaction, NB - Net Benefits"
+        "dimensions": "US - User Satisfaction, II - Individual Impact"
       },
       {
         "measure": "Source: JAMA Network Open 2025",
@@ -3565,7 +3565,7 @@
       {
         "measure": "Clinical utility",
         "description": "Did any studies assess patient or clinical outcomes in real-world use?",
-        "dimensions": "NB"
+        "dimensions": "OI - Organizational Impact"
       },
       {
         "measure": "Industry transparency",
@@ -3602,7 +3602,7 @@
       {
         "measure": "Documentation Time",
         "description": "Time in seconds to complete clinical note summary across the three conditions (manual vs. auto vs. auto+edit). Direct timing measurement.",
-        "dimensions": "NB - Net Benefits"
+        "dimensions": "II - Individual Impact"
       },
       {
         "measure": "PDQI-9 (Physician Documentation Quality Instrument)",

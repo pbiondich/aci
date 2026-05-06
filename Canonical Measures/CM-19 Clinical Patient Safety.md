@@ -1,6 +1,6 @@
 # CM-19 Clinical Patient Safety
 
-**D&M Dimension:** [[NB - Net Benefits]]
+**D&M Dimension:** [[OI - Organizational Impact]]
 
 ## Definition
 Patient safety outcomes associated with ambient AI documentation — including documentation errors that affect clinical decisions, adverse events, harm scores, and gaps between documented symptoms and clinical action. The most concerning and least studied outcome dimension.

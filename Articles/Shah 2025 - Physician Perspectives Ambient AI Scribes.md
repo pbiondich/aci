@@ -40,8 +40,8 @@ Not explicitly stated. Exploratory qualitative study using implementation scienc
 
 | Measure | Description | D&M Dimension(s) |
 |---|---|---|
-| Workload Relief (qualitative) | Physician-reported experience of reduced administrative burden from using ambient AI, including time savings and cognitive offloading during clinical care. | [[US - User Satisfaction]], [[NB - Net Benefits]] |
-| Patient Engagement | Perceived improvement in physician presence and quality of interaction with patients when freed from note-taking during encounters. | [[US - User Satisfaction]], [[NB - Net Benefits]] |
+| Workload Relief (qualitative) | Physician-reported experience of reduced administrative burden from using ambient AI, including time savings and cognitive offloading during clinical care. | [[US - User Satisfaction]], [[II - Individual Impact]] |
+| Patient Engagement | Perceived improvement in physician presence and quality of interaction with patients when freed from note-taking during encounters. | [[US - User Satisfaction]], [[OI - Organizational Impact]] |
 | Documentation Accuracy Concerns | Physician-reported concerns about note accuracy, hallucinations, and the burden of reviewing/editing AI-generated content before sign-off. | [[IQ - Information Quality]], [[US - User Satisfaction]] |
 | Note Quality Variability | Provider perceptions of inconsistency in AI note quality across encounter types, specialties, and patient complexity levels. | [[IQ - Information Quality]] |
 | Implementation Barriers | Qualitative coding of structural, technical, and workflow barriers to sustained adoption — including EHR integration friction, training gaps, and access issues. | [[SerQ - Service Quality]], [[U - Use]] |

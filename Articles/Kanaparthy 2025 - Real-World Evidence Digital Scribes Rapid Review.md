@@ -40,11 +40,11 @@ Explicit: to synthesize evidence on clinician efficiency, user satisfaction, qua
 
 | Measure | Description | D&M Dimension(s) |
 |---|---|---|
-| Self-Reported Documentation Time | Across included studies: decreased with scribe use. However self-report ≠ objective. Note length increased simultaneously. | [[NB - Net Benefits]] |
-| Note Length | Increased with scribe use across included studies — consistent with other corpus findings. | [[IQ - Information Quality]], [[NB - Net Benefits]] |
+| Self-Reported Documentation Time | Across included studies: decreased with scribe use. However self-report ≠ objective. Note length increased simultaneously. | |
+| Note Length | Increased with scribe use across included studies — consistent with other corpus findings. | [[IQ - Information Quality]] |
 | Physician Burnout (validated scales) | **Not significantly affected** in included studies using validated burnout instruments. This contradicts self-report and engagement measures. Authors flag this gap explicitly. | [[US - User Satisfaction]] |
 | Physician Engagement | Improved across included studies — contrasts with the null burnout finding. Engagement ≠ burnout on validated scales. | [[US - User Satisfaction]] |
-| Physician Productivity (billing metrics) | **Unchanged** — wRVUs and similar billing productivity measures did not change. Consistent with Shuaib 2021 per-patient wRVU finding. | [[NB - Net Benefits]] |
+| Physician Productivity (billing metrics) | **Unchanged** — wRVUs and similar billing productivity measures did not change. Consistent with Shuaib 2021 per-patient wRVU finding. | [[OI - Organizational Impact]] |
 | QUEST Framework Evaluation | Included studies fell short when assessed against the QUEST human evaluation framework for quality and safety — gaps in how studies are designed and reported. | (methodological) |
 | SEIPS 3.0 Model Assessment | Included studies insufficient for assessing integration into workflows per SEIPS 3.0. Most studies don't examine system/workflow factors. | [[SerQ - Service Quality]], [[U - Use]] |
 

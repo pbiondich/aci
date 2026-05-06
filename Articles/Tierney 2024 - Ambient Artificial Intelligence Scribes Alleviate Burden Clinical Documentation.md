@@ -42,9 +42,9 @@ Explicit: ambient AI scribes have great potential to reduce documentation burden
 |---|---|---|
 | Utilization | Used by 3,442 physicians in 303,266 encounters in 10 weeks. 968 physicians enabled in ≥100 encounters; one in 1,210 encounters. | [[U - Use]] |
 | Documentation Quality | Early evaluation metrics based on existing tool that evaluates quality of human-generated scribe notes. Ambient AI produces high-quality clinical documentation for physicians’ editing. | [[IQ - Information Quality]] |
-| Time in Documentation and EHR | Statistical analyses find usage linked with reduced time spent in documentation and in the EHR. | [[NB - Net Benefits]] |
+| Time in Documentation and EHR | Statistical analyses find usage linked with reduced time spent in documentation and in the EHR. | [[II - Individual Impact]] |
 | Physician Feedback | Favorable response — more personal, meaningful, effective patient interactions; reduced after-hours clerical work burden. | [[US - User Satisfaction]] |
-| Patient Feedback | Early assessments positive — some describe improved interaction with physicians. | [[NB - Net Benefits]] |
+| Patient Feedback | Early assessments positive — some describe improved interaction with physicians. | [[OI - Organizational Impact]] |
 
 ---
 *Reviewed by Iris | Source: NEJM Catalyst 2024 | DOI: 10.1056/CAT.23.0404 | Template v2.0 | Full text reviewed ✅*

@@ -40,8 +40,8 @@ Not explicitly stated. Study is exploratory/inductive; aims to generate hypothes
 
 | Measure | Description | D&M Dimension(s) |
 |---|---|---|
-| Workflow Efficiency (qualitative) | Provider-reported perceptions of time savings and workflow improvement after ambient AI adoption, captured through open-ended survey responses. | [[US - User Satisfaction]], [[NB - Net Benefits]] |
-| Patient Interaction Quality | Clinician-reported experience of enhanced presence and engagement with patients when freed from documentation tasks during encounters. | [[US - User Satisfaction]], [[NB - Net Benefits]] |
+| Workflow Efficiency (qualitative) | Provider-reported perceptions of time savings and workflow improvement after ambient AI adoption, captured through open-ended survey responses. | [[US - User Satisfaction]], [[II - Individual Impact]] |
+| Patient Interaction Quality | Clinician-reported experience of enhanced presence and engagement with patients when freed from documentation tasks during encounters. | [[US - User Satisfaction]], [[OI - Organizational Impact]] |
 | Documentation Quality & Editing Burden | Provider perceptions of note accuracy and the additional effort required to review, correct, and edit AI-generated notes before sign-off. | [[IQ - Information Quality]], [[US - User Satisfaction]] |
 | Learning Curve & Workflow Adaptation | Qualitative capture of the adjustment period and training challenges providers experienced integrating ambient AI into existing workflows. | [[SerQ - Service Quality]], [[U - Use]] |
 | Specialty-Specific Performance | Provider-reported variation in ambient AI usefulness across clinical specialties, noting where the tool excelled or fell short. | [[SQ - System Quality]], [[IQ - Information Quality]] |

@@ -39,11 +39,11 @@ Not explicitly stated. Lab aim: evaluate whether primary care physicians' use of
 |---|---|---|
 | Burnout (Primary Care Vital Signs®) | Single-item burnout question (Non-Proprietary Single Measure) psychometrically tested against the Maslach Burnout Inventory (MBI). % reporting burnout before vs. after. | US (CM-01) |
 | Practice Satisfaction | Likert-based satisfaction item from Primary Care Vital Signs® | US (CM-15) |
-| Notetaking Time Reduction (%) | % reduction in self-reported time spent on notetaking | NB (CM-04) |
-| Documentation Burden Reduction (%) | % reduction in overall documentation burden | NB (CM-04) |
-| Patient Interaction Improvement | % saying Suki improved patient interactions "to a great extent" | NB (CM-18) |
-| Increased Patient Care Time During Visit | % reporting ability to increase face-to-face patient care time | NB (CM-18) |
-| After-Hours Time Reduction | % spending less time documenting after hours | NB (CM-05) |
+| Notetaking Time Reduction (%) | % reduction in self-reported time spent on notetaking | [[II - Individual Impact]] (CM-04) |
+| Documentation Burden Reduction (%) | % reduction in overall documentation burden | [[II - Individual Impact]] (CM-04) |
+| Patient Interaction Improvement | % saying Suki improved patient interactions "to a great extent" | [[OI - Organizational Impact]] (CM-18) |
+| Increased Patient Care Time During Visit | % reporting ability to increase face-to-face patient care time | [[OI - Organizational Impact]] (CM-18) |
+| After-Hours Time Reduction | % spending less time documenting after hours | [[II - Individual Impact]] (CM-05) |
 | Net Promoter Score | Standard NPS — likelihood to recommend | US (CM-15) |
 | Open-Ended Qualitative Responses | 3 questions: why adopted, how documentation changed, what they'd tell a colleague | US (CM-15) |
 

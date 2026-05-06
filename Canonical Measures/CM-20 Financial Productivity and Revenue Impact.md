@@ -1,6 +1,6 @@
 # CM-20 Financial Productivity and Revenue Impact
 
-**D&M Dimension:** [[NB - Net Benefits]]
+**D&M Dimension:** [[OI - Organizational Impact]]
 
 ## Definition
 Changes in physician financial productivity associated with ambient AI scribe use — measured as RVU changes, revenue per clinician per year, or ROI. Captures organizational financial benefit and potential system-level cost implications.

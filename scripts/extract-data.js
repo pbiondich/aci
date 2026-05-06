@@ -311,6 +311,7 @@ function parseDimensions() {
   for (const filePath of files) {
     const filename = path.basename(filePath, '.md');
     if (filename === 'DeLone and McLean IS Success Model') continue;
+    if (filename === 'NB - Net Benefits') continue; // historical; split into II and OI
 
     const content = readFile(filePath);
     if (!content) continue;

@@ -60,14 +60,15 @@ const CM_PATTERNS = {
 };
 
 // D&M dimension patterns — match against the D&M Dimension(s) column in study measures tables
-const DIM_CODES = ['SQ', 'IQ', 'SerQ', 'U', 'US', 'NB'];
+const DIM_CODES = ['SQ', 'IQ', 'SerQ', 'U', 'US', 'II', 'OI'];
 const DIM_FILE_MAP = {
   'SQ': 'SQ - System Quality.md',
   'IQ': 'IQ - Information Quality.md',
   'SerQ': 'SerQ - Service Quality.md',
   'U': 'U - Use.md',
   'US': 'US - User Satisfaction.md',
-  'NB': 'NB - Net Benefits.md',
+  'II': 'II - Individual Impact.md',
+  'OI': 'OI - Organizational Impact.md',
 };
 
 // Known false-positive suppressions: [article_citation, cm_id]

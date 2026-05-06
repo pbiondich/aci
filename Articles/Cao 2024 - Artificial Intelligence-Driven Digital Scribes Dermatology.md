@@ -40,14 +40,14 @@ Explicit: to explore the use of DAX as a digital scribe in an academic and commu
 
 | Measure | Description | D&M Dimension(s) |
 |---|---|---|
-| Time in Notes per Day (min) | Epic Signal. 54.6→42.2 min (p=.003). Significant reduction. | [[NB - Net Benefits]] |
-| Time in Notes per Appointment (min) | Epic Signal. 6.5→5.1 min (p<.001). Significant reduction. | [[NB - Net Benefits]] |
-| After-Hours EHR Time (min/day) | Epic Signal. 35.5→28.1 min (p=.005). Significant reduction. | [[NB - Net Benefits]] |
+| Time in Notes per Day (min) | Epic Signal. 54.6→42.2 min (p=.003). Significant reduction. | [[II - Individual Impact]] |
+| Time in Notes per Appointment (min) | Epic Signal. 6.5→5.1 min (p<.001). Significant reduction. | [[II - Individual Impact]] |
+| After-Hours EHR Time (min/day) | Epic Signal. 35.5→28.1 min (p=.005). Significant reduction. | [[II - Individual Impact]] |
 | Note Length (characters) | Epic Signal. 4412→4617 characters (p=.03). Significant increase. | [[IQ - Information Quality]] |
-| Provider Note Contribution (%) | Epic Signal. 96.7%→51.7% (p<.001). AI drafts substantially displacing manual typing. | [[U - Use]], [[NB - Net Benefits]] |
+| Provider Note Contribution (%) | Epic Signal. 96.7%→51.7% (p<.001). AI drafts substantially displacing manual typing. | [[U - Use]], [[II - Individual Impact]] |
 | Clinician Satisfaction | Survey: 66.7% satisfied with documentation turnaround time. 83.3% would be "very disappointed" if DAX unavailable. | [[US - User Satisfaction]] |
-| Patient Experience | Patients reported positive perceptions of encounters during DAX use. | [[NB - Net Benefits]] |
-| Cost Comparison | Monthly software cost $1850 vs. scribe $3050 (including recruiting/training). Potential savings $13,400–$14,400 per scribe replacement. | [[NB - Net Benefits]] |
+| Patient Experience | Patients reported positive perceptions of encounters during DAX use. | [[OI - Organizational Impact]] |
+| Cost Comparison | Monthly software cost $1850 vs. scribe $3050 (including recruiting/training). Potential savings $13,400–$14,400 per scribe replacement. | [[OI - Organizational Impact]] |
 
 ---
 *Reviewed by Iris | Source: JAAD International 2024 | DOI: 10.1016/j.jdin.2024.02.009 | Template v2.0 | Full text reviewed ✅*

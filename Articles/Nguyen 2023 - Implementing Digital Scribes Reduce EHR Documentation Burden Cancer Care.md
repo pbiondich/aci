@@ -45,7 +45,7 @@ Explicit: to evaluate DS feasibility, acceptability, appropriateness, usability,
 | Appropriateness | Appropriateness of Intervention Measure (4-20). Mean 16.3 (marginally appropriate). | [[SerQ - Service Quality]] |
 | Usability | Implementation Usability Scale (0-100). Mean 68.6 (marginally usable). | [[SerQ - Service Quality]] |
 | Burnout (Mini-Z) | Mini-Z composite score (10-50). 33.3 vs 35.9 (p=.257) — no significant improvement. | [[US - User Satisfaction]] |
-| Documentation Time Perception | Perceived sufficiency of documentation time. Improved from 2.1 to 3.6 (p=.005). | [[NB - Net Benefits]] |
+| Documentation Time Perception | Perceived sufficiency of documentation time. Improved from 2.1 to 3.6 (p=.005). | [[II - Individual Impact]] |
 | Sleep Quality | PROMIS Short Form 4a Sleep Disturbance. No significant change reported. | [[US - User Satisfaction]] |
 | Implementation Themes | 4 themes: DS use (initially straightforward patients), DS characteristics (complexity/usability), workflow (setup, editing workload, telemedicine integration), implementation process (training materials, unfulfilled training needs). | [[SerQ - Service Quality]], [[U - Use]] |
 

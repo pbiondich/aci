@@ -1,6 +1,6 @@
 # CM-22 Patient Volume and Throughput
 
-**D&M Dimension:** [[NB - Net Benefits]]
+**D&M Dimension:** [[OI - Organizational Impact]]
 
 ## Definition
 Changes in the number of patients seen per unit time or changes in patient flow through clinical environments — a downstream efficiency outcome of reduced documentation burden. Includes ED metrics (door-to-doc, length of stay) and outpatient productivity (encounters per week).

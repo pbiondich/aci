@@ -51,16 +51,16 @@ Not formally stated (commentary format). Key questions investigated: (1) Is AI s
 | High vs. low user classification | Top-third vs. bottom two-thirds by use volume | U |
 | Adoption predictors | Age, years since graduation, gender — association with adoption | U |
 | Specialty adoption rates | % of clinicians using AI scribe, % of visits using AI scribe, by specialty | U |
-| Dose–response: time in notes | Reduction in min/note for high users (−0.7) vs. low users (−0.15) vs. nonusers (Fig. 3) | NB |
-| Aggregate time savings | 15,791 hours total (~1,794 8-hour working days) vs. nonusers over 1 year | NB |
-| DiD: pajama time | −1.03 min (P=0.02) for users vs. nonusers | NB |
-| DiD: time outside 7am–7pm | −1.83 min (P<0.001) for users vs. nonusers | NB |
-| DiD: time in notes/appointment | −0.40 min (P<0.001) for users vs. nonusers | NB |
-| DiD: time in orders/appointment | −0.07 min (P=0.01) for users vs. nonusers | NB |
-| DiD: time in in-basket/appointment | +0.10 min (P=0.008) — INCREASE for users vs. nonusers | NB |
+| Dose–response: time in notes | Reduction in min/note for high users (−0.7) vs. low users (−0.15) vs. nonusers (Fig. 3) | [[II - Individual Impact]] |
+| Aggregate time savings | 15,791 hours total (~1,794 8-hour working days) vs. nonusers over 1 year | [[II - Individual Impact]] |
+| DiD: pajama time | −1.03 min (P=0.02) for users vs. nonusers | [[II - Individual Impact]] |
+| DiD: time outside 7am–7pm | −1.83 min (P<0.001) for users vs. nonusers | [[II - Individual Impact]] |
+| DiD: time in notes/appointment | −0.40 min (P<0.001) for users vs. nonusers | [[II - Individual Impact]] |
+| DiD: time in orders/appointment | −0.07 min (P=0.01) for users vs. nonusers | [[II - Individual Impact]] |
+| DiD: time in in-basket/appointment | +0.10 min (P=0.008) — INCREASE for users vs. nonusers | [[II - Individual Impact]] |
 | Physician satisfaction (survey) | 84% positive impact on visit interactions; 82% positive effect on work satisfaction | US |
-| Patient satisfaction (survey) | 56% positive impact on visit quality; 44% no impact; 0% negative | NB |
-| Patient comfort with AI | 92% comfortable or neutral; 8% some level of discomfort | NB |
+| Patient satisfaction (survey) | 56% positive impact on visit quality; 44% no impact; 0% negative | [[OI - Organizational Impact]] |
+| Patient comfort with AI | 92% comfortable or neutral; 8% some level of discomfort | [[OI - Organizational Impact]] |
 | Vendor transition stability | 78% of high users stayed high; 50% of low users stayed low; 17% of low users became high | U, SerQ |
 
 ---

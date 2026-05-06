@@ -39,16 +39,16 @@ Not explicitly stated. Goal: document quantitative and qualitative ROI achieved 
 
 | Measure | Description | D&M Dimension(s) |
 |---|---|---|
-| Burnout frequency | Structured survey: % reporting near-daily burnout pre vs. post; 36-ppt reduction (n=47) | US, NB |
-| Active documentation time | Epic UAL: time on note-taking + patient instructions per 8 hrs scheduled; normalized | NB |
-| After-hours documentation time | Epic UAL: time documenting after hours; 39% decrease | NB |
-| Time after appointment date | Epic UAL: time spent documenting after appointment date; 17% decrease | NB |
-| HCC capture per encounter | ICD-10 → HCC v28 mapping; avg HCCs/encounter pre vs. post-Ambience; normalized | IQ, NB |
-| E/M coding level | CPT E/M levels 1–5; provider-level weighted average; normalized for case mix | IQ, NB |
-| E/M visit volume | Daily E/M volume change post-Ambience | NB |
-| Chart closure time | Epic UAL: time from appointment to chart closed; 41% reduction | NB |
+| Burnout frequency | Structured survey: % reporting near-daily burnout pre vs. post; 36-ppt reduction (n=47) | US, [[II - Individual Impact]] |
+| Active documentation time | Epic UAL: time on note-taking + patient instructions per 8 hrs scheduled; normalized | [[II - Individual Impact]] |
+| After-hours documentation time | Epic UAL: time documenting after hours; 39% decrease | [[II - Individual Impact]] |
+| Time after appointment date | Epic UAL: time spent documenting after appointment date; 17% decrease | [[II - Individual Impact]] |
+| HCC capture per encounter | ICD-10 → HCC v28 mapping; avg HCCs/encounter pre vs. post-Ambience; normalized | IQ, [[OI - Organizational Impact]] |
+| E/M coding level | CPT E/M levels 1–5; provider-level weighted average; normalized for case mix | IQ, [[OI - Organizational Impact]] |
+| E/M visit volume | Daily E/M volume change post-Ambience | [[OI - Organizational Impact]] |
+| Chart closure time | Epic UAL: time from appointment to chart closed; 41% reduction | [[II - Individual Impact]] |
 | Employee satisfaction | Post-survey: job satisfaction, energy at end of day, work-life balance; n=47 | US |
-| Financial viability (combined) | HCC capture + E/M improvement combined; $13,049/clinician annually | NB |
+| Financial viability (combined) | HCC capture + E/M improvement combined; $13,049/clinician annually | [[OI - Organizational Impact]] |
 
 ---
 

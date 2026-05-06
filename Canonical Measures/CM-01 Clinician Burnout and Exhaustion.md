@@ -1,6 +1,6 @@
 # CM-01 Clinician Burnout and Exhaustion
 
-**D&M Dimension:** [[US - User Satisfaction]]
+**D&M Dimension:** [[II - Individual Impact]]
 
 ## Definition
 Provider-reported emotional exhaustion, depersonalization, and interpersonal disengagement from clinical work — the core burnout syndrome. Measured via validated psychometric instruments. Distinct from cognitive task load (in-encounter mental effort) and professional fulfillment (positive engagement).

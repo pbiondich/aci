@@ -1,6 +1,6 @@
 # CM-06 Chart Closure Timeliness
 
-**D&M Dimension:** [[NB - Net Benefits]]
+**D&M Dimension:** [[II - Individual Impact]]
 
 ## Definition
 Whether and how quickly clinical notes are completed and signed — measured as same-day closure rates, time to chart closure, 24-hour deficiency rates, or completion before the next patient. Captures documentation *completion behavior* rather than time-per-note.

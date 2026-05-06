@@ -40,13 +40,13 @@ Explicit: to test the effectiveness of two AI scribes (DAX and Nabla) in reducin
 
 | Measure | Description | D&M Dimension(s) |
 |---|---|---|
-| Time-in-Note (primary outcome, % change) | Log-transformed time per note from EHR telemetry. Nabla: −9.5% vs control (p=.02), −7.8% vs DAX (p=.05). DAX: −1.7% vs control (p=.66, NS). Dose-response expected but not reported by use quartile here. | [[NB - Net Benefits]] |
+| Time-in-Note (primary outcome, % change) | Log-transformed time per note from EHR telemetry. Nabla: −9.5% vs control (p=.02), −7.8% vs DAX (p=.05). DAX: −1.7% vs control (p=.66, NS). Dose-response expected but not reported by use quartile here. | [[II - Individual Impact]] |
 | Scribe Utilization Rate | DAX used in 33.5% of 24,696 visits; Nabla in 29.5% of 23,653 visits. Both ~30% utilization. Low adoption rate context for any time-savings interpretation. | [[U - Use]] |
 | Mini-Z 2.0 Total Score (10–50, higher = better) | Validated burnout instrument. Both scribes combined: +2.76 [+1.41, +4.10], p<.001. No significant difference between DAX and Nabla. | [[US - User Satisfaction]] |
 | Task Load Index (4-item, 0–400, lower = better) | Perceived workload scale. Any scribe: −35.8 [−63.7, −7.9], p=.01. Significant reduction. | [[US - User Satisfaction]] |
 | Professional Fulfillment Index — Work Exhaustion (0–4, lower = better) | Validated work exhaustion subscale. Any scribe: −0.27 [−0.48, −0.07], p=.01. | [[US - User Satisfaction]] |
 | Clinically Significant Inaccuracies (Likert 1–5) | Frequency of clinically significant inaccuracies rated by physicians (1=never, 5=always). DAX 2.7 [2.4–3.0], Nabla 2.8 [2.6–3.0]; p=.68. Both in the "occasionally" range. No significant difference between tools. | [[IQ - Information Quality]], [[SQ - System Quality]] |
-| Adverse Events | One Grade 1 (mild) adverse event reported across entire study period. No serious events. | [[IQ - Information Quality]], [[NB - Net Benefits]] |
+| Adverse Events | One Grade 1 (mild) adverse event reported across entire study period. No serious events. | [[IQ - Information Quality]], [[OI - Organizational Impact]] |
 
 ---
 *Reviewed by Iris | Source: medRxiv preprint July 2025 | DOI: 10.1101/2025.07.10.25331333 | Template v2.0 | Full text reviewed ✅*

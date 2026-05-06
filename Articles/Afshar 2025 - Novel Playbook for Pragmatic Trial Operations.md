@@ -41,12 +41,12 @@ Integrating ambient AI into clinical workflows using a bidirectional governance 
 | Measure | Description | D&M Dimension(s) |
 |---|---|---|
 | Utilization Rate | Proportion of eligible clinical notes actually completed using the ambient AI system. Measured as weighted median across providers over time; captures real-world adoption behavior. | [[U - Use]] |
-| Time in Notes | Time providers spend actively writing or editing notes within the EHR. Tracked via Epic metadata; assesses whether ambient AI reduces direct documentation effort. | [[NB - Net Benefits]] |
-| Work Outside Work (WOW) | Time spent on EHR documentation outside scheduled work hours. A proxy for after-hours administrative burden and indicator of potential burnout risk reduction. | [[NB - Net Benefits]], [[US - User Satisfaction]] |
-| ICD-10 Coding Accuracy | Accuracy of diagnostic codes in AI-generated notes, audited using an internally developed LLM validated against certified professional coders (Pearson's r=0.97). | [[IQ - Information Quality]], [[NB - Net Benefits]] |
+| Time in Notes | Time providers spend actively writing or editing notes within the EHR. Tracked via Epic metadata; assesses whether ambient AI reduces direct documentation effort. | [[II - Individual Impact]] |
+| Work Outside Work (WOW) | Time spent on EHR documentation outside scheduled work hours. A proxy for after-hours administrative burden and indicator of potential burnout risk reduction. | [[II - Individual Impact]], [[US - User Satisfaction]] |
+| ICD-10 Coding Accuracy | Accuracy of diagnostic codes in AI-generated notes, audited using an internally developed LLM validated against certified professional coders (Pearson's r=0.97). | [[IQ - Information Quality]], [[OI - Organizational Impact]] |
 | Provider Well-Being | Primary RCT outcome; assessed via validated survey instruments. Designed to detect meaningful change in burnout and professional satisfaction across 66 providers. | [[US - User Satisfaction]] |
 | Patient Consent Compliance | Rate at which providers obtained and documented required patient consent before ambient AI recording. Monitored in real time; ensures regulatory and ethical compliance. | [[SerQ - Service Quality]] |
-| Documentation Efficiency | Time from end of patient encounter to note completion and signature. Tracks whether ambient AI accelerates the documentation cycle relative to standard practice. | [[NB - Net Benefits]] |
+| Documentation Efficiency | Time from end of patient encounter to note completion and signature. Tracks whether ambient AI accelerates the documentation cycle relative to standard practice. | [[II - Individual Impact]] |
 | Provider Feedback / User Experience | Qualitative and survey-based assessments of provider satisfaction, usability concerns, and workflow friction. Collected via REDCap; drives iterative PDSA improvement cycles. | [[US - User Satisfaction]], [[SerQ - Service Quality]] |
 
 ---

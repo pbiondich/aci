@@ -36,11 +36,11 @@ Not explicitly stated. Objective: evaluate physician perspectives on usability, 
 
 | Measure | Description | D&M Dimension(s) |
 |---|---|---|
-| Physician Task Load (PTL) | 4-item adapted NASA TLX; 0–100 scale, lower = less cognitive burden | US, NB |
-| Work Exhaustion (PFI-WE) | 4-item work exhaustion subscale of Stanford PFI; 0–10 scale, lower = less burnout | US, NB |
+| Physician Task Load (PTL) | 4-item adapted NASA TLX; 0–100 scale, lower = less cognitive burden | US, [[II - Individual Impact]] |
+| Work Exhaustion (PFI-WE) | 4-item work exhaustion subscale of Stanford PFI; 0–10 scale, lower = less burnout | US, [[II - Individual Impact]] |
 | System Usability Scale (SUS) | 10-item standardized usability instrument; 0–100 scale | US, SQ |
 | UTAUT items | Adapted Unified Theory of Acceptance and Use of Technology scale (perceived utility, ease of use, peer interest, long-term intent) | U, US |
-| Perceived time savings per half day | Self-reported time savings/additions; median and range captured | NB |
+| Perceived time savings per half day | Self-reported time savings/additions; median and range captured | [[II - Individual Impact]] |
 | Post-survey perceived improvements | Efficiency, documentation quality, ease of use (post-survey only) | US, IQ (indirect) |
 
 ---

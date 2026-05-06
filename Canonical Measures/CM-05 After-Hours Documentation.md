@@ -1,6 +1,6 @@
 # CM-05 After-Hours Documentation
 
-**D&M Dimension:** [[NB - Net Benefits]]
+**D&M Dimension:** [[II - Individual Impact]]
 
 ## Definition
 Time spent on clinical documentation outside of scheduled working hours — 'pajama time', 'after-hours EHR', or 'work outside work.' Distinct from total documentation time (CM-04) because it captures work-life boundary effects specifically. One of the most clinically meaningful outcomes because it directly affects physician well-being.

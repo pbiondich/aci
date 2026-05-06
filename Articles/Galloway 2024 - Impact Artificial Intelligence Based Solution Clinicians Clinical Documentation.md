@@ -40,12 +40,12 @@ Explicit: to evaluate the impact of an AI-based solution on clinicians’ clinic
 
 | Measure | Description | D&M Dimension(s) |
 |---|---|---|
-| Documentation Meets Requirements | Pre 41.9% positive → post 71% positive (p=0.034). | [[US - User Satisfaction]], [[NB - Net Benefits]] |
-| Documentation Ease | Pre 32.3% positive → post 48.4% positive (p=0.023). | [[US - User Satisfaction]], [[NB - Net Benefits]] |
+| Documentation Meets Requirements | Pre 41.9% positive → post 71% positive (p=0.034). | [[US - User Satisfaction]], [[II - Individual Impact]] |
+| Documentation Ease | Pre 32.3% positive → post 48.4% positive (p=0.023). | [[US - User Satisfaction]], [[II - Individual Impact]] |
 | Documentation Impact on Well-Being | Pre 71% negative → post 38.7% negative (p=0.010). Significant improvement in perceived burnout risk. | [[US - User Satisfaction]] |
-| Documentation Impact on Patient Experience | Pre 35.5% negative → post 6.5% negative (p=0.005). Largest improvement. | [[NB - Net Benefits]] |
+| Documentation Impact on Patient Experience | Pre 35.5% negative → post 6.5% negative (p=0.005). Largest improvement. | [[OI - Organizational Impact]] |
 | Recommendation Likelihood | Post-survey: 35.5% highly likely to recommend to a colleague. | [[US - User Satisfaction]] |
-| Productivity Impact | Post-survey: 58.1% agreed it increases productivity. | [[NB - Net Benefits]] |
+| Productivity Impact | Post-survey: 58.1% agreed it increases productivity. | [[II - Individual Impact]] |
 | Intention to Use | Post-survey: 29.0% intend to use for majority of notes. | [[U - Use]] |
 
 ---

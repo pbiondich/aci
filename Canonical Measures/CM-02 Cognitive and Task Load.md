@@ -1,6 +1,6 @@
 # CM-02 Cognitive and Task Load
 
-**D&M Dimension:** [[US - User Satisfaction]]
+**D&M Dimension:** [[II - Individual Impact]]
 
 ## Definition
 The mental effort, time pressure, and frustration experienced by clinicians *during* or *immediately after* a clinical encounter — the in-the-moment cognitive demand of documentation. Distinct from burnout (CM-01), which is a sustained emotional state.

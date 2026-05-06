@@ -39,12 +39,12 @@ Ambient AI will improve health care practitioners' well-being, yielding higher f
 
 | Measure | Description | D&M Dimension(s) |
 |---|---|---|
-| Work Exhaustion / Interpersonal Disengagement (PFI) | Stanford PFI 10-item composite; 1–5 scale (higher=worse). Corresponds to burnout. Collected at baseline, 6, 12, 18, 24 weeks. Coprimary outcome. | US, NB |
-| Professional Fulfillment (PFI) | Stanford PFI 6-item subscale; 1–5 scale (higher=better). Coprimary outcome. | US, NB |
-| Time on notes (EHR audit log) | Hours/day spent on notes, normalized to 8-hour workday; from EHR audit-log data. | NB |
-| Work Outside Work (WoW) | Hours/day documenting outside scheduled hours, normalized to 8-hour workday; EHR audit-log. | NB |
-| Same-day / pre-next-visit closure | Proportion of encounters closed same day or before next patient visit; EHR audit-log. | NB |
-| Diagnostic billing compliance | ICD-10 code alignment with documentation; reviewed by certified coders using standardized rubric. Partial credit for insufficient specificity; zero for billing-validity errors. | IQ, NB |
+| Work Exhaustion / Interpersonal Disengagement (PFI) | Stanford PFI 10-item composite; 1–5 scale (higher=worse). Corresponds to burnout. Collected at baseline, 6, 12, 18, 24 weeks. Coprimary outcome. | US, [[II - Individual Impact]] |
+| Professional Fulfillment (PFI) | Stanford PFI 6-item subscale; 1–5 scale (higher=better). Coprimary outcome. | US, [[II - Individual Impact]] |
+| Time on notes (EHR audit log) | Hours/day spent on notes, normalized to 8-hour workday; from EHR audit-log data. | [[II - Individual Impact]] |
+| Work Outside Work (WoW) | Hours/day documenting outside scheduled hours, normalized to 8-hour workday; EHR audit-log. | [[II - Individual Impact]] |
+| Same-day / pre-next-visit closure | Proportion of encounters closed same day or before next patient visit; EHR audit-log. | [[II - Individual Impact]] |
+| Diagnostic billing compliance | ICD-10 code alignment with documentation; reviewed by certified coders using standardized rubric. Partial credit for insufficient specificity; zero for billing-validity errors. | IQ, [[OI - Organizational Impact]] |
 | PDSQI-9 note quality | Provider Documentation Summarization Quality Instrument 9 (adapted); 5-point scale per domain; LLM-as-judge implementation validated against physician ratings. Unedited AI notes evaluated pre-practitioner review. | IQ |
 | Task load | Practitioner-reported secondary measure | US |
 | Meaningfulness of work | Practitioner-reported secondary measure | US |

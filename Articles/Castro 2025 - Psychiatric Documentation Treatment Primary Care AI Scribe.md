@@ -40,8 +40,8 @@ Explicit: to characterize differences in documentation and treatment of psychiat
 
 | Measure | Description | D&M Dimension(s) |
 |---|---|---|
-| RDoC Symptom Documentation Level (6 domains) | Estimated levels of Research Domain Criteria neuropsychiatric symptomatology extracted by GPT-4o from clinical notes. All 6 domains significantly higher in ambient-scribed notes (p<.001 for all). More symptoms documented. | [[IQ - Information Quality]], [[NB - Net Benefits]] |
-| Likelihood of Psychiatric Intervention | Logistic regression outcome: whether visit resulted in referral, new psychiatric diagnosis, or new antidepressant prescription. Ambient scribe: aOR 0.83 [0.72–0.95], p=.005 — significantly LESS likely. Human scribe: aOR 1.01 [0.87–1.17], p=NS. | [[NB - Net Benefits]] |
+| RDoC Symptom Documentation Level (6 domains) | Estimated levels of Research Domain Criteria neuropsychiatric symptomatology extracted by GPT-4o from clinical notes. All 6 domains significantly higher in ambient-scribed notes (p<.001 for all). More symptoms documented. | [[IQ - Information Quality]] |
+| Likelihood of Psychiatric Intervention | Logistic regression outcome: whether visit resulted in referral, new psychiatric diagnosis, or new antidepressant prescription. Ambient scribe: aOR 0.83 [0.72–0.95], p=.005 — significantly LESS likely. Human scribe: aOR 1.01 [0.87–1.17], p=NS. | [[OI - Organizational Impact]] |
 | PHQ-9 Documentation | 5.0% of ambient-scribed visits met criteria for moderate or greater depressive symptoms by PHQ-9. Used as baseline severity context. | [[IQ - Information Quality]] |
 | Demographic and Clinical Matching | 1:1 matching on age, sex, sociodemographic factors, and clinical features across 4 groups. Ambient scribe group: mean age 48 (SD 14); 59% female. | (methodological) |
 | GPT-4o NLP Extraction (HIPAA-compliant) | GPT-4o used to extract RDoC symptom levels from de-identified notes. Represents a novel outcome measure methodology — LLM-as-evaluator of clinical note content. Accuracy/validation of GPT-4o extraction not reported in abstract. | [[SQ - System Quality]], [[IQ - Information Quality]] |

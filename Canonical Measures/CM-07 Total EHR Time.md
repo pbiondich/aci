@@ -1,6 +1,6 @@
 # CM-07 Total EHR Time
 
-**D&M Dimension:** [[NB - Net Benefits]]
+**D&M Dimension:** [[II - Individual Impact]]
 
 ## Definition
 Total time spent in the EHR across all tasks — note-writing, inbox management, order entry, results review, messaging — normalized per scheduled workday. Broader than documentation time alone; captures the total EHR burden.

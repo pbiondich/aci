@@ -41,8 +41,8 @@ Explicit: to evaluate whether ambient AI scribe use reduces administrative burde
 | Measure | Description | D&M Dimension(s) |
 |---|---|---|
 | Burnout (10-point scale, primary outcome) | Self-reported burnout on validated 10-point scale. Decreased from mean 4.59 to 4.12 (−0.47, p<.001). Multivariable OR 0.26 [0.13–0.54], p<.001. One of the few studies in corpus showing significant burnout reduction on a validated scale. | [[US - User Satisfaction]] |
-| Note-Related Cognitive Task Load | Validated scale assessing mental burden of note-writing tasks. Large decrease: 7.10 → 4.46 (−2.64, p<.001). Among the largest effect sizes for cognitive load in the corpus. | [[US - User Satisfaction]], [[NB - Net Benefits]] |
-| Secondary Survey Outcomes (Table 3) | Additional survey domains including documentation satisfaction, time perception, patient interaction quality. Specific items available in full results. | [[US - User Satisfaction]], [[NB - Net Benefits]] |
+| Note-Related Cognitive Task Load | Validated scale assessing mental burden of note-writing tasks. Large decrease: 7.10 → 4.46 (−2.64, p<.001). Among the largest effect sizes for cognitive load in the corpus. | [[US - User Satisfaction]], [[II - Individual Impact]] |
+| Secondary Survey Outcomes (Table 3) | Additional survey domains including documentation satisfaction, time perception, patient interaction quality. Specific items available in full results. | [[US - User Satisfaction]], [[II - Individual Impact]] |
 | Site-Level Heterogeneity | 6 health systems, site sizes ranging from 9 (Site 3) to 105 (Site 6) participants. Site 5 excluded from burnout sub-analysis per supplemental eTable 2 — suggests site-level variation in outcomes. | (methodological) |
 | Specialty Subgroup Analysis | Full specialty mix (surgery, OB/gyn, peds, neurology/psychiatry, primary care). One of few studies with surgical specialty representation. | [[US - User Satisfaction]] |
 

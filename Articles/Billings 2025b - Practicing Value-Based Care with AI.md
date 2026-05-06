@@ -44,25 +44,25 @@ Phyx Primary Care (nonprofit innovation lab) evaluated Navina's AI copilot in VB
 
 | Measure | Value | P-value | D&M Dimension |
 |---|---|---|---|
-| Clinical Review Time (complex visits) | −40% (10.0 → 6.0 min) | 0.869 (NS) | NB |
-| Clinical Review Burden (self-report) | −24% (2.4 → 1.9) | 0.000 | US, NB |
-| % Visits Fully Prepared | +12% (69% → 78%) | 0.002 | NB |
+| Clinical Review Time (complex visits) | −40% (10.0 → 6.0 min) | 0.869 (NS) | [[II - Individual Impact]] |
+| Clinical Review Burden (self-report) | −24% (2.4 → 1.9) | 0.000 | US, [[II - Individual Impact]] |
+| % Visits Fully Prepared | +12% (69% → 78%) | 0.002 | [[II - Individual Impact]] |
 | Burnout (single-item, % burned out) | −32% (47% → 32%) | 0.023 | US |
 | Dissatisfaction | −23% (22% → 17%) | 0.005 | US |
 | Care Time Rating | +5% (2.7 → 2.8) | 0.174 (NS) | US |
-| After-Hours Time | −6% (2.2 → 2.1) | 0.204 (NS) | NB |
+| After-Hours Time | −6% (2.2 → 2.1) | 0.204 (NS) | [[II - Individual Impact]] |
 | Physician usage rate | 90% weekly | — | U |
 | Easy to access/use | 94% | — | US |
-| HCC recommendations addressed | 91% | — | NB |
-| HCC recommendations accepted | 73% | — | NB |
+| HCC recommendations addressed | 91% | — | [[OI - Organizational Impact]] |
+| HCC recommendations accepted | 73% | — | [[OI - Organizational Impact]] |
 | Trusted HCC suggestions | 92% | — | US |
 | Trusted diagnosis prompts | 85% | — | US |
 | "Gives me hope" | 64% | — | US |
 | Would recommend to colleague | 84% | — | US |
 | Would NOT recommend | 8% | — | US |
-| Avg HCC codes captured per patient | 2.8 | — | NB, CM-21 |
-| RAF score change | +0.153 | — | NB, CM-21 |
-| STAR quality score change | +1.9 points (32 domains) | — | NB |
+| Avg HCC codes captured per patient | 2.8 | — | [[OI - Organizational Impact]], CM-21 |
+| RAF score change | +0.153 | — | [[OI - Organizational Impact]], CM-21 |
+| STAR quality score change | +1.9 points (32 domains) | — | [[OI - Organizational Impact]] |
 
 ---
 

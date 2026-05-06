@@ -1,6 +1,6 @@
 # CM-21 Coding Accuracy ICD-10 HCC and EM
 
-**D&M Dimension:** [[IQ - Information Quality]] | [[NB - Net Benefits]]
+**D&M Dimension:** [[OI - Organizational Impact]]
 
 ## Definition
 The accuracy and completeness of diagnostic and billing codes generated or supported by ambient AI documentation — ICD-10 diagnosis codes, HCC (Hierarchical Condition Category) capture for risk adjustment, and E/M (Evaluation & Management) coding level. Bridges IQ (note quality sufficient for accurate coding) and NB (coding accuracy drives revenue and population health metrics).

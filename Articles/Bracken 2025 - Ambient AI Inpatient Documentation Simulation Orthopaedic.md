@@ -40,8 +40,8 @@ Explicit: to examine the impact of an ambient AI scribe on documentation timing,
 
 | Measure | Description | D&M Dimension(s) |
 |---|---|---|
-| Progress Note Time (seconds) | AI: median 27s (IQR 18–39.75) vs. manual: 128s (IQR 112.3–168.8). Reduction 78.9% (p<.0001, r=0.87). By complexity: simple −82s, moderate −113s, complex −158s. 96.6% of AI notes reviewed in <60s. | [[NB - Net Benefits]] |
-| Discharge Summary Time (seconds) | AI: median 113.9s (IQR 64.4–143.5) vs. manual: 458.7s (IQR 367.9–663.5). Median difference 356.6s (p<.0001, r=0.88). By complexity: simple −5min, moderate −5.5min, complex −12min. | [[NB - Net Benefits]] |
+| Progress Note Time (seconds) | AI: median 27s (IQR 18–39.75) vs. manual: 128s (IQR 112.3–168.8). Reduction 78.9% (p<.0001, r=0.87). By complexity: simple −82s, moderate −113s, complex −158s. 96.6% of AI notes reviewed in <60s. | [[II - Individual Impact]] |
+| Discharge Summary Time (seconds) | AI: median 113.9s (IQR 64.4–143.5) vs. manual: 458.7s (IQR 367.9–663.5). Median difference 356.6s (p<.0001, r=0.88). By complexity: simple −5min, moderate −5.5min, complex −12min. | [[II - Individual Impact]] |
 | Progress Note PDQI-9 Overall | AI: median 43.5 (IQR 41–45) vs. manual: 41 (IQR 38.25–43). p=.002, r=0.43. Significant difference only for simple encounters; moderate and complex encounters NS. | [[IQ - Information Quality]] |
 | Progress Note PDQI-9 — Thoroughness | AI significantly better (p<.0001, r=0.62). | [[IQ - Information Quality]] |
 | Progress Note PDQI-9 — Currency (Up to Date) | AI significantly better (p=.0046, r=0.42). | [[IQ - Information Quality]] |

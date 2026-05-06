@@ -36,10 +36,10 @@ Not explicitly stated. Research question: Is ambient AI scribe adoption associat
 
 | Measure | Description | D&M Dimension(s) |
 |---|---|---|
-| RVUs per encounter | Relative value units billed per individual encounter; measure of financial productivity | NB |
-| RVUs per physician per week | Total RVUs per week, controlling for encounter type, payer, complexity | NB |
-| Encounters per week | Ambulatory visit volume per physician per week | NB |
-| Claim denial rate | Proportion of encounters with a payer denial; proxy for coding quality | NB, IQ |
+| RVUs per encounter | Relative value units billed per individual encounter; measure of financial productivity | [[OI - Organizational Impact]] |
+| RVUs per physician per week | Total RVUs per week, controlling for encounter type, payer, complexity | [[OI - Organizational Impact]] |
+| Encounters per week | Ambulatory visit volume per physician per week | [[OI - Organizational Impact]] |
+| Claim denial rate | Proportion of encounters with a payer denial; proxy for coding quality | [[OI - Organizational Impact]], IQ |
 | Adoption status | Whether physician had access to and used an AI scribe at time of encounter | U |
 
 ---

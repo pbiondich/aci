@@ -42,10 +42,10 @@ Explicit: to quantify utilization and impact on documentation time of a large la
 |---|---|---|
 | Utilization Rate (% of encounters) | DAX used in 55.25% of 17,428 encounters. Median per-physician: 52.5% (IQR 17.86–80.97%). High individual heterogeneity — some near 100%, others near 0%. | [[U - Use]] |
 | SmartSection Utilization by Type | HPI most used (median 39.7%), A&P second (14.8%), Results (2.6%), PE (1.6%). Physicians adopt AI-generated HPI and A&P far more than physical exam or results sections. | [[U - Use]], [[IQ - Information Quality]] |
-| Time per Note (min) | Median change −0.57 min (IQR −1.3 to −0.13); baseline 4.86 min → pilot 3.64 min. T=−5.19, p<.001. Statistically significant but modest absolute reduction (~12%). | [[NB - Net Benefits]] |
-| Daily Documentation Time (min/day) | Median change −6.89 min/day (IQR −22.37 to −0.65). T=−4.48, p<.001. | [[NB - Net Benefits]] |
-| After-Hours EHR Time (min/day) | Median change −5.17 min/day (IQR −21.32 to 3.82). T=−2.65, p=.01. **Significant after-hours reduction** — contrasts with null findings in Pearlman 2025 and Stults 2025. Note: not normalized to encounter volume. | [[NB - Net Benefits]] |
-| Total EHR Time (min/day) | Median change −19.95 min/day (IQR −39.34 to −3.64). T=−5.85, p<.001. Largest absolute time saving in the corpus. Note: same caveat about non-normalization to encounter volume. | [[NB - Net Benefits]] |
+| Time per Note (min) | Median change −0.57 min (IQR −1.3 to −0.13); baseline 4.86 min → pilot 3.64 min. T=−5.19, p<.001. Statistically significant but modest absolute reduction (~12%). | [[II - Individual Impact]] |
+| Daily Documentation Time (min/day) | Median change −6.89 min/day (IQR −22.37 to −0.65). T=−4.48, p<.001. | [[II - Individual Impact]] |
+| After-Hours EHR Time (min/day) | Median change −5.17 min/day (IQR −21.32 to 3.82). T=−2.65, p=.01. **Significant after-hours reduction** — contrasts with null findings in Pearlman 2025 and Stults 2025. Note: not normalized to encounter volume. | [[II - Individual Impact]] |
+| Total EHR Time (min/day) | Median change −19.95 min/day (IQR −39.34 to −3.64). T=−5.85, p<.001. Largest absolute time saving in the corpus. Note: same caveat about non-normalization to encounter volume. | [[II - Individual Impact]] |
 | License Relinquishment | 3 of 50 (6%) voluntarily returned their license citing low perceived utility. Used as a proxy for non-adoption/rejection. | [[U - Use]], [[US - User Satisfaction]] |
 
 ---

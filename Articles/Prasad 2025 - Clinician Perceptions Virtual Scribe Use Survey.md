@@ -46,16 +46,16 @@ Explicit: to characterize the relationship between virtual scribe use and physic
 |---|---|---|
 | Clinician Satisfaction (5-point, dichotomized) | "Satisfied" or "very satisfied" with virtual scribe. 47.8% satisfied. aOR non-primary care: 10.12 [2.06, 49.62]; aOR male: 3.62 [1.19, 11.05]; aOR <1yr use: 0.02 [0.004, 0.13] (strongly negative). | [[US - User Satisfaction]] |
 | Improved Wellbeing (Likert, dichotomized) | "Somewhat/strongly agree" that virtual scribe enhances wellbeing. 66.4% endorsed. Largest effect for non-primary care: aOR 34.60 [5.26, 227.64]. Not significantly associated with gender for wellbeing. | [[US - User Satisfaction]] |
-| Enhanced Patient Relationship (Likert, dichotomized) | "Somewhat/strongly agree" that virtual scribe enhances relationship with patients. 61.1% endorsed. aOR non-primary care: 6.34 [1.24, 32.34]; aOR male: 4.71 [1.25, 17.78]; aOR <1yr use: 0.01 [0.002, 0.07] (strongly negative). | [[NB - Net Benefits]], [[US - User Satisfaction]] |
-| Focus on Patients During Visit | Perceived benefit item: scribe enables better focus on patients. 50% endorsed. | [[NB - Net Benefits]] |
-| Reduced Documentation Time | Perceived benefit item: scribe reduces time spent on documentation. 53% endorsed. | [[NB - Net Benefits]] |
+| Enhanced Patient Relationship (Likert, dichotomized) | "Somewhat/strongly agree" that virtual scribe enhances relationship with patients. 61.1% endorsed. aOR non-primary care: 6.34 [1.24, 32.34]; aOR male: 4.71 [1.25, 17.78]; aOR <1yr use: 0.01 [0.002, 0.07] (strongly negative). | [[OI - Organizational Impact]], [[US - User Satisfaction]] |
+| Focus on Patients During Visit | Perceived benefit item: scribe enables better focus on patients. 50% endorsed. | [[II - Individual Impact]] |
+| Reduced Documentation Time | Perceived benefit item: scribe reduces time spent on documentation. 53% endorsed. | [[II - Individual Impact]] |
 | Steep Learning Curve | Most commonly cited drawback — scribe and/or provider learning curve. Qualitative and quantitative endorsement. | [[SerQ - Service Quality]], [[U - Use]] |
 | Years of Scribe Use as Moderator | <1 year use: aOR 0.02 satisfaction, 0.01 patient relationship (dramatically negative). 1–2 years: aOR 0.06 satisfaction, 0.16 patient relationship. ≥2 years: reference (positive). Benefit strongly time-dependent. | [[U - Use]] |
 | Specialty as Moderator | Non-primary care vs. primary care: large differentials on all three outcomes. Post-hoc: medical subspecialty > primary care on all outcomes. Primary care notes are longer and more complex — harder for scribes to capture. | [[US - User Satisfaction]] |
 | Gender as Moderator | Male physicians had higher odds of improved satisfaction and patient relationships vs. female. Wellbeing not significantly different by gender in multivariable. | [[US - User Satisfaction]] |
 | Qualitative — Service Issues | Major theme: scribe turnover, provider time to train scribes, variable scribe quality. | [[SerQ - Service Quality]] |
-| Qualitative — Documentation Issues | Major theme: poor documentation quality, paradoxical documentation time increase, scribe errors. Contradicts the quantitative "reduced documentation time" benefit finding for some physicians. | [[IQ - Information Quality]], [[NB - Net Benefits]] |
-| Qualitative — Workflow Impacts | Major theme: delayed encounter closing, inefficiencies; also positive impacts — more time for patients, improved burnout perception. | [[NB - Net Benefits]], [[US - User Satisfaction]] |
+| Qualitative — Documentation Issues | Major theme: poor documentation quality, paradoxical documentation time increase, scribe errors. Contradicts the quantitative "reduced documentation time" benefit finding for some physicians. | [[IQ - Information Quality]], [[II - Individual Impact]] |
+| Qualitative — Workflow Impacts | Major theme: delayed encounter closing, inefficiencies; also positive impacts — more time for patients, improved burnout perception. | [[II - Individual Impact]], [[US - User Satisfaction]] |
 
 ---
 *Reviewed by Iris | Source: Journal of General Internal Medicine 2025 | DOI: 10.1007/s11606-025-09771-5 | Template v2.0 | Full text reviewed ✅*

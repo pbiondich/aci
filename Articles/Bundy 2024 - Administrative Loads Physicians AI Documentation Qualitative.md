@@ -40,13 +40,13 @@ Explicit: to evaluate physicians' experiences with DAX Copilot and assess its im
 
 | Measure | Description | D&M Dimension(s) |
 |---|---|---|
-| Quality of Life / Documentation Time (qualitative) | Most interviewees (n=10) reported or expected improvement in quality of life through reduced documentation time. "Out of the week now, it may be one day that I have to come home and finish notes…at most an hour and a half." | [[NB - Net Benefits]] |
-| Cognitive Burden / Offloading (qualitative) | DAXC significantly reduced anxiety about forgetting clinical details. "DAX helps a lot with cognitive offloading…you're not going to lose information like you might have before." | [[US - User Satisfaction]], [[NB - Net Benefits]] |
-| Patient Engagement / Eye Contact (qualitative) | Physicians reported being more present, more attentive, better eye contact. "I'm really sort of knee to knee with them…definitely much more present." | [[NB - Net Benefits]] |
+| Quality of Life / Documentation Time (qualitative) | Most interviewees (n=10) reported or expected improvement in quality of life through reduced documentation time. "Out of the week now, it may be one day that I have to come home and finish notes…at most an hour and a half." | [[II - Individual Impact]] |
+| Cognitive Burden / Offloading (qualitative) | DAXC significantly reduced anxiety about forgetting clinical details. "DAX helps a lot with cognitive offloading…you're not going to lose information like you might have before." | [[US - User Satisfaction]], [[II - Individual Impact]] |
+| Patient Engagement / Eye Contact (qualitative) | Physicians reported being more present, more attentive, better eye contact. "I'm really sort of knee to knee with them…definitely much more present." | [[OI - Organizational Impact]] |
 | Note Verbosity / Quality Concerns (qualitative) | Notes can be overwhelmingly verbose (n=4). "This person has a common cold and it generated six paragraphs." DAXC can't reliably distinguish relevant from irrelevant content. | [[IQ - Information Quality]], [[SQ - System Quality]] |
 | Hallucinations / Errors (qualitative) | AI fabricating additional people in the room, imagining events, wrong diagnoses, misgendering, negation errors ("did not" → "did"). All interviewees noted these required editing. | [[IQ - Information Quality]], [[SQ - System Quality]] |
 | Encounter Suitability (qualitative) | Disagreement among physicians on best use cases. Some preferred DAXC for complex/protracted visits; others found it counterproductive for simple short visits (<10 min). "I didn't want to use [DAXC] for very simple sick visits." | [[U - Use]], [[SerQ - Service Quality]] |
-| Fear of Increased Patient Volume (qualitative) | 7/12 physicians worried DAXC efficiency would be used to mandate seeing more patients. "I do worry that's what this long game is." Novel concern not prominently captured in other papers. | [[US - User Satisfaction]], [[NB - Net Benefits]] |
+| Fear of Increased Patient Volume (qualitative) | 7/12 physicians worried DAXC efficiency would be used to mandate seeing more patients. "I do worry that's what this long game is." Novel concern not prominently captured in other papers. | [[US - User Satisfaction]], [[OI - Organizational Impact]] |
 
 ---
 *Reviewed by Iris | Source: Journal of General Internal Medicine 2024 | DOI: 10.1007/s11606-024-08870-z | Template v2.0 | Full text reviewed ✅*

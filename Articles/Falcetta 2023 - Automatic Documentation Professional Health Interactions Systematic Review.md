@@ -44,7 +44,7 @@ To establish the current model and technology status for the automatic transcrib
 | Real-World Clinical Validation | None of the 8 included studies had large-scale prospective validation or real-world testing. All were early technical demonstrations. | (methodological) |
 | Commercial Availability | None of the included studies had a commercially available product at time of publication (2023). | [[SerQ - Service Quality]] |
 | Technical Challenges Identified | Medical vocabulary complexity, context understanding, non-linear conversation flow, room noise, speaker variability, data privacy, legal liability. | [[SQ - System Quality]] |
-| Ethical/Legal Concerns | Privacy, data storage, liability for AI-generated errors, consent for recording. Major barriers identified. | [[SerQ - Service Quality]], [[NB - Net Benefits]] |
+| Ethical/Legal Concerns | Privacy, data storage, liability for AI-generated errors, consent for recording. Major barriers identified. | [[SerQ - Service Quality]], [[OI - Organizational Impact]] |
 | Model Types | Neural networks most used (ASR + NLP + medical lexicon + structured output). Reinforcement learning, supervised learning, convolutional neural networks mentioned. | [[SQ - System Quality]] |
 
 ---

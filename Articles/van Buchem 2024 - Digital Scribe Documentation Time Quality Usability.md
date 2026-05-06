@@ -40,7 +40,7 @@ Not explicitly stated. Implicit hypothesis: a digital scribe system will reduce 
 
 | Measure | Description | D&M Dimension(s) |
 |---|---|---|
-| Documentation Time | Time in seconds to complete clinical note summary across the three conditions (manual vs. auto vs. auto+edit). Direct timing measurement. | [[NB - Net Benefits]] |
+| Documentation Time | Time in seconds to complete clinical note summary across the three conditions (manual vs. auto vs. auto+edit). Direct timing measurement. | [[II - Individual Impact]] |
 | PDQI-9 (Physician Documentation Quality Instrument) | A validated 9-item instrument for rating clinical note quality across dimensions including accuracy, organization, and relevance. Blinded reassignment of notes for scoring. | [[IQ - Information Quality]] |
 | Word Count | Number of words in the generated summary. Auto-generated notes had significantly higher word counts — potential indicator of note bloat. | [[IQ - Information Quality]] |
 | Lexical Diversity | Measure of vocabulary variety in the note text. Lower in auto-generated notes, suggesting more formulaic/repetitive language. | [[IQ - Information Quality]] |

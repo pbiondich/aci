@@ -41,7 +41,7 @@ To assess the clinical utility of an ambient AI tool in enhancing consultation e
 | Measure | Description | D&M Dimension(s) |
 |---|---|---|
 | SAIL Score | Sheffield Assessment Instrument for Letters for documentation quality. AI-produced documentation achieved higher SAIL scores. | [[IQ - Information Quality]] |
-| Consultation Duration | AI consultations 26.3% shorter on average without impacting patient interaction time. | [[NB - Net Benefits]] |
+| Consultation Duration | AI consultations 26.3% shorter on average without impacting patient interaction time. | [[OI - Organizational Impact]] |
 | Clinician Experience | Enhanced experience and reduced task load reported by clinicians (NASA Task Load Index). | [[US - User Satisfaction]] |
 
 ---

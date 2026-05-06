@@ -40,12 +40,12 @@ Not explicitly stated. Implicit hypothesis: implementation of ambient documentat
 
 | Measure | Description | D&M Dimension(s) |
 |---|---|---|
-| Documentation Burden | Clinician-reported experience of administrative load from EHR documentation tasks, measured via pre/post survey. Core outcome capturing subjective efficiency impact. | [[US - User Satisfaction]], [[NB - Net Benefits]] |
+| Documentation Burden | Clinician-reported experience of administrative load from EHR documentation tasks, measured via pre/post survey. Core outcome capturing subjective efficiency impact. | [[US - User Satisfaction]], [[II - Individual Impact]] |
 | Burnout | Self-reported burnout symptoms assessed via validated instruments in pre/post surveys. Primary well-being outcome of the evaluation. | [[US - User Satisfaction]] |
-| EHR Experience | Clinician-rated satisfaction with and perceived efficiency of EHR-related workflows, including time-on-task and friction points. | [[US - User Satisfaction]], [[NB - Net Benefits]] |
-| Documentation Process Experience | Qualitative and quantitative assessment of how clinicians experience the workflow of creating clinical notes — including ease, speed, and post-visit editing requirements. | [[US - User Satisfaction]], [[NB - Net Benefits]] |
+| EHR Experience | Clinician-rated satisfaction with and perceived efficiency of EHR-related workflows, including time-on-task and friction points. | [[US - User Satisfaction]], [[II - Individual Impact]] |
+| Documentation Process Experience | Qualitative and quantitative assessment of how clinicians experience the workflow of creating clinical notes — including ease, speed, and post-visit editing requirements. | [[US - User Satisfaction]], [[II - Individual Impact]] |
 | Ambient Usage Level | Categorization of clinicians by degree of ambient tool adoption (stratified in analysis by usage level). Used to examine dose-response relationship between usage and outcomes. | [[U - Use]] |
-| Specialty-Specific Variation | Analysis of outcomes stratified by specialty category — surgical, primary care, medical subspecialty — to identify differential effects of ambient technology. | [[US - User Satisfaction]], [[NB - Net Benefits]] |
+| Specialty-Specific Variation | Analysis of outcomes stratified by specialty category — surgical, primary care, medical subspecialty — to identify differential effects of ambient technology. | [[US - User Satisfaction]], [[II - Individual Impact]] |
 
 ---
 *Reviewed by Iris | Source: JAMA Network Open 2025 | DOI: 10.1001/jamanetworkopen.2025.28056 | Template v2.0*

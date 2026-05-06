@@ -40,7 +40,7 @@ Explicit: to present a human evaluation study of consultation notes and establis
 
 | Measure | Description | D&M Dimension(s) |
 |---|---|---|
-| Post-Edit Time (minutes) | Time to correct an AI-generated note to factual accuracy. Key efficiency metric for real-world scribe use. Prior work (Moramarco 2021) showed post-editing faster but more cognitively intensive than writing from scratch. | [[NB - Net Benefits]], [[US - User Satisfaction]] |
+| Post-Edit Time (minutes) | Time to correct an AI-generated note to factual accuracy. Key efficiency metric for real-world scribe use. Prior work (Moramarco 2021) showed post-editing faster but more cognitively intensive than writing from scratch. | [[II - Individual Impact]], [[US - User Satisfaction]] |
 | Incorrect Statements (error type) | Factual errors in generated notes vs. consultation audio — sentences containing one or more factual inaccuracies. | [[IQ - Information Quality]], [[SQ - System Quality]] |
 | Omissions (error type) | Medical facts that should be in the note but were omitted by the model. Most common error type. Critical omissions flagged for medico-legal liability. | [[IQ - Information Quality]], [[SQ - System Quality]] |
 | Critical Errors | Errors tagged as having essential clinical importance — those that would lead to medico-legal liability. Safety-weighted error classification. | [[IQ - Information Quality]] |

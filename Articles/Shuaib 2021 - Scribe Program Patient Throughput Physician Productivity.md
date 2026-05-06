@@ -40,19 +40,19 @@ Explicit: to evaluate the impact of medical scribes on patient throughput, physi
 
 | Measure | Description | D&M Dimension(s) |
 |---|---|---|
-| Door-to-Room Time (min) | Time from patient arrival in ED to patient placed in a room. Improved 41→37 min (p<0.0001). | [[NB - Net Benefits]] |
-| Room-to-Doc Time (min) | Time from patient in room to physician sign-up. Improved 26→24 min (p<0.0001). | [[NB - Net Benefits]] |
-| Door-to-Doc Time (min) | Time from arrival to physician sign-up. Improved 61→56 min (p<0.0001). | [[NB - Net Benefits]] |
-| Doc-to-Admit Disposition Time (min) | Time from physician sign-up to patient admitted. Improved 237→228 min (p<0.0001). | [[NB - Net Benefits]] |
-| Length of Stay — Discharged Patients (min) | Total ED time for discharged patients. Improved 303→287 min (p<0.0001). | [[NB - Net Benefits]] |
-| Length of Stay — Admitted Patients (min) | Total ED time for admitted patients. Improved 507→473 min (p<0.0001). | [[NB - Net Benefits]] |
-| Patients Seen per Hour | Physician throughput measure. Increased from 2.3 ± 0.3 to 3.2 ± 0.6 (p<0.001). | [[NB - Net Benefits]] |
-| Work Relative Value Units (wRVUs) per Hour | Medicare productivity measure weighted for service complexity. Total wRVUs increased from 241 (3.1/hr) to 336 (5.2/hr) (p<0.001). wRVUs per patient similar (2.57→2.74, p=0.88) — productivity gain was volume not coding intensity. | [[NB - Net Benefits]] |
-| Post-Visit Documentation Time (min) | Time-motion: time to complete patient chart after examination. Halved from 14 ± 3.1 to 7 ± 0.43 min (p<0.01). | [[NB - Net Benefits]] |
-| Doctor-Patient Interaction Time (min) | Time-motion: direct face time with patient. Nearly doubled from 4 ± 0.57 to 7.8 ± 1.2 min (p<0.01). | [[NB - Net Benefits]], [[US - User Satisfaction]] |
-| Chart Preparation Time (min) | Time-motion: chart prep before encounter. Eliminated (1.2→0 min, p<0.01) — scribes prepped charts. | [[NB - Net Benefits]] |
-| Chart Review Time (min) | Time-motion: time reviewing chart. Increased from 5→7 min (p<0.01) — physicians spent more time reviewing, less doing. | [[NB - Net Benefits]] |
-| Patient Satisfaction (Press Ganey, 6 items) | 5-point Likert scale. Pre-scribe satisfaction already high; most items unchanged. Significant increase only in "clinician providing satisfactory feedback" (3.9→4.7, p<0.01). | [[NB - Net Benefits]] |
+| Door-to-Room Time (min) | Time from patient arrival in ED to patient placed in a room. Improved 41→37 min (p<0.0001). | [[OI - Organizational Impact]] |
+| Room-to-Doc Time (min) | Time from patient in room to physician sign-up. Improved 26→24 min (p<0.0001). | [[OI - Organizational Impact]] |
+| Door-to-Doc Time (min) | Time from arrival to physician sign-up. Improved 61→56 min (p<0.0001). | [[OI - Organizational Impact]] |
+| Doc-to-Admit Disposition Time (min) | Time from physician sign-up to patient admitted. Improved 237→228 min (p<0.0001). | [[OI - Organizational Impact]] |
+| Length of Stay — Discharged Patients (min) | Total ED time for discharged patients. Improved 303→287 min (p<0.0001). | [[OI - Organizational Impact]] |
+| Length of Stay — Admitted Patients (min) | Total ED time for admitted patients. Improved 507→473 min (p<0.0001). | [[OI - Organizational Impact]] |
+| Patients Seen per Hour | Physician throughput measure. Increased from 2.3 ± 0.3 to 3.2 ± 0.6 (p<0.001). | [[OI - Organizational Impact]] |
+| Work Relative Value Units (wRVUs) per Hour | Medicare productivity measure weighted for service complexity. Total wRVUs increased from 241 (3.1/hr) to 336 (5.2/hr) (p<0.001). wRVUs per patient similar (2.57→2.74, p=0.88) — productivity gain was volume not coding intensity. | [[OI - Organizational Impact]] |
+| Post-Visit Documentation Time (min) | Time-motion: time to complete patient chart after examination. Halved from 14 ± 3.1 to 7 ± 0.43 min (p<0.01). | [[II - Individual Impact]] |
+| Doctor-Patient Interaction Time (min) | Time-motion: direct face time with patient. Nearly doubled from 4 ± 0.57 to 7.8 ± 1.2 min (p<0.01). | [[OI - Organizational Impact]], [[US - User Satisfaction]] |
+| Chart Preparation Time (min) | Time-motion: chart prep before encounter. Eliminated (1.2→0 min, p<0.01) — scribes prepped charts. | [[II - Individual Impact]] |
+| Chart Review Time (min) | Time-motion: time reviewing chart. Increased from 5→7 min (p<0.01) — physicians spent more time reviewing, less doing. | [[II - Individual Impact]] |
+| Patient Satisfaction (Press Ganey, 6 items) | 5-point Likert scale. Pre-scribe satisfaction already high; most items unchanged. Significant increase only in "clinician providing satisfactory feedback" (3.9→4.7, p<0.01). | [[OI - Organizational Impact]] |
 | Physician Satisfaction Percentile (ED) | ED physician satisfaction percentile improved from 66% to 81% post-scribe (+15pp). | [[US - User Satisfaction]] |
 
 ---

@@ -40,10 +40,10 @@ Explicit: "We hypothesize that the use of the tool will affect note length and r
 
 | Measure | Description | D&M Dimension(s) |
 |---|---|---|
-| Average Time per Note (min) | Mean time spent writing a single note, derived from Epic Signal. Decreased from 6.58 min (baseline) to 5.45 min at 3-month follow-up (T=-6.61, p<0.001). Sustained across all three months. | [[NB - Net Benefits]] |
-| Average Documentation Time per Provider per Day (min) | Total daily time spent on note-writing per physician. Decreased from 63.99 min to 53.33 min at 3-month follow-up (T=-3.98, p<0.001). ~10.6 min/day saved. | [[NB - Net Benefits]] |
-| Average Characters per Note | Character count of individual progress notes. Increased by ~559 chars baseline → 3-month (T=2.64, p<0.05). Authors flag potential template inflation. | [[IQ - Information Quality]], [[NB - Net Benefits]] |
-| Average Characters per Appointment | Total character count across all note types generated per encounter. Increased by ~1,021 chars (8,232 → 9,253, T=5.23, p<0.001). | [[IQ - Information Quality]], [[NB - Net Benefits]] |
+| Average Time per Note (min) | Mean time spent writing a single note, derived from Epic Signal. Decreased from 6.58 min (baseline) to 5.45 min at 3-month follow-up (T=-6.61, p<0.001). Sustained across all three months. | [[II - Individual Impact]] |
+| Average Documentation Time per Provider per Day (min) | Total daily time spent on note-writing per physician. Decreased from 63.99 min to 53.33 min at 3-month follow-up (T=-3.98, p<0.001). ~10.6 min/day saved. | [[II - Individual Impact]] |
+| Average Characters per Note | Character count of individual progress notes. Increased by ~559 chars baseline → 3-month (T=2.64, p<0.05). Authors flag potential template inflation. | [[IQ - Information Quality]], [[II - Individual Impact]] |
+| Average Characters per Appointment | Total character count across all note types generated per encounter. Increased by ~1,021 chars (8,232 → 9,253, T=5.23, p<0.001). | [[IQ - Information Quality]], [[II - Individual Impact]] |
 | Adoption / Inclusion Rate | 124 enrolled; only 42 (34%) met 3-month analysis criteria. Used as a proxy for differential adoption and sustainability of tool use. Not a primary outcome but analytically important. | [[U - Use]] |
 
 ---

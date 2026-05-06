@@ -1,6 +1,6 @@
 # CM-03 Professional Fulfillment and Meaningfulness
 
-**D&M Dimension:** [[US - User Satisfaction]]
+**D&M Dimension:** [[II - Individual Impact]]
 
 ## Definition
 Provider-reported positive engagement with clinical work — the presence of meaning, reward, and satisfaction in the work itself. The positive pole of the well-being spectrum, distinct from absence of burnout. Measured via PFI fulfillment subscale or related instruments.
