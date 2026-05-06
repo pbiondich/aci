@@ -46,7 +46,7 @@ function OverviewTab({ articles, measures, draftMeasures, setTab }) {
           <div className="hero-byline">
             <div>
               <div className="label">Version · Date</div>
-              <div className="val">v.22 · April 2026</div>
+              <div className="val">v.31 · May 2026</div>
             </div>
             <div>
               <div className="label">Framework</div>
