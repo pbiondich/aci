@@ -93,3 +93,5 @@ The linkage tool handles both canonical measure and D&M dimension linkage in a s
 ---
 *Templates | ACI Evidence Review Vault | Created 2026-04-15, updated with automated tooling 2026-04-15*
 *Method: Documented from initial derivation process, April 2025 linkage validation, and automated tooling build*
+
+*Licensed under [CC BY-SA 4.0](../LICENSE) — [github.com/pbiondich/aci](https://github.com/pbiondich/aci)*

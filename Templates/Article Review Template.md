@@ -79,3 +79,5 @@ The linkage tool will:
 
 ---
 *Template version: 3.0 — Updated 2026-04-15*
+
+*Licensed under [CC BY-SA 4.0](../LICENSE) — [github.com/pbiondich/aci](https://github.com/pbiondich/aci)*

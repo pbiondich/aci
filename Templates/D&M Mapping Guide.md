@@ -159,3 +159,5 @@ Add a note in the article if:
 ---
 *Mapping guide version 1.0 — Created 2026-03-24 by Iris*
 *Review annually or when new D&M literature suggests refinements.*
+
+*Licensed under [CC BY-SA 4.0](../LICENSE) — [github.com/pbiondich/aci](https://github.com/pbiondich/aci)*

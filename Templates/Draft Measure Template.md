@@ -27,3 +27,5 @@
 *Draft Measures | ACI Evidence Review | Proposed 2026-04-14*
 *Method: Stakeholder gap analysis of canonical measures against executive decision-making needs*
 *Status: Pending key informant validation*
+
+*Licensed under [CC BY-SA 4.0](../LICENSE) — [github.com/pbiondich/aci](https://github.com/pbiondich/aci)*
