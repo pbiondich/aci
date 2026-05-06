@@ -80,3 +80,5 @@ Prior to this derivation (2026-03-24), the vault contained 11 seeded measures th
 *Updated: 2026-04-15 | Derived from 494 raw measure rows, 54 papers*
 
 **2026-04-15 update:** Paper counts refreshed after automated linkage validation (25 missing links fixed across 15 CMs). CM-09 renamed to "Note Inaccuracy Rate"; CM-10 renamed to "Note Quality Overall" (accommodates SAIL Score alongside PDQI-9).
+
+*Licensed under [CC BY-SA 4.0](../LICENSE) — [github.com/pbiondich/aci](https://github.com/pbiondich/aci)*
