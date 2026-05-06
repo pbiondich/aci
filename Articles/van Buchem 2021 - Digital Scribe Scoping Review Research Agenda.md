@@ -73,3 +73,7 @@ Not explicitly stated. Research questions: (1) What methods are used to develop 
 *Reviewed by Iris | Source: npj Digital Medicine 2021 | DOI: 10.1038/s41746-021-00432-5 | Template v2.0 | Full text reviewed ✅*
 *📍 Key signal: As of end of 2020, the field had 0 clinical utility studies and only 2 clinical validity/usability studies out of 20. This paper establishes the baseline — almost all papers in this corpus post-date it and are filling the gaps it identified.*
 *📍 Industry opacity: Companies developing digital scribes did not publish performance data and largely refused to provide it when asked. This pattern from 2021 has continued — most vendor claims in the corpus are self-reported or from sponsored studies.*
+
+## License
+
+This file is part of the [ACI Structured Evidence Review](https://github.com/pbiondich/aci), licensed under [CC BY-SA 4.0](../LICENSE). If you extend this work, consider contributing back via a pull request.

@@ -52,3 +52,7 @@ Explicit: to evaluate how use of ambient voice recognition with NLP and AI (DAX)
 *📍 Companion paper: Owens et al. 2024 in Family Practice (DOI 10.1093/fampra/cmad092, Paper 32 or nearby in corpus) covers provider burnout at the same institution — making this a paired patient + provider perspective study from the same site.*
 *📍 The null result on PDRQ-9 is NOT the same as "patients don't like it" — it means the patient-physician relationship as measured by this instrument is unchanged, not worse. Important distinction.*
 *📍 University of Michigan Health-West is a community (not academic) primary care setting — adds diversity to the predominantly academic health system focus of the corpus.*
+
+## License
+
+This file is part of the [ACI Structured Evidence Review](https://github.com/pbiondich/aci), licensed under [CC BY-SA 4.0](../LICENSE). If you extend this work, consider contributing back via a pull request.

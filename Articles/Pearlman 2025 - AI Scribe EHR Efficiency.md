@@ -52,3 +52,7 @@ Explicit: to evaluate whether AI scribe use is associated with reduced EHR time 
 *📍 Notable: Methodologically strongest efficiency study in corpus — concurrent control group + propensity score weighting removes the selection bias that plagues before-after designs. The null finding on after-hours time is consistent with Stults 2025 and is becoming a field-wide pattern worth flagging.*
 *📍 Dose-response finding: benefit scales with use intensity. Q4 high-users see meaningful reductions; Q1 low-users see almost none. Implication: implementation fidelity and adoption behavior matter as much as the tool itself.*
 *📍 Replication context: Corresponds to the same institution/PI as Shah 2025 (Stanford) — actually different; this is University of Chicago/Laiteerapong. Note to self: verify product name in full article.*
+
+## License
+
+This file is part of the [ACI Structured Evidence Review](https://github.com/pbiondich/aci), licensed under [CC BY-SA 4.0](../LICENSE). If you extend this work, consider contributing back via a pull request.

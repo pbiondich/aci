@@ -51,3 +51,7 @@ Not explicitly stated. Implicit hypothesis: a digital scribe system will reduce 
 ---
 *Reviewed by Iris | Source: JMIR AI 2024 | DOI: 10.2196/60020 | Template v2.0*
 *📍 Notable: One of only two non-US papers in the corpus (Netherlands). Uses simulation rather than real clinical deployment. Applies PDQI-9 quality instrument — one of few validated quality measurement tools in the literature. Same first author (van Buchem) also authored the earlier 2021 scoping review on digital scribes (also in the corpus).*
+
+## License
+
+This file is part of the [ACI Structured Evidence Review](https://github.com/pbiondich/aci), licensed under [CC BY-SA 4.0](../LICENSE). If you extend this work, consider contributing back via a pull request.

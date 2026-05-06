@@ -85,3 +85,7 @@ Also hosted on Suki's website (vendor mirror). Abstract-level detail obtained fr
 *Reviewed by Iris | Source: AAFP Innovation Lab 2021 | No DOI | Template v2.0 | Full text available via wpchange.org (abstract-level); Suki website mirror*
 *📍 Key for Suki synthesis: One of the only corpus papers specifically evaluating Suki (not DAX/Abridge). The 72% documentation time reduction claim is extraordinary and needs methodological scrutiny — but the 60% paid adoption rate is a meaningful corroborating signal.*
 *📍 COI note: Suki hosts this report on its own website. AAFP's "essential innovation" endorsement and the report's close association with Suki suggest this should be treated as vendor-adjacent evidence, not independent research.*
+
+## License
+
+This file is part of the [ACI Structured Evidence Review](https://github.com/pbiondich/aci), licensed under [CC BY-SA 4.0](../LICENSE). If you extend this work, consider contributing back via a pull request.

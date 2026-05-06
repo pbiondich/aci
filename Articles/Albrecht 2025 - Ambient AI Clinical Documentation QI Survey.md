@@ -59,3 +59,7 @@ To evaluate the impact of Abridge ambient AI documentation on clinicians’ perc
 *📍 Implementation context: 73.5% adoption rate among those offered access (133/181 completed ≥5 encounters). Median 92 days of use before post-survey. Benefit seen relatively quickly.*
 *📍 COI: Tina Shah (Abridge) is a co-author. Disclosed in article. Similar pattern to Olson 2025 (Abridge co-author) and Palm 2025 (Suki authors).*
 *📍 Practical impact: Study supports ambient AI as a solution for documentation burden across specialties, though authors call for future studies using validated instruments and comparing platforms.*
+
+## License
+
+This file is part of the [ACI Structured Evidence Review](https://github.com/pbiondich/aci), licensed under [CC BY-SA 4.0](../LICENSE). If you extend this work, consider contributing back via a pull request.

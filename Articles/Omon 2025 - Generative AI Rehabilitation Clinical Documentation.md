@@ -58,3 +58,7 @@ Explicit: to evaluate whether the use of generative AI reduces clinical document
 *📍 Notable: Only non-US study in corpus (Japan); only rehabilitation-specific study; only study using non-conversational voice memos rather than live ambient capture. Generalizability to US physician-facing ambient AI is limited — but the finding that tool utilization intensity (voice memo frequency) predicts time savings is highly relevant to any implementation context.*
 *📍 Key tension: Time pressure improved significantly but actual documentation time did NOT, and frustration increased. This dissociation — subjective relief without objective efficiency gain — is a meaningful caution for implementations where AI literacy and skill acquisition are incomplete.*
 *📍 Notable null: SOAP_O (Objective section) quality did not improve significantly, while S and P did. Authors' explanation: real-time recording most helps capture verbatim patient reports (S) and specific treatment plans (P), but objective physical findings may require less in-session capture.*
+
+## License
+
+This file is part of the [ACI Structured Evidence Review](https://github.com/pbiondich/aci), licensed under [CC BY-SA 4.0](../LICENSE). If you extend this work, consider contributing back via a pull request.

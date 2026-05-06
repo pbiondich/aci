@@ -50,3 +50,7 @@ To assess the clinical utility of an ambient AI tool in enhancing consultation e
 *📍 Clinicians reported enhanced experience and reduced task load. This is consistent with other simulation studies in the corpus (Biro 2025, Anderson 2025).*
 *📍 UK-based study from Future Healthcare Journal (Royal College of Physicians). Adds geographic diversity.*
 *📍 Note: Abstract-only content available — full text would provide specific SAIL scores and NASA Task Load Index details.*
+
+## License
+
+This file is part of the [ACI Structured Evidence Review](https://github.com/pbiondich/aci), licensed under [CC BY-SA 4.0](../LICENSE). If you extend this work, consider contributing back via a pull request.

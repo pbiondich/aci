@@ -55,3 +55,7 @@ Explicit: to synthesize evidence on clinician efficiency, user satisfaction, qua
 *📍 Only 6 papers out of 1,450 met real-world implementation criteria. The vast majority of "evidence" is technical development or model validation. This is a striking data point for the Regenstrief/Suki evaluation framework work.*
 *📍 Parallels to robotic surgery and fitness trackers as cautionary tales of premature adoption are pointed and deliberate. Authors are not anti-scribe but pro-evidence.*
 *📍 QUEST + SEIPS 3.0 frameworks could directly inform the evaluation pathway roadmap (Task 3 deliverable in the Suki Sprint 1 proposal).*
+
+## License
+
+This file is part of the [ACI Structured Evidence Review](https://github.com/pbiondich/aci), licensed under [CC BY-SA 4.0](../LICENSE). If you extend this work, consider contributing back via a pull request.

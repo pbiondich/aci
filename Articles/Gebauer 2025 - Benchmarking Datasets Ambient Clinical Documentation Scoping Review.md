@@ -50,3 +50,7 @@ Not explicitly stated. Objective is descriptive: to catalog existing frameworks 
 ---
 *Reviewed by Iris | Source: medRxiv preprint 2025 | DOI: 10.1101/2025.01.29.25320859 | Template v2.0*
 *⚠️ Note: This is a preprint and has not been peer-reviewed.*
+
+## License
+
+This file is part of the [ACI Structured Evidence Review](https://github.com/pbiondich/aci), licensed under [CC BY-SA 4.0](../LICENSE). If you extend this work, consider contributing back via a pull request.

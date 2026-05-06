@@ -72,3 +72,7 @@ Not explicitly stated. Aim: assess accuracy, quality, and reproducibility of Cha
 *Reviewed by Iris | Source: JMIR 2024 | DOI: 10.2196/54419 | Template v2.0 | Full text reviewed ✅*
 *📍 Key for synthesis: The 86% omission rate in this paper (using ChatGPT-4 on transcripts) is even higher than the 71–76% rates found in simulation studies of commercial products. Whether this reflects a ChatGPT-4 limitation or a methodological artifact (e.g., more detailed error scoring rubric) is unclear.*
 *📍 Reproducibility is the standout finding: the model doesn't make the same errors twice. Clinicians can't learn to anticipate where errors will occur, making supervision harder.*
+
+## License
+
+This file is part of the [ACI Structured Evidence Review](https://github.com/pbiondich/aci), licensed under [CC BY-SA 4.0](../LICENSE). If you extend this work, consider contributing back via a pull request.

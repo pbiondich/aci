@@ -55,3 +55,7 @@ Explicit: to evaluate physicians' experiences with DAX Copilot and assess its im
 *📍 Negation errors ("did not" → "did") are a clinically dangerous error type captured qualitatively here. Not measurable in PDQI-9 but represents a specific safety risk.*
 *📍 Encounter suitability disagreement: Some prefer DAXC for simple visits (predictable content), others for complex (most value added). This lack of consensus about use cases has implications for implementation guidance.*
 *📍 Atrium Health subsequently expanded to 2,500 licenses — this qualitative study directly informed enterprise adoption decision.*
+
+## License
+
+This file is part of the [ACI Structured Evidence Review](https://github.com/pbiondich/aci), licensed under [CC BY-SA 4.0](../LICENSE). If you extend this work, consider contributing back via a pull request.

@@ -56,3 +56,7 @@ To establish the current model and technology status for the automatic transcrib
 *📍 Timeline context: Published January 2023 — before most commercial ambient AI scribe rollouts. This is a pre-commercial baseline review.*
 *📍 Directly relevant to Regenstrief/Suki project: The authors conclude "future work in this area is necessary and needed" — this paper justifies the need for the Regenstrief/Suki literature review and evaluation framework.*
 *📍 This paper is a strong argument for rigorous evaluation before widespread deployment — a position that aligns with the Regenstrief Institute's academic and evidence-based approach.*
+
+## License
+
+This file is part of the [ACI Structured Evidence Review](https://github.com/pbiondich/aci), licensed under [CC BY-SA 4.0](../LICENSE). If you extend this work, consider contributing back via a pull request.

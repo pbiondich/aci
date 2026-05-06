@@ -60,3 +60,7 @@ Explicit: to evaluate the impact of medical scribes on patient throughput, physi
 *📍 Notable: Human scribe baseline paper — NOT ambient AI. Included in corpus as a pre-AI comparator establishing what human scribes achieve. Key benchmarks for ambient AI comparisons: post-visit documentation halved, patient interaction doubled, patients/hr +39%, wRVUs/hr +68%.*
 *📍 Community ED setting is distinct from all other papers in corpus (primarily ambulatory/outpatient). Throughput metrics (door-to-room, LOS) are ED-specific and don't translate directly to ambulatory AI scribe studies.*
 *📍 2015-16 data — pre-dates modern ambient AI by ~7 years. Technology context: human scribes, no AI component.*
+
+## License
+
+This file is part of the [ACI Structured Evidence Review](https://github.com/pbiondich/aci), licensed under [CC BY-SA 4.0](../LICENSE). If you extend this work, consider contributing back via a pull request.

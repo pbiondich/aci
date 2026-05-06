@@ -57,3 +57,7 @@ Explicit: to evaluate DS feasibility, acceptability, appropriateness, usability,
 *📍 Editing workload improved over time. More edits needed on Assessment and Plan sections. Telemedicine integration feasible for those who used it.*
 *📍 This paper is unique in cancer care context where visits may involve complex medical histories and family caregivers. Findings suggest DS has promising utility but requires workflow integration improvements.*
 *📍 Authors recommend future research with larger samples, longer follow-up, and comparison across DS platforms.*
+
+## License
+
+This file is part of the [ACI Structured Evidence Review](https://github.com/pbiondich/aci), licensed under [CC BY-SA 4.0](../LICENSE). If you extend this work, consider contributing back via a pull request.

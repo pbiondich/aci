@@ -60,3 +60,7 @@ To evaluate clinicians' experiences with clinical documentation before and after
 *📍 "Feel able to see more patients" NOT significant (p=.93) — reinforces Bundy 2024 finding. Clinicians don't perceive increased capacity even when efficiency improves.*
 *📍 Invited commentary "Ambient Listening — Legal and Ethical Issues" (Cohen, Ritzman, Cahill) published simultaneously — signals growing attention to legal/regulatory concerns. Referenced also in Guo 2026.*
 *📍 Kevin B. Johnson (CHOP/Penn) is a prominent informatics leader — high-visibility authorship.*
+
+## License
+
+This file is part of the [ACI Structured Evidence Review](https://github.com/pbiondich/aci), licensed under [CC BY-SA 4.0](../LICENSE). If you extend this work, consider contributing back via a pull request.

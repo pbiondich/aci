@@ -50,3 +50,7 @@ Not explicitly stated. Exploratory qualitative study using implementation scienc
 ---
 *Reviewed by Iris | Source: JAMA Network Open 2025 | DOI: 10.1001/jamanetworkopen.2025.1904 | Template v2.0*
 *📍 Notable: Companion paper to [[Ma 2025 - Ambient AI Scribes Utilization Documentation Time]] (quantitative DAX data from same Stanford pilot). Together these form the Stanford mixed-methods pair. Uses RE-AIM PRISM — the only implementation science framework in the first 11 papers reviewed.*
+
+## License
+
+This file is part of the [ACI Structured Evidence Review](https://github.com/pbiondich/aci), licensed under [CC BY-SA 4.0](../LICENSE). If you extend this work, consider contributing back via a pull request.

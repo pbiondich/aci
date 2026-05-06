@@ -56,3 +56,7 @@ Explicit: to evaluate the impact of an AI-based solution on clinicians’ clinic
 *📍 Companion to other Emory papers? The authors are from Emory Surgery, Family Medicine, Medicine, and Emory Digital. This is an early pilot evaluation.*
 *📍 Limitations acknowledged: small sample sizes, questionnaire changes between pre and post surveys, potential selection bias (convenience sample of interested clinicians).*
 *📍 This paper is consistent with the self-report positive findings across the corpus but lacks the rigor of studies with objective metrics or validated instruments.*
+
+## License
+
+This file is part of the [ACI Structured Evidence Review](https://github.com/pbiondich/aci), licensed under [CC BY-SA 4.0](../LICENSE). If you extend this work, consider contributing back via a pull request.

@@ -51,3 +51,7 @@ Integrating ambient AI into clinical workflows using a bidirectional governance 
 
 ---
 *Reviewed by Iris | Source: NEJM AI 2025 | DOI: 10.1056/aidbp2401267 | Template v2.0*
+
+## License
+
+This file is part of the [ACI Structured Evidence Review](https://github.com/pbiondich/aci), licensed under [CC BY-SA 4.0](../LICENSE). If you extend this work, consider contributing back via a pull request.

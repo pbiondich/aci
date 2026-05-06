@@ -57,3 +57,7 @@ To investigate ChatGPT’s ability to assist with writing a history of present i
 *📍 Poor inter-rater agreement on PDQI-9 (ICC 0.1) and global rating (ICC 0.19) — consistent with other papers noting subjectivity in note quality assessment. This is a methodological limitation of using PDQI-9 for AI vs. human note comparison.*
 *📍 Authors conclude ChatGPT has potential but additional studies needed for privacy, bias, and accuracy. This is one of the more cautious papers in the corpus regarding AI documentation tools.*
 *📍 Note: This study uses ChatGPT as a documentation assistant with a standardized prompt — not an ambient AI scribe that listens passively during the encounter. Different technology from DAX/Abridge/Suki.*
+
+## License
+
+This file is part of the [ACI Structured Evidence Review](https://github.com/pbiondich/aci), licensed under [CC BY-SA 4.0](../LICENSE). If you extend this work, consider contributing back via a pull request.

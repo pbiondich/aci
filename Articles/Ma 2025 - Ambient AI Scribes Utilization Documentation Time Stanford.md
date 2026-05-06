@@ -55,3 +55,7 @@ Explicit: to quantify utilization and impact on documentation time of a large la
 *📍 SmartSection pattern: HPI and A&P are adopted; PE and Results are not. This aligns with where LLM-generated content adds most value (narrative synthesis vs. structured data entry). Important for implementation design.*
 *📍 Notable co-authors: Tait Shanafelt (Director of WellMD Center, Stanford's physician wellness program — major burnout researcher) and Christopher Sharp (CMIO, Stanford Medicine). High-pedigree institutional paper.*
 *📍 Authors explicitly identify "user phenotypes" as the key future research question — some physicians benefit greatly, others not at all. This framing is consistent with Prasad 2025 (specialty as moderator) and Lukac 2025 (dose-response).*
+
+## License
+
+This file is part of the [ACI Structured Evidence Review](https://github.com/pbiondich/aci), licensed under [CC BY-SA 4.0](../LICENSE). If you extend this work, consider contributing back via a pull request.

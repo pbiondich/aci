@@ -106,3 +106,7 @@ PHTI's call for standardized metrics directly aligns with the thesis of this lit
 *📍 Most authoritative independent synthesis in corpus. PHTI is nonprofit, no vendor funding, includes health system executives as Taskforce members.*
 *📍 Key policy signal: PHTI explicitly warns that HCC/E&M coding improvements — even if accurate — will likely increase aggregate US healthcare spending. This is the first corpus source to make this system-level cost concern explicit.*
 *📍 Validates literature review rationale: PHTI's call for standardized metrics in 3 domains (clinician, patient, financial) is precisely what a systematic D&M framework-based review provides.*
+
+## License
+
+This file is part of the [ACI Structured Evidence Review](https://github.com/pbiondich/aci), licensed under [CC BY-SA 4.0](../LICENSE). If you extend this work, consider contributing back via a pull request.

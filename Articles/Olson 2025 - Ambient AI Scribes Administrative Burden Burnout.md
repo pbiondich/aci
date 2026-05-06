@@ -52,3 +52,7 @@ Explicit: to evaluate whether ambient AI scribe use reduces administrative burde
 *📍 COI: One co-author (Troup, Matt) is affiliated with Abridge AI, Inc. Disclosed in article information. The involvement of Abridge employees parallels Palm 2025 (Suki internal study). Disclosure is present but pattern worth noting across the field.*
 *📍 Companion papers: Stults 2025 (Paper 10 in corpus) shares co-authors Stults and Jones — both are Sutter Health. This paper is the multi-site extension. Cited in JAMA News and received editorial commentary — high-impact paper.*
 *📍 Cognitive task load finding (−2.64 points, p<.001) is the most striking secondary outcome — larger effect size than burnout itself. Suggests the cognitive relief mechanism may precede and exceed the burnout relief.*
+
+## License
+
+This file is part of the [ACI Structured Evidence Review](https://github.com/pbiondich/aci), licensed under [CC BY-SA 4.0](../LICENSE). If you extend this work, consider contributing back via a pull request.

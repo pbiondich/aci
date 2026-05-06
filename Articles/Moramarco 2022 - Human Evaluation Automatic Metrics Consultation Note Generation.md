@@ -54,3 +54,7 @@ Explicit: to present a human evaluation study of consultation notes and establis
 *📍 Automatic metric finding: Simple Levenshtein distance performs as well as BertScore for evaluating clinical note quality. This challenges the field's preference for complex embedding-based metrics and has direct implications for evaluation framework design.*
 *📍 Babylon Health provenance: Babylon is a UK/US commercial digital health company. Not a traditional academic paper — product development context. Dataset (PriMock57) is open source and has been used by other researchers.*
 *📍 This paper belongs in the corpus primarily as a methodological anchor for the NLP/evaluation framework literature, not as a clinical implementation study. It informs IQ measurement methodology more than it informs clinical practice.*
+
+## License
+
+This file is part of the [ACI Structured Evidence Review](https://github.com/pbiondich/aci), licensed under [CC BY-SA 4.0](../LICENSE). If you extend this work, consider contributing back via a pull request.

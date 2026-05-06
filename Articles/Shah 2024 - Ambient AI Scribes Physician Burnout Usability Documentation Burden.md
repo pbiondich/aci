@@ -91,3 +91,7 @@ Not explicitly stated. Objective: evaluate physician perspectives on usability, 
 *📍 Note on CSV: CSV #38 lists this as "Shah 2024" (manuscript year) while journal issue is JAMIA 2025, Vol 32(2). Published online December 2024. All fine — same paper.*
 *📍 CSV #37 "Stephen 2024" with DOI 10.1093/jamia/ocae304 = Ma 2025 (already abstracted). "Stephen P. Ma" is the full name — first name "Stephen." No separate paper needed.*
 *📍 Large effect sizes (Cohen's d = 1.28 for task load) are notable — but selection bias in recruitment is a real confounder. Compare carefully with Prasad 2025 where <2yr virtual scribe use was strongly negatively associated with satisfaction, and with Olson 2025 burnout OR for more rigorous findings.*
+
+## License
+
+This file is part of the [ACI Structured Evidence Review](https://github.com/pbiondich/aci), licensed under [CC BY-SA 4.0](../LICENSE). If you extend this work, consider contributing back via a pull request.

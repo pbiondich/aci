@@ -52,3 +52,7 @@ Not explicitly stated as a testable hypothesis. The paper aims to demonstrate th
 ---
 *Reviewed by Iris | Source: npj Digital Medicine 2025 | DOI: 10.1038/s41746-025-01622-1 | Template v2.0*
 *📍 Notable: Most technically comprehensive evaluation framework in the corpus. High relevance to Suki/Regenstrief Task 1 (data audit) and Task 3 (study design). Directly addresses System Quality dimension largely absent from other papers.*
+
+## License
+
+This file is part of the [ACI Structured Evidence Review](https://github.com/pbiondich/aci), licensed under [CC BY-SA 4.0](../LICENSE). If you extend this work, consider contributing back via a pull request.

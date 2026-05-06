@@ -54,3 +54,7 @@ Not explicitly stated. Implicit hypothesis: ambient AI documentation will improv
 *Reviewed by Iris | Source: JAMA Network Open 2025 | DOI: 10.1001/jamanetworkopen.2025.8614 | Template v2.0 | Full text reviewed ✅*
 *📍 Notable: Sutter Health study — same institution as Tierney et al. (NEJM Catalyst 2024, also in corpus). Same lead author Jones, Veena G. appears in both. These two papers should be directly linked in the vault as companion publications from the same site.*
 *⚠️ Key tension: Self-reported after-hours note writing improved dramatically (14% → 54.4%), but objective EHR off-hours activity did NOT change significantly (p=.14). Suggests perception of documentation burden improved even if actual off-hours EHR use did not.*
+
+## License
+
+This file is part of the [ACI Structured Evidence Review](https://github.com/pbiondich/aci), licensed under [CC BY-SA 4.0](../LICENSE). If you extend this work, consider contributing back via a pull request.

@@ -60,3 +60,7 @@ To evaluate the impact of implementation of Nuance DAX on provider engagement, p
 *📍 Utilization: Median 47% among active participants. 9 providers (9.1%) stopped using DAX completely; 32 (32.3%) had license removed due to low utilization. "Intention to treat" approach may dampen positive effects.*
 *📍 Authors note this may be first published study of ambient listening AI in real-world outpatient care. Calls for head-to-head comparisons of EHR documentation efficiency training.*
 *📍 Intermountain Health context — 33-hospital integrated system across 7 states. Study completed in subset of Utah clinics using Oracle Cerner EHR.*
+
+## License
+
+This file is part of the [ACI Structured Evidence Review](https://github.com/pbiondich/aci), licensed under [CC BY-SA 4.0](../LICENSE). If you extend this work, consider contributing back via a pull request.

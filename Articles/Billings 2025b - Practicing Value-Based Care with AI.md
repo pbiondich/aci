@@ -139,3 +139,7 @@ Phyx Primary Care states it "receives no funding from the solution partners we e
 *📍 CRITICAL: The headline 40% review time reduction has p=0.869 — NOT significant. Do not cite without this caveat.*
 *📍 Burnout −32% (p=0.023) is the most statistically credible finding*
 *📍 RAF/STAR findings are compelling but based on vendor-provided unaudited data*
+
+## License
+
+This file is part of the [ACI Structured Evidence Review](https://github.com/pbiondich/aci), licensed under [CC BY-SA 4.0](../LICENSE). If you extend this work, consider contributing back via a pull request.

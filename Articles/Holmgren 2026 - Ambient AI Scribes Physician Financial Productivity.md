@@ -80,3 +80,7 @@ Not explicitly stated. Research question: Is ambient AI scribe adoption associat
 *📍 Unique contribution: Only paper in corpus to examine financial productivity (RVU/billing) outcomes. All other papers focus on time savings, burnout, or note quality. This opens a new dimension of D&M analysis — NB via revenue impact.*
 *📍 No COI disclosed by primary author (Holmgren) other than UCSF IMPACC gift funding. Adler-Milstein (co-author) also on IMPACC. No vendor funding disclosed — this is industry-independent.*
 *📍 Policy signal: The RVU increase without denial increase raises legitimate questions about whether AI scribes shift physician behavior toward more intensive coding, with downstream healthcare spending implications.*
+
+## License
+
+This file is part of the [ACI Structured Evidence Review](https://github.com/pbiondich/aci), licensed under [CC BY-SA 4.0](../LICENSE). If you extend this work, consider contributing back via a pull request.

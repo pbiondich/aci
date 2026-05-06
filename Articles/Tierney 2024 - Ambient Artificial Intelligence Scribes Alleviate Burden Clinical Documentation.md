@@ -53,3 +53,7 @@ Explicit: ambient AI scribes have great potential to reduce documentation burden
 *📍 Positive physician and patient feedback. Reduced after-hours clerical work burden. Ongoing enhancements focused on EHR integration and personalization.*
 *📍 Authors note that despite early promise, careful attention must be paid to ensure technology supports clinicians while optimizing output for accuracy, relevance, and alignment in physician–patient relationship.*
 *📍 This is a high-impact implementation report from a large integrated health system — directly relevant to how Regenstrief might approach Suki deployment.*
+
+## License
+
+This file is part of the [ACI Structured Evidence Review](https://github.com/pbiondich/aci), licensed under [CC BY-SA 4.0](../LICENSE). If you extend this work, consider contributing back via a pull request.

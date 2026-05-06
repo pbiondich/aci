@@ -69,3 +69,7 @@ Across all 5 simulation studies in the corpus (Arko 2025, Biro 2025, Anderson 20
 
 ---
 *D&M Dimensions | Suki Literature Review Vault | Created 2026-03-25, updated 2026-04-15*
+
+## License
+
+This file is part of the [ACI Structured Evidence Review](https://github.com/pbiondich/aci), licensed under [CC BY-SA 4.0](../LICENSE). If you extend this work, consider contributing back via a pull request.

@@ -35,3 +35,7 @@ A few studies in the corpus report opt-out rates (e.g., Evans 2025 reports ~0.1%
 *Draft Measures | ACI Evidence Review | Proposed 2026-04-14*
 *Method: Stakeholder gap analysis of canonical measures against executive decision-making needs*
 *Status: Pending key informant validation*
+
+## License
+
+This file is part of the [ACI Structured Evidence Review](https://github.com/pbiondich/aci), licensed under [CC BY-SA 4.0](../LICENSE). If you extend this work, consider contributing back via a pull request.

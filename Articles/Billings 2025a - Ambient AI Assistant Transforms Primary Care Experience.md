@@ -111,3 +111,7 @@ Phyx frames Suki in Category 1. This distinction is vendor-adjacent and may refl
 *Reviewed by Iris | Source: Phyx Primary Care February 2025 | No DOI | Template v2.0 | Full text reviewed ✅ (PDF provided by Paul)*
 *📍 Methodological upgrade from initial abstraction: The Primary Care Vital Signs® burnout item is validated against MBI — stronger than assumed from media coverage. However, >30 days of use requirement introduces survivor bias, and all data remains self-reported with no control group.*
 *📍 Key Suki-specific finding: 41% notetaking reduction (self-report) converges with Boyter/KLAS 2025 (−41% UAL, objective) — though different products (Suki vs. Ambience) and different methods. The convergence is interesting but may be coincidental.*
+
+## License
+
+This file is part of the [ACI Structured Evidence Review](https://github.com/pbiondich/aci), licensed under [CC BY-SA 4.0](../LICENSE). If you extend this work, consider contributing back via a pull request.

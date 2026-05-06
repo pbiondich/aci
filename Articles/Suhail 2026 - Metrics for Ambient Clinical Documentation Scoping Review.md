@@ -83,3 +83,7 @@ The **Ambient Clinical Documentation Quality Instrument (ACDQI)** as proposed:
 *📍 Notable: Direct peer-reviewed counterpart to Gebauer 2025 preprint. Both synthesize ACD evaluation metrics; Suhail explicitly positions this paper as filling the gap left by Gebauer's unreviewed status. The two should be read as a pair.*
 *📍 ACDQI limitation: The proposed instrument only scores model performance and documentation efficiency. The exclusion of clinician and patient experience from the scored framework is a deliberate methodological choice — not an oversight — but it creates a gap between what the field values (burnout, patient engagement) and what the ACDQI actually measures.*
 *📍 UK provenance: All five authors are UK-based (NHS Wales, King's College London, UCL, Royal Free). The 11 included studies are primarily US and Australian. This is the only UK-authored primary contribution in our corpus.*
+
+## License
+
+This file is part of the [ACI Structured Evidence Review](https://github.com/pbiondich/aci), licensed under [CC BY-SA 4.0](../LICENSE). If you extend this work, consider contributing back via a pull request.

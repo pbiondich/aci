@@ -68,3 +68,7 @@ Explicit: to compare documentation quality from commercially available AI scribe
 *📍 Throughness vs. succinctness trade-off: Scribe 4 (most thorough) = least succinct. Scribe 5 (most succinct) = slightly less accurate. Same trade-off observed in Palm 2025 and Anderson 2025 — a recurring tension in the corpus.*
 *📍 Simulation limitation: Out-of-the-box AI performance; no customization. Real-world implementations would typically involve template customization which could shift these results substantially.*
 *📍 Modified PDQI-9: Added "freedom from hallucination" and "freedom from bias" domains (replacing "up-to-date"). Similar modification to Palm 2025 and Anderson 2025 — a convergent methodological approach across independent research groups.*
+
+## License
+
+This file is part of the [ACI Structured Evidence Review](https://github.com/pbiondich/aci), licensed under [CC BY-SA 4.0](../LICENSE). If you extend this work, consider contributing back via a pull request.

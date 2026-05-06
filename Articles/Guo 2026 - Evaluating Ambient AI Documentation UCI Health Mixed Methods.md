@@ -69,3 +69,7 @@ Explicit: ambient AI will improve work efficiency, reduce physician workload, an
 *📍 Same-day closure rate null: Another null finding on a WOW/workflow closure metric. Joins the consistent pattern of self-report vs. objective WOW divergence across the corpus.*
 *📍 KLAS Arch Collaborative survey allows benchmarking against national/institutional data — methodological strength for the field that most one-off surveys don't have.*
 *📍 Specialty vs. primary care: No significant difference in most survey outcomes (DiD not significant). Contrasts with Prasad 2025 (non-primary care benefited far more) — but Prasad used human scribes in a single academic health system, so the contexts differ.*
+
+## License
+
+This file is part of the [ACI Structured Evidence Review](https://github.com/pbiondich/aci), licensed under [CC BY-SA 4.0](../LICENSE). If you extend this work, consider contributing back via a pull request.

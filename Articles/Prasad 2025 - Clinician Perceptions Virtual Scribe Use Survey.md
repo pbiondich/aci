@@ -63,3 +63,7 @@ Explicit: to characterize the relationship between virtual scribe use and physic
 *📍 Virtual scribes here are human (or human-assisted), not autonomous AI. DAX-Nuance in this context = asynchronous human scribe service using Nuance technology, not the AI DAX Copilot product from other papers. Important distinction.*
 *📍 Primary care paradox: Primary care physicians (78% of sample) benefited far less than subspecialists — despite having higher documentation burden. Authors attribute this to complexity of primary care notes being harder for scribes to capture, and the "hidden knowledge" expectation in primary care notes. This finding may directly predict AI ambient scribe differential benefit by specialty.*
 *📍 Tenure effect: <2 years of scribe use associated with dramatically lower satisfaction and patient relationship benefit. Benefits are earned through adaptation, not immediate. Relevant for implementation timelines.*
+
+## License
+
+This file is part of the [ACI Structured Evidence Review](https://github.com/pbiondich/aci), licensed under [CC BY-SA 4.0](../LICENSE). If you extend this work, consider contributing back via a pull request.

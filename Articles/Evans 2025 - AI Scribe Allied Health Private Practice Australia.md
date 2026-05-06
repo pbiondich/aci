@@ -60,3 +60,7 @@ Explicit: to describe perspectives and experiences of AHPs and patients regardin
 *📍 Benefits plateau by 6 weeks — no further improvement 6wks→3months. This suggests rapid adoption of available gains, not continued improvement. Implementation planners should set expectations accordingly.*
 *📍 Job satisfaction mixed (29% vs. 95% recommendation): AHPs recommend the tool but don't necessarily feel their job satisfaction improved — important distinction. Administrative relief ≠ job satisfaction.*
 *📍 Patient opt-out rate ~0.1% (74/64,099 estimated appointments) is reassuring for consent/acceptability, though the denominator is an estimate.*
+
+## License
+
+This file is part of the [ACI Structured Evidence Review](https://github.com/pbiondich/aci), licensed under [CC BY-SA 4.0](../LICENSE). If you extend this work, consider contributing back via a pull request.

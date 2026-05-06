@@ -115,3 +115,7 @@ Ambient AI will improve health care practitioners' well-being, yielding higher f
 *📍 Most methodologically rigorous paper in corpus. Stepped-wedge RCT, 24 weeks, pre-specified outcomes, public data/code. The RCT effect size for burnout (−0.44 PFI) is smaller than QI study estimates — expected given selection bias in non-randomized studies.*
 *📍 Professional fulfillment null finding (p=0.04 missed pre-specified 0.025 threshold) is important: ambient AI reduces exhaustion but doesn't increase fulfillment. These are different dimensions of well-being that respond differently to the intervention.*
 *📍 WoW finding is fragile — sensitive to extreme outliers. After-hours improvement cannot be considered robust from this trial alone, consistent with the broader "after-hours null" pattern in corpus.*
+
+## License
+
+This file is part of the [ACI Structured Evidence Review](https://github.com/pbiondich/aci), licensed under [CC BY-SA 4.0](../LICENSE). If you extend this work, consider contributing back via a pull request.

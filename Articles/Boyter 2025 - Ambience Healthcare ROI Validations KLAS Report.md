@@ -109,3 +109,7 @@ Not explicitly stated. Goal: document quantitative and qualitative ROI achieved 
 *📍 Most financially detailed paper in corpus. $13,049/clinician/year is the highest ROI figure — driven largely by HCC capture ($9,685). This finding is particularly relevant for institutions with complex patient populations (behavioral health, elderly, chronic disease).*
 *📍 COI flag: KLAS is more rigorous than vendor-produced reports, but still single-site, non-randomized, and selected based on vendor participation in KLAS data programs.*
 *📍 Ambience-specific: Only Ambience Healthcare evaluation in corpus. Not directly comparable to DAX/Abridge studies without adjusting for product differences.*
+
+## License
+
+This file is part of the [ACI Structured Evidence Review](https://github.com/pbiondich/aci), licensed under [CC BY-SA 4.0](../LICENSE). If you extend this work, consider contributing back via a pull request.

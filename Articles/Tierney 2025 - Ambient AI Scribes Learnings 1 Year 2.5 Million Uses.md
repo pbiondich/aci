@@ -157,3 +157,7 @@ Not formally stated (commentary format). Key questions investigated: (1) Is AI s
 *📍 15,791 hours aggregate savings = strongest ROI figure in corpus for workforce retention arguments*
 *📍 In-basket time increase = only negative efficiency signal; pair with Holmgren 2026 when discussing tradeoffs*
 *📍 No COI — cite this when addressing industry bias concerns about ambient scribe literature*
+
+## License
+
+This file is part of the [ACI Structured Evidence Review](https://github.com/pbiondich/aci), licensed under [CC BY-SA 4.0](../LICENSE). If you extend this work, consider contributing back via a pull request.

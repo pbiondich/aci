@@ -58,3 +58,7 @@ Explicit: to explore the use of DAX as a digital scribe in an academic and commu
 *📍 Patient survey included — positive perceptions. One of few papers capturing patient perspective (compare Owens 2024 PDRQ-9 null result).*
 *📍 Authors note limitations of small sample size and single institution. Data from pilot suggests digital scribes decrease documentation time, ease administrative burdens, and improve clinician and patient experience in dermatology.*
 *📍 Note: This study was performed at a large academic institution — costs may not be generalizable.*
+
+## License
+
+This file is part of the [ACI Structured Evidence Review](https://github.com/pbiondich/aci), licensed under [CC BY-SA 4.0](../LICENSE). If you extend this work, consider contributing back via a pull request.

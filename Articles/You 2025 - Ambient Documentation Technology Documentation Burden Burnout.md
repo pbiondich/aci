@@ -50,3 +50,7 @@ Not explicitly stated. Implicit hypothesis: implementation of ambient documentat
 ---
 *Reviewed by Iris | Source: JAMA Network Open 2025 | DOI: 10.1001/jamanetworkopen.2025.28056 | Template v2.0*
 *📍 Notable: Large multi-site study (MGB + Emory). Product unnamed. Supplements include validated survey instruments and EHR Signal outcome data.*
+
+## License
+
+This file is part of the [ACI Structured Evidence Review](https://github.com/pbiondich/aci), licensed under [CC BY-SA 4.0](../LICENSE). If you extend this work, consider contributing back via a pull request.

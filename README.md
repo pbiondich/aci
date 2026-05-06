@@ -118,4 +118,18 @@ If referencing this work, please cite as:
 
 ## License
 
-This repository contains original research and analysis. Please contact the authors before reuse.
+This work is licensed under [Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)](LICENSE).
+
+You are free to:
+- Share: copy and redistribute in any medium or format
+- Adapt: remix, build on, and extend the work, including for commercial purposes
+
+Under these conditions:
+- Attribution: credit the authors and link to this repository
+- ShareAlike: if you distribute a derivative, it must carry the same CC BY-SA 4.0 license
+
+### Community norm
+
+The canonical measures, article reviews, and evaluation framework here are meant to be a living resource for the ACI research community, not a finished product. If you use this work and extend it (new article reviews, refined measure definitions, additional draft measures, or a new evaluation dimension), contribute those additions back via a pull request or open an issue. The framework gets better when the people using it help keep it current.
+
+There is no legal obligation to do so. But this project was built to grow. If your work builds on it, share what you added.

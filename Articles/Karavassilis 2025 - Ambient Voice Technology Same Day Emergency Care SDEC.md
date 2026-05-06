@@ -59,3 +59,7 @@ To evaluate the impact of Heidi Health Ambient Voice Technology on documentation
 *📍 Clinician survey shows high usability (9.1/10) and reduced burnout (18/20). Manual documentation burden is significant: 0–30 min per consultation for most, plus out-of-hours work.*
 *📍 Note: This is a service improvement pilot — not a rigorous research study. No control group, self-reported outcomes, small clinician sample (n=20). Findings are directional rather than definitive.*
 *📍 Cerner Millennium EHR context — different from Epic-heavy US studies. Shows AVT works across different EHR platforms.*
+
+## License
+
+This file is part of the [ACI Structured Evidence Review](https://github.com/pbiondich/aci), licensed under [CC BY-SA 4.0](../LICENSE). If you extend this work, consider contributing back via a pull request.

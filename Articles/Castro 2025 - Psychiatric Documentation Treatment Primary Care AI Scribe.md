@@ -54,3 +54,7 @@ Explicit: to characterize differences in documentation and treatment of psychiat
 *📍 Roy Perlis is Editor-in-Chief of JAMA Artificial Intelligence and Associate Editor at JAMA Network Open — high-visibility author whose framing of this finding could significantly shape field discourse.*
 *📍 Directly relevant to the Regenstrief/Suki project: patient experience and patient outcomes are the most underrepresented domain in the corpus (flagged in Suhail 2026 ACDQI, absent from virtually all primary studies). This paper is the first to crack that door open.*
 *📍 Methodology note: GPT-4o used to extract psychiatric symptoms from EHR notes. This is an LLM-as-evaluator approach — same methodological direction as Wang 2025 (npj Digital Medicine). Validation of this extraction approach not reported in abstract.*
+
+## License
+
+This file is part of the [ACI Structured Evidence Review](https://github.com/pbiondich/aci), licensed under [CC BY-SA 4.0](../LICENSE). If you extend this work, consider contributing back via a pull request.

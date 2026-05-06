@@ -75,3 +75,7 @@ US is the most commonly measured dimension (35 papers) but is subject to substan
 
 ---
 *D&M Dimensions | Suki Literature Review Vault | Created 2026-03-25, updated 2026-04-15*
+
+## License
+
+This file is part of the [ACI Structured Evidence Review](https://github.com/pbiondich/aci), licensed under [CC BY-SA 4.0](../LICENSE). If you extend this work, consider contributing back via a pull request.

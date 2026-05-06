@@ -55,3 +55,7 @@ Explicit: to demonstrate the value of simulation testing for rapidly evaluating 
 *📍 Safety framing: Authors position this as addressing growing concerns about AI safety (citing Obermeyer 2019, Wong 2021). Simulation testing as a proactive rather than reactive approach.*
 *📍 Industry context: MedStar Health evaluating two commercial ADS products (anonymized). This is an independent academic evaluation — contrasts with Palm 2025 (Suki internal) and Olson 2025 (Abridge co-author).*
 *📍 Practical impact: Authors note these findings led to deliberate modifications to provider training during rollout and a detailed review of issues with the vendor. Simulation testing informed real implementation decisions.*
+
+## License
+
+This file is part of the [ACI Structured Evidence Review](https://github.com/pbiondich/aci), licensed under [CC BY-SA 4.0](../LICENSE). If you extend this work, consider contributing back via a pull request.

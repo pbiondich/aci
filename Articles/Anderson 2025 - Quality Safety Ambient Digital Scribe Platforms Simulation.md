@@ -69,3 +69,7 @@ Explicit: to evaluate and compare the quality and safety of ambient digital scri
 *📍 Omissions dominate (76.3%) over hallucinations — consistent pattern across Biro 2025, Anderson 2025, and Suhail 2026. The field's focus on hallucination may be misplaced; omissions are harder to detect (recall requires more cognitive effort than recognition).*
 *📍 Only 35.8% of elements consistently correct across all platforms — huge intra-corpus variability. Different platforms miss different things for different cases. Clinicians cannot build reliable mental models of what their specific tool will and won't capture.*
 *📍 Directly relevant to the Regenstrief/Suki evaluation pathway roadmap (Task 3 deliverable): simulation testing + PDQI-9 + AHRQ harm scale = a ready-made framework we could adapt.*
+
+## License
+
+This file is part of the [ACI Structured Evidence Review](https://github.com/pbiondich/aci), licensed under [CC BY-SA 4.0](../LICENSE). If you extend this work, consider contributing back via a pull request.

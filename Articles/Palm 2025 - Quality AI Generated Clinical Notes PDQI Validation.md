@@ -61,3 +61,7 @@ Explicit: to compare quality of LLM-generated Ambient notes with physician-autho
 *📍 Direct relevance to Regenstrief/Suki project: This is a Suki internal quality validation study. The methodology (modified PDQI-9 across 5 specialties, blinded review, hallucination detection) could inform or directly feed into the evaluation framework we're building.*
 *📍 Key paradox: Ambient notes are more thorough and better organized, but also less succinct, less accurate, and more likely to hallucinate. Yet reviewers still prefer them overall. This "verbosity paradox" is important for the evaluation framework.*
 *📍 Hallucination in 31% of Ambient notes is a significant safety signal — highest rate of any paper in our corpus that directly measured hallucination.*
+
+## License
+
+This file is part of the [ACI Structured Evidence Review](https://github.com/pbiondich/aci), licensed under [CC BY-SA 4.0](../LICENSE). If you extend this work, consider contributing back via a pull request.

@@ -72,3 +72,7 @@ Explicit: to examine the impact of an ambient AI scribe on documentation timing,
 *📍 Accuracy unchanged at all complexity levels — one of the strongest safety findings in the corpus. The quality gains come from thoroughness, currency, and organization, not at the expense of accuracy.*
 *📍 3% clinically significant error rate (2/60 notes) is reassuringly low but still present. Physician review essential.*
 *📍 NASA-TLX frustration −79% and effort −81% are the largest workload reductions of any paper measuring NASA-TLX (compare: Omon 2025 found only temporal demand improved; Stults 2025 showed NASA-TLX improvements in an ambulatory setting).*
+
+## License
+
+This file is part of the [ACI Structured Evidence Review](https://github.com/pbiondich/aci), licensed under [CC BY-SA 4.0](../LICENSE). If you extend this work, consider contributing back via a pull request.

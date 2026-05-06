@@ -50,3 +50,7 @@ Explicit: "We hypothesize that the use of the tool will affect note length and r
 *Reviewed by Iris | Source: MEDINFO 2025 (IOS Press) | DOI: 10.3233/SHTI250921 | Template v2.0 | Full text reviewed ✅*
 *📍 Notable: One of the few papers using fully objective telemetry data (no surveys). Time savings are real and significant, but note inflation is an important caveat. Two tools (DAX + Abridge) pooled — no head-to-head comparison. Only 37% adoption rate among enrollees warrants attention.*
 *📍 DOI correction: IOS Press DOI is 10.3233/SHTI250921 — the arXiv ID (2504.13879) is a preprint version. Use IOS Press DOI as canonical.*
+
+## License
+
+This file is part of the [ACI Structured Evidence Review](https://github.com/pbiondich/aci), licensed under [CC BY-SA 4.0](../LICENSE). If you extend this work, consider contributing back via a pull request.

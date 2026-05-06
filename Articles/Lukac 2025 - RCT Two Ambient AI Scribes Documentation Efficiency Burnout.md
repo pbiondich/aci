@@ -55,3 +55,7 @@ Explicit: to test the effectiveness of two AI scribes (DAX and Nabla) in reducin
 *📍 DAX vs Nabla: Nabla wins on efficiency (−9.5% time-in-note); both equivalent on burnout/task load outcomes. "Remarkably similar performance" quote from authors. First head-to-head vendor comparison in the corpus.*
 *📍 ~30% utilization rate for both tools during the 2-month period — low absolute adoption even among RCT arm clinicians. Efficiency benefit with Nabla at 30% utilization may understate potential at higher adoption.*
 *📍 Inaccuracies "occasionally" for both tools (Likert ~2.7–2.8 on a 5-point scale). Consistent with Palm 2025 hallucination finding and reinforces need for physician review.*
+
+## License
+
+This file is part of the [ACI Structured Evidence Review](https://github.com/pbiondich/aci), licensed under [CC BY-SA 4.0](../LICENSE). If you extend this work, consider contributing back via a pull request.

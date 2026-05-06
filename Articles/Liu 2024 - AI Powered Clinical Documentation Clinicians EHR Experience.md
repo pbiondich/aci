@@ -53,3 +53,7 @@ To evaluate clinicians' experiences with clinical documentation before and after
 *📍 The "majority saw no change" finding (55% in intervention) is important context for the positive results: the ~45% who reported improvement drove the significant comparisons.*
 *📍 Control group construction is problematic: includes both non-selected clinicians AND clinicians who opted out of DAX after informational meetings. Opt-outs likely differ from opt-ins in systematic ways (technology adoption barriers, workflow preference, specialty).*
 *📍 Notable: Significant EHR after-hours improvement — consistent with Duggan 2025 finding. Two papers from the same general Atrium Health / Wake Forest ecosystem (Liu 2024 and Bundy 2024) agree that DAX reduces after-hours burden at this institution.*
+
+## License
+
+This file is part of the [ACI Structured Evidence Review](https://github.com/pbiondich/aci), licensed under [CC BY-SA 4.0](../LICENSE). If you extend this work, consider contributing back via a pull request.

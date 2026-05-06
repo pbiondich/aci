@@ -50,3 +50,7 @@ Not explicitly stated. Study is exploratory/inductive; aims to generate hypothes
 
 ---
 *Reviewed by Iris | Source: IntechOpen 2025 | DOI: 10.5772/intechopen.1011340 | Template v2.0*
+
+## License
+
+This file is part of the [ACI Structured Evidence Review](https://github.com/pbiondich/aci), licensed under [CC BY-SA 4.0](../LICENSE). If you extend this work, consider contributing back via a pull request.
