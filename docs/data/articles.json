@@ -121,7 +121,7 @@
     ],
     "keyFindings": [],
     "year": "2025",
-    "studyDesign": "RCT",
+    "studyDesign": "QI/Pre-Post",
     "geography": "Wisconsin, USA",
     "sampleSize": 66
   },
@@ -1428,7 +1428,7 @@
     ],
     "keyFindings": [],
     "year": "2024",
-    "studyDesign": "RCT",
+    "studyDesign": "Observational",
     "geography": "",
     "sampleSize": 31
   },
@@ -2024,7 +2024,7 @@
     ],
     "keyFindings": [],
     "year": "2024",
-    "studyDesign": "RCT",
+    "studyDesign": "Observational",
     "geography": "Georgia, USA",
     "sampleSize": 85
   },

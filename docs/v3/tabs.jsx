@@ -70,7 +70,7 @@ function OverviewTab({ articles, measures, draftMeasures, setTab }) {
         <div className="stat-cell"><div className="num">494</div><div className="label">Raw measures extracted</div></div>
         <div className="stat-cell"><div className="num">{measures.length}</div><div className="label">Canonical measures</div></div>
         <div className="stat-cell"><div className="num">{draftMeasures.length}</div><div className="label">Draft measures</div></div>
-        <div className="stat-cell"><div className="num">6</div><div className="label">D&M dimensions</div></div>
+        <div className="stat-cell"><div className="num">7</div><div className="label">D&M dimensions</div></div>
         <div className="stat-cell"><div className="num">3</div><div className="label">Randomized trials</div></div>
       </div>
 
@@ -81,7 +81,7 @@ function OverviewTab({ articles, measures, draftMeasures, setTab }) {
             <p style={{fontSize:18, color:'var(--ink)'}}>
               Ambient clinical intelligence... AI that listens to a clinical conversation and writes the note, has become one of the fastest-adopted categories in modern healthcare. Yet the published evidence evaluating these tools remains <em>fragmented, heterogeneous, and methodologically uneven</em>.
             </p>
-            <p>This review takes a bottom-up approach. Rather than impose an a priori taxonomy, every outcome measure was extracted verbatim from each study's methods section, clustered into conceptually distinct constructs, and mapped to one of six dimensions from the DeLone & McLean Information Systems Success Model. The result is a twenty-five-measure vocabulary for comparing results across an otherwise incoherent body of work.</p>
+            <p>This review takes a bottom-up approach. Rather than impose an a priori taxonomy, every outcome measure was extracted verbatim from each study's methods section, clustered into conceptually distinct constructs, and mapped to one of seven dimensions from the DeLone & McLean Information Systems Success Model. The result is a twenty-five-measure vocabulary for comparing results across an otherwise incoherent body of work.</p>
             <p>The <em>draft measures</em>, the second product of this review, emerge from a different source. Through key-informant interviews with health-system decision-makers, twelve additional constructs surfaced as important to CFO, CMIO, COO, and CPO audiences but are effectively absent from the published literature. They are named here not as validated measures but as a research agenda.</p>
           </div>
           <aside className="aside">

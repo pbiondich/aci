@@ -166,7 +166,7 @@ function extractGeography(text) {
 
 function categorizeStudyDesign(evidenceLevel) {
   const level = (evidenceLevel || '').toLowerCase();
-  if (level.includes('rct') || level.includes('randomized')) return 'RCT';
+  if ((level.includes('rct') || level.includes('randomized')) && !level.includes('nonrandomized') && !level.includes('non-randomized') && !level.includes('protocol')) return 'RCT';
   if (level.includes('observational')) return 'Observational';
   if (level.includes('qi') || level.includes('quality improvement') || level.includes('pre-post') || level.includes('pre/post')) return 'QI/Pre-Post';
   if (level.includes('qualitative')) return 'Qualitative';
