@@ -12,6 +12,7 @@ on:
       - 'Templates/**'
       - 'scripts/**'
       - 'docs/index.html'
+      - 'docs/v3/**'
 
   # Allow manual trigger from Actions tab
   workflow_dispatch:
