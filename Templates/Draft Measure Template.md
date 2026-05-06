@@ -1,19 +1,19 @@
 # DM-XX [Name]
 
-**Status:** Draft — pending key informant validation
+**Status:** Draft: pending key informant validation
 **D&M Dimension:** [[XX - Dimension Name]]
 
 ## Definition
 [What this measure would capture and why it matters for ACI evaluation.]
 
 ## Hypothesized Stakeholder(s)
-- **[Role]** — [why this matters to them]
+- **[Role]** : [why this matters to them]
 
 ## Rationale
-[Why we believe this is a gap — derived from stakeholder analysis of canonical measures against executive decision-making needs.]
+[Why we believe this is a gap, derived from stakeholder analysis of canonical measures against executive decision-making needs.]
 
 ## Relationship to Existing Canonical Measures
-- [[CM-XX Name]] — [how it connects, overlaps, or extends]
+- [[CM-XX Name]]: [how it connects, overlaps, or extends]
 
 ## Suggested Measurement Methods
 | Method | Description | Data Source |

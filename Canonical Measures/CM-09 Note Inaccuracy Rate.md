@@ -2,10 +2,10 @@
 
 **D&M Dimension:** [[IQ - Information Quality]]
 
-*(Previously titled "Note Accuracy and Hallucination Rate" — renamed to match definition, which measures inaccuracy not accuracy)*
+*(Previously titled "Note Accuracy and Hallucination Rate", renamed to match definition, which measures inaccuracy not accuracy)*
 
 ## Definition
-The presence of clinically inaccurate or fabricated content in AI-generated notes — information that was not stated in the encounter or is factually wrong. Distinct from omissions (CM-08). Includes hallucinations (invented content) and incorrect facts (stated inaccurately).
+The presence of clinically inaccurate or fabricated content in AI-generated notes, information that was not stated in the encounter or is factually wrong. Distinct from omissions (CM-08). Includes hallucinations (invented content) and incorrect facts (stated inaccurately).
 
 ## Measurement Methods
 | Method | Description | Data Source |
@@ -31,7 +31,7 @@ The presence of clinically inaccurate or fabricated content in AI-generated note
 - Error Rate & Type ([[Biro 2025 - Simulation Testing Ambient Digital Scribes Case Report|Biro 2025]])
 
 ## ⚠️ Key Note
-**Hallucinations are less common than omissions but more dangerous per-event.** Baker 2023 (36%) and Palm 2025 (31%) found highest rates. Kernberg 2023 found only 3.2% incorrect facts but 86% omissions — different definitions matter. Bundy 2024 identified negation errors ('did not' → 'did') as a specific high-risk subtype. Reproducibility failure (Kernberg): same case, different errors each run — clinicians can't predict where to check.
+**Hallucinations are less common than omissions but more dangerous per-event.** Baker 2023 (36%) and Palm 2025 (31%) found highest rates. Kernberg 2023 found only 3.2% incorrect facts but 86% omissions: different definitions matter. Bundy 2024 identified negation errors ('did not' → 'did') as a specific high-risk subtype. Reproducibility failure (Kernberg): same case, different errors each run, clinicians can't predict where to check.
 
 ## Papers Measuring This (14)
 - [[Arko 2025 - Documenting Care AI Comparative Commercial Scribe Tools]]

@@ -3,7 +3,7 @@
 **D&M Dimension:** [[IQ - Information Quality]]
 
 ## Definition
-METHODOLOGICAL MEASURE. Computational similarity metrics used to evaluate AI-generated notes against reference standards — including n-gram overlap (ROUGE), semantic similarity (BERTScore), and entity-level accuracy metrics. Not a clinical outcome; measures the evaluation approach's technical validity.
+METHODOLOGICAL MEASURE. Computational similarity metrics used to evaluate AI-generated notes against reference standards, including n-gram overlap (ROUGE), semantic similarity (BERTScore), and entity-level accuracy metrics. Not a clinical outcome; measures the evaluation approach's technical validity.
 
 ## Measurement Methods
 | Method | Description | Data Source |
@@ -28,7 +28,7 @@ METHODOLOGICAL MEASURE. Computational similarity metrics used to evaluate AI-gen
 - LLM-as-Evaluator Agreement ([[Afshar 2025b - Pragmatic RCT Ambient AI Health Practitioner Wellbeing|Afshar 2025b]], [[Wang 2025 - Evaluation Framework Ambient Digital Scribing Tools|Wang 2025]])
 
 ## ⚠️ Key Note
-**METHODOLOGICAL CANONICAL.** These metrics do not measure clinical outcomes — they measure whether automated quality assessment agrees with human assessment. Critical finding from Moramarco 2022: Levenshtein distance performs as well as BERTScore on clinical notes. LLM-as-judge (Afshar 2025b) is validated against physician ratings. Automated metrics should be treated as research tools, not clinical quality measures.
+**METHODOLOGICAL CANONICAL.** These metrics do not measure clinical outcomes: they measure whether automated quality assessment agrees with human assessment. Critical finding from Moramarco 2022: Levenshtein distance performs as well as BERTScore on clinical notes. LLM-as-judge (Afshar 2025b) is validated against physician ratings. Automated metrics should be treated as research tools, not clinical quality measures.
 
 ## Papers Measuring This (7)
 - [[Balloch 2024 - Ambient Artificial Intelligence Tool Improve Quality Clinical Documentation]]

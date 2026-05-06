@@ -1,7 +1,7 @@
 # A Few Words About Canonical Measures
 
 ## Derivation Method
-These 25 canonical measures were **derived bottom-up** from 494 raw measure rows extracted from Study Measures tables across 54 papers in the corpus. They were NOT pre-defined — they emerged from clustering synonymous and related measures into conceptually distinct constructs.
+These 25 canonical measures were **derived bottom-up** from 494 raw measure rows extracted from Study Measures tables across 54 papers in the corpus. They were NOT pre-defined: they emerged from clustering synonymous and related measures into conceptually distinct constructs.
 
 Prior to this derivation (2026-03-24), the vault contained 11 seeded measures that were imposed top-down from early in the project. Those have been replaced by this evidence-grounded set.
 
@@ -70,8 +70,8 @@ Prior to this derivation (2026-03-24), the vault contained 11 seeded measures th
 
 ## Key Derivation Decisions
 
-1. **Burnout splits into 3:** Burnout/Exhaustion (CM-01) + Cognitive Load (CM-02) + Professional Fulfillment (CM-03) — Afshar 2025b RCT proved these are dissociable
-2. **Documentation time splits into 4:** Doc Time (CM-04) + After-Hours (CM-05) + Chart Closure (CM-06) + Total EHR Time (CM-07) — each has distinct null/significance patterns
+1. **Burnout splits into 3:** Burnout/Exhaustion (CM-01) + Cognitive Load (CM-02) + Professional Fulfillment (CM-03): Afshar 2025b RCT proved these are dissociable
+2. **Documentation time splits into 4:** Doc Time (CM-04) + After-Hours (CM-05) + Chart Closure (CM-06) + Total EHR Time (CM-07): each has distinct null/significance patterns
 3. **Note quality splits into 5:** Completeness/Omissions (CM-08) + Inaccuracy Rate (CM-09) + Overall Quality (CM-10) + Length (CM-11) + NLP Metrics (CM-12)
 4. **Financial outcomes split into 3:** Financial Productivity/RVU (CM-20) + Coding Accuracy (CM-21) + Patient Volume (CM-22)
 5. **Patient outcomes split into 3:** Patient Experience (CM-17) + Interaction Quality (CM-18) + Patient Safety (CM-19)

@@ -3,7 +3,7 @@
 **D&M Dimension:** [[II - Individual Impact]]
 
 ## Definition
-Total time spent creating, editing, and finalizing a clinical note — from note initiation to note signature. The most frequently measured efficiency outcome in the corpus. Includes in-clinic documentation time. Does NOT include after-hours time (see CM-05) unless explicitly pooled.
+Total time spent creating, editing, and finalizing a clinical note, from note initiation to note signature. The most frequently measured efficiency outcome in the corpus. Includes in-clinic documentation time. Does NOT include after-hours time (see CM-05) unless explicitly pooled.
 
 ## Measurement Methods
 | Method | Description | Data Source |
@@ -15,11 +15,11 @@ Total time spent creating, editing, and finalizing a clinical note — from note
 
 ## Quantitative vs. Qualitative
 Aliases in this measure should be distinguished by data source:
-- **Quantitative (objective):** EHR telemetry (Epic Signal/UAL), direct timing, per-note telemetry — preferred for synthesis
-- **Qualitative (self-report):** Survey/Likert estimates of time savings — systematically overstates reductions; do not pool with objective measures
+- **Quantitative (objective):** EHR telemetry (Epic Signal/UAL), direct timing, per-note telemetry: preferred for synthesis
+- **Qualitative (self-report):** Survey/Likert estimates of time savings: systematically overstates reductions; do not pool with objective measures
 
 ## Aliases Used in Literature
-- Documentation Time *(corpus-wide — see papers list)*
+- Documentation Time *(corpus-wide, see papers list)*
 - Time in Notes ([[Pearlman 2025 - AI Scribe EHR Efficiency|Pearlman 2025]], [[Cao 2024 - Artificial Intelligence-Driven Digital Scribes Dermatology|Cao 2024]], [[Afshar 2025 - Novel Playbook for Pragmatic Trial Operations|Afshar 2025]], [[Duggan 2025 - Clinician Experiences Ambient Scribe Documentation Burden|Duggan 2025]], [[Tierney 2025 - Ambient AI Scribes Learnings 1 Year 2.5 Million Uses|Tierney 2025]])
 - Time on Notes ([[Afshar 2025b - Pragmatic RCT Ambient AI Health Practitioner Wellbeing|Afshar 2025b]])
 - Active Documentation Time ([[Boyter 2025 - Ambience Healthcare ROI Validations KLAS Report|Boyter 2025]])

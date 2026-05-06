@@ -32,9 +32,9 @@ Organizational Impact captures the effect of the ACI system on the health system
 
 ## ⚠️ Key Cross-Cutting Findings
 
-**Patient Experience (CM-17):** Almost entirely unmeasured with validated instruments. Only Owens 2024 uses PDRQ-9 — null result in masked phase. The most critical gap in the corpus.
+**Patient Experience (CM-17):** Almost entirely unmeasured with validated instruments. Only Owens 2024 uses PDRQ-9: null result in masked phase. The most critical gap in the corpus.
 
-**Patient Safety (CM-19):** Castro 2025 found more psychiatric documentation but less psychiatric intervention (aOR 0.83, p=.005) — the only real-world safety signal in the corpus. Preprint only.
+**Patient Safety (CM-19):** Castro 2025 found more psychiatric documentation but less psychiatric intervention (aOR 0.83, p=.005): the only real-world safety signal in the corpus. Preprint only.
 
 **Financial Productivity (CM-20):** Three independent papers show RVU/revenue improvement. PHTI 2025 warns that even accurate higher coding increases aggregate healthcare spending at scale.
 

@@ -2,7 +2,7 @@
 const { useState: useStateT, useMemo: useMemoT, useEffect: useEffectT } = React;
 
 /* ========================================================================
-   OVERVIEW — hero essay + headline findings + dimension overview
+   OVERVIEW, hero essay + headline findings + dimension overview
    ======================================================================== */
 function OverviewTab({ articles, measures, draftMeasures, setTab }) {
   const yearCounts = useMemoT(() => {
@@ -126,7 +126,7 @@ function OverviewTab({ articles, measures, draftMeasures, setTab }) {
               <div style={{fontFamily:'JetBrains Mono, monospace', fontSize:11, fontWeight:500, color:'var(--accent)', letterSpacing:'0.06em'}}>CC BY-SA 4.0</div>
             </div>
             <div style={{fontFamily:'Newsreader, serif', fontSize:16, lineHeight:1.55, color:'var(--ink-2)'}}>
-              This work is openly licensed for sharing and adaptation, including commercially, with attribution and shared-alike terms. The framework is intended to grow — if you extend it with new article reviews, refined measure definitions, or additional dimensions, we ask that you contribute those additions back.
+              This work is openly licensed for sharing and adaptation, including commercially, with attribution and shared-alike terms. The framework is intended to grow, if you extend it with new article reviews, refined measure definitions, or additional dimensions, we ask that you contribute those additions back.
             </div>
             <button onClick={() => setTab('methods')}
               style={{background:'var(--ink)', color:'var(--paper)', border:'none', padding:'12px 18px', fontFamily:'Inter, sans-serif', fontSize:11, fontWeight:600, textTransform:'uppercase', letterSpacing:'0.14em', cursor:'pointer', whiteSpace:'nowrap'}}>
@@ -176,7 +176,7 @@ function OverviewTab({ articles, measures, draftMeasures, setTab }) {
 }
 
 /* ========================================================================
-   MEASURES — canonical list with inline expand
+   MEASURES, canonical list with inline expand
    ======================================================================== */
 function MeasuresTab({ measures, expanded, setExpanded, articles, onSelectArticle }) {
   const [q, setQ] = useStateT('');
@@ -219,13 +219,13 @@ function MeasuresTab({ measures, expanded, setExpanded, articles, onSelectArticl
           <div className="smallcaps" style={{marginBottom:4}}>Dimension</div>
           <select className="select-field" value={dim} onChange={e => setDim(e.target.value)}>
             <option value="">All dimensions</option>
-            {DIM_CODES.map(d => <option key={d} value={d}>{d} — {DIM_LONG[d]}</option>)}
+            {DIM_CODES.map(d => <option key={d} value={d}>{d}, {DIM_LONG[d]}</option>)}
           </select>
         </div>
 
       </div>
 
-      {/* GROUPED LIST — by D&M dimension, causal-chain order */}
+      {/* GROUPED LIST, by D&M dimension, causal-chain order */}
       {Object.entries(grouped).map(([dimCode, ms]) => (
         <div key={dimCode} style={{marginBottom:48}}>
           <div style={{display:'flex', alignItems:'center', justifyContent:'space-between', marginBottom:4, gap:16}}>
@@ -320,7 +320,7 @@ function MeasuresTab({ measures, expanded, setExpanded, articles, onSelectArticl
 }
 
 /* ========================================================================
-   DRAFT MEASURES — stakeholder-originated research agenda
+   DRAFT MEASURES, stakeholder-originated research agenda
    ======================================================================== */
 function DraftsTab({ drafts, expanded, setExpanded }) {
   const STAKE_COLOR = { CFO:'var(--green)', CMIO:'var(--brand-deep)', COO:'var(--accent-2)', CPO:'var(--purple)' };
@@ -385,7 +385,7 @@ function DraftsTab({ drafts, expanded, setExpanded }) {
                 </div>
               )}
 
-              <div style={{marginTop:16, fontSize:11, color:'var(--ink-3)', fontFamily:'Inter', letterSpacing:'0.08em', textTransform:'uppercase'}}>{isExp ? '— Close' : '+ Full proposal'}</div>
+              <div style={{marginTop:16, fontSize:11, color:'var(--ink-3)', fontFamily:'Inter', letterSpacing:'0.08em', textTransform:'uppercase'}}>{isExp ? ', Close' : '+ Full proposal'}</div>
             </div>
           );
         })}
@@ -395,7 +395,7 @@ function DraftsTab({ drafts, expanded, setExpanded }) {
 }
 
 /* ========================================================================
-   DECISION GUIDE — stakeholder-filtered measures
+   DECISION GUIDE, stakeholder-filtered measures
    ======================================================================== */
 function GuideTab({ measures, drafts, role, setRole }) {
   const ROLES = [
@@ -469,7 +469,7 @@ function GuideTab({ measures, drafts, role, setRole }) {
 
       {relDrafts.length > 0 && (
         <div>
-          <h4 className="mini">Gaps the {role} would want filled <span style={{textTransform:'none', fontStyle:'italic', color:'var(--ink-3)', letterSpacing:0}}>— pending research</span></h4>
+          <h4 className="mini">Gaps the {role} would want filled <span style={{textTransform:'none', fontStyle:'italic', color:'var(--ink-3)', letterSpacing:0}}>, pending research</span></h4>
           <div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:16}}>
             {relDrafts.map(d => (
               <div key={d.id} className="card" style={{borderLeft:'3px solid var(--accent)'}}>
@@ -488,7 +488,7 @@ function GuideTab({ measures, drafts, role, setRole }) {
 }
 
 /* ========================================================================
-   ARTICLES — editorial table + modal
+   ARTICLES, editorial table + modal
    ======================================================================== */
 function ArticlesTab({ articles, selected, setSelected }) {
   const [q, setQ] = useStateT('');
@@ -559,13 +559,13 @@ function ArticlesTab({ articles, selected, setSelected }) {
         <tbody>
           {filtered.map((a, i) => (
             <tr key={a.id || i} onClick={() => setSelected(a)}>
-              <td className="year-cell">{a.year || '—'}</td>
+              <td className="year-cell">{a.year || ', '}</td>
               <td>
                 <div className="title-cell">{a.title || a.id}
                   {a.authors && <span className="authors">{a.authors}</span>}
                 </div>
               </td>
-              <td className="design-cell">{a.studyDesign || '—'}</td>
+              <td className="design-cell">{a.studyDesign || ', '}</td>
               <td style={{fontSize:13, color:'var(--ink-2)'}}>{cleanProduct(a.product)}</td>
               <td className="n-cell">{(a.measures||[]).length}</td>
             </tr>
@@ -578,7 +578,7 @@ function ArticlesTab({ articles, selected, setSelected }) {
 
 function ArticleModal({ article: a, onClose }) {
   return (
-    <Modal onClose={onClose} eyebrow={`${a.year || '—'} · ${a.studyDesign || 'Study'}`} title={a.title || a.id}>
+    <Modal onClose={onClose} eyebrow={`${a.year || ', '} · ${a.studyDesign || 'Study'}`} title={a.title || a.id}>
       {a.authors && <p style={{fontStyle:'italic', color:'var(--ink-3)', marginBottom:6}}>{a.authors}</p>}
       {a.journal && <p style={{fontSize:13, color:'var(--ink-3)', marginBottom:20}}>{a.journal}</p>}
 
@@ -625,7 +625,7 @@ function ArticleModal({ article: a, onClose }) {
 }
 
 /* ========================================================================
-   FRAMEWORK — D&M dimension detail
+   FRAMEWORK, D&M dimension detail
    ======================================================================== */
 function FrameworkTab({ dimensions, measures, articles }) {
   const byDim = useMemoT(() => {
@@ -701,7 +701,7 @@ function FrameworkTab({ dimensions, measures, articles }) {
                 {d.belongsHere && d.belongsHere.length > 0 && (
                   <div style={{marginTop:16}}>
                     <h4 className="mini">What belongs here</h4>
-                    <div>{d.belongsHere.map((b, i) => <div key={i} style={{padding:'4px 0', fontSize:14, color:'var(--ink-2)', fontStyle:'italic'}}>— {b}</div>)}</div>
+                    <div>{d.belongsHere.map((b, i) => <div key={i} style={{padding:'4px 0', fontSize:14, color:'var(--ink-2)', fontStyle:'italic'}}>, {b}</div>)}</div>
                   </div>
                 )}
 
@@ -720,7 +720,7 @@ function FrameworkTab({ dimensions, measures, articles }) {
 }
 
 /* ========================================================================
-   CORPUS — statistics
+   CORPUS, statistics
    ======================================================================== */
 function CorpusTab({ articles }) {
   const designData = useMemoT(() => {
@@ -782,7 +782,7 @@ function CorpusTab({ articles }) {
 }
 
 /* ========================================================================
-   RIGOR — evidence profile cards with tier badges
+   RIGOR, evidence profile cards with tier badges
    ======================================================================== */
 function RigorTab({ measures, articles }) {
   const [openRationale, setOpenRationale] = useStateT(null);
@@ -840,7 +840,7 @@ function RigorTab({ measures, articles }) {
           const order = {HIGH:0, MODERATE:1, LOW:2, META:3};
           return (order[a.tier]||9) - (order[b.tier]||9);
         }).map(d => (
-          <div key={d.id} title={d.id + ' — ' + d.name} style={{
+          <div key={d.id} title={d.id + ', ' + d.name} style={{
             flex:1, background:tierColor(d.tier), opacity:0.85
           }}/>
         ))}
@@ -903,7 +903,7 @@ function RigorTab({ measures, articles }) {
                       )}
                     </div>
 
-                    {/* Study designs — full width */}
+                    {/* Study designs, full width */}
                     <div style={{gridColumn:'1 / -1'}}>
                       <div className="smallcaps" style={{fontSize:10, marginBottom:4, letterSpacing:'0.12em'}}>Study designs</div>
                       <div style={{fontFamily:'Inter, sans-serif', fontSize:12, color:'var(--ink-2)', lineHeight:1.5}}>
@@ -931,7 +931,7 @@ function RigorTab({ measures, articles }) {
       <div className="grid-feature" style={{marginTop:40}}>
         <div className="body-text" style={{fontSize:17}}>
           <h3 className="sub">Cross-cutting findings</h3>
-          <p>The self-report / objective divergence is the most reproducible methodological finding across the corpus: clinicians consistently report larger improvements than objective data confirm — for documentation time (two to six times overestimated), after-hours documentation (positive self-report, null objective), patient experience (positive in open-label, null in masked), and burnout (QI estimates two to four times larger than RCT).</p>
+          <p>The self-report / objective divergence is the most reproducible methodological finding across the corpus: clinicians consistently report larger improvements than objective data confirm, for documentation time (two to six times overestimated), after-hours documentation (positive self-report, null objective), patient experience (positive in open-label, null in masked), and burnout (QI estimates two to four times larger than RCT).</p>
           <p>The near-total absence of real-world patient safety data is the most critical gap. Ambient AI generates safety-critical clinical documentation without systematic post-market safety surveillance. The field is deploying tools at scale without the safety-monitoring infrastructure expected for medical devices or pharmaceuticals.</p>
         </div>
         <aside className="aside">
@@ -943,7 +943,7 @@ function RigorTab({ measures, articles }) {
 }
 
 /* ========================================================================
-   METHODS — sectioned methodology page (accordion)
+   METHODS, sectioned methodology page (accordion)
    ======================================================================== */
 
 const REPO_BASE = 'https://github.com/pbiondich/aci/blob/main';
@@ -986,7 +986,7 @@ function MethodsTab({ setTab }) {
         </aside>
       </div>
 
-      {/* SECTION 1 — CORPUS */}
+      {/* SECTION 1, CORPUS */}
       <AccordionSection
         num="1"
         title="The corpus"
@@ -996,7 +996,7 @@ function MethodsTab({ setTab }) {
         <p>The review is built on a corpus of <strong>54 articles</strong> evaluating ambient clinical intelligence tools, drawn from peer-reviewed journals, preprint servers, professional society reports, and grey literature published between 2021 and 2026. Each article was reviewed in full text by a member of the team using a structured abstraction template.</p>
 
         <h4>Inclusion rule: full text only</h4>
-        <p>The hard rule of the project is that no article enters the corpus on the basis of its abstract alone. If the full text is inaccessible, the paper is flagged for procurement and held outside the corpus until obtained. This rule exists because the abstract of an ambient AI study almost never reports the constructs we are trying to extract — measure operationalization, instrument choice, and dimension mapping all live in the methods section.</p>
+        <p>The hard rule of the project is that no article enters the corpus on the basis of its abstract alone. If the full text is inaccessible, the paper is flagged for procurement and held outside the corpus until obtained. This rule exists because the abstract of an ambient AI study almost never reports the constructs we are trying to extract, measure operationalization, instrument choice, and dimension mapping all live in the methods section.</p>
 
         <h4>Evidence levels we tag</h4>
         <p>Every article is classified into one of seven evidence levels at the time of review:</p>
@@ -1022,26 +1022,26 @@ function MethodsTab({ setTab }) {
         </div>
 
         <h4>The corpus is living</h4>
-        <p>New articles are added on a rolling basis through pull request to the source repository. When an article is added, the article-to-measure linkage tool is run automatically to update the canonical-measure paper lists, and the website is regenerated. The corpus reflected on this site corresponds to a specific commit of the vault — see the version stamp in the masthead.</p>
+        <p>New articles are added on a rolling basis through pull request to the source repository. When an article is added, the article-to-measure linkage tool is run automatically to update the canonical-measure paper lists, and the website is regenerated. The corpus reflected on this site corresponds to a specific commit of the vault, see the version stamp in the masthead.</p>
 
         <p style={{marginTop:18, fontSize:14}}>
           <a href={`${REPO_BASE}/Articles`} target="_blank" rel="noopener" className="ext">Browse the article files on GitHub →</a>
         </p>
       </AccordionSection>
 
-      {/* SECTION 2 — ABSTRACTION TEMPLATE */}
+      {/* SECTION 2, ABSTRACTION TEMPLATE */}
       <AccordionSection
         num="2"
         title="How each article gets coded"
-        sub="The Article Review Template — what we extract from every paper."
+        sub="The Article Review Template, what we extract from every paper."
         defaultOpen={true}
       >
-        <p>Every article in the corpus is abstracted using a single template that captures its bibliographic identity, its design, the specific ambient product evaluated, and — most critically — its full Study Measures table. The template is the contract between reviewers; consistency here is what makes the downstream taxonomy possible.</p>
+        <p>Every article in the corpus is abstracted using a single template that captures its bibliographic identity, its design, the specific ambient product evaluated, and, most critically, its full Study Measures table. The template is the contract between reviewers; consistency here is what makes the downstream taxonomy possible.</p>
 
         <h4>Required fields</h4>
         <div style={{margin:'14px 0'}}>
           <div className="field-row"><div className="k">Title · Authors · DOI</div><div className="v">Bibliographic identity, including journal or grey-literature source.</div></div>
-          <div className="field-row"><div className="k">Product evaluated</div><div className="v">The specific ACI tool studied — Nuance DAX, Suki, Abridge, Ambience, others — or "not specified" if the paper is product-agnostic.</div></div>
+          <div className="field-row"><div className="k">Product evaluated</div><div className="v">The specific ACI tool studied, Nuance DAX, Suki, Abridge, Ambience, others, or "not specified" if the paper is product-agnostic.</div></div>
           <div className="field-row"><div className="k">Clinical setting</div><div className="v">The care environment: outpatient primary care, ED, inpatient, multi-specialty, rehab, etc.</div></div>
           <div className="field-row"><div className="k">Evidence level</div><div className="v">One of the seven levels listed above.</div></div>
           <div className="field-row"><div className="k">Data source(s)</div><div className="v">All that apply, from the six tags above.</div></div>
@@ -1050,7 +1050,7 @@ function MethodsTab({ setTab }) {
         </div>
 
         <h4>The Study Measures table</h4>
-        <p>For each measure a paper reports, we capture three columns: the <em>name</em> as it appears in the paper, a <em>description</em> of ≤50 words, and the <em>D&M dimension(s)</em> we believe it belongs to. A measure may be tagged with more than one dimension when its construct legitimately spans them — see the mapping guide for dual-coding rules.</p>
+        <p>For each measure a paper reports, we capture three columns: the <em>name</em> as it appears in the paper, a <em>description</em> of ≤50 words, and the <em>D&M dimension(s)</em> we believe it belongs to. A measure may be tagged with more than one dimension when its construct legitimately spans them, see the mapping guide for dual-coding rules.</p>
         <p>Across all 54 articles, this process produced <strong>494 raw measure rows</strong>, which became the input to the canonical-measure derivation described in §4.</p>
 
         <p style={{marginTop:18, fontSize:14}}>
@@ -1058,7 +1058,7 @@ function MethodsTab({ setTab }) {
         </p>
       </AccordionSection>
 
-      {/* SECTION 3 — D&M FRAMEWORK */}
+      {/* SECTION 3, D&M FRAMEWORK */}
       <AccordionSection
         num="3"
         title="Mapping to DeLone & McLean"
@@ -1085,7 +1085,7 @@ function MethodsTab({ setTab }) {
         </div>
 
         <h4>How measures get mapped</h4>
-        <p>Each dimension has a written decision rule — what qualifies, what does not, and how to handle measures that legitimately span two dimensions. The full guide includes the rules for all seven dimensions and a dual-coding section for measures that belong to more than one.</p>
+        <p>Each dimension has a written decision rule, what qualifies, what does not, and how to handle measures that legitimately span two dimensions. The full guide includes the rules for all seven dimensions and a dual-coding section for measures that belong to more than one.</p>
 
         <p style={{marginTop:18, display:'flex', gap:18, flexWrap:'wrap', alignItems:'center'}}>
           <button onClick={() => { window.location.hash = 'mapping-guide'; }}
@@ -1098,7 +1098,7 @@ function MethodsTab({ setTab }) {
         </p>
       </AccordionSection>
 
-      {/* SECTION 4 — DERIVATION */}
+      {/* SECTION 4, DERIVATION */}
       <AccordionSection
         num="4"
         title="Deriving the canonical measures"
@@ -1113,16 +1113,16 @@ function MethodsTab({ setTab }) {
           <div className="flow-cell"><div className="lbl">Step 4 · Validate</div><div className="val">Linkage check</div></div>
         </div>
 
-        <h4>Step 1 — Raw measure extraction</h4>
+        <h4>Step 1, Raw measure extraction</h4>
         <p>Each article's Study Measures table contributed one row per outcome measure to a master list. A row carries the measure's name as it appeared in the paper, its operationalization, and the D&M tags assigned during abstraction. Measures with synonymous names but different operationalizations are kept as distinct rows, not collapsed at this stage.</p>
 
-        <h4>Step 2 — Bottom-up clustering</h4>
-        <p>Raw rows were grouped into canonical constructs by conceptual similarity. For example, "Time in Notes per Appointment," "Documentation Time (seconds)," "Post-Edit Time," and "Notetaking Time Reduction" all describe the same underlying construct — the clock time spent producing clinical documentation — and were clustered into <code>CM-04 Documentation Time</code>. Clustering was iterative: initial groups were reviewed for overlap, split where constructs were too broad, and named with descriptive titles.</p>
+        <h4>Step 2, Bottom-up clustering</h4>
+        <p>Raw rows were grouped into canonical constructs by conceptual similarity. For example, "Time in Notes per Appointment," "Documentation Time (seconds)," "Post-Edit Time," and "Notetaking Time Reduction" all describe the same underlying construct, the clock time spent producing clinical documentation, and were clustered into <code>CM-04 Documentation Time</code>. Clustering was iterative: initial groups were reviewed for overlap, split where constructs were too broad, and named with descriptive titles.</p>
 
-        <h4>Step 3 — Documentation of each canonical measure</h4>
+        <h4>Step 3, Documentation of each canonical measure</h4>
         <p>Every canonical measure received a dedicated markdown file with five sections: <em>Definition</em>, <em>Measurement Methods</em>, <em>Aliases Used in Literature</em>, <em>Key Note</em> (interpretive commentary), and <em>Papers Measuring This</em>.</p>
 
-        <h4>Step 4 — Linkage validation</h4>
+        <h4>Step 4, Linkage validation</h4>
         <p>An automated tool verifies that each article's measures are correctly linked to the canonical-measure files that subsume them. The tool uses regex pattern matching against a curated alias index for each CM, and flags articles where a measure's alias appears but the article is missing from the CM's paper list. False positives are managed through an explicit suppress list. The tool runs in CI on every commit.</p>
 
         <h4>Key splits the derivation produced</h4>
@@ -1203,7 +1203,7 @@ function MethodsTab({ setTab }) {
           <li><em>Clustering subjectivity.</em> Boundary decisions involved judgment. A different team might have placed "Job Satisfaction" in CM-03 (Professional Fulfillment) rather than CM-15 (Provider Satisfaction); both placements are defensible.</li>
           <li><em>Alias completeness.</em> The pattern matching used in linkage validation depends on the alias indexes being comprehensive. New terminology in future articles may not match existing patterns and will require manual addition.</li>
           <li><em>Qualitative vs. quantitative.</em> Some links involve qualitative mentions of a construct (a clinician describing accuracy concerns in an interview) rather than quantitative measurement. These are included as evidence but represent a weaker signal than instrumented measurement.</li>
-          <li><em>One-directional validation.</em> The linkage tool checks whether articles measuring a construct are listed in the corresponding CM. It does not check the reverse — whether every article listed in a CM actually measures that construct. A future reverse pass would strengthen confidence.</li>
+          <li><em>One-directional validation.</em> The linkage tool checks whether articles measuring a construct are listed in the corresponding CM. It does not check the reverse, whether every article listed in a CM actually measures that construct. A future reverse pass would strengthen confidence.</li>
           <li><em>Single-reviewer extraction.</em> Most articles were abstracted by a single reviewer. Inter-rater reliability is not formally established for this corpus.</li>
         </ul>
 
@@ -1212,7 +1212,7 @@ function MethodsTab({ setTab }) {
         </p>
       </AccordionSection>
 
-      {/* SECTION 5 — REPRODUCIBILITY */}
+      {/* SECTION 5, REPRODUCIBILITY */}
       <AccordionSection
         num="5"
         title="Reproducibility & maintenance"
@@ -1223,17 +1223,17 @@ function MethodsTab({ setTab }) {
         <h4>Source of truth</h4>
         <p>The vault contains four directories, each of which contributes to the site:</p>
         <ul>
-          <li><code>Articles/</code> — one markdown file per reviewed article</li>
-          <li><code>Canonical Measures/</code> — one file per canonical measure (CM-01 through CM-25)</li>
-          <li><code>Draft Measures/</code> — one file per draft measure (DM-01 through DM-12)</li>
-          <li><code>D&M Dimensions/</code> — one file per dimension</li>
+          <li><code>Articles/</code>, one markdown file per reviewed article</li>
+          <li><code>Canonical Measures/</code>, one file per canonical measure (CM-01 through CM-25)</li>
+          <li><code>Draft Measures/</code>, one file per draft measure (DM-01 through DM-12)</li>
+          <li><code>D&M Dimensions/</code>, one file per dimension</li>
         </ul>
 
         <h4>The two scripts that maintain it</h4>
         <p>Two Node.js scripts in the repository keep the vault internally consistent and produce the JSON consumed by the site:</p>
         <ul>
-          <li><code>scripts/link-article.js</code> — reads an article's Study Measures table and ensures the article is correctly listed in every CM and dimension file whose patterns its measures match. Has read-only and <code>--fix</code> modes.</li>
-          <li><code>scripts/extract-data.js</code> — walks the vault and produces the four JSON files in <code>docs/data/</code> that the site reads at load time. Includes a post-build linkage validation pass.</li>
+          <li><code>scripts/link-article.js</code>, reads an article's Study Measures table and ensures the article is correctly listed in every CM and dimension file whose patterns its measures match. Has read-only and <code>--fix</code> modes.</li>
+          <li><code>scripts/extract-data.js</code>, walks the vault and produces the four JSON files in <code>docs/data/</code> that the site reads at load time. Includes a post-build linkage validation pass.</li>
         </ul>
 
         <h4>Continuous integration</h4>
@@ -1249,7 +1249,7 @@ function MethodsTab({ setTab }) {
         </ul>
 
         <h4>License & community norm</h4>
-        <p>This work is licensed under <strong>Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)</strong>. You are free to share and adapt the work, including for commercial purposes, under two conditions: attribution and ShareAlike. Beyond the legal terms, there is a community norm — if you extend this work (new reviews, refined measures, new dimensions), contribute those additions back. The framework gets better when its users keep it current.</p>
+        <p>This work is licensed under <strong>Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)</strong>. You are free to share and adapt the work, including for commercial purposes, under two conditions: attribution and ShareAlike. Beyond the legal terms, there is a community norm, if you extend this work (new reviews, refined measures, new dimensions), contribute those additions back. The framework gets better when its users keep it current.</p>
 
         <h4>Citation</h4>
         <div style={{padding:'14px 18px', borderLeft:'3px solid var(--accent)', background:'#faf6ea', margin:'10px 0 14px', fontFamily:'Newsreader, serif', fontSize:15, fontStyle:'italic', color:'var(--ink-2)', lineHeight:1.55}}>
@@ -1276,7 +1276,7 @@ function MethodsTab({ setTab }) {
 }
 
 /* ========================================================================
-   MAPPING GUIDE — sub-page detailing each D&M dimension's decision rules
+   MAPPING GUIDE, sub-page detailing each D&M dimension's decision rules
    ======================================================================== */
 
 function MappingGuideTab({ setTab }) {
@@ -1288,32 +1288,32 @@ function MappingGuideTab({ setTab }) {
         'Transcription accuracy (e.g., Word Error Rate)',
         'Speaker diarization accuracy (who said what)',
         'System reliability, uptime, latency',
-        'Medical Term Recall — clinical vocabulary capture in transcription',
+        'Medical Term Recall, clinical vocabulary capture in transcription',
         'Automated pipeline evaluation (LLM-as-evaluator agreement, benchmark availability)',
         'Specialty coverage in evaluation datasets, as a proxy for breadth of technical validity'
       ],
       no: [
-        'Note quality — that is IQ, the output rather than the machine',
-        'Provider experience with the system — that is US or SerQ'
+        'Note quality (IQ, the output rather than the machine',
+        'Provider experience with the system (US or SerQ'
       ]
     },
     {
       code:'IQ', name:'Information Quality',
-      q:'Is the output — the note — accurate, complete, and useful?',
+      q:'Is the output, the note, accurate, complete, and useful?',
       yes: [
         'Note accuracy and factual correctness',
         'Hallucination rate or fabricated content',
-        'Note completeness — whether all clinically relevant elements are captured',
+        'Note completeness, whether all clinically relevant elements are captured',
         'ICD-10 and coding accuracy (quality of diagnostic coding in the note)',
         'Documentation quality instruments (PDQI-9, SAIL, etc.)',
-        'ROUGE / BERTScore — automated note similarity to reference',
-        'Fluency, clarity, readability — human-rated',
+        'ROUGE / BERTScore, automated note similarity to reference',
+        'Fluency, clarity, readability, human-rated',
         'Word count and lexical diversity, as note structure proxies',
         'Medication capture accuracy (e.g., new medication documentation)'
       ],
       no: [
-        'Time to create the note — that is II',
-        'Provider satisfaction with the note — that is US, the feeling rather than the artifact'
+        'Time to create the note (II)',
+        'Provider satisfaction with the note (US, the feeling rather than the artifact'
       ]
     },
     {
@@ -1328,8 +1328,8 @@ function MappingGuideTab({ setTab }) {
         'Governance model effectiveness'
       ],
       no: [
-        'Provider satisfaction with the product itself — that is US',
-        'Adoption rates — that is U'
+        'Provider satisfaction with the product itself (US)',
+        'Adoption rates (U'
       ]
     },
     {
@@ -1340,11 +1340,11 @@ function MappingGuideTab({ setTab }) {
         'Voice memo / recording frequency',
         'Adoption stratification (high/medium/low user groups)',
         'Implementation intent and willingness to continue using',
-        'Adoption behavior over time — uptake trends, attrition'
+        'Adoption behavior over time, uptake trends, attrition'
       ],
       no: [
-        'Satisfaction with the tool — that is US',
-        'Why people don\'t use it — those are SerQ or US depending on nature'
+        'Satisfaction with the tool (US)',
+        'Why people don\'t use it, those are SerQ or US depending on nature'
       ]
     },
     {
@@ -1362,8 +1362,8 @@ function MappingGuideTab({ setTab }) {
         'Patient engagement perceived from the provider\'s perspective'
       ],
       no: [
-        'Objective time savings — that is II',
-        'Note quality ratings — that is IQ, unless it is the provider\'s perception of quality'
+        'Objective time savings (II)',
+        'Note quality ratings (IQ, unless it is the provider\'s perception of quality'
       ]
     },
     {
@@ -1378,9 +1378,9 @@ function MappingGuideTab({ setTab }) {
         'Time savings translated to clinical activity'
       ],
       no: [
-        'Provider feelings about time savings — that is US, perception',
-        'Note quality — that is IQ',
-        'Organization-level financial outcomes — that is OI'
+        'Provider feelings about time savings (US, perception',
+        'Note quality (IQ)',
+        'Organization-level financial outcomes (OI'
       ]
     },
     {
@@ -1395,9 +1395,9 @@ function MappingGuideTab({ setTab }) {
         'Patient experience and patient-facing quality measures'
       ],
       no: [
-        'Clinician-level time savings — that is II',
-        'Note quality — that is IQ',
-        'Provider satisfaction — that is US'
+        'Clinician-level time savings (II)',
+        'Note quality (IQ)',
+        'Provider satisfaction (US'
       ]
     }
   ];

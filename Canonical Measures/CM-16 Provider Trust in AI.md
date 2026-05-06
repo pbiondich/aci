@@ -14,12 +14,12 @@ The degree to which clinicians perceive AI-generated documentation as accurate a
 | Perceived Reliability (mixed) | Combined assessment of output dependability across repeated use | Mixed |
 
 ## Aliases Used in Literature
-- Trust in AI ([[Afshar 2025b - Pragmatic RCT Ambient AI Health Practitioner Wellbeing|Afshar 2025b]] — secondary outcome)
+- Trust in AI ([[Afshar 2025b - Pragmatic RCT Ambient AI Health Practitioner Wellbeing|Afshar 2025b]]: secondary outcome)
 - Provider Skepticism & AI Trust ([[Shah 2025 - Physician Perspectives Ambient AI Scribes|Shah 2025]], [[Wojda 2025 - HCI of Ambient AI Qualitative Study|Wojda 2025]])
 - Accuracy Confidence ([[Karavassilis 2025 - Ambient Voice Technology Same Day Emergency Care SDEC|Karavassilis 2025]])
 
 ## ⚠️ Key Note
-3 papers formally measure this as a study outcome; AI skepticism and reliability concerns appear qualitatively in many more. Placed in the Use dimension (U) rather than User Satisfaction (US) because perceived reliability is an attitudinal precondition that precedes adoption, not a feeling that results from it. Clinicians who doubt output accuracy reject the tool or over-verify, both of which show up as adoption failure rather than satisfaction decline. Ethical/legal concern measures (Falcetta 2023) and fear of downstream consequences (Bundy 2024) are related but distinct constructs — those belong in OI and II respectively, not here.
+3 papers formally measure this as a study outcome; AI skepticism and reliability concerns appear qualitatively in many more. Placed in the Use dimension (U) rather than User Satisfaction (US) because perceived reliability is an attitudinal precondition that precedes adoption, not a feeling that results from it. Clinicians who doubt output accuracy reject the tool or over-verify, both of which show up as adoption failure rather than satisfaction decline. Ethical/legal concern measures (Falcetta 2023) and fear of downstream consequences (Bundy 2024) are related but distinct constructs, those belong in OI and II respectively, not here.
 
 ## Papers Measuring This (3)
 - [[Afshar 2025b - Pragmatic RCT Ambient AI Health Practitioner Wellbeing]]

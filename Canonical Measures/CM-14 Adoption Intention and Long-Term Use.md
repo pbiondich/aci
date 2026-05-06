@@ -3,9 +3,9 @@
 **D&M Dimension:** [[U - Use]]
 
 ## Definition
-Provider-reported intention to continue using the ambient AI scribe beyond the study period — including willingness to adopt and implementation readiness. Captures attitudinal vs. behavioral adoption (Technology Acceptance Model distinction).
+Provider-reported intention to continue using the ambient AI scribe beyond the study period, including willingness to adopt and implementation readiness. Captures attitudinal vs. behavioral adoption (Technology Acceptance Model distinction).
 
-> **Note:** Recommendation likelihood, recommendation intention, and long-term use have been moved to CM-15 (Provider Satisfaction and Usability) — these are closer to satisfaction constructs than adoption intention.
+> **Note:** Recommendation likelihood, recommendation intention, and long-term use have been moved to CM-15 (Provider Satisfaction and Usability): these are closer to satisfaction constructs than adoption intention.
 
 ## Measurement Methods
 | Method | Description | Data Source |
@@ -23,10 +23,10 @@ Provider-reported intention to continue using the ambient AI scribe beyond the s
 - User Adoption Predictors ([[Tierney 2025 - Ambient AI Scribes Learnings 1 Year 2.5 Million Uses|Tierney 2025]])
 - License Relinquishment ([[Ma 2025 - Ambient AI Scribes Utilization Documentation Time Stanford|Ma 2025]])
 
-> **Moved to CM-15:** *Recommendation Likelihood* (Galloway 2024), *Recommendation Intention* (Evans 2025), *Long-Term Use* (Shah 2024) — these belong in Provider Satisfaction and Usability.
+> **Moved to CM-15:** *Recommendation Likelihood* (Galloway 2024), *Recommendation Intention* (Evans 2025), *Long-Term Use* (Shah 2024), these belong in Provider Satisfaction and Usability.
 
 ## ⚠️ Key Note
-Only 5 papers explicitly measure adoption intention as a formal study measure (vs. mentioning it). Tierney 2025 found physician age and years since graduation are NOT predictive of adoption — challenging the generational adoption narrative.
+Only 5 papers explicitly measure adoption intention as a formal study measure (vs. mentioning it). Tierney 2025 found physician age and years since graduation are NOT predictive of adoption, challenging the generational adoption narrative.
 
 ## Papers Measuring This (6)
 - [[Evans 2025 - AI Scribe Allied Health Private Practice Australia]]

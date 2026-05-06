@@ -3,12 +3,12 @@
 **D&M Dimension:** [[II - Individual Impact]]
 
 ## Definition
-Provider-reported emotional exhaustion, depersonalization, and interpersonal disengagement from clinical work — the core burnout syndrome. Measured via validated psychometric instruments. Distinct from cognitive task load (in-encounter mental effort) and professional fulfillment (positive engagement).
+Provider-reported emotional exhaustion, depersonalization, and interpersonal disengagement from clinical work, the core burnout syndrome. Measured via validated psychometric instruments. Distinct from cognitive task load (in-encounter mental effort) and professional fulfillment (positive engagement).
 
 ## Measurement Methods
 | Method | Description | Data Source |
 |---|---|---|
-| [Stanford PFI](https://pmc.ncbi.nlm.nih.gov/articles/PMC5794850/) — Work Exhaustion subscale | 10-item validated subscale; 1–5 scale (higher=worse); captures exhaustion + interpersonal disengagement | Survey |
+| [Stanford PFI](https://pmc.ncbi.nlm.nih.gov/articles/PMC5794850/), Work Exhaustion subscale | 10-item validated subscale; 1–5 scale (higher=worse); captures exhaustion + interpersonal disengagement | Survey |
 | [Mini-Z / Mini-Z 2.0](https://pmc.ncbi.nlm.nih.gov/articles/PMC9411313/) | 10-item brief burnout screen; validated in primary care; 10–50 scale (higher=better) | Survey |
 | [Oldenburg Burnout Inventory (OLBI)](https://www.tandfonline.com/doi/full/10.1080/02678370500340728) | 16-item validated instrument; disengagement + exhaustion domains | Survey |
 | Single-item burnout question | "How often do you feel burned out?" Likert scale | Survey |
@@ -16,7 +16,7 @@ Provider-reported emotional exhaustion, depersonalization, and interpersonal dis
 | [PROMIS Sleep Disturbance](https://pubmed.ncbi.nlm.nih.gov/22250775/) (Short Form 4a) | Validated sleep quality instrument; proxy for restorative recovery associated with burnout | Survey |
 
 ## Aliases Used in Literature
-- Burnout *(corpus-wide — see papers list)*
+- Burnout *(corpus-wide, see papers list)*
 - Work Exhaustion / Interpersonal Disengagement ([[Afshar 2025b - Pragmatic RCT Ambient AI Health Practitioner Wellbeing|Afshar 2025b]], [[Shah 2024 - Ambient AI Scribes Physician Burnout Usability Documentation Burden|Shah 2024]])
 - Mini-Z Burnout Score ([[Olson 2025 - Ambient AI Scribes Administrative Burden Burnout|Olson 2025]], [[Guo 2026 - Evaluating Ambient AI Documentation UCI Health Mixed Methods|Guo 2026]])
 - OLBI ([[van Buchem 2024 - Digital Scribe Documentation Time Quality Usability|van Buchem 2024]])
@@ -28,7 +28,7 @@ Provider-reported emotional exhaustion, depersonalization, and interpersonal dis
 - PROMIS Sleep Disturbance ([[Albrecht 2025 - Ambient AI Clinical Documentation QI Survey|Albrecht 2025]]) *(moved from CM-03)*
 
 ## ⚠️ Key Note
-**RCT effect size caveat:** Afshar 2025b (RCT, n=66) found −0.44 PFI work exhaustion. Shah 2024 (QI, selected sample) found −1.94 on same scale. The gap is expected from selection bias in non-randomized studies. The RCT estimate is more trustworthy. Burnout is dissociable from cognitive load (CM-02) and professional fulfillment (CM-03) — see Afshar 2025b where all three moved differently.
+**RCT effect size caveat:** Afshar 2025b (RCT, n=66) found −0.44 PFI work exhaustion. Shah 2024 (QI, selected sample) found −1.94 on same scale. The gap is expected from selection bias in non-randomized studies. The RCT estimate is more trustworthy. Burnout is dissociable from cognitive load (CM-02) and professional fulfillment (CM-03): see Afshar 2025b where all three moved differently.
 
 **Tierney 2025** adds large-scale objective DiD support (pajama time −1.03 min p=0.02; after-hours −1.83 min p<0.001) plus 82% positive work satisfaction. **Billings 2025b** reports −32% burnout (p=0.023).
 

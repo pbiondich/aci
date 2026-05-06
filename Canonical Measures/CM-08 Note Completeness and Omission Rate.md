@@ -3,20 +3,20 @@
 **D&M Dimension:** [[IQ - Information Quality]]
 
 ## Definition
-Whether clinically relevant information is captured in the AI-generated note — measured as omission rates, completeness scores, or presence of expected data elements. The most common error type in simulation studies. Represents the 'completeness' component of note quality.
+Whether clinically relevant information is captured in the AI-generated note, measured as omission rates, completeness scores, or presence of expected data elements. The most common error type in simulation studies. Represents the 'completeness' component of note quality.
 
 ## Measurement Methods
 | Method | Description | Data Source |
 |---|---|---|
 | Omission rate (%) | % of expected data elements absent from the note | Simulation / Human rater |
-| Error categorization — omissions | Structured count of missing elements vs. reference | Simulation / Human rater |
+| Error categorization, omissions | Structured count of missing elements vs. reference | Simulation / Human rater |
 | [PDSQI-9](https://pubmed.ncbi.nlm.nih.gov/40323321/) / [PDQI-9](https://pubmed.ncbi.nlm.nih.gov/18436914/) Thoroughness domain | Validated subscale measuring note completeness | Human rater / LLM-as-judge |
 | Clinical note error rate (% key elements) | % of key clinical elements correctly captured | Simulation |
 | New medication capture | Whether new medications mentioned in encounter appear in note | EHR audit |
 
 ## Aliases Used in Literature
 - Omissions ([[Kernberg 2023 - ChatGPT-4 Structured Medical Notes Audio Recordings|Kernberg 2023]], [[Arko 2025 - Documenting Care AI Comparative Commercial Scribe Tools|Arko 2025]], [[Biro 2025 - Simulation Testing Ambient Digital Scribes Case Report|Biro 2025]], [[Anderson 2025 - Quality Safety Ambient Digital Scribe Platforms Simulation|Anderson 2025]], [[Foo 2025 - Great Scribe-Off AI vs Human Documentation Simulated GP|Foo 2025]])
-- Error Subtype — Omissions ([[Arko 2025 - Documenting Care AI Comparative Commercial Scribe Tools|Arko 2025]])
+- Error Subtype, Omissions ([[Arko 2025 - Documenting Care AI Comparative Commercial Scribe Tools|Arko 2025]])
 - Omission Errors (%) ([[Kernberg 2023 - ChatGPT-4 Structured Medical Notes Audio Recordings|Kernberg 2023]]: 86%; [[Arko 2025 - Documenting Care AI Comparative Commercial Scribe Tools|Arko 2025]]: 71%; [[Biro 2025 - Simulation Testing Ambient Digital Scribes Case Report|Biro 2025]]; [[Anderson 2025 - Quality Safety Ambient Digital Scribe Platforms Simulation|Anderson 2025]]; [[Foo 2025 - Great Scribe-Off AI vs Human Documentation Simulated GP|Foo 2025]])
 - Errors of Omission / Addition / Incorrect Data ([[Anderson 2025 - Quality Safety Ambient Digital Scribe Platforms Simulation|Anderson 2025]])
 - Thoroughness (PDQI domain) ([[Foo 2025 - Great Scribe-Off AI vs Human Documentation Simulated GP|Foo 2025]])

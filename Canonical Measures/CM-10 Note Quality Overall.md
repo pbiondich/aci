@@ -12,24 +12,24 @@ Aggregate quality rating of the AI-generated clinical note using a validated mul
 | [PDSQI-9 (Provider Documentation Summarization QI)](https://pubmed.ncbi.nlm.nih.gov/40323321/) | Adapted PDQI-9 for AI-generated summaries; includes LLM-as-judge implementation validated against physician ratings | LLM-as-judge / Human rater |
 | [SAIL Score](https://pubmed.ncbi.nlm.nih.gov/39371531/) | Standards-based AI documentation quality assessment | Human rater |
 | Global rating (1–5) | Single-item overall quality assessment | Human rater |
-| Documentation quality — SOAP sections | PDQI applied by section (Subjective, Plan) | Human rater |
+| Documentation quality, SOAP sections | PDQI applied by section (Subjective, Plan) | Human rater |
 | Discharge summary / progress note PDQI | PDQI applied to specific note types | Human rater |
 
 ## Aliases Used in Literature
 - PDQI-9 Score ([[Foo 2025 - Great Scribe-Off AI vs Human Documentation Simulated GP|Foo 2025]], [[Baker 2023 - ChatGPT Ability Assist Clinical Documentation Orthopaedic RCT|Baker 2023]], [[Kernberg 2023 - ChatGPT-4 Structured Medical Notes Audio Recordings|Kernberg 2023]])
 - PDSQI-9 ([[Afshar 2025b - Pragmatic RCT Ambient AI Health Practitioner Wellbeing|Afshar 2025b]]: 3.97–4.99/5.0)
 - Overall PDQI Score ([[Palm 2025 - Quality AI Generated Clinical Notes PDQI Validation|Palm 2025]])
-- Documentation Quality *(corpus-wide — see papers list)*
-- Note Quality *(corpus-wide — see papers list)*
+- Documentation Quality *(corpus-wide, see papers list)*
+- Note Quality *(corpus-wide, see papers list)*
 - Progress Note PDQI-9 ([[Bracken 2025 - Ambient AI Inpatient Documentation Simulation Orthopaedic|Bracken 2025]])
 - Discharge Summary PDQI-9 ([[Bracken 2025 - Ambient AI Inpatient Documentation Simulation Orthopaedic|Bracken 2025]])
-- Documentation Quality — SOAP_S / SOAP_P ([[Karavassilis 2025 - Ambient Voice Technology Same Day Emergency Care SDEC|Karavassilis 2025]])
+- Documentation Quality, SOAP_S / SOAP_P ([[Karavassilis 2025 - Ambient Voice Technology Same Day Emergency Care SDEC|Karavassilis 2025]])
 - Global Rating ([[Baker 2023 - ChatGPT Ability Assist Clinical Documentation Orthopaedic RCT|Baker 2023]])
 - Efficiency Score (PDQI-9/min) ([[Bracken 2025 - Ambient AI Inpatient Documentation Simulation Orthopaedic|Bracken 2025]])
 - Appropriate for Specialty ([[van Buchem 2024 - Digital Scribe Documentation Time Quality Usability|van Buchem 2024]])
 
 ## ⚠️ Key Note
-PDQI-9 was designed for human-authored notes and has been adapted for AI assessment; the LLM-as-judge implementation (Afshar 2025b) is validated against physician ratings. Scores of 3.97–4.99/5.0 (Afshar 2025b) represent the highest in corpus. Scale interpretation: 26.2 = 'terrible or bad', 36.6 = 'good or excellent' (Kernberg 2023 mean: 29.7, closer to terrible). The PDQI is a composite — see CM-08 and CM-09 for component error types.
+PDQI-9 was designed for human-authored notes and has been adapted for AI assessment; the LLM-as-judge implementation (Afshar 2025b) is validated against physician ratings. Scores of 3.97–4.99/5.0 (Afshar 2025b) represent the highest in corpus. Scale interpretation: 26.2 = 'terrible or bad', 36.6 = 'good or excellent' (Kernberg 2023 mean: 29.7, closer to terrible). The PDQI is a composite, see CM-08 and CM-09 for component error types.
 
 ## Papers Measuring This (17)
 - [[Afshar 2025b - Pragmatic RCT Ambient AI Health Practitioner Wellbeing]]

@@ -1,6 +1,6 @@
 # Article Review Template
 
-> ⚠️ **RULE: Full text required before abstraction.** Do NOT complete this template using abstract only. If full text is inaccessible (paywall, no PDF, no DOI), mark the article as `🚫 FULL TEXT UNAVAILABLE` and skip — do not guess or extrapolate from the abstract. Flag for Paul to provide the PDF directly.
+> ⚠️ **RULE: Full text required before abstraction.** Do NOT complete this template using abstract only. If full text is inaccessible (paywall, no PDF, no DOI), mark the article as `🚫 FULL TEXT UNAVAILABLE` and skip: do not guess or extrapolate from the abstract. Flag for Paul to provide the PDF directly.
 
 ---
 
@@ -14,13 +14,13 @@
 *(e.g., 10.1000/xyz123)*
 
 ## Journal / Source
-*(Journal name, volume, issue, year — or conference/report name for grey literature)*
+*(Journal name, volume, issue, year, or conference/report name for grey literature)*
 
 ## Ambient Product(s) Evaluated
-*(Name the specific ACI/ambient listening tool(s) studied — e.g., Nuance DAX, Suki, Abridge, Ambience Healthcare, etc. Note "not specified" if unnamed.)*
+*(Name the specific ACI/ambient listening tool(s) studied, e.g., Nuance DAX, Suki, Abridge, Ambience Healthcare, etc. Note "not specified" if unnamed.)*
 
 ## Clinical Setting
-*(Describe the care environment — e.g., outpatient primary care, emergency department, inpatient, multi-specialty, rehabilitation, etc.)*
+*(Describe the care environment, e.g., outpatient primary care, emergency department, inpatient, multi-specialty, rehabilitation, etc.)*
 
 ## Evidence Level
 *(Select one: RCT | Observational | Quality Improvement | Qualitative | Simulation | Scoping/Systematic Review | Grey Literature)*
@@ -78,6 +78,6 @@ The linkage tool will:
 > See `Templates/Canonical Measure Derivation Methodology.md` for full methodology documentation.
 
 ---
-*Template version: 3.0 — Updated 2026-04-15*
+*Template version: 3.0, Updated 2026-04-15*
 
 *Licensed under [CC BY-SA 4.0](../LICENSE) — [github.com/pbiondich/aci](https://github.com/pbiondich/aci)*

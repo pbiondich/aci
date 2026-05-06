@@ -58,14 +58,14 @@ Each of the 54 articles was reviewed in full text and its outcome measures extra
 
 The interactive webapp at [pbiondich.github.io/aci/v3](https://pbiondich.github.io/aci/v3/) provides eight views:
 
-1. **Overview** — key findings at a glance
-2. **Canonical Measures** — detailed definitions, findings, and paper lists for all 25 measures
-3. **Decision Guide** — stakeholder-filtered view (CMIO, CFO, COO, CPO) with evidence strength indicators
-4. **Draft Measures** — proposed measures pending key informant validation
-5. **Article Explorer** — searchable table of all 54 studies with detail modals
-6. **D&M Framework** — dimension-level summaries and measure groupings
-7. **Study Corpus** — corpus-wide statistics and distributions
-8. **Level of Rigor** — tiered quality assessment (work in progress)
+1. **Overview** : key findings at a glance
+2. **Canonical Measures** : detailed definitions, findings, and paper lists for all 25 measures
+3. **Decision Guide** : stakeholder-filtered view (CMIO, CFO, COO, CPO) with evidence strength indicators
+4. **Draft Measures** : proposed measures pending key informant validation
+5. **Article Explorer** : searchable table of all 54 studies with detail modals
+6. **D&M Framework** : dimension-level summaries and measure groupings
+7. **Study Corpus** : corpus-wide statistics and distributions
+8. **Level of Rigor** : tiered quality assessment (work in progress)
 
 Tabs are shareable via URL hash (e.g., `pbiondich.github.io/aci/v3/#guide`).
 

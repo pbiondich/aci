@@ -3,7 +3,7 @@
 **D&M Dimension:** [[OI - Organizational Impact]]
 
 ## Definition
-Behavioral measures of the quality of the physician-patient interaction during the clinical encounter — including face-to-face time, clinician attentiveness, screen time reduction, and perceived engagement. Distinct from patient experience (CM-17), which is patient-reported; this is primarily clinician-reported or observed.
+Behavioral measures of the quality of the physician-patient interaction during the clinical encounter, including face-to-face time, clinician attentiveness, screen time reduction, and perceived engagement. Distinct from patient experience (CM-17), which is patient-reported; this is primarily clinician-reported or observed.
 
 ## Measurement Methods
 | Method | Description | Data Source |
@@ -23,7 +23,7 @@ Behavioral measures of the quality of the physician-patient interaction during t
 - Consultation Duration ([[Balloch 2024 - Ambient Artificial Intelligence Tool Improve Quality Clinical Documentation|Balloch 2024]])
 - Time Searching for Information ([[Karavassilis 2025 - Ambient Voice Technology Same Day Emergency Care SDEC|Karavassilis 2025]])
 
-> **Moved to CM-22:** *Patients Seen per Hour* (Shuaib 2021) and *I Feel Able to See More Patients* (Duggan 2025) — patient volume/throughput is not a measure of interaction quality. Time does not measure quality.
+> **Moved to CM-22:** *Patients Seen per Hour* (Shuaib 2021) and *I Feel Able to See More Patients* (Duggan 2025), patient volume/throughput is not a measure of interaction quality. Time does not measure quality.
 
 ## ⚠️ Key Note
 Shuaib 2021 (human scribe comparator) is the strongest data point: doctor-patient interaction time doubled and patients/hour increased 39%. This establishes the *potential* of documentation automation for interaction quality. Ambient AI studies primarily capture this through self-report survey items rather than direct observation.

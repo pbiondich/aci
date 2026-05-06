@@ -3,7 +3,7 @@
 **D&M Dimension:** [[II - Individual Impact]]
 
 ## Definition
-Total time spent in the EHR across all tasks — note-writing, inbox management, order entry, results review, messaging — normalized per scheduled workday. Broader than documentation time alone; captures the total EHR burden.
+Total time spent in the EHR across all tasks, note-writing, inbox management, order entry, results review, messaging, normalized per scheduled workday. Broader than documentation time alone; captures the total EHR burden.
 
 ## Measurement Methods
 | Method | Description | Data Source |
@@ -18,7 +18,7 @@ Total time spent in the EHR across all tasks — note-writing, inbox management,
 - Time in Documentation and EHR ([[Tierney 2024 - Ambient Artificial Intelligence Scribes Alleviate Burden Clinical Documentation|Tierney 2024]])
 
 ## ⚠️ Key Note
-**Emerging measure — only 5 papers measure this explicitly.** Ma 2025 found −19.95 min/day total EHR time (largest effect in corpus) while only −6.89 min/day for documentation time specifically — suggesting ambient scribes reduce EHR burden beyond just note-writing, possibly by enabling faster note closure and less revisiting.
+**Emerging measure: only 5 papers measure this explicitly.** Ma 2025 found −19.95 min/day total EHR time (largest effect in corpus) while only −6.89 min/day for documentation time specifically: suggesting ambient scribes reduce EHR burden beyond just note-writing, possibly by enabling faster note closure and less revisiting.
 
 ## Papers Measuring This (5)
 - [[Cao 2024 - Artificial Intelligence-Driven Digital Scribes Dermatology]]

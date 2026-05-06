@@ -37,7 +37,7 @@ Individual Impact captures the effect of the ACI system on the individual clinic
 
 **After-Hours (CM-05):** Consistent null pattern in objective data (Pearlman 2025, Stults 2025). Self-report shows improvement. Exceptions: Duggan 2025 (−16.9%), Boyter/KLAS 2025 (−39%), Afshar 2025b (fragile, sensitive to outliers).
 
-**Burnout (CM-01):** Only one RCT (Afshar 2025b) confirms reduction (−0.44 PFI, p<.001). QI studies show larger effects driven by selection bias. Burnout and professional fulfillment are dissociable — burnout reduces without a corresponding increase in fulfillment.
+**Burnout (CM-01):** Only one RCT (Afshar 2025b) confirms reduction (−0.44 PFI, p<.001). QI studies show larger effects driven by selection bias. Burnout and professional fulfillment are dissociable: burnout reduces without a corresponding increase in fulfillment.
 
 ## Papers in this Dimension
 - [[AAFP 2021 - Using AI Assistant Reduce Documentation Burden Family Medicine]]

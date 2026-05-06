@@ -1,21 +1,21 @@
 # DM-09 System Reliability and Downtime
 
-**Status:** Draft — pending key informant validation
+**Status:** Draft: pending key informant validation
 **D&M Dimension:** [[SQ - System Quality]]
 
 ## Definition
-The operational reliability of the ACI tool in production clinical environments — including uptime, failure modes, degradation behavior, recovery time, and the availability of fallback workflows when the system is unavailable. Measures whether the tool can be depended upon for continuous clinical operations.
+The operational reliability of the ACI tool in production clinical environments, including uptime, failure modes, degradation behavior, recovery time, and the availability of fallback workflows when the system is unavailable. Measures whether the tool can be depended upon for continuous clinical operations.
 
 ## Hypothesized Stakeholder(s)
-- **COO** — system reliability directly affects clinical operations; an unreliable tool disrupts patient flow and clinician workflow
-- **CMIO** — downtime during clinical encounters creates patient safety and documentation quality risks
+- **COO** : system reliability directly affects clinical operations; an unreliable tool disrupts patient flow and clinician workflow
+- **CMIO** : downtime during clinical encounters creates patient safety and documentation quality risks
 
 ## Rationale
 ACI tools operate in real-time during clinical encounters. When they fail, the clinician must either wait or revert to manual documentation mid-visit. No study in the corpus reports uptime metrics, failure rates, or the operational impact of system outages. For enterprise deployment, reliability is a non-negotiable operational requirement that isn't captured by any current canonical measure.
 
 ## Relationship to Existing Canonical Measures
-- [[CM-24 System Quality]] — reliability is a component of system quality but not explicitly measured in the corpus
-- [[CM-25 System Quality]] — technical performance measures don't include uptime or failure mode data
+- [[CM-24 System Quality]]: reliability is a component of system quality but not explicitly measured in the corpus
+- [[CM-25 System Quality]]: technical performance measures don't include uptime or failure mode data
 
 ## Suggested Measurement Methods
 | Method | Description | Data Source |

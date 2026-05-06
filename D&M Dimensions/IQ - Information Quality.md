@@ -3,15 +3,15 @@
 Part of the [[DeLone and McLean IS Success Model]]
 
 ## Definition
-Information Quality assesses the **quality, accuracy, and completeness of the generated clinical note** — the output artifact of the ambient AI system. It asks: is the note good enough to use?
+Information Quality assesses the **quality, accuracy, and completeness of the generated clinical note** : the output artifact of the ambient AI system. It asks: is the note good enough to use?
 
 ## What Belongs Here
 - Note completeness (are all clinically relevant elements captured?)
 - Note accuracy / factual correctness (hallucination rate, incorrect facts)
 - Overall note quality scores (PDQI-9, PDSQI-9)
 - Note length and verbosity (as proxy for thoroughness vs. over-generation)
-- Automated text similarity metrics (ROUGE, BERTScore) — methodological
-- Coding accuracy (ICD-10, HCC capture) — insofar as it reflects documentation completeness
+- Automated text similarity metrics (ROUGE, BERTScore), methodological
+- Coding accuracy (ICD-10, HCC capture), insofar as it reflects documentation completeness
 
 ## What Does NOT Belong Here
 - Time to create the note (→ [[NB - Net Benefits]])
@@ -25,7 +25,7 @@ Information Quality assesses the **quality, accuracy, and completeness of the ge
 - [[CM-12 Automated NLP Evaluation Metrics]] (7 papers)
 
 ## ⚠️ Key Finding: Omission Dominance
-Across all 5 simulation studies in the corpus (Arko 2025, Biro 2025, Anderson 2025, Foo 2025, Kernberg 2023), omissions are the dominant error type (71–86% of all errors). Hallucinations/additions are secondary. More clinically dangerous than hallucinations at scale because missing information is harder to detect. CM-12 (Automated NLP Metrics) is a methodological measure — ROUGE/BERTScore capture textual similarity, not clinical accuracy; Moramarco 2022 showed Levenshtein distance performs as well as BERTScore.
+Across all 5 simulation studies in the corpus (Arko 2025, Biro 2025, Anderson 2025, Foo 2025, Kernberg 2023), omissions are the dominant error type (71–86% of all errors). Hallucinations/additions are secondary. More clinically dangerous than hallucinations at scale because missing information is harder to detect. CM-12 (Automated NLP Metrics) is a methodological measure, ROUGE/BERTScore capture textual similarity, not clinical accuracy; Moramarco 2022 showed Levenshtein distance performs as well as BERTScore.
 
 ## Papers in this Dimension (38)
 - [[Afshar 2025b - Pragmatic RCT Ambient AI Health Practitioner Wellbeing]]

@@ -3,21 +3,12 @@
     "id": "DM-01",
     "name": "Total Cost of Ownership",
     "dimension": "NB - Net Benefits",
-    "definition": "The fully loaded cost of deploying and maintaining an ACI solution over its lifecycle — including license/subscription fees, EHR integration costs, IT infrastructure, initial and recurring training, ongoing vendor management, change management burden (absorbing vendor-driven model updates, retraining clinicians, revising governance policies), and contract terms. Distinct from financial productivity (CM-20), which measures revenue-side impact. TCO captures the denominator of any ROI calculation.",
-    "stakeholders": [
-      {
-        "role": "CFO",
-        "rationale": "foundational to any investment justification; needed to compare pilot product vs. EHR vendor's native offering"
-      },
-      {
-        "role": "COO",
-        "rationale": "integration and maintenance costs affect operational budgets"
-      }
-    ],
+    "definition": "The fully loaded cost of deploying and maintaining an ACI solution over its lifecycle, including license/subscription fees, EHR integration costs, IT infrastructure, initial and recurring training, ongoing vendor management, change management burden (absorbing vendor-driven model updates, retraining clinicians, revising governance policies), and contract terms. Distinct from financial productivity (CM-20), which measures revenue-side impact. TCO captures the denominator of any ROI calculation.",
+    "stakeholders": [],
     "rationale": "Nearly every study in the corpus reports efficiency or satisfaction outcomes, but almost none reports what the technology costs to acquire, implement, and sustain. Vendor-published ROI figures rarely disclose the cost assumptions. Without TCO data, executives cannot calculate true return on investment or compare alternatives on a level playing field.",
     "relatedMeasures": [
-      "CM-20 Financial Productivity and Revenue Impact — CM-20 measures the revenue numerator; DM-01 would capture the cost denominator",
-      "CM-23 Implementation — implementation factors contribute to TCO but CM-23 focuses on adoption barriers, not dollar costs"
+      "CM-20 Financial Productivity and Revenue Impact: CM-20 measures the revenue numerator; DM-01 would capture the cost denominator",
+      "CM-23 Implementation: implementation factors contribute to TCO but CM-23 focuses on adoption barriers, not dollar costs"
     ],
     "methods": [
       {
@@ -58,25 +49,12 @@
     "id": "DM-02",
     "name": "Malpractice and Liability Exposure",
     "dimension": "NB - Net Benefits",
-    "definition": "The effect of AI-generated clinical documentation on medicolegal risk — including whether AI-authored notes meet the evidentiary standards required for malpractice defense, whether hallucinated or inaccurate content creates new liability, and how the legal responsibility for AI-generated documentation is assigned between clinician, vendor, and institution.",
-    "stakeholders": [
-      {
-        "role": "CFO",
-        "rationale": "malpractice premiums and litigation costs are significant financial exposures"
-      },
-      {
-        "role": "CMIO",
-        "rationale": "clinical governance and documentation standards are directly within scope"
-      },
-      {
-        "role": "COO",
-        "rationale": "risk management and compliance operations"
-      }
-    ],
+    "definition": "The effect of AI-generated clinical documentation on medicolegal risk, including whether AI-authored notes meet the evidentiary standards required for malpractice defense, whether hallucinated or inaccurate content creates new liability, and how the legal responsibility for AI-generated documentation is assigned between clinician, vendor, and institution.",
+    "stakeholders": [],
     "rationale": "AI-generated notes introduce a novel medicolegal question: who is responsible when an AI-authored note contains an error that contributes to patient harm? The clinician signs the note, but the AI generated the content. If a hallucinated allergy or fabricated finding leads to a clinical decision, the liability implications are unclear. No study in the corpus examines this, yet it is a foreseeable and high-consequence risk.",
     "relatedMeasures": [
-      "CM-19 Clinical Patient Safety — patient safety events may trigger liability, but CM-19 measures clinical harm, not legal exposure",
-      "CM-09 Note Accuracy — inaccurate notes are the mechanism through which liability arises"
+      "CM-19 Clinical Patient Safety: patient safety events may trigger liability, but CM-19 measures clinical harm, not legal exposure",
+      "CM-09 Note Accuracy: inaccurate notes are the mechanism through which liability arises"
     ],
     "methods": [
       {
@@ -112,22 +90,13 @@
     "id": "DM-03",
     "name": "Staff Turnover Cost Avoidance",
     "dimension": "NB - Net Benefits",
-    "definition": "The financial value of reduced clinician attrition attributable to ACI adoption — connecting burnout reduction and satisfaction improvement to actual retention outcomes and the avoided cost of physician replacement. Estimates of physician replacement cost range from $500K to $1M+ depending on specialty and market.",
-    "stakeholders": [
-      {
-        "role": "CPO",
-        "rationale": "workforce retention is a primary responsibility; connecting ACI to retention outcomes justifies the investment in human capital terms"
-      },
-      {
-        "role": "CFO",
-        "rationale": "turnover cost avoidance is a quantifiable financial benefit that can appear in ROI models"
-      }
-    ],
+    "definition": "The financial value of reduced clinician attrition attributable to ACI adoption, connecting burnout reduction and satisfaction improvement to actual retention outcomes and the avoided cost of physician replacement. Estimates of physician replacement cost range from $500K to $1M+ depending on specialty and market.",
+    "stakeholders": [],
     "rationale": "Multiple studies in the corpus measure burnout reduction (CM-01) and satisfaction improvement (CM-03, CM-15), but none follow through to actual retention data. The causal chain from \"burnout improved on a survey\" to \"fewer physicians left\" is assumed but not demonstrated. For a CPO or CFO, the intermediate burnout metric is less persuasive than actual turnover data.",
     "relatedMeasures": [
-      "CM-01 Clinician Burnout and Exhaustion — burnout is the hypothesized mechanism through which ACI affects retention, but CM-01 stops at the survey level",
-      "CM-03 Professional Fulfillment and Meaningfulness — fulfillment is a known retention predictor but the link to actual retention isn't measured",
-      "CM-15 User Satisfaction — satisfaction correlates with retention intent but doesn't measure actual departure rates"
+      "CM-01 Clinician Burnout and Exhaustion: burnout is the hypothesized mechanism through which ACI affects retention, but CM-01 stops at the survey level",
+      "CM-03 Professional Fulfillment and Meaningfulness: fulfillment is a known retention predictor but the link to actual retention isn't measured",
+      "CM-15 User Satisfaction: satisfaction correlates with retention intent but doesn't measure actual departure rates"
     ],
     "methods": [
       {
@@ -163,23 +132,14 @@
     "id": "DM-04",
     "name": "Specialty-Specific Performance Variation",
     "dimension": "SQ - System Quality",
-    "definition": "The degree to which ACI tool performance (accuracy, completeness, usability, time savings) varies across clinical specialties — from straightforward primary care visits to complex subspecialty encounters involving specialized terminology, multi-system assessments, and procedural documentation.",
-    "stakeholders": [
-      {
-        "role": "CMIO",
-        "rationale": "responsible for ensuring the tool works across the organization's full specialty mix; a tool that works for primary care but fails for cardiology or surgery is not enterprise-ready"
-      },
-      {
-        "role": "COO",
-        "rationale": "rollout planning and resource allocation depend on knowing which specialties will succeed vs. struggle"
-      }
-    ],
+    "definition": "The degree to which ACI tool performance (accuracy, completeness, usability, time savings) varies across clinical specialties, from straightforward primary care visits to complex subspecialty encounters involving specialized terminology, multi-system assessments, and procedural documentation.",
+    "stakeholders": [],
     "rationale": "The corpus includes studies across multiple specialties, but almost none directly compares performance across specialties within the same study. Most pilot studies focus on primary care or a single specialty. Executives deploying enterprise-wide need to know where the tool works well and where it doesn't, rather than extrapolating from a primary care pilot to orthopedic surgery.",
     "relatedMeasures": [
-      "CM-08 Note Completeness — completeness likely varies by specialty complexity but isn't measured that way",
-      "CM-09 Note Accuracy — accuracy challenges differ by specialty (dermatology descriptions vs. psychiatric assessments vs. surgical operative notes)",
-      "CM-24 System Quality — specialty-specific performance is a dimension of system quality not currently captured",
-      "CM-04 Documentation Time — time savings may vary dramatically by encounter complexity and specialty"
+      "CM-08 Note Completeness: completeness likely varies by specialty complexity but isn't measured that way",
+      "CM-09 Note Accuracy: accuracy challenges differ by specialty (dermatology descriptions vs. psychiatric assessments vs. surgical operative notes)",
+      "CM-24 System Quality: specialty-specific performance is a dimension of system quality not currently captured",
+      "CM-04 Documentation Time: time savings may vary dramatically by encounter complexity and specialty"
     ],
     "methods": [
       {
@@ -215,22 +175,13 @@
     "id": "DM-05",
     "name": "Structured Data Integrity",
     "dimension": "IQ - Information Quality",
-    "definition": "Whether AI-generated documentation correctly populates structured EHR data elements — including problem lists, medication lists, allergy lists, order entries, and billing codes — beyond the narrative note itself. A note that reads correctly but fails to update structured fields creates downstream clinical and operational risk.",
-    "stakeholders": [
-      {
-        "role": "CMIO",
-        "rationale": "structured data integrity is foundational to clinical decision support, population health, and quality reporting"
-      },
-      {
-        "role": "COO",
-        "rationale": "quality measure reporting (HEDIS, MIPS, etc.) depends on accurate structured data"
-      }
-    ],
+    "definition": "Whether AI-generated documentation correctly populates structured EHR data elements, including problem lists, medication lists, allergy lists, order entries, and billing codes, beyond the narrative note itself. A note that reads correctly but fails to update structured fields creates downstream clinical and operational risk.",
+    "stakeholders": [],
     "rationale": "The corpus focuses almost entirely on narrative note quality (completeness, accuracy, concordance). But the clinical note is only one output of the documentation process. If the ACI tool generates a narrative that mentions a new medication but doesn't trigger the corresponding structured medication list update, the downstream impact on CDS alerts, drug-drug interaction checking, and quality reporting could be significant. No study in the corpus measures this.",
     "relatedMeasures": [
-      "CM-08 Note Completeness — completeness of the narrative doesn't guarantee completeness of structured data",
-      "CM-09 Note Accuracy — narrative accuracy and structured data accuracy are distinct failure modes",
-      "CM-19 Clinical Patient Safety — structured data errors could propagate into CDS failures and safety events"
+      "CM-08 Note Completeness: completeness of the narrative doesn't guarantee completeness of structured data",
+      "CM-09 Note Accuracy: narrative accuracy and structured data accuracy are distinct failure modes",
+      "CM-19 Clinical Patient Safety: structured data errors could propagate into CDS failures and safety events"
     ],
     "methods": [
       {
@@ -266,23 +217,14 @@
     "id": "DM-06",
     "name": "Clinician Edit Burden",
     "dimension": "NB - Net Benefits",
-    "definition": "The amount of clinician time and effort required to review, correct, and finalize an AI-generated note before signing — including additions, deletions, and restructuring. Distinct from documentation time (CM-04), which measures total time from note initiation to signature. Edit burden isolates the post-generation review phase and captures whether the AI draft actually reduces net effort or merely shifts it.",
-    "stakeholders": [
-      {
-        "role": "CMIO",
-        "rationale": "a tool that generates notes quickly but requires extensive editing hasn't solved the problem; edit burden is the true measure of clinical workflow impact"
-      },
-      {
-        "role": "CPO",
-        "rationale": "if edit burden is high, clinician frustration may offset burnout benefits"
-      }
-    ],
+    "definition": "The amount of clinician time and effort required to review, correct, and finalize an AI-generated note before signing, including additions, deletions, and restructuring. Distinct from documentation time (CM-04), which measures total time from note initiation to signature. Edit burden isolates the post-generation review phase and captures whether the AI draft actually reduces net effort or merely shifts it.",
+    "stakeholders": [],
     "rationale": "Several studies in the corpus report documentation time reductions, but few separate generation time from editing time. A tool that produces a draft in 10 seconds but requires 8 minutes of editing has a different value proposition than one that produces a near-final draft. Clinician reports of \"I spend all my time fixing the AI's mistakes\" suggest edit burden may be substantial for some products or specialties, but this isn't systematically measured.",
     "relatedMeasures": [
-      "CM-04 Documentation Time — CM-04 includes editing time but doesn't isolate it; a tool could reduce total time while still having high edit burden",
-      "CM-09 Note Accuracy — accuracy is a predictor of edit burden; more accurate notes require less editing",
-      "CM-08 Note Completeness — incomplete notes require additions, contributing to edit burden",
-      "CM-15 User Satisfaction — edit burden likely mediates the relationship between note quality and satisfaction"
+      "CM-04 Documentation Time: CM-04 includes editing time but doesn't isolate it; a tool could reduce total time while still having high edit burden",
+      "CM-09 Note Accuracy: accuracy is a predictor of edit burden; more accurate notes require less editing",
+      "CM-08 Note Completeness: incomplete notes require additions, contributing to edit burden",
+      "CM-15 User Satisfaction: edit burden likely mediates the relationship between note quality and satisfaction"
     ],
     "methods": [
       {
@@ -318,22 +260,13 @@
     "id": "DM-07",
     "name": "Equity of Impact Across Roles",
     "dimension": "NB - Net Benefits",
-    "definition": "Whether ACI adoption benefits different clinical roles equitably — including attending physicians, residents/trainees, advanced practice providers (NPs, PAs), nurses, and medical assistants — or whether it primarily benefits one group while adding burden, displacement, or workflow disruption to others.",
-    "stakeholders": [
-      {
-        "role": "CPO",
-        "rationale": "responsible for the wellbeing of the entire clinical workforce, not just physicians; inequitable impact creates organizational tension"
-      },
-      {
-        "role": "COO",
-        "rationale": "workflow changes that shift burden to other roles (e.g., nurses doing more note cleanup, scribes being displaced) have operational implications"
-      }
-    ],
+    "definition": "Whether ACI adoption benefits different clinical roles equitably, including attending physicians, residents/trainees, advanced practice providers (NPs, PAs), nurses, and medical assistants, or whether it primarily benefits one group while adding burden, displacement, or workflow disruption to others.",
+    "stakeholders": [],
     "rationale": "The corpus is heavily physician-centric. Most satisfaction, burnout, and efficiency measures are collected from physicians or physicians plus APPs. The impact on nurses, medical assistants, and existing human scribes is almost entirely unmeasured. If ACI reduces physician documentation burden but increases MA intake documentation requirements, or displaces human scribes without transition support, the net organizational impact may be different from what physician-only data suggests.",
     "relatedMeasures": [
-      "CM-01 Clinician Burnout and Exhaustion — measured almost exclusively in physicians; unclear whether other roles experience burnout changes",
-      "CM-15 User Satisfaction — satisfaction data rarely includes non-physician roles",
-      "CM-13 Adoption Behavior and Utilization Rate — adoption patterns may differ by role"
+      "CM-01 Clinician Burnout and Exhaustion: measured almost exclusively in physicians; unclear whether other roles experience burnout changes",
+      "CM-15 User Satisfaction: satisfaction data rarely includes non-physician roles",
+      "CM-13 Adoption Behavior and Utilization Rate: adoption patterns may differ by role"
     ],
     "methods": [
       {
@@ -369,25 +302,12 @@
     "id": "DM-08",
     "name": "Onboarding and Training Burden",
     "dimension": "SerQ - Service Quality",
-    "definition": "The time, effort, and resources required to train clinicians to effectively use an ACI tool — including initial onboarding, workflow adaptation, and ongoing proficiency development. Measures the learning curve from first use to competent, independent use and the organizational cost of supporting that transition.",
-    "stakeholders": [
-      {
-        "role": "CPO",
-        "rationale": "training burden affects clinician experience during rollout and new-hire onboarding"
-      },
-      {
-        "role": "COO",
-        "rationale": "training requires scheduling, coverage, and support resources that compete with clinical operations"
-      },
-      {
-        "role": "CMIO",
-        "rationale": "proficiency timelines affect clinical documentation quality during the transition period"
-      }
-    ],
-    "rationale": "No study in the corpus measures how long it takes a clinician to become proficient with an ACI tool or what training resources are required. This is relevant for both initial deployment and ongoing recruitment — every new hire needs to be onboarded. If one product requires 2 hours of training and another requires 2 weeks of supported practice, that's a material difference in operational cost and rollout feasibility.",
+    "definition": "The time, effort, and resources required to train clinicians to effectively use an ACI tool, including initial onboarding, workflow adaptation, and ongoing proficiency development. Measures the learning curve from first use to competent, independent use and the organizational cost of supporting that transition.",
+    "stakeholders": [],
+    "rationale": "No study in the corpus measures how long it takes a clinician to become proficient with an ACI tool or what training resources are required. This is relevant for both initial deployment and ongoing recruitment, every new hire needs to be onboarded. If one product requires 2 hours of training and another requires 2 weeks of supported practice, that's a material difference in operational cost and rollout feasibility.",
     "relatedMeasures": [
-      "CM-23 Implementation — implementation factors include training, but CM-23 doesn't quantify the burden",
-      "CM-13 Adoption Behavior and Utilization Rate — training quality likely predicts adoption, but the link isn't measured"
+      "CM-23 Implementation: implementation factors include training, but CM-23 doesn't quantify the burden",
+      "CM-13 Adoption Behavior and Utilization Rate: training quality likely predicts adoption, but the link isn't measured"
     ],
     "methods": [
       {
@@ -423,21 +343,12 @@
     "id": "DM-09",
     "name": "System Reliability and Downtime",
     "dimension": "SQ - System Quality",
-    "definition": "The operational reliability of the ACI tool in production clinical environments — including uptime, failure modes, degradation behavior, recovery time, and the availability of fallback workflows when the system is unavailable. Measures whether the tool can be depended upon for continuous clinical operations.",
-    "stakeholders": [
-      {
-        "role": "COO",
-        "rationale": "system reliability directly affects clinical operations; an unreliable tool disrupts patient flow and clinician workflow"
-      },
-      {
-        "role": "CMIO",
-        "rationale": "downtime during clinical encounters creates patient safety and documentation quality risks"
-      }
-    ],
+    "definition": "The operational reliability of the ACI tool in production clinical environments, including uptime, failure modes, degradation behavior, recovery time, and the availability of fallback workflows when the system is unavailable. Measures whether the tool can be depended upon for continuous clinical operations.",
+    "stakeholders": [],
     "rationale": "ACI tools operate in real-time during clinical encounters. When they fail, the clinician must either wait or revert to manual documentation mid-visit. No study in the corpus reports uptime metrics, failure rates, or the operational impact of system outages. For enterprise deployment, reliability is a non-negotiable operational requirement that isn't captured by any current canonical measure.",
     "relatedMeasures": [
-      "CM-24 System Quality — reliability is a component of system quality but not explicitly measured in the corpus",
-      "CM-25 System Quality — technical performance measures don't include uptime or failure mode data"
+      "CM-24 System Quality: reliability is a component of system quality but not explicitly measured in the corpus",
+      "CM-25 System Quality: technical performance measures don't include uptime or failure mode data"
     ],
     "methods": [
       {
@@ -473,22 +384,13 @@
     "id": "DM-10",
     "name": "Scalability Evidence",
     "dimension": "SQ - System Quality",
-    "definition": "Evidence that ACI tool performance, reliability, and outcomes hold at enterprise scale — across hundreds of providers, multiple specialties, and multiple sites — rather than degrading as deployment expands beyond a pilot cohort. Distinct from system reliability (DM-09), which measures uptime; scalability measures whether outcomes observed in a small pilot generalize to full organizational deployment.",
-    "stakeholders": [
-      {
-        "role": "COO",
-        "rationale": "responsible for enterprise rollout planning; needs to know if pilot results will hold at scale"
-      },
-      {
-        "role": "CFO",
-        "rationale": "investment decisions based on pilot data require confidence that returns will scale proportionally"
-      }
-    ],
-    "rationale": "Most studies in the corpus are small — single site, tens of clinicians, weeks to months of follow-up. The few large-scale studies (e.g., Tierney 2025 with 2.5 million encounters) are exceptions. Executives making enterprise deployment decisions based on 30-clinician pilot results are extrapolating without evidence. Performance may degrade at scale due to infrastructure load, specialty variation, training quality dilution, or support resource constraints.",
+    "definition": "Evidence that ACI tool performance, reliability, and outcomes hold at enterprise scale, across hundreds of providers, multiple specialties, and multiple sites, rather than degrading as deployment expands beyond a pilot cohort. Distinct from system reliability (DM-09), which measures uptime; scalability measures whether outcomes observed in a small pilot generalize to full organizational deployment.",
+    "stakeholders": [],
+    "rationale": "Most studies in the corpus are small, single site, tens of clinicians, weeks to months of follow-up. The few large-scale studies (e.g., Tierney 2025 with 2.5 million encounters) are exceptions. Executives making enterprise deployment decisions based on 30-clinician pilot results are extrapolating without evidence. Performance may degrade at scale due to infrastructure load, specialty variation, training quality dilution, or support resource constraints.",
     "relatedMeasures": [
-      "CM-13 Adoption Behavior and Utilization Rate — adoption rates in pilots may not predict enterprise-wide adoption",
-      "CM-04 Documentation Time — time savings observed in a motivated pilot cohort may not generalize to less motivated later adopters",
-      "CM-23 Implementation — implementation challenges multiply at scale"
+      "CM-13 Adoption Behavior and Utilization Rate: adoption rates in pilots may not predict enterprise-wide adoption",
+      "CM-04 Documentation Time: time savings observed in a motivated pilot cohort may not generalize to less motivated later adopters",
+      "CM-23 Implementation: implementation challenges multiply at scale"
     ],
     "methods": [
       {
@@ -524,27 +426,14 @@
     "id": "DM-11",
     "name": "Workflow Disruption During Rollout",
     "dimension": "NB - Net Benefits",
-    "definition": "The temporary reduction in clinical productivity, documentation quality, and clinician satisfaction during the transition period from traditional documentation to ACI-assisted documentation — the \"implementation dip.\" Measures the depth, duration, and operational cost of the disruption before steady-state benefits are realized.",
-    "stakeholders": [
-      {
-        "role": "COO",
-        "rationale": "needs to plan for reduced throughput, schedule adjustments, and support staffing during rollout"
-      },
-      {
-        "role": "CFO",
-        "rationale": "the implementation dip has a quantifiable cost that offsets early ROI projections"
-      },
-      {
-        "role": "CPO",
-        "rationale": "clinician frustration during the transition period can undermine buy-in and retention"
-      }
-    ],
-    "rationale": "Nearly all studies in the corpus report steady-state outcomes — they compare a baseline period to a post-implementation period, often with a washout or exclusion of the transition weeks. The disruption during the transition itself is not measured. For an executive planning a rollout, the transition cost matters: how many fewer patients will be seen during week 1-4, how much extra support is needed, and how long before the promised benefits materialize?",
+    "definition": "The temporary reduction in clinical productivity, documentation quality, and clinician satisfaction during the transition period from traditional documentation to ACI-assisted documentation, the \"implementation dip.\" Measures the depth, duration, and operational cost of the disruption before steady-state benefits are realized.",
+    "stakeholders": [],
+    "rationale": "Nearly all studies in the corpus report steady-state outcomes, they compare a baseline period to a post-implementation period, often with a washout or exclusion of the transition weeks. The disruption during the transition itself is not measured. For an executive planning a rollout, the transition cost matters: how many fewer patients will be seen during week 1-4, how much extra support is needed, and how long before the promised benefits materialize?",
     "relatedMeasures": [
-      "CM-04 Documentation Time — steady-state time savings don't capture the temporary increase during transition",
-      "CM-22 Patient Volume and Throughput — throughput may temporarily decline during rollout",
-      "CM-23 Implementation — implementation factors are related but CM-23 doesn't quantify the productivity dip",
-      "DM-08 Onboarding and Training Burden — training burden contributes to workflow disruption but DM-08 focuses on the learning curve, not the operational impact"
+      "CM-04 Documentation Time: steady-state time savings don't capture the temporary increase during transition",
+      "CM-22 Patient Volume and Throughput: throughput may temporarily decline during rollout",
+      "CM-23 Implementation: implementation factors are related but CM-23 doesn't quantify the productivity dip",
+      "DM-08 Onboarding and Training Burden: training burden contributes to workflow disruption but DM-08 focuses on the learning curve, not the operational impact"
     ],
     "methods": [
       {
@@ -580,21 +469,12 @@
     "id": "DM-12",
     "name": "Patient Consent and Opt-Out Burden",
     "dimension": "NB - Net Benefits",
-    "definition": "The operational overhead of managing patient consent for ambient recording — including the workflow for obtaining consent, handling opt-outs, tracking consent status, and the impact of opt-out rates on clinician workflow when they must revert to manual documentation for declining patients.",
-    "stakeholders": [
-      {
-        "role": "COO",
-        "rationale": "consent management is an operational process that requires staffing, workflow design, and monitoring"
-      },
-      {
-        "role": "CMIO",
-        "rationale": "consent opt-outs create a dual-workflow environment that adds complexity and potential documentation quality variation"
-      }
-    ],
-    "rationale": "A few studies in the corpus report opt-out rates (e.g., Evans 2025 reports ~0.1%), but none measures the operational burden of managing the consent process itself. In practice, someone — usually a medical assistant or front desk staff — must explain the technology, obtain consent, and document the patient's decision. When patients opt out, the clinician must switch to manual documentation for that encounter. The operational cost of this dual-workflow is unmeasured.",
+    "definition": "The operational overhead of managing patient consent for ambient recording, including the workflow for obtaining consent, handling opt-outs, tracking consent status, and the impact of opt-out rates on clinician workflow when they must revert to manual documentation for declining patients.",
+    "stakeholders": [],
+    "rationale": "A few studies in the corpus report opt-out rates (e.g., Evans 2025 reports ~0.1%), but none measures the operational burden of managing the consent process itself. In practice, someone, usually a medical assistant or front desk staff, must explain the technology, obtain consent, and document the patient's decision. When patients opt out, the clinician must switch to manual documentation for that encounter. The operational cost of this dual-workflow is unmeasured.",
     "relatedMeasures": [
-      "CM-17 Patient Experience and Relationship Quality — consent concerns are related to patient experience but DM-12 focuses on the operational burden, not the patient's perception",
-      "CM-13 Adoption Behavior and Utilization Rate — opt-out rates affect the denominator of utilization calculations"
+      "CM-17 Patient Experience and Relationship Quality: consent concerns are related to patient experience but DM-12 focuses on the operational burden, not the patient's perception",
+      "CM-13 Adoption Behavior and Utilization Rate: opt-out rates affect the denominator of utilization calculations"
     ],
     "methods": [
       {

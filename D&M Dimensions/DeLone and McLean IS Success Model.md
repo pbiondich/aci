@@ -26,19 +26,19 @@ The model proposes a causal flow:
 
 | Dimension | Evidence Level | Key Gap |
 |---|---|---|
-| **NB** | Strong — 41 papers | Patient safety and patient experience almost unmeasured |
-| **US** | Strong — 35 papers | Selection bias inflates most estimates; only 1 RCT |
-| **IQ** | Moderate — 31 papers | Highly heterogeneous methods; omission dominance consistent |
-| **U** | Moderate — 13 papers | Heavy/light user split universal; dose-response confirmed |
-| **SQ** | Weak — 14 papers | Commercial ASR data entirely absent from literature |
-| **SerQ** | Weak — 8 papers | Almost entirely qualitative; no validated implementation instruments |
+| **NB** | Strong: 41 papers | Patient safety and patient experience almost unmeasured |
+| **US** | Strong: 35 papers | Selection bias inflates most estimates; only 1 RCT |
+| **IQ** | Moderate: 31 papers | Highly heterogeneous methods; omission dominance consistent |
+| **U** | Moderate: 13 papers | Heavy/light user split universal; dose-response confirmed |
+| **SQ** | Weak: 14 papers | Commercial ASR data entirely absent from literature |
+| **SerQ** | Weak: 8 papers | Almost entirely qualitative; no validated implementation instruments |
 
 ## Key Observation (54 papers, updated 2026-03-25)
-- **NB and US** are measured in nearly every study — documentation time and burnout are the dominant outcomes
-- **IQ** is common but heterogeneous — PDQI-9 used inconsistently; omission dominance is the most consistent finding
+- **NB and US** are measured in nearly every study: documentation time and burnout are the dominant outcomes
+- **IQ** is common but heterogeneous: PDQI-9 used inconsistently; omission dominance is the most consistent finding
 - **U** is measured in ~half of studies; dose-response and adoption heterogeneity are universal
-- **SQ** is almost entirely absent from clinical studies — commercial products don't publish technical performance data
-- **SerQ** is barely present — implementation science is catching up (Afshar 2025a, PHTI 2025)
+- **SQ** is almost entirely absent from clinical studies: commercial products don't publish technical performance data
+- **SerQ** is barely present: implementation science is catching up (Afshar 2025a, PHTI 2025)
 - **Patient outcomes (NB)** are the most critical gap: patient experience, patient safety, and patient volume are vastly understudied
 
 ---

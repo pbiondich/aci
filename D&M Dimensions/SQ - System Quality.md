@@ -3,7 +3,7 @@
 Part of the [[DeLone and McLean IS Success Model]]
 
 ## Definition
-System Quality assesses the **technical performance of the ambient AI tool itself** — upstream of the output note. It asks: does the machine work reliably, accurately, and consistently?
+System Quality assesses the **technical performance of the ambient AI tool itself** : upstream of the output note. It asks: does the machine work reliably, accurately, and consistently?
 
 ## What Belongs Here
 - Transcription accuracy (Word Error Rate, Medical Term Recall, Speaker Diarization)
@@ -22,7 +22,7 @@ System Quality assesses the **technical performance of the ambient AI tool itsel
 - [[CM-25 Evaluation Methodology Quality]] (14 papers)
 
 ## ⚠️ Evidence Gap
-SQ is the most evidence-sparse dimension in the corpus. Commercial ambient AI products (DAX, Abridge, Suki, Ambience) do not publish transcription accuracy, WER, or diarization performance data — a documented pattern of industry opacity since van Buchem 2021. Only 3 papers formally measure ASR accuracy. CM-25 (Evaluation Methodology Quality) is a meta-measure assessing research rigor rather than a direct clinical outcome.
+SQ is the most evidence-sparse dimension in the corpus. Commercial ambient AI products (DAX, Abridge, Suki, Ambience) do not publish transcription accuracy, WER, or diarization performance data, a documented pattern of industry opacity since van Buchem 2021. Only 3 papers formally measure ASR accuracy. CM-25 (Evaluation Methodology Quality) is a meta-measure assessing research rigor rather than a direct clinical outcome.
 
 ## Papers in this Dimension (24)
 - [[Anderson 2025 - Quality Safety Ambient Digital Scribe Platforms Simulation]]

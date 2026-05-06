@@ -1,22 +1,22 @@
 # DM-02 Malpractice and Liability Exposure
 
-**Status:** Draft — pending key informant validation
+**Status:** Draft: pending key informant validation
 **D&M Dimension:** [[NB - Net Benefits]]
 
 ## Definition
-The effect of AI-generated clinical documentation on medicolegal risk — including whether AI-authored notes meet the evidentiary standards required for malpractice defense, whether hallucinated or inaccurate content creates new liability, and how the legal responsibility for AI-generated documentation is assigned between clinician, vendor, and institution.
+The effect of AI-generated clinical documentation on medicolegal risk, including whether AI-authored notes meet the evidentiary standards required for malpractice defense, whether hallucinated or inaccurate content creates new liability, and how the legal responsibility for AI-generated documentation is assigned between clinician, vendor, and institution.
 
 ## Hypothesized Stakeholder(s)
-- **CFO** — malpractice premiums and litigation costs are significant financial exposures
-- **CMIO** — clinical governance and documentation standards are directly within scope
-- **COO** — risk management and compliance operations
+- **CFO** : malpractice premiums and litigation costs are significant financial exposures
+- **CMIO** : clinical governance and documentation standards are directly within scope
+- **COO** : risk management and compliance operations
 
 ## Rationale
 AI-generated notes introduce a novel medicolegal question: who is responsible when an AI-authored note contains an error that contributes to patient harm? The clinician signs the note, but the AI generated the content. If a hallucinated allergy or fabricated finding leads to a clinical decision, the liability implications are unclear. No study in the corpus examines this, yet it is a foreseeable and high-consequence risk.
 
 ## Relationship to Existing Canonical Measures
-- [[CM-19 Clinical Patient Safety]] — patient safety events may trigger liability, but CM-19 measures clinical harm, not legal exposure
-- [[CM-09 Note Accuracy]] — inaccurate notes are the mechanism through which liability arises
+- [[CM-19 Clinical Patient Safety]]: patient safety events may trigger liability, but CM-19 measures clinical harm, not legal exposure
+- [[CM-09 Note Accuracy]]: inaccurate notes are the mechanism through which liability arises
 
 ## Suggested Measurement Methods
 | Method | Description | Data Source |

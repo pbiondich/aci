@@ -3,7 +3,7 @@
 **D&M Dimension:** [[II - Individual Impact]]
 
 ## Definition
-The mental effort, time pressure, and frustration experienced by clinicians *during* or *immediately after* a clinical encounter — the in-the-moment cognitive demand of documentation. Distinct from burnout (CM-01), which is a sustained emotional state.
+The mental effort, time pressure, and frustration experienced by clinicians *during* or *immediately after* a clinical encounter, the in-the-moment cognitive demand of documentation. Distinct from burnout (CM-01), which is a sustained emotional state.
 
 ## Measurement Methods
 | Method | Description | Data Source |
@@ -19,12 +19,12 @@ The mental effort, time pressure, and frustration experienced by clinicians *dur
 - Cognitive Load ([[Olson 2025 - Ambient AI Scribes Administrative Burden Burnout|Olson 2025]], [[Peterson Health Technology Institute 2025 - Adoption AI Healthcare Delivery Systems|Peterson Health Technology Institute 2025]])
 - Cognitive Burden ([[Duggan 2025 - Clinician Experiences Ambient Scribe Documentation Burden|Duggan 2025]])
 - Note-Related Cognitive Task Load ([[Olson 2025 - Ambient AI Scribes Administrative Burden Burnout|Olson 2025]])
-- Mental Demand ([[Bracken 2025 - Ambient AI Inpatient Documentation Simulation Orthopaedic|Bracken 2025]], [[Omon 2025 - Generative AI Rehabilitation Clinical Documentation|Omon 2025]], [[Guo 2026 - Evaluating Ambient AI Documentation UCI Health Mixed Methods|Guo 2026]]) *(⚠️ note: paper labels this "Mental Demand" not "Cognitive Demand"; Guo 2026 year may be incorrect — likely 2025)*
+- Mental Demand ([[Bracken 2025 - Ambient AI Inpatient Documentation Simulation Orthopaedic|Bracken 2025]], [[Omon 2025 - Generative AI Rehabilitation Clinical Documentation|Omon 2025]], [[Guo 2026 - Evaluating Ambient AI Documentation UCI Health Mixed Methods|Guo 2026]]) *(⚠️ note: paper labels this "Mental Demand" not "Cognitive Demand"; Guo 2026 year may be incorrect, likely 2025)*
 - NASA-TLX Temporal Demand / Time Pressure ([[Karavassilis 2025 - Ambient Voice Technology Same Day Emergency Care SDEC|Karavassilis 2025]])
 - NASA-TLX Frustration ([[Bracken 2025 - Ambient AI Inpatient Documentation Simulation Orthopaedic|Bracken 2025]])
 
 ## ⚠️ Key Note
-NASA-TLX measures cognitive effort during task performance — conceptually distinct from burnout (cumulative emotional depletion). Both may improve with ambient scribes but through different mechanisms.
+NASA-TLX measures cognitive effort during task performance, conceptually distinct from burnout (cumulative emotional depletion). Both may improve with ambient scribes but through different mechanisms.
 
 ## Papers Measuring This (11)
 - [[Afshar 2025b - Pragmatic RCT Ambient AI Health Practitioner Wellbeing]]

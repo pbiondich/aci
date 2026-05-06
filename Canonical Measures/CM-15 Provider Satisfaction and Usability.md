@@ -3,7 +3,7 @@
 **D&M Dimension:** [[US - User Satisfaction]]
 
 ## Definition
-Provider-reported satisfaction with the ambient AI scribe tool — including perceived usability, ease of use, and overall acceptability. Distinct from burnout (emotional outcome) and from adoption behavior (what they do). Captures subjective technology evaluation.
+Provider-reported satisfaction with the ambient AI scribe tool, including perceived usability, ease of use, and overall acceptability. Distinct from burnout (emotional outcome) and from adoption behavior (what they do). Captures subjective technology evaluation.
 
 ## Measurement Methods
 | Method | Description | Data Source |
@@ -20,8 +20,8 @@ Provider-reported satisfaction with the ambient AI scribe tool — including per
 - System Usability Scale (SUS) ([[Shah 2024 - Ambient AI Scribes Physician Burnout Usability Documentation Burden|Shah 2024]])
 - UTAUT items ([[Shah 2024 - Ambient AI Scribes Physician Burnout Usability Documentation Burden|Shah 2024]])
 - Favorable Utility ([[Shah 2024 - Ambient AI Scribes Physician Burnout Usability Documentation Burden|Shah 2024]]: 65% improved efficiency, 98% easy to use)
-- Product Satisfaction / Job Satisfaction ([[Boyter 2025 - Ambience Healthcare ROI Validations KLAS Report|Boyter 2025]], [[Galloway 2024 - Impact Artificial Intelligence Based Solution Clinicians Clinical Documentation|Galloway 2024]]) *(⚠️ these measure satisfaction with the AI product, not job satisfaction in the occupational sense — label as product satisfaction)*
-- Employee Satisfaction ([[Boyter 2025 - Ambience Healthcare ROI Validations KLAS Report|Boyter 2025]]) *(⚠️ same caveat — product satisfaction, not occupational satisfaction; most items in this category should be classified as product satisfaction)*
+- Product Satisfaction / Job Satisfaction ([[Boyter 2025 - Ambience Healthcare ROI Validations KLAS Report|Boyter 2025]], [[Galloway 2024 - Impact Artificial Intelligence Based Solution Clinicians Clinical Documentation|Galloway 2024]]) *(⚠️ these measure satisfaction with the AI product, not job satisfaction in the occupational sense, label as product satisfaction)*
+- Employee Satisfaction ([[Boyter 2025 - Ambience Healthcare ROI Validations KLAS Report|Boyter 2025]]) *(⚠️ same caveat, product satisfaction, not occupational satisfaction; most items in this category should be classified as product satisfaction)*
 - Usability Rating ([[Karavassilis 2025 - Ambient Voice Technology Same Day Emergency Care SDEC|Karavassilis 2025]])
 - Ease of Use ([[Shah 2024 - Ambient AI Scribes Physician Burnout Usability Documentation Burden|Shah 2024]], [[van Buchem 2024 - Digital Scribe Documentation Time Quality Usability|van Buchem 2024]])
 - Perceived Efficiency ([[You 2025 - Ambient Documentation Technology Documentation Burden Burnout|You 2025]])
@@ -33,10 +33,10 @@ Provider-reported satisfaction with the ambient AI scribe tool — including per
 - Recommendation Intention ([[Evans 2025 - AI Scribe Allied Health Private Practice Australia|Evans 2025]]) *(moved from CM-14)*
 - Long-Term Use ([[Shah 2024 - Ambient AI Scribes Physician Burnout Usability Documentation Burden|Shah 2024]]: 78%) *(moved from CM-14)*
 
-> **Removed aliases:** *High-Quality Care Perception* (Galloway 2024) — does not appear to exist in the paper. *Qualitative Feedback* — not a meaningful alias for synthesis.
+> **Removed aliases:** *High-Quality Care Perception* (Galloway 2024), does not appear to exist in the paper. *Qualitative Feedback*, not a meaningful alias for synthesis.
 
 ## ⚠️ Key Note
-Provider satisfaction is almost universally positive across the corpus — but most studies recruited volunteers or interested practitioners, inflating results. Prasad 2025 is the critical counter-signal: <2yr virtual scribe use was strongly negatively associated with satisfaction. Selection bias in most studies is substantial.
+Provider satisfaction is almost universally positive across the corpus, but most studies recruited volunteers or interested practitioners, inflating results. Prasad 2025 is the critical counter-signal: <2yr virtual scribe use was strongly negatively associated with satisfaction. Selection bias in most studies is substantial.
 
 ## Papers Measuring This (21)
 - [[AAFP 2021 - Using AI Assistant Reduce Documentation Burden Family Medicine]]

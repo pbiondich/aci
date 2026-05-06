@@ -3,7 +3,7 @@
 **D&M Dimension:** [[OI - Organizational Impact]]
 
 ## Definition
-Changes in physician financial productivity associated with ambient AI scribe use — measured as RVU changes, revenue per clinician per year, or ROI. Captures organizational financial benefit and potential system-level cost implications.
+Changes in physician financial productivity associated with ambient AI scribe use, measured as RVU changes, revenue per clinician per year, or ROI. Captures organizational financial benefit and potential system-level cost implications.
 
 ## Measurement Methods
 | Method | Description | Data Source |
@@ -23,8 +23,8 @@ Changes in physician financial productivity associated with ambient AI scribe us
 - ROI ([[Boyter 2025 - Ambience Healthcare ROI Validations KLAS Report|Boyter 2025]])
 - Cost Comparison ([[Cao 2024 - Artificial Intelligence-Driven Digital Scribes Dermatology|Cao 2024]])
 - Additional Yearly Revenue ([[Boyter 2025 - Ambience Healthcare ROI Validations KLAS Report|Boyter 2025]])
-- Revenue Impact of HCC Capture ([[Boyter 2025 - Ambience Healthcare ROI Validations KLAS Report|Boyter 2025]]: +$9,685/year) *(moved from CM-21 — dollar value of coding inaccuracy/improvement is financial impact)*
-- Revenue Impact of E/M Level Improvement ([[Boyter 2025 - Ambience Healthcare ROI Validations KLAS Report|Boyter 2025]]: +$1,907/year) *(moved from CM-21 — dollar value is financial impact)*
+- Revenue Impact of HCC Capture ([[Boyter 2025 - Ambience Healthcare ROI Validations KLAS Report|Boyter 2025]]: +$9,685/year) *(moved from CM-21, dollar value of coding inaccuracy/improvement is financial impact)*
+- Revenue Impact of E/M Level Improvement ([[Boyter 2025 - Ambience Healthcare ROI Validations KLAS Report|Boyter 2025]]: +$1,907/year) *(moved from CM-21, dollar value is financial impact)*
 - VBC-Attributed Panel Size ([[Haberle 2024 - Impact Nuance DAX Ambient Listening AI Documentation|Haberle 2024]])
 
 ## ⚠️ Key Note

@@ -3,7 +3,7 @@
 Part of the [[DeLone and McLean IS Success Model]]
 
 ## Definition
-User Satisfaction captures **how clinicians subjectively experience the ambient AI tool** — their emotional states, well-being, perceived usability, and trust. It asks: do people feel better for having used it, and do they find it trustworthy and useful?
+User Satisfaction captures **how clinicians subjectively experience the ambient AI tool** : their emotional states, well-being, perceived usability, and trust. It asks: do people feel better for having used it, and do they find it trustworthy and useful?
 
 ## What Belongs Here
 - Clinician burnout and work exhaustion (validated scales: PFI, Mini-Z, OLBI)
@@ -25,7 +25,7 @@ User Satisfaction captures **how clinicians subjectively experience the ambient 
 - [[CM-15 Provider Satisfaction and Usability]] (20 papers)
 
 ## ⚠️ Key Finding: Self-Report Inflation and Construct Dissociation
-US is the most commonly measured dimension (35 papers) but is subject to substantial selection bias — most studies recruit interested volunteers. The RCT (Afshar 2025b) shows burnout reduces (−0.44 PFI, p<0.001) but professional fulfillment does not significantly increase (p=0.04 vs pre-specified 0.025 threshold) — these are dissociable constructs. QI studies consistently overestimate effects vs. the RCT. Provider satisfaction is almost universally positive across the corpus — but Prasad 2025 is the critical counter-signal: <2yr virtual scribe use strongly negatively associated with satisfaction.
+US is the most commonly measured dimension (35 papers) but is subject to substantial selection bias, most studies recruit interested volunteers. The RCT (Afshar 2025b) shows burnout reduces (−0.44 PFI, p<0.001) but professional fulfillment does not significantly increase (p=0.04 vs pre-specified 0.025 threshold), these are dissociable constructs. QI studies consistently overestimate effects vs. the RCT. Provider satisfaction is almost universally positive across the corpus, but Prasad 2025 is the critical counter-signal: <2yr virtual scribe use strongly negatively associated with satisfaction.
 
 ## Papers in this Dimension (43)
 - [[AAFP 2021 - Using AI Assistant Reduce Documentation Burden Family Medicine]]

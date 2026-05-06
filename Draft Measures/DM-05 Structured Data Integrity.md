@@ -1,22 +1,22 @@
 # DM-05 Structured Data Integrity
 
-**Status:** Draft — pending key informant validation
+**Status:** Draft: pending key informant validation
 **D&M Dimension:** [[IQ - Information Quality]]
 
 ## Definition
-Whether AI-generated documentation correctly populates structured EHR data elements — including problem lists, medication lists, allergy lists, order entries, and billing codes — beyond the narrative note itself. A note that reads correctly but fails to update structured fields creates downstream clinical and operational risk.
+Whether AI-generated documentation correctly populates structured EHR data elements, including problem lists, medication lists, allergy lists, order entries, and billing codes, beyond the narrative note itself. A note that reads correctly but fails to update structured fields creates downstream clinical and operational risk.
 
 ## Hypothesized Stakeholder(s)
-- **CMIO** — structured data integrity is foundational to clinical decision support, population health, and quality reporting
-- **COO** — quality measure reporting (HEDIS, MIPS, etc.) depends on accurate structured data
+- **CMIO** : structured data integrity is foundational to clinical decision support, population health, and quality reporting
+- **COO** : quality measure reporting (HEDIS, MIPS, etc.) depends on accurate structured data
 
 ## Rationale
 The corpus focuses almost entirely on narrative note quality (completeness, accuracy, concordance). But the clinical note is only one output of the documentation process. If the ACI tool generates a narrative that mentions a new medication but doesn't trigger the corresponding structured medication list update, the downstream impact on CDS alerts, drug-drug interaction checking, and quality reporting could be significant. No study in the corpus measures this.
 
 ## Relationship to Existing Canonical Measures
-- [[CM-08 Note Completeness]] — completeness of the narrative doesn't guarantee completeness of structured data
-- [[CM-09 Note Accuracy]] — narrative accuracy and structured data accuracy are distinct failure modes
-- [[CM-19 Clinical Patient Safety]] — structured data errors could propagate into CDS failures and safety events
+- [[CM-08 Note Completeness]]: completeness of the narrative doesn't guarantee completeness of structured data
+- [[CM-09 Note Accuracy]]: narrative accuracy and structured data accuracy are distinct failure modes
+- [[CM-19 Clinical Patient Safety]]: structured data errors could propagate into CDS failures and safety events
 
 ## Suggested Measurement Methods
 | Method | Description | Data Source |

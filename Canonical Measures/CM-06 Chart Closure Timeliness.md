@@ -3,7 +3,7 @@
 **D&M Dimension:** [[II - Individual Impact]]
 
 ## Definition
-Whether and how quickly clinical notes are completed and signed — measured as same-day closure rates, time to chart closure, 24-hour deficiency rates, or completion before the next patient. Captures documentation *completion behavior* rather than time-per-note.
+Whether and how quickly clinical notes are completed and signed, measured as same-day closure rates, time to chart closure, 24-hour deficiency rates, or completion before the next patient. Captures documentation *completion behavior* rather than time-per-note.
 
 ## Measurement Methods
 | Method | Description | Data Source |
@@ -26,7 +26,7 @@ Whether and how quickly clinical notes are completed and signed — measured as 
 - Same-Day / Pre-Next-Visit Closure ([[Afshar 2025b - Pragmatic RCT Ambient AI Health Practitioner Wellbeing|Afshar 2025b]])
 
 ## ⚠️ Key Note
-Chart closure is a distinct operational metric from raw documentation time — a note can be completed quickly but signed late. Boyter/KLAS 2025 found −41% in chart closure time (UAL data). Afshar 2025a used it as a real-time monitoring metric with a notable dip during template change.
+Chart closure is a distinct operational metric from raw documentation time, a note can be completed quickly but signed late. Boyter/KLAS 2025 found −41% in chart closure time (UAL data). Afshar 2025a used it as a real-time monitoring metric with a notable dip during template change.
 
 **⚠️ Definition overlap with CM-04:** The "time to chart" portion of this measure overlaps with documentation time (CM-04). All "time to close" aliases need to be checked to ensure they are capturing completion behavior (signing/submitting), not note-writing time.
 

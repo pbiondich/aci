@@ -1,24 +1,24 @@
 # DM-11 Workflow Disruption During Rollout
 
-**Status:** Draft — pending key informant validation
+**Status:** Draft: pending key informant validation
 **D&M Dimension:** [[NB - Net Benefits]]
 
 ## Definition
-The temporary reduction in clinical productivity, documentation quality, and clinician satisfaction during the transition period from traditional documentation to ACI-assisted documentation — the "implementation dip." Measures the depth, duration, and operational cost of the disruption before steady-state benefits are realized.
+The temporary reduction in clinical productivity, documentation quality, and clinician satisfaction during the transition period from traditional documentation to ACI-assisted documentation, the "implementation dip." Measures the depth, duration, and operational cost of the disruption before steady-state benefits are realized.
 
 ## Hypothesized Stakeholder(s)
-- **COO** — needs to plan for reduced throughput, schedule adjustments, and support staffing during rollout
-- **CFO** — the implementation dip has a quantifiable cost that offsets early ROI projections
-- **CPO** — clinician frustration during the transition period can undermine buy-in and retention
+- **COO** : needs to plan for reduced throughput, schedule adjustments, and support staffing during rollout
+- **CFO** : the implementation dip has a quantifiable cost that offsets early ROI projections
+- **CPO** : clinician frustration during the transition period can undermine buy-in and retention
 
 ## Rationale
-Nearly all studies in the corpus report steady-state outcomes — they compare a baseline period to a post-implementation period, often with a washout or exclusion of the transition weeks. The disruption during the transition itself is not measured. For an executive planning a rollout, the transition cost matters: how many fewer patients will be seen during week 1-4, how much extra support is needed, and how long before the promised benefits materialize?
+Nearly all studies in the corpus report steady-state outcomes, they compare a baseline period to a post-implementation period, often with a washout or exclusion of the transition weeks. The disruption during the transition itself is not measured. For an executive planning a rollout, the transition cost matters: how many fewer patients will be seen during week 1-4, how much extra support is needed, and how long before the promised benefits materialize?
 
 ## Relationship to Existing Canonical Measures
-- [[CM-04 Documentation Time]] — steady-state time savings don't capture the temporary increase during transition
-- [[CM-22 Patient Volume and Throughput]] — throughput may temporarily decline during rollout
-- [[CM-23 Implementation]] — implementation factors are related but CM-23 doesn't quantify the productivity dip
-- [[DM-08 Onboarding and Training Burden]] — training burden contributes to workflow disruption but DM-08 focuses on the learning curve, not the operational impact
+- [[CM-04 Documentation Time]]: steady-state time savings don't capture the temporary increase during transition
+- [[CM-22 Patient Volume and Throughput]]: throughput may temporarily decline during rollout
+- [[CM-23 Implementation]]: implementation factors are related but CM-23 doesn't quantify the productivity dip
+- [[DM-08 Onboarding and Training Burden]]: training burden contributes to workflow disruption but DM-08 focuses on the learning curve, not the operational impact
 
 ## Suggested Measurement Methods
 | Method | Description | Data Source |

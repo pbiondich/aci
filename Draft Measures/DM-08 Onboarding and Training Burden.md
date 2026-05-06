@@ -1,22 +1,22 @@
 # DM-08 Onboarding and Training Burden
 
-**Status:** Draft — pending key informant validation
+**Status:** Draft: pending key informant validation
 **D&M Dimension:** [[SerQ - Service Quality]]
 
 ## Definition
-The time, effort, and resources required to train clinicians to effectively use an ACI tool — including initial onboarding, workflow adaptation, and ongoing proficiency development. Measures the learning curve from first use to competent, independent use and the organizational cost of supporting that transition.
+The time, effort, and resources required to train clinicians to effectively use an ACI tool, including initial onboarding, workflow adaptation, and ongoing proficiency development. Measures the learning curve from first use to competent, independent use and the organizational cost of supporting that transition.
 
 ## Hypothesized Stakeholder(s)
-- **CPO** — training burden affects clinician experience during rollout and new-hire onboarding
-- **COO** — training requires scheduling, coverage, and support resources that compete with clinical operations
-- **CMIO** — proficiency timelines affect clinical documentation quality during the transition period
+- **CPO** : training burden affects clinician experience during rollout and new-hire onboarding
+- **COO** : training requires scheduling, coverage, and support resources that compete with clinical operations
+- **CMIO** : proficiency timelines affect clinical documentation quality during the transition period
 
 ## Rationale
-No study in the corpus measures how long it takes a clinician to become proficient with an ACI tool or what training resources are required. This is relevant for both initial deployment and ongoing recruitment — every new hire needs to be onboarded. If one product requires 2 hours of training and another requires 2 weeks of supported practice, that's a material difference in operational cost and rollout feasibility.
+No study in the corpus measures how long it takes a clinician to become proficient with an ACI tool or what training resources are required. This is relevant for both initial deployment and ongoing recruitment, every new hire needs to be onboarded. If one product requires 2 hours of training and another requires 2 weeks of supported practice, that's a material difference in operational cost and rollout feasibility.
 
 ## Relationship to Existing Canonical Measures
-- [[CM-23 Implementation]] — implementation factors include training, but CM-23 doesn't quantify the burden
-- [[CM-13 Adoption Behavior and Utilization Rate]] — training quality likely predicts adoption, but the link isn't measured
+- [[CM-23 Implementation]]: implementation factors include training, but CM-23 doesn't quantify the burden
+- [[CM-13 Adoption Behavior and Utilization Rate]]: training quality likely predicts adoption, but the link isn't measured
 
 ## Suggested Measurement Methods
 | Method | Description | Data Source |

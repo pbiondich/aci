@@ -1,22 +1,22 @@
 # DM-03 Staff Turnover Cost Avoidance
 
-**Status:** Draft — pending key informant validation
+**Status:** Draft: pending key informant validation
 **D&M Dimension:** [[NB - Net Benefits]]
 
 ## Definition
-The financial value of reduced clinician attrition attributable to ACI adoption — connecting burnout reduction and satisfaction improvement to actual retention outcomes and the avoided cost of physician replacement. Estimates of physician replacement cost range from $500K to $1M+ depending on specialty and market.
+The financial value of reduced clinician attrition attributable to ACI adoption, connecting burnout reduction and satisfaction improvement to actual retention outcomes and the avoided cost of physician replacement. Estimates of physician replacement cost range from $500K to $1M+ depending on specialty and market.
 
 ## Hypothesized Stakeholder(s)
-- **CPO** — workforce retention is a primary responsibility; connecting ACI to retention outcomes justifies the investment in human capital terms
-- **CFO** — turnover cost avoidance is a quantifiable financial benefit that can appear in ROI models
+- **CPO** : workforce retention is a primary responsibility; connecting ACI to retention outcomes justifies the investment in human capital terms
+- **CFO** : turnover cost avoidance is a quantifiable financial benefit that can appear in ROI models
 
 ## Rationale
 Multiple studies in the corpus measure burnout reduction (CM-01) and satisfaction improvement (CM-03, CM-15), but none follow through to actual retention data. The causal chain from "burnout improved on a survey" to "fewer physicians left" is assumed but not demonstrated. For a CPO or CFO, the intermediate burnout metric is less persuasive than actual turnover data.
 
 ## Relationship to Existing Canonical Measures
-- [[CM-01 Clinician Burnout and Exhaustion]] — burnout is the hypothesized mechanism through which ACI affects retention, but CM-01 stops at the survey level
-- [[CM-03 Professional Fulfillment and Meaningfulness]] — fulfillment is a known retention predictor but the link to actual retention isn't measured
-- [[CM-15 User Satisfaction]] — satisfaction correlates with retention intent but doesn't measure actual departure rates
+- [[CM-01 Clinician Burnout and Exhaustion]]: burnout is the hypothesized mechanism through which ACI affects retention, but CM-01 stops at the survey level
+- [[CM-03 Professional Fulfillment and Meaningfulness]]: fulfillment is a known retention predictor but the link to actual retention isn't measured
+- [[CM-15 User Satisfaction]]: satisfaction correlates with retention intent but doesn't measure actual departure rates
 
 ## Suggested Measurement Methods
 | Method | Description | Data Source |

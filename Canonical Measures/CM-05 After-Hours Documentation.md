@@ -3,7 +3,7 @@
 **D&M Dimension:** [[II - Individual Impact]]
 
 ## Definition
-Time spent on clinical documentation outside of scheduled working hours — 'pajama time', 'after-hours EHR', or 'work outside work.' Distinct from total documentation time (CM-04) because it captures work-life boundary effects specifically. One of the most clinically meaningful outcomes because it directly affects physician well-being.
+Time spent on clinical documentation outside of scheduled working hours, 'pajama time', 'after-hours EHR', or 'work outside work.' Distinct from total documentation time (CM-04) because it captures work-life boundary effects specifically. One of the most clinically meaningful outcomes because it directly affects physician well-being.
 
 ## Measurement Methods
 | Method | Description | Data Source |
@@ -28,7 +28,7 @@ Time spent on clinical documentation outside of scheduled working hours — 'paj
 - Off-Hours EHR Activity ([[Stults 2025 - Evaluation Ambient AI Documentation Platform Clinicians|Stults 2025]])
 
 ## ⚠️ Key Note
-**Consistent null pattern in objective data:** After-hours time does NOT improve significantly in EHR telemetry across most corpus papers (Pearlman 2025, Stults 2025). Self-report shows improvement. Exceptions: Duggan 2025 (−16.9%), Boyter/KLAS 2025 (−39% UAL), Afshar 2025b (−0.50 hrs/day, but fragile — disappears after removing top 3% outliers). **Tierney 2025** adds one of the strongest objective signals in the corpus: DiD reduction in pajama time (−1.03 min, p=0.02) and time outside 7am–7pm (−1.83 min, p<0.001). This self-report/objective divergence remains one of the most reproducible findings.
+**Consistent null pattern in objective data:** After-hours time does NOT improve significantly in EHR telemetry across most corpus papers (Pearlman 2025, Stults 2025). Self-report shows improvement. Exceptions: Duggan 2025 (−16.9%), Boyter/KLAS 2025 (−39% UAL), Afshar 2025b (−0.50 hrs/day, but fragile: disappears after removing top 3% outliers). **Tierney 2025** adds one of the strongest objective signals in the corpus: DiD reduction in pajama time (−1.03 min, p=0.02) and time outside 7am–7pm (−1.83 min, p<0.001). This self-report/objective divergence remains one of the most reproducible findings.
 
 ## Papers Measuring This (19)
 - [[AAFP 2021 - Using AI Assistant Reduce Documentation Burden Family Medicine]]

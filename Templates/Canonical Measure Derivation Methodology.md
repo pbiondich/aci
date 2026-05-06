@@ -12,7 +12,7 @@ Each article in the `Articles/` directory contains a **Study Measures** table li
 
 ## Step 2: Bottom-Up Clustering
 
-Raw measures were grouped into canonical constructs based on conceptual similarity. For example, "Time in Notes per Appointment," "Documentation Time (seconds)," "Post-Edit Time," and "Notetaking Time Reduction" all describe the same underlying construct — the time spent producing clinical documentation — and were clustered into **CM-04 Documentation Time**.
+Raw measures were grouped into canonical constructs based on conceptual similarity. For example, "Time in Notes per Appointment," "Documentation Time (seconds)," "Post-Edit Time," and "Notetaking Time Reduction" all describe the same underlying construct, the time spent producing clinical documentation, and were clustered into **CM-04 Documentation Time**.
 
 Clustering was performed iteratively:
 1. Initial grouping by conceptual similarity and D&M dimension
@@ -26,11 +26,11 @@ Clustering was performed iteratively:
 
 Each canonical measure was documented in a dedicated markdown file in `Canonical Measures/` with the following sections:
 
-- **Definition** — what the measure captures and how it is distinct from related measures
-- **Measurement Methods** — table of specific instruments, scales, and data sources used across the corpus
-- **Aliases Used in Literature** — bulleted list of every name variant encountered, with article citations and reported values where available
-- **Key Note** — interpretive commentary on the most important findings, methodological concerns, or cross-study patterns
-- **Papers Measuring This** — complete list of articles in the corpus that measure this construct
+- **Definition** : what the measure captures and how it is distinct from related measures
+- **Measurement Methods** : table of specific instruments, scales, and data sources used across the corpus
+- **Aliases Used in Literature** : bulleted list of every name variant encountered, with article citations and reported values where available
+- **Key Note** : interpretive commentary on the most important findings, methodological concerns, or cross-study patterns
+- **Papers Measuring This** : complete list of articles in the corpus that measure this construct
 
 
 ## Known Limitations
@@ -41,13 +41,13 @@ Each canonical measure was documented in a dedicated markdown file in `Canonical
 
 3. **Qualitative vs. quantitative:** Some links involve qualitative mentions of a construct (e.g., physicians describing accuracy concerns in interviews) rather than quantitative measurement. These are included but represent weaker evidence.
 
-4. **One-directional validation:** This process checks whether articles that measure a construct are listed in the CM. It does not check the reverse — whether articles listed in a CM actually measure that construct. A future reverse validation pass would strengthen confidence.
+4. **One-directional validation:** This process checks whether articles that measure a construct are listed in the CM. It does not check the reverse: whether articles listed in a CM actually measure that construct. A future reverse validation pass would strengthen confidence.
 
 ## Step 6: Automated Linkage Tooling
 
 In an attempt to automate this process for new articles entering the corpus, two automated tools were built:
 
-### `scripts/link-article.js` — Article Linkage Tool
+### `scripts/link-article.js`, Article Linkage Tool
 
 Reads an article's Study Measures table and ensures the article is properly linked in all relevant Canonical Measure and D&M Dimension files.
 
@@ -67,7 +67,7 @@ node scripts/link-article.js --all --fix
 
 The tool uses regex pattern matching against a curated keyword index for each CM (defined in `CM_PATTERNS`) and checks D&M dimension tags from the Study Measures table columns. Known false positives are listed in a `SUPPRESS` array and are skipped automatically.
 
-### `scripts/extract-data.js` — Build-Time Validation
+### `scripts/extract-data.js`, Build-Time Validation
 
 The extraction script now runs `link-article.js --all` as a post-build validation step. If any gaps are detected, it prints a warning with instructions. This ensures gaps are caught during the CI build even if the reviewer forgets to run the linkage tool manually.
 
