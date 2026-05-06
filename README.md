@@ -2,7 +2,7 @@
 
 A systematic literature review of 54 studies evaluating Ambient Clinical Intelligence (ACI) tools, organized using the DeLone & McLean Information Systems Success Model. The review synthesizes 494 raw measure rows into 25 canonical measures across six evaluation dimensions, with an interactive web application for exploring the evidence.
 
-**Live site:** [pbiondich.github.io/aci/v2](https://pbiondich.github.io/aci/v2/)
+**Live site:** [pbiondich.github.io/aci/v3](https://pbiondich.github.io/aci/v3/)
 
 ## Overview
 
@@ -38,7 +38,7 @@ Each of the 54 articles was reviewed in full text and its outcome measures extra
 │   └── link-article.js              # Validates article-to-measure linkage
 ├── docs/
 │   ├── index.html                   # Classic webapp (single file, v1)
-│   ├── v2/                          # Current webapp (multi-file JSX + Babel)
+│   ├── v3/                          # Current webapp (multi-file JSX + Babel)
 │   │   ├── index.html               # Shell: styles, fonts, Babel transpiler
 │   │   ├── components.jsx           # Shared components and helpers
 │   │   ├── tabs.jsx                 # Tab views (Overview through Rigor)
@@ -56,7 +56,7 @@ Each of the 54 articles was reviewed in full text and its outcome measures extra
 
 ## Web Application
 
-The interactive webapp at [pbiondich.github.io/aci/v2](https://pbiondich.github.io/aci/v2/) provides eight views:
+The interactive webapp at [pbiondich.github.io/aci/v3](https://pbiondich.github.io/aci/v3/) provides eight views:
 
 1. **Overview** — key findings at a glance
 2. **Canonical Measures** — detailed definitions, findings, and paper lists for all 25 measures
@@ -67,7 +67,7 @@ The interactive webapp at [pbiondich.github.io/aci/v2](https://pbiondich.github.
 7. **Study Corpus** — corpus-wide statistics and distributions
 8. **Level of Rigor** — tiered quality assessment (work in progress)
 
-Tabs are shareable via URL hash (e.g., `pbiondich.github.io/aci/v2/#guide`).
+Tabs are shareable via URL hash (e.g., `pbiondich.github.io/aci/v3/#guide`).
 
 ### Architecture
 
@@ -114,7 +114,7 @@ This is an active research project. If you're interested in contributing article
 
 If referencing this work, please cite as:
 
-> Biondich, P. et al. (2026). Evaluating Ambient Clinical Intelligence: A Structured Evidence Review Using the DeLone & McLean IS Success Model. Available at: https://pbiondich.github.io/aci/v2/
+> Biondich, P. et al. (2026). Evaluating Ambient Clinical Intelligence: A Structured Evidence Review Using the DeLone & McLean IS Success Model. Available at: https://pbiondich.github.io/aci/v3/
 
 ## License
 
